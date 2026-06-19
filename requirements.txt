@@ -1,0 +1,4 @@
+pymupdf>=1.23.0
+pdfplumber>=0.10.0
+transformers>=4.35.0
+nltk>=3.8.0
