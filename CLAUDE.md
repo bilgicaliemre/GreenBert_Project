@@ -22,6 +22,10 @@ Data/sections/        # later WP
   Cols: Company, Page, Claim_Text, ESG_Type, Claim_Type, Evidence_Exists, Risk_Signal. ~388 claims on Unilever (typed E 374 / G 9 / S 5).
 - **`pdf_to_chunks.py`** (BERT JSON chunker): built, NOT in use — reserved for the later ML stage.
   We chose the "lighter route" (extract_claims.py) first, with the user.
+- **Validation (in progress)**: author + teacher INDEPENDENTLY label 40 claims (20 Dr Pepper + 20 Unilever)
+  on two manual columns — "real ESG claim?" and correct ESG type — to measure detection precision + E/S/G
+  typing accuracy and surface inconsistencies (human gold set; supports inter-annotator agreement). Possible
+  later step: Claude as a 3rd automated annotator (token budget permitting). See decision log #9.
 - Not started: BERT claim classification, quantitative-metric extraction, discrepancy → greenwashing
   score + explanation, website.
 
@@ -57,5 +61,8 @@ python3 extract_claims.py
 ## Standing reminders (Claude: act on these)
 - **Decision log**: append every notable design decision + rationale to `paper/design_decisions.md`
   (via the `research-paper` skill) — feeds the academic paper, survives compaction.
+- **Paper sources**: Related Work is ALREADY DRAFTED. The canonical manuscript + extensive project notes
+  live in the user's Google Drive "GreenBert" project (accessible via the Drive MCP). READ those before
+  drafting/writing any paper section — don't assume a section is missing.
 - **Skills**: when a workflow repeats, create a skill in `.claude/skills/` instead of re-typing steps.
 - **Context hygiene**: I can't run /clear or /compact — proactively tell the user when to.

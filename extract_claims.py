@@ -83,7 +83,7 @@ ACTION_KEYWORDS = [
 # NOT here, so "committed to sustainability" stays Vague (matches your example).
 FUTURE_MARKERS = [
     "will ", "aim", "plan", "pledge", "strive", "aspire", "ambition",
-    "target", "goal", "net zero", "net-zero", "by 20",
+    "target", "goal", "net zero", "net-zero", "by 20", "expect", "intend",
 ]
 
 # A REAL quantity = a percentage, or a number followed by a unit.
@@ -111,6 +111,98 @@ NUM_TOKEN_RE = re.compile(r"\b\d[\d,.]*\b")  # one numeric token (12, 1,234, 3.4
 
 MIN_WORDS = 4    # below this = fragment / heading
 MAX_WORDS = 45   # above this = legal blob, not a single claim
+
+# ----- v2 NON-CLAIM FILTERS (precision; built from validation + teacher review) --
+# Methodology / definition sentences describe HOW things are measured/defined, not
+# a performance claim. (Biggest false-positive class in the full 532-claim audit.)
+METHOD_PHRASES = [
+    "is calculated", "are calculated", "calculated using", "calculation of",
+    "is assessed", "are assessed", "assessed using", "definition of",
+    "is defined as", "are defined as", "refers to", "refer to", "methodology",
+    "data is collected", "data are collected", "reported according to",
+    "in accordance with", "continue to evolve", "approach to emissions data",
+    "this statement", "this document", "this section", "standards and protocols",
+    "exclusions:", "excluded from", "benchmarking", "benchmark codes",
+    "evaluate our performance",
+    # v2.1 round-2: ESRS / reporting-framework + report-structure plumbing
+    "materiality", "double materiality", "dma ", " iro", "iros", "esrs",
+    "topical disclosure", "time horizon", "severity score", "scored on a scale",
+    "measurement uncertainty", "we have disclosed", "due diligence",
+    "narrative owners", "written disclosures", "role of management",
+    "translate global", "for sustainability reporting", "impact measurement",
+    "priority areas", "business strategy", "considering performance against",
+    "disclosures consolidate", "consolidate our", "metrics and targets related to",
+    "this includes actions", "established engagement", "risk assessments",
+    "interviews and questionnaires", "support delivery", "the spi", "spi is",
+    "systems and data",
+]
+# General opinion / advocacy sentences (NOT claims -- per teacher review). Applied
+# only when there is NO hard quantity (a number signals real substance).
+GENERAL_STATEMENT_PHRASES = [
+    "is critical", "are critical", "is important", "are important",
+    "is essential", "are essential", "is vital", "is key", "is complex",
+    "is challenging", "global challenge", "global challenges", "is necessary",
+    "requires collective action", "collective action", "transformative power",
+    "plays a critical role", "plays an important role", "plays a key role",
+    "play a key role", "play an important role",
+]
+# Risk / dependency / condition descriptions (a threat, not own action). Applied
+# only when there is NO hard quantity.
+RISK_PHRASES = [
+    "vulnerable to", "increasingly vulnerable", "exposed to", "dependent on",
+    "deeply dependent", "could result in", "could lead to", "could increase",
+    "could reduce", "could affect", "may affect", "may impact", "may result",
+    "impacts of climate", "physical risk", "transition risk", "risks associated",
+    "pose a risk", "poses a risk", "at risk", "risk of",
+]
+# Governance-role plumbing: a committee/board doing its job (oversee/review/approve),
+# not an ESG performance claim. Applied only when NO hard quantity.
+GOV_PLUMBING = [
+    "committee", "subcommittee", "advisory council", "the board", "board's",
+    "supervisory board", "remunerat", "incentive plan", "performance share plan",
+    "narrative owners", "engage investors",
+]
+# Activity / event / membership reports: an action with no stated outcome.
+ACTIVITY_PHRASES = [
+    "co-host", "roundtable", "signed the", "re-signed", "open letter",
+    "participated in", "signatory", "joined the", "we are a member",
+    "member of", "partnered with", "we sponsor", "we attended",
+]
+# Navigation / running-header / cross-reference fragments (section-title soup).
+SECTION_NAV_WORDS = [
+    "climate & nature", "water use & stewardship", "packaging & circular",
+    "responsible sourcing", "circular economy", "human rights, responsible",
+    "overview climate", "supply chain", "table of contents",
+]
+NAV_POINTER_PHRASES = ["see page", "on page", "refer to the table", "for more detail",
+                       "table below", "figure below", "see section", "see scope",
+                       "detailed in the relevant", "described in our topical"]
+
+# Evidence references: external standards / assurance / data pointers => backing.
+EVIDENCE_REFS = [
+    "sbti", "science-based target", "ghg protocol", "tcfd", "gri ", "iso ",
+    "assured", "assurance", "audited", "verified", "third-party", "third party",
+    "kpmg", "deloitte", "erm cvs", "certified", "see page", "in accordance with",
+    "externally", "validated",
+]
+# Governance terms that should win ESG_Type ties (teacher review point 4).
+STRONG_GOV = ["board", "committee", "remunerat", "audit", "governance",
+              "director", "shareholder"]
+# "environment" used non-environmentally (workplace etc.) -> Social, not planet.
+ENV_POLYSEMY_RE = re.compile(
+    r"\b(work|working|business|regulatory|operating|control|team|inclusive|safe)\s+environment",
+    re.IGNORECASE)
+
+# Risk_Signal matrix: derived from (Claim_Type x Evidence_Exists), now independent.
+RISK_MATRIX = {
+    ("Strong", "Yes"): "Supported", ("Strong", "Partial"): "Supported",
+    ("Strong", "No"): "Unverified",
+    ("Future Promise", "Yes"): "Credible",
+    ("Future Promise", "Partial"): "Weak Evidence",
+    ("Future Promise", "No"): "Unsubstantiated",
+    ("Vague", "Yes"): "Needs Review", ("Vague", "Partial"): "Weak Evidence",
+    ("Vague", "No"): "Vague",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -166,12 +258,28 @@ def env_topic_hits(low: str) -> int:
     return n
 
 
+def social_hits(low: str) -> int:
+    return sum(1 for k in SOCIAL_KEYWORDS if k in low)
+
+
+def gov_hits(low: str) -> int:
+    return sum(1 for k in GOVERNANCE_KEYWORDS if k in low)
+
+
+def esg_topic_hits(low: str) -> int:
+    """ESG topic signals (E + S + G). v2: detection is no longer ENV-only
+    (teacher review point 1) -- this is an ESG-claim extractor; E/S/G is then a TAG."""
+    return env_topic_hits(low) + social_hits(low) + gov_hits(low)
+
+
+def has_action(low: str) -> bool:
+    return any(a in low for a in ACTION_KEYWORDS)
+
+
 def is_claim(low: str, has_quantity: bool) -> bool:
-    """A claim = a TOPIC word + (an ACTION verb OR a hard quantity).
-    Topic-only sentences ('emissions data relates to...') are description, dropped."""
-    has_topic = env_topic_hits(low) > 0
-    has_action = any(a in low for a in ACTION_KEYWORDS)
-    return has_topic and (has_action or has_quantity)
+    """A claim = an ESG TOPIC word + (an ACTION verb OR a hard quantity).
+    The non-claim FILTERS (see non_claim_reason) then remove descriptions/methodology."""
+    return esg_topic_hits(low) > 0 and (has_action(low) or has_quantity)
 
 
 def is_boilerplate(low: str) -> bool:
@@ -188,6 +296,40 @@ def is_reference_dense(sentence: str) -> bool:
     return False
 
 
+def is_navigation(low: str) -> bool:
+    """Running headers / TOC / cross-reference pointers (section-title soup)."""
+    if any(p in low for p in NAV_POINTER_PHRASES):
+        return True
+    nav_hits = sum(1 for w in SECTION_NAV_WORDS if w in low)
+    if nav_hits >= 2:
+        return True
+    if ("impact report" in low or "sustainability report" in low) and nav_hits >= 1:
+        return True
+    return False
+
+
+def non_claim_reason(sentence: str, low: str, has_quantity: bool):
+    """Return WHY a topic+action sentence is still NOT a claim, else None.
+    Built from the validation error taxonomy + the teacher's review."""
+    if is_boilerplate(low):
+        return "boilerplate"
+    if is_reference_dense(sentence):
+        return "reference_dense"
+    if is_navigation(low):
+        return "navigation"
+    if not has_quantity and any(p in low for p in GOV_PLUMBING):
+        return "governance_plumbing"
+    if any(p in low for p in ACTIVITY_PHRASES):
+        return "activity_report"
+    if any(p in low for p in METHOD_PHRASES):
+        return "methodology"
+    if not has_quantity and any(p in low for p in GENERAL_STATEMENT_PHRASES):
+        return "general_statement"
+    if not has_quantity and any(p in low for p in RISK_PHRASES):
+        return "risk_description"
+    return None
+
+
 def classify_claim_type(low: str, has_quantity: bool) -> str:
     is_future = any(m in low for m in FUTURE_MARKERS)
     if is_future:
@@ -197,20 +339,25 @@ def classify_claim_type(low: str, has_quantity: bool) -> str:
     return "Vague"
 
 
-def evidence_for(claim_type: str) -> str:
-    return {"Strong": "Yes", "Future Promise": "Partial", "Vague": "No"}[claim_type]
+def evidence_exists(low: str, has_quantity: bool) -> str:
+    """v2: evidence is determined INDEPENDENTLY of claim type (decision #14).
+    Yes     = a concrete achieved quantity (a number NOT in a future/projected context);
+    Partial = cites a credible source/standard/assurance, OR a projected quantity;
+    No      = neither. (A projected '55M gallons by 2030' is the size of the promise,
+    not evidence -> Partial, not Yes.)"""
+    projected = any(m in low for m in FUTURE_MARKERS)
+    if has_quantity and not projected:
+        return "Yes"
+    if any(c in low for c in EVIDENCE_REFS):
+        return "Partial"
+    if has_quantity:
+        return "Partial"
+    return "No"
 
 
 def risk_signal_for(claim_type: str, evidence: str) -> str:
-    # Your rules. Anything not covered stays BLANK for you to fill by hand
-    # (real "Supported vs Contradicted" needs comparing claim to data -> later WP).
-    if claim_type == "Strong" and evidence == "Yes":
-        return "Supported"
-    if claim_type == "Vague" and evidence == "No":
-        return "Vague"
-    if claim_type == "Future Promise" and evidence == "Partial":
-        return "Weak Evidence"
-    return ""
+    """Derived from the (Claim_Type x Evidence) matrix (decision #14)."""
+    return RISK_MATRIX.get((claim_type, evidence), "")
 
 
 def clean(sentence: str) -> str:
@@ -218,15 +365,20 @@ def clean(sentence: str) -> str:
 
 
 def classify_esg_type(low: str) -> str:
-    """Tag a claim E / S / G by which ESG vocabulary dominates the sentence.
-
-    Claims are detected on environmental TOPIC words, so E is the default. A
-    claim flips to G or S only when that vocabulary STRICTLY out-counts the
-    environmental words -- e.g. a 'Remuneration Committee ... incentive plan'
-    sentence that merely *references* sustainability is Governance, not E."""
+    """Tag a claim E / S / G (v2, teacher review point 4).
+    - Governance terms (board/committee/audit...) WIN ties, so a Remuneration-
+      Committee sentence that name-drops 'sustainability' is G, not E.
+    - 'work/business environment' is workplace language -> Social, not planet.
+    - Otherwise the dominant ESG vocabulary wins, env-favouring on a tie."""
     e = env_topic_hits(low)
-    s = sum(1 for k in SOCIAL_KEYWORDS if k in low)
-    g = sum(1 for k in GOVERNANCE_KEYWORDS if k in low)
+    s = social_hits(low)
+    g = gov_hits(low)
+    if ENV_POLYSEMY_RE.search(low):     # "work environment" = Social, not E
+        s += 1
+        if e > 0:
+            e -= 1
+    if any(k in low for k in STRONG_GOV) and g >= e and g >= s:
+        return "G"                      # governance terms present -> G wins ties
     if g > e and g >= s:
         return "G"
     if s > e and s >= g:
@@ -234,27 +386,31 @@ def classify_esg_type(low: str) -> str:
     return "E"
 
 
-def extract_claims(pages: list[str], company: str = "") -> list[dict]:
+def extract_claims(pages: list[str], company: str = "", stats: dict | None = None) -> list[dict]:
     rows: list[dict] = []
     seen: set[str] = set()
+    drops: dict[str, int] = {}
+
+    def drop(reason: str) -> None:
+        drops[reason] = drops.get(reason, 0) + 1
+
     for page_idx, page_text in enumerate(pages, start=1):
         for sentence in split_sentences(page_text):
             s = clean(sentence)
             low = s.lower()
             if not (MIN_WORDS <= len(s.split()) <= MAX_WORDS):
-                continue                       # fragment or legal blob
-            if is_boilerplate(low):
-                continue                       # legal disclaimer
-            if is_reference_dense(s):
-                continue                       # table of contents / refs
+                drop("length"); continue       # fragment or legal blob
             has_quantity = bool(QUANTITY_RE.search(s))
             if not is_claim(low, has_quantity):
-                continue                       # description, not a claim
+                drop("not_assertion"); continue  # no ESG topic + action/quantity
+            reason = non_claim_reason(s, low, has_quantity)
+            if reason:
+                drop(reason); continue         # methodology / general / risk / nav...
             if low in seen:
-                continue                       # dedup boilerplate
+                drop("duplicate"); continue
             seen.add(low)
             ctype = classify_claim_type(low, has_quantity)
-            ev = evidence_for(ctype)
+            ev = evidence_exists(low, has_quantity)
             rows.append({
                 "Company": company,
                 "Page": page_idx,
@@ -264,6 +420,8 @@ def extract_claims(pages: list[str], company: str = "") -> list[dict]:
                 "Evidence_Exists": ev,
                 "Risk_Signal": risk_signal_for(ctype, ev),
             })
+    if stats is not None:
+        stats.update(drops)
     return rows
 
 
@@ -300,15 +458,19 @@ def process_one(pdf_path: str, out_path: str, company: str = "") -> None:
     save_text_file(pages, txt_path)
 
     # Step 2: text -> classified claims -> TSV
-    rows = extract_claims(pages, company)
+    stats: dict[str, int] = {}
+    rows = extract_claims(pages, company, stats)
     write_table(rows, tsv_path)
 
     by_type: dict[str, int] = {}
     for r in rows:
         by_type[r["Claim_Type"]] = by_type.get(r["Claim_Type"], 0) + 1
     breakdown = ", ".join(f"{k} {v}" for k, v in sorted(by_type.items()))
+    dropped = ", ".join(f"{k} {v}" for k, v in
+                        sorted(stats.items(), key=lambda kv: -kv[1]))
     print(f"  {os.path.basename(pdf_path)}: {len(pages)} pages -> "
           f"{len(rows)} claims ({breakdown})")
+    print(f"    filtered out: {dropped}")
     print(f"    text -> {txt_path}")
     print(f"    tsv  -> {tsv_path}")
 
