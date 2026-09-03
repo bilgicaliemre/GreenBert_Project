@@ -386,28 +386,37 @@ def classify_esg_type(low: str) -> str:
     return "E"
 
 
-def extract_claims(pages: list[str], company: str = "", stats: dict | None = None) -> list[dict]:
+def extract_claims(pages: list[str], company: str = "", stats: dict | None = None,
+                   rejected: list | None = None) -> list[dict]:
     rows: list[dict] = []
     seen: set[str] = set()
     drops: dict[str, int] = {}
+    rej_seen: set[str] = set()   # so recurring headers/footers land in the file once, not 100x
 
-    def drop(reason: str) -> None:
+    def drop(reason: str, page: int, text: str, low_text: str) -> None:
         drops[reason] = drops.get(reason, 0) + 1
+        # "duplicate" means the sentence was already ADMITTED as a claim earlier --
+        # it is not rejected content, so it does not belong in the non-claims file.
+        if rejected is None or reason == "duplicate" or low_text in rej_seen:
+            return
+        rej_seen.add(low_text)
+        rejected.append({"Company": company, "Page": page,
+                         "Sentence": text, "Drop_Reason": reason})
 
     for page_idx, page_text in enumerate(pages, start=1):
         for sentence in split_sentences(page_text):
             s = clean(sentence)
             low = s.lower()
             if not (MIN_WORDS <= len(s.split()) <= MAX_WORDS):
-                drop("length"); continue       # fragment or legal blob
+                drop("length", page_idx, s, low); continue       # fragment or legal blob
             has_quantity = bool(QUANTITY_RE.search(s))
             if not is_claim(low, has_quantity):
-                drop("not_assertion"); continue  # no ESG topic + action/quantity
+                drop("not_assertion", page_idx, s, low); continue  # no ESG topic + action/quantity
             reason = non_claim_reason(s, low, has_quantity)
             if reason:
-                drop(reason); continue         # methodology / general / risk / nav...
+                drop(reason, page_idx, s, low); continue         # methodology / general / risk / nav...
             if low in seen:
-                drop("duplicate"); continue
+                drop("duplicate", page_idx, s, low); continue
             seen.add(low)
             ctype = classify_claim_type(low, has_quantity)
             ev = evidence_exists(low, has_quantity)
@@ -425,10 +434,11 @@ def extract_claims(pages: list[str], company: str = "", stats: dict | None = Non
     return rows
 
 
-def write_table(rows: list[dict], out_path: str) -> None:
+def write_table(rows: list[dict], out_path: str, fields: list[str] | None = None) -> None:
     """Write rows TAB-separated (TSV) -> paste straight into Google Sheets."""
-    fields = ["Company", "Page", "Claim_Text", "ESG_Type",
-              "Claim_Type", "Evidence_Exists", "Risk_Signal"]
+    if fields is None:
+        fields = ["Company", "Page", "Claim_Text", "ESG_Type",
+                  "Claim_Type", "Evidence_Exists", "Risk_Signal"]
     with open(out_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, delimiter="\t")
         w.writeheader()
@@ -458,9 +468,15 @@ def process_one(pdf_path: str, out_path: str, company: str = "") -> None:
     save_text_file(pages, txt_path)
 
     # Step 2: text -> classified claims -> TSV
+    # rejected collects every sentence a filter killed (with the reason), so we can
+    # audit false negatives: sample it, count missed claims, estimate true recall.
     stats: dict[str, int] = {}
-    rows = extract_claims(pages, company, stats)
+    rejected: list[dict] = []
+    rows = extract_claims(pages, company, stats, rejected)
     write_table(rows, tsv_path)
+    nonclaims_path = stem + "_nonclaims.tsv"
+    write_table(rejected, nonclaims_path,
+                fields=["Company", "Page", "Sentence", "Drop_Reason"])
 
     by_type: dict[str, int] = {}
     for r in rows:
@@ -473,6 +489,7 @@ def process_one(pdf_path: str, out_path: str, company: str = "") -> None:
     print(f"    filtered out: {dropped}")
     print(f"    text -> {txt_path}")
     print(f"    tsv  -> {tsv_path}")
+    print(f"    nonclaims -> {nonclaims_path}  ({len(rejected)} unique rejected sentences)")
 
 
 # Folders found relative to THIS file, so "Run" works no matter the cwd.
