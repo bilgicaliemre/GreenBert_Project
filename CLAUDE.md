@@ -17,17 +17,14 @@ Data/sections/        # later WP
 ```
 
 ## Current status
-- **Claim extraction (current focus) — `extract_claims.py`**: WORKS end-to-end. Deps installed (PyMuPDF, nltk).
-  PDF → text (+page #) → keyword+action claim filter → **TSV** (paste into Google Sheets).
-  Cols: Company, Page, Claim_Text, ESG_Type, Claim_Type, Evidence_Exists, Risk_Signal. ~388 claims on Unilever (typed E 374 / G 9 / S 5).
+- **Claim extraction — `extract_claims.py` v4**: WORKS end-to-end (PyMuPDF, nltk incl. POS tagger auto-download).
+  PDF → text (+page #) → gate + non-claim filters → `<name>_claims.tsv` + `<name>_nonclaims.tsv`.
+  Cols: Company, Page, Claim_Text, ESG_Type, Claim_Type, Evidence_Exists, Risk_Signal. Unilever 351 / Dr Pepper 158 claims.
 - **`pdf_to_chunks.py`** (BERT JSON chunker): built, NOT in use — reserved for the later ML stage.
-  We chose the "lighter route" (extract_claims.py) first, with the user.
-- **Validation (in progress)**: author + teacher INDEPENDENTLY label 40 claims (20 Dr Pepper + 20 Unilever)
-  on two manual columns — "real ESG claim?" and correct ESG type — to measure detection precision + E/S/G
-  typing accuracy and surface inconsistencies (human gold set; supports inter-annotator agreement). Possible
-  later step: Claude as a 3rd automated annotator (token budget permitting). See decision log #9.
-- Not started: BERT claim classification, quantitative-metric extraction, discrepancy → greenwashing
-  score + explanation, website.
+- **Validation**: 100-claim manual review of Unilever v3 done (67%); 416-row agent audit done
+  (`Data/claims/unilever_claims_audit.tsv`); teacher's v4 protocol in progress: fresh v4 precision review +
+  recall review of `Data/unilever_recall_sample_100.tsv`. See decision log #24 NOTES 1–10.
+- Not started: BERT claim classification (WP5), quantitative-metric extraction, discrepancy → score, website.
 
 ## extract_claims.py conventions (decided with user — don't re-litigate)
 - Engine is at **v4** (commit 94318c6). Gate = ESG TOPIC word (E ∪ S ∪ G vocab) + (ACTION verb OR hard quantity).
