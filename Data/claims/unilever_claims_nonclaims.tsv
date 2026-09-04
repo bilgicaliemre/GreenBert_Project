@@ -59,6 +59,7 @@ Unilever	3	Upstream and downstream value chain The scope of the sustainability s
 Unilever	3	Disclosures are limited to direct and indirect business relationships where information is readily available.	not_assertion
 Unilever	3	Unilever’s upstream value chain covers the procurement of raw materials and packaging for the manufacture and sale of our products.	not_assertion
 Unilever	3	Our global supply chain works with over 46,000 Tier 1 suppliers (those who invoice Unilever directly for goods and services) across more than 140 countries.	not_assertion
+Unilever	3	We also consider subcontractors of our Tier 1 suppliers and third parties where we outsource the manufacturing and packaging of products (collaborative manufacturing) in our upstream value chain.	methodology
 Unilever	3	Unilever’s downstream value chain encompasses logistics, distributors, retailers agents, franchisers and importers who help make our products available to the individuals and households who use our products.	not_assertion
 Unilever	3	Comparative information Unilever’s policy stipulates that metrics will be restated under certain circumstances, provided accurate and reliable data is available to allow for recalculation and where the impact is material.	not_assertion
 Unilever	3	This includes: ■Identification of errors due to incorrect data or miscalculation; ■Changes in reporting requirements; ■The availability of improved assumptions or more accurate data; or ■The recognition of a discontinued operation that has a disproportionate impact on the results of continuing operations.	not_assertion
@@ -86,16 +87,16 @@ Unilever	3	The Board is accountable for the management of all material IROs, and
 Unilever	3	This is explained in the Governance Report under the following sections: ■Composition, balance and independence of the Board, page 57; ■Board sustainability processes and skills, page 57; ■Skills and experience matrix, page 68; ■Gender representation of the Board and ULE, page 68; and ■Board independence, page 69.	length
 Unilever	3	Role of supervisory bodies The reporting lines between the Board, Board committees and ULE are detailed in Unilever’s governance structure on page 51.	navigation
 Unilever	3	The terms of reference for each Committee are set out in ’The Governance of Unilever’ document and published on our website at unilever.com.	boilerplate
-Unilever	3	Sustainability matters are delegated to the following Board subcommittees: ■The Corporate Responsibility Committee reviews Unilever’s sustainability strategy, tracks progress of the sustainability goals, and reviews the reputational impact of our material IROs.	governance_plumbing
+Unilever	3	Sustainability matters are delegated to the following Board subcommittees: ■The Corporate Responsibility Committee reviews Unilever’s sustainability strategy, tracks progress of the sustainability goals, and reviews the reputational impact of our material IROs.	governance_role
 Unilever	3	Updates are provided by the global Sustainability function five times a year.	not_assertion
-Unilever	3	■The Audit Committee reviews the effectiveness of our risk management processes, including the double materiality assessment, oversees non- financial disclosures in our Annual Report and Accounts (including under the ESRS), and reviews assurance activities obtained over the disclosures.	governance_plumbing
-Unilever	3	■The Remuneration Committee aligns Unilever’s long-term incentive plan (Performance Share Plan) with sustainability priorities to support delivery of the sustainability strategy.	governance_plumbing
-Unilever	3	■The Nominating and Corporate Governance Committee ensures that the Board includes members with relevant sustainability expertise.	governance_plumbing
+Unilever	3	■The Audit Committee reviews the effectiveness of our risk management processes, including the double materiality assessment, oversees non- financial disclosures in our Annual Report and Accounts (including under the ESRS), and reviews assurance activities obtained over the disclosures.	governance_role
+Unilever	3	■The Remuneration Committee aligns Unilever’s long-term incentive plan (Performance Share Plan) with sustainability priorities to support delivery of the sustainability strategy.	governance_role
+Unilever	3	■The Nominating and Corporate Governance Committee ensures that the Board includes members with relevant sustainability expertise.	governance_role
 Unilever	3	214 Unilever Annual Report and Accounts 2025 Sustainability Statement	not_assertion
 Unilever	4	Role of management bodies In 2024, the ULE approved our refocused sustainability strategy and set 15 external goals across four priority areas: climate, nature, plastics and livelihoods.	methodology
 Unilever	4	These priorities informed the identification of our material impacts, risks and opportunities (IROs), each managed by a ULE member with clear mitigation plans and timelines.	not_assertion
 Unilever	4	Unilever’s policies and standards define mandatory requirements that are key in mitigating these risks.	not_assertion
-Unilever	4	In 2025, we re-established an Executive-level Sustainability Steering Committee, which meets monthly to oversee relevant topics.	governance_plumbing
+Unilever	4	In 2025, we re-established an Executive-level Sustainability Steering Committee, which meets monthly to oversee relevant topics.	governance_role
 Unilever	4	This includes review of progress against the 15 goals and resolution of any delivery issues.	not_assertion
 Unilever	4	The ULE is also updated periodically on progress against goals, and the Business Group Presidents and function leads on the delivery against their specific targets.	not_assertion
 Unilever	4	Our global Sustainability function is led by our Chief Corporate Affairs and Communications Officer, supported by the Global Head of Sustainability, and is divided into three core areas: ■Dedicated Business Group Sustainability teams work closely with the relevant teams and leadership to embed sustainability IROs into their strategies.	length
@@ -104,11 +105,11 @@ Unilever	4	■A specialist Sustainability Corporate Centre team develops our sus
 Unilever	4	■Country Sustainability teams translate global strategy into local plans and work with partners to deliver shared priorities.	methodology
 Unilever	4	Supply Chain and Procurement functions play a key role in the delivery of our climate, nature and livelihood goals, working with the Business Groups to improve manufacturing operations, and collaborating with our upstream value chain.	general_statement
 Unilever	4	They manage impact measurement and maintain the systems and data for sustainability reporting.	methodology
-Unilever	4	Research & Development (R&D) support delivery of our plastics goals through new innovations.	methodology
+Unilever	4	Research & Development (R&D) support delivery of our plastics goals through new innovations.	broken_fragment
 Unilever	4	These functions, alongside Finance, also provide input to investment business cases, scoping and metric calculation.	not_assertion
-Unilever	4	We regularly engage investors on sustainability matters, including at our AGM and Capital Markets Day, and through calls with key investors.	governance_plumbing
-Unilever	4	Sustainability performance and incentives We continue to formally link remuneration for management employees, including the ULE, to performance against our sustainability goals.	governance_plumbing
-Unilever	4	The SPI is an assessment made jointly by the Corporate Responsibility Committee and the Remuneration Committee.	governance_plumbing
+Unilever	4	We regularly engage investors on sustainability matters, including at our AGM and Capital Markets Day, and through calls with key investors.	governance_role
+Unilever	4	Sustainability performance and incentives We continue to formally link remuneration for management employees, including the ULE, to performance against our sustainability goals.	governance_role
+Unilever	4	The SPI is an assessment made jointly by the Corporate Responsibility Committee and the Remuneration Committee.	governance_role
 Unilever	4	In 2025, we determined the SPI by considering performance against four sustainability targets related to climate, nature, plastics and livelihoods.	methodology
 Unilever	4	See page 97 for SPI outcomes for 2025 and page 99 for the SPI targets for the PSP 2026–2028.	not_assertion
 Unilever	4	The ULE and the Board discuss progress against these metrics quarterly.	not_assertion
@@ -130,10 +131,10 @@ Unilever	4	Key reporting risks include the completeness, accuracy and availabili
 Unilever	4	Oversight for the sustainability statement lies with the Group Controller, who is responsible for managing these risks.	not_assertion
 Unilever	4	For each ESRS topic reported, a ULE Sponsor is appointed along with designated Sustainability and Business owners for narrative and metric disclosures.	not_assertion
 Unilever	4	Metrics owners maintain the Basis of Preparation (BoP) for each metric, outlining key definitions, scope, data collection methods, calculation approaches, and underlying assumptions.	boilerplate
-Unilever	4	Narrative owners prepare the written disclosures, including policies, actions and targets.	governance_plumbing
+Unilever	4	Narrative owners prepare the written disclosures, including policies, actions and targets.	governance_role
 Unilever	4	All narratives and metrics are signed off by their respective owners and subject to management assurance to confirm that the ESRS requirements are met, claims are evidence-based, and metrics are consistent with BoPs.	not_assertion
-Unilever	4	The Audit Committee oversees ESRS reporting, reviewing the processes and controls underpinning its preparation.	governance_plumbing
-Unilever	4	The Disclosure Committee provides support by confirming the accuracy, materiality and timeliness of the sustainability statement, and evaluating the adequacy of Unilever’s disclosure processes and controls including those relating to the ESRS.	governance_plumbing
+Unilever	4	The Audit Committee oversees ESRS reporting, reviewing the processes and controls underpinning its preparation.	governance_role
+Unilever	4	The Disclosure Committee provides support by confirming the accuracy, materiality and timeliness of the sustainability statement, and evaluating the adequacy of Unilever’s disclosure processes and controls including those relating to the ESRS.	governance_role
 Unilever	4	Independent limited assurance is performed by KPMG.	not_assertion
 Unilever	4	In 2025, we have taken steps to strengthen our approach by documenting process models and control frameworks for selected metrics.	not_assertion
 Unilever	4	STRATEGY AND BUSINESS MODEL Our strategy and business model are set out in the Strategic Report on pages 2 to 5.	not_assertion
@@ -141,6 +142,7 @@ Unilever	4	We produce and sell consumer goods across our four Business Groups: B
 Unilever	4	In 2024, we launched our updated business strategy, sharpening our focus on resource allocation, accelerating long-term priorities and delivering systemic impact, supported by our Climate Transition Action Plan.	methodology
 Unilever	4	Building on this, we set four sustainability priority areas – climate, nature, plastics and livelihoods – underpinned by 15 near- and medium-term goals shaped by broad stakeholder engagement.	methodology
 Unilever	4	The Unilever Sustainability Advisory Council provides independent guidance, and progress against these goals is detailed in the relevant target sections.	navigation
+Unilever	4	Our sustainability strategy utilises our global value chain and fosters collaboration with stakeholders to achieve our objectives.	activity_report
 Unilever	4	The strategy is embedded into overall business performance, with each Business Group responsible for delivering the agreed actions and targets.	not_assertion
 Unilever	4	GENERAL INFORMATION Sustainability Statement Unilever Annual Report and Accounts 2025 215 1.	not_assertion
 Unilever	4	For segmental information, see Financial Statements – note 2 on page 136.	not_assertion
@@ -164,7 +166,7 @@ Unilever	5	Although Ice Cream was demerged, it remained part of the group for mo
 Unilever	5	Consequently, any potential impact of the demerger on the DMA is only expected to be relevant in 2026.	not_assertion
 Unilever	5	Based on our review of the DMA, two IROs relating to biodegradability and regulatory landscape changes have been removed.	not_assertion
 Unilever	5	In addition, our plastic pollution impact was updated to remove reference to microplastics.	not_assertion
-Unilever	5	The 2025 DMA output was reviewed and approved by the Audit Committee in October 2025.	governance_plumbing
+Unilever	5	The 2025 DMA output was reviewed and approved by the Audit Committee in October 2025.	governance_role
 Unilever	5	Double materiality assessment process In 2024, we followed a four-step process to identify our material IROs: Step 1: Identification of potentially relevant IROs.	not_assertion
 Unilever	5	Outputs from established engagement channels and previous risk assessments, complemented by targeted interviews and questionnaires with internal sustainability experts, were used to collate a comprehensive list of all potentially relevant IROs.	methodology
 Unilever	5	This approach ensured inclusion of perspectives from all key stakeholder groups, including affected communities.	not_assertion
@@ -179,7 +181,7 @@ Unilever	5	A quantitative threshold was applied to determine materiality.	not_as
 Unilever	5	For climate-related risks, we considered the results of our scenario analysis, as detailed on page 224.	not_assertion
 Unilever	5	The assessment also took into account our Principal Risks, set out on page 31, to support prioritisation of the risks and opportunities.	not_assertion
 Unilever	5	Step 4: Validation and disclosure requirement mapping.	not_assertion
-Unilever	5	The DMA output was validated with each sustainability expert, with oversight from the ULE sponsors, and approved by the Audit Committee.	governance_plumbing
+Unilever	5	The DMA output was validated with each sustainability expert, with oversight from the ULE sponsors, and approved by the Audit Committee.	governance_role
 Unilever	5	We evaluated our material IROs against the ESRS to identify which disclosure requirements apply.	not_assertion
 Unilever	5	IROs were assessed on a gross basis (assuming no mitigating action taken) at both a consolidated and Business Group level.	not_assertion
 Unilever	5	Where relevant, scoping information is included in IRO descriptions.	not_assertion
@@ -205,9 +207,9 @@ Unilever	7	POLICIES FOR MANAGING SUSTAINABILITY MATTERS Our Code of Business Pri
 Unilever	7	These policies set out the standards we expect all employees to follow globally.	not_assertion
 Unilever	7	They also play a key role in setting out how we ensure compliance with laws and regulations, protect our brands and reputation, and prevent harm to people or the environment.	general_statement
 Unilever	7	The COBP is underpinned by our values of integrity, respect, responsibility and pioneering.	not_assertion
-Unilever	7	The Board’s Corporate Responsibility Committee oversees Unilever’s conduct and reviews our COBP to ensure it remains fit for purpose.	governance_plumbing
+Unilever	7	The Board’s Corporate Responsibility Committee oversees Unilever’s conduct and reviews our COBP to ensure it remains fit for purpose.	governance_role
 Unilever	7	The COBP and Code Policies were refreshed in 2025 to make them easier for employees to engage with; these changes were implemented in early 2026.	not_assertion
-Unilever	7	Our CEO is responsible for the implementation of the COBP and Code Policies and is supported by the Global Code and Policy Committee, chaired by the Chief Legal Officer, and cross-functional Business Integrity Committees.	governance_plumbing
+Unilever	7	Our CEO is responsible for the implementation of the COBP and Code Policies and is supported by the Global Code and Policy Committee, chaired by the Chief Legal Officer, and cross-functional Business Integrity Committees.	governance_role
 Unilever	7	Day-to-day responsibility for implementing the COBP and Code Policies is delegated to senior management across our Business Groups and functions at global, regional and country levels.	not_assertion
 Unilever	7	We have set out the available reporting channels within our Code Policies and highlight these during Business Integrity training and in our communications.	not_assertion
 Unilever	7	This includes our non-retaliation policy, which applies to all employees who raise issues.	not_assertion
@@ -224,6 +226,7 @@ Unilever	8	We carried out targeted due diligence in 2025 at sites where we ident
 Unilever	8	■We updated our quantitative scenario analysis in 2025 to consider both our most material climate and nature risks and drivers, recognising their interconnectivity.	not_assertion
 Unilever	8	This included physical and transition risks likely to impact our business over the short, medium and long term, as well as plastic-packaging risks closely linked to nature and climate change.	risk_description
 Unilever	8	Through this analysis, we reviewed our exposure to these risks and the potential financial implications to our business.	not_assertion
+Unilever	8	■For water, we incorporated inputs from the World Resources Institute Aqueduct tool, an open-source platform that maps and analyses current and future water risks across various locations.	activity_report
 Unilever	8	This was supplemented by site-specific factors and localised water risks where identified.	not_assertion
 Unilever	8	For our upstream value chain, we used the Water Footprint Network Assessment tool, which integrates information from the Global Water Footprint Standard and WaterStat.	not_assertion
 Unilever	8	■When evaluating the environmental safety of our products, we conduct risk assessments on new ingredients before they are introduced to the market.	not_assertion
@@ -232,31 +235,39 @@ Unilever	8	■We have detailed our engagement with stakeholders, including affec
 Unilever	8	While consultations with affected communities regarding shared biological resources have not yet been completed as part of our risk assessments, we recognise the importance of this engagement and will incorporate it into future local assessments.	methodology
 Unilever	8	■We considered opportunities relating to environmental topics as part of our overall strategy and business model, including innovation and product assessments.	not_assertion
 Unilever	8	The output of our 2025 DMA is included below: Material impact, risk or opportunity Description Climate GHG emissions in our operations and value chain Negative Impact (OO) (VC) Our operations emit greenhouse gases (GHG) primarily from the generation of electricity and heat, and loss of refrigerants.	length
-Unilever	8	Changing climate and extreme weather events (physical risk) Risk (OO) (VC) Extreme weather and sustained increases in temperature could lead to water shortages, floods, droughts and reduced crop yields.	risk_description
+Unilever	8	Changing climate and extreme weather events (physical risk) Risk (OO) (VC) Extreme weather and sustained increases in temperature could lead to water shortages, floods, droughts and reduced crop yields.	iro_register
 Unilever	8	Extreme weather events are likely to disrupt our supply chain causing commodity delays, shortages and/or increased prices of raw materials.	not_assertion
 Unilever	8	In addition, customer and consumer demand could shift or erode from the resulting macroeconomic pressures linked to rising adaptation costs.	not_assertion
-Unilever	8	Land use pressure and regulation Risk (OO) (VC) Reforms to regulation and changing land use patterns could reduce land availability for the production of food and biomass/feedstock and reduce crop outputs leading to a potential increase in our raw material costs.	risk_description
-Unilever	8	Energy transition Risk (VC) Petrochemical prices are expected to rise across scenarios, largely driven by mandates for sustainable practices in policy-heavy transitions, and rising oil prices in higher-warming scenarios.	risk_description
+Unilever	8	Carbon pricing Risk (VC) Carbon pricing schemes that capture the external costs of GHG emissions via taxes, emissions trading schemes or other mechanisms could impact the price of raw materials, resulting in increased costs and a potential reduction in profit.	iro_register
+Unilever	8	Land use pressure and regulation Risk (OO) (VC) Reforms to regulation and changing land use patterns could reduce land availability for the production of food and biomass/feedstock and reduce crop outputs leading to a potential increase in our raw material costs.	iro_register
+Unilever	8	Energy transition Risk (VC) Petrochemical prices are expected to rise across scenarios, largely driven by mandates for sustainable practices in policy-heavy transitions, and rising oil prices in higher-warming scenarios.	iro_register
 Unilever	8	This risk affects our upstream value chain across all regions and impacts our ability to financially plan, forecast and manage our business performance.	not_assertion
+Unilever	8	Product regulations and claims: composition and sourcing transparency Risk (OO) New regulations may restrict how we source raw materials, leading to higher costs.	iro_register
 Unilever	8	Pressure to adopt sustainable supply chains could impact business performance, if not addressed promptly.	not_assertion
 Unilever	8	Pollution Pollution of air, soil and water (excluding plastic) Negative Impact (OO) (VC) Pollution (excluding plastic pollution) of air, soil and water caused by our own operations and value chain has the potential for negative impacts.	not_assertion
 Unilever	8	Localised pollution from our own operations and pollution in the upstream value chain, which can occur from the use of agrichemicals, may negatively impact communities and catchments.	not_assertion
 Unilever	8	Water Water shortages in areas of high water stress Negative Impact (OO) (VC) Water withdrawal from our own operations and upstream value chain – such as agricultural commodities – could result in water shortages, specifically in areas of high water stress.	not_assertion
-Unilever	8	Reducing product demand due to changes in water access (transition risk) Risk (VC) Reduced availability of water may reduce consumer demand for products that require high water usage, especially in areas of high water stress.	risk_description
+Unilever	8	Reducing product demand due to changes in water access (transition risk) Risk (VC) Reduced availability of water may reduce consumer demand for products that require high water usage, especially in areas of high water stress.	iro_register
 Unilever	8	This may conversely create new revenue opportunities for products requiring less or no water.	not_assertion
 Unilever	8	Sustainability Statement Unilever Annual Report and Accounts 2025 219 OO Own Operations VC Value Chain ▲ Entity-Specific Disclosure	not_assertion
+Unilever	9	Biodiversity and Ecosystems Ecosystem degradation and ecosystem service failures Negative Impact (VC) Unilever relies on agriculture for sourcing raw materials that can have a negative impact on terrestrial and aquatic ecosystems.	iro_register
 Unilever	9	These impacts include damage to biodiversity and other ecosystem services such as water quality and availability and soil health; in extreme cases, it can also lead to ecosystem collapse (localised or in multiple locations).	not_assertion
 Unilever	9	Agricultural expansion and other biomass production can lead to deforestation and land conversion that can cause biodiversity loss, disrupt communities and contribute to the drivers of climate change.	not_assertion
+Unilever	9	Ecosystem degradation leads to reduction of crop yields in key sourcing locations Risk (VC) Intensive agriculture, deforestation, land conversion and climate change lead to ecosystem degradation and loss of ecosystem services such as soil health, water availability (too much or too little) and pollinating insects.	iro_register
 Unilever	9	These ecosystem impacts lead to reduced crop yields in key sourcing locations.	not_assertion
+Unilever	9	This may lead to an increased risk to continuity of supply, farmer livelihoods and hence cost of goods.	risk_description
 Unilever	9	Systemic risk of biodiversity collapse (systemic risk) Risk (VC) Unilever is exposed to systemic risks from biodiversity loss and ecosystem degradation.	not_assertion
 Unilever	9	Disruptions to natural resources can lead to supply chain interruptions and higher production costs.	not_assertion
 Unilever	9	Severe disruptions could trigger market shocks, such as commodity or industry collapse.	not_assertion
-Unilever	9	Increased activism, legal or non- compliance costs resulting from biodiversity degradation and loss Risk (OO) (VC) Our actions or those of actors in our value chain that can cause harm to biodiversity and ecosystems, could lead to increased public scrutiny, legal claims or non-compliance incidents.	risk_description
+Unilever	9	Increased activism, legal or non- compliance costs resulting from biodiversity degradation and loss Risk (OO) (VC) Our actions or those of actors in our value chain that can cause harm to biodiversity and ecosystems, could lead to increased public scrutiny, legal claims or non-compliance incidents.	iro_register
 Unilever	9	This could result in penalties, potential loss of market share and negatively impact long-term profitability through reputational harm and loss of stakeholder trust.	not_assertion
+Unilever	9	Resource Use and Circular Economy Plastic pollution Negative Impact (OO) (VC) The use of plastics in our packaging could cause harm to biodiversity and ecosystems.	iro_register
 Unilever	9	This includes impacts from the production of virgin plastic packaging derived from fossil fuels and from the improper disposal of plastic packaging downstream which can result in leakage to the environment.	not_assertion
 Unilever	9	Hazardous waste Negative Impact (OO) Hazardous waste resulting from the manufacture, transport, use or disposal of our products may not be properly handled or disposed of.	not_assertion
 Unilever	9	This could lead to environmental contamination, public health issues and regulatory non-compliances.	not_assertion
+Unilever	9	Extended producer responsibility (EPR) schemes for packaging and other plastic-related taxes ▲ Risk (OO) EPR schemes can help to improve recycling systems by ensuring that money is invested into waste management and packaging innovation and holding businesses to account for the packaging choices they make.	iro_register
 Unilever	9	Compliance with EPR schemes could lead to higher expenses for waste management and packaging redesign.	not_assertion
+Unilever	9	There is also a risk that bans and/or taxes are applied to certain types of plastic packaging and single-use plastics reducing market access or requiring increased investment in new packaging.	risk_description
 Unilever	9	ENVIRONMENTAL DISCLOSURES 220 Unilever Annual Report and Accounts 2025 Sustainability Statement OO Own Operations VC Value Chain ▲ Entity-Specific Disclosure	not_assertion
 Unilever	10	ENVIRONMENTAL POLICIES As set out in our General Information section on page 218, Unilever’s Code of Business Principles (COBP) and Code Policies cover our material sustainability matters.	not_assertion
 Unilever	10	The material IROs relating to environmental matters, including Climate, Pollution, Water, Biodiversity and Ecosystems, and Resource Use and Circular Economy are managed through several additional policies, as set out below.	methodology
@@ -264,9 +275,14 @@ Unilever	10	Given the maturity of our sustainability agenda, these policies were
 Unilever	10	We began a comprehensive review of our Sustainability and Human Rights policy framework in 2025, with any required policy revisions planned for implementation in 2026.	not_assertion
 Unilever	10	Own Operations Unilever’s Environmental Policy was updated in 2025 to align with our long-term sustainability priorities and ensure governance of environmental issues.	not_assertion
 Unilever	10	The policy applies to our own operations, and we encourage partners in our value chain to apply the same requirements.	not_assertion
-Unilever	10	This policy commits Unilever to: ■Ensure the Board and Unilever Leadership Executive are accountable for implementing the Environmental Policy, overseeing our environmental strategy and managing key environmental impacts, risks and opportunities, including the effectiveness of our risk management and internal control systems.	governance_plumbing
+Unilever	10	This policy commits Unilever to: ■Ensure the Board and Unilever Leadership Executive are accountable for implementing the Environmental Policy, overseeing our environmental strategy and managing key environmental impacts, risks and opportunities, including the effectiveness of our risk management and internal control systems.	governance_role
 Unilever	10	■Comply with relevant environmental legislation and internal Unilever standards in our operations.	not_assertion
+Unilever	10	■Continuously enhance our environmental management systems and processes to improve performance, setting internal targets and public goals with clear metrics.	policy_content
 Unilever	10	■Report all incidents and near misses according to reporting requirements, including thorough investigation, follow-up and communication of lessons learned.	not_assertion
+Unilever	10	■Monitor and report transparently on our annual progress against public goals.	broken_fragment
+Unilever	10	■Engage employees on environmental issues, goals, plans and metrics.	broken_fragment
+Unilever	10	■Ensure those responsible for this policy and our environmental goals have the necessary skills and competencies to lead and support our agenda.	policy_content
+Unilever	10	■Collaborate with others to promote environmental care, increase understanding of environmental issues and share best practices.	policy_content
 Unilever	10	■Monitor and respond to external issues and public concerns related to the environment.	not_assertion
 Unilever	10	Unilever’s Environmental Care Framework Standards (ECFWS) apply to all our operations and mandate that the Environmental Policy is implemented at all Unilever sites.	not_assertion
 Unilever	10	The ECFWS requires sites to identify potential serious environmental incidents or emergencies and establish comprehensive plans to prevent or mitigate their likely consequences.	not_assertion
@@ -275,22 +291,31 @@ Unilever	10	Value Chain Unilever’s Responsible Partner Policy (RPP) applies to
 Unilever	10	It also includes expectations for suppliers to cascade equivalent requirements within their own supply chains.	not_assertion
 Unilever	10	It sets out the mandatory requirements suppliers must meet and the mandatory management systems we expect them to have in place to identify and manage significant environmental risks.	not_assertion
 Unilever	10	Specifically, the principles and requirements relating to our material Environmental IROs are: ■Greenhouse gas (GHG) emissions: Reduce GHG emissions in line with the goal of the Paris Agreement to limit global warming to well below 2°C compared to pre-industrial levels.	methodology
+Unilever	10	■Water consumption and management: Reduce water usage, especially in areas of high water stress, and manage wastewater discharge (pollution of water) appropriately.	policy_content
 Unilever	10	This includes complying with water-related laws and permits.	not_assertion
+Unilever	10	■Nature protection: Conduct business in a way that protects, preserves and regenerates nature (including biodiversity), and ensures no deforestation or conversion occurs.	policy_content
 Unilever	10	This includes ensuring suppliers provide deforestation- and conversion-free materials.	not_assertion
+Unilever	10	■Plastic use and waste: Reduce plastic use and waste to help create a transparent and circular economy for plastics.	policy_content
+Unilever	10	■Waste generation: Reduce waste generation and ensure waste is stored, handled, transported and disposed of in a manner that protects health, safety and the environment.	policy_content
 Unilever	10	We verify alignment to and achievement of our RPP’s mandatory requirements and mandatory management systems through self- declarations at registration, annual re-registration to our systems, routine due diligence and risk-based audits.	methodology
 Unilever	10	Unilever’s People & Nature Policy is a cross-commodity policy supported by guidelines that set out our requirements to Direct Suppliers of In-Scope Materials.	not_assertion
 Unilever	10	We seek to implement and independently verify the policy requirements over time with all our suppliers.	not_assertion
+Unilever	10	Unilever Sustainable Agricultural Principles (SAPs) are a collection of good practices designed to codify important aspects of sustainability in farming, plantation and supply chain management, with the goal to positively transform agricultural practices for people, nature and climate.	policy_content
 Unilever	10	They are made up of six core principles, which set out that the benchmarked standards should: ■Promote agricultural and business practices that ensure integrity and accountability in a way that is transparent and traceable.	not_assertion
+Unilever	10	■Contribute to an agricultural supply chain that maintains and regenerates soil health, supports appropriate land use, conserves and regenerates natural resources (including water resources), reduces waste and pollution, and avoids the introduction of invasive species.	policy_content
+Unilever	10	■Encourage agricultural practices that minimise greenhouse gases, improve energy efficiency and accelerate decarbonisation across the agricultural supply chain, while building climate resilience and adaptation.	policy_content
 Unilever	10	■Cover the respect and advancement of required human rights principles and ensure that these are implemented in line with the UN Guiding Principles on Business and Human Rights.	not_assertion
 Unilever	10	■Safeguard the welfare of all livestock, including good animal husbandry practices that adhere to appropriate guidelines on animal housing, feeding, health and breeding.	not_assertion
+Unilever	10	■Promote an agricultural supply chain with suppliers and farmers who are committed to continuous improvement to advance sustainable agricultural practices within the sector.	policy_content
 Unilever	10	We use the SAPs to benchmark external third-party certification schemes and standards.	not_assertion
 Unilever	10	Our ULE governs the Unilever Environmental Policy and Environmental Care Framework Standards.	not_assertion
 Unilever	10	The Chief Supply Chain Officer governs the Responsible Partner Policy, People & Nature Policy and Sustainable Agricultural Principles.	not_assertion
 Unilever	10	Our policies underpin our approach to sustainable business.	not_assertion
 Unilever	10	We make key Unilever policies (including the Unilever Environmental Policy, RPP and SAP) publicly available on our website to ensure that we are transparent in our approach, providing access to all our stakeholders.	not_assertion
 Unilever	10	ENVIRONMENTAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 221	not_assertion
-Unilever	11	Climate GOVERNANCE Sustainability performance and incentives We continue to formally link remuneration for management employees, including the ULE, to performance against our sustainability goals.	governance_plumbing
+Unilever	11	Climate GOVERNANCE Sustainability performance and incentives We continue to formally link remuneration for management employees, including the ULE, to performance against our sustainability goals.	governance_role
 Unilever	11	We have outlined the details of this in the General Information section on page 215 and the Directors’ Remuneration Report on pages 97 and 99.	not_assertion
+Unilever	11	Within this framework, progress against our climate goal in 2025 is measured on the reduction of our scope 1 and 2 greenhouse gas (GHG) emissions.	methodology
 Unilever	11	These actions are integrated into the annual three-year strategic planning cycle of each Business Group.	not_assertion
 Unilever	11	It was first validated in 2017 by the Science Based Targets initiative (SBTi) as compatible with a 1.5°C pathway in line with the Paris Agreement.	not_assertion
 Unilever	11	We regularly review our approach with SBTi.	not_assertion
@@ -302,9 +327,13 @@ Unilever	12	Logistics Improving efficiency Redesigning our network, increasing u
 Unilever	12	Aerosol propellants Developing alternatives Using less GHG-intensive propellants.	not_assertion
 Unilever	12	(a) To be updated post the demerger of the Ice Cream business.	not_assertion
 Unilever	12	Climate adaptation actions Some of our mitigation actions described above include an element of adaptation, which is helping our business respond to the current and expected physical impacts of climate change.	not_assertion
+Unilever	12	Examples include programmes to end deforestation and scale up regenerative agriculture, which can help communities adapt to climate change and increase the resilience of our supply chains through healthier soils, which are better able to cope with more extreme weather patterns.	activity_report
 Unilever	12	We are taking some other, more specific, adaptation actions outside of our CTAP.	not_assertion
 Unilever	12	Examples include: ■Flexible production between manufacturing sites.	not_assertion
 Unilever	12	■Water stewardship programmes in water-stressed sites.	not_assertion
+Unilever	12	■Ensure carbon is priced at levels necessary for the delivery of the Paris Agreement goals.	policy_content
+Unilever	12	■Support forest protection and nature restoration.	broken_fragment
+Unilever	12	■Encourage evolution of GHG Protocol standards to incentivise faster emissions reduction actions in value chains.	policy_content
 Unilever	12	Our full CTAP is published on our website at unilever.com.	not_assertion
 Unilever	12	See page 227 for details of the progress made in implementing our CTAP in 2025 and page 247 for our EU Taxonomy disclosures.	not_assertion
 Unilever	12	ENVIRONMENTAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 223	not_assertion
@@ -319,20 +348,26 @@ Unilever	13	We used credible and available pathways and data sources to quantify
 Unilever	13	In line with leading practice, we conducted scenario analyses to assess and understand the resilience of our strategy and business model under a range of possible futures.	not_assertion
 Unilever	13	These scenarios align with the Shared Socioeconomic Pathways (SSPs) as defined in the Intergovernmental Panel on Climate Change (IPCC’s) Sixth Assessment report.	not_assertion
 Unilever	13	We selected climate scenarios based on their relevance, usefulness and data availability, and included a <2°C-aligned pathway (SSP1-2.6), <3°C-aligned pathway (SSP2-4.5) and >4°C-aligned pathway (SSP5-8.5).	not_assertion
+Unilever	13	The selected nature scenarios align with the climate scenarios based on their temperature goals and policy ambitions.	risk_description
 Unilever	13	Last year, we disclosed results against a specific 1.5°C-aligned pathway.	not_assertion
 Unilever	13	This year, we have disclosed a <2°C scenario based on updated research, such as the United Nations Environment Programme (UNEP) Emissions Gap Report 2025: ■For our transition risks, our models reference external scenario datasets with the most stringent emissions pathways aligned with a 1.5°C scenario, such as the Network for Greening the Financial System (NGFS) ‘Net Zero 2050’ and International Energy Agencies (IEA) ‘Net Zero Emissions by 2050’ scenarios.	length
 Unilever	13	■For our modelled physical risks, there is less data availability for SSP1-1.9 so we have used SSP1-2.6 as a suitable proxy given that the ‘very likely range‘ of temperatures for this pathway is 1.3-2.4°C.	not_assertion
 Unilever	13	We will revisit this decision in the future once sufficient data becomes available for SSP1-1.9 to allow for detailed financial risk modelling.	not_assertion
 Unilever	13	The table below outlines a brief description of each scenario.	not_assertion
 Unilever	13	Topic Scenario Scenario Description Climate <2°C (SSP1-2.6) Global temperatures increase until approximately 2070 before decreasing to remain below 2°C by 2100, in line with the Paris Agreement of limiting warming to below 2°C.	reference_dense
+Unilever	13	Net zero CO2e achieved by approximately 2070.	risk_description
 Unilever	13	<3°C (SSP2-4.5) Global temperatures increase but are limited to less than 3°C by 2100.	not_assertion
 Unilever	13	Global development and climate action progress unevenly; some sustainability measures are adopted, but fossil fuel use continues and mitigation efforts are moderate.	not_assertion
+Unilever	13	Net zero is not reached by 2100, although CO2e levels decline from approximately 2040.	risk_description
 Unilever	13	>4°C (SSP5-8.5) Global temperatures continue to increase and exceed 4°C by 2100.	not_assertion
 Unilever	13	There is no globally coordinated climate policy and irreversible tipping points are at increasing risk of being crossed.	risk_description
 Unilever	13	CO2e levels continue to rise throughout the 21st century.	not_assertion
 Unilever	13	Nature High Nature Preservation Aligned with the Taskforce on Nature-related Financial Disclosures (TNFD) ‘Ahead of the Game’ scenario and utilising the Food and Agriculture Organization (FAO) ‘Towards Sustainability’ data, this scenario focuses on high transition risks and the implications of a resilient economy transitioning to a world with lower ecosystem degradation.	length
+Unilever	13	It assumes strong COP15-aligned policies and coordinated global climate efforts limiting warming to well below 2°C, reducing biodiversity loss and ecosystem degradation.	risk_description
+Unilever	13	Delayed Nature Action Utilising FAO ‘Stratified Societies’ data, this scenario assumes acute disruptions to ecosystem services, such as water scarcity, pollination collapse or soil degradation, which results in impacts to operations, supply chains and resource availability.	risk_description
 Unilever	13	This triggers rapid and coordinated responses from governments, markets and civil society, including urgent policy shifts, consumer behaviour changes and financial reallocation toward nature-positive solutions.	not_assertion
 Unilever	13	High Nature Degradation Aligned with the TNFD ‘Sand in the Gears’ scenario and utilising FAO ‘Business as Usual’ data, this scenario assesses business resilience to high ecosystem service degradation and the physical and systemic risks associated with continued environmental decline.	not_assertion
+Unilever	13	It assumes fragmented global efforts and insufficient climate policies drive temperatures above 2°C by 2050, worsening biodiversity loss and environmental decline, and escalating risks for businesses and communities.	risk_description
 Unilever	13	The scenario analysis considered how climate- and nature-related risks would impact our business over the following time horizons: ■Near term: 2025–2030.	not_assertion
 Unilever	13	Aligns with our three-year strategic plans and captures near-term operational risks and policy changes.	not_assertion
 Unilever	13	Additionally, this time period reflects several of our targets, such as those pertaining to scope 3 emissions and plastics (see pages 229 and 243).	navigation
@@ -406,8 +441,9 @@ Unilever	15	Hedging against commodity price rises: We forward-buy traded commodi
 Unilever	15	The Global Commodities team monitors market insights and risks for all key commodities on an ongoing basis to develop hedging proposals.	not_assertion
 Unilever	15	Transition risks are also expected to impact our business.	not_assertion
 Unilever	15	Earlier or more comprehensive implementation of global carbon pricing, evolving sustainable supply chain regulations (e.g.	not_assertion
-Unilever	15	EUDR or CSDDD), and broadening of EPR schemes and plastic usage taxes could increase costs.	risk_description
+Unilever	15	EUDR or CSDDD), and broadening of EPR schemes and plastic usage taxes could increase costs.	broken_fragment
 Unilever	15	Advocacy: While the potential financial effects of carbon prices in the 2°C scenario may be significant to our business, the <3°C and >4°C scenarios would pose profound challenges to global economic stability and thus even greater uncertainty for our business.	not_assertion
+Unilever	15	Our wider climate advocacy is both critical to supporting the achievement of our climate targets and to driving systemic global initiatives to reduce the likelihood of the more extreme scenarios and their impacts.	risk_description
 Unilever	15	See page 243 for details on our approach to reducing plastic-related regulatory risks.	navigation
 Unilever	15	ENVIRONMENTAL DISCLOSURES 226 Unilever Annual Report and Accounts 2025 Sustainability Statement	not_assertion
 Unilever	16	IMPACT, RISK AND OPPORTUNITY MANAGEMENT Policies Unilever’s climate policies, which include policies related to our own operations and our value chain, are disclosed in our Environmental policies section on page 221.	not_assertion
@@ -468,6 +504,7 @@ Unilever	17	Our report, Bold Plans, Real Impact, published in 2025, reinforces U
 Unilever	17	Additionally, we showcased our renewable energy deployment in markets, including a major solar electricity deal supporting suppliers in India, facilitated by government incentives.	not_assertion
 Unilever	17	■GHG measurement and target setting standards: In 2025, we participated in the consultation and pilot testing process for the Science Based Targets initiative’s Corporate Net Zero Standard Version 2 and contributed to the development of Conservation International’s Principles for High-Integrity Insetting in the Land Sector.	activity_report
 Unilever	17	At the event, a new report from Trinomics, Circular Carbon Feedstocks for Sustainable Carbon-based Chemicals, was presented, outlining six guiding principles for safeguarding the environmental sustainability of renewable and recycled feedstocks (RRC) for carbon- based chemicals.	not_assertion
+Unilever	17	We continued to engage with the Indian government, chairing the Material Transition Working Group of the Resource Efficiency and Circular Economy Industry Coalition (RECEIC).	activity_report
 Unilever	17	In March 2025, RECEIC released a white paper highlighting areas requiring cross- industry co-operation to accelerate the transition.	not_assertion
 Unilever	17	At the global level, we facilitated government participation in the Clean Energy Ministerial’s Biofuture Platform.	not_assertion
 Unilever	17	Trade associations and industry partnerships In 2025, we released an updated Climate Policy Engagement Review.	not_assertion
@@ -482,6 +519,7 @@ Unilever	18	No adjustments to targets or baseline values were made for the demer
 Unilever	18	The table below sets out our baseline emissions, the scope of our baseline emissions covered for each target and the absolute 2030 GHG emissions target value.	navigation
 Unilever	18	Climate targets (million tonnes CO2e) Baseline year Total baseline emissions in scope of 2039 net zero ambition Emissions in scope of 2030 target % Baseline emissions in scope of 2030 target 2030 target % reduction 2030 target absolute reduction Scope 1 and 2 2015 2.1 95.6%(a) 2.0 100.0% 2.0 Scope 3 E&I 2021 45.1 69.6%(b) 31.4 42.0% 13.2 Scope 3 FLAG 2021 10.2 81.9%(b) 8.4 30.3% 2.5 Total Scope 3 2021 55.3 71.8% 39.8 39.5% 15.7 (a) Exceeds minimum coverage required by SBTi of 95%.	length
 Unilever	18	(b) Exceeds minimum coverage required by SBTi of 67%.	not_assertion
+Unilever	18	To meet our targets, our actions must deliver the planned reduction in our baseline emissions as well as a 100% reduction in additional emissions from product volume growth between the baseline year and 2030.	methodology
 Unilever	18	We have identified a scaling and innovation gap which underscores the need to continually search for new solutions and ways to scale existing ones faster than is currently possible.	not_assertion
 Unilever	18	The table below shows the contribution of our identified decarbonisation levers towards reducing our scope 3 baseline emissions and our forecasted scope 3 GHG emissions from volume growth in the period to 2030, as modelled in our 2024 Climate Transition Action Plan (CTAP), i.e.	navigation
 Unilever	18	including Ice Cream.	length
@@ -616,6 +654,7 @@ Unilever	23	Allocation to Ice Cream: Refer to Energy consumption and mix metrics
 Unilever	23	Both energy consumption and turnover values relate to activities in high impact sectors only.	not_assertion
 Unilever	23	Energy intensity per net revenue (MWh/€ million) 2025 2024(a) Unilever energy intensity 103 107 Ice Cream Energy intensity per net revenue (MWh/€ million) Ice Cream energy intensity 160 — (a) 2024 measured including Ice Cream.	not_assertion
 Unilever	23	Analysis of renewable and non-renewable electricity in our operations Renewable electricity (% of MWh) 2025 2024(a) On-site renewable self-generation 3% 2% Purchased renewable electricity 85% 83% On-site Purchase Power Agreements 1% 0% Off-site Purchase Power Agreements 13% 9% Green energy products from an energy supplier (green tariffs/bundled RECs) 8% 14% Green energy purchased in markets with greater than 95% renewable grid 0% 0% Unbundled RECs bought in market 63% 60% Total Unilever renewable electricity 88% 85% Non-renewable electricity (% of MWh) On-site non-renewable electricity generation (e.g.	length
+Unilever	23	gas-fired on-site CHP) 10% 8% Purchased non-renewable electricity (e.g.	broken_fragment
 Unilever	23	non-grid transfer of CHP) 1% 5% Unbundled RECs bought in an adjacent market 1% 2% Total Unilever non-renewable electricity 12% 15% Ice Cream (% of MWh) Total renewable electricity 96% — Total non-renewable electricity 4% — (a) 2024 measured including Ice Cream.	reference_dense
 Unilever	23	We are not yet accounting for removals within our value chain that may arise from the regenerative agriculture programmes referenced on page 227.	not_assertion
 Unilever	23	We have taken this conservative approach due to the absence of clear measurement and accounting guidance, recognising that the Land Sector and Removals Standard (LSRS) has only recently been published and that accompanying guidance is expected later in 2026.	not_assertion
@@ -722,6 +761,7 @@ Unilever	27	This is measured using invoices and/or meter readings.	not_assertion
 Unilever	27	These include sites where the weighted aggregate total water risk is classified as ’high’ or ’extremely high’, as well as sites with high or extremely high baseline water stress, or, by exception, sites may be identified based on Unilever’s additional review of site-specific factors and localised water risks to complement the WRI data and ratings.	length
 Unilever	27	Water intensity is calculated as total water consumption in m3 divided by turnover in € million.	not_assertion
 Unilever	27	Total turnover equates to net revenue.	not_assertion
+Unilever	27	Water recycled and reused is measured via meter readings (78%) or through a water mass balance (22%) at all manufacturing sites and the majority of logistics and other sites.	methodology
 Unilever	27	Where data is unavailable, the amount of water recycled and reused is assumed to be zero, given the non-manufacturing nature of operations at these sites.	not_assertion
 Unilever	27	For all manufacturing sites and the majority of logistics sites with water storage capacity, the stored water is recorded as the maximum capacity of the storage facilities.	not_assertion
 Unilever	27	Where data is unavailable, water stored is assumed to be zero, given the non-manufacturing nature of operations at such sites.	not_assertion
@@ -736,6 +776,7 @@ Unilever	28	Impacts on desertification and soil sealing were not assessed within
 Unilever	28	No biodiversity- or ecosystem-related opportunities were identified during the DMA process.	not_assertion
 Unilever	28	Impacts and risks in our own operations Our DMA concluded that our own operations, covering more than 600 sites globally, do not collectively have a material impact on nature.	not_assertion
 Unilever	28	At a local level, we have identified 10 sites (2024: 16 sites restated from 22) that operate within or near biodiversity-sensitive areas, where Unilever may contribute to negative effects on biodiversity.	not_assertion
+Unilever	28	To reach this conclusion, we identified sites within a 1km radius of biodiversity-sensitive areas to capture Unilever’s likely direct and indirect impacts and allow for comparability across our sites.	methodology
 Unilever	28	Each site was assessed using two indicators: ■The Biodiversity Intactness Index (BII); and ■Water stress assessment according to the WRI Aqueduct Tool, supplemented with Unilever’s localised water stress assessments.	not_assertion
 Unilever	28	We selected these indicators due to their global scope, their relevance to our operations and recognition by frameworks such as the Taskforce on Nature-related Financial Disclosures (TNFD).	not_assertion
 Unilever	28	We then engaged with sites to understand the local environment, our activities, and current land and environmental classifications.	not_assertion
@@ -753,6 +794,7 @@ Unilever	28	We recognise the loss of biodiversity within these systems as a prin
 Unilever	28	Protecting these ecosystems is important to ensure the resilience of our business and the communities where we operate.	general_statement
 Unilever	28	To help inform the development of our strategy, we reviewed climate and nature risks across our business model and value chain.	not_assertion
 Unilever	28	This included physical and transition risks relating to ecosystem change and degradation/biodiversity loss, which we modelled quantitatively for the first time in 2025.	risk_description
+Unilever	28	The selected nature scenarios align with our climate scenarios based on their temperature goals and policy ambitions.	methodology
 Unilever	28	The approach and associated outcomes are summarised within our Climate disclosures on pages 224 to 235.	not_assertion
 Unilever	28	Resilience of our strategy and business model to biodiversity loss and ecosystem degradation Biodiversity underpins the resilience and productivity of the natural systems we depend on for raw materials.	not_assertion
 Unilever	28	Physical nature risks are expected to impact us and our supply chain in all scenarios.	not_assertion
@@ -798,6 +840,7 @@ Unilever	29	The initiative serves as a model for collective advocacy in other pr
 Unilever	29	This included wider calls for alignment between national climate and nature agendas, and greater focus on nature-based solutions that support decarbonisation efforts while offering potential benefits for livelihoods and wider landscapes.	not_assertion
 Unilever	29	ENVIRONMENTAL DISCLOSURES 240 Unilever Annual Report and Accounts 2025 Sustainability Statement	not_assertion
 Unilever	30	METRICS AND TARGETS Targets We have set targets to reduce our impacts on and risks associated with biodiversity and ecosystems, and to help protect, restore and regenerate nature in locations where we have a material impact.	risk_description
+Unilever	30	Our sustainable sourcing and regenerative agriculture targets aim to address the impact of ecosystem degradation, potential crop yield reduction, and biodiversity loss or collapse within our value chain.	risk_description
 Unilever	30	We set targets for both our regenerative agriculture and protect and restore programmes based on exposure to land and our key crops sourcing footprint, which we estimate at 4 million hectares.	not_assertion
 Unilever	30	By 2030, our regenerative agriculture programme aims to cover approximately 25% of the land required to grow the agricultural raw materials associated with our key crops for Unilever’s products.	not_assertion
 Unilever	30	Our protect and restore target, which focuses on ecosystems within and around our key crops sourcing footprint, also aims to cover approximately 25% of our land footprint.	not_assertion
@@ -813,6 +856,7 @@ Unilever	30	A programme is considered operational if at least one activity has c
 Unilever	30	95% volume of key crops to be verified as sustainably sourced by 2030 Key crops include cereals and starches, cocoa, coconut oil, dairy, palm oil, paper and board, rapeseed oil, soy oil, sugar, tea, vanilla and vegetables, and account for over 77% of our agricultural sourcing by volume (excluding Ice Cream).	length
 Unilever	30	Sustainable sources are defined as raw materials that are either produced according to third-party certification and aligned with Unilever’s Sustainable Agricultural Principles or purchased from non-sustainable sources but matched with credits representing verified sustainably sourced raw materials.	methodology
 Unilever	30	Exclusions: Crops purchased by third parties; crops used in agricultural production of other purchased materials; or crops included in the manufacturing process of purchased materials; and where the volume is <1,150 tonnes.	not_assertion
+Unilever	30	Maintain no deforestation across our primary deforestation-linked commodities Performance is measured as the percentage of volumes purchased of palm oil, paper and board, tea, soy and cocoa that meet Unilever’s deforestation-free requirements in the period from 1 January to 31 December 2025.	methodology
 Unilever	30	Materials are determined to be deforestation-free through one of the following means: ■An independent third-party certification body has provided confirmation to Unilever that the supplier meets the requirements of the Unilever Deforestation-Free Verification protocols; ■The supplier has received a third-party certification from one of a list of approved certification bodies that meet Unilever’s deforestation-free requirements; ■The materials come from locations or countries considered to have negligible risk of recent deforestation as per the Negligible Risk Protocol; or ■The materials are in compliance with the European Union Regulation on Deforestation-Free Products (EUDR).	length
 Unilever	30	Exclusions: Materials purchased by third-party companies supplying finished products for Unilever; materials purchased for collaborative manufacturing; materials included as an ingredient or in the process of purchased materials; or materials produced with multiple interchangeable feedstocks; small volume materials for palm oil; and small volume suppliers where aggregated volumes are <5% of total purchased volumes.	length
 Unilever	30	Allocation to Ice Cream Implement regenerative agriculture practices: Programmes funded by or associated to an Ice Cream brand.	not_assertion
@@ -862,6 +906,7 @@ Unilever	32	The table below demonstrates how these policies address our material
 Unilever	32	Plastic pollution Hazardous waste EPR schemes / plastic-related taxes Environmental Policy ■ ■ ■ Environmental Care Framework Standard ■ ■ Responsible Partner Policy ■ ■ Our approach to plastic packaging is embedded in our overall business strategy and product innovation cycles.	methodology
 Unilever	32	Unilever’s policies regarding the sustainable sourcing of raw materials are detailed in our Biodiversity and Ecosystems section on page 239.	navigation
 Unilever	32	Actions Plastic pollution, extended producer responsibility (EPR) schemes and other plastic-related taxes Our ‘reduce, circulate, collaborate’ strategy focuses on reducing virgin plastic, scaling collection and processing systems that help keep plastic in circulation and out of nature, and working with industry partners and policymakers to accelerate our impact.	length
+Unilever	32	We delivered this through close collaboration with our network of PCR suppliers and our Business Groups to increase PCR levels.	activity_report
 Unilever	32	In 2025, we purchased more than 152 kilotonnes of recycled plastic in our packaging as part of these and other initiatives.	not_assertion
 Unilever	32	Scaling alternative packaging formats and materials have also contributed to reducing our virgin plastic footprint and will continue to play an important role as we work towards further reductions.	general_statement
 Unilever	32	In 2025, we collected and processed more plastic than we sold through our purchase of recycled plastic, strategic partnerships and participation in EPR schemes.	not_assertion
@@ -877,13 +922,16 @@ Unilever	32	For our manufacturing organisation, the Unilever Manufacturing Syste
 Unilever	32	Our sites follow a framework to identify and implement actions to address negative waste-related impacts.	not_assertion
 Unilever	32	In 2024, we introduced a global Waste Standard mandating minimum requirements for managing hazardous and non-hazardous waste at all Unilever sites.	not_assertion
 Unilever	32	The standard mandates the application of the waste hierarchy, engaging employees on waste management principles and auditing of our waste service providers.	not_assertion
+Unilever	32	To reduce our waste footprint, the standard also requires sites to maintain zero non-hazardous waste from manufacturing to landfill or incineration without energy recovery.	policy_content
 Unilever	32	In 2025, site gap assessments against the standard were undertaken and actions are in the process of being agreed to close gaps where relevant.	not_assertion
 Unilever	32	Within our value chain, business partners are expected to comply with the mandatory requirements of our Responsible Partner Policy (RPP), including hazardous waste management requirements.	not_assertion
 Unilever	32	We expect business partners to create a Corrective Action Plan to address any issues identified during third-party audits.	not_assertion
 Unilever	32	We also encourage suppliers to contact us for guidance if they face challenges meeting our requirements.	not_assertion
+Unilever	32	These voluntary targets are in line with Unilever’s Environmental Policy.	methodology
 Unilever	32	Although we will continue to deliver this commitment, it will no longer be a formal target.	not_assertion
 Unilever	32	However, waste generation and waste routes are monitored at a local level to ensure compliance with Unilever standards and local legal requirements.	not_assertion
 Unilever	32	ENVIRONMENTAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 243	not_assertion
+Unilever	33	Packaging materials comprise of a range of different plastics, including: ■Rigids – plastic packaging materials that are sturdy, inflexible and maintain their shape even when empty (e.g.	broken_fragment
 Unilever	33	bottles, jars and tubs).	not_assertion
 Unilever	33	■Flexibles – plastic packaging materials that can be easily moulded, folded or shaped, adapting to the product’s form (e.g.	not_assertion
 Unilever	33	pouches, sachets, and tubes).	not_assertion
@@ -924,6 +972,7 @@ Unilever	34	■Packaging materials include plastic, paper and board, glass and a
 Unilever	34	■Water is used as an ingredient in our products and for our manufacturing processes.	not_assertion
 Unilever	34	Inflows of property, plant and equipment are not considered to be material.	not_assertion
 Unilever	34	Raw and packaging materials purchased by Unilever and packaging materials purchased by collaborative manufacturers (CMs) supplying Unilever’s Business Groups are recorded based on supplier invoices and product specification information.	not_assertion
+Unilever	34	Where supplier invoices or product specification information are not available for packaging materials purchased by third parties, volumes are estimated using extrapolation of existing data (representing circa 1% of total raw and packaging materials purchased by Unilever and third parties).	methodology
 Unilever	34	Biological material volumes are calculated based on supplier invoices, and then mapped to tonnes of feedstock material e.g.	not_assertion
 Unilever	34	chocolate is decomposed into x% cocoa, y% dairy and z% sugar.	not_assertion
 Unilever	34	Water consumed in Unilever operations is not included in the measurement.	not_assertion
@@ -939,6 +988,7 @@ Unilever	34	Exclusions: Our products are designed to be consumed, such as food, 
 Unilever	34	As such, repairability and durability are not relevant concepts.	not_assertion
 Unilever	34	Product and material metrics Measured based on tonnes of packaging materials purchased for Unilever operations and collaborative manufacturing.	not_assertion
 Unilever	34	Packaging materials purchased by Unilever and collaborative manufacturers supplying Unilever’s Business Groups are recorded based on supplier invoices and product specification information.	not_assertion
+Unilever	34	Where supplier invoices or product specification information are not available for packaging materials purchased by third parties, volumes are estimated using extrapolation of existing data (representing circa 7% of total packaging materials purchased by Unilever and third parties).	methodology
 Unilever	34	Recyclability is assessed using data from various sources, such as governmental organisations (for recycling and recovery rates), industry consortiums and packaging recycling organisations.	methodology
 Unilever	34	This reflects the technical potential to recycle a packaging material.	not_assertion
 Unilever	34	Exclusions: Product recyclability is not a materially relevant concept for our consumer products and is therefore excluded from the metric.	not_assertion
@@ -946,6 +996,7 @@ Unilever	34	Allocation to Ice Cream: Packaging material volumes purchased by Uni
 Unilever	34	Packaging material volumes purchased by CMs are allocated based on finished goods supplied by CMs categorised as Ice Cream products.	not_assertion
 Unilever	34	ENVIRONMENTAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 245	not_assertion
 Unilever	35	The percentage of our packaging that is recyclable using existing technology is set out below.	not_assertion
+Unilever	35	Not all packaging that is technically recyclable will actually be recycled, due to a lack of infrastructure.	risk_description
 Unilever	35	Our plastic packaging actions and ’actual recyclability’ goals are outlined on page 243.	navigation
 Unilever	35	Product and material metrics (%) 2025 2024(a) Rate of recyclable content in packaging materials used 80% 78% Ice Cream product and material metrics (%) Rate of recyclable content in packaging materials used 79% — (a) 2024 measured including Ice Cream.	reference_dense
 Unilever	35	Waste Description of waste composition Waste streams relevant to the consumer goods sector include waste from industrial processes, food and packaging.	not_assertion
@@ -981,13 +1032,16 @@ Unilever	36	Those additions include those resulting from business combinations a
 Unilever	36	Unilever has applied a 10% materiality threshold, as set out in the Delegated Act 2025, as part of our assessment.	not_assertion
 Unilever	36	For the additions related to in-year discontinued operations, we have followed the guidance as set out by the European Commission and included all additions (including capital expenditure related to the discontinued operation).	not_assertion
 Unilever	36	We have identified eligible activities that relate to i) climate change mitigation and ii) climate change adaptation.	not_assertion
+Unilever	36	We have also identified certain activities related to iii) sustainable use and protection of water and marine resources, and iv) transition to a circular economy.	broken_fragment
 Unilever	36	However, these are not material and therefore alignment testing was not completed.	not_assertion
 Unilever	36	Categories which were deemed immaterial included, but were not limited to, clean energy generation and distribution, low-emission transport, circular economy processes, and resilient water and waste-management infrastructure.	not_assertion
+Unilever	36	We did not identify eligible activities in respect of v) pollution prevention and control, and vi) protection and restoration of biodiversity and ecosystems.	broken_fragment
 Unilever	36	For the remaining material activities that are eligible – relating to CCM/ CCA 7.7 (the acquisition and ownership of buildings) – we have not been able to meet the Substantial Contribution or Do No Significant Harm criteria, as we do not have access to EPC certificates or undertake a climate and vulnerability assessment for these assets.	length
 Unilever	36	As a consequence, none of our capital expenditure can be classified as aligned.	not_assertion
 Unilever	36	We meet the minimum set of criteria with respect to human rights, corruption and bribery, taxation and fair competition.	not_assertion
 Unilever	36	We determined this by assessing our internal policies against the criteria and reviewing any breaches or violations identified in the reporting period.	not_assertion
 Unilever	36	Taxonomy-eligible but not Taxonomy-aligned activities Activity code(a) Activity narrative Context for Unilever € million % total CapEx CCM/CCA 7.7 Acquisition and ownership of buildings Renting and the purchasing of buildings is an activity that Unilever has engaged in.	not_assertion
+Unilever	36	542 16% Total Eligible 542 16% (a) CCM/CCA = Climate Change Mitigation/Climate Change Adaptation.	broken_fragment
 Unilever	36	EU Taxonomy Summary table Financial Year (N) 2025 KPI (1) Total (2) Proportion of Taxonomy-eligible activities (3) Taxonomy-aligned activities (4) Proportion of Taxonomy-aligned activities (5) Breakdown by environmental objectives of Taxonomy-aligned activities Proportion of enabling activities (12) Proportion of transitional activities (13) Not assessed activities considered non-material (14) Taxonomy-aligned activities in previous financial year (N-1) (15) Proportion of Taxonomy-aligned activities in previous financial year (N-1) (16) Climate Change Mitigation (6) Climate Change Adaptation (7) Water (8) Circular Economy (9) Pollution (10) Biodiversity (11) € million % € million % % % % % % % % % % € million % Turnover 50,503 —% 0 —% —% —% —% —% —% —% —% —% —% 0 —% CapEx 3,482 16% 0 —% —% —% —% —% —% —% —% —% 5% 0 —% OpEx 1,447 —% 0 —% —% —% —% —% —% —% —% —% —% 0 —% ENVIRONMENTAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 247	length
 Unilever	37	Capital Expenditure KPI table Reported KPI CapEx Financial Year (N) 2025 Economic Activities (1) Code (2) Taxonomy-eligible CapEx Taxonomy-aligned CapEx Taxonomy-aligned CapEx Environmental objective of taxonomy-aligned activities Enabling activity (12) Transitional activity (13) Proportion of Taxonomy- aligned in Taxonomy- eligible (14) Climate Change Mitigation (6) Climate Change Adaptation (7) Water (8) Circular Economy (9) Pollution (10) Biodiversity (11) % € million % % % % % % % E T % Acquisition and ownership of buildings CCM/CCA 7.7 16% 0 —% —% —% —% —% —% —% —% —% —% Sum of alignment per objective —% —% —% —% —% —% Total CapEx 16% 0 —% —% —% —% —% —% —% —% —% —% ENVIRONMENTAL DISCLOSURES 248 Unilever Annual Report and Accounts 2025 Sustainability Statement	length
 Unilever	38	Social Disclosures The scope of our Social disclosures includes: ■Own workforce: Unilever employees, i.e.	not_assertion
@@ -1000,7 +1054,7 @@ Unilever	38	We consolidated disclosures relating to human rights impacts into th
 Unilever	38	As a result, we have not included a separate section for affected communities within the sustainability statement.	not_assertion
 Unilever	38	SOCIAL MATERIAL IMPACTS, RISKS AND OPPORTUNITIES The process for assessing and identifying our material impacts, risks and opportunities (IROs) is informed by our double materiality assessment (DMA), as detailed in our General Information section on page 216.	not_assertion
 Unilever	38	In identifying our material IROs, we have considered all groups of people within the scope of our disclosures, as set out above, and all topics connected to our strategy and business model.	not_assertion
-Unilever	38	The Board engages regularly with our workforce, and our Supply Chain and Procurement teams maintain communication with our business partners and affected communities.	governance_plumbing
+Unilever	38	The Board engages regularly with our workforce, and our Supply Chain and Procurement teams maintain communication with our business partners and affected communities.	governance_role
 Unilever	38	This feedback provides a key input into our DMA.	not_assertion
 Unilever	38	Consideration is given to our enterprise risk management processes and principal risks, including those relating to talent and the quality and safety of our products.	not_assertion
 Unilever	38	We review the risk management frameworks annually to identify changes in the risk profile.	not_assertion
@@ -1019,14 +1073,16 @@ Unilever	38	Our Business Group strategies incorporate processes for identifying 
 Unilever	38	These strategies are supported by our Unmissable Brand Superiority framework and the 6Ps – product, packaging, proposition, promotion, place and pricing – which drive brand innovation.	not_assertion
 Unilever	38	Ensuring product safety is fundamental to our business, and involves evaluating raw materials, product design and development, and manufacturing processes, with special consideration for vulnerable populations where relevant.	not_assertion
 Unilever	38	We also identify and manage customer and channel risks (including marketing) through our enterprise risk processes.	not_assertion
-Unilever	38	The output of our 2025 DMA for our social impacts, risks and opportunities is included below: Material impact, risk or opportunity Description Own Workforce and Workers in the Value Chain Talent Risk (OO) Critical to delivering our business strategy and performance is our people.	methodology
+Unilever	38	The output of our 2025 DMA for our social impacts, risks and opportunities is included below: Material impact, risk or opportunity Description Own Workforce and Workers in the Value Chain Talent Risk (OO) Critical to delivering our business strategy and performance is our people.	iro_register
 Unilever	38	Our ability to attract, develop and retain diverse, skilled and adaptable talent, especially in competitive emerging markets is crucial.	not_assertion
 Unilever	38	Failure to do so could cause us to fall behind the competition and consequently affect operations and financial results.	not_assertion
 Unilever	38	We recognise the importance of cultivating a strong reputation for talent and skills development to help position Unilever as a top employer.	not_assertion
+Unilever	38	Capability building across our value chain to improve livelihoods ▲ Positive Impact (VC) Unilever supports people in our value chain, including smallholder farmers, to improve their livelihoods.	iro_register
 Unilever	38	This includes building capability around employment practices and income diversification.	not_assertion
 Unilever	38	Salient human rights issues Bullying and harassment Negative Impact (OO) (VC) Bullying and harassment are more likely to arise where there is an imbalance of power in a relationship or where people are in a situation of vulnerability.	not_assertion
 Unilever	38	In addition, this may happen where the prevailing culture, context or law discriminates against certain groups.	not_assertion
 Unilever	38	Bullying and harassment may occur within our own operations and value chain, which could have a significant negative impact on an individual’s physical and mental wellbeing, their families and the wider community.	not_assertion
+Unilever	38	Discrimination Negative Impact (OO) (VC) Discrimination is the absence of equality of opportunity and treatment, occurring when a person is treated differently on the basis of protected characteristics.1 Discrimination may occur in our own operations and value chain.	iro_register
 Unilever	38	In workplaces, discrimination may occur in the processes leading up to hiring and following termination of employment, as well as during employment.	not_assertion
 Unilever	38	Along with significant impacts on the individual, discrimination has wider social and economic consequences.	not_assertion
 Unilever	38	1.	length
@@ -1044,6 +1100,7 @@ Unilever	39	Health Negative Impact (OO) (VC) Everyone has the right to a clean, 
 Unilever	39	Negative impacts on health may occur within our own operations, value chain and communities in which we operate, including from work process violations and unsafe working conditions.	not_assertion
 Unilever	39	Freedom of association and collective bargaining Negative Impact (OO) (VC) All workers should be free to form or join a union of their choice, seek representation and collectively bargain, all without the fear of intimidation, harassment or obtaining prior approvals.	not_assertion
 Unilever	39	Lack of freedom of association may occur within our own operations and value chain, particularly where there are local laws restricting these rights.	not_assertion
+Unilever	39	Affected Communities Salient human rights issues Land rights, including Indigenous Peoples’ rights Negative Impact (OO) (VC) Land is a source of livelihood for many and is also linked with people’s identities, culture and social status, which are protected by legal or customary rights.	iro_register
 Unilever	39	Our operations or our value chain actors could be associated with land transactions involving land appropriation or insufficient consultations with rightsholders.	not_assertion
 Unilever	39	Consumers and End-Users Safe products Risk (OO) (VC) Unsafe products could result in financial loss as a result of: ■Product formulation and packaging not meeting Unilever’s safety standards; ■Formulation ingredients and packaging being accidentally or maliciously contaminated, compromising product integrity and potentially impacting the consumer; or ■Product labelling not aligning with laws and regulations, or lacking transparency, resulting in consumers not having the relevant information to make decisions about our products or being at risk of harm to their health.	length
 Unilever	39	Marketing to children Negative Impact (VC) Inappropriate marketing to children can expose them to advertising for foods high in sugar, fat or salt, particularly through use of social media.	not_assertion
@@ -1066,6 +1123,7 @@ Unilever	40	We also follow the OECD Guidelines for Multinational Enterprises, wh
 Unilever	40	We initiated a comprehensive review of our sustainability and human rights policy framework in 2025 to ensure alignment with emerging legislation and external benchmark standards.	not_assertion
 Unilever	40	The identified revisions will be implemented from 2026 onwards.	not_assertion
 Unilever	40	Own workforce As detailed in our General Information section on page 218, Unilever’s Code of Business Principles (COBP) and Code Policies apply to our material sustainability matters, including Human Rights.	not_assertion
+Unilever	40	Our Respect, Dignity and Fair Treatment Code policy sets out how we will respect employees’ human rights by: ■Basing all employment-related decisions on merit.	policy_content
 Unilever	40	■Avoiding behaviour that could be offensive, intimidating, malicious, violent, insulting or bullying.	not_assertion
 Unilever	40	■Providing fair and equitable wages that meet or exceed legal or industry standards.	not_assertion
 Unilever	40	■Not using any form of forced labour, including compulsory, trafficked or child labour.	not_assertion
@@ -1077,6 +1135,7 @@ Unilever	40	Value chain Unilever’s business partners are expected to adhere to
 Unilever	40	The Human Rights Principles established within the RPP are consistent with applicable relevant ILO Conventions and cover all of our salient human rights issues, including forced labour (human trafficking), and child labour.	not_assertion
 Unilever	40	The policy further expects business partners to implement effective systems and processes to prevent non-compliance with the RPP, extend these standards throughout their supply chains, and conduct independent human rights due diligence.	not_assertion
 Unilever	40	Our People & Nature Policy applies to direct suppliers of in-scope materials and requires these partners to: ■Conduct human rights due diligence within their own operations and supply chains.	not_assertion
+Unilever	40	■Develop and embed effective management systems to meet the requirements of the RPP and People & Nature Policy.	policy_content
 Unilever	40	■Demonstrate compliance with the policy’s principles through independent verification.	not_assertion
 Unilever	40	Business partners must confirm their ability to meet the requirements of the RPP upon registration and annual renewal to our systems through self-assessments, due diligence and risk-based audits.	not_assertion
 Unilever	40	This process is used to identify approved partners for procured products and services and to assess risk according to the nature of those goods or services and the geographies in which those partners operate.	not_assertion
@@ -1085,7 +1144,7 @@ Unilever	40	See page 221 for further details regarding these policies in the Env
 Unilever	40	Affected communities Unilever’s RPP specifies that the rights and title to the property and land of the individual and local communities, including Indigenous populations, are to be respected.	not_assertion
 Unilever	40	This includes a zero-tolerance policy for land grabbing.	not_assertion
 Unilever	40	Suppliers are also expected to consider Indigenous Peoples and local communities when conducting impact and risk assessments.	not_assertion
-Unilever	40	The People & Nature Policy sets out our commitments to respect and advance the human rights of all people, in accordance with the UNGPs.	methodology
+Unilever	40	The People & Nature Policy sets out our commitments to respect and advance the human rights of all people, in accordance with the UNGPs.	policy_content
 Unilever	40	Our Sustainable Agricultural Principles set out that land tenure rights must be respected and reinforce a zero-tolerance policy for land grabbing.	not_assertion
 Unilever	40	This includes informing local communities of planned activities that affect them and minimising disturbances to these communities.	not_assertion
 Unilever	40	Indigenous Peoples and local communities may act as HRDs and are often vulnerable to human rights violations, including those involving land rights.	not_assertion
@@ -1093,13 +1152,13 @@ Unilever	40	Consumers and end-users Responsible business is a key part of Unilev
 Unilever	40	In addition, the RPP expects our business partners to identify and manage their own potential human rights impacts.	not_assertion
 Unilever	40	SOCIAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 251 1.	not_assertion
 Unilever	40	Consisting of the Universal Declaration of Human Rights, the International Covenant on Civil and Political Rights, and the International Covenant on Economic, Social and Cultural Rights.	not_assertion
-Unilever	41	Human rights governance Oversight of our human rights due diligence and risk management is provided by our Board of Directors and the Corporate Responsibility Committee (CRC).	governance_plumbing
+Unilever	41	Human rights governance Oversight of our human rights due diligence and risk management is provided by our Board of Directors and the Corporate Responsibility Committee (CRC).	governance_role
 Unilever	41	The ULE endorses the importance of human rights for the business and integrates it into top-level decision-making.	not_assertion
 Unilever	41	It is also consulted in situations where there is a high risk of potential or actual impact, when a critical business decision is required, or if significant financial resources may be needed to address an issue.	not_assertion
 Unilever	41	Our global team of Human Rights experts identifies emerging issues for the ULE to consider.	not_assertion
 Unilever	41	The Unilever Sustainability Advisory Council, an independent group of external sustainability specialists including a business and human rights expert, advises on and challenges our strategy.	not_assertion
 Unilever	41	We monitor potential and existing human rights issues in conflict-affected and high-risk areas (CAHRAs).	not_assertion
-Unilever	41	Findings are reported to the Sustainability Steering Committee.	governance_plumbing
+Unilever	41	Findings are reported to the Sustainability Steering Committee.	governance_role
 Unilever	41	Central functions such as Sustainability, Procurement and Legal teams provide guidance and support in addressing our salient human rights issues.	not_assertion
 Unilever	41	This includes engaging with rightsholders (including local communities), identifying potential and actual human rights impacts, and creating action plans to prevent, mitigate and remediate these impacts.	not_assertion
 Unilever	41	Effective collaboration with business partners, industry associations, civil society and others is key to coordinate efforts and promote collective industry change.	not_assertion
@@ -1147,12 +1206,12 @@ Unilever	42	Teams are encouraged to use this guidance when engaging with rightsh
 Unilever	42	■Continuing to partner with VietCycle on the ‘Plastic Reborn’ programme to provide training, PPE and other essential support to over 3,000 waste collectors in Vietnam since 2021.	not_assertion
 Unilever	42	We continue to drive improvements through industry platforms to collectively tackle issues at scale.	not_assertion
 Unilever	42	Unilever is an active member of AIM-Progress and its working groups, advocating for industry-wide advancements.	not_assertion
-Unilever	42	Through the Consumer Goods Forum, we commit to the Priority Industry Principles, participate in the Human Rights Coalition, and serve on the steering committee of the Ethical Recruitment Marketplace to promote responsible recruitment practices.	governance_plumbing
+Unilever	42	Through the Consumer Goods Forum, we commit to the Priority Industry Principles, participate in the Human Rights Coalition, and serve on the steering committee of the Ethical Recruitment Marketplace to promote responsible recruitment practices.	governance_role
 Unilever	42	Access to remedy and remediation of impacts Effective grievance mechanisms are essential for understanding and acting on the concerns of our employees, value chain workers and local communities in which we operate.	not_assertion
 Unilever	42	Carelines are also available across the world for consumers to raise a concern.	not_assertion
 Unilever	42	Reports can be submitted confidentially and anonymously, where permitted by law.	not_assertion
 Unilever	42	We aim to provide the reporter with an anticipated timescale for completion.	not_assertion
-Unilever	42	An investigation report summarising the evidence, findings, corrective measures and recommended sanctions (where appropriate) is submitted to the Business Integrity Committee for review and conclusion.	governance_plumbing
+Unilever	42	An investigation report summarising the evidence, findings, corrective measures and recommended sanctions (where appropriate) is submitted to the Business Integrity Committee for review and conclusion.	governance_role
 Unilever	42	See page 266 for further details about our Business Integrity processes, including our non-retaliation policies.	not_assertion
 Unilever	42	While Unilever grievance mechanisms are in place, we believe issues are best addressed close to where the impact occurred.	not_assertion
 Unilever	42	Our approach is to work with partners to ensure they have effective and trusted grievance mechanisms for their workers.	not_assertion
@@ -1204,7 +1263,7 @@ Unilever	44	See page 251 for further information in the Human Rights policies se
 Unilever	44	Non-employees are expected to adhere to our Responsible Partner Policy (RPP).	not_assertion
 Unilever	44	Engaging with own workforce and workforce representatives Engaging with our own workforce We recognise that our people have first-hand knowledge of our business, as well as direct contact with our stakeholders.	not_assertion
 Unilever	44	As a result, our people are well positioned to give valuable insights and feedback on all elements of our business, including identifying impacts on the workforce, and business risks and opportunities.	not_assertion
-Unilever	44	As set out in the Board’s Workforce Engagement Policy, we aim to make engagement with our people strategic and meaningful.	governance_plumbing
+Unilever	44	As set out in the Board’s Workforce Engagement Policy, we aim to make engagement with our people strategic and meaningful.	governance_role
 Unilever	44	Workforce engagement activities are designed to: ■Be planned in advance to align with the agenda for Board meetings; ■Cover our entire workforce demographic, including geography, Business Group, function, length of service, diversity and work level; ■Provide opportunities for employees to engage directly with senior leaders, including Non-Executive Directors; ■Use a variety of methods such as face-to-face sessions, employee representatives, surveys and town hall meetings; ■Focus on Unilever’s strategic priorities and associated policies; and ■Offer our people the opportunity to raise matters that are relevant to them.	length
 Unilever	44	The Board and the ULE actively participate in workforce engagement sessions, listening to employees and discussing focus topics.	not_assertion
 Unilever	44	In 2025, Non-Executive Directors participated in four dedicated events covering a range of topics, including our winning behaviours and cultural transformation, safety in factories, reward and executive pay, and driving Desire at Scale in the Beauty & Wellbeing business.	activity_report
@@ -1231,6 +1290,7 @@ Unilever	44	Processes to remediate impacts and channels to raise concerns Unilev
 Unilever	44	In addition to the Speak Up channels, we have established formal processes globally to handle HR grievances relating to a variety of workplace concerns.	not_assertion
 Unilever	44	All material issues are channelled through the Speak Up process and tracked to closure.	not_assertion
 Unilever	44	Any HR grievances that are not escalated through the Speak Up channels, i.e.	not_assertion
+Unilever	44	not a breach of the COBP and Code Policies, are not considered in scope for this disclosure.	broken_fragment
 Unilever	44	Managing impacts and risks related to own workforce Talent We are an FMCG employer of choice for graduates and early career talent, with a 142:1 applicant to job ratio in 2025 (industry average 38:1) and LinkedIn organic engagement of 12% (industry average 7.4%).	reference_dense
 Unilever	44	This ability to attract, develop and retain a diverse range of skilled people is critical in the delivery of our strategy, and failure to do so could impact the continued success and growth of our business.	not_assertion
 Unilever	44	Our 2025 People Strategy aims to ensure we have the best talent, culture and organisation and focuses on three strategic pillars (summarised below), aligned to our business strategy.	methodology
@@ -1251,6 +1311,7 @@ Unilever	45	It also included practical applications such as AI-powered menu sugg
 Unilever	45	■Social-First: We provided global training to our marketers on applying the principle across insight generation, growth strategy, innovation and design, and building brands in culture.	not_assertion
 Unilever	45	Next Wave Organisation As we finalise the implementation of our new operating model and the demerger of our Ice Cream business, we are focusing on the next wave of operational improvements to drive organisational effectiveness.	not_assertion
 Unilever	45	This has been enabled by further automation and the selective use of AI, including consolidating our global learning platforms across talent and learning.	not_assertion
+Unilever	45	Bullying and harassment, discrimination, forced labour and working hours Unilever’s Respect, Dignity and Fair Treatment Code policy sets out our commitments in relation to bullying and harassment, discrimination, forced labour and working hours.	policy_content
 Unilever	45	Any allegations of breaches regarding these commitments would be treated as a Code breach.	not_assertion
 Unilever	45	We conduct annual mandatory Code training for all employees, which regularly includes training on how to recognise bullying and harassment, and discrimination.	not_assertion
 Unilever	45	We have further mandatory training (such as sexual harassment training) in a number of countries in which we operate, in response to regulatory requirements.	not_assertion
@@ -1273,7 +1334,7 @@ Unilever	45	In practice, we work extensively with trade unions, through joint wo
 Unilever	45	Any allegation of a breach of our commitment in this area would be dealt with as a Code breach.	not_assertion
 Unilever	45	Additional data points (headcount data for approximately 6% of employees plus manual data points) have been collected as at 31 October 2025; any significant changes to 31 December 2025 are reviewed.	reference_dense
 Unilever	45	Unless explicitly stated in the basis of preparation, metrics reported as at the year end exclude results pertaining to employees of The Magnum Ice Cream Company.	not_assertion
-Unilever	45	Unilever tracks progress against our actions through a series of internal measures, including the use of oversight committees such as the Corporate Responsibility Committee, Audit Committee, the ULE, and the Global Code and Policy Committee, which has visibility of Code breaches.	governance_plumbing
+Unilever	45	Unilever tracks progress against our actions through a series of internal measures, including the use of oversight committees such as the Corporate Responsibility Committee, Audit Committee, the ULE, and the Global Code and Policy Committee, which has visibility of Code breaches.	governance_role
 Unilever	45	Progress is also assessed through our UniVoice scores in areas such as engagement, leadership, business integrity, purpose, wellbeing, career development and learning, operational effectiveness, and diversity and inclusion.	not_assertion
 Unilever	45	Where relevant, progress against our actions has been included in the sections above.	not_assertion
 Unilever	45	SOCIAL DISCLOSURES 256 Unilever Annual Report and Accounts 2025 Sustainability Statement	not_assertion
@@ -1349,7 +1410,7 @@ Unilever	49	These structural differences in role allocation and geographic distr
 Unilever	49	As at 31 December 2025, the highest-paid individual was paid more than 286 times the median of all employees.	not_assertion
 Unilever	49	In addition to the reasons set out above, this ratio is driven by several other factors: ■As a global organisation, pay levels differ significantly by region.	not_assertion
 Unilever	49	These differences reflect local market conditions and do not necessarily indicate lower purchasing power when considered in the context of local cost of living.	not_assertion
-Unilever	49	■The highest-paid individual’s remuneration package included vested shares, which substantially increased the total value of the package and contributed to the rise in the pay ratio.	governance_plumbing
+Unilever	49	■The highest-paid individual’s remuneration package included vested shares, which substantially increased the total value of the package and contributed to the rise in the pay ratio.	governance_role
 Unilever	49	In 2024, the highest-paid individual did not receive any vested share awards in their remuneration package.	not_assertion
 Unilever	49	Incidents, complaints and severe human rights impacts and incidents Complaints Complaints are defined as matters relating to working conditions, equal treatment and opportunities for all, or other work-related rights that are reported, investigated and closed potential breaches to the Code of Business Principles, breaches to the Responsible Partner Policy, or complaints about a Unilever company raised to the National Contact Points (NCP) for OECD Multinational Enterprises.	length
 Unilever	49	NCP complaints are reviewed to identify whether they pertain to work-related human rights.	not_assertion
@@ -1418,6 +1479,7 @@ Unilever	52	Policies As set out in our General Information section on page 218, 
 Unilever	52	Six supporting standards include Safety Risk Assessments for ensuring Consumer, Occupational and Environmental Safety by Design, and Use of Ingredients and Control of Contaminants.	not_assertion
 Unilever	52	As described in the Environmental policies section on page 221, our Responsible Partner Policy (RPP) sets out the requirements for suppliers in the value chain.	not_assertion
 Unilever	52	Specifically, within the Business Integrity & Ethics pillar, this includes requirements to meet agreed specifications and notifying Unilever of any product quality or safety concerns originating from the business partner, or its supply chain without delay.	not_assertion
+Unilever	52	Marketing to children The Responsible Marketing Code Policy sets out our commitment to market our products and services truthfully, accurately and transparently.	policy_content
 Unilever	52	The Code policy is supported by Unilever’s internal marketing and brand guidelines, including the Marketing to Children Principles.	not_assertion
 Unilever	52	As a result of the demerger of our Ice Cream business, these principles were revised in 2025 for implementation in our Foods business from 1 January 2026.	not_assertion
 Unilever	52	These principles ensure that Unilever adheres to the strictest standards in marketing to children and adheres to all relevant local regulations and pledges.	not_assertion
@@ -1504,6 +1566,7 @@ Unilever	54	Metrics Ambition 2025 2024(a) 2023(a) Percentage of our portfolio me
 Unilever	54	(d) 2023 figure measured for the 12-month period ended 30 September.	not_assertion
 Unilever	54	On a like-for-like basis with 2024 and 2023, the combined percentage of the Foods and Ice Cream portfolio meeting Unilever’s Science-based Nutrition Criteria was 83% and the number of products sold that deliver positive nutrition was 53% in 2025.	reference_dense
 Unilever	54	The slight change in performance is driven by improvements in data quality and by year-on-year sales fluctuations.	not_assertion
+Unilever	54	Products responding to changing consumer demands Evolving consumer preferences present long-term opportunities for Unilever to drive product innovation and expand our portfolio, aiming to deliver superior products at great value, while reducing our environmental impact.	risk_description
 Unilever	54	Through ongoing engagement with consumers and analysis of market trends, we build robust innovation pipelines.	not_assertion
 Unilever	54	This approach is core to our Business Group strategies, such as Home Care’s Bright Future strategy, and is supported by our strong Research & Development capabilities.	not_assertion
 Unilever	54	Additionally, we systematically identify acquisition targets to further expand our brands and enhance our product portfolio.	not_assertion
@@ -1519,21 +1582,22 @@ Unilever	54	In addition to monitoring progress against the goals, we measure our
 Unilever	54	See page 243 for actions and targets relating to our plastic packaging.	navigation
 Unilever	54	SOCIAL DISCLOSURES Sustainability Statement Unilever Annual Report and Accounts 2025 265	not_assertion
 Unilever	55	Governance Disclosures Business Conduct GOVERNANCE The role of administrative, management and supervisory bodies The ultimate responsibility for Unilever’s conduct is with Unilever’s Board, which is responsible for both setting and monitoring the culture of the business.	not_assertion
-Unilever	55	The Board is supported in this by the Corporate Responsibility and Audit subcommittees.	governance_plumbing
+Unilever	55	The Board is supported in this by the Corporate Responsibility and Audit subcommittees.	governance_role
 Unilever	55	Please refer to the General Information section on page 214 and Unilever’s governance structure on page 51 for the composition and expertise of the Board and its subcommittees.	reference_dense
 Unilever	55	The Chief Executive Officer is accountable to the Board for the implementation of Unilever’s culture and standards of conduct, which we refer to as ‘business integrity’.	not_assertion
-Unilever	55	The CEO is supported in this by the Chief Legal Officer, Chief Business Integrity Officer, Global Code and Policy Committee, and Business Integrity Committees.	governance_plumbing
+Unilever	55	The CEO is supported in this by the Chief Legal Officer, Chief Business Integrity Officer, Global Code and Policy Committee, and Business Integrity Committees.	governance_role
 Unilever	55	The key elements of Unilever’s standards of conduct are set out in our Code of Business Principles (COBP) and Code Policies, which provide a set of mandatory rules that govern how we run our business.	not_assertion
 Unilever	55	Responsibility for the day-to-day implementation of the COBP and Code Policies is delegated to the Unilever Leadership Executive and all senior management across Unilever’s Business Groups, business units and functions.	not_assertion
-Unilever	55	They are supported in this by the Business Integrity Committees.	governance_plumbing
+Unilever	55	They are supported in this by the Business Integrity Committees.	governance_role
 Unilever	55	IMPACT, RISK AND OPPORTUNITY MANAGEMENT Description of the processes to identify and assess material impacts, risks and opportunities The process for assessing and identifying our material impacts, risks and opportunities is informed by our double materiality assessment (DMA), as set out in our General Information section on page 216.	length
 Unilever	55	Risks identified are reviewed and assessed on an ongoing basis and formally at least once per year.	not_assertion
 Unilever	55	For each of our principal risks, including Legal and Compliance risk, we review the risk management frameworks annually to identify changes in the risk profile.	not_assertion
 Unilever	55	From a governance perspective, this process incorporates several inputs, such as a global fraud risk assessment conducted at both a functional and market level to identify risks, including corruption and bribery.	not_assertion
 Unilever	55	In addition, a geopolitical working group is in place, with representatives from different functions, to proactively identify and escalate issues for high-risk markets, and external screening is undertaken to monitor changes to the risk landscape.	not_assertion
 Unilever	55	The output of our 2025 DMA for our Governance impacts, risks and opportunities is included below: Material impact, risk or opportunity Description Business Conduct Business integrity and ethical conduct Risk (OO) (VC) Failure to act in an ethical manner and foster a culture where our employees and value chain feel empowered to speak up, consistent with the expectations of customers, consumers and other stakeholders, may result in reputational damage.	length
-Unilever	55	Anti-bribery and corruption Risk (OO) (VC) There is a risk that a breach of anti-bribery and corruption laws, or failure to prevent bribery, fraud or tax evasion, may result in legal and financial consequences for Unilever and individuals.	risk_description
+Unilever	55	Anti-bribery and corruption Risk (OO) (VC) There is a risk that a breach of anti-bribery and corruption laws, or failure to prevent bribery, fraud or tax evasion, may result in legal and financial consequences for Unilever and individuals.	iro_register
 Unilever	55	Use of non-animal safety science Positive Impact (VC) Unilever is a global leader advocating for regulatory use of modern, non-animal safety science in place of animal testing, working with government groups and other stakeholders.	not_assertion
+Unilever	55	Advocacy Positive Impact (OO) (VC) Unilever is actively lobbying governments, regulators and other third parties to influence policies and regulations that will help to drive change in four key areas: climate, nature, plastics and livelihoods.	iro_register
 Unilever	55	Supplier payments and relationships Risk (OO) Inappropriate or untimely processing of payments may result in incorrect payments to suppliers, fraudulent transactions, late payments, regulatory penalties or disputes.	not_assertion
 Unilever	55	OO Own Operations, VC Value Chain Business conduct policies and corporate culture As a purpose-led company, our values and culture are the foundation of our success.	not_assertion
 Unilever	55	Our approach to business integrity is designed to ensure that how we do business is fully aligned with our values and the applicable laws and regulations in countries where we operate.	not_assertion
@@ -1548,7 +1612,7 @@ Unilever	55	Our ULE members communicate periodically with senior leaders and all
 Unilever	55	On an annual basis, multiple initiatives aim to embed this culture across our business.	not_assertion
 Unilever	55	Lessons learned are then shared extensively across the business integrity community, with Unilever’s leadership and with employees.	not_assertion
 Unilever	55	Employee surveys are also used as a tool to monitor our culture, and business integrity questions are included within Unilever’s annual global UniVoice survey.	not_assertion
-Unilever	55	Responses are reviewed by our Global Code and Policy Committee and at Business Integrity Committee meetings.	governance_plumbing
+Unilever	55	Responses are reviewed by our Global Code and Policy Committee and at Business Integrity Committee meetings.	governance_role
 Unilever	55	266 Unilever Annual Report and Accounts 2025 Sustainability Statement	not_assertion
 Unilever	56	Business conduct policies The Code of Business Principles (COBP) and Code Policies define the ethical behaviours that everyone must demonstrate when working for Unilever.	not_assertion
 Unilever	56	They help us address key external and internal risks to the business – such as fraudulent behaviour or a failure to respect, uphold and advance human rights – and play a key role in ensuring compliance with laws and regulations.	not_assertion
@@ -1557,7 +1621,7 @@ Unilever	56	They are mandatory for all employees and Directors, and apply to all
 Unilever	56	While the COBP and Code Policies are for internal use, we also publish them externally in support of transparency.	not_assertion
 Unilever	56	We undertake a comprehensive review of the COBP and Code Policies every five years when the COBP is reviewed and approved by the Unilever Board.	not_assertion
 Unilever	56	Potential changes needed to the COBP and Code Policies are monitored on an ongoing basis to ensure they appropriately reflect the internal and external context, in addition to incorporating the latest legal requirements.	not_assertion
-Unilever	56	As an input to this process, the Board’s Corporate Responsibility Committee meets quarterly and reviews external developments that may be relevant to Unilever’s ability to conduct its business appropriately as a responsible corporate citizen.	governance_plumbing
+Unilever	56	As an input to this process, the Board’s Corporate Responsibility Committee meets quarterly and reviews external developments that may be relevant to Unilever’s ability to conduct its business appropriately as a responsible corporate citizen.	governance_role
 Unilever	56	We also seek to work with business partners who uphold these standards throughout our value chain.	not_assertion
 Unilever	56	Our Responsible Partner Policy outlines our requirements for business partners, as set out below.	not_assertion
 Unilever	56	Business conduct training Employees and Directors are required to know the COBP and Code Policies and understand how to apply them in their work.	not_assertion
@@ -1574,18 +1638,18 @@ Unilever	56	The Speak Up platform is signposted on Unilever’s website and our 
 Unilever	56	Our annual UniVoice survey is a key tool to understanding employee sentiment, including topics such as business integrity.	not_assertion
 Unilever	56	Employees are also informed that if they prefer not to use the direct or anonymised channels provided by Unilever, they can utilise other external channels and report directly to the authorities.	not_assertion
 Unilever	56	After any Code concern is reported, reporters are reminded of what retaliation could look like and asked if they think they have experienced this.	not_assertion
-Unilever	56	All Business Integrity Committees are also accountable for ensuring that individuals who report Code breaches or assist with investigations are properly protected from retaliation and that confidentiality is maintained.	governance_plumbing
+Unilever	56	All Business Integrity Committees are also accountable for ensuring that individuals who report Code breaches or assist with investigations are properly protected from retaliation and that confidentiality is maintained.	governance_role
 Unilever	56	Investigating potential breaches Our investigation standards require us to record and assess all Code concerns reported, however they are raised.	not_assertion
-Unilever	56	Once a report is received, it is formally acknowledged and triaged by a Committee to determine whether a Business Integrity investigation is required.	governance_plumbing
+Unilever	56	Once a report is received, it is formally acknowledged and triaged by a Committee to determine whether a Business Integrity investigation is required.	governance_role
 Unilever	56	All Business Integrity Officers are trained on Unilever’s standards and processes and are required to uphold these at all times.	not_assertion
 Unilever	56	Officers are posted around the world to respond to cases, with oversight from a central Business Integrity team.	not_assertion
 Unilever	56	Investigation reports tie allegations to Code requirements, summarise evidence and findings, and outline corrective actions and recommended sanctions.	not_assertion
 Unilever	56	Completed reports are reviewed and approved by the Global Head of Investigations.	not_assertion
-Unilever	56	In cases involving public bribery or senior executives, the Chief Legal Officer and Chief Business Integrity Officer oversee investigations, with an ad hoc Business Integrity Committee determining sanctions, regardless of the executive’s location.	governance_plumbing
+Unilever	56	In cases involving public bribery or senior executives, the Chief Legal Officer and Chief Business Integrity Officer oversee investigations, with an ad hoc Business Integrity Committee determining sanctions, regardless of the executive’s location.	governance_role
 Unilever	56	We encourage engagement from the initial reporter to facilitate the investigation, while maintaining confidentiality.	not_assertion
-Unilever	56	It is the responsibility of the Business Integrity Committees to ensure timely investigation of all potential Code breaches raised within 60 days.	governance_plumbing
+Unilever	56	It is the responsibility of the Business Integrity Committees to ensure timely investigation of all potential Code breaches raised within 60 days.	governance_role
 Unilever	56	Final determination may take longer depending on the nature and complexity of the concern.	not_assertion
-Unilever	56	Breaches of the COBP or Code Policies are shared with various oversight committees when required, including the Unilever Board’s Corporate Responsibility and Audit Committees, the Unilever Leadership Executive, and the Global Code and Policy Committee.	governance_plumbing
+Unilever	56	Breaches of the COBP or Code Policies are shared with various oversight committees when required, including the Unilever Board’s Corporate Responsibility and Audit Committees, the Unilever Leadership Executive, and the Global Code and Policy Committee.	governance_role
 Unilever	56	Management of relationships with suppliers Procurement processes, including fair behaviour with suppliers The COBP and Code Policies govern our employees’ fair treatment of Unilever’s suppliers and procurement processes.	not_assertion
 Unilever	56	Specifically, the Responsible Sourcing and Business Partnering Code Policy requires that we select and work only with partners who are able to uphold standards consistent with our own commitment.	not_assertion
 Unilever	56	This includes ensuring that all third parties are subject to the provided Responsible Partner Policy (RPP) controls for onboarding, contracting and ongoing monitoring.	not_assertion
@@ -1625,8 +1689,8 @@ Unilever	57	As previously described, our anti-corruption and bribery policies ar
 Unilever	57	The COBP and Code Policies are available in multiple languages, and lessons are included in the annual mandatory training.	not_assertion
 Unilever	57	Our business partners must adhere to Unilever’s anti-corruption and bribery policies, as defined in the RPP.	not_assertion
 Unilever	57	Preventing, detecting and addressing allegations or incidents of corruption and bribery The core processes to prevent, detect and address allegations or incidents of corruption and bribery are the same as those in place for Unilever’s COBP and Code Policies.	not_assertion
-Unilever	57	The Global Code and Policy Committee determines any sanctions.	governance_plumbing
-Unilever	57	As previously outlined, material breaches, lessons learned and relevant remedial actions related to the COBP or Code Policies are shared with various oversight committees, including the Unilever Board’s Corporate Responsibility and Audit Committees, the Unilever Leadership Executive, and the Global Code and Policy Committee.	governance_plumbing
+Unilever	57	The Global Code and Policy Committee determines any sanctions.	governance_role
+Unilever	57	As previously outlined, material breaches, lessons learned and relevant remedial actions related to the COBP or Code Policies are shared with various oversight committees, including the Unilever Board’s Corporate Responsibility and Audit Committees, the Unilever Leadership Executive, and the Global Code and Policy Committee.	governance_role
 Unilever	57	To prevent incidents from taking place, we conduct periodic bespoke anti-corruption and anti-bribery risk assessments to determine the business activities and geographies that require specific actions to enhance our controls and respond to changes in our risk exposure.	not_assertion
 Unilever	57	We continuously introduce tailored measures to mitigate these risks, along with additional bespoke training.	not_assertion
 Unilever	57	Anti-corruption and anti-bribery training As part of our annual mandatory Business Integrity learning programme, anti-corruption and anti-bribery training is deployed to all employees.	not_assertion
@@ -1634,7 +1698,7 @@ Unilever	57	Unilever Board members also receive training on this subject.	not_as
 Unilever	57	The training content is based on our learnings from investigations, risk assessments and business partnering.	methodology
 Unilever	57	Additional bespoke training is offered for employees who may face a greater risk in their activities in respect of corruption or bribery, such as those in external-facing commercial roles.	not_assertion
 Unilever	57	The anti-corruption and anti-bribery training programme is sponsored by the Chief Legal Officer and Chief Business Integrity Officer.	not_assertion
-Unilever	57	It is overseen by the Unilever Board’s Corporate Responsibility Committee.	governance_plumbing
+Unilever	57	It is overseen by the Unilever Board’s Corporate Responsibility Committee.	governance_role
 Unilever	57	Political influence and lobbying activities Unilever engages with governments, policymakers, regulators, NGOs and other stakeholders involved in policy and government through our advocacy and lobbying activities.	not_assertion
 Unilever	57	This engagement forms a key part of promoting and protecting Unilever’s legitimate business interests, and takes place directly and indirectly through bodies such as trade associations and industry groups.	not_assertion
 Unilever	57	Our Code and Code Policies set out how employees must manage their business relationship with political groups.	not_assertion
@@ -1654,6 +1718,7 @@ Unilever	58	Furthermore, Unilever works with governments to accelerate enabling 
 Unilever	58	Unilever is an IFRS Foundation Corporate Donor and advocates for the adoption of ISSB sustainability reporting standards as the global baseline for non-financial reporting.	not_assertion
 Unilever	58	■All climate change material impacts, risks and opportunities identified Business operations and trade issues Unilever works with governments, policymakers, regulators and other stakeholders to ensure our supply chains operate efficiently and to protect our business interests and workforce, such as trade restrictions that impact our supply chain.	length
 Unilever	58	Changes to laws and regulations can have a positive or negative impact on our business and how we operate.	not_assertion
+Unilever	58	■Product regulations and claims: composition and sourcing transparency ■Increased activism, legal or non- compliance costs resulting from biodiversity degradation and loss Plastic pollution Unilever supports public policy that aligns with our approach to reducing packaging waste and creating a circular economy.	risk_description
 Unilever	58	This includes extended producer responsibility (EPR) schemes, whereby producers are held accountable for the management of their packaging after it has been used.	not_assertion
 Unilever	58	Both these policies are dependent on governments working with industry to increase the availability of high-quality recycled plastic.	risk_description
 Unilever	58	We also work with governments to identify the enabling conditions to help scale reuse and refill models.	not_assertion

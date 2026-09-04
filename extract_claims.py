@@ -81,10 +81,17 @@ ACTION_KEYWORDS = [
 
 # Forward-looking words => "Future Promise". NOTE: "commit" is deliberately
 # NOT here, so "committed to sustainability" stays Vague (matches your example).
+# v4 split (validation round 2): the NOUN markers (target / goal / pledge / plan)
+# also appear in PAST achievements ("delivered on our target", "an annual pledge")
+# and must NOT make those Future Promises. They count as future only when the
+# sentence has no achievement verb. The VERB/MODAL markers always count.
 FUTURE_MARKERS = [
-    "will ", "aim", "plan", "pledge", "strive", "aspire", "ambition",
-    "target", "goal", "net zero", "net-zero", "by 20", "expect", "intend",
+    "will ", "aim", "strive", "aspire", "ambition", "by 20", "expect", "intend",
+    "plan to", "pledge to", "pledged to",
 ]
+FUTURE_NOUN_MARKERS = ["target", "goal", "pledge", "net zero", "net-zero", "plan"]
+ACHIEVED_VERBS = ["delivered on", "achieved", "exceeded", "surpassed", "met our",
+                  "reached our", "completed", "delivered against"]
 
 # A REAL quantity = a percentage, or a number followed by a unit.
 # This is what makes a claim "Strong" (page numbers / years alone do NOT count).
@@ -155,9 +162,9 @@ RISK_PHRASES = [
     "impacts of climate", "physical risk", "transition risk", "risks associated",
     "pose a risk", "poses a risk", "at risk", "risk of",
 ]
-# Governance-role plumbing: a committee/board doing its job (oversee/review/approve),
-# not an ESG performance claim. Applied only when NO hard quantity.
-GOV_PLUMBING = [
+# Governance-role descriptions: a committee/board doing its job (oversee/review/
+# approve), not an ESG performance claim. Applied only when NO hard quantity.
+GOV_ROLE_PHRASES = [
     "committee", "subcommittee", "advisory council", "the board", "board's",
     "supervisory board", "remunerat", "incentive plan", "performance share plan",
     "narrative owners", "engage investors",
@@ -167,6 +174,77 @@ ACTIVITY_PHRASES = [
     "co-host", "roundtable", "signed the", "re-signed", "open letter",
     "participated in", "signatory", "joined the", "we are a member",
     "member of", "partnered with", "we sponsor", "we attended",
+]
+
+# ----- v4 NON-CLAIM FILTERS (validation round 2: 100-claim manual review + audit) --
+# Each block names the false-positive family it targets and its share of the
+# audited false positives on the Unilever v3 output (279 FPs).
+
+# v4-B  POLICY CONTENT (10% of FPs): imperative policy-principle bullets and
+# supplier-requirement lists ("■Reduce water usage...", "the policy sets out four
+# principles suppliers must comply with"). A bullet that says "We are committed
+# to..." is the company's own commitment and is KEPT (first-person test).
+BULLET_GLYPHS = ("■", "•", "▲", "●", "▪", "–", "-")
+IMPERATIVE_STARTS = [
+    "reduce", "ensure", "monitor", "engage", "collaborate", "encourage",
+    "contribute", "promote", "conduct", "protect", "develop", "support",
+    "maintain", "respect", "implement", "provide", "continuously", "drive",
+    "minimise", "minimize", "work", "build", "use", "avoid", "manage",
+    "prevent", "report", "source", "improve", "increase", "eliminate",
+    "adopt", "apply", "assess", "identify", "establish", "embed", "phase",
+]
+POLICY_PHRASES = [
+    "sets out four principles", "sets out the principles", "principles that",
+    "are required to comply", "required to comply with", "good practices designed to",
+    "collection of good practices", "the policy requires", "policy sets out",
+    "the standard also requires", "requires sites to", "must comply",
+]
+# v4-C  RISK / SCENARIO DESCRIPTIONS (15% of FPs): ESRS impact-risk-opportunity
+# register rows and climate-scenario narratives ("Risk (OO)", "Negative Impact (VC)",
+# "net zero achieved by approximately 2070", "may restrict how we source").
+IRO_REGISTER_RE = re.compile(r"\((?:oo|vc|oo\)\s*\(vc)\)|negative impact \(|positive impact \(|opportunity \(", re.IGNORECASE)
+RISK_PHRASES_V4 = [
+    "scenario", "assumes", "by 2100", "by approximately 20", "present long-term opportunities",
+    "presents opportunities", "may lead", "may restrict", "may require", "may increase",
+    "could cause", "could harm", "lack of infrastructure", "there is also a risk",
+    "risk that", "leads to reduction", "degradation", "ecosystem service failures",
+    "evolving consumer preferences", "changing consumer demands",
+]
+# v4-D  METHODOLOGY / DEFINITIONS (28% of FPs, still the largest): how figures are
+# measured or scoped ("is measured via meter readings (78%)", "we also consider
+# subcontractors ... in our upstream value chain", "these targets are in line with
+# our Environmental Policy" = internal self-reference).
+METHOD_PHRASES_V4 = [
+    "is measured", "are measured", "measured via", "measured through", "measured using",
+    "meter readings", "mass balance", "reporting scope",
+    "we also consider", "base year", "baseline year", "baseline values", "rebaselin",
+    "restated", "is monitored", "are monitored", "estimated using", "to reach this conclusion",
+    "within a 1km", "radius of", "for comparability", "allow for comparability",
+]
+# Internal self-reference ("these targets are in line with our Environmental
+# Policy"): a non-claim only when the alignment IS the point of the sentence --
+# i.e. the phrase sits in the first part of a short sentence. A real target that
+# merely ends with "..., in line with our policy" is kept (see is_selfref).
+SELFREF_PHRASES = ["in line with our", "align with our", "aligns with our",
+                   "aligned with our", "consistent with our", "in line with unilever"]
+# v4-E  ACTIVITY / TOOL-USAGE REPORTS (22% of FPs): programme existence, tool
+# inputs and partnerships with no stated outcome. Applied only when NO hard
+# quantity, so "our programme reached 1.2 million hectares" survives.
+ACTIVITY_SOFT_PHRASES = [
+    "examples include", "programmes to", "programs to", "we use the", "we used the",
+    "we incorporated", "as an input", "inputs from", "working group",
+    "we work with partners", "we engage with", "we engaged with",
+    "we continue to engage", "we participate", "we collaborate with",
+    "collaboration with", "pilot", "we are working with", "we worked with",
+]
+# v4-F  PARAMETER NUMBERS ("a number is not evidence", Strong class was 43% FPs):
+# a quantity in one of these contexts is a method parameter or a scheme weight,
+# not a performance figure. It still lets the sentence through the GATE (recall)
+# but no longer makes it Strong or counts as evidence.
+PARAM_CONTEXT = [
+    "radius", "threshold", "weighting", "meter readings", "mass balance",
+    "measured via", "measured through", "of sites within", "scale of",
+    "sample of", "scored", "km of", "1km", "within a ",
 ]
 # Navigation / running-header / cross-reference fragments (section-title soup).
 SECTION_NAV_WORDS = [
@@ -244,6 +322,20 @@ def split_sentences(text: str) -> list[str]:
         return re.split(r"(?<=[.!?])\s+", text)
 
 
+def pos_tags(words: list[str]) -> list[tuple[str, str]]:
+    """Part-of-speech tags via nltk (downloads the tagger on first use). If nltk
+    is unavailable, return a fake verb tag so the verb check never drops a sentence."""
+    try:
+        import nltk
+        try:
+            return nltk.pos_tag(words)
+        except LookupError:
+            nltk.download("averaged_perceptron_tagger_eng", quiet=True)
+            return nltk.pos_tag(words)
+    except Exception:
+        return [(w, "VB") for w in words]
+
+
 # "nature" counts as an environmental topic EXCEPT the idiom "nature of ..."
 # ("the nature of our business" = "the kind of", not the natural world). So we
 # match "nature" only when it is NOT immediately followed by "of".
@@ -308,49 +400,135 @@ def is_navigation(low: str) -> bool:
     return False
 
 
+def is_broken_fragment(sentence: str, low: str) -> bool:
+    """v4-A  TABLE / BROKEN-SENTENCE GUARD (4% of FPs, pure noise).
+    PDF tables get linearised into pseudo-sentences such as
+    'gas-fired on-site CHP) 10% 8% Purchased non-renewable electricity (e.g.'
+    Three cheap well-formedness checks catch them:
+      1. starts mid-sentence (lowercase letter, closing bracket, comma);
+      2. unbalanced parentheses (opened but never closed, or vice versa);
+      3. no verb at all (a claim must assert; POS-tag the lowercased words)."""
+    orig = sentence.lstrip("".join(BULLET_GLYPHS)).strip()   # original case for check 1
+    if not orig or orig[0] in ")],;:" or orig[0].islower():
+        return True
+    if sentence.count("(") != sentence.count(")"):
+        return True
+    body = low.lstrip("".join(BULLET_GLYPHS)).strip()          # lowercased for tagging
+    tags = pos_tags(body.split())
+    if not any(t.startswith("VB") or t == "MD" for _, t in tags):
+        return True
+    return False
+
+
+def is_selfref(low: str) -> bool:
+    """v4-D  internal self-reference is the main assertion: the alignment phrase
+    appears in the first 60% of the sentence, or the sentence is short."""
+    for p in SELFREF_PHRASES:
+        i = low.find(p)
+        if i >= 0 and (i / max(1, len(low)) < 0.6 or len(low.split()) < 15):
+            return True
+    return False
+
+
+def is_policy_content(low: str) -> bool:
+    """v4-B  POLICY CONTENT: an imperative policy bullet with no first-person
+    subject ('■Reduce water usage...'), or a supplier-requirement description.
+    A sentence that also carries the company's own commitment ('We are committed
+    to...') is kept -- mixed stem+bullet sentences are claims (first-person test)."""
+    own_commitment = "we are committed" in low or "we commit" in low or "we have committed" in low
+    if any(p in low for p in POLICY_PHRASES) and not own_commitment:
+        return True
+    stripped = low.lstrip("".join(BULLET_GLYPHS)).strip()
+    if stripped is not low.strip() or low.strip()[0] in BULLET_GLYPHS:
+        first = stripped.split(" ", 1)[0].rstrip(":,")
+        # "■Nature protection: Conduct business..." -> look past a short label too
+        if ":" in stripped[:40]:
+            after = stripped.split(":", 1)[1].strip()
+            first_after = after.split(" ", 1)[0] if after else ""
+        else:
+            first_after = ""
+        if (first in IMPERATIVE_STARTS or first_after in IMPERATIVE_STARTS) \
+                and " we " not in f" {stripped} " and "our commitment" not in stripped:
+            return True
+    return False
+
+
 def non_claim_reason(sentence: str, low: str, has_quantity: bool):
     """Return WHY a topic+action sentence is still NOT a claim, else None.
-    Built from the validation error taxonomy + the teacher's review."""
+    Built from the validation error taxonomy + the teacher's review (v2/v3),
+    extended by the 100-claim manual review + 416-row audit (v4)."""
     if is_boilerplate(low):
         return "boilerplate"
     if is_reference_dense(sentence):
         return "reference_dense"
     if is_navigation(low):
         return "navigation"
-    if not has_quantity and any(p in low for p in GOV_PLUMBING):
-        return "governance_plumbing"
+    if is_broken_fragment(sentence, low):                       # v4-A
+        return "broken_fragment"
+    if IRO_REGISTER_RE.search(sentence):                        # v4-C (register rows)
+        return "iro_register"
+    if is_policy_content(low):                                  # v4-B
+        return "policy_content"
+    if not has_quantity and any(p in low for p in GOV_ROLE_PHRASES):
+        return "governance_role"
     if any(p in low for p in ACTIVITY_PHRASES):
         return "activity_report"
-    if any(p in low for p in METHOD_PHRASES):
+    # v4-E soft activity phrases: only without a quantity AND without a forward-
+    # looking target, so "we have set three targets ... we are working with" survives
+    if not has_quantity and not is_forward_looking(low) \
+            and any(p in low for p in ACTIVITY_SOFT_PHRASES):
+        return "activity_report"
+    if any(p in low for p in METHOD_PHRASES) or any(p in low for p in METHOD_PHRASES_V4):  # v4-D
+        return "methodology"
+    if is_selfref(low):                                         # v4-D (self-reference)
         return "methodology"
     if not has_quantity and any(p in low for p in GENERAL_STATEMENT_PHRASES):
         return "general_statement"
-    if not has_quantity and any(p in low for p in RISK_PHRASES):
+    if not has_quantity and (any(p in low for p in RISK_PHRASES)
+                             or any(p in low for p in RISK_PHRASES_V4)):   # v4-C
         return "risk_description"
     return None
 
 
+def is_parameter_number(low: str) -> bool:
+    """v4-F: the quantity in this sentence is a method parameter / scheme weight
+    ('within a 1km radius', 'meter readings (78%)'), not a performance figure."""
+    return any(p in low for p in PARAM_CONTEXT)
+
+
+def is_forward_looking(low: str) -> bool:
+    """v4: verb/modal markers always mean future; noun markers (target, goal,
+    pledge, plan, net zero) only when the sentence has no achievement verb, so
+    'we delivered on our target to...' is an achieved result, not a promise."""
+    if any(m in low for m in FUTURE_MARKERS):
+        return True
+    if any(m in low for m in FUTURE_NOUN_MARKERS) and not any(v in low for v in ACHIEVED_VERBS):
+        return True
+    return False
+
+
 def classify_claim_type(low: str, has_quantity: bool) -> str:
-    is_future = any(m in low for m in FUTURE_MARKERS)
-    if is_future:
+    if is_forward_looking(low):
         return "Future Promise"
-    if has_quantity:
+    if has_quantity and not is_parameter_number(low):
         return "Strong"
     return "Vague"
 
 
 def evidence_exists(low: str, has_quantity: bool) -> str:
     """v2: evidence is determined INDEPENDENTLY of claim type (decision #14).
-    Yes     = a concrete achieved quantity (a number NOT in a future/projected context);
+    Yes     = a concrete achieved quantity (a number NOT in a future/projected context
+              and NOT a method parameter, v4-F);
     Partial = cites a credible source/standard/assurance, OR a projected quantity;
     No      = neither. (A projected '55M gallons by 2030' is the size of the promise,
     not evidence -> Partial, not Yes.)"""
-    projected = any(m in low for m in FUTURE_MARKERS)
-    if has_quantity and not projected:
+    perf_quantity = has_quantity and not is_parameter_number(low)
+    projected = is_forward_looking(low)
+    if perf_quantity and not projected:
         return "Yes"
     if any(c in low for c in EVIDENCE_REFS):
         return "Partial"
-    if has_quantity:
+    if perf_quantity:
         return "Partial"
     return "No"
 
