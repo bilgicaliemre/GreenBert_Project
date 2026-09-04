@@ -30,15 +30,23 @@ Data/sections/        # later WP
   score + explanation, website.
 
 ## extract_claims.py conventions (decided with user — don't re-litigate)
-- Detection is environmental-GATED: a claim must hit an env TOPIC word (governance is sparse; for greenwashing, sustainability ≈ environment).
-- ESG_Type is then CLASSIFIED E/S/G by keyword-dominance, NOT hardcoded: it flips a claim to S/G only when that vocabulary strictly out-counts the env words. Output stays mostly E; board/committee/HR sentences that slipped in via "sustainability" now tag G/S correctly. (decision log #8)
-- Claim test = TOPIC keyword + (ACTION verb OR hard quantity). Topic-only sentence = description, dropped.
-- Claim_Type: future words → Future Promise; else hard quantity (%, tCO₂e…) → Strong; else → Vague.
-- Evidence: Strong→Yes, Future→Partial, Vague→No. Risk_Signal: Strong+Yes→Supported, Vague+No→Vague,
-  Future+Partial→Weak Evidence; else blank (true Supported/Contradicted needs the later discrepancy WP).
-- TOPIC_KEYWORDS / ACTION_KEYWORDS at top of file = the tunable knobs. Output is TAB-separated (.tsv).
-- KEY INSIGHT: keywords get ~80%; telling a real claim from governance/process prose needs MEANING —
-  that is exactly why the BERT model exists (later WP). Don't try to perfect precision with keywords.
+- Engine is at **v4** (commit 94318c6). Gate = ESG TOPIC word (E ∪ S ∪ G vocab) + (ACTION verb OR hard quantity).
+  Topic-only sentence = description, dropped. Then non-claim filters (reason recorded): boilerplate,
+  reference_dense, navigation, broken_fragment (v4-A, NLTK POS verb check), iro_register (v4-C),
+  policy_content (v4-B), governance_role, activity_report (+soft list, v4-E), methodology (+v4-D,
+  self-reference positional rule), general_statement, risk_description (+v4-C).
+- ESG_Type CLASSIFIED E/S/G by keyword dominance; STRONG_GOV terms win ties; ENV_POLYSEMY ("working
+  environment") -> S; "nature of" excluded. Claim_Type: verb/modal future markers -> Future Promise;
+  noun markers (target/goal/pledge/plan) only without an achievement verb; hard quantity (not a
+  parameter number, v4-F) -> Strong; else Vague. Evidence is INDEPENDENT (achieved perf. quantity ->
+  Yes; standard/assurance cite or projected quantity -> Partial; else No). Risk_Signal from RISK_MATRIX.
+- Every run also writes `<name>_nonclaims.tsv` (all rejected sentences + Drop_Reason) for recall audits.
+- Annotation rulings (guideline): company-performed advocacy = claim (Vague); pure opinion, scenario
+  descriptions, method numbers, tool usage, policy bullets = non-claims; PSP/COBP-type governance
+  mechanisms = G claims; page context allowed when a sentence is ambiguous alone.
+- Benchmarks: dev 26 (in-sample 92%), manual 100 on Unilever v3 = 67%, audit 416 rows (v3 33% -> v4 39%
+  in-sample). Fresh v4 precision + recall (100-random-rejected sample) per teacher's protocol pending.
+- KEY INSIGHT unchanged: keywords hit a semantic ceiling; residual errors motivate the BERT stage.
 
 ## pdf_to_chunks.py conventions (BERT route, for when we get there)
 - PyMuPDF primary, pdfplumber for tables only (no PyPDF2). bert-base-uncased tokenizer. 480-token chunks.
