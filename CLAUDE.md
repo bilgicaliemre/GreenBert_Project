@@ -19,7 +19,7 @@ Data/sections/        # later WP
 ## Current status
 - **Claim extraction — `extract_claims.py` v4**: WORKS end-to-end (PyMuPDF, nltk incl. POS tagger auto-download).
   PDF → text (+page #) → gate + non-claim filters → `<name>_claims.tsv` + `<name>_nonclaims.tsv`.
-  Cols: Company, Page, Claim_Text, ESG_Type, Claim_Type, Evidence_Exists, Risk_Signal. Unilever 585 / Dr Pepper 221 claims.
+  Cols: Company, Page, Claim_Text, ESG_Type, Claim_Type, Evidence_Exists, Risk_Signal. Unilever 583 / Dr Pepper 218 claims.
 - **`pdf_to_chunks.py`** (BERT JSON chunker): built, NOT in use — reserved for the later ML stage.
 - **Validation**: 100-claim manual review of Unilever v3 done (67%); 416-row agent audit done
   (`Data/claims/unilever_claims_audit.tsv`); teacher's v4 protocol in progress: fresh v4 precision review +
@@ -27,8 +27,8 @@ Data/sections/        # later WP
 - Not started: BERT claim classification (WP5), quantitative-metric extraction, discrepancy → score, website.
 
 ## extract_claims.py conventions (decided with user — don't re-litigate)
-- Engine is at **v4 final** (v4.2). Gate = ESG TOPIC word (E ∪ S ∪ G vocab, widened in v4.1) + (ACTION verb incl. first-person/past forms OR hard quantity incl. count units). Noisy bare stems were pruned by audit yield (NOTE 12); do not re-add "purchas"/"process"/"support"/"compl" as bare stems.
-  Topic-only sentence = description, dropped. Then non-claim filters (reason recorded): boilerplate,
+- Engine is at **v4 final** (v4.3: + header stripping, NOTE 13). Gate = ESG TOPIC word (E ∪ S ∪ G vocab, widened in v4.1) + (ACTION verb incl. first-person/past forms OR hard quantity incl. count units). Noisy bare stems were pruned by audit yield (NOTE 12); do not re-add "purchas"/"process"/"support"/"compl" as bare stems.
+  Topic-only sentence = description, dropped. Section headers glued to sentences are STRIPPED, pure headers dropped ("header"). Then non-claim filters (reason recorded): boilerplate,
   reference_dense, navigation, broken_fragment (v4-A, NLTK POS verb check), iro_register (v4-C),
   policy_content (v4-B), governance_role, activity_report (+soft list, v4-E), methodology (+v4-D,
   self-reference positional rule), general_statement, risk_description (+v4-C).
