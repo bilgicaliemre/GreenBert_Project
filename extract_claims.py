@@ -581,6 +581,37 @@ def clean(sentence: str) -> str:
     return re.sub(r"\s+", " ", sentence).strip()
 
 
+# v4.3: PDF extraction glues section headers onto the first sentence of a section
+# ("METRICS AND TARGETS Targets We do not have formal targets on water...",
+# "Our Work in Action INVESTING IN WATER EFFICIENCY We invested in..."). The
+# sentence behind the header is usually a genuine claim, so the header is
+# STRIPPED rather than the sentence dropped. A sentence that is nothing but
+# header is rejected (reason "header").
+HEADER_PREFIXES = ["Our Work in Action"]          # report-specific running labels
+# 2+ leading ALL-CAPS words; "&", "/" and a trailing ":" are allowed inside the run
+CAPS_RUN_RE = re.compile(r"^(?:(?:[A-Z][A-Z0-9&/\-’']{1,}:?|&|/)\s+){2,}")
+# optional 1-2 word title-case label after the header ("Targets ", "Next-Generation Innovation ")
+LABEL_RE = re.compile(r"^(?:[A-Z][a-z]+(?:-[A-Za-z]+)?\s+){1,2}(?=[A-Z])")
+
+def strip_header(sentence: str) -> str:
+    """Remove a leading section header / running label; return the remainder
+    (possibly empty when the whole sentence was a header)."""
+    t = sentence
+    for hp in HEADER_PREFIXES:
+        if t.startswith(hp + " "):
+            t = t[len(hp) + 1:]
+    changed = True
+    while changed:
+        changed = False
+        m = CAPS_RUN_RE.match(t)
+        if m:
+            t = t[m.end():]; changed = True
+            m2 = LABEL_RE.match(t)          # "Targets Unilever does not..." -> drop "Targets "
+            if m2 and len(t.split()) - len(m2.group(0).split()) >= MIN_WORDS:
+                t = t[m2.end():]
+    return t.strip()
+
+
 def classify_esg_type(low: str) -> str:
     """Tag a claim E / S / G (v2, teacher review point 4).
     - Governance terms (board/committee/audit...) WIN ties, so a Remuneration-
@@ -623,6 +654,11 @@ def extract_claims(pages: list[str], company: str = "", stats: dict | None = Non
     for page_idx, page_text in enumerate(pages, start=1):
         for sentence in split_sentences(page_text):
             s = clean(sentence)
+            stripped = strip_header(s)                            # v4.3
+            if stripped != s:
+                if len(stripped.split()) < MIN_WORDS:
+                    drop("header", page_idx, s, s.lower()); continue   # pure section header
+                s = stripped
             low = s.lower()
             if not (MIN_WORDS <= len(s.split()) <= MAX_WORDS):
                 drop("length", page_idx, s, low); continue       # fragment or legal blob
