@@ -37,6 +37,9 @@ TOPIC_KEYWORDS = [
     "plastic", "packaging", "biodivers", "deforest", "pollut",
     "circular", "recycl", "offset", "sustainab", "environment",
     "fossil", "decarbon", "methane", "reforest", "land use",
+    # v4.1 recall fixes
+    "pcr", "post-consumer", "hectare", "regenerat", "reuse", "refill",
+    "water stewardship", "biodegradab", "microplastic", "virgin plastic",
 ]
 # "nature" is handled separately (see NATURE_RE) so we can keep "nature
 # restoration" / "nature-based" but drop the idiom "the nature of our business".
@@ -55,6 +58,10 @@ SOCIAL_KEYWORDS = [
     "communit", "training", "upskill", "reskill", "livelihood",
     "wage", "modern slavery", "child lab", "forced lab", "discriminat",
     "talent", "philanthrop", "volunteer", "nutrition", "accessib", "social",
+    # v4.1 recall fixes
+    "smallholder", "farmer", "sme", "micro-entrepreneur", "living wage",
+    "recall", "consumer", "marketing to children", "grievance", "careline",
+    "collective bargaining", "pay gap", "harassment",
 ]
 
 GOVERNANCE_KEYWORDS = [
@@ -64,6 +71,10 @@ GOVERNANCE_KEYWORDS = [
     "accountab", "shareholder", "code of conduct", "whistleblow",
     "director", "integrity", "lobbying", "risk management",
     "disclosure", "transparen",
+    # v4.1 recall fixes
+    "political", "payment terms", "speak up", "code support line",
+    "responsible partner policy", "rpp", "cobp", "oecd guidelines",
+    "animal", "legal proceeding",
 ]
 
 # ACTIONS that make a sentence an actual claim (doing OR promising something).
@@ -74,6 +85,18 @@ ACTION_KEYWORDS = [
     "reach", "sourc", "launch", "install", "invest", "avoid", "eliminat",
     "sav", "phas", "transition", "switch", "scal", "embed", "maintain",
     "restor", "protect", "roll out", "rolled out",
+    # v4.1 recall fixes: achievement / conduct verbs that the recall audit found
+    # in 113 missed claims ("purchased 152 kilotonnes", "implemented nine
+    # programmes", "we conduct annual training", "we advocate for EPR")
+    # (v4.2 pruning after auditing the 273 candidates they admitted: bare stems
+    # such as "purchas"/"process"/"support"/"compl" bought 4-13 claims per 20-30
+    # false positives, so they are kept only in first-person or past-tense form)
+    "we purchased", "implement", "expand", "collect", "processed", "receiv",
+    "introduc", "we conduct", "ensur", "we comply", "products comply", "complied",
+    "exceed", "we issued", "issued one", "prohibit", "advocat", "lobby", "publish",
+    "verif", "train", "accredit", "we support", "supports over", "we supported",
+    "we help", "helped", "provid", "recall", "we require", "we follow",
+    "we meet", "we do not use", "we work with", "we engage", "in place",
     # commitment / future verbs
     "commit", "aim", "pledge", "strive", "aspire", "target", "goal",
     "will ", "net zero", "net-zero",
@@ -97,6 +120,12 @@ ACHIEVED_VERBS = ["delivered on", "achieved", "exceeded", "surpassed", "met our"
 # This is what makes a claim "Strong" (page numbers / years alone do NOT count).
 QUANTITY_RE = re.compile(
     r"""\d+(?:[.,]\d+)?\s*%                                   # 29.9%
+      | \b\d[\d,.]*\s*(?:kilotonnes?|hectares?|ha\b)         # v4.1: 152 kilotonnes, 8,000 hectares
+      | \b\d[\d,.]*\s+(?:countries|markets|suppliers|sites|programmes|programs|
+           brands|pilots|people|farmers|smallholders|employees|leaders|retailers|
+           contacts|incidents|recalls|studies|locations|women|workers|
+           micro-entrepreneurs|smes|factories|plants)\b           # v4.1: count units
+      | \b\d+(?:\.\d+)?:1\b                                  # v4.1: 142:1 ratios
       | \b\d{1,3}(?:[,. ]\d{3})*(?:\.\d+)?\s*
         (?:t\b|tonnes?|tco2e?|ktco2e?|mtco2e?|kt\b|mt\b|kg\b|kwh|mwh|gwh|twh|
            m3|m³|litres?|liters?|million|billion|bn\b)         # 638 tCO2e, 1.2 million
@@ -197,7 +226,7 @@ POLICY_PHRASES = [
     "sets out four principles", "sets out the principles", "principles that",
     "are required to comply", "required to comply with", "good practices designed to",
     "collection of good practices", "the policy requires", "policy sets out",
-    "the standard also requires", "requires sites to", "must comply",
+    "must comply",
 ]
 # v4-C  RISK / SCENARIO DESCRIPTIONS (15% of FPs): ESRS impact-risk-opportunity
 # register rows and climate-scenario narratives ("Risk (OO)", "Negative Impact (VC)",
@@ -252,9 +281,10 @@ SECTION_NAV_WORDS = [
     "responsible sourcing", "circular economy", "human rights, responsible",
     "overview climate", "supply chain", "table of contents",
 ]
-NAV_POINTER_PHRASES = ["see page", "on page", "refer to the table", "for more detail",
-                       "table below", "figure below", "see section", "see scope",
+NAV_POINTER_PHRASES = ["refer to the table", "for more detail", "table below",
+                       "figure below", "see section", "see scope",
                        "detailed in the relevant", "described in our topical"]
+PAGE_POINTER_PHRASES = ["see page", "on page"]   # v4.2: evidence citation if the sentence asserts
 
 # Evidence references: external standards / assurance / data pointers => backing.
 EVIDENCE_REFS = [
@@ -381,16 +411,25 @@ def is_boilerplate(low: str) -> bool:
 
 def is_reference_dense(sentence: str) -> bool:
     """Table-of-contents / index / 'page 57, page 68' reference lists."""
-    if len(NUM_TOKEN_RE.findall(sentence)) >= 5:
+    # v4.1: ignore years (2025) and small integers ("scope 1, 2 and 3") so a real
+    # result such as "5% decrease in scope 1, 2 and 3 GHG emissions in 2025" survives
+    toks = [t for t in NUM_TOKEN_RE.findall(sentence)
+            if not re.fullmatch(r"(19|20)\d\d", t) and not re.fullmatch(r"\d", t)]
+    if len(toks) >= 5:
         return True
     if sentence.lower().count("page ") >= 2:
         return True
     return False
 
 
-def is_navigation(low: str) -> bool:
-    """Running headers / TOC / cross-reference pointers (section-title soup)."""
+def is_navigation(low: str, asserts: bool = False) -> bool:
+    """Running headers / TOC / cross-reference pointers (section-title soup).
+    v4.1: a page pointer ("as detailed on page 97") inside a sentence that
+    asserts something is an evidence citation, not navigation, so pointer
+    phrases only count when the sentence has no action verb and no quantity."""
     if any(p in low for p in NAV_POINTER_PHRASES):
+        return True
+    if not asserts and any(p in low for p in PAGE_POINTER_PHRASES):
         return True
     nav_hits = sum(1 for w in SECTION_NAV_WORDS if w in low)
     if nav_hits >= 2:
@@ -461,7 +500,7 @@ def non_claim_reason(sentence: str, low: str, has_quantity: bool):
         return "boilerplate"
     if is_reference_dense(sentence):
         return "reference_dense"
-    if is_navigation(low):
+    if is_navigation(low, asserts=has_quantity or has_action(low)):
         return "navigation"
     if is_broken_fragment(sentence, low):                       # v4-A
         return "broken_fragment"
