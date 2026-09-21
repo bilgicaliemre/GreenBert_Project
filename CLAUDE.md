@@ -69,5 +69,10 @@ python3 extract_claims.py
 - **Paper sources**: Related Work is ALREADY DRAFTED. The canonical manuscript + extensive project notes
   live in the user's Google Drive "GreenBert" project (accessible via the Drive MCP). READ those before
   drafting/writing any paper section — don't assume a section is missing.
+- **LIVE project report = Drive `v3report.docx`, id `18LuN3-anayhhw43s6yasQm4wykSn_msZ`** (owner
+  bilgic.aliemre@gmail.com). Ali edits it there continuously. ALWAYS download and read the current
+  version before proposing report edits; never advise from an earlier copy. The older
+  `GreenBERT_Project_Report_v2.docx` (id 1GYQ4tb21eoR7lY5TqIiedEhysE0JL9sy) is superseded.
+  Drive reads cannot see his comments, so ask for those separately.
 - **Skills**: when a workflow repeats, create a skill in `.claude/skills/` instead of re-typing steps.
 - **Context hygiene**: I can't run /clear or /compact — proactively tell the user when to.
