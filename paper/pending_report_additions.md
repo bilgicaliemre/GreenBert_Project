@@ -188,6 +188,22 @@ population: TP 426, FP 157, FN 92, TN 1443. Precision 73%, recall 82%, F1 0.77, 
 Error categories: FP methodology 6, navigation 1, activity 1, header fragment 1, descriptive report 1
 (of the 10 recorded in stratum B); FN split-across-sentences 2, bullet stem 2, gate vocabulary 2.
 
+## 4i. Held for WP5: the unmeasured-register argument (Ali, 2026-09-22)
+
+Deliberately left out of 4.4 and saved for the transformer stage.
+
+The argument, originally Ali's own observation during the 100-claim review: the errors the engine
+cannot shake are unmeasured sentences, those with no quantity and no future marker, because that is
+what a methodology note or a general statement looks like. It is also what a vague greenwashing claim
+looks like, since "we are committed to a sustainable future" has no number and no date either.
+Filtering out unmeasured language would therefore discard the claims the project exists to catch.
+Vague commitment is not noise around the signal, it is the signal, and separating the two requires
+meaning rather than word matching.
+
+Where it belongs: the motivation for the transformer stage. If it is wanted inside this document
+rather than a later one, Activity 4.5 (Baseline Limit Analysis) is the natural home, since that
+section already argues why rules cannot go further.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
