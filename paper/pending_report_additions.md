@@ -81,6 +81,23 @@ therefore carry sampling error, which the caveat in 4.2 already states.
 Files given to Ali for labelling: `Data/SHEET_extracted_new_40.csv` and `Data/SHEET_rejected_100.csv`
 (both blind: no engine labels, no drop reasons).
 
+## 4e. Reasoning column dropped from the labelling (Ali, 2026-09-21)
+
+Ali will record Yes or No only, since v4 is frozen and the rationales are no longer needed to improve
+the engine. Consequences:
+
+- Activity 4.2 is unaffected. Precision, recall and F1 need only the Yes/No labels.
+- Activity 4.3 still needs the ESG Type column, on the Yes rows of the extracted sheet only.
+- Activity 4.4 is affected. Its text says the errors are categorised "from the human labels and
+  rationales". With no rationales, either Ali tags the error rows, or the categorisation would have
+  to be automated, which the teacher has excluded from WP4. Proposed cheap version: a single word in
+  the Reasoning column on the No rows of the extracted sheet (roughly 15 to 20 rows) and the Yes rows
+  of the rejected sheet (roughly 5), drawn from a fixed list:
+  methodology, policy, risk, activity, advocacy, fragment, governance, other for false positives;
+  split-sentence, table, vocabulary, other for false negatives.
+- If he declines that too, 4.4 must be reworded to describe the error families qualitatively, citing
+  the v3 inspection in WP3, without a quantified distribution for v4.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
