@@ -60,6 +60,23 @@ Worked example on the 13 typed claims available now (to be recomputed on the ful
 Overall accuracy 10/13 = 77%. The S row is meaningless at this sample size, which is itself a point
 worth making once the full stratum is typed.
 
+## 4b. Replace the coined term "default channel" (Ali, 2026-09-21)
+
+Ali asked what "the default channel" means, which is the test that a coined term fails. It is the
+combination of an Environmental type, a Vague claim type and no evidence: where a sentence lands when
+it passes the topic and assertion gate but carries neither a quantity nor a future marker. On the v4
+output it holds 150 of 583 candidates, 26 per cent, the largest single combination.
+
+Action: drop the phrase everywhere and name it plainly, for example "the Environmental, Vague,
+no-evidence combination", in line with the project rule against coined or metaphorical terms. It
+appears in the WP3 error list, in Activity 4.4, and in the text carried over from the earlier round.
+
+## 4c. Confusion matrix description requested from the teacher (Ali, 2026-09-21)
+
+Ali has asked his teacher for a description of the confusion matrix she wants. Activity 4.3, and
+possibly the tables of 4.2, may be redone once she answers. Hold both until her description arrives;
+item 4 above is the current proposal.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
