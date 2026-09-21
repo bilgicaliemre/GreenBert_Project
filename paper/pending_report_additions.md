@@ -143,6 +143,31 @@ A Yes in the rejected sheet therefore means the engine missed a claim. If Ali pr
 engine-correctness phrasing, the header of the rejected sheet must be renamed to say so explicitly;
 the two sheets must not use different meanings under the same header.
 
+## 4g. RULING: bullets are judged with their stem (2026-09-21)
+
+Raised while labelling, by the bullet "Collaborate with others to promote environmental care...".
+Its stem on page 10 is "This policy commits Unilever to:", which makes the bullet a commitment.
+
+Ruling: attach the stem, then apply the normal test. The guideline already permits page context, and
+a bullet under a committing stem is a commitment when the document is read honestly. This does NOT
+make every bullet a claim: a definitions bullet stays a non-claim whatever the stem, and a bullet
+carrying its own subject (a committee sentence) is judged on that subject.
+
+Correction of an earlier answer: on 2026-09-21 I told Ali that an imperative advocacy bullet
+("Encourage evolution of GHG Protocol standards") stays policy content even though its stem was
+"Our cross-cutting advocacy plans aim to:". That was inconsistent with the page-context rule and with
+the recall audit, which confirmed the sibling bullets of that same stem as missed claims. The ruling
+above supersedes it.
+
+Scope: 11 of the 140 benchmark rows begin with a bullet glyph, 7 in the rejected sample (IDs 22, 42,
+44, 47, 56, 69, 95) and 4 in the extracted sample (IDs 15, 17, 18, 21), so the ruling moves about 8%
+of the benchmark.
+
+Consequence for Activity 4.4: the v4-B policy-content filter drops bullets whose stem commits the
+company, because it tests only the bullet itself for first-person language. Committed bullets
+labelled Yes in the rejected sample are therefore false negatives with a single identifiable cause,
+which belongs in the false-negative categorisation alongside split-sentence and table cases.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
