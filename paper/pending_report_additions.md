@@ -71,6 +71,23 @@ Ali has asked his teacher for a description of the confusion matrix she wants. A
 possibly the tables of 4.2, may be redone once she answers. Hold both until her description arrives;
 item 4 above is the current proposal.
 
+## 4d. Stratum B becomes a census, not a sample (Ali, 2026-09-21)
+
+Ali will label all 233 newly admitted candidates rather than the sample of 40. This is stronger: the
+precision of that stratum becomes exact rather than estimated, and only the rejected stratum carries
+sampling error. Consequences for the text:
+
+- Activity 4.1: replace "A fresh random sample of 40 sentences was drawn from it" with a statement
+  that all 233 were labelled. The benchmark total becomes 32 + 233 + 100 = 365 labelled sentences,
+  not 172.
+- Activity 4.2: Table 3's second row becomes population 233, sampled 233. The weighting formula
+  stays the same but the second term is no longer an estimate:
+  TP = 350 x (Yes_A / 32) + 233 x (Yes_B / 233), which reduces to 350 x P_A + Yes_B.
+- The sampling-error caveat now applies to the rejected stratum alone.
+
+Files given to Ali for labelling: `Data/SHEET_extracted_new_233.csv` and `Data/SHEET_rejected_100.csv`
+(both blind: no engine labels, no drop reasons).
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
