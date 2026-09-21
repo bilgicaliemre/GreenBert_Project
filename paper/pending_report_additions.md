@@ -40,9 +40,33 @@ limitation with a named next step.
 
 ---
 
-## 4. Ali's further notes
+## 4. Activity 4.3 must report performance, not just a matrix (Ali, 2026-09-21)
 
-(to be added as he reviews)
+Ali's note: 4.3 "has the wrong variables, it should be a TP TN FP FN confusion matrix".
+
+Assessment: the three-by-three matrix is the correct form for a three-class problem and is what the
+teacher asked for, but Ali is right that a matrix alone is not an evaluation. Resolution: keep the
+three-by-three as the raw data and derive a per-class table from it (one class against the rest), so
+4.3 reports TP, FP, FN, TN, precision, recall and F1 for E, S and G, plus overall accuracy.
+
+Worked example on the 13 typed claims available now (to be recomputed on the full stratum):
+
+| class | TP | FP | FN | TN | precision | recall | F1 |
+|---|---|---|---|---|---|---|---|
+| E | 9 | 1 | 2 | 1 | 90% | 82% | 0.86 |
+| S | 0 | 2 | 1 | 10 | 0% | 0% | 0.00 |
+| G | 1 | 0 | 0 | 12 | 100% | 100% | 1.00 |
+
+Overall accuracy 10/13 = 77%. The S row is meaningless at this sample size, which is itself a point
+worth making once the full stratum is typed.
+
+## 5. Sections Ali flagged as needing further change
+
+- Final Rule Refinement (v4), in WP3
+- Activity 4.1
+- The tables of Activity 4.2 and the inferences drawn from the 4.1 results
+
+Everything else in the revision he is approving as he reads. Further notes to be added here.
 
 ---
 
