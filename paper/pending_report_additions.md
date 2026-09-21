@@ -115,6 +115,34 @@ the engine. Consequences:
   letters (roughly 29 on the extracted sheet plus the 10 Yes rows of the carried-over set that are
   not yet typed; 13 of the 23 already have a type from the earlier review).
 
+## 4f. Activity 4.3 DROPPED, and the labelling convention (Ali, 2026-09-21)
+
+Decisions:
+- The E/S/G confusion matrix is not being done. The ESG Type column stays empty. Activity 4.3 is kept
+  as a short section stating the deferral and its reason, so the numbering still matches the
+  teacher's list of five and she sees a deliberate choice rather than a gap. Reason to state: the
+  claim-detection matrix was the priority and the ESG typing of the benchmark was not completed in
+  the time available; the engine's ESG assignment is therefore reported as unevaluated.
+- Extracted sheet (40): Yes or No, plus a short reason on the No rows. Gives TP and FP, and the
+  false-positive categorisation for 4.4.
+- Rejected sheet (100): Yes or No, plus, on the rows that are genuine claims, a note saying why.
+  Gives FN and TN, and the false-negative categorisation for 4.4.
+
+POLARITY HAZARD, resolved: Ali first proposed marking the rejected sheet with Y for a true negative
+and N for a false negative, which inverts the meaning of the column between the two sheets and would
+silently swap FN and TN if anyone read them together. Agreed convention instead: both sheets answer
+the same question, the one already in the header, "Real ESG Claim". Yes means the sentence is a
+genuine claim. The cell then follows mechanically:
+
+| Sheet | Human says Yes | Human says No |
+|---|---|---|
+| Extracted (40) | TP | FP |
+| Rejected (100) | FN | TN |
+
+A Yes in the rejected sheet therefore means the engine missed a claim. If Ali prefers his
+engine-correctness phrasing, the header of the rejected sheet must be renamed to say so explicitly;
+the two sheets must not use different meanings under the same header.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
