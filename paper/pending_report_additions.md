@@ -65,11 +65,22 @@ worth making once the full stratum is typed.
 Raised and then withdrawn by Ali: the term reads correctly in context, and the paragraph defines it
 where it is first used. No change. Keep "the default channel" as written.
 
-## 4c. Confusion matrix description requested from the teacher (Ali, 2026-09-21)
+## 4c. Confusion matrix description RECEIVED (teacher, 2026-09-21)
 
-Ali has asked his teacher for a description of the confusion matrix she wants. Activity 4.3, and
-possibly the tables of 4.2, may be redone once she answers. Hold both until her description arrives;
-item 4 above is the current proposal.
+Her definition, in her words: Positive = genuine ESG claim, Negative = non-claim; Human Label is the
+truth and Rule Engine v4 is the prediction. TP = v4 says claim and the human agrees. FP = v4 says
+claim, human says non-claim (her example: methodology sentences mistaken for claims). FN = v4 says
+non-claim, human says it is a claim, which she flags as the most important cell because the system
+missed a real claim. TN = both say non-claim.
+
+This is exactly the two-by-two matrix of Activity 4.2 as drafted, and it confirms the two-stratum
+design: the extracted sample yields TP and FP, the rejected sample yields FN and TN, consistent with
+her earlier instruction. Item 4 (the per-class derivation) therefore belongs to Activity 4.3, not to
+4.2, and 4.2 needs no redesign.
+
+One deviation to tell her about: she specified 100 sentences from the extracted output, and the
+design currently has 72 there (32 labels carried over from the v3 review plus 40 newly sampled).
+Reaching her 100 would mean labelling 28 more from the shared stratum.
 
 ## 4d. Stratum B stays a sample of 40 (Ali, 2026-09-21)
 
@@ -95,8 +106,14 @@ the engine. Consequences:
   of the rejected sheet (roughly 5), drawn from a fixed list:
   methodology, policy, risk, activity, advocacy, fragment, governance, other for false positives;
   split-sentence, table, vocabulary, other for false negatives.
-- If he declines that too, 4.4 must be reworded to describe the error families qualitatively, citing
-  the v3 inspection in WP3, without a quantified distribution for v4.
+- DECIDED (2026-09-21): Ali will give a one-word reason on the No rows, so 4.4 keeps a quantified
+  distribution.
+- ALSO DECIDED: he will not fill the ESG Type column, reading the teacher's confusion-matrix
+  description as requiring no ESG. That description covers Activity 4.2 only. Without ESG labels,
+  Activity 4.3 cannot be computed at all and must be dropped or deferred, even though the teacher
+  listed it as one of the five activities. Marginal cost if he changes his mind: about 39 single
+  letters (roughly 29 on the extracted sheet plus the 10 Yes rows of the carried-over set that are
+  not yet typed; 13 of the 23 already have a type from the earlier review).
 
 ## 5. Sections Ali flagged as needing further change
 
