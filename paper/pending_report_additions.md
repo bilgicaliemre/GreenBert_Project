@@ -168,6 +168,26 @@ company, because it tests only the bullet itself for first-person language. Comm
 labelled Yes in the rejected sample are therefore false negatives with a single identifiable cause,
 which belongs in the false-negative categorisation alongside split-sentence and table cases.
 
+## 4h. WP4 structure settled (Ali, 2026-09-21)
+
+The ESG type evaluation is dropped entirely, with no deferral paragraph. Activity 4.3 is repurposed
+as the confusion matrix, which also gives the teacher's detailed cell-by-cell description a section
+of its own. Final structure:
+
+- 4.1 Human Benchmark Construction
+- 4.2 Claim Detection Performance (labels by stratum, population scaling, precision, recall, F1)
+- 4.3 Confusion Matrix (the two-by-two, cell readings, negative predictive value, accuracy)
+- 4.4 Final Error Analysis (false positive and false negative categories from the annotator's reasons)
+- 4.5 Baseline Limit Analysis
+
+Tell the teacher that ESG type classification was dropped, since her list had it as 4.3.
+
+FINAL LOCKED NUMBERS (human labels only, no automated adjudication):
+sample: extracted 53 claims / 19 not, across 72 labelled; rejected 6 claims / 94 not, across 100.
+population: TP 426, FP 157, FN 92, TN 1443. Precision 73%, recall 82%, F1 0.77, NPV 94%, accuracy 88%.
+Error categories: FP methodology 6, navigation 1, activity 1, header fragment 1, descriptive report 1
+(of the 10 recorded in stratum B); FN split-across-sentences 2, bullet stem 2, gate vocabulary 2.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
