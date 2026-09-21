@@ -1,0 +1,41 @@
+Sample_ID	Engine_ESG	Engine_Claim_Type
+1	E	Strong
+2	E	Vague
+3	S	Future Promise
+4	S	Vague
+5	S	Future Promise
+6	G	Vague
+7	E	Strong
+8	S	Vague
+9	S	Vague
+10	G	Vague
+11	S	Vague
+12	S	Vague
+13	S	Vague
+14	S	Vague
+15	S	Vague
+16	G	Vague
+17	S	Vague
+18	S	Vague
+19	G	Vague
+20	S	Vague
+21	G	Vague
+22	S	Vague
+23	S	Strong
+24	S	Vague
+25	E	Vague
+26	E	Vague
+27	S	Strong
+28	E	Vague
+29	E	Strong
+30	E	Vague
+31	E	Future Promise
+32	S	Vague
+33	S	Vague
+34	S	Future Promise
+35	G	Vague
+36	S	Vague
+37	E	Future Promise
+38	E	Future Promise
+39	E	Vague
+40	E	Vague

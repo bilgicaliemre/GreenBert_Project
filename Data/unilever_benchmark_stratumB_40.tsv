@@ -1,41 +1,41 @@
-Sample_ID	Page	Sentence	Engine_ESG	Engine_Claim_Type	Real ESG Claim	ESG Type	Reasoning
-1	16	Regenerative agriculture In 2025, we implemented 12 new regenerative agriculture projects, bringing our total to 34 projects (excluding one project relating to Ice Cream) covering 254,000 hectares since 2021.	E	Strong			
-2	30	Allocation to Ice Cream Implement regenerative agriculture practices: Programmes funded by or associated to an Ice Cream brand.	E	Vague			
-3	42	■Engaging with business partners in Turkey to develop and implement a repayment plan to reimburse workers who covered the costs of their own health checks during recruitment processes.	S	Future Promise			
-4	42	With respect to affected communities, reported grievances are recorded in our People and Nature Grievance Tracker and we publish details on our website.	S	Vague			
-5	50	Our goal is to help 2.5 million SMEs in our retail value chain grow their business by 2026.	S	Future Promise			
-6	57	Oversight of political engagement In 2025, Unilever’s Chief Corporate Affairs and Communications Officer oversaw both national government engagement and lobbying activity, as well as global engagement with intergovernmental organisations and NGOs.	G	Vague			
-7	16	By the end of 2025, almost 200 suppliers (2024: 181) were actively participating in the Supplier Climate Programme (SCP), accounting for over 40% of Unilever’s scope 3 emissions from raw materials, ingredients and packaging.	E	Strong			
-8	24	Each relevant site performed a gap assessment against the standard and actions are in the process of being agreed where improvements are needed.	S	Vague			
-9	46	Therefore we do not report (i) collective bargaining by region within the EEA, or (ii) in relation to social dialogue, the percentage of employees covered at the establishment level by workers’ representatives by country.	S	Vague			
-10	49	Substantiation is determined through review by the relevant Unilever Business Integrity Officer and/or Responsible Business Manager and the management of the Third-Party Service Provider, where applicable.	G	Vague			
-11	45	We conduct annual mandatory Code training for all employees, which regularly includes training on how to recognise bullying and harassment, and discrimination.	S	Vague			
-12	38	We regularly review human rights issues to ensure our approach remains focused on saliency.	S	Vague			
-13	56	Additionally, we provide robust internal and external reporting platforms that are accessible to our employees and partners to facilitate prompt reporting.	S	Vague			
-14	45	In 2021, we received our first global independent accreditation as a living wage employer.	S	Vague			
-15	45	In 2025, training included: ■Artificial Intelligence (AI): We provided comprehensive training across business groups, geographies and functions.	S	Vague			
-16	57	Anti-corruption and anti-bribery training As part of our annual mandatory Business Integrity learning programme, anti-corruption and anti-bribery training is deployed to all employees.	G	Vague			
-17	53	Marketing to Children The updated Marketing to Children Principles has been published on our Responsible Business platform and communicated through internal channels.	S	Vague			
-18	56	Completion of training is tracked, and we follow up with employees who fail to complete mandatory training, taking further action where required.	S	Vague			
-19	56	Business conduct training Employees and Directors are required to know the COBP and Code Policies and understand how to apply them in their work.	G	Vague			
-20	42	We work with business partners and other stakeholders as needed and engage with rightsholders to better understand the impact and ensure remediation actions meet the needs of the affected individual or community.	S	Vague			
-21	55	The key elements of Unilever’s standards of conduct are set out in our Code of Business Principles (COBP) and Code Policies, which provide a set of mandatory rules that govern how we run our business.	G	Vague			
-22	56	We conduct annual mandatory training for all office-based employees and have tailored training for those employees working in factories and more remote areas.	S	Vague			
-23	46	At 31 December 2025, there were a further 1,060 employees reported as part of the demerger of the Ice Cream business and the net movement of joiners and leavers over the reporting period was (323).	S	Strong			
-24	40	■Value chain: Our upstream value chain includes workers employed by our business partners, including manufacturing facilities, laboratories and refineries, professional service providers, agricultural workers and smallholder farmers growing and harvesting crops for use as ingredients in our products.	S	Vague			
-25	24	We monitor emissions from our sites at a local level to ensure compliance with legal requirements and permits.	E	Vague			
-26	3	Updates are provided by the global Sustainability function five times a year.	E	Vague			
-27	48	(c) Days lost in 2024 included 7 incidents where employees were absent at 31 December 2024; a total of 448 days were included pertaining to these incidents of which 214 were estimated.	S	Strong			
-28	15	To mitigate these risks, we are: Building resilience in our supply chain: Our supply chain and procurement teams manage a range of supply-related risks, including those influenced by climate factors, through established processes and an ongoing resilience programme implemented across all regions.	E	Vague			
-29	16	In 2025, we deepened engagement through the SCP working with 25 suppliers to identify GHG hotspots and decarbonisation opportunities across their value chains.	E	Strong			
-30	29	Every project includes a range of relevant metrics covering biodiversity, climate and other ecosystem changes via our Measure, Report, Verify (MRV) framework, which generates output- and outcome-level data annually.	E	Vague			
-31	16	Scope 3 (value chain) The table on page 229 demonstrates the contribution of our identified scope 3 decarbonisation levers towards our targeted GHG emissions reductions to 2030.	E	Future Promise			
-32	40	■Respecting the dignity of the individual and the right of employees to freedom of association and collective bargaining.	S	Vague			
-33	5	This approach ensured inclusion of perspectives from all key stakeholder groups, including affected communities.	S	Vague			
-34	52	We use these insights to support our aim of providing superior products and delivering great consumer experiences.	S	Future Promise			
-35	57	Preventing, detecting and addressing allegations or incidents of corruption and bribery The core processes to prevent, detect and address allegations or incidents of corruption and bribery are the same as those in place for Unilever’s COBP and Code Policies.	G	Vague			
-36	52	We monitor feedback provided by consumers on Unilever’s brands and products on social media and through product reviews on digital commerce sites.	S	Vague			
-37	30	By 2030, our regenerative agriculture programme aims to cover approximately 25% of the land required to grow the agricultural raw materials associated with our key crops for Unilever’s products.	E	Future Promise			
-38	24	Unilever’s Environmental Care Framework Standards (ECFWS) require sites to assess the potential for serious environmental incidents or emergency situations and implement comprehensive plans to prevent or mitigate the associated likely consequences.	E	Future Promise			
-39	34	■Packaging materials include plastic, paper and board, glass and aluminium, and both virgin and secondary materials (materials derived from the recycling of primary materials that are reprocessed and then reused).	E	Vague			
-40	26	We continue to implement water stewardship programmes in water- stressed areas where we have manufacturing sites.	E	Vague			
+Sample_ID	Page	Sentence	Real ESG Claim	ESG Type	Reasoning
+1	16	Regenerative agriculture In 2025, we implemented 12 new regenerative agriculture projects, bringing our total to 34 projects (excluding one project relating to Ice Cream) covering 254,000 hectares since 2021.			
+2	30	Allocation to Ice Cream Implement regenerative agriculture practices: Programmes funded by or associated to an Ice Cream brand.			
+3	42	■Engaging with business partners in Turkey to develop and implement a repayment plan to reimburse workers who covered the costs of their own health checks during recruitment processes.			
+4	42	With respect to affected communities, reported grievances are recorded in our People and Nature Grievance Tracker and we publish details on our website.			
+5	50	Our goal is to help 2.5 million SMEs in our retail value chain grow their business by 2026.			
+6	57	Oversight of political engagement In 2025, Unilever’s Chief Corporate Affairs and Communications Officer oversaw both national government engagement and lobbying activity, as well as global engagement with intergovernmental organisations and NGOs.			
+7	16	By the end of 2025, almost 200 suppliers (2024: 181) were actively participating in the Supplier Climate Programme (SCP), accounting for over 40% of Unilever’s scope 3 emissions from raw materials, ingredients and packaging.			
+8	24	Each relevant site performed a gap assessment against the standard and actions are in the process of being agreed where improvements are needed.			
+9	46	Therefore we do not report (i) collective bargaining by region within the EEA, or (ii) in relation to social dialogue, the percentage of employees covered at the establishment level by workers’ representatives by country.			
+10	49	Substantiation is determined through review by the relevant Unilever Business Integrity Officer and/or Responsible Business Manager and the management of the Third-Party Service Provider, where applicable.			
+11	45	We conduct annual mandatory Code training for all employees, which regularly includes training on how to recognise bullying and harassment, and discrimination.			
+12	38	We regularly review human rights issues to ensure our approach remains focused on saliency.			
+13	56	Additionally, we provide robust internal and external reporting platforms that are accessible to our employees and partners to facilitate prompt reporting.			
+14	45	In 2021, we received our first global independent accreditation as a living wage employer.			
+15	45	In 2025, training included: ■Artificial Intelligence (AI): We provided comprehensive training across business groups, geographies and functions.			
+16	57	Anti-corruption and anti-bribery training As part of our annual mandatory Business Integrity learning programme, anti-corruption and anti-bribery training is deployed to all employees.			
+17	53	Marketing to Children The updated Marketing to Children Principles has been published on our Responsible Business platform and communicated through internal channels.			
+18	56	Completion of training is tracked, and we follow up with employees who fail to complete mandatory training, taking further action where required.			
+19	56	Business conduct training Employees and Directors are required to know the COBP and Code Policies and understand how to apply them in their work.			
+20	42	We work with business partners and other stakeholders as needed and engage with rightsholders to better understand the impact and ensure remediation actions meet the needs of the affected individual or community.			
+21	55	The key elements of Unilever’s standards of conduct are set out in our Code of Business Principles (COBP) and Code Policies, which provide a set of mandatory rules that govern how we run our business.			
+22	56	We conduct annual mandatory training for all office-based employees and have tailored training for those employees working in factories and more remote areas.			
+23	46	At 31 December 2025, there were a further 1,060 employees reported as part of the demerger of the Ice Cream business and the net movement of joiners and leavers over the reporting period was (323).			
+24	40	■Value chain: Our upstream value chain includes workers employed by our business partners, including manufacturing facilities, laboratories and refineries, professional service providers, agricultural workers and smallholder farmers growing and harvesting crops for use as ingredients in our products.			
+25	24	We monitor emissions from our sites at a local level to ensure compliance with legal requirements and permits.			
+26	3	Updates are provided by the global Sustainability function five times a year.			
+27	48	(c) Days lost in 2024 included 7 incidents where employees were absent at 31 December 2024; a total of 448 days were included pertaining to these incidents of which 214 were estimated.			
+28	15	To mitigate these risks, we are: Building resilience in our supply chain: Our supply chain and procurement teams manage a range of supply-related risks, including those influenced by climate factors, through established processes and an ongoing resilience programme implemented across all regions.			
+29	16	In 2025, we deepened engagement through the SCP working with 25 suppliers to identify GHG hotspots and decarbonisation opportunities across their value chains.			
+30	29	Every project includes a range of relevant metrics covering biodiversity, climate and other ecosystem changes via our Measure, Report, Verify (MRV) framework, which generates output- and outcome-level data annually.			
+31	16	Scope 3 (value chain) The table on page 229 demonstrates the contribution of our identified scope 3 decarbonisation levers towards our targeted GHG emissions reductions to 2030.			
+32	40	■Respecting the dignity of the individual and the right of employees to freedom of association and collective bargaining.			
+33	5	This approach ensured inclusion of perspectives from all key stakeholder groups, including affected communities.			
+34	52	We use these insights to support our aim of providing superior products and delivering great consumer experiences.			
+35	57	Preventing, detecting and addressing allegations or incidents of corruption and bribery The core processes to prevent, detect and address allegations or incidents of corruption and bribery are the same as those in place for Unilever’s COBP and Code Policies.			
+36	52	We monitor feedback provided by consumers on Unilever’s brands and products on social media and through product reviews on digital commerce sites.			
+37	30	By 2030, our regenerative agriculture programme aims to cover approximately 25% of the land required to grow the agricultural raw materials associated with our key crops for Unilever’s products.			
+38	24	Unilever’s Environmental Care Framework Standards (ECFWS) require sites to assess the potential for serious environmental incidents or emergency situations and implement comprehensive plans to prevent or mitigate the associated likely consequences.			
+39	34	■Packaging materials include plastic, paper and board, glass and aluminium, and both virgin and secondary materials (materials derived from the recycling of primary materials that are reprocessed and then reused).			
+40	26	We continue to implement water stewardship programmes in water- stressed areas where we have manufacturing sites.			
