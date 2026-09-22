@@ -204,6 +204,20 @@ Where it belongs: the motivation for the transformer stage. If it is wanted insi
 rather than a later one, Activity 4.5 (Baseline Limit Analysis) is the natural home, since that
 section already argues why rules cannot go further.
 
+## 4j. Benchmark stays at 172 sentences (Ali, 2026-09-22)
+
+Considered and dropped: adding the 17 labels from the v3 review that fall on sentences v4 now
+rejects. They are valid and non-overlapping, they would grow the benchmark to 189, and they carry a
+47% claim rate against 6% in a random rejection, which would have shown that v4's precision filters
+cost roughly 31 genuine claims v3 had caught. Rejected as too complicated for the time available; it
+would require a four-group structure across 4.1, 4.2 and 4.3.
+
+Decision: the benchmark is the 172 labelled sentences. Confusion matrix reported as observed:
+TP 53, FP 19, FN 6, TN 94; precision 74%, recall 90%, F1 0.81, NPV 94%, accuracy 85%.
+Because the three groups were sampled at different rates (32/350, 40/233, 100/1535), one sentence
+must note that these describe the labelled benchmark rather than the document, where recall is 82%.
+Do not re-propose the 17 rows without being asked.
+
 ## 5. Sections Ali flagged as needing further change
 
 - Final Rule Refinement (v4), in WP3
