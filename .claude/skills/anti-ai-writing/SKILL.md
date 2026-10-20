@@ -49,6 +49,13 @@ material (facts, scenes, data, quotes) is available. If the material is thin, as
 Pick a position and hold it. Use plain verbs (is, has, used, tried). Name things precisely and keep using
 the same name.
 
+For personal essays and other narratives, draft in two passes, because auditing while drafting produces
+flat, note-by-note essays. Pass one: write for shape, the way a strong writer would, with the arc, the turn
+and the "so what" as the goal; put the climax late and connect the scenes. Pass two: treat that draft as
+someone else's and run Edit mode on it (steps 3 and 4). The fact diff is where invented feelings, causes and
+events get cut or replaced with the writer's own reflections from the notes; keep the structure that pass one
+built.
+
 **3. Audit the draft in this order** (details and examples in `references/tells.md`):
 
 | Pass | Look for | Fix |
@@ -70,8 +77,12 @@ passive voice) only when several cluster in one passage.
 - Fact diff: list every name, number, date, quote and claim in the output and confirm each comes from the
   user or the source. Remove or bracket anything that does not.
 - Read it as the target reader. Does any sentence only exist to sound good?
-- Did the rewrite create new tells? Watch for the classic over-corrections: choppy fragments, an aphorism at
-  the end of every paragraph, every paragraph opening with a short punchy sentence, forced casualness.
+- Did the rewrite create new tells? Watch for the classic over-corrections: choppy fragments, every paragraph
+  opening with a short punchy sentence, forced casualness, and above all kicker endings. Count them: list the
+  last sentence of every paragraph; if more than two are short (under about 10 words) or wry/quotable, rewrite
+  the others so they end on content, or merge them into the sentence before.
+- For a personal essay, also check the opposite failure: is there an arc and at least one line of reflection
+  that tells the reader something the facts alone do not?
 - Length: respect hard limits (650 words for the Common App, school word counts).
 
 **5. Output.** Return the finished text only. When editing someone else's text, add at most three lines on

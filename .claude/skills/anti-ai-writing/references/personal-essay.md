@@ -113,8 +113,9 @@ reveals. Recommend one. Choose by:
 - **A turn:** something changes between the first and last paragraph.
 - **New information:** it shows what the activities list and recommendations cannot.
 
-Then decide what to leave out. A strong essay uses perhaps a third of a good interview. Material that does not
-serve the spine goes, however good it is (it can go to a supplement).
+Then decide what to leave out: material that does not serve the spine goes, however good it is (it can go to a
+supplement). Do not leave out the uncomfortable material just because it is hard to place; it is often the
+spine.
 
 Topics officers warn about: a résumé in prose; an essay mostly about someone else; hardship told as a list of
 suffering without insight; the third-person opening with a "that little girl was me" twist.
@@ -200,11 +201,17 @@ content, explain the problem and let them rewrite it.
 ## 10. Writing a sample essay for a fictional person
 
 When asked to demonstrate (teaching, a class example, a test of this skill), you may write a full sample for a
-clearly fictional student from supplied notes. Same standard as above:
-- use only the notes; never add a feeling, cause or motive they don't state;
-- choose a spine by stakes and leave at least a third of the material out;
-- give it an arc, not the interview's order;
-- include one or two reflection lines taken from the student's own words in the notes; if the notes contain
-  no reflection for a connection, leave the connection to the reader rather than inventing one;
-- vary paragraph endings; stay under the word limit;
-- put the "sample" label outside the essay text, not in its title.
+clearly fictional student from supplied notes. Aim for the level of the best admitted essays, which means the
+essay needs an arc and a "so what", not only accurate details:
+- Draft in the two passes described in SKILL.md step 2: shape first, then a full Edit-mode pass on your own
+  draft.
+- Events, people, numbers, quotes and objects come only from the notes.
+- Pick the spine with the highest stakes (where the student was wrong, ashamed, afraid or unsure) and build the
+  whole essay around it. Bring in other material only where it sharpens that spine.
+- Order by the spine's logic: setup with stakes, the turn, what changed and what hasn't.
+- Reflection: use the student's own reflections from the notes first. You may add a short connective
+  observation that links two facts in the notes (two things that rhyme, a pattern across two scenes), stated
+  as the writer noticing it, never as a lesson. Do not add an event, a motive or a feeling the notes contradict
+  or do not support.
+- Run the paragraph-ending count from SKILL.md step 4; stay under the word limit.
+- Put any "sample" label outside the essay text.

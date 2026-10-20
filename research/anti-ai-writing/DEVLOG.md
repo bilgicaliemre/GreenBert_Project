@@ -169,13 +169,40 @@ the skill (W) received the richer notes.
 built ("walks through the notes in order; climax in paragraph 7 of 9"). Edit mode (draft first, audit after)
 had kept the arc (personal statement 1-1, short answer 2-0) with zero unsupported claims.
 
-## 6. Version 4 (in test)
+## 6. Version 4 (shipped to `.claude/skills/anti-ai-writing/`)
 
 **Change (why):** two-pass drafting for personal essays and narratives: pass one writes for shape (arc, turn,
 so-what, late climax), pass two runs the full Edit mode on that draft (fact diff cuts invented feelings,
 audit passes, kicker count). Rationale: auditing while drafting produced flat essays; edit mode preserved arc.
 
-**Results:** pending.
+**Results.**
+| Comparison | Better writing | More human | Unsupported claims |
+|---|---|---|---|
+| Personal statement, P vs v4 (depth notes) | P 3-1 (v3: 4-0) | v4 3-1 | P 19, v4 6 |
+| Short answer, P vs v4 (depth notes) | P 3-1 (v3: 2-2) | v4 3-1 | P 15, v4 7 |
+| Personal statement, A vs v4 (original notes) | 1-1 (first win for any version here) | v4 2-0 | A 14, v4 4 |
+
+- Arc scores for v4 personal statements 6-7 against plain's 7-8 (v3: 5-6).
+- **Decision:** ship v4. Best personal-essay version so far, same rules elsewhere, and its coach mode is the one
+  validated in section 4. Sample sizes for personal essays are small (2-4 pairs per cell); phase 2 tests v4 on 8
+  personal-essay briefs.
+- **Finding for the paper (fidelity–arc tradeoff):** across v1-v4, plain Claude's personal essays win on arc
+  because it writes connective feelings and causes the student never stated (3-11 unsupported claims per essay).
+  Forbidding that lowers judged arc; two-pass drafting recovers part of it. Depth answers from the student raise
+  everyone's quality and cut plain Claude's fabrication by about half.
+
+## 7. Measurement upgrade: third detector
+
+Added D3 = SuperAnnotate/ai-detector (RoBERTa-large; training data includes Anthropic models and RAID; output
+capped near 73% by label smoothing). Calibration: human 2.1-3.8%, AI 72.7-73.0%. It scored the 2005 Paul Graham
+essay that D2 flagged at 56% as 2.2%. All earlier texts re-scored with D1-D3 (`eval/results/rescore3.json`).
+
+## 8. Phase 2 plan (large evaluation)
+
+20 briefs (4 fictional students × personal statement and short answer with depth notes; 4 argument; 4 explainer;
+4 literary analysis with verified Gutenberg quotes) × 5 conditions: P plain; L word-list prompt (the common
+"avoid delve, tapestry, em dashes" approach); H blader/humanizer applied to P's draft; E our Edit mode on P's
+draft; O our Write mode. Two blind panel judges per brief rank all five; detectors D1-D3 score every text.
 
 ---
 
