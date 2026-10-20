@@ -1,0 +1,25 @@
+Why is the sky blue, and why do sunsets turn red?
+
+On a clear afternoon the sky is blue. A few hours later the same sky can glow orange and red. The difference comes down to how far sunlight travels through the air and how the tiny molecules along the way bounce it around.
+
+Sunlight is a mix of colors
+
+Sunlight looks white, but it is a blend of every color in the rainbow, which is why a prism or a raindrop can split it apart. Each color is light of a different wavelength. Red has the longest waves and violet the shortest, with blue near the short end.
+
+Air scatters short waves more
+
+Our atmosphere is mostly nitrogen and oxygen molecules, which are far smaller than the wavelength of visible light. When sunlight hits them, some of it gets knocked off in random directions. This is called Rayleigh scattering, and it depends strongly on wavelength: it goes up with the inverse fourth power of the wavelength. Cut the wavelength in half and the light scatters sixteen times as much.
+
+Blue light, with its shorter waves, gets scattered far more than red and ends up spread all across the sky. Wherever you look, some of that scattered blue is heading toward your eyes, which is why the sky looks blue in every direction, even far from the sun.
+
+Why not violet, then? Violet scatters even more than blue, but the sun gives off less violet light to begin with, some of it is absorbed high in the atmosphere, and our eyes are less sensitive to it. The mix that reaches us looks sky blue.
+
+Why sunsets are red and orange
+
+At midday, sunlight takes a fairly short path through the air to reach you. At sunrise and sunset the sun sits low on the horizon, and its light has to cross much more atmosphere. Over that long path, most of the blue is scattered out before it gets to you, leaving the longer wavelengths: yellow, orange, and red.
+
+Dust, smoke, and haze particles are bigger than gas molecules and scatter light differently, which is why sunsets after a wildfire can look such a deep red. Clouds look white for a related reason: their water droplets are large enough to scatter all colors about equally.
+
+Try it yourself
+
+In a dark room, fill a clear glass with water and stir in a few drops of milk. Shine a flashlight through it. From the side, the water looks faintly blue, like the sky. Now look through the glass toward the flashlight. The beam coming straight at you looks yellow-orange, for the same reason a low evening sun does.

@@ -233,3 +233,52 @@ draft; O our Write mode. Two blind panel judges per brief rank all five; detecto
   polished human prose and template-like structure read as "AI", while concrete, idiosyncratic detail reads as
   "human" whoever wrote it. Paper must state this as a property of these open-source detectors, not of all
   detectors (GPTZero, Turnitin untested).
+
+## 10. Phase 2 results: judges (20 briefs, 40 blind panel judgments)
+
+Run as five workflows (`scripts/phase2.js`, seeds 1, 10-13). Each brief got two judges, a demanding editor and a
+genre reader (admissions officer, English teacher or science teacher), each ranking all five texts blind with
+labels shuffled. Texts: `eval/out/phase2/<condition>/`; judgments: `eval/results/phase2_judges.json`; summary:
+`eval/results/phase2_summary_judges.json` (`scripts/analyze.py`).
+
+| Condition | Mean rank (1 = best) [95% CI] | First places | Human-likeness /10 | Quality /10 | AI suspicion /5 | Unsupported claims per text |
+|---|---|---|---|---|---|---|
+| P plain | 4.62 [4.40, 4.80] | 0 | 4.50 | 5.62 | 4.10 | 3.38 |
+| L word-list prompt | 2.27 [1.98, 2.62] | 6 | **7.33** | 7.38 | 2.55 | 2.65 |
+| H humanizer edit of P | 3.48 [3.20, 3.75] | 1 | 5.75 | 6.28 | 3.33 | 1.82 |
+| E our edit of P | 3.17 [2.83, 3.50] | 5 | 5.55 | 6.53 | 3.35 | 1.30 |
+| O our write (v4) | **1.45** [1.23, 1.73] | **28** | 7.25 | **7.88** | **2.33** | **1.07** |
+
+Friedman test across the five conditions (per-brief mean ranks): chi-square 49.6, p = 4e-10. Pairwise, O ranked
+above P in 39 of 40 judgments, above L in 33 of 40 (Wilcoxon p = 0.027), above H in 38 of 40 and above E in 32 of 40.
+
+By genre (mean rank of O; best competitor in brackets): argument 1.00 (L 2.00), explainer 1.00 (L 2.25),
+literary analysis 1.00 (L 2.12), short answer 1.75 (E 2.50), **personal statement 2.50 (L 2.25, E 2.38)**.
+
+What this says:
+- Writing fresh with the skill wins clearly in the three school genres, and it has the fewest invented claims
+  overall (1.07 against 3.38 for plain).
+- **Editing loses to writing.** Both edit conditions (ours and the humanizer) land in the middle: they keep the
+  plain draft's generic structure and some of its errors. Our Edit mode was built for minimal edits of human
+  drafts, which is the wrong behaviour for an AI draft. This motivated Rebuild mode in v5.
+- **The word-list prompt is a strong baseline.** It scored highest on human-likeness and voice. Judges said the
+  skill's school essays read like an adult essayist, while the word-list essays sounded like an actual 11th grader.
+  v5 adds a student-voice rule for school essays.
+- **Personal statements are still the weak genre.** Judges criticised our texts for dropping the student's best
+  detail (one editor: "leaves out the key self-indictment") and for packing too much into one paragraph. v5 adds a
+  short checklist for this (section 11).
+
+## 11. Version 5 (candidate)
+
+Changes, each tied to a phase-2 failure:
+1. **Rebuild mode** for AI-written drafts: extract the facts, check them, then write fresh with the Write
+   procedure. Reason: edits of AI drafts kept the generic structure and ranked below fresh writing.
+2. **Student voice for school essays**: write as the student (stated stance, contractions, plain words, more short
+   sentences), avoid stock student openers, never invent an anecdote. Reason: the word-list baseline beat us on voice.
+3. **Explainers talk to the reader** ("you") and give them something to try or picture.
+4. **Personal-essay checklist** (`references/personal-essay.md` section 5): list the three best details and keep at
+   least two; no paragraph with more than two beats; gloss anything an outsider would not know; set up before
+   paying off; answer the prompt's own question; keep exact facts.
+
+Test design (`scripts/phase2_v5.js`, six workflows, seeds 40-45): the same 20 briefs, a new five-way blind panel of
+P, L and O (reused texts) plus V (v5 write) and R (v5 Rebuild of the plain draft P). Results: section 12.

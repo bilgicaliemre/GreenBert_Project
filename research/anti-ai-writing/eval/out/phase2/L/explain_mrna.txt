@@ -1,0 +1,17 @@
+How mRNA Vaccines Teach Your Immune System
+
+Think about a fire drill. Nobody sets the school on fire to practice. Someone pulls the alarm, everyone walks the route, and when a real emergency happens, people know where to go. An mRNA vaccine runs on a similar idea. It gives your immune system a harmless preview of a virus so it can rehearse.
+
+mRNA stands for messenger RNA, and your cells use it constantly. DNA in the nucleus holds the master instructions, but it stays put. When a cell needs a protein, it copies the right instructions into mRNA, which carries them out to the ribosomes, the cell's protein builders. Ribosomes read the message and assemble the protein. Then the mRNA gets broken down.
+
+A vaccine borrows that system. Scientists write an mRNA message that codes for one protein from a virus. For the COVID-19 vaccines, that was the spike protein, the part the coronavirus uses to grab onto human cells. A spike protein on its own can't make you sick. Think of it as a mugshot: enough to identify the suspect, with no suspect attached.
+
+mRNA is fragile, so it gets packed inside tiny bubbles of fat called lipid nanoparticles. After the shot, nearby cells absorb these bubbles, and the message spills out inside them. Ribosomes read it and start making spike proteins. The mRNA never enters the nucleus and can't change your DNA. Within days, the cell's normal cleanup breaks it apart.
+
+Now the immune system notices something unfamiliar. Cells show fragments of the spike on their surface. Immune cells called dendritic cells pick up the protein and carry it to the lymph nodes, where they present it to helper T cells. Helper T cells then coordinate two responses. B cells start making antibodies, Y-shaped proteins that stick to the spike and can block the virus from entering cells. Killer T cells learn to find and destroy any cell displaying spike fragments, which is how an infected cell would look.
+
+The best part comes later. Some of those B and T cells become memory cells and stay in the body long after the vaccine is gone. If the real virus shows up, they recognize it and respond much faster than a body meeting it for the first time.
+
+That sore arm or tired day some people get after a shot? That's the drill in progress. Boosters exist because antibody levels can fade and viruses mutate, so the practice sometimes needs an update.
+
+The big advantage is speed. Once scientists know a virus's genetic code, they can design a new mRNA message quickly, since the delivery system stays the same. Safety testing still takes time.
