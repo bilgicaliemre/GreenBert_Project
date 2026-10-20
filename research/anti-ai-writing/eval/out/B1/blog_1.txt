@@ -1,0 +1,17 @@
+What my greenwashing detector can't read
+
+"We are committed to a sustainable future." My program flags that sentence as a vague claim. "We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline" gets labelled a strong one. Both start with "We" and both sound green, but only the second gives a reader something to check: a number, which emissions, and the year they're measured against.
+
+The program is GreenBERT, my high-school research project (I'm first author; my co-author is at a university). It looks for possible greenwashing in companies' ESG (environmental, social and governance) reports.
+
+The stage I've built so far runs on hand-written rules. It converts a report PDF into text with page numbers, splits it into sentences, and puts each one through a gate. A sentence gets through only if it has an ESG topic word plus either an action verb ("we reduced") or a hard quantity, like a number with a unit. A topic word on its own counts as description, and the sentence is dropped.
+
+Getting through the gate isn't enough. Next come filters for boilerplate, navigation and headers, policy content, methodology, descriptions of governance roles, activity reports, risk descriptions, general statements, reference-dense text, and broken fragments (a part-of-speech tagger checks whether there's a verb at all). Every sentence those filters remove has already passed the gate, so it has an ESG word and a verb or a number. A methodology note and an actual emissions cut can use the same kind of words.
+
+Whatever survives gets labelled: E, S or G by which kind of keyword dominates; Future Promise, Strong or Vague; evidence Yes, Partial or No; and a risk signal. One Unilever report produced 583 claims and a Dr Pepper report 218. Six reports are loaded in total.
+
+Precision is the share of kept sentences that really are claims. On a 26-sentence development set it reached 92%, but the filters were tuned on those same 26 sentences, so that isn't a headline number. An independent manual review of 100 claims from an earlier version, v3, found 67%. Full-corpus audits by AI agents, which are stricter than human reviewers, gave 33% for v3, 39% for v4.0 and 44% for v4 final.
+
+Recall, the share of real claims the program catches, was estimated by auditing 1,767 rejected sentences, which is possible because each one is saved with its drop reason. Recall went from 48% in v4.0 to 73% in v4 final. All of these numbers are in-sample, so they're optimistic.
+
+At 44%, more than half of what the program keeps fails the strictest audit. Those leftover errors are about meaning: the sentences have the right words and still aren't claims. Keyword rules have hit a ceiling there, which is why the next stage is a BERT classifier. I haven't built it yet. The end goal is a public website where anyone can upload an ESG report PDF and get back a greenwashing assessment with an explanation.

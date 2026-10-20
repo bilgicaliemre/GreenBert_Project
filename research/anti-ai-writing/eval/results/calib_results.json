@@ -1,0 +1,74 @@
+{
+ "human_pg_love.txt": {
+  "words": 315,
+  "chunks": 1,
+  "desklib": 3.1,
+  "desklib_chunks": [
+   3.1
+  ],
+  "fakespot": 9.3,
+  "fakespot_chunks": [
+   9.3
+  ]
+ },
+ "human_pg_hs.txt": {
+  "words": 354,
+  "chunks": 1,
+  "desklib": 29.2,
+  "desklib_chunks": [
+   29.2
+  ],
+  "fakespot": 56.2,
+  "fakespot_chunks": [
+   56.2
+  ]
+ },
+ "human_orwell.txt": {
+  "words": 290,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3
+  ]
+ },
+ "ai_essay.txt": {
+  "words": 215,
+  "chunks": 1,
+  "desklib": 100.0,
+  "desklib_chunks": [
+   100.0
+  ],
+  "fakespot": 100.0,
+  "fakespot_chunks": [
+   100.0
+  ]
+ },
+ "ai_personal.txt": {
+  "words": 232,
+  "chunks": 1,
+  "desklib": 100.0,
+  "desklib_chunks": [
+   100.0
+  ],
+  "fakespot": 100.0,
+  "fakespot_chunks": [
+   100.0
+  ]
+ },
+ "ai_explain.txt": {
+  "words": 210,
+  "chunks": 1,
+  "desklib": 100.0,
+  "desklib_chunks": [
+   100.0
+  ],
+  "fakespot": 100.0,
+  "fakespot_chunks": [
+   100.0
+  ]
+ }
+}

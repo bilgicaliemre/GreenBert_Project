@@ -1,0 +1,51 @@
+[
+ {
+  "id": "ps",
+  "genre": "college personal statement",
+  "words": "550-650",
+  "facts": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/briefs/persona_interview.md",
+  "brief": "Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a background, identity, interest, or talent that is so meaningful they believe their application would be incomplete without it. If this sounds like you, then please share your story.' Use only facts from the notes."
+ },
+ {
+  "id": "supp",
+  "genre": "college supplemental short answer",
+  "words": "230-250",
+  "facts": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/briefs/persona_interview.md",
+  "brief": "Write the student's supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use only facts from the notes."
+ },
+ {
+  "id": "argue",
+  "genre": "argumentative essay, 11th-grade English class",
+  "words": "500-600",
+  "facts": null,
+  "brief": "Write an argumentative essay for an 11th-grade English class: 'Should high schools ban student phones during the school day?' Take a clear position. Do NOT invent statistics, studies, quotes or named sources; argue from reasoning and everyday school experience."
+ },
+ {
+  "id": "explain",
+  "genre": "explanatory article for a high-school science blog",
+  "words": "380-450",
+  "facts": null,
+  "brief": "Write an explanatory article for a high-school science club blog: 'How do mRNA vaccines teach the immune system?' Accurate general science only; no invented statistics or quotes."
+ },
+ {
+  "id": "report",
+  "genre": "methods section of a research report",
+  "words": "380-450",
+  "facts": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/briefs/greenbert_facts.md",
+  "brief": "Write the 'Claim extraction' methods subsection (prose, no bullet lists) of the GreenBERT project report, ending with the evaluation numbers and their caveats. Use only facts from the fact sheet. Formal academic register, first person plural."
+ },
+ {
+  "id": "lit",
+  "genre": "literary analysis essay paragraph(s) for English class",
+  "words": "420-500",
+  "facts": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/briefs/gatsby_quotes.md",
+  "brief": "Write a short literary analysis (2-3 paragraphs) for an English class on what the green light means in The Great Gatsby and how its meaning changes. Quote only from the provided quotes file."
+ },
+ {
+  "id": "blog",
+  "genre": "personal blog post",
+  "words": "420-500",
+  "facts": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/briefs/greenbert_facts.md",
+  "brief": "Write a first-person blog post by the high-school student who built GreenBERT: 'What building a greenwashing detector taught me about corporate language.' Use only facts from the fact sheet; do not invent anecdotes, numbers or quotes."
+ }
+]

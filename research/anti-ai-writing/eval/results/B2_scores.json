@@ -1,0 +1,82 @@
+{
+ "argue_1.txt": {
+  "words": 586,
+  "chunks": 2,
+  "desklib": 3.3,
+  "desklib_chunks": [
+   1.9,
+   4.8
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.1,
+   0.7
+  ]
+ },
+ "ps_1.txt": {
+  "words": 551,
+  "chunks": 2,
+  "desklib": 0.6,
+  "desklib_chunks": [
+   0.9,
+   0.4
+  ],
+  "fakespot": 8.3,
+  "fakespot_chunks": [
+   0.4,
+   15.1
+  ]
+ },
+ "ps_2.txt": {
+  "words": 559,
+  "chunks": 2,
+  "desklib": 0.8,
+  "desklib_chunks": [
+   0.3,
+   1.3
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.2,
+   1.0
+  ]
+ },
+ "ps_3.txt": {
+  "words": 564,
+  "chunks": 2,
+  "desklib": 1.6,
+  "desklib_chunks": [
+   2.4,
+   0.4
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.8,
+   0.7
+  ]
+ },
+ "supp_1.txt": {
+  "words": 243,
+  "chunks": 1,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   0.9
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.6
+  ]
+ },
+ "supp_2.txt": {
+  "words": 238,
+  "chunks": 1,
+  "desklib": 0.3,
+  "desklib_chunks": [
+   0.3
+  ],
+  "fakespot": 0.8,
+  "fakespot_chunks": [
+   0.8
+  ]
+ }
+}

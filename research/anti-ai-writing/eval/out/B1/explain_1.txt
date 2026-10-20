@@ -1,0 +1,15 @@
+How mRNA vaccines teach the immune system
+
+An mRNA vaccine contains no virus. It holds genetic instructions for one viral protein, packed in tiny fat particles. The first mRNA vaccines in wide use, the COVID-19 shots from Pfizer-BioNTech and Moderna (authorized in late 2020), carry instructions for the coronavirus's spike protein, which the virus uses to get into human cells.
+
+In your own cells, DNA stays in the nucleus. To build a protein, a cell copies the gene into messenger RNA, which moves out to the ribosomes. They read it three letters at a time and link amino acids in that order. An mRNA vaccine hands the ribosomes a message that did not come from your DNA.
+
+Bare mRNA would not get far. Enzymes in the body break RNA apart quickly, and the molecule is too large and too negatively charged to cross a cell membrane on its own. The fat particles, called lipid nanoparticles, protect it; cells take them in, and the mRNA escapes into the cytoplasm. After a shot in the arm, muscle cells and nearby immune cells start making spike protein.
+
+Some of that spike sits on the cell surface, and cells also cut it into fragments and display them. Immune cells carrying spike travel to nearby lymph nodes (which is why an armpit lymph node can swell after the shot). There, B cells whose surface antibodies happen to fit the spike multiply and release antibodies, helper T cells coordinate the response, and killer T cells learn to destroy any cell showing spike fragments. When the response winds down, most of these cells die off, but memory B and T cells remain. If the real virus shows up later, they recognize its spike and the body responds faster than it could the first time.
+
+The mRNA never enters the nucleus and has no way to write itself into DNA. Cells break it down after reading it, generally within a few days.
+
+In 1990, researchers got mouse muscle to make protein from injected mRNA. The problem was that lab-made mRNA set off inflammation, because cells treated it as an invader. In 2005 Katalin Karikó and Drew Weissman reported that replacing one of RNA's four letters, uridine, with a modified version called pseudouridine greatly reduced that reaction. The COVID-19 vaccines use a close relative of pseudouridine, and the discovery won Karikó and Weissman the 2023 Nobel Prize in Physiology or Medicine.
+
+Because the vaccine is only a sequence, updating it for a new variant means editing the letters, and the COVID-19 shots have been updated this way several times. In 2024 the United States approved an mRNA vaccine against RSV, another respiratory virus, for adults 60 and older.

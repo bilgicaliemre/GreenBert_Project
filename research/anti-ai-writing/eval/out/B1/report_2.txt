@@ -1,0 +1,13 @@
+Claim extraction
+
+The first stage of GreenBERT is a rule-based extractor that selects claim sentences from corporate ESG (environmental, social and governance) reports. Each PDF report is converted to text with PyMuPDF, with page numbers kept, and the text is split into sentences with NLTK.
+
+A sentence passes the gate only if it contains an ESG topic word and either an action verb or a hard quantity. Action verbs include first-person and past forms such as "we reduced"; a hard quantity is a number with a unit, or a count. A sentence that contains a topic word but neither of the other signals is treated as description and dropped.
+
+Sentences that pass the gate then go through a set of non-claim filters. These remove boilerplate, reference-dense text, navigation and headers, and broken fragments, which we detect by using a part-of-speech tagger to check for a verb. They also remove policy content, governance role descriptions, activity reports, methodology text, general statements and risk descriptions. Every rejected sentence is saved with its drop reason, so that recall can be audited from the discarded material.
+
+Each claim that survives is labelled E, S or G according to which keyword set dominates it. Claim_Type is Future Promise, Strong or Vague, with Strong reserved for claims that contain a hard quantity. For example, "We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline" is Strong, and "We are committed to a sustainable future" is Vague. Two further fields record Evidence (Yes, Partial or No) and a Risk_Signal. Of the six reports loaded so far, the Unilever report yields 583 claims and the Dr Pepper report 218.
+
+We measured precision in three ways. On a 26-sentence development set the extractor reached 92%, but the filters were tuned on that set, so we do not treat it as a headline figure. An independent manual review of 100 claims from an earlier version (v3) found 67% precision. AI agents also audited the full-corpus output of three versions. These agents judge more strictly than human reviewers; by their count, precision rose from 33% (v3) to 39% (v4.0) and 44% (v4 final). Because the two standards differ, the agent figures show change between versions and should not be compared directly with the manual 67%. Recall was estimated by auditing 1,767 rejected sentences and rose from 48% (v4.0) to 73% (v4 final).
+
+The residual errors turn on what a sentence means, which keyword rules cannot capture. This semantic ceiling is the reason for the next stage, a BERT classifier that has not yet been built. All of the figures above are in-sample (measured on reports seen during development) and are therefore optimistic.
