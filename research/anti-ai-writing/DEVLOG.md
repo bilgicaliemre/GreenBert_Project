@@ -215,3 +215,21 @@ draft; O our Write mode. Two blind panel judges per brief rank all five; detecto
 - `eval/results/`: detector scores (`*_scores.json`), judge outputs (`judges_*.json`), human baseline scores.
 - `scripts/`: `score.py` (detectors), `assemble.py`, `judges.py` (tallies), `summarize.py`.
 - `notes/`: research notes written by the research agents (our own text; third-party downloads not included).
+
+## 9. Three-detector rescoring (all phase-1 texts and human baselines)
+
+| Group | n | Under 20% on all three | D3 mean |
+|---|---|---|---|
+| Human admitted college essays (pre-2022) | 16 | **0** | 61.4 (D3 max is about 73) |
+| Human PERSUADE argument essays (pre-2022) | 18 | 4 | about 44 |
+| Plain Claude (A) | 14 | 5 | 28.5 |
+| Plain Claude + skill edit (C1) | 7 | 4 | 17.2 |
+| Skill write v1 (B1) | 14 | **14** | 3.5 |
+| Skill v2-v4 personal essays | 16 | 16 | 2.4-4.9 |
+
+- **Finding (fairness):** the detector whose training data includes Anthropic models flags every human admitted
+  essay and passes every skill-written Claude text: on this genre the detectors invert. Likely cause: personal
+  narrative is out of domain for detectors trained on Wikipedia, ELI5, scientific text and RAID; generic,
+  polished human prose and template-like structure read as "AI", while concrete, idiosyncratic detail reads as
+  "human" whoever wrote it. Paper must state this as a property of these open-source detectors, not of all
+  detectors (GPTZero, Turnitin untested).

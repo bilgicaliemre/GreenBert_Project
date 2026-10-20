@@ -5,6 +5,7 @@ usage: python3 score.py file1.txt [file2.txt ...] [--json out.json]
 Detectors
   desklib   desklib/ai-text-detector-v1.01 (DeBERTa-v3-large, trained on RAID; MIT)
   fakespot  fakespot-ai/roberta-base-ai-text-detection-v1 (RoBERTa-base; Apache-2.0)
+  superannotate  SuperAnnotate/ai-detector (RoBERTa-large; trained incl. Anthropic models + RAID; SAIPL)
 
 Long texts are split into ~350-word chunks on paragraph boundaries; the document
 score is the word-weighted mean of chunk probabilities (0-100 = % likely AI).
@@ -80,12 +81,39 @@ def chunks(text):
     return out
 
 
+class SuperAnnotateModel(nn.Module):
+    # RobertaClassifier from superannotateai/generated_text_detector v1.1.0: <s> token -> linear, sigmoid.
+    def __init__(self, repo='SuperAnnotate/ai-detector'):
+        super().__init__()
+        from huggingface_hub import hf_hub_download
+        from safetensors.torch import load_file
+        self.roberta = AutoModel.from_config(AutoConfig.from_pretrained('FacebookAI/roberta-large'), add_pooling_layer=False)
+        self.dense = nn.Linear(self.roberta.config.hidden_size, 1)
+        missing, unexpected = self.load_state_dict(load_file(hf_hub_download(repo, 'model.safetensors')), strict=False)
+        assert not [k for k in missing if 'position_ids' not in k], missing
+        assert not unexpected, unexpected
+
+    def forward(self, input_ids, attention_mask=None):
+        return self.dense(self.roberta(input_ids, attention_mask=attention_mask)[0][:, 0, :])
+
+
+def sa_preprocess(t):
+    # same steps as the SuperAnnotate package (markdown/HTML stripped, URLs/emails removed, whitespace collapsed)
+    t = t.replace('\u200B', '')
+    t = re.sub(r'<.*?>', '', clean_text(t))
+    t = re.sub(r'http[s]?://\S+', '', t)
+    t = re.sub(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', '', t)
+    return ' '.join(t.split()).strip()
+
+
 class Detectors:
     def __init__(self):
         self.dt = AutoTokenizer.from_pretrained('desklib/ai-text-detector-v1.01')
         self.dm = DesklibAIDetectionModel('desklib/ai-text-detector-v1.01').eval()
         self.ft = AutoTokenizer.from_pretrained('fakespot-ai/roberta-base-ai-text-detection-v1')
         self.fm = AutoModelForSequenceClassification.from_pretrained('fakespot-ai/roberta-base-ai-text-detection-v1').eval()
+        self.st = AutoTokenizer.from_pretrained('SuperAnnotate/ai-detector')
+        self.sm = SuperAnnotateModel().eval()
 
     @torch.no_grad()
     def desklib(self, text):
@@ -98,11 +126,16 @@ class Detectors:
         probs = torch.softmax(self.fm(**enc).logits, -1)[0]
         return probs[1].item()  # id2label: 1 = AI
 
+    @torch.no_grad()
+    def superannotate(self, text):
+        enc = self.st(sa_preprocess(text), truncation=True, max_length=512, return_tensors='pt')
+        return torch.sigmoid(self.sm(enc['input_ids'], enc['attention_mask'])).item()
+
     def score(self, text):
         cs = chunks(text)
         w = [len(c.split()) for c in cs]
         res = {'words': sum(w), 'chunks': len(cs)}
-        for name in ('desklib', 'fakespot'):
+        for name in ('desklib', 'fakespot', 'superannotate'):
             ps = [getattr(self, name)(c) for c in cs]
             res[name] = round(100 * sum(p * n for p, n in zip(ps, w)) / sum(w), 1)
             res[name + '_chunks'] = [round(100 * p, 1) for p in ps]
@@ -115,11 +148,11 @@ def main(argv):
         i = argv.index('--json'); out_json = argv[i + 1]; argv = argv[:i] + argv[i + 2:]
     det = Detectors()
     results = {}
-    print(f"{'file':55s} {'words':>5s} {'desklib%':>9s} {'fakespot%':>10s}")
+    print(f"{'file':55s} {'words':>5s} {'desklib%':>9s} {'fakespot%':>10s} {'superann%':>10s}")
     for path in argv:
         r = det.score(open(path, encoding='utf-8').read())
         results[path] = r
-        print(f"{path[-55:]:55s} {r['words']:5d} {r['desklib']:9.1f} {r['fakespot']:10.1f}")
+        print(f"{path[-55:]:55s} {r['words']:5d} {r['desklib']:9.1f} {r['fakespot']:10.1f} {r['superannotate']:10.1f}")
     if out_json:
         json.dump(results, open(out_json, 'w'), indent=1)
 
