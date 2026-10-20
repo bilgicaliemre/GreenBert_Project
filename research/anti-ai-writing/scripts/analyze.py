@@ -1,6 +1,6 @@
 """Analyze phase-2 panel judgments and detector scores.
 
-usage: python3 analyze.py OUT_JSON workflow_output.json [more.json ...] [--scores scores.json]
+usage: python3 analyze.py OUT_JSON workflow_output.json [more.json ...] [--scores scores.json] [--lens editor,reader]
 Writes a JSON summary with per-condition and per-genre statistics.
 """
 import json
@@ -11,9 +11,9 @@ from itertools import combinations
 import numpy as np
 from scipy import stats
 
-ORDER = ['P', 'L', 'H', 'E', 'O', 'V', 'R']  # display order; the conditions actually used come from the data
+ORDER = ['P', 'L', 'H', 'E', 'O', 'V', 'R', 'S', 'B']  # display order; the conditions actually used come from the data
 NAMES = {'P': 'Plain', 'L': 'Word-list prompt', 'H': 'Humanizer edit', 'E': 'Our edit', 'O': 'Our write',
-         'V': 'v5 write', 'R': 'v5 rebuild'}
+         'V': 'v5 write', 'R': 'v5 rebuild', 'S': 'Skill write', 'B': 'Skill rebuild'}
 CONDS = ORDER
 SCORE_KEYS = ['quality', 'human_likeness', 'specificity', 'voice', 'structure_and_insight', 'ai_suspicion']
 rng = np.random.default_rng(0)
@@ -42,10 +42,15 @@ def main(argv):
     scores_path = None
     if '--scores' in rest:
         i = rest.index('--scores'); scores_path = rest[i + 1]; rest = rest[:i] + rest[i + 2:]
+    lenses = None
+    if '--lens' in rest:
+        i = rest.index('--lens'); lenses = set(rest[i + 1].split(',')); rest = rest[:i] + rest[i + 2:]
     results = load(rest)
     rows = []  # one row per (brief, judge, condition)
     for r in results:
         for j in r['judged']:
+            if lenses and j['lens'] not in lenses:
+                continue
             rank = {j['map'][lab]: k + 1 for k, lab in enumerate(j['ranking']) if lab in j['map']}
             per = {t['label']: t for t in j['texts']}
             for lab, cond in j['map'].items():
