@@ -39,9 +39,9 @@ All URLs were re-fetched on 2026-10-20 unless marked otherwise. Fresh copies are
 
 ### Correction to Researcher A's unknown on older models
 The support page's model table (as of 2026-10-08) does show which models carry text watermarks today.
-**No text watermark** (C2PA file credentials only): Claude Mythos 5, Opus 4.7, Opus 4.6, Opus 4.5,
-Sonnet 4.6, Sonnet 4.5 and Haiku 4.5. **Text watermark on first-party surfaces**: Fable 5.1/5, Mythos 5.1,
-Opus 5.5/5/4.8, Sonnet 5.5/5 and Haiku 5.5. The rollout to Amazon Bedrock for the asterisked models was due
+**No text watermark** (C2PA file credentials only): [a Claude model], [a Claude model], [a Claude model], [a Claude model],
+[a Claude model], [a Claude model] and Haiku 4.5. **Text watermark on first-party surfaces**: [a Claude model]/5, [a Claude model],
+[a Claude model]/5/4.8, [a Claude model]/5 and Haiku 5.5. The rollout to Amazon Bedrock for the asterisked models was due
 to complete by October 17. The page gives no start date for each model's watermarking.
 Also, Anthropic offers a free "Claude Content Checker", but it checks file Content Credentials (C2PA)
 only. It does not check text watermarks.

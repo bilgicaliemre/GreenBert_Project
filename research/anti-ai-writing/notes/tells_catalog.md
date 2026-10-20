@@ -56,22 +56,22 @@ Access notes (so later readers know what was and was not read first-hand):
    So surface scrubbing is not enough; the content tells (no specifics, no stakes, tidy lessons) carry weight.
 5. **Banning things backfires.** Telling a model to avoid a word list "has limited efficacy and may induce a backfire
    effect due to the 'Pink elephant problem'"; hard token bans at 8k patterns collapsed writing-quality scores to 28/100
-   ([Antislop, Paech et al. 2025](https://arxiv.org/abs/2510.15061)). Anthropic's own guidance for Opus 5.5 (stated for
+   ([Antislop, Paech et al. 2025](https://arxiv.org/abs/2510.15061)). Anthropic's own guidance for [a Claude model] (stated for
    frontend design) says a general "avoid a generic AI look" instruction "mostly swaps one default for another"; naming
    specific patterns and iterating works better
-   ([Prompting Claude Opus 5.5](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5)).
-6. **The current Claude profile is not the 2024 ChatGPT profile.** For Claude Opus 5.5 (released 2026-09-22), Graphite
-   measured em dashes at 0.015 per 1,000 words (99% below Opus 5, far below human), mannered prose at about 1.6x the
+   ([Prompting [a Claude model]](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5)).
+6. **The current Claude profile is not the 2024 ChatGPT profile.** For [a Claude model] (released 2026-09-22), Graphite
+   measured em dashes at 0.015 per 1,000 words (99% below [a Claude model], far below human), mannered prose at about 1.6x the
    human score, and 2,548 remaining tells, including "this matters" (116x human), "why _ matters" (92x),
    "is more than a _ it" (98x), "rather than simply" (32x), "looking ahead the" (40x), "what comes next" (24x),
    evaluative adjectives (dependable 23x, steady 11x, thoughtful 9x, meaningful 8x), superlatives ("the most powerful"
-   24x Astra's rate) and helpfulness phrasing ("can help you" 8x Opus 5's rate)
-   ([Graphite Opus 5.5 update, Oct 2026](https://graphite.io/five-percent/research/ai-tells-opus-5-5-update)).
-   An anti-AI skill run on Opus 5.5 should spend its effort there, not on em dashes.
+   24x Astra's rate) and helpfulness phrasing ("can help you" 8x [a Claude model]'s rate)
+   ([Graphite [a Claude model] update, Oct 2026](https://graphite.io/five-percent/research/ai-tells-opus-5-5-update)).
+   An anti-AI skill run on [a Claude model] should spend its effort there, not on em dashes.
 7. **Quality, not evasion.** Detectors are unreliable and biased (61% false-positive rate on non-native TOEFL essays,
    [Liang et al. 2023](https://arxiv.org/abs/2304.02819); 76% FPR on formal human abstracts for one RoBERTa detector,
    [Creanga & Dinu 2026](https://arxiv.org/abs/2610.03110)). Claude models launched on or after 2026-08-02, including
-   Opus 5.5, embed an imperceptible text watermark that "may persist through some editing"
+   [a Claude model], embed an imperceptible text watermark that "may persist through some editing"
    ([Claude support: How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content)).
    Style edits are for the reader. They are not a disguise, and the student should follow school disclosure rules.
 
@@ -127,13 +127,13 @@ Access notes (so later readers know what was and was not read first-hand):
     boost, payoff, tangible) down 73% vs GPT-4.1 (Graphite). Wikipedia adds challenge, clearer, dependable, echoed,
     foster, leverage, matters, multifaceted, practical, prioritize, quietly, steady, universally, citing a single
     review blog (grade U for that part).
-  - Claude Opus 5: "is genuinely" (1,021 occurrences vs 4 in the human corpus), deliberate 26x, steady 6x, "single most", "arguably the
+  - [a Claude model]: "is genuinely" (1,021 occurrences vs 4 in the human corpus), deliberate 26x, steady 6x, "single most", "arguably the
     most", "every single", "matters because" 132x, "matters more than" 93x (Graphite).
-  - Claude Opus 5.5: see section 1, point 6. "is genuinely" fell 26x from Opus 5; helpfulness phrasing rose (Graphite update).
+  - [a Claude model]: see section 1, point 6. "is genuinely" fell 26x from [a Claude model]; helpfulness phrasing rose (Graphite update).
   - Gemini 3.1 Pro: incredibly 18x, profound 25x, immense 22x, "furthermore the" 43x, "ultimately this" 78x,
     "absolutely essential" 32x, "this comprehensive guide"; contractions nearly gone (Graphite).
   - Grok: causal, empirical, correlate, underscore (WP:AISIGNS).
-- **Fix:** check the draft against the current model's list, not just the 2023 list. For Opus 5.5 drafts, search for
+- **Fix:** check the draft against the current model's list, not just the 2023 list. For [a Claude model] drafts, search for
   matters/matter, genuinely, "rather than simply", "more than just", "what comes next", "looking ahead", dependable,
   thoughtful, steady, meaningful, "the most", "can help you", "makes it easier".
 - **Evidence: M** (Graphite: 10,000 human vs 90,000 AI web articles on the same topics, ratio ≥2x human, frequency
@@ -287,7 +287,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Example:** "This distinction matters because it shapes how we understand corporate accountability."
 - **Fix:** give the consequence directly: "Because the report never says what 'net zero' covers, investors cannot check it."
 - **Evidence: M.** GPT-6 Astra: "distinction matters" appears in AI articles and never in the human ones; "matters because"
-  357x. Claude Opus 5.5: "this matters" 116x, "why _ matters" 92x (Graphite). EQ-Bench trigrams: "plays crucial role",
+  357x. [a Claude model]: "this matters" 116x, "why _ matters" 92x (Graphite). EQ-Bench trigrams: "plays crucial role",
   "plays pivotal role", "play vital role" (M). WP:AISIGNS: "As of mid-2026, LLMs frequently include these alongside
   hedging disclaimers, editorializing about how a particular distinction or nuance is important" (C).
 
@@ -316,7 +316,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Example:** "The report's figures should be treated as indicative rather than definitive."
 - **Fix:** say exactly what is missing and what follows: "The report gives no baseline year, so the 30% cut cannot be checked."
 - **Evidence: C/M.** WP:AISIGNS (2026): among the most common signs on Wikipedia now. GPT-6 Astra uses "does not establish"
-  275x as often as Opus 5.5 (Graphite update), so this is mainly a GPT-6 tell; Claude drafts are less prone.
+  275x as often as [a Claude model] (Graphite update), so this is mainly a GPT-6 tell; Claude drafts are less prone.
 
 ---
 
@@ -332,7 +332,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Evidence: M (strong) + E.**
   - WaPo: versions of "not just X, but Y" appeared in 6% of GPT-4o chats in July 2025.
   - Graphite: GPT-6 Astra corrective framing 12x human ("the _ is not simply" 576x, "rather than relying" 187x);
-    Claude Opus 5 "less like a _ and more like" 105x, "rather than merely" 160x; Opus 5.5 "is more than a _ it" 98x,
+    [a Claude model] "less like a _ and more like" 105x, "rather than merely" 160x; [a Claude model] "is more than a _ it" 98x,
     "rather than simply" 32x; Gemini "is not just a _ it is" 153x.
   - Antislop: "It's not X, it's Y" 6.3x human in some models' fiction.
   - Peng et al. 2026 (Mandarin "not X, but Y"): models use it 2.5–9.2x human density; 52.8% of model uses were correct but
@@ -392,7 +392,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Pattern:** "without sacrificing", "without compromising", "without losing", "without requiring".
 - **Example:** "The method improves accuracy without sacrificing speed."
 - **Fix:** report the real tradeoff with numbers, or say it was not measured.
-- **Evidence: M.** GPT-6 "without requiring" 70x; Gemini "without sacrificing" 7.8x; Claude Opus 5 "without losing" 6.1x (Graphite).
+- **Evidence: M.** GPT-6 "without requiring" 70x; Gemini "without sacrificing" 7.8x; [a Claude model] "without losing" 6.1x (Graphite).
 
 ### S8. Arguing with no one (preemptive strawmen)
 - **Pattern:** "Some might argue...", "To be clear,", "This isn't to say...", "Don't get me wrong", "You might think... but",
@@ -416,7 +416,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Example:** "The company set targets and published reports and engaged stakeholders and the results were mixed."
 - **Fix:** split at the logical joints; use a semicolon, colon or parentheses where they fit.
 - **Evidence: M (2026).** The Economist (55,940 sentences, ChatGPT/Claude/Gemini/Grok vs Economist writers): LLMs "write
-  longer sentences — 'and' is their most overused word" and use fewer commas and semicolons. Anthropic notes Fable 5.1 prose
+  longer sentences — 'and' is their most overused word" and use fewer commas and semicolons. Anthropic notes [a Claude model] prose
   can be denser with longer sentences and fewer paragraph breaks
   ([docs](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1)).
   Contrast: WP says GPT-6 writes short 8–20-word sentences (U). Direction depends on the model; the stable tell is
@@ -464,11 +464,11 @@ Access notes (so later readers know what was and was not read first-hand):
   - Rise: fewer than 1 in 10 GPT-4o responses had an em dash in mid-2024; more than half by summer 2025 (WaPo).
   - Fall: OpenAI tuned GPT-5.1 to follow dash instructions (Ars Technica, cited by WP). Economist (Jul 30 2026): "Today only
     Claude uses more em-dashes than human writers, with ChatGPT using markedly fewer than any other writer in our study."
-    Graphite (Sep–Oct 2026): GPT-6 Astra about 1/8 of the human rate; Gemini 3.1 nearly zero; Opus 5 about human rate;
-    Opus 5.5 0.015 per 1,000 words (99% below Opus 5).
+    Graphite (Sep–Oct 2026): GPT-6 Astra about 1/8 of the human rate; Gemini 3.1 nearly zero; [a Claude model] about human rate;
+    [a Claude model] 0.015 per 1,000 words (99% below [a Claude model]).
   - WP:AISIGNS now files em-dash overuse under "Historical indicators (2022–September 2026)" and warns that dash-free models
     lean on commas and periods so much that this "has become its own sign" ([citation needed] on WP; treat as C).
-  - Bottom line for an Opus 5.5 skill: dash overuse is not the current risk. A rare, correct dash is fine and human
+  - Bottom line for an [a Claude model] skill: dash overuse is not the current risk. A rare, correct dash is fine and human
     (journalists and pre-ChatGPT writers used them).
 
 ### F2. Punctuation monotony (few commas, semicolons, parentheses, exclamation marks)
@@ -485,7 +485,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Example:** "- **Transparency:** Transparency is improved through clear reporting."
 - **Fix:** turn into a sentence or paragraph when the labels add nothing; use bold rarely (a defined term once, a warning).
 - **Evidence: C/A.** WP:AISIGNS "Inline-header vertical lists" and "Overuse of boldface"; experts flag "bolded lists"
-  (formatting 15.0%, Russell). Anthropic: "Earlier models overused bullets and bold in chat" (Fable 5.1 doc). Graphite
+  (formatting 15.0%, Russell). Anthropic: "Earlier models overused bullets and bold in chat" ([a Claude model] doc). Graphite
   counts two list-use measures among well-known tells (M, declining).
 
 ### F4. Bullet-itis (lists where an argument is needed)
@@ -530,7 +530,7 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Example:** "This could potentially suggest that the policy may have some effect."
 - **Fix:** one hedge where real uncertainty exists, placed on the uncertain part: "The policy probably reduced claims, but
   our sample is small (n = 6 reports)."
-- **Evidence: M/C.** GPT-6 Astra uses "may" 3x GPT-4.1; Astra vs Opus 5.5: "may provide" 18x, "not necessarily" 17x
+- **Evidence: M/C.** GPT-6 Astra uses "may" 3x GPT-4.1; Astra vs [a Claude model]: "may provide" 18x, "not necessarily" 17x
   (Graphite). WP and blader: stacked qualifiers (C). **Caveat:** casual qualifiers ("pretty", "sort of") are human tells
   (Graphite), and WP lists "very", "perhaps", "tends to" among signs of human writing (citing Reinhart). Do not strip all hedges.
 
@@ -558,8 +558,8 @@ Access notes (so later readers know what was and was not read first-hand):
 - **Fix:** "say what you mean. When a literal phrase is available, use it" (Anthropic): "Investors stop trusting reports
   that make claims they cannot check."
 - **Evidence: M (model-judged index) + vendor guidance.** Anthropic defines mannered prose and recommends the instruction
-  "Please remove all mannered prose." Graphite scored it with Claude Opus 5: human mean 6.65; Opus 5 16.75 (about 2.5x);
-  Opus 5.5 10.57 (about 1.6x); GPT-6 Astra about 1.2x. blader §3 "Sayings that sound deep" (C).
+  "Please remove all mannered prose." Graphite scored it with [a Claude model]: human mean 6.65; [a Claude model] 16.75 (about 2.5x);
+  [a Claude model] 10.57 (about 1.6x); GPT-6 Astra about 1.2x. blader §3 "Sayings that sound deep" (C).
 
 ### T6. Vague attributions
 - **Pattern:** "Experts argue", "Studies show", "Critics note", "Observers have cited", "Industry reports suggest",
@@ -767,7 +767,7 @@ were AI lower (Isley et al. 2026). Admissions officers' ability to spot AI was i
 
 ### O5. Purging all em dashes (and other punctuation) mechanically
 - **What it is:** a blanket "no em dashes" rule applied to every text.
-- **Why it is a risk:** current Claude (Opus 5.5) already uses almost none; dash-free models fall back on commas and periods, which
+- **Why it is a risk:** current Claude ([a Claude model]) already uses almost none; dash-free models fall back on commas and periods, which
   WP now calls its own sign (C); humans use more parentheses, semicolons and exclamation marks than models (Economist, Graphite).
 - **Rule:** use dashes sparingly and correctly; keep punctuation variety; if the student's own drafts use dashes, keep their rate
   (the blader skill also lets a writing sample override its dash rule).
@@ -800,7 +800,7 @@ were AI lower (Isley et al. 2026). Admissions officers' ability to spot AI was i
 - **Why it is wrong:** detectors misfire on formal and non-native writing (Liang 2023: 61.22% FPR on TOEFL essays; simplifying
   native essays' word choice raised FPR from 5.19% to 56.65%; one "elevate with literary language" prompt cut detection from 100%
   to 13%). A RoBERTa detector flagged 76.3% of formal human abstracts (Creanga & Dinu). Character tricks (homoglyphs) evade some
-  detectors but corrupt the text (Creanga & Dinu). Claude Opus 5.5 text carries a watermark designed to survive some editing
+  detectors but corrupt the text (Creanga & Dinu). [a Claude model] text carries a watermark designed to survive some editing
   (Anthropic support page).
 - **Rule:** optimize for a human reader; never use Unicode tricks; respect the school's AI-disclosure rules.
 
@@ -855,7 +855,7 @@ were AI lower (Isley et al. 2026). Admissions officers' ability to spot AI was i
 3. **Tone:** T5 mannered prose (explicit Anthropic instruction), T1 sycophancy in feedback, T3 false balance, T2 hedge stacks.
 4. **Rhythm and punctuation:** R1 variation tied to meaning, R3 repeat key terms, F2 punctuation variety; F1 dashes only if a draft
    actually overuses them.
-5. **Vocabulary pass last:** current-model list (V2 for Opus 5.5) plus the classic list (V1), applied with the false-positive guard.
+5. **Vocabulary pass last:** current-model list (V2 for [a Claude model]) plus the classic list (V1), applied with the false-positive guard.
 6. **Formatting:** F3–F6 for essays and reports (prose over bullets, sentence-case headings, no emoji).
 
 ---
@@ -891,11 +891,11 @@ were AI lower (Isley et al. 2026). Admissions officers' ability to spot AI was i
 - Paech. slop-score (EQ-Bench). https://github.com/sam-paech/slop-score ; https://eqbench.com/slop-score.html
 - Peng, Jing, Liu, Meng, Liu (2026). Not X, but When. https://arxiv.org/abs/2610.22249
 - Graphite: Druck, Paredes, Smith (2026-09-16). AI Tells. https://graphite.io/five-percent/research/ai-tells
-- Graphite (2026-10-01). AI Tells: Opus 5.5 Update. https://graphite.io/five-percent/research/ai-tells-opus-5-5-update
+- Graphite (2026-10-01). AI Tells: [a Claude model] Update. https://graphite.io/five-percent/research/ai-tells-opus-5-5-update
 - Merrill, Chen, Kumer (2025-11-13). What are the clues that ChatGPT wrote something? Washington Post. https://www.washingtonpost.com/technology/interactive/2025/how-detect-chatgpt-em-dash/ (text read via Boston Globe reprint https://www.bostonglobe.com/2025/11/13/business/chatgpt-writing-style-clues/)
 - The Economist (2026-07-30). How to spot AI writing. https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing (excerpt via https://daringfireball.net/linked/2026/08/11/)
-- Anthropic. Prompting Claude Fable 5.1 (writing density / mannered prose). https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1
-- Anthropic. Prompting Claude Opus 5.5. https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5
+- Anthropic. Prompting [a Claude model] (writing density / mannered prose). https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1
+- Anthropic. Prompting [a Claude model]. https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5
 - Anthropic support. How Claude marks AI-generated content. https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content
 - Abraham (2026). The load-bearing vocabulary of Claude. https://github.com/louisabraham/load-bearing ; https://louisabraham.github.io/load-bearing/ ; coverage https://gigazine.net/gsc_news/en/20260831-load-bearing-ai-vocabulary-github/
 - Lee, Alvero, Joachims, Kizilcec (2025). Poor Alignment and Steerability of LLMs: Evidence from College Admission Essays. https://arxiv.org/abs/2503.20062

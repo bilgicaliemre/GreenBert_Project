@@ -1,0 +1,128 @@
+% NAACL 2027 Student Research Workshop submission draft (ACL template, review mode).
+% Numbers marked \TBD come from the phase-2 evaluation and are filled from eval/results/phase2_summary.json.
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\newcommand{\TBD}[1]{\textcolor{red}{[#1]}}
+% Fill in the exact model name and version before submission (see chat; kept out of the repo).
+\newcommand{\genmodel}{\TBD{generator model, name and version}}
+
+\title{Content, Not Vocabulary: Evaluating a Style Skill for LLM Prose\\Against Humanizers, Detectors, and Human Essays}
+
+\author{Anonymous submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Advice for making language-model prose read as human usually takes the form of banned-word lists, and commercial ``humanizers'' optimize against AI-text detectors. We test a different approach: a prompt-level style skill that audits content and structure before vocabulary and forbids adding any fact the writer did not supply. Across \TBD{20} writing briefs in five genres (college personal statements and short answers, argument essays, science explainers and literary analysis), we compare five conditions: plain generation, a word-list prompt, a popular open-source humanizer skill, our skill as an editor, and our skill as a writer. Blind panels of model judges ranked our skill's output first in \TBD{x\%} of judgments, and it made \TBD{y} unsupported claims per text against \TBD{z} for plain generation. Three open-source detectors scored every skill-written text below 20\%, but they also flagged real admitted college essays written before ChatGPT: the detector trained on Anthropic-model output scored 0 of 16 such essays below 20\%. Personal statements expose a trade-off between narrative arc and fidelity, which a two-pass drafting rule narrows but does not close. We release the skill, the evaluation data and a coaching mode for application essays.
+\end{abstract}
+
+\section{Introduction}
+
+Readers have learned to recognize machine-written prose. Corpus studies trace sharp rises in words such as \emph{delve} and \emph{underscore} after the release of ChatGPT \citep{kobak2025delving,liang2024monitoring}, and instruction-tuned models use present participial clauses at two to five times the human rate \citep{reinhart2025llms}. People who use these tools heavily can identify AI-written articles with near-perfect accuracy, and they cite vocabulary, structure and lack of originality as their evidence \citep{russell2025people}.
+
+Two responses dominate practice. The first is the banned-word list, distributed in prompts, style guides and community ``skills''. The second is the commercial humanizer, which rewrites text until a detector scores it as human \citep{roe2026dramaturgies}. Both treat the surface as the problem. Wikipedia's editors, whose guide most word lists derive from, warn against exactly this: ``Please do not merely treat these signs as the problems to be fixed; that could just make detection harder'' \citep{wikipedia2026signs}. Both responses also ignore a second failure of model prose: models fill gaps with plausible details that nobody supplied \citep{ji2023hallucination}, and in personal writing those details are feelings and memories that belong to someone else.
+
+We built and evaluated an alternative: a style skill (a set of instructions an agent loads when a task matches) that orders its audit from content to staging, inflation, rhythm, tone and only then vocabulary, and that never adds a fact absent from the writer's material. For college application essays it switches to a coaching mode and does not write the essay. This paper reports what happened when we tested it.
+
+Our contributions are:
+\begin{itemize}
+  \item An evidence-graded design for a writing skill, built from a review of about 40 sources on AI-writing tells and of 15 existing open-source humanizer skills, and released with every intermediate version.
+  \item A controlled comparison of five conditions on \TBD{20} briefs, scored by blind judge panels for quality, human-likeness and unsupported claims, and by three open-source detectors.
+  \item A detector audit against human writing collected before ChatGPT. On admitted college essays the detectors invert: they flag the human essays and pass the skill's output.
+  \item A record of four design iterations on personal statements, including the failures, which shows a trade-off between narrative arc and factual fidelity.
+\end{itemize}
+
+\section{Related work}
+
+\paragraph{Stylistic signatures of LLM text.} Excess-vocabulary analyses of PubMed and peer reviews show that LLM adoption shifted the frequency of style words, mostly verbs and adjectives \citep{kobak2025delving,liang2024monitoring,juzek2025delve,geng2024chatgpt}. Beyond words, instruction-tuned models write a noun-heavy, informationally dense register \citep{reinhart2025llms}, reuse syntactic templates from pre-training data \citep{shaib2024syntactic}, and overuse corrective framings such as ``not X, but Y'' even where X is not a live alternative \citep{peng2026notx}. Professional writers editing model paragraphs agree on a taxonomy of idiosyncrasies led by clich\'es and unnecessary exposition \citep{chakrabarty2025salvaged}, and an expert taxonomy of ``slop'' finds that syntax-only features predict slop judgments better than vocabulary \citep{shaib2026slop}. Token-level bans on such patterns degrade output quickly \citep{paech2026antislop}. AI generation leaves a stable stylometric footprint that AI editing of human text does not reproduce \citep{shan2026stylometric}.
+
+\paragraph{Detecting AI text.} Detectors range from trained classifiers to zero-shot statistics \citep{mitchell2023detectgpt,bao2024fastdetectgpt,hans2024binoculars}. The RAID benchmark shows that many are nearly inoperable at low false-positive rates and fail under attacks or unseen generators \citep{dugan2024raid}. Paraphrasing defeats watermark-, classifier- and zero-shot detectors \citep{krishna2023paraphrasing,sadasivan2025reliably}, and simple prompting lowers already modest accuracy \citep{perkins2024simple,weberwulff2023testing}. Detectors misclassify non-native English writing as AI at high rates \citep{liang2023biased} and flag formal human prose \citep{creanga2026paradox}; light, guideline-compliant AI editing is flagged more often than humanizer output \citep{karr2026detection}. Untrained humans detect AI text at about chance \citep{clark2021human,jakesch2023heuristics}, while frequent LLM users do far better \citep{russell2025people}. Text watermarks offer a provenance signal that does not depend on style \citep{kirchenbauer2023watermark,dathathri2024synthid}.
+
+\paragraph{LLMs and admissions essays.} LLM-written admissions essays are linguistically distinct from those of 30,000 applicants and resemble the essays of privileged applicants \citep{lee2025poor,alvero2024hegemony}; essay content and style already tracked household income before LLMs \citep{alvero2021essay}. Estimated LLM use in essays rose sharply in 2024 \citep{lee2026divide}, and in one graduate program, essays flagged as AI-written were associated with lower admission \citep{isley2026admissions}. AI writing help homogenizes writing across authors \citep{padmakumar2024diversity,doshi2024creativity,agarwal2025homogenize} and can shift meaning even when limited to grammar \citep{abdulhai2026distort}, and heavy rewriting erases authorship signals \citep{malik2026erased}.
+
+\paragraph{LLMs as judges.} Strong LLM judges agree with human preferences about as often as humans agree with each other, but show position, verbosity and self-enhancement biases \citep{zheng2023judging,wang2024fair}, and models can recognize and prefer their own outputs \citep{panickssery2024llm}. We discuss how these biases bear on our design in Section~\ref{sec:limitations}.
+
+\section{The skill}
+\label{sec:skill}
+
+The skill is a Markdown instruction file (148 lines) with four reference files: a catalog of tells with fixes, a personal-essay guide, academic-register rules, and before/after examples. An agent loads it when a writing task matches its description. We built it from two reviews: a survey of 15 open-source humanizer skills, which supplied the procedure of \citet{chen2026humanizer} and guardrails from two other MIT-licensed skills, and an evidence-graded catalog of tells assembled from about 40 sources.
+
+\paragraph{Audit order.} The catalog showed that the strongest measured signals are structural (participial tails, corrective framing, importance flags, uniform sentence length) and that expert readers rely on content as much as words \citep{russell2025people,shaib2026slop}. The skill therefore audits a draft in a fixed order: content (the ``portability test'': could this sentence move unchanged into someone else's text?), staging, inflation, stated lessons, rhythm, paragraph endings, tone, vocabulary, and format. A strong tell justifies an edit on one sighting; weak tells, such as a single transition word, only when several cluster.
+
+\paragraph{Hard rules.} The skill never adds a fact, name, number, quote, feeling or memory that the user or the source did not provide; where a sentence needs one, it asks or leaves a bracketed question. It keeps every claim and hedge when editing, uses no evasion tricks (typos, rare synonyms, look-alike characters), and makes minimal edits to human-written text.
+
+\paragraph{Over-correction checks.} Humanizer rewrites create tells of their own: the humanizer's own blind test reports more uniform rhythm and more aphoristic closers after rewriting \citep{chen2026humanizer}. The final check lists the last sentence of every paragraph and rewrites when more than two are short or quotable, and checks that a personal essay still has an arc and a line of reflection.
+
+\paragraph{Modes.} \emph{Write} runs the full procedure; for personal essays it drafts in two passes, first for shape and then as an editor of its own draft (Section~\ref{sec:ps}). \emph{Edit} applies the audit to an existing draft. \emph{Detect} quotes passages and names patterns without guessing authorship. \emph{Coach}, used for application essays, interviews the student, proposes a structure, critiques drafts and lists corrections, and does not write the essay or example sentences built from the student's story.
+
+\section{Evaluation}
+\label{sec:eval}
+
+\paragraph{Briefs.} We wrote \TBD{20} briefs in five genres (Table~\ref{tab:briefs}). Four fictional students, each with about 1,000 to 1,400 words of interview notes and answers to the skill's depth questions, supply the material for a Common App personal statement and a 250-word supplemental answer each. The other briefs are 11th-grade argument essays and science-club explainers with no facts file, and literary analyses restricted to four passages from a public-domain novel or play, copied verbatim from Project Gutenberg and checked a second time. Every brief names the only permitted source of specifics.
+
+\paragraph{Conditions.} For each brief, fresh \genmodel{} agents produced five texts. \textbf{Plain} (P): the model's default writing. \textbf{Word list} (L): the same request plus an instruction to avoid 30 common AI words and constructions and to vary sentence length. \textbf{Humanizer} (H): the most popular open-source humanizer skill \citep{chen2026humanizer}, applied to P's draft. \textbf{Our edit} (E): our skill's Edit mode applied to P's draft. \textbf{Our write} (O): our skill's Write mode.
+
+\paragraph{Judges.} Two judge agents read all five texts of a brief in a shuffled order without labels: a strict editor, and the genre's real reader (an admissions officer, an English teacher, a science teacher). Each ranked the five texts, scored each from 1 to 10 on quality, human-likeness, specificity, voice and structure, rated AI suspicion from 1 to 5, and quoted every claim not supported by the facts file (or every invented statistic, source or factual error when there was none).
+
+\paragraph{Detectors.} We scored every text with three open-source classifiers: a DeBERTa-v3-large model trained on RAID \citep{desklib2025detector}, a RoBERTa-base model \citep{fakespot2025detector}, and a RoBERTa-large model whose training data includes Anthropic-model output \citep{superannotate2024detector}. Texts are split into chunks of about 350 words, and document scores are length-weighted means. We report the share below 20\%, the threshold below which Turnitin hides its AI score.
+
+\paragraph{Human baselines.} To see how the detectors treat human writing, we scored three sets collected before ChatGPT: 16 admitted college essays published by Hamilton College (classes of 2018 and 2022) and Connecticut College (class of 2025); 18 top-scored argument essays from the PERSUADE 2.0 corpus \citep{crossley2024persuade}; and three science explainers published in 2020.
+
+\section{Results}
+\label{sec:results}
+
+\TBD{Phase-2 results: Table of mean rank, first places, human-likeness, unsupported claims, AI suspicion, detector pass rates per condition; pairwise win rates with Wilcoxon tests; per-genre breakdown.}
+
+\subsection{Detectors and human writing}
+
+\TBD{Figure: dot strips of D1--D3 scores for human baselines vs P/L/H/E/O.} On the phase-1 data, only 5 of 16 admitted essays scored below 20\% on the first two detectors, and none did on the third, whose mean score for them was 61\% (its scores saturate near 73\%). All 14 texts our skill wrote in phase 1 scored below 20\% on all three.
+
+\subsection{Personal statements: arc against fidelity}
+\label{sec:ps}
+
+\TBD{Iteration table v1--v4 and phase-2 personal-statement results.}
+
+\section{Discussion}
+
+\TBD{Why content-first works; detectors in admissions; coaching versus ghostwriting.}
+
+\section{Conclusion}
+
+\TBD{}
+
+\section*{Limitations}
+\label{sec:limitations}
+
+\TBD{Same-family model judges; fictional personas; open-source detectors only; one generator; English only; sample sizes per genre.}
+
+\section*{Ethical considerations}
+
+\TBD{Dual use and detector evasion; disclosure to detector developers; consent and ethics for any human rater study; human essays: scores only, texts not redistributed; watermarking.}
+
+\section*{AI use statement}
+
+\TBD{\genmodel{} (Anthropic) agents generated all evaluation texts, acted as judges, and drafted parts of this paper under the author's direction; the author designed the study, checked every number against the released data, and revised the text. Prompts and logs are released.}
+
+\bibliography{references}
+
+\appendix
+\section{Briefs}
+\label{sec:appendix-briefs}
+\begin{table}[h]
+\centering\small
+\caption{Writing briefs.}
+\label{tab:briefs}
+\TBD{table}
+\end{table}
+
+\end{document}

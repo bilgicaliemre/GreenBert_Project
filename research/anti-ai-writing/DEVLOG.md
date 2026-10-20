@@ -39,7 +39,7 @@ DeBERTa-v3-large trained on RAID; D2 = Fakespot RoBERTa-base).
 
 **1.2 Evidence-graded catalog of AI tells** (`notes/tells_catalog.md`, 919 lines, ~40 sources).
 - Strongest measured tells: corrective framing ("not X, it's Y"), participial "-ing" tails (2-5x human rate,
-  Reinhart et al. PNAS 2025), importance flags ("this matters", 116x human for Claude Opus 5.5 per Graphite
+  Reinhart et al. PNAS 2025), importance flags ("this matters", 116x human for [a Claude model] per Graphite
   2026), summary closers, uniform sentence length, elegant variation, abstract application-essay nouns
   (journey, growth, resilience: Lee et al. 2025 on 30,000 admissions essays).
 - Em dashes are a historical tell; current Claude uses almost none (Graphite, Oct 2026).
