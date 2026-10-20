@@ -268,6 +268,31 @@ What this says:
   detail (one editor: "leaves out the key self-indictment") and for packing too much into one paragraph. v5 adds a
   short checklist for this (section 11).
 
+### 10b. Phase 2 detector results (100 texts, `eval/results/phase2_scores.json`)
+
+Share of texts under 20% on all three detectors, by genre (4 briefs per genre):
+
+| Genre | Plain | Word list | Humanizer edit | Our edit | Our write |
+|---|---|---|---|---|---|
+| Personal statement | 4/4 | 4/4 | 4/4 | 4/4 | 4/4 |
+| Short answer | 4/4 | 4/4 | 4/4 | 4/4 | 4/4 |
+| Argument | 0/4 | 0/4 | 0/4 | 0/4 | **4/4** |
+| Explainer | 0/4 | 0/4 | 0/4 | 0/4 | 1/4 |
+| Literary analysis | 1/4 | 3/4 | 2/4 | 2/4 | **4/4** |
+| **Total** | 9/20 | 11/20 | 10/20 | 10/20 | **17/20** |
+
+Mean scores (D1 / D2 / D3): plain 40.0 / 33.7 / 23.2; word list 20.0 / 19.7 / 7.5; humanizer 26.7 / 19.8 / 9.8;
+our edit 26.3 / 17.2 / 11.9; our write 3.0 / 3.6 / 2.6.
+
+- **The personal-essay finding got stronger.** Every model-written personal statement and short answer passed all
+  three detectors, plain Claude included (scores 0-3%), while the 16 human admitted essays averaged 61% on D3 and
+  none passed it. On this genre the detectors are not just weak; they point the wrong way.
+- So the skill's detector advantage comes from the school genres (argument, literary analysis), where plain text
+  fails and skill text passes. Explainers are the exception: three of four skill explainers scored 24-28% on one
+  detector. Science explanation leaves less room for idiosyncratic detail.
+- Editing a plain draft (ours or the humanizer) halves the scores but passes only half the texts. Writing fresh
+  matters for detectors too, which supports the Rebuild mode in v5.
+
 ## 11. Version 5 (candidate)
 
 Changes, each tied to a phase-2 failure:

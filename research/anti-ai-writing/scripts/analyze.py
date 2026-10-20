@@ -109,7 +109,7 @@ def main(argv):
         sc = json.load(open(scores_path))
         det = defaultdict(list)
         for path, s in sc.items():
-            c = path.split('/out/')[-1].split('/')[0] if '/out/' in path else path.split('/')[0]
+            c = path.split('/')[-2]  # condition = folder that holds the text
             det[c].append(s)
         summary['detectors'] = {}
         for c in CONDS:
