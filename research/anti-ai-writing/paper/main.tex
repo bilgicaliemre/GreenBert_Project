@@ -94,7 +94,11 @@ The skill is a Markdown instruction file (148 lines) with four reference files: 
 
 \section{Discussion}
 
-\TBD{Why content-first works; detectors in admissions; coaching versus ghostwriting.}
+\TBD{Why content-first works: fill from the phase-2 and held-out results.}
+
+\paragraph{Detectors in admissions.} On personal essays the three detectors got the direction wrong: they scored real admitted essays high and model essays written with the skill low. A plausible reason is domain. Two of the detectors were trained on RAID, whose eight domains (scientific abstracts, book summaries, news, poetry, recipes, Reddit posts, reviews and Wikipedia) do not include the personal essay \citep{dugan2024raid}. In most of those domains human writing is uneven and specific and model writing is polished and general. Admitted essays are polished, edited many times, and full of the reflective phrasing that admissions advice recommends, so they look like the model side of the training data; a model told to use concrete, uneven detail looks like the human side. Whatever the cause, a detector score is not evidence that an applicant used AI. Colleges that forbid substantive AI content \citep{commonapp2023fraud,brown2026integrity,yale2026ai} have to enforce it some other way, and our results suggest that style-based detection would fall hardest on applicants who write in the polished register that essay coaching teaches.
+
+\paragraph{Coaching versus ghostwriting.} Personal statements were the one genre where the skill's writing did not clearly win, and the reason is instructive. The essays that judges liked most built an arc, a turning point and a closing insight, and plain generation built them by inventing feelings and causes the notes did not contain. When the skill forbade that, it lost some of the arc. The material that makes an application essay work (what the student actually thought, what they still have not resolved) exists only in the student's head, so the honest way for a model to help is to ask for it. Coach mode does this and leaves the writing to the student, which also keeps the essay inside policies that allow brainstorming and proofreading but not AI-written content \citep{yale2026ai}.
 
 \section{Conclusion}
 
@@ -103,15 +107,25 @@ The skill is a Markdown instruction file (148 lines) with four reference files: 
 \section*{Limitations}
 \label{sec:limitations}
 
-\TBD{Same-family model judges; fictional personas; open-source detectors only; one generator; English only; sample sizes per genre.}
+\paragraph{Model judges.} All judges are language models from the same family as the generator, and models can recognize and favor their own output \citep{panickssery2024llm}. Self-preference does not by itself favor one of our conditions, since every condition was produced by the same model, but judges may share the generator's taste for a particular kind of polish. We shuffled labels, used two reader lenses, and in the held-out study added a judge running on a different model tier; we did not test judges from other model families or recruit enough human raters. A human rating study with the released survey is the most important missing piece.
+
+\paragraph{Test material.} The student personas are fictional and were written by a model; real interview notes are shorter, messier and less quotable. Coach mode was checked on one real student draft and one pressure test, which shows it can work but not how often it does.
+
+\paragraph{Detectors.} We used three open-source classifiers. Commercial detectors used by schools (Turnitin, GPTZero) were not tested, so the pass rates here do not predict their scores. The human baselines are small (16 admitted essays, 18 PERSUADE essays) and the admitted essays were selected and edited for publication by the colleges.
+
+\paragraph{Scope and development.} One generator model wrote every text, in English, for genres common in US high schools. Version 5 of the skill was revised after the phase-2 results on the same 20 briefs, so its phase-2 scores are in-sample; the held-out study uses 16 new briefs, but they were written by the same team that built the skill. Per-genre results rest on two to four briefs each and should be read as descriptive.
 
 \section*{Ethical considerations}
 
-\TBD{Dual use and detector evasion; disclosure to detector developers; consent and ethics for any human rater study; human essays: scores only, texts not redistributed; watermarking.}
+\paragraph{Dual use.} The skill lowers detector scores as a side effect of better writing, and a student could use it to pass off model-written work as their own. We took three steps. The skill uses no evasion tricks (typos, homoglyphs, invisible characters), so it adds nothing to the attack literature on detectors \citep{krishna2023paraphrasing,sadasivan2025reliably}. For application essays it coaches and does not write, and it states institutional AI policies plainly. And it tells users that recent model output may carry a provenance watermark \citep{bleeping2026watermark}: style editing does not make model text the user's own work.
+
+\paragraph{Detector developers.} Because we report low detector scores for model text and high scores for human essays, we \TBD{notified the developers of all three detectors on <date>}, at least 30 days before any preprint.
+
+\paragraph{Human writing and raters.} We scored published admitted essays and PERSUADE essays and report only their scores; we do not redistribute their texts. No real applicant's essay appears in the released data. Any human rating study uses volunteers who give informed consent, collects no names or contact details, and \TBD{had approval from <school or teacher>}.
 
 \section*{AI use statement}
 
-\TBD{\genmodel{} (Anthropic) agents generated all evaluation texts, acted as judges, and drafted parts of this paper under the author's direction; the author designed the study, checked every number against the released data, and revised the text. Prompts and logs are released.}
+AI agents (\genmodel{}, Anthropic) did a large share of this work: they surveyed the literature and existing skills, drafted every version of the skill, generated all evaluation texts, acted as judges, wrote the analysis scripts, and drafted this paper. The development log, prompts, scripts and every intermediate version are released. \TBD{The author describes here, accurately, what they did themselves: e.g.\ which decisions they made, which numbers and citations they checked against the data and sources, and which sections they rewrote.}
 
 \bibliography{references}
 
