@@ -1,5 +1,5 @@
 {
- "detector/calib/human_essay_conn_edie-banovic-25.txt": {
+ "detector/calib/human_essay_conn2025_b.txt": {
   "words": 633,
   "chunks": 3,
   "desklib": 49.8,
@@ -21,7 +21,7 @@
    74.2
   ]
  },
- "detector/calib/human_essay_conn_riley-anderson-25.txt": {
+ "detector/calib/human_essay_conn2025_a.txt": {
   "words": 640,
   "chunks": 3,
   "desklib": 7.9,

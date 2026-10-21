@@ -78,8 +78,8 @@ Excerpts (each is the kind of detail a model will not produce unless the student
   swore there would have been more motion to the pitch if he hadn't hurt his shoulder shoveling." (Martin Amuso,
   Hamilton, same Hamilton URL)
 - Numbers as texture rather than as achievement: "'How many times did I wake up at 4:15 a.m. this summer?' ...
-  The answer: twenty-two times." (Edie Banovic, Conn College,
-  https://www.conncoll.edu/admission/apply/essays-that-worked/edie-banovic-25/)
+  The answer: twenty-two times." (an admitted Class of 2025 essay,
+  https://www.conncoll.edu/admission/apply/essays-that-worked/)
 
 The canonical pre-AI illustration, from MIT's Chris Peterson quoting Vince Gotera
 (https://mitadmissions.org/blogs/entry/how-to-write-a-college-essay/, 2012, updated later):

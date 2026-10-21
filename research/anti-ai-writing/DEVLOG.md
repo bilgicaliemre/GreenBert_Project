@@ -508,3 +508,35 @@ first count included the two passing human explainers). Fixed in the table with 
 Results page rebuilt for the final state (same link). Its source stays out of the repo because it contains the
 user's personal YYGS answers and coaching notes. Paper: figures `fig_rank.pdf` (development and held-out mean ranks) and `fig_detectors.pdf`, built by
 `scripts/figures.py`; PDF compiles to 11 pages with the body inside 8.
+
+## 19. Adversarial paper review and a privacy fix
+
+Workflow `paper-review`: four independent reviewers (numbers re-derived from the data files, citations checked
+against the cited work, a skeptical workshop reviewer, prose and anonymity under the skill's own rules), then a
+merger that re-verified every numeric correction and kept only edits whose old text occurs exactly once. Result:
+79 edits (3 critical, 32 major, 44 minor), all applied; list with evidence in `paper/review_edits.json`.
+
+The most important corrections:
+- **Selection on the held-out set.** v4 was chosen over v6 after seeing held-out results, so v4's numbers are the
+  better of two frozen candidates and somewhat optimistic for the released v7; v6 also beat every baseline. v7
+  as a whole was never put through the held-out panels. The paper now says all three things.
+- **Imperfect blinding.** Judges opened texts by file path, and the path contained the condition's folder letter.
+  6 of 128 writing judgments name a condition letter; the coaching counselor labelled feedback by path. Stated in
+  the methods and limitations.
+- **Unit of analysis.** Tests are on briefs (16 held-out), not judgments; resampling briefs widens v4's interval to
+  [1.52, 2.38]; with Holm's correction every reported comparison stays below 0.025.
+- **Wrong or overstated numbers fixed:** v4 human-likeness 7.15 (not 7.2); short answers 7/8 and 6/8 (not 8/8);
+  development personal-essay detector maximum 6.2% (not 3%); v6 Write passed 15 of 16 (not "all skill texts");
+  the "arithmetic-heavy" quote was about v6's Rebuild, not v6 Write; five new genres, not six; the pilot already
+  had a blog post.
+- **Citations:** Chakrabarty et al.'s taxonomy is led by awkward word choice and poor sentence structure; Peng et al.
+  measured corrective framing in Mandarin; the humanizer's blind test is a contributor's GitHub issue; the two
+  other MIT skills are now cited; Turnitin's 20% asterisk rule is cited.
+
+**Privacy fix (the repository is public).** The detector-score file and one script keyed two Connecticut College
+essays by their writers' names, which paired real students' names with AI-likelihood scores. Renamed to
+conn2025_a and conn2025_b everywhere in the current files; a craft note that quoted one essay now cites the page
+without the name. Earlier commits on this branch still contain the names (raised with the user).
+
+**Survey blinding.** All generated texts and the survey key are public, so a rater could unblind a pair by
+searching. The paper says so, and the survey now asks raters not to search for the texts.

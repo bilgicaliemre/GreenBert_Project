@@ -8,7 +8,7 @@ def add(group,kind,path,r):
     cond=path.split('/')[0] if not path.startswith('/') and '/' in path else ''
     rows.append({'group':group,'kind':kind,'cond':cond,'name':os.path.basename(path).replace('.txt',''),'words':r['words'],'d1':r['desklib'],'d2':r['fakespot']})
 for p,r in load(f'{S}/detector/human_essays_results.json').items(): add('Human: admitted college essays (pre-2022)','human',p,r)
-for n,(w,a,b) in {'conn_riley-anderson-25':(640,7.9,54.5),'conn_edie-banovic-25':(633,49.8,52.9)}.items():
+for n,(w,a,b) in {'conn2025_a':(640,7.9,54.5),'conn2025_b':(633,49.8,52.9)}.items():
     rows.append({'group':'Human: admitted college essays (pre-2022)','kind':'human','name':n,'words':w,'d1':a,'d2':b})
 for p,r in load(f'{S}/detector/genre_human_results.json').items(): add('Human: top-scored student argument essays (pre-2022)','human',p,r)
 EX={'human_explain_berthub_2020.txt':(454,0.8,1.4),'human_explain_conversation_2020.txt':(497,10.6,13.5),'human_explain_conversation_2020_intro.txt':(528,32.8,21.6)}
