@@ -19,8 +19,8 @@ plt.rcParams.update({'font.family': 'serif', 'font.serif': ['Nimbus Roman', 'Tim
                      'ytick.color': INK, 'axes.spines.top': False, 'axes.spines.right': False})
 
 NAMES = {'P': 'Plain', 'L': 'Word list', 'H': 'Humanizer edit', 'E': 'Skill edit (v4)', 'O': 'Skill write (v4)',
-         'V': 'Skill write (v5)', 'R': 'Skill rebuild (v5)', 'S': 'Skill write', 'B': 'Skill rebuild'}
-ROLE = {'P': PLAIN, 'L': OTHER, 'H': OTHER, 'E': SKILL, 'O': SKILL, 'V': SKILL, 'R': SKILL, 'S': SKILL, 'B': SKILL}
+         'V': 'Skill write (v5)', 'R': 'Skill rebuild (v5)', 'F': 'Skill write (v4)', 'S': 'Skill write (v6)', 'B': 'Skill revise (v6)'}
+ROLE = {'P': PLAIN, 'L': OTHER, 'H': OTHER, 'E': SKILL, 'O': SKILL, 'V': SKILL, 'R': SKILL, 'F': SKILL, 'S': SKILL, 'B': SKILL}
 
 
 def kv(items):

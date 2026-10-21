@@ -11,9 +11,9 @@ from itertools import combinations
 import numpy as np
 from scipy import stats
 
-ORDER = ['P', 'L', 'H', 'E', 'O', 'V', 'R', 'S', 'B']  # display order; the conditions actually used come from the data
+ORDER = ['P', 'L', 'H', 'E', 'O', 'V', 'R', 'F', 'S', 'B']  # display order; the conditions actually used come from the data
 NAMES = {'P': 'Plain', 'L': 'Word-list prompt', 'H': 'Humanizer edit', 'E': 'Our edit', 'O': 'Our write',
-         'V': 'v5 write', 'R': 'v5 rebuild', 'S': 'Skill write', 'B': 'Skill rebuild'}
+         'V': 'v5 write', 'R': 'v5 rebuild', 'F': 'v4 write', 'S': 'v6 write', 'B': 'v6 revise'}
 CONDS = ORDER
 SCORE_KEYS = ['quality', 'human_likeness', 'specificity', 'voice', 'structure_and_insight', 'ai_suspicion']
 rng = np.random.default_rng(0)
