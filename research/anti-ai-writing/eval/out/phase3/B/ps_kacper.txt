@@ -1,0 +1,19 @@
+My phone has a contact saved as "Oleh Pro2 Glovo." I've opened BLIK about four times to send him 230 złoty. I have the 230, so that isn't the problem. The problem is the message box: I'd have to write something in it, and I don't know what.
+
+For two years one corner of the bike room in our basement has been mine: two shelves, a folding table from Lidl, one socket by the door. I buy broken e-scooters on OLX, bring them home on the tram, fix them and sell them as KacperFix, 41 since summer 2024.
+
+In March, Oleh, a Ukrainian courier for Glovo, brought me his Pro 2 because the battery was dying on hills. Handing it over, he said, "I need it for work, it must be good." One cell group read 2.9 volts, the rest almost 4. I replaced that group with salvaged cells from another scooter. Two of those tested weaker on my charger, and I thought, it's fine, it's a mix. I didn't have a spot welder (they cost 400 złoty), so I soldered the strips. He paid 380, and I gave him a handwritten card: "gwarancja 3 miesiące," three months' warranty.
+
+Nineteen days later, at 22:10, the scooter cut out on Grunwaldzka, in the rain, with an order still in his bag. He pushed it about four kilometers to our building and came down to the bike room almost at midnight, wet.
+
+When he walked in I was thinking about the 380, calculating. Before I'd unscrewed anything, I said, "It got wet." Then I opened it while he watched. There was a little water in the bottom (there always is, this is Gdańsk), and I pointed at it. I gave him 150 back and said that was fair because of the water. He said "dobra," okay, and walked out talking on the phone in Ukrainian. I don't know what he said.
+
+Later I opened the pack properly. One of my solder joints was cracked, and I had cooked the cell next to it. It was the repair, mine, not the rain, and it took me two days to say that, even just in my head. Last winter, in a Facebook scooter group, I had argued for about three days that you can solder cells if you're fast enough, and in April I deleted those comments.
+
+Oleh had told me he needed the scooter for work, and I put the used cells in anyway, because new ones would have eaten my margin. I knew both things at the same time. Once I divided my profit by my hours and got around seven złoty an hour, less than I'd earn at Żabka. So I'm probably not doing this only for the money, though I haven't figured out what else it is.
+
+Some of it I could fix with money. A month later I bought a spot welder from AliExpress for 280 złoty. A fire extinguisher, 89 złoty, now hangs by the socket. I also stopped doing batteries for other people. That sounds like a lesson, I know, but it isn't one: I just stopped doing the part where I can mess up.
+
+Batteries are also what I want to study. Electrical engineering, I think, because the controller and the battery board are the interesting part, and also the part I'm worst at. So I've stopped doing, for other people, the part I want to learn, and I don't know what that is. The problem I'd like to solve is how to get better at it without someone like Oleh paying for my mistakes.
+
+In June I saw Oleh on Grunwaldzka riding a new Ninebot, not one of mine. I didn't wave. He never left a review on OLX, and I still check sometimes. I have the 230, and the message box is still empty.

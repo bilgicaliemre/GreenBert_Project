@@ -1,0 +1,17 @@
+Regional recap: Marrowfield, October 17
+
+On Saturday, October 17, 14 students, two mentors and Coach Tibbetts took Team 7731 to the Ostrander Valley Robotics League regional at Marrowfield Community College. We went 3-2-1 in qualifications and ranked 9th of 32. Team 4410, the Voltage Vultures from Copperline Prep, picked us second for their alliance, and we lost the best-of-three quarterfinal 0-2 (71-77 and 60-84). We won no awards and did not qualify for state.
+
+The bus was supposed to leave at 5:45 a.m. It left at 6:10, and our driver, Mr. Lund (same classic rock station all day), had to turn around because Rohan Achterberg forgot the battery charger. The gym's air conditioning was broken, so it was about 84°F inside, and I had worn the wrong shoes. At 8:15 the robot failed inspection because the bumper was 2 mm too high. We filed it down and passed at 8:50.
+
+We lost Q4 48-61. In Q11 our autonomous was mirrored wrong for the red side, and the robot drove straight into the wall at the start; we still won 72-40. Q19 was a 55-55 tie. I misread the schedule for that one, and the queuer called our number twice before we showed up.
+
+In Q23 the shoulder bracket on the intake arm cracked. The arm hung limp for the rest of the match, and we lost 30-68. I had printed that bracket on Thursday night at 20% infill to save time, when it should have been 100% or metal. Marisol Fenwick (a sophomore) and our mentor Gus Abernathy-Reyes swapped in an aluminum bracket from our spares. It took them 25 minutes, and it was done before Q31. Marisol cut her finger on the edge, got a band-aid and was fine. We won Q31 81-52, our best score of the day, and then Q38 64-59, even though the left drive motor overheated near the end.
+
+At our pit interview, the judge (her name tag said Ms. Ferraro-Quint) said our notebook was the best-organized one she had seen that day. She also pointed out that our CAD screenshots had no dimensions, and she asked why we used 3D-printed parts on load-bearing joints. I'm the mechanical lead, and I didn't have a good answer.
+
+At alliance selection, Theo Brannagan wore the fox head, couldn't see out of it, and walked into Copperline's pit banner and knocked it over. Their whole pit laughed and Theo bowed. For the record, Culver's beat Wendy's 9-5 in the food-stop vote, and the vending machine ate Priya's $2.
+
+On the bus home we argued about what to do before November 14. Rohan and I want to rebuild the whole arm in aluminum. Marisol and Theo want to reprint it at 100% infill and spend the time on autonomous instead. It got loud, and Coach Tibbetts said we will decide at Tuesday's meeting.
+
+Thank you to Quillby's Hardware for donating aluminum stock. Our next chance to qualify for state is the Elk Ridge qualifier on November 14.

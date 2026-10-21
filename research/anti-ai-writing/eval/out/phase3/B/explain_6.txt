@@ -1,0 +1,13 @@
+Why 2100 won't have a February 29
+
+For anyone alive today, every year divisible by four has had a February 29, 2000 included. The last exception was 1900, and the next is 2100. Earth's year is a little shorter than 365¼ days, so a leap day every four years overshoots, and skipping three leap days every 400 years takes most of the excess back out.
+
+Orthodox churches that still use the Julian calendar, including the Russian Orthodox Church, celebrate Christmas on January 7. That is December 25 on their calendar, which now runs 13 days behind the Gregorian calendar. When the Gregorian calendar began in 1582, the gap was 10 days. Something has added three more since.
+
+The year a calendar has to match is the tropical year, from one spring equinox to the next, because the seasons follow that cycle. It lasts about 365.2422 days: 365 days, 5 hours and 49 minutes. Calendars count whole days, and a plain 365-day calendar would drift against the seasons by about 24 days a century.
+
+Julius Caesar's reform, in effect from 45 BC, added a day every fourth year. That made the average year 365.25 days, about 11 minutes too long, which adds up to a full day roughly every 128 years. The church calculated Easter from a spring equinox fixed at March 21, about where it fell in the fourth century. By 1582 the real equinox was arriving around March 11, ten days early.
+
+That year Pope Gregory XIII deleted ten days: in the countries that switched at once, Thursday, October 4 was followed by Friday, October 15. He also changed the rule. A year divisible by 4 is a leap year, except a century year, which is a leap year only if it divides by 400. So 1600 and 2000 kept February 29, while 1700, 1800 and 1900 lost it. That leaves 97 leap years in every 400, an average of 365.2425 days, still about 26 seconds too long: one day of drift in a bit over 3,000 years. (The day and the tropical year both change slowly, so no fixed rule stays exact forever.)
+
+The Julian calendar never skips a leap day, so each century leap day Gregory's rule skipped widened the gap by a day: 11 after 1700, 12 after 1800, 13 after 1900. That is why Britain, switching in 1752, dropped 11 days instead of 10, and Russia dropped 13 in 1918. The year 2000 was a leap year in both calendars, so the gap is still 13. In 2100 the Julian calendar will add a February 29 and the Gregorian won't, and for the next hundred years, Julian December 25 will fall on January 8.

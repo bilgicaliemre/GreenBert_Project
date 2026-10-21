@@ -391,3 +391,49 @@ surname that matched a real scientist.
 Six conditions per brief: P plain, L word list, H humanizer edit of P, F v4 write, S v6 write, B v6 Rebuild of P.
 Three blind judges per brief: an editor and a genre reader as before, plus a second genre reader running on a
 different model tier, to check that rankings do not depend on the judge model. Script: `scripts/phase3.js`.
+
+## 15. Held-out results (16 new briefs, 48 blind judgments)
+
+Data: `eval/results/phase3_judges.json`, summary `eval/results/phase3_summary_judges.json`, texts `eval/out/phase3/`.
+The first launch was interrupted twice (a container restart, then a usage limit); outputs that the run logs
+confirmed as finished were reused and everything else was regenerated (`args.done` in `scripts/phase3.js`).
+
+| Condition | Mean rank [95% CI] | First places | Human-likeness | Quality | AI suspicion | Unsupported per text |
+|---|---|---|---|---|---|---|
+| P plain | 5.65 [5.48, 5.81] | 0 | 4.48 | 5.52 | 3.98 | 3.38 |
+| L word list | 4.17 [3.75, 4.56] | 3 | 6.48 | 6.31 | 2.90 | 2.98 |
+| H humanizer edit of P | 4.25 [3.92, 4.56] | 2 | 5.69 | 6.35 | 3.33 | 1.88 |
+| F v4 write | **1.92** [1.62, 2.23] | **23** | **7.15** | **7.90** | 2.46 | 1.17 |
+| S v6 write | 2.42 [2.02, 2.81] | 17 | 6.96 | 7.48 | 2.48 | 0.96 |
+| B v6 Rebuild of P | 2.60 [2.40, 2.81] | 3 | 7.10 | 7.46 | 2.46 | **0.79** |
+
+Friedman chi-square 51.0, p = 9e-10. Pairwise (judgments where the first ranked above the second, of 48):
+v4 write above plain 47, above word list 43, above humanizer 44 (all Wilcoxon p < 0.003). v6 Rebuild above the
+humanizer 42 (p = 0.0008), above plain 48. **v4 write above v6 write 27 of 48 (p = 0.35): no significant
+difference.** v4 write above v6 Rebuild 35 of 48 (p = 0.02).
+
+**Second judge model.** The third judge ran on a different model tier and gave the same order: v4 1.94, v6 2.25,
+v6 Rebuild 2.44, word list 4.19, humanizer 4.81, plain 5.38. The skill's advantage does not depend on the judge
+model (within one model family).
+
+By genre (mean rank v4 / v6 / v6 Rebuild; best baseline): personal statement 1.33 / 2.50 / 2.67 (word list
+4.00); short answer 2.17 / 1.50 / 2.50; argument 1.33 / 3.00 / 2.50; explainer 2.17 / 1.50 / 2.33; literary
+analysis 1.33 / 2.50 / 2.83; email 1.67 / 2.00 / 2.50; lab discussion 2.67 / 1.00 / 2.33; news article 1.00 / 3.33
+/ 2.67; cover letter 2.33 / 4.33 / 3.33 (**word list 2.00**); blog post 4.67 / 4.00 / 2.67 (**word list 1.67**,
+humanizer 2.67). One or two briefs per genre, so these are descriptive.
+
+What this says:
+- **The skill generalizes.** On briefs and genres it was never developed on, v4's Write mode ranked first in 23
+  of 48 judgments and above plain generation in 47 of 48, with a third of plain's unsupported claims.
+- **Personal statements on new students went the skill's way** (v4 first in 5 of 6 judgments), unlike the
+  development panels. Development personas were used to tune earlier versions, but these were not; the earlier
+  panel effect (section 12) and four briefs per genre mean the personal-statement result is still the least
+  certain one.
+- **v6 did not beat v4.** Its argument rules (a worked case with numbers) produced essays judges called
+  "arithmetic-heavy for an English class" and openings "on the compromise position with no hook": the template
+  risk flagged in section 13. Diagnosis-driven rules can fit the development judges' taste and not transfer.
+- **Rebuild works.** Revising an AI draft with v6's Rebuild mode beat the humanizer in 42 of 48 judgments and had
+  the fewest unsupported claims of any condition.
+- **Weak genre: casual first-person posts.** The word-list prompt won the blog post and narrowly the cover letter.
+  The skill's audit may strip the looseness these genres want. Not fixed here: tuning on a held-out brief would
+  make it development data.
