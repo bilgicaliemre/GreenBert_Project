@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Advice for making language-model prose read as human usually takes the form of banned-word lists, and commercial ``humanizers'' optimize against AI-text detectors. We test a different approach: a prompt-level style skill that audits content and structure before vocabulary and forbids adding any fact the writer did not supply. Across \TBD{20} writing briefs in five genres (college personal statements and short answers, argument essays, science explainers and literary analysis), we compare five conditions: plain generation, a word-list prompt, a popular open-source humanizer skill, our skill as an editor, and our skill as a writer. Blind panels of model judges ranked our skill's output first in \TBD{x\%} of judgments, and it made \TBD{y} unsupported claims per text against \TBD{z} for plain generation. Three open-source detectors scored every skill-written text below 20\%, but they also flagged real admitted college essays written before ChatGPT: the detector trained on Anthropic-model output scored 0 of 16 such essays below 20\%. Personal statements expose a trade-off between narrative arc and fidelity, which a two-pass drafting rule narrows but does not close. We release the skill, the evaluation data and a coaching mode for application essays.
+Advice for making language-model prose read as human usually takes the form of banned-word lists, and ``humanizer'' tools rewrite text until detectors pass it. We test a different approach: a prompt-level style skill that audits content and structure before vocabulary and forbids adding any fact the writer did not supply. On 16 held-out briefs in ten genres, blind panels of model judges ranked the skill's output above plain generation in 47 of 48 judgments, above a word-list prompt in 43 and above the most popular open-source humanizer in 44, and it made a third as many unsupported claims as plain generation (1.17 against 3.38 per text). A judge running on a second model gave the same order. Two later versions built from judge feedback did not improve on the released writing procedure, and personal-statement rankings changed with the other texts in the panel. Three open-source detectors passed every model-written personal essay we produced, plain or not, while flagging most real admitted college essays written before ChatGPT. In a coaching experiment, the skill's coaching mode gave more useful feedback with less invented content than plain feedback. We release the skill, every version, the evaluation data and a rater survey.
 \end{abstract}
 
 \section{Introduction}
@@ -37,10 +37,11 @@ We built and evaluated an alternative: a style skill (a set of instructions an a
 
 Our contributions are:
 \begin{itemize}
-  \item An evidence-graded design for a writing skill, built from a review of about 40 sources on AI-writing tells and of 15 existing open-source humanizer skills, and released with every intermediate version.
-  \item A controlled comparison of five conditions on \TBD{20} briefs, scored by blind judge panels for quality, human-likeness and unsupported claims, and by three open-source detectors.
-  \item A detector audit against human writing collected before ChatGPT. On admitted college essays the detectors invert: they flag the human essays and pass the skill's output.
-  \item A record of four design iterations on personal statements, including the failures, which shows a trade-off between narrative arc and factual fidelity.
+  \item An evidence-graded design for a writing skill, built from a review of about 40 sources on AI-writing tells and of 15 existing open-source humanizer skills, and released with all seven versions.
+  \item A controlled comparison on 20 development and 16 held-out briefs in ten genres against plain generation, a word-list prompt and a popular humanizer, scored by blind judge panels (including a judge on a second model) and by three open-source detectors.
+  \item A detector audit against human writing collected before ChatGPT. On personal essays the detectors invert: they flag admitted essays and pass model text, plain or not.
+  \item A record of the iterations, including two versions that did not beat their predecessor, and a measurement effect: personal-statement rankings depend on which other texts share the panel.
+  \item A coaching experiment comparing the skill's coaching mode with plain feedback on simulated student drafts.
 \end{itemize}
 
 \section{Related work}
@@ -153,7 +154,9 @@ Both kinds of feedback improved the first drafts: the draft ranked last in all 1
 
 \section{Discussion}
 
-\TBD{Why content-first works: fill from the phase-2 and held-out results.}
+\paragraph{Why content first.} Judges' reasons point to the same mechanism across genres. The texts they ranked first argued from one specific organizing idea, used the writer's own facts and kept them straight, and ended on content; the texts they ranked last had the stock plan of the genre (a three-reason thesis, a sensory hook, a summary close). The word-list prompt changed the vocabulary and the voice, and judges rated it more human than plain generation, but it kept the stock plan and invented almost as much (2.98 unsupported claims per text against 3.38). The humanizer edit removed tells sentence by sentence and kept the draft's plan, and judges recognized edits of the same draft as one family. The skill's gains came from what the vocabulary pass cannot reach: what the text claims, in what order, and from which facts.
+
+\paragraph{Iterating on judges.} Diagnosing judge comments produced plausible rules that did not transfer. Version~5's student-voice rule raised human-likeness and lowered reasoning quality, and its example line became a template; version~6's argument rules, distilled from 16 judgments that praised one move, produced essays judges called arithmetic-heavy on new topics. Both regressions were caught only because each version was compared with its predecessor on the same panel and, finally, on held-out briefs. We think style skills, like models, need a held-out set: the development judges' taste is part of what gets fitted.
 
 \paragraph{Detectors in admissions.} On personal essays the three detectors got the direction wrong: they scored real admitted essays high and model essays written with the skill low. A plausible reason is domain. Two of the detectors were trained on RAID, whose eight domains (scientific abstracts, book summaries, news, poetry, recipes, Reddit posts, reviews and Wikipedia) do not include the personal essay \citep{dugan2024raid}. In most of those domains human writing is uneven and specific and model writing is polished and general. Admitted essays are polished, edited many times, and full of the reflective phrasing that admissions advice recommends, so they look like the model side of the training data; a model told to use concrete, uneven detail looks like the human side. Whatever the cause, a detector score is not evidence that an applicant used AI. Colleges that forbid substantive AI content \citep{commonapp2023fraud,brown2026integrity,yale2026ai} have to enforce it some other way, and our results suggest that style-based detection would fall hardest on applicants who write in the polished register that essay coaching teaches.
 
@@ -161,7 +164,7 @@ Both kinds of feedback improved the first drafts: the draft ranked last in all 1
 
 \section{Conclusion}
 
-\TBD{}
+A style skill that fixes content and structure before vocabulary, and that never adds facts, produced writing that blind model judges preferred to plain generation, a word-list prompt and a popular humanizer on briefs it was not developed on, with a third of plain generation's unsupported claims. Its coaching mode gave more useful feedback than plain feedback while leaving the writing to the student. The detectors we tested could not tell its personal essays, or plain model essays, from human ones, and flagged most real admitted essays, so they should not be used as evidence in admissions. The open questions are whether human readers agree with the model judges, which our released survey is built to test, and how to keep casual first-person genres loose while auditing them.
 
 \section*{Limitations}
 \label{sec:limitations}
@@ -191,11 +194,32 @@ AI agents (\genmodel{}, Anthropic) did a large share of this work: they surveyed
 \appendix
 \section{Briefs}
 \label{sec:appendix-briefs}
-\begin{table}[h]
+\begin{table*}[h]
 \centering\small
-\caption{Writing briefs.}
+\begin{tabular}{llp{11.5cm}}
+\toprule
+Set & Genre (n) & Topics \\
+\midrule
+Development & Personal statement (4) & Four fictional students (Portuguese-American shoe-repair family; Nebraska church organist; Kazakh wild-apple collector; a Houston lion-dance performer), Common App prompts \\
+ & Short answer (4) & Same students, 250-word supplements (curiosity, roommate note, activity) \\
+ & Argument (4) & Phone bans; test retakes; group-project grades; part-time jobs \\
+ & Explainer (4) & mRNA vaccines; seasons; photosynthesis; sky colour and sunsets \\
+ & Literary analysis (4) & The Great Gatsby; Frankenstein; Macbeth; The Scarlet Letter (four verified quotes each) \\
+\midrule
+Held-out & Personal statement (2) & Two new students: a Polish e-scooter repairer; an Arizona tamale-stand and weather-station student \\
+ & Short answer (2) & Why engineering; the world you come from \\
+ & Argument (2) & Later school start; graded homework \\
+ & Explainer (2) & Noise-cancelling headphones; leap years \\
+ & Literary analysis (2) & Romeo and Juliet; Pride and Prejudice \\
+ & Email (2) & Extension request to a teacher; cold email to a professor \\
+ & Cover letter (1) & Junior counselor at a library coding camp \\
+ & Blog post (1) & Robotics team at a regional competition \\
+ & Lab discussion (1) & Pendulum period against length \\
+ & News article (1) & Reusable cafeteria trays \\
+\bottomrule
+\end{tabular}
+\caption{Writing briefs. Every brief names the only permitted source of specifics (interview notes, a facts file, four quotes, or none for arguments and explainers). All people are fictional. The held-out briefs were written after version~6 was fixed and share no example text with any version of the skill.}
 \label{tab:briefs}
-\TBD{table}
-\end{table}
+\end{table*}
 
 \end{document}
