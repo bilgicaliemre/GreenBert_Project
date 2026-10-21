@@ -470,3 +470,18 @@ What this says:
 - Copying was near zero for both, so this simulated student does not test what a rushed real student might copy.
 - Coach mode's feedback is about 1.5 times longer. A real student may not read 2,300 words; a shorter format is
   future work (not changed in v7 because untested).
+
+## 17. Version 7 shipped
+
+v7 = v4 (best held-out Write mode) + v6's Rebuild mode (adapted) + example hygiene + corrected watermark sentence.
+Files: `skill_versions/v7/` with `CHANGELOG.md`; installed at `.claude/skills/anti-ai-writing/`; claude.ai zip
+rebuilt. Why not v6: held-out v4 vs v6 was 27 of 48 (p = 0.35), and v6's argument rules made essays judges called
+"arithmetic-heavy for an English class". Why not plain v4: v4 has no mode for AI-written drafts, and v6's Rebuild
+beat the humanizer in 42 of 48 held-out judgments.
+
+Smoke test of the shipped combination (3 held-out plain drafts; one blind editor each, ranking v7 Rebuild, v6
+Rebuild and v4 Write): v7 Rebuild ranked first on the literary analysis and the email and second on the argument.
+It chose the right route each time (facts or quotes file: keep checked evidence, fresh sentences; topic only:
+write from step 1) and reported what it dropped, for example a quote cut off mid-phrase and a hedge the draft had
+removed ("I may almost say"). Three briefs is a sanity check, not an evaluation; the shipped Write procedure is
+the one evaluated as v4.

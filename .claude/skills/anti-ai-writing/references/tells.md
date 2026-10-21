@@ -82,13 +82,13 @@ paragraph after every section. Fix: one sentence carrying the specific claim.
 real tradeoff or say it was not measured.
 
 **S11 Kicker endings everywhere (strong in aggregate; the main tell that anti-AI rewrites create).** Five of
-seven paragraphs end on a short wry, poignant or quotable line ("A phone in a locker can't buzz." "She can't
-say my name yet." "We don't."). One such ending can be the best line in the piece; a pattern of them is a
+seven paragraphs end on a short wry, poignant or quotable line ("The map stayed in the glovebox." "He never
+asked again." "Nobody did."). One such ending can be the best line in the piece; a pattern of them is a
 rhythm signature. Fix: keep the strongest one or two; end the other paragraphs on their last piece of
 content, or merge the kicker into the sentence before it.
 
-**S12 Staged self-correction.** Stating something false in order to reverse it ("I have never once answered
-the phone with the name. Actually, that stopped being true last month."). Fine once if it is the writer's real
+**S12 Staged self-correction.** Stating something false in order to reverse it ("I've never lost a chess
+game. Actually, that stopped being true two weeks ago."). Fine once if it is the writer's real
 habit of speech; a structural device if it repeats. Fix: state the true version directly.
 
 ## 3. Inflation and tone
@@ -160,7 +160,7 @@ the meaning changes pace: short for the key point, longer for a qualified explan
 **R2 Uniform paragraphs.** Every paragraph four sentences. Fix: let length follow content.
 
 **R3 Repeated openers.** "This approach… This approach… This approach…", or many sentences opening with a
-generic "A [noun]…" that read like maxims ("A rule that… A phone that… A ban that…"). Fix: merge or
+generic "A [noun]…" that read like maxims ("A fee that… A fine that… A toll that…"). Fix: merge or
 restructure; give sentences real subjects (people, the school, the writer).
 
 **R4 Elegant variation.** Renaming the same thing each time (Unilever, the firm, the conglomerate, the

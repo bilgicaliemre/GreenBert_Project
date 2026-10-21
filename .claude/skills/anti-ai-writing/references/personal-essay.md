@@ -42,8 +42,8 @@ every paragraph is concrete and could only belong to that writer. Aim for a high
 not for zero imperfections. Over-editing is itself a red flag to readers.
 
 Two opposite failures to avoid:
-- **The AI essay:** a clean arc held together by invented feelings and stated lessons ("The shop taught me a
-  different kind of listening").
+- **The AI essay:** a clean arc held together by invented feelings and stated lessons ("The garage taught me a
+  different kind of focus").
 - **The over-corrected essay:** every lesson removed and nothing put in its place, so the essay is the
   interview notes in a new order, vivid but flat.
 The fix for both is the same: an arc made of true events and reflection in the writer's own words.
@@ -100,8 +100,8 @@ Write down the student's answers to the depth questions in their own words. Thos
 material for the essay's reflection lines. If the student can't answer a depth question, that is useful
 too: the essay should not claim an insight they don't have.
 
-Listen for: details with numbers or names; things said with a laugh or a pause; contradictions ("I hate the
-phone" + "I answer the shop phone"); anything introduced with "I don't know if this counts".
+Listen for: details with numbers or names; things said with a laugh or a pause; contradictions ("I hate
+crowds" + "I work the ticket gate at home games"); anything introduced with "I don't know if this counts".
 
 ## 4. Step 2: find the spine
 
@@ -137,8 +137,8 @@ Structures:
 **Reflection.** One to three sentences, placed after the scene that earns them, that tell the reader
 something the facts alone do not: what the writer now notices, doubts or does differently. Rules:
 - Use the student's own reflections from the interview (their words, lightly trimmed for grammar).
-- A reflection may be a question or a doubt ("I'm still not sure if the list makes me more honest or just
-  better at noticing"). Honest uncertainty reads as more mature than a moral.
+- A reflection may be a question or a doubt ("I don't know yet whether keeping score made me braver or just
+  more careful"). Honest uncertainty reads as more mature than a moral.
 - Never write "taught me", "I learned the value of", or any reflection that would fit another student's essay.
 - In coach mode, if a needed connection is missing, ask the student for it; do not supply it.
 
@@ -151,8 +151,8 @@ honest open question. Endings that don't: "This experience taught me…"; a rest
 **Paragraph endings.** Vary them. If every paragraph closes on a short wry line, the essay develops a rhythm
 signature readers notice. Keep the one or two best kickers; let other paragraphs end on content.
 
-Give the plan to the student as a beat outline. Each beat points to their material ("beat 2: the forged
-signature, the two hours at the kitchen table") and to the depth answer it needs ("what did you think when
+Give the plan to the student as a beat outline. Each beat points to their material ("beat 2: the night the
+freezer failed, the call to the owner") and to the depth answer it needs ("what did you think when
 she laughed?"). Do not write the sentences.
 
 ## 6. Step 4: the student drafts

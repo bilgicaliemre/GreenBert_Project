@@ -64,8 +64,8 @@ built.
 | Staging | "It's not X, it's Y" when nobody believes X; "This matters because"; "Here's the thing"; "Some might argue" with no one arguing; a closing line that restates the paragraph | State Y directly; give the consequence itself; end on the last new point |
 | Inflation | pivotal, testament, transformative, "reflects a broader shift", ", highlighting its commitment to…" tails | Keep the fact, drop the significance claim unless a source makes it |
 | Lessons | "This taught me…", "I learned the value of…", tidy epiphanies, hardship resolved into gratitude | Show what the person does differently now; let unresolved things stay unresolved |
-| Rhythm | Runs of same-length sentences; every paragraph the same size; triads; sentence openers repeating ("A phone… A rule… A ban…"); fragment stacks ("No plan. No data. No excuse.") | Vary length where the meaning changes pace; keep list items that are distinct (often two, sometimes four) |
-| Endings | Paragraphs that each close on a short wry or quotable line ("A phone in a locker can't buzz.") | At most one or two kicker endings per piece; let most paragraphs end on their last piece of content |
+| Rhythm | Runs of same-length sentences; every paragraph the same size; triads; sentence openers repeating ("A fee… A fine… A toll…"); fragment stacks ("No plan. No data. No excuse.") | Vary length where the meaning changes pace; keep list items that are distinct (often two, sometimes four) |
+| Endings | Paragraphs that each close on a short wry or quotable line ("The map stayed in the glovebox.") | At most one or two kicker endings per piece; let most paragraphs end on their last piece of content |
 | Tone | Hedge stacks ("could potentially suggest"); false balance ("While X has benefits, it also has challenges"); mannered metaphors ("trust is the currency of…") | One hedge on the uncertain part; take the position the evidence supports; say the literal thing |
 | Words | The current-model list and the classic list in `references/tells.md` | Rewrite the sentence around its claim; do not just swap the word |
 | Format | Bullets where an argument belongs; bold run-in labels; Title Case headings; emoji; em dashes | Paragraphs; sentence-case headings; commas, colons or parentheses instead of dashes |
@@ -97,6 +97,20 @@ version!" or end with offers.
 **Edit** (user gives their own text). Minimum effective edit. Keep their voice: their contractions,
 sentence habits, humor, punctuation preferences. If they also gave a writing sample, it overrides the
 default style rules here, including the dash rule.
+
+**Rebuild** (the user says an AI wrote it or asks you to rewrite an AI draft; if you only suspect it, use Edit,
+since tells are not proof of authorship). For a student's own application essay, use Coach mode. Polishing keeps
+an AI draft's generic plan and its errors. First check each of its facts, quotes and claims against the user's
+material: run the fact diff (step 4), and for every sentence that interprets a quote, a note or data, check that
+the source supports the reading and not only the words. A generalization stated as fact and a remedy that
+contradicts the draft's own thesis are errors too. Then go by what the draft was built from, and say in one line
+what you dropped as wrong:
+- *Material the user supplied* (notes on their life, a quotes or facts file): keep the evidence that passes the
+  check, and the plan if it holds; cut invented lessons, resolutions, motives and facts; restore hedges and
+  admissions the draft dropped; write the sentences fresh, then rerun the fact diff.
+- *Only the topic* (most arguments and explanations): its examples, analogies and paragraph plan are the stock
+  answer. Keep its position, what the user supplied and any objection a fair reader would raise; run Write from
+  step 1 with your own organizing idea, examples and order.
 
 **Detect / review** (user asks "does this sound like AI?" or wants feedback). Quote the passages, name the
 pattern, give a one-line fix. Do not guess whether a human or a model wrote it: patterns are evidence of
@@ -137,8 +151,8 @@ technique, is fine.
 ## Integrity, stated plainly
 
 This skill makes writing better for its reader. It is not a way to hide AI use. AI detectors are unreliable
-in both directions (they flag many human essays and miss some AI ones), and Claude's own output now carries
-an invisible watermark that schools and other organizations can check. Where a school or college asks for
+in both directions (they flag many human essays and miss some AI ones), and recent Claude models add an
+invisible watermark to their text that approved organizations can check. Where a school or college asks for
 the student's own work, the honest route is the Coach mode above plus following that institution's AI policy.
 
 ## References
