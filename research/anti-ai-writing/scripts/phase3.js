@@ -11,6 +11,9 @@ const WORDLIST = 'delve, tapestry, testament, pivotal, crucial, underscore, show
 const factLine = b => b.facts ? `Facts file (read it first; the only permitted source of specifics): ${b.facts}` : 'No facts file: do not invent statistics, studies, quotes or named sources.'
 const fiction = b => b.facts && !b.task.startsWith('lit') ? 'The people in the facts file are FICTIONAL test material, so write the full piece yourself (no sample label in the text).' : ''
 const save = (cond, b) => `${OUT}/${cond}/${b.id}.txt`
+// outputs already finished in an earlier, interrupted run are reused instead of regenerated
+const DONE = new Set(A.done || [])
+const gen = (cond, b, prompt, opts) => DONE.has(`${cond}/${b.id}`) ? Promise.resolve({ path: save(cond, b), words: 0 }) : agent(prompt, opts)
 const plainP = b => `Writing task. Genre: ${b.genre}. Target length: ${b.words} words.
 ${b.brief}
 ${factLine(b)}
@@ -69,16 +72,16 @@ const JUDGES = [
 ]
 const results = await pipeline(A.briefs,
   b => parallel([
-    () => agent(plainP(b), { label: `P:${b.id}`, phase: 'Generate', schema: GEN }),
-    () => agent(listP(b), { label: `L:${b.id}`, phase: 'Generate', schema: GEN }),
-    () => agent(skillW(b, A.skill_v4, 'F'), { label: `F:${b.id}`, phase: 'Generate', schema: GEN }),
-    () => agent(skillW(b, A.skill, 'S'), { label: `S:${b.id}`, phase: 'Generate', schema: GEN }),
+    () => gen('P', b, plainP(b), { label: `P:${b.id}`, phase: 'Generate', schema: GEN }),
+    () => gen('L', b, listP(b), { label: `L:${b.id}`, phase: 'Generate', schema: GEN }),
+    () => gen('F', b, skillW(b, A.skill_v4, 'F'), { label: `F:${b.id}`, phase: 'Generate', schema: GEN }),
+    () => gen('S', b, skillW(b, A.skill, 'S'), { label: `S:${b.id}`, phase: 'Generate', schema: GEN }),
   ]),
   ([p, l, f, s], b) => {
     if (!p) return { P: null }
     return parallel([
-      () => agent(humE(b, p.path), { label: `H:${b.id}`, phase: 'Revise', schema: GEN }),
-      () => agent(skillR(b, p.path), { label: `B:${b.id}`, phase: 'Revise', schema: GEN }),
+      () => gen('H', b, humE(b, p.path), { label: `H:${b.id}`, phase: 'Revise', schema: GEN }),
+      () => gen('B', b, skillR(b, p.path), { label: `B:${b.id}`, phase: 'Revise', schema: GEN }),
     ]).then(([h, r]) => ({ P: p.path, L: l && l.path, F: f && f.path, S: s && s.path, H: h && h.path, B: r && r.path }))
   },
   async (paths, b, i) => {
