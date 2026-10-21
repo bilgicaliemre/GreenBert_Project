@@ -221,7 +221,7 @@ draft; O our Write mode. Two blind panel judges per brief rank all five; detecto
 | Group | n | Under 20% on all three | D3 mean |
 |---|---|---|---|
 | Human admitted college essays (pre-2022) | 16 | **0** | 61.4 (D3 max is about 73) |
-| Human PERSUADE argument essays (pre-2022) | 18 | 4 | about 44 |
+| Human PERSUADE argument essays (pre-2022) | 18 | 2 (corrected 21 Oct; first logged as 4, which wrongly added the 2 passing human explainers) | about 44 |
 | Plain Claude (A) | 14 | 5 | 28.5 |
 | Plain Claude + skill edit (C1) | 7 | 4 | 17.2 |
 | Skill write v1 (B1) | 14 | **14** | 3.5 |
@@ -485,3 +485,26 @@ It chose the right route each time (facts or quotes file: keep checked evidence,
 write from step 1) and reported what it dropped, for example a quote cut off mid-phrase and a hedge the draft had
 removed ("I may almost say"). Three briefs is a sanity check, not an evaluation; the shipped Write procedure is
 the one evaluated as v4.
+
+## 18. Held-out detector scores, results page, paper figures
+
+Held-out detector scores (`eval/results/phase3_scores.json`; under 20% on all three detectors):
+
+| Condition | Passed | Mean D1 / D2 / D3 |
+|---|---|---|
+| Plain | 9 of 16 | 21.6 / 9.0 / 8.5 |
+| Word list | 12 of 16 | 13.7 / 5.1 / 8.8 |
+| Humanizer edit | 12 of 16 | 11.2 / 9.4 / 5.1 |
+| Skill write (v4 = v7) | **16 of 16** | 2.2 / 0.7 / 1.7 |
+| Skill write (v6) | 15 of 16 | 5.1 / 0.7 / 1.7 |
+| Skill Rebuild (v6) | **16 of 16** | 2.9 / 0.8 / 1.7 |
+
+Every personal statement and short answer passed in every condition (highest score 2.7%), confirming section
+10b on new students. Human baselines: 0 of 16 admitted essays and 2 of 18 PERSUADE essays pass all three.
+
+Correction: section 9 first said 4 of 18 PERSUADE essays passed all three detectors; the right count is 2 (the
+first count included the two passing human explainers). Fixed in the table with a note.
+
+Results page rebuilt for the final state (same link). Its source stays out of the repo because it contains the
+user's personal YYGS answers and coaching notes. Paper: figures `fig_rank.pdf` (development and held-out mean ranks) and `fig_detectors.pdf`, built by
+`scripts/figures.py`; PDF compiles to 11 pages with the body inside 8.

@@ -11,6 +11,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{xcolor}
+\usepackage{xurl}
 \newcommand{\TBD}[1]{\textcolor{red}{[#1]}}
 % Fill in the exact model name and version before submission (see chat; kept out of the repo).
 \newcommand{\genmodel}{\TBD{generator model, name and version}}
@@ -89,6 +90,13 @@ We evaluated the skill in three rounds: a development round on 20 briefs, a vers
 
 \subsection{Held-out briefs}
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_rank.pdf}
+\caption{Mean rank with 95\% bootstrap intervals (1 = best). Left: development briefs, five texts per panel. Right: held-out briefs, six texts per panel, three judges each. Blue: the skill; orange: plain generation; grey: other approaches.}
+\label{fig:rank}
+\end{figure*}
+
 Table~\ref{tab:heldout} gives the main result. On 16 briefs written after the final design was fixed, ten genres among them, the skill's Write mode (version~4) ranked first in 23 of 48 judgments and had a mean rank of 1.92 out of 6, against 5.65 for plain generation (Friedman $\chi^2 = 51.0$, $p < 10^{-8}$). It ranked above plain generation in 47 of 48 judgments, above the word-list prompt in 43 and above the humanizer edit in 44 (Wilcoxon $p \le 0.003$ for each). It made 1.17 unsupported claims per text, against 3.38 for plain generation and 2.98 for the word-list prompt. The Rebuild mode, applied to the plain draft, ranked above the humanizer applied to the same draft in 42 of 48 judgments ($p = 0.0008$) and had the fewest unsupported claims of any condition (0.79).
 
 Version~6, which added rules derived from a diagnosis of the development judgments, did not improve on version~4: it ranked above version~4 in 21 of 48 judgments ($p = 0.35$). Its argument essays, built around a worked numerical case, were called ``arithmetic-heavy for an English class.'' We release version~4's Write procedure with version~6's Rebuild mode added (Section~\ref{sec:skill}).
@@ -124,7 +132,14 @@ The version comparison also exposed a measurement problem. The plain and version
 
 \subsection{Detectors and human writing}
 
-\TBD{Figure~\ref{fig:detectors}; held-out pass rates per condition.} On the development texts, 17 of 20 texts written with the skill scored below 20\% on all three detectors, against 9 of 20 for plain generation, 11 for the word-list prompt and 10 for the humanizer edit. The advantage came from school genres: every condition passed on personal statements and short answers, including plain generation (scores of 0--3\%), while no plain argument or explainer did. The human baselines went the other way. Of the 16 admitted college essays, 5 scored below 20\% on the first two detectors and none on the third, whose mean for them was 61\% (its scores saturate near 73\%). On personal essays the detectors pass every model-written text we produced and flag most human ones.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_detectors.pdf}
+\caption{Detector scores per text on the held-out briefs, with human writing collected before ChatGPT for comparison. The dashed line is 20\%. D3's scores saturate near 73\%.}
+\label{fig:detectors}
+\end{figure*}
+
+Figure~\ref{fig:detectors} shows the held-out scores. All 16 texts written with the skill and all 16 rebuilds scored below 20\% on all three detectors, against 9 of 16 for plain generation and 12 each for the word-list prompt and the humanizer edit. The development round agreed (17 of 20 skill texts against 9 of 20 plain). The advantage came from the school and technical genres: on personal statements and short answers every condition passed, plain generation included, with no score above 3\% in either round. The human baselines went the other way. None of the 16 admitted college essays scored below 20\% on the third detector, whose mean for them was 61\%, and only 5 did on the first two; 2 of the 18 PERSUADE essays passed all three. On personal essays these detectors passed every model-written text we produced and flagged most human ones.
 
 \subsection{Personal statements: arc against fidelity}
 \label{sec:ps}
@@ -196,7 +211,7 @@ AI agents (\genmodel{}, Anthropic) did a large share of this work: they surveyed
 \label{sec:appendix-briefs}
 \begin{table*}[h]
 \centering\small
-\begin{tabular}{llp{11.5cm}}
+\begin{tabular}{llp{10.2cm}}
 \toprule
 Set & Genre (n) & Topics \\
 \midrule
