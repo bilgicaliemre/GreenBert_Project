@@ -344,3 +344,50 @@ What we learned:
 
 Decision: keep v4 as the shipped version for now; diagnose the judge feedback in depth and build v6 from what
 worked (section 13).
+
+## 13. Version 6: built from a diagnosis of 160 judgments
+
+Workflow (`v6-diagnosis`): five genre analysts, a residual-tells hunter and a personal-essay specialist read every
+judge comment from both panels and the texts themselves; a synthesizer proposed nine changes; two adversarial
+critics (overfitting, side effects) reviewed them; a writer applied the survivors to a copy of v4. Full changelog
+with counts and quotes: `skill_versions/v6/CHANGELOG.md`. The main findings behind the changes:
+
+1. **Arguments win on construction, not ideas.** The v4 essays that ranked first stated the thesis against the
+   nearest alternative (the usual compromise, a double standard) and let that one idea organize the essay; judges
+   credited this in 16 of 16 judgments. v5 had largely the same ideas as a list of reasons. v6 adds an argument
+   section: thesis against the nearest alternative, one worked case, the strongest objection to the writer's own
+   remedy answered by changing the remedy, a concrete opening (never "I think" first, never "every student knows").
+2. **Student register as a pass after the argument is built**, with a check that every paragraph's claim
+   survives. v5's register raised human-likeness (7.75 vs 6.25 on arguments) and lowered AI suspicion (2.0 vs
+   3.0 in 8 of 8 judgments) but cost structure when applied while drafting. Its example stance line became an
+   opening template (3 of 4 v5 arguments start with "I think"), so the example is gone.
+3. **Reading check** for any text that interprets a source: a quote can be exact and the reading wrong. About
+   half of the claims judges flagged in literary analyses sat in the final paragraph, so the check says to read
+   the last paragraph hardest.
+4. **Rebuild routed by source.** With a facts or quotes file, keep the checked evidence and write fresh. With
+   only a topic, the draft's examples and plan are the stock answer: write from step 1 with your own plan (v5's
+   Rebuild kept the plain draft's outline and ranked 4th on arguments in 8 of 8 judgments).
+5. **Beat outline before drafting** personal statements (spine, beats in cause order, joins, turn, prompt
+   answer, ending from the notes), replacing v5's after-the-fact checklist, which did not fix order.
+6. **Explanations:** an everyday opening with the answer in one sentence, one organizing idea, one worked number,
+   misconceptions conceded with their size; v5's "talk to the reader as you" rule dropped (no measurable effect).
+7. **Logic row** in the audit table: connectives that claim a cause the text does not show, and generalizations
+   stated as fact.
+8. **Evaluation hygiene:** v4 contained example phrases taken from the development personas ("a notebook with 61
+   entries" and similar). v6 removes them, so phase-2 scores for v4 and v5 on those personas are slightly
+   optimistic. The held-out briefs share nothing with the skill files (checked by search).
+
+v6 SKILL.md: 189 lines (v4: 159); new `references/school-essays.md` (108 lines).
+
+## 14. Held-out evaluation (phase 3): design
+
+16 new briefs written after v6's design was fixed (`eval/briefs3/`): two new fictional students (personal
+statement and short answer each), two arguments, two explainers, two literary analyses (Romeo and Juliet, Pride
+and Prejudice; every quote checked against the Project Gutenberg text by script), and six genres never tested:
+an email to a teacher, a cold email to a professor, a cover letter, a team blog post, a lab-report discussion and
+a school news article. A checking agent fixed three weekday/date contradictions in the fact files and one
+surname that matched a real scientist.
+
+Six conditions per brief: P plain, L word list, H humanizer edit of P, F v4 write, S v6 write, B v6 Rebuild of P.
+Three blind judges per brief: an editor and a genre reader as before, plus a second genre reader running on a
+different model tier, to check that rankings do not depend on the judge model. Script: `scripts/phase3.js`.
