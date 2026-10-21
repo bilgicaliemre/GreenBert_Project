@@ -307,3 +307,40 @@ Changes, each tied to a phase-2 failure:
 
 Test design (`scripts/phase2_v5.js`, six workflows, seeds 40-45): the same 20 briefs, a new five-way blind panel of
 P, L and O (reused texts) plus V (v5 write) and R (v5 Rebuild of the plain draft P). Results: section 12.
+
+## 12. Version 5 results: not shipped
+
+Same 20 briefs, new five-way blind panels (P, L and v4's O reused; V = v5 write, R = v5 Rebuild of P), 40
+judgments. Data: `eval/results/v5_judges.json`, `eval/results/v5_summary_judges.json`; texts in `eval/out/phase2/V`
+and `R`; the tested skill in `skill_versions/v5/`.
+
+| Condition | Mean rank | First places | Human-likeness | Quality | AI suspicion | Unsupported per text |
+|---|---|---|---|---|---|---|
+| P plain | 4.20 | 2 | 4.78 | 5.97 | 3.90 | 3.23 |
+| L word list | 3.33 | 5 | 6.38 | 6.70 | 3.10 | 2.62 |
+| O v4 write | **1.95** | **19** | 6.90 | **7.65** | 2.50 | 0.93 |
+| V v5 write | 2.60 | 7 | **7.45** | 7.38 | **2.27** | 1.02 |
+| R v5 Rebuild of P | 2.92 | 7 | 6.88 | 7.05 | 2.52 | **0.78** |
+
+v4 ranked above v5 write in 28 of 40 judgments (Wilcoxon p = 0.055) and above v5 Rebuild in 30 of 40 (p = 0.022).
+By genre (mean rank O / V / R): argument 1.12 / 2.25 / 4.00; explainer 1.50 / 1.62 / 3.00; literary analysis
+1.62 / 2.88 / 1.75; personal statement 2.88 / 3.88 / 3.38 (plain 2.62, word list 2.25); short answer 2.62 / 2.38 / 2.50.
+
+What we learned:
+- **The student-voice rule bought human-likeness and cost reasoning.** v5's school essays scored higher on
+  human-likeness and lower on AI suspicion, but judges caught simplified or faulty reasoning ("'Aspect' means
+  appearance here, since the creature hasn't done anything yet") and crammed paragraphs. A younger register
+  pulled the argument down with it.
+- **Rebuild beat v4 only on literary analysis**, where re-checking the draft's readings of the quotes matters.
+  On arguments it ranked 4.00: rebuilding from an AI draft still anchors on that draft's stock arguments.
+- **The personal-essay checklist did not help** (v5 3.88 against v4 2.88 on personal statements).
+- **Panel context changes personal-statement verdicts.** The same P and O texts were judged in both panels.
+  O ranked above P in 8 of 8 personal-statement judgments in the phase-2 panel but in only 3 of 8 in this one. In
+  the other genres the result held (8 of 8 in both). In phase 2, two of the five texts were edits of P and shared
+  its sentences; judges noticed the overlap ("T5 and T4 share most of their content and many whole sentences")
+  and may have marked down the whole family. Conclusion for the paper: the school-genre advantage is robust to
+  panel composition; the personal-statement advantage is not, and plain generation's arcs (built partly on
+  invented detail: 3.25 unsupported claims per text against 0.62) remain competitive with judges.
+
+Decision: keep v4 as the shipped version for now; diagnose the judge feedback in depth and build v6 from what
+worked (section 13).

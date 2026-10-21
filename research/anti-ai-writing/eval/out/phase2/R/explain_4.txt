@@ -1,0 +1,17 @@
+Why is the sky blue, and why do sunsets turn red and orange?
+
+At noon on a clear day the sky is blue. By sunset the sky around the sun is orange and red, with the same sun and the same air. Both colors come from the air scattering sunlight, and what changes is how much air the light crosses before it reaches you.
+
+Sunlight looks white, but a prism or a raindrop spreads it into a rainbow because it is every color mixed. Each color is a wave of a different length. Red is longest, at about 700 nanometers (billionths of a meter), violet shortest at about 400, and blue near violet at around 450.
+
+Air is mostly nitrogen and oxygen molecules, far smaller than any of those waves. When light hits one, part of it gets knocked off in a new direction. This is Rayleigh scattering, named for Lord Rayleigh, the British physicist who worked out its math in 1871. Scattering rises with the inverse fourth power of the wavelength: halve the wavelength and the light scatters 16 times as much. Blue at 450 therefore scatters almost six times as strongly as red at 700.
+
+As sunlight comes down, its blue is sprayed across the sky while most of the red goes straight on. Wherever you look, air in that direction sends scattered blue toward you, so the whole sky is blue, even the part opposite the sun.
+
+Violet scatters even more, and the sky does contain some. But the sun puts out less violet than blue, and your eyes are less sensitive to it, so the mix looks pale blue.
+
+Near the horizon, the sun's light comes in sideways and crosses dozens of times as much air as from straight overhead. Along that path most of the blue and some of the green are scattered out. What arrives is yellow, orange and red, the light that turns clouds pink and orange.
+
+Smoke and volcanic haze add particles that strip out even more short wavelengths. After Krakatoa erupted in 1883, its haze spread around the world and sunsets were unusually vivid for months. Cloud droplets are much larger than light waves and scatter all colors about equally, which is why clouds look white.
+
+You can make both in a glass. In a dark room, stir a few drops of milk into a clear glass of water and shine a flashlight through it. From the side the water looks faintly blue, because tiny milk particles scatter blue more than red. Then look through the glass at the flashlight: the beam has lost some blue on the way and looks yellow-orange, like the setting sun.
