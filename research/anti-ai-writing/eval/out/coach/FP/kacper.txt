@@ -1,0 +1,98 @@
+Hi Kacper,
+
+This is a strong first draft. I mean that. Most essays for this prompt describe a problem the writer solved and look good solving. Yours says "the problem was me" and then proves it. The line "I would like to say my first thought was about him. It was about the 380 złoty." is something most applicants would never admit, and it's the reason a reader will remember you. The details are real too: 2.9 volts, 22:10 on Grunwaldzka, the order still in his bag, deleting your Facebook comments in April. Keep that.
+
+So I'm not going to tell you to start over. My suggestions are about making it more honest, not more impressive. One practical thing first: you're at 643 words and the limit is 650. Anything you add means cutting something else. I'll suggest where.
+
+I'm only giving you feedback and questions here. I won't rewrite your sentences, because it has to stay your essay in your voice.
+
+
+THE THREE BIG THINGS
+
+1. The part you said you'd rather leave out is the strongest part of the story.
+
+When we talked, you told me Oleh said "I need it for work, it must be good" when he brought the scooter. You used salvaged cells anyway because new ones would eat your margin. You knew both things at the same time.
+
+Right now the essay tells a story about a technical mistake (bad soldering) followed by a moral one (blaming the water). With the "for work" detail, the moral mistake starts earlier, at your table, before anything broke. That's a real ethical dilemma, which is exactly what this prompt asks about. It also makes "the problem was me" fully true instead of half true.
+
+You don't have to include it. It's your life and your call. But if you do, the sentence "two had lower capacity, but I thought it's fine, it's a mix" is where it belongs. You'd only need a sentence or two.
+
+2. Is this essay really about speed?
+
+Your opening (7:40 vs. 19 minutes) and your ending ("being fast is not the same as being right") make speed the theme. But look at your three mistakes:
+   - Soldering instead of spot welding: yes, partly a speed thing ("fast enough").
+   - Putting in the weaker cells: a money thing.
+   - Blaming the water and keeping 230 złoty: a money and pride thing.
+
+Only one of the three is about speed. So the ending's lesson is smaller than the story you told.
+
+There's another thread already in your draft, and I don't think you noticed it. You use the words "it's fine" twice: once when you decide the weak cells are okay, and once at the end ("I don't need to guess and say 'it's fine'"). "It's fine" is the moment you stop checking. That might be closer to what this essay is really about than "fast."
+
+I'm not saying which one is right. Ask yourself: if a friend read this and had to say what Kacper learned in one sentence, what would you want it to be? Then check whether the opening and ending point at that.
+
+Also, the last three sentences all say the same thing. "But I know now that being fast is not the same as being right" tells the reader the lesson your story already showed them. Try reading the ending without that sentence and see if you miss it.
+
+3. The unsolved part is your best material, and right now it's one sentence.
+
+"I still have Oleh's number in my phone" is all the reader gets. In our second session you told me a lot more:
+   - You kept 230 złoty (380 minus 150). The essay never says the number. The reader has to do the math.
+   - His contact is saved as "Oleh Pro2 Glovo."
+   - You've opened BLIK about four times. You said having the 230 isn't the problem. The problem is the message box, and not knowing what to write in it.
+   - You saw him in June on Grunwaldzka on a new Ninebot, not one of yours, and you didn't wave.
+   - He never left a review, and you still check sometimes.
+
+The prompt says "a problem you've solved OR would like to solve." The money problem is fixed: welder, extinguisher. The problem you haven't solved is how to make it right with Oleh. Being honest about why that's hard (the empty message box) is more interesting than a neat solution. The fact that the money is easy and the words are hard tells the reader a lot about you, and you don't have to explain it.
+
+One more thing to think about, not to put in the essay. Look at what you've done so far: deleted the comments, stopped doing batteries, haven't sent the message. Most of your "solutions" have been removing things. You said it yourself: "I just stopped doing the part where I can mess up... So I don't know what that is." Do you see a pattern there? If you do, the essay might want to say so. If you don't, leave it out. Don't make up an insight you don't actually have.
+
+A note on Oleh himself: whatever you decide to do about him, decide it for him, not for the essay. The essay works whether you've sent the message or not.
+
+
+WHERE TO FIND THE WORDS
+
+If you add the "for work" moment and expand the Oleh ending, you'll need roughly 60 to 80 words. Some places to look:
+
+   - "Tourists take photos of it, which is weird because it's just where I live." (14 words) Funny, but it isn't about the problem.
+   - Igor and the egg cartons (23 words). I know, he's great. But he isn't part of this story. Save him for a supplement or a short-answer question.
+   - "So what did I do to solve it?" (8 words) Asking the question yourself sounds like a school assignment. You can just start listing what you did.
+   - The last three sentences (33 words), depending on what you decide in point 2.
+
+Keep the bike room, the socket by the door and the 4.9 stars. Those connect to the rest: Oleh comes down there at midnight, the extinguisher hangs by that socket, and the review he never left only matters if the reader knows you have reviews.
+
+
+SMALLER FIXES
+
+Grammar. These will read as mistakes, not as your voice, so fix them:
+   - "since two years one corner is mine" should be "for two years."
+   - "Since summer 2024 I fixed 41 scooters" should be "I have fixed."
+   - "told him that is fair" should be "that it was fair."
+   - "the battery and the controller are exactly the part" should be "parts."
+   - "I thought it's fine, it's a mix": either change it to "it was fine" or put your thought in quotation marks. Quotation marks might be better, because it keeps "it's fine" word for word if you use it as a thread (point 2).
+
+Words an American reader won't know. A couple of words each will do:
+   - OLX (a reader won't know it's like Craigslist).
+   - "dobra" (you translated it for me as "okay"; the reader doesn't get that).
+   - BLIK, if you add it.
+   Glovo is fine, because "an order in his bag" explains it.
+
+Things to keep exactly as they are:
+   - "The cell next to it was cooked, by me." That comma does a lot of work.
+   - "He negotiated." (wherever Igor ends up)
+   - "it's Gdańsk."
+   - "Mechanically you can understand a scooter in one hour. The electrical part is where I actually make mistakes." This is the best explanation of why you want to study EE, and it's more convincing than any "I've always loved engineering" line.
+   - The babcia "golden hands" line. It does the "why not technikum" work in one sentence.
+
+Things from our talks that are great but belong somewhere else: your mom seeing you in the tram mirror, pan Nowicki buying the Pro 2 and calling you "panie prezesie," Pani Halina, Zbyszek and the eleven jars of pumpkin, and the 7 złoty an hour math. Don't put them in this essay; it's full. Write them down for your supplements.
+
+
+WHAT TO DO NEXT
+
+1. Decide whether the "I need it for work" moment goes in. Yes or no, both are allowed.
+2. Decide what the essay is really about: speed, "it's fine," or something else. Write that down in one sentence for yourself (not for the essay).
+3. Check that your first paragraph and last paragraph point at that sentence.
+4. Rewrite the ending around what is still unsolved with Oleh, using what's really true right now.
+5. Cut to get back under 650.
+6. Fix the grammar list above.
+7. Read it out loud once. Anywhere you stumble, or anywhere it stops sounding like you talking in the bike room, mark it.
+
+Then send it back and I'll look again. You're starting from a good place.

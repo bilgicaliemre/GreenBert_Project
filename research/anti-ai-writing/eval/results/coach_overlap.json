@@ -1,0 +1,86 @@
+{
+ "ines": {
+  "RS": {
+   "words": 588,
+   "copied_6grams": 6,
+   "share": 0.01,
+   "longest_span_words": 11
+  },
+  "RP": {
+   "words": 648,
+   "copied_6grams": 2,
+   "share": 0.003,
+   "longest_span_words": 7
+  }
+ },
+ "thea": {
+  "RS": {
+   "words": 648,
+   "copied_6grams": 0,
+   "share": 0.0,
+   "longest_span_words": 0
+  },
+  "RP": {
+   "words": 651,
+   "copied_6grams": 1,
+   "share": 0.002,
+   "longest_span_words": 6
+  }
+ },
+ "ansar": {
+  "RS": {
+   "words": 651,
+   "copied_6grams": 5,
+   "share": 0.008,
+   "longest_span_words": 7
+  },
+  "RP": {
+   "words": 648,
+   "copied_6grams": 7,
+   "share": 0.011,
+   "longest_span_words": 8
+  }
+ },
+ "nayeli": {
+  "RS": {
+   "words": 673,
+   "copied_6grams": 1,
+   "share": 0.002,
+   "longest_span_words": 6
+  },
+  "RP": {
+   "words": 676,
+   "copied_6grams": 0,
+   "share": 0.0,
+   "longest_span_words": 0
+  }
+ },
+ "kacper": {
+  "RS": {
+   "words": 660,
+   "copied_6grams": 24,
+   "share": 0.037,
+   "longest_span_words": 9
+  },
+  "RP": {
+   "words": 657,
+   "copied_6grams": 5,
+   "share": 0.008,
+   "longest_span_words": 8
+  }
+ },
+ "marisol": {
+  "RS": {
+   "words": 655,
+   "copied_6grams": 0,
+   "share": 0.0,
+   "longest_span_words": 0
+  },
+  "RP": {
+   "words": 655,
+   "copied_6grams": 4,
+   "share": 0.006,
+   "longest_span_words": 8
+  }
+ }
+}

@@ -86,16 +86,70 @@ We evaluated the skill in three rounds: a development round on 20 briefs, a vers
 \section{Results}
 \label{sec:results}
 
-\TBD{Phase-2 results: Table of mean rank, first places, human-likeness, unsupported claims, AI suspicion, detector pass rates per condition; pairwise win rates with Wilcoxon tests; per-genre breakdown.}
+\subsection{Held-out briefs}
+
+Table~\ref{tab:heldout} gives the main result. On 16 briefs written after the final design was fixed, ten genres among them, the skill's Write mode (version~4) ranked first in 23 of 48 judgments and had a mean rank of 1.92 out of 6, against 5.65 for plain generation (Friedman $\chi^2 = 51.0$, $p < 10^{-8}$). It ranked above plain generation in 47 of 48 judgments, above the word-list prompt in 43 and above the humanizer edit in 44 (Wilcoxon $p \le 0.003$ for each). It made 1.17 unsupported claims per text, against 3.38 for plain generation and 2.98 for the word-list prompt. The Rebuild mode, applied to the plain draft, ranked above the humanizer applied to the same draft in 42 of 48 judgments ($p = 0.0008$) and had the fewest unsupported claims of any condition (0.79).
+
+Version~6, which added rules derived from a diagnosis of the development judgments, did not improve on version~4: it ranked above version~4 in 21 of 48 judgments ($p = 0.35$). Its argument essays, built around a worked numerical case, were called ``arithmetic-heavy for an English class.'' We release version~4's Write procedure with version~6's Rebuild mode added (Section~\ref{sec:skill}).
+
+The third judge, which ran on a different model, gave the same order (version~4 1.94, version~6 2.25, Rebuild 2.44, word list 4.19, humanizer 4.81, plain 5.38), so the ranking does not depend on one judge model, within one model family.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Condition & Rank & 1st & Human & Unsup. \\
+\midrule
+Plain & 5.65 & 0 & 4.5 & 3.38 \\
+Word list & 4.17 & 3 & 6.5 & 2.98 \\
+Humanizer edit & 4.25 & 2 & 5.7 & 1.88 \\
+Skill write (v4) & \textbf{1.92} & \textbf{23} & \textbf{7.2} & 1.17 \\
+Skill write (v6) & 2.42 & 17 & 7.0 & 0.96 \\
+Skill rebuild (v6) & 2.60 & 3 & 7.1 & \textbf{0.79} \\
+\bottomrule
+\end{tabular}
+\caption{Held-out evaluation: 16 briefs, three blind judges each (48 judgments). Rank: mean rank among six texts (1 = best); 1st: first places; Human: judged human-likeness (1--10); Unsup.: claims per text that judges found unsupported by the facts file or wrong.}
+\label{tab:heldout}
+\end{table}
+
+By genre, version~4 ranked best on personal statements (1.33), arguments (1.33), literary analysis (1.33) and the news article (1.00). It ranked worst among the skill conditions on the blog post (4.67), where the word-list prompt won (1.67), and the word-list prompt also edged it on the cover letter (2.00 against 2.33). With one or two briefs per genre these are descriptive, but both losses are in casual first-person genres, where the skill's audit may strip the looseness the genre wants.
+
+\subsection{Development round and the version comparison}
+
+On the 20 development briefs, version~4's Write mode ranked first in 28 of 40 judgments (mean rank 1.45 of 5; plain 4.62; word list 2.27; humanizer 3.48; Edit mode on the plain draft 3.17). Version~5 added a plain student voice for school essays, a Rebuild mode and a personal-essay checklist. In a new five-way panel on the same briefs it raised judged human-likeness (7.45 against 6.90) but ranked below version~4 in 28 of 40 judgments: judges caught simplified reasoning, and the example stance line in the rule (``I think the policy is wrong'') became the opening of three of four argument essays.
+
+The version comparison also exposed a measurement problem. The plain and version~4 texts were identical in both panels, yet on personal statements version~4 ranked above plain in 8 of 8 judgments in the first panel and in only 3 of 8 in the second. The first panel contained two edits of the plain draft, and judges noticed the shared sentences and marked the whole family down. In the other genres the comparison held (8 of 8 in both panels). Rankings of personal statements depend on what they are ranked against, which is one reason we report the held-out round as the main result.
 
 \subsection{Detectors and human writing}
 
-\TBD{Figure: dot strips of D1--D3 scores for human baselines vs P/L/H/E/O.} On the phase-1 data, only 5 of 16 admitted essays scored below 20\% on the first two detectors, and none did on the third, whose mean score for them was 61\% (its scores saturate near 73\%). All 14 texts our skill wrote in phase 1 scored below 20\% on all three.
+\TBD{Figure~\ref{fig:detectors}; held-out pass rates per condition.} On the development texts, 17 of 20 texts written with the skill scored below 20\% on all three detectors, against 9 of 20 for plain generation, 11 for the word-list prompt and 10 for the humanizer edit. The advantage came from school genres: every condition passed on personal statements and short answers, including plain generation (scores of 0--3\%), while no plain argument or explainer did. The human baselines went the other way. Of the 16 admitted college essays, 5 scored below 20\% on the first two detectors and none on the third, whose mean for them was 61\% (its scores saturate near 73\%). On personal essays the detectors pass every model-written text we produced and flag most human ones.
 
 \subsection{Personal statements: arc against fidelity}
 \label{sec:ps}
 
-\TBD{Iteration table v1--v4 and phase-2 personal-statement results.}
+Personal statements were the hardest genre throughout development (Table~\ref{tab:iterations}). Plain generation built a better arc by writing connective feelings and causes the student never stated (3 to 11 unsupported claims per essay), and judges preferred it. Forbidding invention flattened the skill's first three versions; version~3, for example, ``walks through the notes in order; climax in paragraph 7 of 9.'' Two-pass drafting in version~4 (write for shape first, then audit the draft as an editor) recovered part of the arc: its first win against plain generation on the original notes, with 4 unsupported claims against 14. Giving both conditions the student's answers to depth questions raised everyone's quality and halved plain generation's invention. On the two held-out students, version~4 ranked first in 5 of 6 personal-statement judgments with 0.67 unsupported claims per essay, against 4.83 for plain generation.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llcc}
+\toprule
+Version & Change & vs.\ plain & Unsup. \\
+\midrule
+v1 & audit while drafting & 0--4 & -- \\
+v2 & stricter sample mode & 0--4 & -- \\
+v3 & countable checks & 0--4 & 1 vs 16 \\
+v4 & two-pass drafting & 1--3 & 6 vs 19 \\
+\bottomrule
+\end{tabular}
+\caption{Personal-statement iterations in development (pairwise judgments of better writing against plain generation, depth notes for v3--v4; unsupported claims summed over the same pairs). Small samples: 2--4 pairs per cell.}
+\label{tab:iterations}
+\end{table}
+
+\subsection{Coaching}
+
+\TBD{Coaching experiment results: ranking of first draft and both revisions; feedback ratings; ghostwriting sentences; 6-gram copy share.}
 
 \section{Discussion}
 

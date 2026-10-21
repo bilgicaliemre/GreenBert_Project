@@ -1,0 +1,17 @@
+Seven minutes and forty seconds. This is how long it takes me to change an inner tube on a Xiaomi M365, from wheel off to wheel on. My friend Szymon timed it. Then he timed a guy on YouTube: nineteen minutes.
+
+I live in the falowiec in Przymorze, Gdańsk, a block of flats around 850 meters long. Tourists take photos of it, which is weird because it's just where I live. In the basement of our staircase there is a bike room, and since two years one corner is mine: two shelves, a folding table from Lidl and one socket by the door. This is where I run KacperFix. I buy broken electric scooters on OLX, repair them and sell them. Since summer 2024 I fixed 41 scooters and I have 4.9 stars from 37 reviews. Igor, who is nine and lives on the fourth floor, sorts my screws into egg cartons for five złoty an hour. He negotiated.
+
+But the problem I want to write about is not a flat tire. It is a battery, and the problem was me.
+
+In March a Glovo courier named Oleh brought me his Pro 2. The battery was dying on every hill. One group of ten cells was at 2.9 volts while the rest were almost 4. I replaced them with cells from another scooter I bought in Chełm. I tested them on my Liitokala charger and two had lower capacity, but I thought it's fine, it's a mix. I did not have a spot welder, they cost 400 złoty, so I soldered the strips. Oleh paid 380 złoty and I gave him a card I wrote by hand: "gwarancja 3 miesiące", three months warranty.
+
+Nineteen days later, at 22:10, the scooter cut out on Grunwaldzka near Galeria Bałtycka. It was raining and he still had an order in his bag. He pushed it four kilometers to my building and came down to the bike room almost at midnight, wet.
+
+I would like to say my first thought was about him. It was about the 380 złoty. I said "it got wet" before I even unscrewed anything. When I opened it there was a little water at the bottom, there always is, it's Gdańsk, so I pointed at it. I gave him back 150 and told him that is fair because of the water. He said "dobra" and left.
+
+Two days later I opened the pack properly. One of my solder joints was cracked and the cell next to it was cooked, by me. The worst part is that in winter I argued for three days on a Facebook group, Hulajnogi Trójmiasto, that you can solder cells if you are fast enough. I was on that side. In April I deleted my comments.
+
+So what did I do to solve it? First, a month later I bought a spot welder from AliExpress for 280 złoty. Second, I bought a fire extinguisher for 89 złoty at Castorama and it hangs next to the socket. Third, I stopped doing batteries for other people. This one is strange, because the battery and the controller are exactly the part I find the most interesting, and also what I am worst at. Mechanically you can understand a scooter in one hour. The electrical part is where I actually make mistakes.
+
+This is why I want to study electrical engineering. Not because I have "golden hands", like my babcia says to everyone, but because I want to understand batteries well enough that I don't need to guess and say "it's fine." I think the problem is not fully solved yet. I still have Oleh's number in my phone. But I know now that being fast is not the same as being right. Seven minutes forty is a good time for a tire. For a battery, being fast was exactly the problem.

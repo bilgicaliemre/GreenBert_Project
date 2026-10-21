@@ -437,3 +437,36 @@ What this says:
 - **Weak genre: casual first-person posts.** The word-list prompt won the blog post and narrowly the cover letter.
   The skill's audit may strip the looseness these genres want. Not fixed here: tuning on a held-out brief would
   make it development data.
+
+## 16. Coaching experiment (6 students, Coach mode vs plain feedback)
+
+Design (`scripts/coach_loop.js`): for each of the six fictional students (four development, two held-out), an
+agent playing the student wrote a first draft of the personal statement from their notes with no style help
+(D0). The draft got two kinds of feedback: the skill's Coach mode (FS, v6 files) and the plain model asked "Can
+you give me feedback on my college essay?" (FP). The student agent revised with each separately (RS, RP). Two
+blind judges ranked D0, RS and RP; a counselor agent compared the two feedbacks. Texts: `eval/out/coach/`;
+results: `eval/results/coach_judges.json`, `coach_overlap.json`.
+
+| Measure | Skill Coach (FS / RS) | Plain feedback (FP / RP) |
+|---|---|---|
+| Counselor prefers this feedback | **6 of 6** | 0 of 6 |
+| Feedback usefulness / specificity (1-10) | **8.67 / 9.00** | 7.17 / 7.00 |
+| Invented content in feedback (items per student) | **1.17** | 5.17 |
+| Essay-ready sentences written for the student | **0.67** | 1.33 |
+| Revision mean rank of 3 (D0 last in 12 of 12) | **1.42** | 1.58 |
+| Revision ranked above the other revision | 7 of 12 | 5 of 12 |
+| Revision unsupported claims | **1.67** | 2.75 |
+| Revision human-likeness / AI suspicion | **8.00 / 1.83** | 7.75 / 2.08 |
+| Revision 6-grams copied from feedback | 0.9% | 0.5% |
+| Feedback length (words, mean) | 2,264 | 1,468 |
+
+What this says:
+- Any feedback helps a first draft a lot; the revision with skill coaching is a little better (7 of 12, not
+  significant) and has fewer unsupported claims.
+- The clearer difference is in the feedback itself. The counselor judged plain feedback riskier: it "hands the
+  student the essay's interpretive insights instead of asking her for them" and supplies an "interpretive
+  center" the student never said. Coach mode states the Common App rule, quotes the student's own answers as raw
+  material, and asks questions instead.
+- Copying was near zero for both, so this simulated student does not test what a rushed real student might copy.
+- Coach mode's feedback is about 1.5 times longer. A real student may not read 2,300 words; a shorter format is
+  future work (not changed in v7 because untested).
