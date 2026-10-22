@@ -1,0 +1,27 @@
+How do noise-cancelling headphones make sound disappear?
+
+Put on noise-cancelling headphones on a bus, flip the switch, and the engine rumble seems to drain away. It feels as if they are just blocking sound, the way earplugs do, but the electronics inside are doing something stranger: adding a second sound that cancels the first.
+
+Sound is a pressure wave
+
+A vibrating object squeezes nearby air molecules together and then lets them spread apart, over and over. Those pressure changes travel through the air. When they reach you, your eardrum moves in and out with them, and your brain reads the pattern as sound. Graph the air pressure at one spot over time and you get a wave with peaks (pressure above normal) and troughs (pressure below normal).
+
+Two waves can erase each other
+
+When two sound waves meet, their pressures add. Line up peak with peak and the sound gets louder. Physicists call that constructive interference. Line up one wave's peaks with the other's troughs and they cancel, because a push above normal air pressure plus an equal dip below it adds up to almost no change. That second case, destructive interference, is what noise-cancelling headphones are built around.
+
+What's inside the headphones
+
+Small microphones listen to the sound around you all the time. A chip takes that signal and makes its mirror image, a wave flipped upside down with troughs where the original had peaks. The speaker plays this "anti-noise" along with your music, and when it reaches your ear at the same moment as the outside noise, the two largely cancel.
+
+Many headphones use two sets of microphones. One sits on the outside of the ear cup and picks up noise before it arrives. The other sits inside, near your ear, and checks what is still getting through so the system can correct its mistakes.
+
+Why some sounds slip through
+
+The system handles airplane hum well and does much worse with voices or clattering dishes. Steady, low-pitched sounds are easy for it to keep up with, and their wavelengths are long, so a tiny timing error barely matters. High-pitched sounds have short wavelengths, and being even slightly late can turn cancellation into addition. Sudden noises change faster than the system can respond.
+
+The ear cushions cover part of that gap. Padding physically blocks much of the high-pitched sound, while the electronics deal with the low rumble.
+
+Where does the sound go?
+
+Nowhere. The noise stays in the room, and the cancellation happens only in the small space between the speaker and your eardrum. While the bus gets quieter for you, the person in the next seat hears it just as loudly as before.

@@ -1,0 +1,74 @@
+Thea, this is a strong first draft, and I'm not just saying that to be nice before the criticism. Most essays spend 650 words telling the reader the writer is curious and kind. Yours shows you making a public mistake and liking the attention, and then it admits the chart was partly a permission slip to leave town. That last admission is the best thing in the essay. Very few people would have the nerve to write it.
+
+One practical fact first: you're at 649 words out of 650. Anything you add means cutting something else, so for each suggestion below I've said what it would cost.
+
+WHAT'S WORKING (KEEP THESE)
+
+- The first line. "I have played 48 funerals since June 2024. I know because I keep track." In 14 words it sets up the whole essay, which is about counting.
+- The physical details: the socks on the pedals, the stamp "so it was legal," low F-sharp, the dead wasp, Arlene's all-caps text. Nobody else could have written those.
+- "I don't get sad at them, honestly. It's a job." Four paragraphs later you write "Sometimes I think the spreadsheet is so I don't have to feel 48 separate things." The essay catches you contradicting yourself, and that's a good thing. Readers trust a writer who notices her own blind spots.
+- "In the census, Leonard is minus one." This is the line the whole essay turns on.
+- You don't answer the bigger-or-smaller question ("I don't know if I like the math because..."). Keep that uncertainty. Don't let a later draft tidy it up.
+
+THE THREE BIGGEST FIXES
+
+1. The prompt asks what makes you lose track of time, and the essay never actually shows you losing track of time.
+
+The prompt currently gets answered in one sentence that's working too hard: "This is what I think about when I lose track of time." Readers can tell when a line is only there to hit the prompt. Also, the paragraph about the actual topic, demography (paragraph 5), is the shortest and flattest one in the essay. It reads like a summary: found the word, it's a whole field, now taking dual credit. Compare it with the Leonard paragraph, where we're right there in the room.
+
+What's missing is a scene of you inside the data. You told me you went on the Census site "to prove I was right." Before your next draft, jot down answers to these:
+  a. What time was it, and how long were you on there?
+  b. What did you actually look up? Cedar County? Other counties?
+  c. When did you realize your 2070 number didn't hold up? Did you still feel something real was going on?
+
+You said something in our first conversation that isn't in the draft: "The thing is, the county probably is shrinking. Just not like that. Not by my math." That's the moment someone falls for a field: you suspect the conclusion is right, your method was wrong, and now you want to know how to do it properly. It's your real answer to "why does it captivate you," and right now the essay leaves it out.
+
+Also notice that you lose track of time twice in this story. First you're refreshing the comments in Spanish class, then you're on the Census site. One was about attention and the other was about a question. You don't have to point that out, but if both moments are in the essay, readers will feel the difference on their own.
+
+(If you'd rather not build that scene, you could submit this under "topic of your choice" instead. Either way, cut the sentence that's forcing the prompt.)
+
+2. Paragraph 6 jumps without a bridge.
+
+"This is what I think about when I lose track of time. At a funeral, it's Leonard Tietz." I had to read that twice. What does "this" refer to? The Leonard story itself is great. The problem is how you get into it. Once the prompt sentence is gone, you need some other way to get from the Census to the organ.
+
+Your notes already have one option: the hymn bet with Duane. Before every family meeting you both guess which hymn they'll pick. You're up 19 to 14, and "How Great Thou Art" wins about 40 percent of the time. That's you doing probability at funerals. It links the two halves of your life with an actual fact, which works better than any transition sentence could. I'm not saying it has to go there, but think about it.
+
+3. The permission-slip line is the biggest moment in the essay, and the essay drops it right away.
+
+"I think part of me wanted the town to be dying, because if it's dying anyway then leaving isn't really leaving anybody." Remember where this will be read: inside a college application, which is basically a document about leaving. That line is going to land hard. Then the next paragraph is about Arlene, and leaving never comes up again. You told me one of the things you haven't settled is whether you'll come back after college. You don't need to answer that in the essay. But should the ending at least show you know the question is still there? Right now it's just left hanging.
+
+THE ENDING
+
+"how to count people without forgetting that every number was a person." To me this is the one line that sounds like an essay instead of like you. It isn't wrong. It's just neat, and everything before it is honest about not knowing. A statistics class also probably won't teach you that, so it's a little odd to call it something you want to learn there. Here's a question to think about: is "breathe with them" the same thing you want from statistics, or is it the thing statistics can't give you? Either answer could make a stronger ending.
+
+"I still don't know exactly what she means. I think I'm close." is excellent. Try ending somewhere near those lines, in that same unsure voice, and see how it feels.
+
+SMALLER NOTES
+
+- Leonard's funeral is told from the outside. In our second session you told me what was going on in your head: you thought everyone would assume you did it, you got mad when they laughed, and "I think I wanted it to be my fault so I could fix it." That's the same urge as the spreadsheet: wanting something you can control. If you have room for one sentence of your thoughts in that paragraph, that's the one to use.
+- The last sentence of paragraph 2 ("What I didn't expect was that the counting would turn into the thing I can't stop thinking about") tells the reader what's coming instead of letting the Facebook story show it. Try cutting it and see whether you miss it.
+- Paragraph 5 has "which I didn't know was a word" and then "It turns out that's a whole field." They do the same job, so one can go.
+- The quiz bowl screenshot. You told me the part you'd rather leave out is sending Kathy's comment to the quiz bowl chat to make fun of her, and you did leave it out. I think that's a reasonable choice. The essay already has two hard confessions (you liked the attention, and the permission slip), and a third might start to sound like "look how bad I was." Still, ask yourself honestly whether the apology note means as much without it. If you do include it, tie it to the note.
+
+THINGS YOU TOLD ME THAT AREN'T IN THE DRAFT
+
+You don't have room for all of these. Pick one or two at most, and only if they do something the current lines don't:
+- "I've played 48 funerals and I've never once been to one as just a guest." This is about distance, which is exactly what your spreadsheet paragraph is about.
+- "I don't want to do death math for money. I know. I already do death music for money." It's funny, and it quietly explains why you're choosing demography over the actuarial science everyone keeps pushing.
+- Kathy never mentioned the note. She waves at your mom the same as always, and you don't know whether it worked. That's an honest, unresolved detail, and it could even be an ending.
+
+WHERE TO FIND THE WORDS
+
+A real Census scene will probably take 60 to 100 words. Here's where to look:
+- The last sentence of paragraph 2 (about 20 words).
+- Paragraph 5. The scene should replace that summary, not sit next to it.
+- "My little brother calls me 'the Grim Reaper's DJ.'" I like it, but it's a laugh line that doesn't do any other work. Weigh it against whatever you add.
+- I'd keep "which I had learned from a YouTube video that same week." It's funny and honest, and it makes "My whole post was an anecdote" hit harder.
+
+NEXT STEPS
+
+1. Answer the three Census questions (a to c) in rough notes. Don't write them as essay sentences yet. Just tell me what you remember, even if it's messy.
+2. Decide what the ending is about: statistics, Arlene, or leaving. Then try writing two different last paragraphs and see which one feels true.
+3. Send me the next draft and I'll read it the same way.
+
+I've stuck to notes and questions here and haven't rewritten any of your sentences, because your voice is the strongest thing this essay has. I'm happy to go back and forth on any of this as many times as you want.

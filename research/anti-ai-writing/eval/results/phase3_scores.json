@@ -1,0 +1,1742 @@
+{
+ "eval/out/phase3/B/argue_5.txt": {
+  "words": 550,
+  "chunks": 2,
+  "desklib": 16.3,
+  "desklib_chunks": [
+   27.8,
+   0.2
+  ],
+  "fakespot": 3.4,
+  "fakespot_chunks": [
+   5.7,
+   0.1
+  ],
+  "superannotate": 2.4,
+  "superannotate_chunks": [
+   3.1,
+   1.5
+  ]
+ },
+ "eval/out/phase3/B/argue_6.txt": {
+  "words": 588,
+  "chunks": 2,
+  "desklib": 3.9,
+  "desklib_chunks": [
+   6.1,
+   1.4
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2,
+   0.3
+  ],
+  "superannotate": 2.0,
+  "superannotate_chunks": [
+   2.5,
+   1.5
+  ]
+ },
+ "eval/out/phase3/B/blog_robotics.txt": {
+  "words": 535,
+  "chunks": 2,
+  "desklib": 0.6,
+  "desklib_chunks": [
+   0.4,
+   0.9
+  ],
+  "fakespot": 0.8,
+  "fakespot_chunks": [
+   1.1,
+   0.3
+  ],
+  "superannotate": 1.0,
+  "superannotate_chunks": [
+   0.7,
+   1.5
+  ]
+ },
+ "eval/out/phase3/B/cover_letter.txt": {
+  "words": 336,
+  "chunks": 1,
+  "desklib": 1.6,
+  "desklib_chunks": [
+   1.6
+  ],
+  "fakespot": 2.7,
+  "fakespot_chunks": [
+   2.7
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4
+  ]
+ },
+ "eval/out/phase3/B/email_extension.txt": {
+  "words": 196,
+  "chunks": 1,
+  "desklib": 1.8,
+  "desklib_chunks": [
+   1.8
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3
+  ],
+  "superannotate": 1.8,
+  "superannotate_chunks": [
+   1.8
+  ]
+ },
+ "eval/out/phase3/B/email_lab.txt": {
+  "words": 244,
+  "chunks": 1,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   0.9
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ],
+  "superannotate": 1.7,
+  "superannotate_chunks": [
+   1.7
+  ]
+ },
+ "eval/out/phase3/B/explain_5.txt": {
+  "words": 448,
+  "chunks": 2,
+  "desklib": 4.7,
+  "desklib_chunks": [
+   8.0,
+   1.0
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.9,
+   0.3
+  ],
+  "superannotate": 1.9,
+  "superannotate_chunks": [
+   1.7,
+   2.1
+  ]
+ },
+ "eval/out/phase3/B/explain_6.txt": {
+  "words": 449,
+  "chunks": 2,
+  "desklib": 3.6,
+  "desklib_chunks": [
+   5.3,
+   1.6
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1,
+   0.0
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4,
+   1.3
+  ]
+ },
+ "eval/out/phase3/B/lab_pendulum.txt": {
+  "words": 398,
+  "chunks": 2,
+  "desklib": 3.9,
+  "desklib_chunks": [
+   4.6,
+   1.4
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.8,
+   0.1
+  ],
+  "superannotate": 1.0,
+  "superannotate_chunks": [
+   1.1,
+   0.6
+  ]
+ },
+ "eval/out/phase3/B/lit_pride.txt": {
+  "words": 491,
+  "chunks": 2,
+  "desklib": 5.9,
+  "desklib_chunks": [
+   9.7,
+   0.2
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3,
+   0.1
+  ],
+  "superannotate": 2.6,
+  "superannotate_chunks": [
+   3.2,
+   1.7
+  ]
+ },
+ "eval/out/phase3/B/lit_romeo.txt": {
+  "words": 481,
+  "chunks": 2,
+  "desklib": 1.1,
+  "desklib_chunks": [
+   1.6,
+   0.1
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.8,
+   0.2
+  ],
+  "superannotate": 3.5,
+  "superannotate_chunks": [
+   4.3,
+   1.9
+  ]
+ },
+ "eval/out/phase3/B/news_cafeteria.txt": {
+  "words": 434,
+  "chunks": 2,
+  "desklib": 1.3,
+  "desklib_chunks": [
+   0.9,
+   2.7
+  ],
+  "fakespot": 0.5,
+  "fakespot_chunks": [
+   0.1,
+   1.8
+  ],
+  "superannotate": 1.1,
+  "superannotate_chunks": [
+   1.1,
+   1.0
+  ]
+ },
+ "eval/out/phase3/B/ps_kacper.txt": {
+  "words": 640,
+  "chunks": 2,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1,
+   0.1
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.2,
+   1.0
+  ],
+  "superannotate": 1.7,
+  "superannotate_chunks": [
+   1.3,
+   2.1
+  ]
+ },
+ "eval/out/phase3/B/ps_marisol.txt": {
+  "words": 648,
+  "chunks": 2,
+  "desklib": 0.3,
+  "desklib_chunks": [
+   0.0,
+   0.5
+  ],
+  "fakespot": 1.7,
+  "fakespot_chunks": [
+   0.1,
+   3.4
+  ],
+  "superannotate": 1.6,
+  "superannotate_chunks": [
+   1.1,
+   2.1
+  ]
+ },
+ "eval/out/phase3/B/supp_kacper.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 0.0,
+  "desklib_chunks": [
+   0.0
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4
+  ]
+ },
+ "eval/out/phase3/B/supp_marisol.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.2
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.3
+  ]
+ },
+ "eval/out/phase3/F/argue_5.txt": {
+  "words": 568,
+  "chunks": 2,
+  "desklib": 1.8,
+  "desklib_chunks": [
+   2.4,
+   0.9
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.4,
+   0.4
+  ],
+  "superannotate": 1.9,
+  "superannotate_chunks": [
+   1.9,
+   1.9
+  ]
+ },
+ "eval/out/phase3/F/argue_6.txt": {
+  "words": 600,
+  "chunks": 2,
+  "desklib": 0.7,
+  "desklib_chunks": [
+   0.9,
+   0.5
+  ],
+  "fakespot": 0.5,
+  "fakespot_chunks": [
+   0.5,
+   0.4
+  ],
+  "superannotate": 2.2,
+  "superannotate_chunks": [
+   2.2,
+   2.2
+  ]
+ },
+ "eval/out/phase3/F/blog_robotics.txt": {
+  "words": 498,
+  "chunks": 2,
+  "desklib": 8.0,
+  "desklib_chunks": [
+   12.1,
+   0.9
+  ],
+  "fakespot": 3.6,
+  "fakespot_chunks": [
+   5.5,
+   0.4
+  ],
+  "superannotate": 0.9,
+  "superannotate_chunks": [
+   0.9,
+   1.0
+  ]
+ },
+ "eval/out/phase3/F/cover_letter.txt": {
+  "words": 338,
+  "chunks": 1,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   0.9
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.7
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4
+  ]
+ },
+ "eval/out/phase3/F/email_extension.txt": {
+  "words": 198,
+  "chunks": 1,
+  "desklib": 1.6,
+  "desklib_chunks": [
+   1.6
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2
+  ]
+ },
+ "eval/out/phase3/F/email_lab.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 3.6,
+  "desklib_chunks": [
+   3.6
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ],
+  "superannotate": 2.7,
+  "superannotate_chunks": [
+   2.7
+  ]
+ },
+ "eval/out/phase3/F/explain_5.txt": {
+  "words": 448,
+  "chunks": 2,
+  "desklib": 0.5,
+  "desklib_chunks": [
+   0.2,
+   1.3
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.3,
+   0.5
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.0,
+   1.8
+  ]
+ },
+ "eval/out/phase3/F/explain_6.txt": {
+  "words": 444,
+  "chunks": 2,
+  "desklib": 10.9,
+  "desklib_chunks": [
+   13.4,
+   2.7
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.1,
+   2.6
+  ],
+  "superannotate": 1.8,
+  "superannotate_chunks": [
+   1.4,
+   2.9
+  ]
+ },
+ "eval/out/phase3/F/lab_pendulum.txt": {
+  "words": 400,
+  "chunks": 2,
+  "desklib": 3.2,
+  "desklib_chunks": [
+   4.0,
+   1.0
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.4,
+   0.1
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.3,
+   1.0
+  ]
+ },
+ "eval/out/phase3/F/lit_pride.txt": {
+  "words": 495,
+  "chunks": 2,
+  "desklib": 1.1,
+  "desklib_chunks": [
+   1.5,
+   0.3
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1,
+   0.2
+  ],
+  "superannotate": 2.3,
+  "superannotate_chunks": [
+   2.2,
+   2.6
+  ]
+ },
+ "eval/out/phase3/F/lit_romeo.txt": {
+  "words": 434,
+  "chunks": 2,
+  "desklib": 1.0,
+  "desklib_chunks": [
+   0.5,
+   1.8
+  ],
+  "fakespot": 0.8,
+  "fakespot_chunks": [
+   1.0,
+   0.6
+  ],
+  "superannotate": 3.4,
+  "superannotate_chunks": [
+   3.3,
+   3.5
+  ]
+ },
+ "eval/out/phase3/F/news_cafeteria.txt": {
+  "words": 446,
+  "chunks": 2,
+  "desklib": 1.2,
+  "desklib_chunks": [
+   0.3,
+   3.7
+  ],
+  "fakespot": 1.9,
+  "fakespot_chunks": [
+   1.1,
+   4.1
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.4,
+   1.8
+  ]
+ },
+ "eval/out/phase3/F/ps_kacper.txt": {
+  "words": 638,
+  "chunks": 2,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.0,
+   0.3
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.1,
+   0.5
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.6,
+   1.5
+  ]
+ },
+ "eval/out/phase3/F/ps_marisol.txt": {
+  "words": 644,
+  "chunks": 2,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.3,
+   0.1
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.2,
+   0.3
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   0.8,
+   1.6
+  ]
+ },
+ "eval/out/phase3/F/supp_kacper.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.3
+  ]
+ },
+ "eval/out/phase3/F/supp_marisol.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2
+  ]
+ },
+ "eval/out/phase3/H/argue_5.txt": {
+  "words": 567,
+  "chunks": 2,
+  "desklib": 22.3,
+  "desklib_chunks": [
+   2.5,
+   53.3
+  ],
+  "fakespot": 17.9,
+  "fakespot_chunks": [
+   2.6,
+   42.0
+  ],
+  "superannotate": 4.0,
+  "superannotate_chunks": [
+   1.6,
+   7.8
+  ]
+ },
+ "eval/out/phase3/H/argue_6.txt": {
+  "words": 580,
+  "chunks": 2,
+  "desklib": 32.7,
+  "desklib_chunks": [
+   51.2,
+   6.9
+  ],
+  "fakespot": 37.4,
+  "fakespot_chunks": [
+   0.5,
+   88.9
+  ],
+  "superannotate": 11.0,
+  "superannotate_chunks": [
+   13.1,
+   8.0
+  ]
+ },
+ "eval/out/phase3/H/blog_robotics.txt": {
+  "words": 508,
+  "chunks": 2,
+  "desklib": 2.1,
+  "desklib_chunks": [
+   2.6,
+   1.0
+  ],
+  "fakespot": 1.6,
+  "fakespot_chunks": [
+   2.2,
+   0.4
+  ],
+  "superannotate": 1.0,
+  "superannotate_chunks": [
+   0.7,
+   1.6
+  ]
+ },
+ "eval/out/phase3/H/cover_letter.txt": {
+  "words": 339,
+  "chunks": 1,
+  "desklib": 1.4,
+  "desklib_chunks": [
+   1.4
+  ],
+  "fakespot": 3.7,
+  "fakespot_chunks": [
+   3.7
+  ],
+  "superannotate": 1.9,
+  "superannotate_chunks": [
+   1.9
+  ]
+ },
+ "eval/out/phase3/H/email_extension.txt": {
+  "words": 196,
+  "chunks": 1,
+  "desklib": 13.6,
+  "desklib_chunks": [
+   13.6
+  ],
+  "fakespot": 3.7,
+  "fakespot_chunks": [
+   3.7
+  ],
+  "superannotate": 5.0,
+  "superannotate_chunks": [
+   5.0
+  ]
+ },
+ "eval/out/phase3/H/email_lab.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 3.5,
+  "desklib_chunks": [
+   3.5
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.4
+  ],
+  "superannotate": 2.0,
+  "superannotate_chunks": [
+   2.0
+  ]
+ },
+ "eval/out/phase3/H/explain_5.txt": {
+  "words": 445,
+  "chunks": 2,
+  "desklib": 33.8,
+  "desklib_chunks": [
+   46.9,
+   3.1
+  ],
+  "fakespot": 69.8,
+  "fakespot_chunks": [
+   99.2,
+   0.8
+  ],
+  "superannotate": 22.5,
+  "superannotate_chunks": [
+   29.9,
+   5.1
+  ]
+ },
+ "eval/out/phase3/H/explain_6.txt": {
+  "words": 445,
+  "chunks": 2,
+  "desklib": 42.6,
+  "desklib_chunks": [
+   49.4,
+   20.8
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3,
+   0.3
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.5,
+   1.6
+  ]
+ },
+ "eval/out/phase3/H/lab_pendulum.txt": {
+  "words": 398,
+  "chunks": 2,
+  "desklib": 12.9,
+  "desklib_chunks": [
+   16.9,
+   2.4
+  ],
+  "fakespot": 1.1,
+  "fakespot_chunks": [
+   1.5,
+   0.3
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.6,
+   1.1
+  ]
+ },
+ "eval/out/phase3/H/lit_pride.txt": {
+  "words": 456,
+  "chunks": 2,
+  "desklib": 5.1,
+  "desklib_chunks": [
+   7.3,
+   0.7
+  ],
+  "fakespot": 0.9,
+  "fakespot_chunks": [
+   0.8,
+   1.1
+  ],
+  "superannotate": 8.1,
+  "superannotate_chunks": [
+   9.8,
+   4.8
+  ]
+ },
+ "eval/out/phase3/H/lit_romeo.txt": {
+  "words": 438,
+  "chunks": 2,
+  "desklib": 4.4,
+  "desklib_chunks": [
+   4.1,
+   5.0
+  ],
+  "fakespot": 10.3,
+  "fakespot_chunks": [
+   0.5,
+   29.3
+  ],
+  "superannotate": 14.4,
+  "superannotate_chunks": [
+   4.2,
+   34.3
+  ]
+ },
+ "eval/out/phase3/H/news_cafeteria.txt": {
+  "words": 439,
+  "chunks": 2,
+  "desklib": 5.1,
+  "desklib_chunks": [
+   1.9,
+   17.4
+  ],
+  "fakespot": 0.9,
+  "fakespot_chunks": [
+   0.9,
+   0.8
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.5,
+   1.2
+  ]
+ },
+ "eval/out/phase3/H/ps_kacper.txt": {
+  "words": 649,
+  "chunks": 2,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.1,
+   0.2
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.1,
+   1.1
+  ],
+  "superannotate": 1.7,
+  "superannotate_chunks": [
+   1.1,
+   2.3
+  ]
+ },
+ "eval/out/phase3/H/ps_marisol.txt": {
+  "words": 641,
+  "chunks": 2,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.0,
+   0.3
+  ],
+  "fakespot": 0.9,
+  "fakespot_chunks": [
+   0.1,
+   1.8
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.2,
+   1.7
+  ]
+ },
+ "eval/out/phase3/H/supp_kacper.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.0,
+  "fakespot_chunks": [
+   0.0
+  ],
+  "superannotate": 1.1,
+  "superannotate_chunks": [
+   1.1
+  ]
+ },
+ "eval/out/phase3/H/supp_marisol.txt": {
+  "words": 247,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 2.2,
+  "superannotate_chunks": [
+   2.2
+  ]
+ },
+ "eval/out/phase3/L/argue_5.txt": {
+  "words": 589,
+  "chunks": 2,
+  "desklib": 59.1,
+  "desklib_chunks": [
+   82.6,
+   33.8
+  ],
+  "fakespot": 12.0,
+  "fakespot_chunks": [
+   8.6,
+   15.6
+  ],
+  "superannotate": 29.1,
+  "superannotate_chunks": [
+   2.8,
+   57.5
+  ]
+ },
+ "eval/out/phase3/L/argue_6.txt": {
+  "words": 568,
+  "chunks": 2,
+  "desklib": 1.5,
+  "desklib_chunks": [
+   1.4,
+   1.7
+  ],
+  "fakespot": 3.9,
+  "fakespot_chunks": [
+   0.1,
+   8.2
+  ],
+  "superannotate": 2.6,
+  "superannotate_chunks": [
+   1.4,
+   4.1
+  ]
+ },
+ "eval/out/phase3/L/blog_robotics.txt": {
+  "words": 547,
+  "chunks": 2,
+  "desklib": 2.9,
+  "desklib_chunks": [
+   3.6,
+   1.7
+  ],
+  "fakespot": 1.5,
+  "fakespot_chunks": [
+   1.9,
+   0.8
+  ],
+  "superannotate": 1.1,
+  "superannotate_chunks": [
+   0.7,
+   1.9
+  ]
+ },
+ "eval/out/phase3/L/cover_letter.txt": {
+  "words": 326,
+  "chunks": 1,
+  "desklib": 1.9,
+  "desklib_chunks": [
+   1.9
+  ],
+  "fakespot": 0.8,
+  "fakespot_chunks": [
+   0.8
+  ],
+  "superannotate": 1.6,
+  "superannotate_chunks": [
+   1.6
+  ]
+ },
+ "eval/out/phase3/L/email_extension.txt": {
+  "words": 200,
+  "chunks": 1,
+  "desklib": 20.3,
+  "desklib_chunks": [
+   20.3
+  ],
+  "fakespot": 1.9,
+  "fakespot_chunks": [
+   1.9
+  ],
+  "superannotate": 2.4,
+  "superannotate_chunks": [
+   2.4
+  ]
+ },
+ "eval/out/phase3/L/email_lab.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 4.1,
+  "desklib_chunks": [
+   4.1
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ],
+  "superannotate": 2.0,
+  "superannotate_chunks": [
+   2.0
+  ]
+ },
+ "eval/out/phase3/L/explain_5.txt": {
+  "words": 450,
+  "chunks": 2,
+  "desklib": 63.8,
+  "desklib_chunks": [
+   74.8,
+   35.2
+  ],
+  "fakespot": 45.5,
+  "fakespot_chunks": [
+   59.0,
+   10.5
+  ],
+  "superannotate": 45.3,
+  "superannotate_chunks": [
+   57.0,
+   15.0
+  ]
+ },
+ "eval/out/phase3/L/explain_6.txt": {
+  "words": 442,
+  "chunks": 2,
+  "desklib": 13.4,
+  "desklib_chunks": [
+   15.0,
+   9.8
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.4,
+   1.4
+  ],
+  "superannotate": 2.1,
+  "superannotate_chunks": [
+   2.5,
+   1.3
+  ]
+ },
+ "eval/out/phase3/L/lab_pendulum.txt": {
+  "words": 398,
+  "chunks": 2,
+  "desklib": 10.3,
+  "desklib_chunks": [
+   15.2,
+   1.1
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3,
+   0.2
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.3,
+   1.0
+  ]
+ },
+ "eval/out/phase3/L/lit_pride.txt": {
+  "words": 494,
+  "chunks": 2,
+  "desklib": 10.4,
+  "desklib_chunks": [
+   1.8,
+   28.0
+  ],
+  "fakespot": 5.1,
+  "fakespot_chunks": [
+   0.7,
+   14.0
+  ],
+  "superannotate": 4.6,
+  "superannotate_chunks": [
+   3.5,
+   6.6
+  ]
+ },
+ "eval/out/phase3/L/lit_romeo.txt": {
+  "words": 466,
+  "chunks": 2,
+  "desklib": 28.7,
+  "desklib_chunks": [
+   46.8,
+   0.8
+  ],
+  "fakespot": 8.7,
+  "fakespot_chunks": [
+   14.0,
+   0.5
+  ],
+  "superannotate": 41.1,
+  "superannotate_chunks": [
+   63.2,
+   6.8
+  ]
+ },
+ "eval/out/phase3/L/news_cafeteria.txt": {
+  "words": 448,
+  "chunks": 2,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   0.6,
+   1.6
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.3,
+   2.2
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.5,
+   1.1
+  ]
+ },
+ "eval/out/phase3/L/ps_kacper.txt": {
+  "words": 641,
+  "chunks": 2,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.2,
+   0.1
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.1,
+   0.5
+  ],
+  "superannotate": 1.6,
+  "superannotate_chunks": [
+   1.2,
+   1.9
+  ]
+ },
+ "eval/out/phase3/L/ps_marisol.txt": {
+  "words": 641,
+  "chunks": 2,
+  "desklib": 1.0,
+  "desklib_chunks": [
+   1.8,
+   0.3
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.4,
+   0.2
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.0,
+   1.6
+  ]
+ },
+ "eval/out/phase3/L/supp_kacper.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4
+  ]
+ },
+ "eval/out/phase3/L/supp_marisol.txt": {
+  "words": 245,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 2.7,
+  "superannotate_chunks": [
+   2.7
+  ]
+ },
+ "eval/out/phase3/P/argue_5.txt": {
+  "words": 594,
+  "chunks": 2,
+  "desklib": 42.6,
+  "desklib_chunks": [
+   26.6,
+   55.8
+  ],
+  "fakespot": 49.0,
+  "fakespot_chunks": [
+   9.2,
+   82.0
+  ],
+  "superannotate": 51.1,
+  "superannotate_chunks": [
+   62.3,
+   41.9
+  ]
+ },
+ "eval/out/phase3/P/argue_6.txt": {
+  "words": 584,
+  "chunks": 2,
+  "desklib": 37.5,
+  "desklib_chunks": [
+   57.5,
+   10.4
+  ],
+  "fakespot": 37.9,
+  "fakespot_chunks": [
+   1.0,
+   87.8
+  ],
+  "superannotate": 14.7,
+  "superannotate_chunks": [
+   19.9,
+   7.6
+  ]
+ },
+ "eval/out/phase3/P/blog_robotics.txt": {
+  "words": 547,
+  "chunks": 2,
+  "desklib": 1.3,
+  "desklib_chunks": [
+   2.3,
+   0.2
+  ],
+  "fakespot": 3.0,
+  "fakespot_chunks": [
+   5.2,
+   0.3
+  ],
+  "superannotate": 1.1,
+  "superannotate_chunks": [
+   0.8,
+   1.5
+  ]
+ },
+ "eval/out/phase3/P/cover_letter.txt": {
+  "words": 344,
+  "chunks": 1,
+  "desklib": 1.1,
+  "desklib_chunks": [
+   1.1
+  ],
+  "fakespot": 1.2,
+  "fakespot_chunks": [
+   1.2
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.5
+  ]
+ },
+ "eval/out/phase3/P/email_extension.txt": {
+  "words": 192,
+  "chunks": 1,
+  "desklib": 14.8,
+  "desklib_chunks": [
+   14.8
+  ],
+  "fakespot": 1.4,
+  "fakespot_chunks": [
+   1.4
+  ],
+  "superannotate": 3.7,
+  "superannotate_chunks": [
+   3.7
+  ]
+ },
+ "eval/out/phase3/P/email_lab.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 5.4,
+  "desklib_chunks": [
+   5.4
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.6
+  ],
+  "superannotate": 2.0,
+  "superannotate_chunks": [
+   2.0
+  ]
+ },
+ "eval/out/phase3/P/explain_5.txt": {
+  "words": 438,
+  "chunks": 2,
+  "desklib": 64.7,
+  "desklib_chunks": [
+   72.2,
+   36.9
+  ],
+  "fakespot": 11.4,
+  "fakespot_chunks": [
+   11.8,
+   9.6
+  ],
+  "superannotate": 15.6,
+  "superannotate_chunks": [
+   19.0,
+   3.2
+  ]
+ },
+ "eval/out/phase3/P/explain_6.txt": {
+  "words": 448,
+  "chunks": 2,
+  "desklib": 56.4,
+  "desklib_chunks": [
+   68.6,
+   16.8
+  ],
+  "fakespot": 1.1,
+  "fakespot_chunks": [
+   1.3,
+   0.4
+  ],
+  "superannotate": 1.8,
+  "superannotate_chunks": [
+   1.7,
+   2.0
+  ]
+ },
+ "eval/out/phase3/P/lab_pendulum.txt": {
+  "words": 391,
+  "chunks": 2,
+  "desklib": 30.3,
+  "desklib_chunks": [
+   39.5,
+   3.2
+  ],
+  "fakespot": 1.9,
+  "fakespot_chunks": [
+   2.5,
+   0.1
+  ],
+  "superannotate": 1.7,
+  "superannotate_chunks": [
+   1.9,
+   1.1
+  ]
+ },
+ "eval/out/phase3/P/lit_pride.txt": {
+  "words": 500,
+  "chunks": 2,
+  "desklib": 52.7,
+  "desklib_chunks": [
+   65.8,
+   23.7
+  ],
+  "fakespot": 31.2,
+  "fakespot_chunks": [
+   37.9,
+   16.3
+  ],
+  "superannotate": 24.2,
+  "superannotate_chunks": [
+   28.5,
+   14.9
+  ]
+ },
+ "eval/out/phase3/P/lit_romeo.txt": {
+  "words": 459,
+  "chunks": 2,
+  "desklib": 37.3,
+  "desklib_chunks": [
+   53.2,
+   4.7
+  ],
+  "fakespot": 3.0,
+  "fakespot_chunks": [
+   0.6,
+   7.8
+  ],
+  "superannotate": 6.5,
+  "superannotate_chunks": [
+   4.3,
+   11.0
+  ]
+ },
+ "eval/out/phase3/P/news_cafeteria.txt": {
+  "words": 439,
+  "chunks": 2,
+  "desklib": 0.7,
+  "desklib_chunks": [
+   0.4,
+   1.4
+  ],
+  "fakespot": 1.2,
+  "fakespot_chunks": [
+   1.0,
+   1.7
+  ],
+  "superannotate": 6.8,
+  "superannotate_chunks": [
+   9.1,
+   0.8
+  ]
+ },
+ "eval/out/phase3/P/ps_kacper.txt": {
+  "words": 644,
+  "chunks": 2,
+  "desklib": 0.3,
+  "desklib_chunks": [
+   0.2,
+   0.4
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.1,
+   0.6
+  ],
+  "superannotate": 1.8,
+  "superannotate_chunks": [
+   1.1,
+   2.5
+  ]
+ },
+ "eval/out/phase3/P/ps_marisol.txt": {
+  "words": 647,
+  "chunks": 2,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.1,
+   0.3
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.1,
+   1.0
+  ],
+  "superannotate": 1.6,
+  "superannotate_chunks": [
+   1.1,
+   2.1
+  ]
+ },
+ "eval/out/phase3/P/supp_kacper.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2
+  ]
+ },
+ "eval/out/phase3/P/supp_marisol.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ],
+  "superannotate": 0.9,
+  "superannotate_chunks": [
+   0.9
+  ]
+ },
+ "eval/out/phase3/S/argue_5.txt": {
+  "words": 594,
+  "chunks": 2,
+  "desklib": 7.1,
+  "desklib_chunks": [
+   10.8,
+   1.8
+  ],
+  "fakespot": 3.6,
+  "fakespot_chunks": [
+   1.9,
+   6.0
+  ],
+  "superannotate": 2.3,
+  "superannotate_chunks": [
+   2.0,
+   2.6
+  ]
+ },
+ "eval/out/phase3/S/argue_6.txt": {
+  "words": 596,
+  "chunks": 2,
+  "desklib": 9.6,
+  "desklib_chunks": [
+   16.2,
+   0.6
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.6,
+   0.8
+  ],
+  "superannotate": 1.7,
+  "superannotate_chunks": [
+   2.0,
+   1.3
+  ]
+ },
+ "eval/out/phase3/S/blog_robotics.txt": {
+  "words": 539,
+  "chunks": 2,
+  "desklib": 12.2,
+  "desklib_chunks": [
+   18.4,
+   0.9
+  ],
+  "fakespot": 1.1,
+  "fakespot_chunks": [
+   1.3,
+   0.7
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.3,
+   1.2
+  ]
+ },
+ "eval/out/phase3/S/cover_letter.txt": {
+  "words": 314,
+  "chunks": 1,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   0.9
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.6
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2
+  ]
+ },
+ "eval/out/phase3/S/email_extension.txt": {
+  "words": 198,
+  "chunks": 1,
+  "desklib": 3.9,
+  "desklib_chunks": [
+   3.9
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.3
+  ]
+ },
+ "eval/out/phase3/S/email_lab.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 3.4,
+  "desklib_chunks": [
+   3.4
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.4,
+  "superannotate_chunks": [
+   1.4
+  ]
+ },
+ "eval/out/phase3/S/explain_5.txt": {
+  "words": 445,
+  "chunks": 2,
+  "desklib": 2.7,
+  "desklib_chunks": [
+   4.1,
+   1.0
+  ],
+  "fakespot": 1.2,
+  "fakespot_chunks": [
+   1.8,
+   0.5
+  ],
+  "superannotate": 4.2,
+  "superannotate_chunks": [
+   6.6,
+   1.6
+  ]
+ },
+ "eval/out/phase3/S/explain_6.txt": {
+  "words": 450,
+  "chunks": 2,
+  "desklib": 35.6,
+  "desklib_chunks": [
+   65.2,
+   0.3
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1,
+   0.1
+  ],
+  "superannotate": 1.9,
+  "superannotate_chunks": [
+   2.2,
+   1.6
+  ]
+ },
+ "eval/out/phase3/S/lab_pendulum.txt": {
+  "words": 399,
+  "chunks": 2,
+  "desklib": 4.4,
+  "desklib_chunks": [
+   7.0,
+   0.5
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.4,
+   0.1
+  ],
+  "superannotate": 1.1,
+  "superannotate_chunks": [
+   1.0,
+   1.2
+  ]
+ },
+ "eval/out/phase3/S/lit_pride.txt": {
+  "words": 485,
+  "chunks": 3,
+  "desklib": 0.8,
+  "desklib_chunks": [
+   2.4,
+   0.2,
+   0.3
+  ],
+  "fakespot": 1.0,
+  "fakespot_chunks": [
+   3.0,
+   0.1,
+   0.7
+  ],
+  "superannotate": 2.3,
+  "superannotate_chunks": [
+   1.5,
+   2.9,
+   2.0
+  ]
+ },
+ "eval/out/phase3/S/lit_romeo.txt": {
+  "words": 495,
+  "chunks": 2,
+  "desklib": 0.5,
+  "desklib_chunks": [
+   0.6,
+   0.2
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2,
+   0.2
+  ],
+  "superannotate": 2.6,
+  "superannotate_chunks": [
+   2.9,
+   2.1
+  ]
+ },
+ "eval/out/phase3/S/news_cafeteria.txt": {
+  "words": 439,
+  "chunks": 2,
+  "desklib": 0.5,
+  "desklib_chunks": [
+   0.2,
+   1.3
+  ],
+  "fakespot": 0.6,
+  "fakespot_chunks": [
+   0.4,
+   1.2
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.4,
+   0.6
+  ]
+ },
+ "eval/out/phase3/S/ps_kacper.txt": {
+  "words": 642,
+  "chunks": 3,
+  "desklib": 0.4,
+  "desklib_chunks": [
+   0.3,
+   0.1,
+   1.8
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.1,
+   0.5,
+   0.8
+  ],
+  "superannotate": 1.5,
+  "superannotate_chunks": [
+   1.1,
+   1.8,
+   1.1
+  ]
+ },
+ "eval/out/phase3/S/ps_marisol.txt": {
+  "words": 641,
+  "chunks": 2,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.0,
+   0.2
+  ],
+  "fakespot": 0.5,
+  "fakespot_chunks": [
+   0.1,
+   0.8
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2,
+   1.2
+  ]
+ },
+ "eval/out/phase3/S/supp_kacper.txt": {
+  "words": 248,
+  "chunks": 1,
+  "desklib": 0.0,
+  "desklib_chunks": [
+   0.0
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.3,
+  "superannotate_chunks": [
+   1.3
+  ]
+ },
+ "eval/out/phase3/S/supp_marisol.txt": {
+  "words": 249,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1
+  ],
+  "superannotate": 1.2,
+  "superannotate_chunks": [
+   1.2
+  ]
+ }
+}

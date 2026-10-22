@@ -1,0 +1,147 @@
+Kacper,
+
+I read your draft twice: once fast, the way an admissions officer with thirty essays left today would, and once slowly. Feedback first (most important at the top), then a plan for draft two, then grammar fixes. Same rule as in our sessions: I point and ask, you write the sentences. The Common App counts AI-written content as not your own work, and everything that makes this essay good (the 380, "it got wet", the water that is always there because it's Gdańsk) only exists in your head anyway.
+
+
+1. The biggest problem: the ending solves something you told me is not solved
+
+Paragraph 3 says "the problem was me." Then the solution paragraph fixes the battery: a spot welder for 280 złoty, an extinguisher for 89, no more batteries for other people. Those are real and they belong in the essay. But the part of the problem that was you, the part at midnight in the bike room, gets one line near the end ("I still have Oleh's number in my phone"), and then the essay jumps to a lesson and a neat callback to the tire.
+
+In our second session you told me what is still open, in these words:
+
+"I've opened BLIK like four times. I have 230, that's not the problem. The problem is there's the message box and I'd have to write something in it, and what do I write."
+
+That is a problem you would like to solve, and the prompt allows exactly that: "a problem you've solved or would like to solve." So the essay does not have to end solved. It can answer the prompt in two parts: the battery, which you did fix, and Oleh, which you haven't, including where exactly you are stuck. You already know it isn't the money.
+
+Concrete step: rebuild your last two paragraphs. Keep the welder, the extinguisher and the decision to stop doing batteries for other people, then give the reader the 230 and the message box. Don't end on a promise to send it unless you have actually sent it. What you do about Oleh is your decision, not an essay decision; the essay only has to be true on the day you submit.
+
+
+2. So what?
+
+After one read I know you are fast with your hands, you run a small business from a basement, you made a technical mistake, you blamed the rain, and you bought better tools. Plenty of applicants can write "I made a mistake and bought better tools." What only you can write is the midnight scene: your first thought was the money, you said "it got wet" before you unscrewed anything, you pointed at the water, you gave back 150 and called it fair. A reader sees someone who can watch himself calculating and admit it. That is the strongest thing in the essay, and every other paragraph should either lead into that scene or come out of it.
+
+
+3. Shape
+
+The turn is there: you blame the water, then two days later you open the pack and it's your joint. Two things weaken the shape.
+
+First, Oleh doesn't appear until paragraph 4. Paragraphs 1 to 3 are 181 of your 643 words, almost 30 percent, before the story starts. Paragraph 3 exists only to change the subject ("But the problem I want to write about is not a flat tire"), which is the essay talking about itself. If paragraph 2 leads straight into Oleh bringing you his Pro 2, you don't need paragraph 3.
+
+Second, paragraph 8 is a checklist: "So what did I do to solve it? First... Second... Third..." It reads like ticking off the prompt. The third item is the most interesting idea in the essay after the midnight scene, and it is squeezed into position three of a list. You said it better when we talked: "Sounds like a lesson, I know, but no, I just stopped doing the part where I can mess up. Batteries. Which is, yeah, the thing I told you I want to study. So I don't know what that is." The draft calls it "strange" and then settles it one paragraph later. More on that in section 5.
+
+
+4. Opening
+
+"Seven minutes and forty seconds" works: a precise, odd number, and the YouTube guy makes it funny. Right now the only thing tying it to the battery is the word "fast" in your last line, and that tie is weak (section 5). Your draft already has a different link, in your own words: "Mechanically you can understand a scooter in one hour. The electrical part is where I actually make mistakes." So the tire can stay as the thing you are good at, in an essay about the part you are not. Decide which link is true for you before you keep the opening.
+
+
+5. Reflection lines
+
+"I would like to say my first thought was about him. It was about the 380 złoty." The midnight scene earns it. Best reflection in the essay; keep it exactly.
+
+"This one is strange, because the battery and the controller are exactly the part I find the most interesting, and also what I am worst at." Earned and true; you said nearly the same thing when I asked what you want to study. Keep it, and let it stay strange.
+
+"This is why I want to study electrical engineering." Check the logic. Did you choose electrical before March or after Oleh? When we talked, your reason was that the controller and battery board are the interesting part, and about stopping batteries you said "So I don't know what that is." If you wanted EE before Oleh, "This is why" isn't true. If you have worked out the connection since we talked, write it in your words. If the essay just seemed to need an answer, leave the question open; your "I don't know what that is" is stronger than a neat reason.
+
+"...so I don't need to guess and say 'it's fine.'" The echo of "it's fine, it's a mix" from paragraph 4 is a good catch, if this is what you really think.
+
+"But I know now that being fast is not the same as being right." This is a stated lesson, and it could be moved into anyone's essay about anything. Cut it.
+
+"For a battery, being fast was exactly the problem." Test it against your own story. Here are the decisions that led to the cracked joint and the 150, from your draft: "I thought it's fine, it's a mix" (two weak cells); soldering because a welder cost 400 złoty; the first thought about the 380; "fair because of the water." And one you told me but didn't write: you used salvaged cells because new ones would eat your margin. Is speed what these have in common? Speed appears once, in the Facebook argument. If something else connects them, you are the one who knows what it is: write that, or leave the decisions side by side and let the reader see the pattern without a label.
+
+"I think the problem is not fully solved yet." Too vague when you have the specific version (the 230, BLIK, the message box). Replace it with the specifics.
+
+
+6. Vulnerability
+
+You already show a lot: the 380, the water, the Facebook comments you deleted. But you left out the part you told me you'd rather leave out. When Oleh dropped the scooter off he said "I need it for work, it must be good," and you put the salvaged cells in anyway because new ones would eat your margin. Your words: "Both, same time, yeah." That is the highest-stakes material you have. Without it, a reader can take the cells as a technical judgment call. With it, the reader walks into the midnight scene already knowing what Oleh needed the scooter for. It's your decision whether to include it. I would, once, in the paragraph where you choose the cells.
+
+Two more details you told me that the draft skips:
+- After "dobra", Oleh talked on the phone in Ukrainian as he walked out, and you don't know what he said. Right now that paragraph ends on a closed "and left." The phone call ends it on something you can't know.
+- In June you saw him on Grunwaldzka on a new Ninebot, not one of yours, and you didn't wave. He never left a review, and you still check sometimes. You already put "4.9 stars from 37 reviews" in paragraph 2. Those facts are in the same essay; whether you connect them is up to you.
+
+
+7. Lines that read like template writing
+
+Three are covered above: the paragraph 3 topic switch (the essay announcing its own subject, plus a "not X, it is Y" turn), the "First... Second... Third..." list, and "being fast is not the same as being right."
+
+Paragraph endings. Seven of your nine paragraphs end on a short punchy line of ten words or fewer:
+"...nineteen minutes." / "He negotiated." / "...and the problem was me." / "He said 'dobra' and left." / "In April I deleted my comments." / "The electrical part is where I actually make mistakes." / "For a battery, being fast was exactly the problem."
+One or two of these is great. Seven becomes a rhythm a reader notices, and it is the same rhythm heavily edited essays have. Keep the two you like most. I would keep "In April I deleted my comments" because it shows you changed something without stating a lesson. Let the other paragraphs end on their last fact, or join the short line to the sentence before it.
+
+One line that looks like a template but isn't: "Not because I have 'golden hands', like my babcia says to everyone, but because..." Usually "not X but Y" is a warning sign. Here your babcia really says X, so it's fine, if you keep the EE sentence at all.
+
+
+8. Voice
+
+Most of this sounds like you talking: "there always is, it's Gdańsk", "cooked, by me", "I was on that side", "He negotiated." The fast/right sentence sounds like a quote on a poster, and "So what did I do to solve it?" sounds like a teacher. Read the draft out loud to Szymon and ask him which lines don't sound like you.
+
+
+9. Length and cuts
+
+You are at 643 of 650. The additions above (Oleh's line and the margin, the phone call, the 230 and the message box, maybe June or the review) need roughly 120 to 150 words. Cut these first:
+- "Tourists take photos of it, which is weird because it's just where I live." (14 words) I like it, but it doesn't serve this story.
+- Igor and "He negotiated." (22) Same. He would fit a short answer about your community or your business.
+- Paragraph 3. (22)
+- "This is why I want to study electrical engineering" plus the golden-hands sentence (40), unless you decide the EE link is true and needed.
+- "I think the problem is not fully solved yet" and the fast/right sentence. (23)
+- The "First... Second... Third" scaffolding, and "I bought in Chełm" (an American reader won't know Chełm, district or city).
+That frees about 130 words.
+
+Keep: the "one socket by the door" (it pays off when the extinguisher hangs next to it), 41 scooters and 4.9 from 37 reviews, and the handwritten warranty card.
+
+Keep out of this essay, however good they are: pan Nowicki, Pani Halina, your mom's tram, your dad, the cooperative vote. Several would make good supplements.
+
+
+10. What works
+
+"I would like to say my first thought was about him. It was about the 380 złoty." This is the line a reader will remember. You admit the first thought, not only the mistake.
+
+"I said 'it got wet' before I even unscrewed anything." The word "before" does the work: the reader sees you choose the answer before you look.
+
+The card "gwarancja 3 miesiące" in paragraph 4. You never comment on it later, and you don't need to. The reader remembers it when you hand back 150.
+
+The extinguisher that "hangs next to the socket", calling back the "one socket by the door" from paragraph 2. Concrete, and you don't explain it.
+
+
+A possible order for draft two
+
+This is a plan in my words. Every line points to your material; the sentences are yours to write.
+
+1. The tire time and the YouTube guy, if you keep the opening (section 4).
+2. The bike room: your corner, the one socket, KacperFix, 41 scooters, 4.9 from 37 reviews. Lead straight into Oleh.
+3. March: Oleh brings the Pro 2 and says "I need it for work, it must be good." The salvaged cells, the two weak ones, "it's fine, it's a mix", the solder instead of the welder, and (your call) the margin. 380 złoty and the handwritten card.
+4. Day nineteen: the cutout on Grunwaldzka in the rain with an order in his bag, the four-kilometer push, the bike room near midnight.
+5. Midnight: your first thought, "it got wet", the water at the bottom, 150, "dobra", the phone call you couldn't understand.
+6. Two days later: the cracked joint, the cooked cell, the three days of Facebook arguing, the comments deleted in April. This is your turn. You told me: "It was the repair, mine, not the rain. That took me like two days to, like, say. Even just in my head." Say your version of that once, here.
+7. What you changed: the welder, the extinguisher by the socket, no more batteries for other people, and the fact that batteries are what you want to study. Leave that open unless you have closed it.
+8. What you haven't changed: the 230, the contact still saved as "Oleh Pro2 Glovo", BLIK opened four times, the empty message box. Stop on one image: the message box, Oleh in June on a Ninebot that isn't from you, or you checking OLX for a review that never came. No lesson after it.
+
+A reader looking for your answer to the prompt will find it in 7 and 8: what you did about the battery, and what is still undone about Oleh.
+
+Before draft two, answer these for yourself or send them to me:
+- Did you choose electrical engineering before March or after?
+- Is speed really what connects the tire and the battery? If not, what does, or do you want no label at all?
+- Are you okay putting in "I need it for work, it must be good" and the margin?
+- Has anything happened with Oleh since we talked? If yes, the ending has to say what.
+
+
+Grammar and clarity fixes
+
+1. Paragraph 2: "since two years one corner is mine" -> "for two years one corner has been mine"
+2. Paragraph 2: "Since summer 2024 I fixed 41 scooters" -> "Since summer 2024 I have fixed 41 scooters"
+3. Paragraph 2: "In the basement of our staircase" -> "In the basement under our stairwell". In English "staircase" means the stairs themselves; for klatka, "stairwell" or "entrance" is closer.
+4. Paragraph 4: "I replaced them with cells" -> "them" could mean the bad group or "the rest". Say which: "I replaced that group with cells".
+5. Paragraph 4: "I thought it's fine, it's a mix" -> "I thought it was fine, it was a mix", or quote the thought: I thought, "It's fine, it's a mix." Quoting keeps your voice.
+6. Paragraph 4: "I did not have a spot welder, they cost 400 złoty, so I soldered the strips." Comma splice -> "I did not have a spot welder (they cost 400 złoty), so I soldered the strips."
+7. Paragraph 4: "three months warranty" -> "a three-month warranty"
+8. Paragraph 5: "came down to the bike room almost at midnight" -> "came down to the bike room at almost midnight"
+9. Paragraph 6: "When I opened it there was a little water at the bottom, there always is, it's Gdańsk, so I pointed at it." Four clauses joined by commas. Keep the words; put "there always is, it's Gdańsk" in parentheses, or end the sentence after "bottom".
+10. Paragraph 6: "told him that is fair because of the water" -> "told him that was fair because of the water", or quote yourself directly.
+11. Paragraph 7: "cooked, by me" is not a mistake. The comma is doing something; don't let a grammar checker remove it.
+12. Paragraph 8: "the battery and the controller are exactly the part" -> "the parts" (two things).
+13. Paragraph 8: "in one hour" -> "in an hour"
+14. Paragraph 9: "my babcia" -> many American readers won't know the word. If you keep the line, either say "my grandma" or make sure the sentence shows who she is.
+
+
+Next step: write draft two fast, the way you would tell this to Szymon, without stopping to fix anything. Going over 650 is fine for a draft; we cut afterwards. Send it to me with your answers to the four questions.

@@ -1,0 +1,29 @@
+How Do Noise-Cancelling Headphones Make Sound Disappear?
+
+Put on noise-cancelling headphones on a bus, flip the switch, and the engine rumble seems to drain out of the world. It feels like the headphones are blocking sound. They are actually doing something stranger: adding more sound to cancel the noise out.
+
+Sound is a pressure wave
+
+Sound travels through air as tiny pressure changes. A vibrating object squeezes air molecules together, then lets them spread apart, over and over. Your eardrum moves in and out with these changes, and your brain reads the pattern as sound. Graph the air pressure at one spot over time and you get a wave with peaks and troughs.
+
+Two waves can erase each other
+
+When two sound waves meet, their pressures add together. If peaks line up with peaks, the sound gets louder. That is constructive interference. If one wave's peaks line up with the other's troughs, they cancel: a push above normal air pressure plus an equal dip below it adds up to almost no change. That is destructive interference, and it is the whole trick.
+
+What's inside the headphones
+
+Noise-cancelling headphones have small microphones that constantly listen to the sound around you. A chip processes that sound and creates its mirror image: a wave flipped upside down, with troughs where the original had peaks. The speaker plays this "anti-noise" along with your music. When the outside noise and the anti-noise reach your ear together, they largely cancel.
+
+Many headphones use two sets of microphones. One sits outside the ear cup to catch noise before it arrives. Another sits inside, near your ear, to check what is getting through and correct mistakes.
+
+Why some sounds slip through
+
+These headphones are great at erasing airplane hum but weaker against voices or clattering dishes. Steady, low-pitched sounds are easy for the system to keep up with, and their long wavelengths mean a tiny timing error barely matters. High-pitched sounds have short wavelengths, so being even slightly late can turn cancellation into addition. Sudden noises change faster than the system can respond.
+
+That is why the ear cushions matter too. Padding physically blocks much of the high-pitched sound. The electronics handle the low rumble, and the padding handles a lot of the rest.
+
+Where does the sound go?
+
+The noise does not vanish from the room. Cancellation happens only in the small space between the speaker and your eardrum. The person next to you hears the bus just as loudly as before.
+
+So the next time you hit that switch, remember: you are not hearing silence. You are hearing two sounds fighting to a draw.

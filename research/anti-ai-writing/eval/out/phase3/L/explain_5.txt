@@ -1,0 +1,17 @@
+How Do Noise-Cancelling Headphones Make Sound Disappear?
+
+Put on a pair of noise-cancelling headphones on a bus and something strange happens. The engine rumble fades. The hum of the air vents drops away. You haven't moved, and the bus is just as loud as it was, yet you can barely hear it. So where did the noise go?
+
+The short answer: the headphones fight sound with more sound.
+
+Start with what sound actually is. A running engine shoves the air around it back and forth. That creates a pattern of squeezed regions (compressions) and stretched-out regions (rarefactions) that travels outward as a pressure wave. Those changes push and pull on your eardrum, and your brain reads that motion as sound.
+
+Waves have a useful habit. When two of them meet, they add together. If the peak of one lines up with the peak of another, you get a bigger wave. If the peak of one lines up with the trough of the other, they cancel. Physicists call this destructive interference. A wave that is the exact mirror image of another, flipped upside down, is said to be 180 degrees out of phase, and the pair adds up to almost nothing.
+
+Noise-cancelling headphones are built around that idea. Each earcup has a tiny microphone that listens to the noise around you. A small chip inside reads that signal and produces its opposite, an "anti-noise" wave. The speaker plays this anti-noise along with your music. When the outside noise and the anti-noise reach your ear together, much of the noise cancels out before your eardrum feels it.
+
+Getting the timing right is the hard part. The anti-noise has to arrive at almost exactly the right moment. If it lags behind, the peaks and troughs stop lining up and the cancellation falls apart. Many designs put a second microphone inside the earcup, close to your ear, so the chip can check what's actually getting through and correct itself.
+
+This also explains why the headphones handle some sounds well and others poorly. Low, steady sounds like engine drone or fan hum have long wavelengths and change slowly, so the electronics can keep up. High-pitched or sudden sounds, like a voice or a dropped plate, have short wavelengths that are much harder to match in time. For those, the headphones fall back on plain old passive blocking: padded cushions and a snug seal that physically keep sound out.
+
+So the rumble is still there, bouncing around the bus. Your headphones simply add a second wave that pulls on the air at your ear at the same instant the noise pushes on it. The air near your eardrum barely moves, and what you hear is quiet.

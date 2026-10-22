@@ -1,0 +1,5 @@
+# Quotes from The Great Gatsby (1925, public domain) that a writer MAY quote. Do not quote anything else.
+Q1 (Ch. 1): "he stretched out his arms toward the dark water in a curious way, and, far as I was from him, I could have sworn he was trembling. Involuntarily I glanced seaward—and distinguished nothing except a single green light, minute and far away, that might have been the end of a dock."
+Q2 (Ch. 5, Gatsby to Daisy): "You always have a green light that burns all night at the end of your dock."
+Q3 (Ch. 5): "Possibly it had occurred to him that the colossal significance of that light had now vanished forever. Compared to the great distance that had separated him from Daisy it had seemed very near to her, almost touching her. It had seemed as close as a star to the moon. Now it was again a green light on a dock. His count of enchanted objects had diminished by one."
+Q4 (Ch. 9): "Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that's no matter—to-morrow we will run faster, stretch out our arms farther. . . . And one fine morning——"

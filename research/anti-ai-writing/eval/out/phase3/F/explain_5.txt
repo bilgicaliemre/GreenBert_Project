@@ -1,0 +1,15 @@
+How do noise-cancelling headphones make sound disappear?
+
+Noise-cancelling headphones make the world quieter by adding sound. They play a copy of the noise around you, flipped upside down, and where the two meet they mostly erase each other.
+
+Sound is a pattern of pressure moving through the air: squeezed regions where molecules crowd together and spread-out regions between them. The squeezed parts push your eardrum in and the spread parts let it move back out. Add a second wave that is the mirror image of the first, spread wherever the first is squeezed, and the two push on your eardrum with equal force in opposite directions, so it barely moves. Physicists call this destructive interference.
+
+You can hear perfect cancellation on a laptop. In the free audio editor Audacity, duplicate a recording, apply the Invert effect to one copy and play both tracks together: silence, because the computer has an exact copy to flip.
+
+Headphones get no advance copy, so they measure the noise on its way in. A microphone outside the ear cup picks it up, a chip flips the signal, and the speaker plays the result along with your music. Some models add a microphone inside the cup to catch whatever the first pass missed. All of this must finish while the noise crosses the few centimeters to your ear, which at about 343 meters per second takes roughly a tenth of a millisecond.
+
+That deadline is why the headphones handle low, steady sounds like engine rumble or an air conditioner best. At 100 vibrations per second, a hum has waves about 3.4 meters long, so a timing error of a fraction of a millisecond barely knocks the anti-noise out of line. Voices and clattering dishes contain high frequencies with waves ten centimeters long or less. The same small error can leave the anti-noise half a wave off, and then it adds to the noise instead of removing it.
+
+For high sounds, the headphones rely on the cushions. The seal and the solid cup block high frequencies well and low ones poorly, the reverse of the electronics, so cushions and electronics together cover most of the noise on a plane or train. A person talking beside you is harder to shut out: speech changes constantly, and much of it sits in a middle range where neither method is strongest.
+
+None of this destroys the noise. Cancellation happens only in the pocket of air between the speaker and your eardrum; take the headphones off and the engine is as loud as ever. The German inventor Paul Lueg patented the idea in the 1930s, decades before electronics were small and fast enough to fit in an ear cup.

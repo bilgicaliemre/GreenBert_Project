@@ -1,0 +1,19 @@
+How does photosynthesis turn sunlight into food for a plant?
+
+A tree starts as a seed you can hold between two fingers and grows a trunk you can't get your arms around, yet the soil around it doesn't hollow out. Most of the wood came out of the air, and photosynthesis is how the plant pulled it in.
+
+Carbon dioxide gets into a leaf through tiny pores called stomata, in many plants mostly on the underside, and water comes up from the roots through tubes called xylem. Using energy from light, the plant turns carbon dioxide and water into glucose (a sugar) and oxygen:
+
+6CO2 + 6H2O + light energy → C6H12O6 + 6O2
+
+Photosynthesis happens in chloroplasts inside leaf cells. They contain chlorophyll, a pigment that absorbs red and blue light well and reflects much of the green, so leaves look green.
+
+The first stage, the light-dependent reactions, runs on thylakoids, flat membrane sacs stacked inside the chloroplast. Light absorbed by chlorophyll lifts electrons to a higher energy level and sends them along a chain of proteins. Energy released on the way makes ATP, and at the end the electrons are loaded onto a carrier, forming NADPH. ATP and NADPH work like charged batteries for stage two.
+
+The plant replaces the lost electrons by splitting water, and that is where the oxygen comes from. The equation makes it look as if the oxygen came off carbon dioxide, but it came from water, and so did the oxygen you breathe, released by plants, algae and some bacteria.
+
+The second stage, the Calvin cycle, happens in the stroma, the fluid around the thylakoids. It doesn't use light directly; it runs on stage one's ATP and NADPH. An enzyme called rubisco attaches carbon dioxide to a molecule already in the chloroplast, and later steps powered by those batteries rearrange the carbon into a three-carbon sugar. The plant joins these into glucose and other compounds, and this is where carbon from the air becomes part of the plant.
+
+Glucose feeds the plant in two ways. Some is broken down in cellular respiration to release energy for growth and repair. The rest becomes building material: cellulose for cell walls, starch for storage, and the starting point for fats and (with nitrogen from the soil) proteins.
+
+To see the starch, keep a potted plant in the dark for a day or two to use up its starch, cover part of one leaf with foil, then give it several hours of bright light. With a teacher supervising (removing the chlorophyll takes hot ethanol), add iodine solution to the leaf. The lit parts turn blue-black, the sign of starch; the covered patch stays yellow-brown.

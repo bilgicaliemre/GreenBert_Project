@@ -1,0 +1,19 @@
+Oleh Pro2 Glovo
+
+There is a contact in my phone saved as "Oleh Pro2 Glovo." Since March I have opened BLIK, the payment app, about four times to send him 230 złoty. I have the money. The trouble is the message box, because something has to go in it, and I still don't know what.
+
+I fix broken electric scooters in the basement of my building in Gdańsk. We live in the falowiec in Przymorze, a block about 850 meters long. In the rowerownia, the bike room under our staircase, one corner has been mine for two years: two shelves, a folding table from Lidl, one socket by the door. I buy dead Xiaomis and Ninebots on OLX, bring them home on the tram, fix them, and sell them as KacperFix. Forty-one scooters since summer 2024. It started because I wanted AirPods.
+
+Oleh is Ukrainian and delivers for Glovo. In March his Pro 2 battery was dying on hills. One group of ten cells was at 2.9 volts while the rest were almost at 4. He told me, "I need it for work, it must be good." I replaced the dead group with salvaged cells from a scooter I'd bought in Chełm. Two tested low on my charger. I decided that was fine. New cells would have eaten my margin. I had no spot welder, so I soldered the strips. He paid 380, and I gave him a card I wrote by hand: "gwarancja 3 miesiące." Three months warranty.
+
+On day nineteen, at 22:10, it cut out on Grunwaldzka near Galeria Bałtycka. It was raining, and he still had an order in his bag. He pushed the scooter about four kilometers to my building and came down to the bike room almost at midnight, wet.
+
+What I thought about first was the 380. I was calculating. I said "it got wet" before I unscrewed anything. Then I opened it while he watched, found a bit of water in the bottom (there always is, this is Gdańsk), and pointed at it. I gave him back 150 and called it fair because of the water. He said "dobra," okay, and walked out talking on the phone in Ukrainian. I don't know what he said.
+
+Two days later I opened the pack properly. One of my solder joints had cracked, and I had cooked the cell next to it. That winter, on the Facebook group Hulajnogi Trójmiasto, I had argued for about three days that you can solder cells if you are fast enough. I was on that side. In April I deleted the comments.
+
+A month later I bought a spot welder from AliExpress for 280 złoty. A fire extinguisher from Castorama, 89 złoty, now hangs by the socket. And I stopped doing batteries for other people. I know that sounds like a lesson. Mostly I just stopped doing the part where I could mess up, which is also the part I want to study. The controller and the battery board are what pull me toward electrical engineering, and they are what I'm worst at. I haven't figured out what it means that I backed away from exactly that.
+
+The part I'd rather leave out is this. When I chose the used cells, I knew he needed the scooter for work. I knew both things at the same time and did it anyway.
+
+I saw him in June on Grunwaldzka, riding a new Ninebot, not one of mine. I didn't wave. He never left a review on OLX, and sometimes I still check. The cracked joint took two days to find. The message is taking longer. I don't have the first sentence, but I know what it has to say, the thing that took me two days to admit even in my own head: it was the repair, mine, and not the rain.

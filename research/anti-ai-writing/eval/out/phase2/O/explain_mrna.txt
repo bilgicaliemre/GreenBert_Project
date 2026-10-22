@@ -1,0 +1,13 @@
+How do mRNA vaccines teach the immune system?
+
+Most vaccines used before 2020 contain a harmless form of the germ they protect against: a weakened or killed virus, or a purified piece of one. The Pfizer-BioNTech and Moderna COVID-19 vaccines, first authorized in December 2020, contain no virus at all. Each dose holds genetic code, and your own cells use it to build one piece of the virus for the immune system to study.
+
+Your cells use messenger RNA (mRNA) constantly. To make a protein, a cell copies the matching gene from DNA into mRNA. Ribosomes then read the mRNA in three-letter chunks, and each chunk adds one amino acid to the growing protein. The vaccine's mRNA codes for one protein of SARS-CoV-2, the virus behind COVID-19: the spike, which sticks out from the virus's surface and latches onto human cells.
+
+Bare mRNA breaks down easily, so the vaccine packs it inside tiny balls of fat called lipid nanoparticles. After the shot, muscle cells and immune cells near the injection site take in the particles and release the mRNA into their cytoplasm. Ribosomes there read it like any other mRNA and start building spike proteins.
+
+The immune system trains on those spike proteins. B cells whose receptors happen to fit the spike multiply, and many become plasma cells that release antibodies. Some antibodies stick to the spike and stop it from attaching to cells. Cells also cut some spike proteins into short fragments and display them on their surface. Helper T cells that recognize the fragments help activate the B cells, and killer T cells learn to destroy cells displaying those fragments. Most of these cells die once the response fades, but memory B and T cells stay behind. If the real virus arrives later, the memory cells recognize its spike and respond faster than the body could on first contact.
+
+The mRNA never enters the nucleus, where DNA is kept, and the cell's enzymes break it down within a few days. The spike protein alone cannot cause an infection, because it lacks the genes the virus needs to copy itself.
+
+The vaccine has to provoke one immune reaction and avoid another. Cells carry sensors that treat outside RNA as a sign of viral infection. Early experiments with injected mRNA set them off, and the result was inflammation and very little protein. In 2005, Katalin Karikó and Drew Weissman reported that replacing uridine, one of RNA's four building blocks, with chemically modified versions made mRNA far less likely to trigger those sensors. Both COVID-19 mRNA vaccines use a modified uridine, and the discovery won Karikó and Weissman the 2023 Nobel Prize in Physiology or Medicine.

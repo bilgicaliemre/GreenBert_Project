@@ -1,0 +1,280 @@
+{
+ "human_distlearn_1_g11_s6.txt": {
+  "words": 684,
+  "chunks": 3,
+  "desklib": 1.7,
+  "desklib_chunks": [
+   0.3,
+   0.3,
+   8.1
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1,
+   0.0,
+   0.2
+  ]
+ },
+ "human_distlearn_2_g11_s6.txt": {
+  "words": 993,
+  "chunks": 4,
+  "desklib": 44.1,
+  "desklib_chunks": [
+   55.9,
+   0.9,
+   29.4,
+   86.2
+  ],
+  "fakespot": 83.8,
+  "fakespot_chunks": [
+   100.0,
+   98.7,
+   31.6,
+   98.5
+  ]
+ },
+ "human_distlearn_3_g11_s6.txt": {
+  "words": 717,
+  "chunks": 3,
+  "desklib": 44.7,
+  "desklib_chunks": [
+   52.9,
+   4.3,
+   97.9
+  ],
+  "fakespot": 96.5,
+  "fakespot_chunks": [
+   97.1,
+   99.8,
+   90.0
+  ]
+ },
+ "human_distlearn_4_g11_s6.txt": {
+  "words": 840,
+  "chunks": 3,
+  "desklib": 2.9,
+  "desklib_chunks": [
+   0.6,
+   0.7,
+   8.8
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   0.9,
+   0.5,
+   0.4
+  ]
+ },
+ "human_distlearn_5_g11_s6.txt": {
+  "words": 606,
+  "chunks": 2,
+  "desklib": 43.8,
+  "desklib_chunks": [
+   45.5,
+   41.8
+  ],
+  "fakespot": 84.9,
+  "fakespot_chunks": [
+   82.4,
+   87.8
+  ]
+ },
+ "human_distlearn_6_g11_s6.txt": {
+  "words": 990,
+  "chunks": 4,
+  "desklib": 25.6,
+  "desklib_chunks": [
+   1.6,
+   4.5,
+   74.1,
+   27.4
+  ],
+  "fakespot": 17.7,
+  "fakespot_chunks": [
+   3.5,
+   7.6,
+   26.9,
+   57.5
+  ]
+ },
+ "human_phones8_1_g8_s6.txt": {
+  "words": 605,
+  "chunks": 2,
+  "desklib": 2.7,
+  "desklib_chunks": [
+   4.4,
+   0.6
+  ],
+  "fakespot": 55.0,
+  "fakespot_chunks": [
+   97.4,
+   0.2
+  ]
+ },
+ "human_phones8_2_g8_s6.txt": {
+  "words": 783,
+  "chunks": 3,
+  "desklib": 22.3,
+  "desklib_chunks": [
+   6.3,
+   76.2,
+   4.3
+  ],
+  "fakespot": 51.2,
+  "fakespot_chunks": [
+   55.1,
+   5.7,
+   74.1
+  ]
+ },
+ "human_phones8_3_g8_s6.txt": {
+  "words": 749,
+  "chunks": 2,
+  "desklib": 1.8,
+  "desklib_chunks": [
+   2.0,
+   1.7
+  ],
+  "fakespot": 6.5,
+  "fakespot_chunks": [
+   1.2,
+   11.2
+  ]
+ },
+ "human_phones8_4_g8_s5.txt": {
+  "words": 397,
+  "chunks": 2,
+  "desklib": 7.7,
+  "desklib_chunks": [
+   9.7,
+   3.3
+  ],
+  "fakespot": 1.7,
+  "fakespot_chunks": [
+   0.1,
+   5.2
+  ]
+ },
+ "human_phones8_5_g8_s5.txt": {
+  "words": 397,
+  "chunks": 1,
+  "desklib": 0.2,
+  "desklib_chunks": [
+   0.2
+  ],
+  "fakespot": 0.9,
+  "fakespot_chunks": [
+   0.9
+  ]
+ },
+ "human_phones8_6_g8_s5.txt": {
+  "words": 441,
+  "chunks": 2,
+  "desklib": 35.1,
+  "desklib_chunks": [
+   7.3,
+   90.1
+  ],
+  "fakespot": 28.0,
+  "fakespot_chunks": [
+   37.3,
+   9.5
+  ]
+ },
+ "human_phonesdriving_1_g_s6.txt": {
+  "words": 1051,
+  "chunks": 4,
+  "desklib": 59.1,
+  "desklib_chunks": [
+   92.8,
+   43.1,
+   18.6,
+   89.3
+  ],
+  "fakespot": 80.9,
+  "fakespot_chunks": [
+   99.9,
+   81.3,
+   86.0,
+   67.8
+  ]
+ },
+ "human_phonesdriving_2_g_s6.txt": {
+  "words": 965,
+  "chunks": 3,
+  "desklib": 5.9,
+  "desklib_chunks": [
+   1.9,
+   3.8,
+   12.2
+  ],
+  "fakespot": 51.7,
+  "fakespot_chunks": [
+   9.4,
+   48.5,
+   96.6
+  ]
+ },
+ "human_phonesdriving_3_g_s6.txt": {
+  "words": 791,
+  "chunks": 3,
+  "desklib": 15.7,
+  "desklib_chunks": [
+   33.5,
+   11.2,
+   1.7
+  ],
+  "fakespot": 48.3,
+  "fakespot_chunks": [
+   87.0,
+   61.5,
+   2.2
+  ]
+ },
+ "human_phonesdriving_4_g_s6.txt": {
+  "words": 714,
+  "chunks": 2,
+  "desklib": 1.2,
+  "desklib_chunks": [
+   2.1,
+   0.3
+  ],
+  "fakespot": 5.1,
+  "fakespot_chunks": [
+   9.3,
+   1.3
+  ]
+ },
+ "human_phonesdriving_5_g_s6.txt": {
+  "words": 877,
+  "chunks": 4,
+  "desklib": 13.6,
+  "desklib_chunks": [
+   3.5,
+   52.0,
+   0.6,
+   3.3
+  ],
+  "fakespot": 22.6,
+  "fakespot_chunks": [
+   0.1,
+   97.9,
+   0.0,
+   0.3
+  ]
+ },
+ "human_phonesdriving_6_g_s6.txt": {
+  "words": 530,
+  "chunks": 2,
+  "desklib": 0.9,
+  "desklib_chunks": [
+   1.7,
+   0.3
+  ],
+  "fakespot": 0.1,
+  "fakespot_chunks": [
+   0.1,
+   0.0
+  ]
+ }
+}
