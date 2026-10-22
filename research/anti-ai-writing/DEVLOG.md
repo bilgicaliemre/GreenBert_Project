@@ -543,7 +543,7 @@ searching. The paper says so, and the survey now asks raters not to search for t
 
 ## 20. First human rating (1 rater, 6 pairs)
 
-First code returned from the reading study (rater: student, English not first language). Raw codes are kept out
+First code returned from the reading study. **The rater was the author (pilot run), so it is excluded from any analysis**; it is logged only as a pilot (rater: student, English not first language). Raw codes are kept out
 of this public repository; only the tally is logged. Decoded with `scripts/decode_survey.py`.
 
 | Pair | Better writing | Reads more like AI |
@@ -556,3 +556,8 @@ in 47 of 48 judgments. A likely part of the gap: model judges had the facts file
 human raters see only the two texts, so a plain text's invented arc or resolution costs it nothing. That is the
 fidelity-arc tradeoff from section 6, now on the reader's side. If this pattern holds with more raters, the paper's
 claim has to narrow to "preferred by judges who can check the facts".
+
+Pilot detail (author's run, excluded): the author agreed with the three AI judges on "better writing" in 0 of 6
+pairs (the judges were unanimous, 3 of 3, for the skill's text in all six). On "reads more like AI" the author
+matched the judges' higher AI-suspicion text in 3 of 6. In three pairs the author picked the same text as both
+better and more AI-like, which suggests that for this reader "better" partly meant polished and complete.
