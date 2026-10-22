@@ -540,3 +540,19 @@ without the name. Earlier commits on this branch still contain the names (raised
 
 **Survey blinding.** All generated texts and the survey key are public, so a rater could unblind a pair by
 searching. The paper says so, and the survey now asks raters not to search for the texts.
+
+## 20. First human rating (1 rater, 6 pairs)
+
+First code returned from the reading study (rater: student, English not first language). Raw codes are kept out
+of this public repository; only the tally is logged. Decoded with `scripts/decode_survey.py`.
+
+| Pair | Better writing | Reads more like AI |
+|---|---|---|
+| Skill vs plain (4 pairs: lab discussion, personal statement, explainer, cold email) | plain 3, skill 0, same 1 | skill 2, plain 2 |
+| Skill vs word list (2 pairs: news article, Romeo and Juliet) | word list 2, skill 0 | skill 1, word list 1 |
+
+One rater cannot support a conclusion, but this is the opposite of the model judges, who put the skill above plain
+in 47 of 48 judgments. A likely part of the gap: model judges had the facts file and counted invented claims;
+human raters see only the two texts, so a plain text's invented arc or resolution costs it nothing. That is the
+fidelity-arc tradeoff from section 6, now on the reader's side. If this pattern holds with more raters, the paper's
+claim has to narrow to "preferred by judges who can check the facts".
