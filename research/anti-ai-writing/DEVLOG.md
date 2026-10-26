@@ -732,3 +732,11 @@ meaning once; the conclusion stated whole-heartedly, never balanced or hedged; a
 reach once or twice (a vivid line, a simile, a bigger word); ordinary contractions restored; the permission to add
 connective observations removed. Round 2 judges the real essays (H), the real essays copyedited for errors only (C),
 v7 (F), the v8 candidate (G) and v8b (K) on the same 24 development essays.
+
+**Round 1 artifact and paper fix.** The real Greek-widows essay carried a scraping artifact: accented Greek letters
+had become "?" ("τον ?ντρα σου"), while the model versions, written from notes, had them right. Round 1 judged that
+one real essay with the artifact; from round 2 on its accents are restored in the real and copyedited copies. A
+scan of all 40 real essays found one other possible artifact (a test essay), to be checked by program when the test
+piles are built. The paper's abstract and detector paragraph said the detectors passed every model-written personal
+essay (89 of 89); both now say that held only for essays from invented briefs and give the development numbers
+above. The full section follows the held-out test.
