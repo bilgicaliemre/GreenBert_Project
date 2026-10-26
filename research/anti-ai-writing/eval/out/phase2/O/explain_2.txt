@@ -1,0 +1,15 @@
+Why does Earth have seasons?
+
+A common answer to "why is summer hot?" is that Earth gets closer to the Sun. The guess makes sense (a campfire feels hotter up close), but the dates do not fit. Earth is closest to the Sun in early January, about 147 million kilometers away, and farthest in early July, about 152 million kilometers away. In the Northern Hemisphere, early January is the middle of winter.
+
+The distance idea fails a second test. If it set the seasons, the whole planet would have summer at once. Instead the hemispheres take turns: December is summer in Australia and winter in Canada. The changing distance does make January sunlight about 7 percent stronger than July sunlight, but tilt has a far larger effect.
+
+Seasons come from the tilt of Earth's axis, the imaginary line through the poles that the planet spins around. If you drew Earth's orbit as a flat circle on a table, the axis would lean about 23.4 degrees from straight up, and it keeps pointing the same way in space all year, roughly toward Polaris, the North Star. So for half the year the Northern Hemisphere leans toward the Sun, and for the other half it leans away. The lean toward the Sun peaks around June 21; around December 21 the Southern Hemisphere gets its turn.
+
+A hemisphere tilted toward the Sun sees it higher in the sky. High sunlight strikes the ground almost straight on and concentrates its energy on a small patch; low sunlight spreads the same energy over a larger area, so each square meter gets less. A beam arriving 30 degrees above the horizon covers twice the ground of one coming straight down. You can see this with a flashlight and a sheet of paper: shine it straight down, then tilt it, and the bright circle stretches into a wider, dimmer oval.
+
+The tilt also gives the summer hemisphere longer days, so the stronger sunlight shines for more hours. In London, the longest day in June lasts about 16 and a half hours, and the shortest day in December lasts under 8. North of the Arctic Circle, the Sun does not set at all around the June solstice.
+
+Near the equator, neither effect changes much. The noon Sun is never far from overhead and days stay close to 12 hours long all year, so many tropical places have rainy and dry seasons instead of hot and cold ones.
+
+In the Northern Hemisphere, the hottest weeks usually come in July and August rather than on the longest day in June, because land and especially oceans take weeks to warm up after the sunlight peaks.

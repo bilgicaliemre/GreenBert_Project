@@ -1,0 +1,40 @@
+{
+ "note": "Development set (24 essays), detector means per version; aggregate only.",
+ "by_version": {
+  "H": {
+   "n": 24,
+   "desklib": 45.5,
+   "fakespot": 71.6,
+   "superannotate": 65.8,
+   "pass_all_three_below_20": 1
+  },
+  "P": {
+   "n": 24,
+   "desklib": 30.1,
+   "fakespot": 40.8,
+   "superannotate": 43.2,
+   "pass_all_three_below_20": 2
+  },
+  "L": {
+   "n": 24,
+   "desklib": 19.4,
+   "fakespot": 37.7,
+   "superannotate": 27.2,
+   "pass_all_three_below_20": 7
+  },
+  "F": {
+   "n": 24,
+   "desklib": 7.1,
+   "fakespot": 25.1,
+   "superannotate": 19.0,
+   "pass_all_three_below_20": 11
+  },
+  "G": {
+   "n": 24,
+   "desklib": 10.3,
+   "fakespot": 24.9,
+   "superannotate": 24.6,
+   "pass_all_three_below_20": 7
+  }
+ }
+}

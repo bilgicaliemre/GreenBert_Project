@@ -1,0 +1,14 @@
+Subject: Volunteering in your lab, summer 2027
+
+Dear Dr. Halvorsen-Pike,
+
+Could I volunteer in your freshwater ecology lab next summer, between June 14 and August 6? I'm a senior at Brindlewood High School. I don't need pay or credit, and I'd be fine sorting samples, entering data or washing gear.
+
+I've read your 2025 paper on road-salt pulses and mayfly emergence twice. I didn't follow the mixed-effects models, but I have a question about Figure 3. Emergence at site B dropped about 40% after the February chloride spike, while site C barely changed, though peak chloride was similar (about 610 vs. 590 mg/L). The methods say chloride came from surface grab samples. Was it ever measured at the streambed, where the nymphs are? Could the groundwater seep at site C dilute it there?
+
+Last spring I spent five Saturdays with Tessaly Creek Watershed Friends, kick-net sampling and counting macroinvertebrates. For my junior-year science fair I measured conductivity in a drainage ditch before and after snow events; I forgot the temperature correction on my first three readings and had to discard them. I got a 4 on AP Bio and am taking AP Stats, but I've only used Google Sheets, not R or Python.
+
+I'll be 18 by then and away only July 19 to 26. I have no car, but my mom can drive me Tuesdays and Thursdays; otherwise I'd take the bus (about 55 minutes). My counselor, Mr. Feltham, offered to write a reference.
+
+Thank you,
+Maya Ortolan

@@ -1,0 +1,15 @@
+Why is the sky blue, and why do sunsets turn red and orange?
+
+Sunlight looks white, but it is a mix of every color of the rainbow, from violet light with a wavelength around 400 nanometers to red light near 700. Air is mostly nitrogen and oxygen molecules, far smaller than any of those wavelengths, and when light hits something that small, part of it bounces off in a new direction. Physicists call this scattering, and it does not treat all colors equally.
+
+In 1871 Lord Rayleigh showed that scattering by tiny particles grows steeply as the wavelength gets shorter: halve the wavelength and the light scatters sixteen times as much. Blue light at about 450 nanometers scatters roughly six times more than red light at 700. Look at any patch of sky away from the sun and you are seeing sunlight that air molecules knocked sideways toward you, most of it blue. The Moon has no air to do this, which is why the Apollo astronauts saw a black sky in full daylight.
+
+Violet has an even shorter wavelength, so why isn't the sky violet? Sunlight contains less violet than blue to begin with, and our eyes are much less sensitive to it. Your eyes and brain read the scattered mix, mostly blue with some violet and green, as pale blue.
+
+Sunsets come from the same physics. Light from a high sun crosses a fairly thin layer of air, but light from a sun near the horizon travels sideways through dozens of times more air before it reaches you. Along that path, most of the blue scatters out in other directions (it is lighting up the afternoon sky for people farther west). What survives the trip is the light that scatters least: yellow, orange and red.
+
+Cloud droplets, much bigger than light's wavelengths, scatter all colors about equally, which is why clouds look white or gray. Smoke and volcanic ash can make sunsets a deeper red. After Krakatoa erupted in 1883, its ash and gas in the upper atmosphere produced unusually vivid sunsets around the world for months.
+
+On Mars the colors are roughly reversed. Fine dust hangs in its thin air and tints the daytime sky a reddish tan. The dust grains send blue light mostly forward, close to the direction of the sun, so NASA rovers have photographed Martian sunsets with a blue glow around the sun.
+
+To see the Earth version, stir a little milk into a clear glass of water and, in a dark room, shine a flashlight through it. From the side, the beam looks faintly blue. Look through the glass straight at the flashlight and its light looks orange.

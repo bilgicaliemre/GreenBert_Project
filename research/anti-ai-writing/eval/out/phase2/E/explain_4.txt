@@ -1,0 +1,23 @@
+Why is the sky blue, and why do sunsets turn red?
+
+On a clear afternoon the sky is blue. A few hours later the same sky glows orange and red. Same sun, same air, so what changed? Both colors come from one process: the gas molecules in our atmosphere scatter sunlight, and they scatter some colors far more than others.
+
+Sunlight looks white, but it is really a blend of every color in the rainbow; a prism or a raindrop can split it apart. Each color is light with a different wavelength. Red has the longest waves, violet the shortest, and blue sits near the short end.
+
+Air scatters short waves more
+
+Our atmosphere is mostly nitrogen and oxygen molecules, which are far smaller than the wavelength of visible light. When sunlight hits them, some of it is sent off in new directions. This is called Rayleigh scattering, and it depends strongly on wavelength: the amount of scattering scales with one over the wavelength to the fourth power. Cut the wavelength in half and the light scatters sixteen times as much (2 × 2 × 2 × 2).
+
+Blue light, with its shorter waves, gets scattered far more than red. As sunlight passes through the air, blue light is bounced all across the sky. Wherever you look, some of that scattered blue light is heading toward your eyes, so the whole sky looks blue, not just the area around the sun.
+
+Why not violet? Violet scatters even more than blue, but the sun gives off less violet light, some of it is absorbed high in the atmosphere, and our eyes are less sensitive to it, so the scattered mix that reaches us looks sky blue.
+
+Why sunsets turn red
+
+At midday, sunlight takes a fairly short path through the air to reach you. At sunrise and sunset the sun sits low on the horizon, and its light has to travel through much more atmosphere. Along that long path most of the blue is scattered out before it reaches you, which leaves the longer wavelengths: yellow, orange, and red.
+
+Dust, smoke, and haze change the colors too. Particles bigger than gas molecules scatter light differently, which is why sunsets after a wildfire can look especially deep red. Clouds look white for a related reason: their water droplets are large enough to scatter all colors about equally.
+
+Try it yourself
+
+In a dark room, fill a clear glass with water and stir in a few drops of milk. Shine a flashlight through it. From the side, the water looks faintly blue. Look through the glass toward the flashlight, and the light looks yellow-orange. You've just made a sky and a sunset in a cup.

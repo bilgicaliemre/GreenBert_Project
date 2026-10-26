@@ -1,0 +1,27 @@
+How Do mRNA Vaccines Teach the Immune System?
+
+When you hear "vaccine," you might picture a weakened or inactivated germ being injected into your arm. Many traditional vaccines work that way. mRNA vaccines take a different route: instead of delivering a piece of the germ itself, they deliver instructions that let your own cells build one harmless piece of it. Your immune system then learns from that piece.
+
+Start with the message
+
+Inside your cells, DNA stores the blueprints for proteins. To make a protein, a cell copies the relevant gene into a temporary message called messenger RNA, or mRNA. Structures called ribosomes read the mRNA and assemble the protein one amino acid at a time. mRNA is short-lived; cells break it down after use.
+
+An mRNA vaccine contains a lab-made message that codes for one specific viral protein. In the COVID-19 vaccines, that protein is the spike protein, which the coronavirus uses to latch onto human cells. The spike protein on its own cannot make you sick, so producing it is safe.
+
+Getting the message inside
+
+mRNA is fragile, so the vaccine wraps it in tiny bubbles of fat called lipid nanoparticles. After the injection, cells near the injection site take in these particles, and the mRNA is released into the cytoplasm, the fluid outside the nucleus. It never enters the nucleus, where DNA is kept, and it cannot change your genes. After being read, the mRNA is broken down, typically within a few days.
+
+Sounding the alarm
+
+Cells that read the vaccine's message make the spike protein and display fragments of it on their surface. The immune system recognizes these as foreign. Antigen-presenting cells show the fragments to T cells, which help organize the response. Helper T cells activate B cells, which produce antibodies shaped to fit the spike protein. Killer T cells learn to recognize and destroy infected cells.
+
+Remembering for later
+
+The most important result is memory. After the response calms down, some B and T cells remain as long-lived memory cells. If the real virus ever appears, they recognize the spike protein and respond faster and more strongly than the first time. Protection can fade, and viruses can mutate, which is why updated doses are sometimes recommended.
+
+Why it matters
+
+Because an mRNA vaccine only requires the genetic sequence of a target protein, scientists can design and update one more quickly than many traditional vaccines. Researchers are exploring it for influenza, other infections, and some cancers.
+
+The big idea: an mRNA vaccine does not fight the virus directly. It gives your immune system a safe practice run, so it is ready when the real threat arrives.

@@ -1,0 +1,106 @@
+Marisol,
+
+I read this twice: once fast, the way an admissions officer with a stack of essays would, and once slowly with your interview answers next to it. The first eight paragraphs mostly do their job. The last two are where your next draft should go, and they're also what a reader remembers best.
+
+Before the details: I'll quote your lines, point at problems, ask questions and list grammar fixes, but I won't write sentences for you. The Common App counts AI-written content as not your own work, and everything good in this draft came out of your head, so the new sentences have to come from there too.
+
+(Paragraph numbers below count the one-line "Twelve minutes earlier" paragraph as 2.)
+
+
+1. The biggest problem: the ending settles things you haven't settled
+
+The draft ends: "But when I do, I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means." The first sentence is a promise and the second is a moral. That moral could close any science applicant's essay, and admissions readers see that kind of line all the time.
+
+It also doesn't match what you told me. You said the numbers are done and "I just haven't said anything back to her yet." And when I asked what you do differently now, you said: "I don't announce forecasts at the stand anymore. I still check radar like every five minutes. I just don't say anything. So, I don't know. Maybe I changed, or maybe I just stopped saying it out loud. Probably that one."
+
+That answer is the best reflection you gave me, and it isn't in the draft. The prompt asks for the outcome, and that's an honest one: a real change (sandbags first, no more forecasts out loud) and a real doubt about how deep the change goes.
+
+Steps:
+1. Delete those last two sentences.
+2. After "Now I put the sandbags on first, before I even look at the sky," write what you do and don't do at the stand now, and your doubt about it. Your wording above is already good; trim it only for grammar.
+3. Your sentence "I haven't told her yet." can be the end, or close to it. If you want to say why you haven't, answer question 1 at the bottom first.
+
+
+2. What a reader knows about you afterward
+
+That you build things, you check your data, and you can admit you wanted to beat your brother. The part nobody else could write is in paragraph 7: you were using the radar to win the argument with Gabe about whether your mom should keep doing the weekly markets with her back. That is much more specific than the usual science-kid lesson about being humble with data, so keep the essay pointed at it. Right now the last line pulls it back toward the general version.
+
+
+3. Shape and opening
+
+The opening works: a time-stamped scene, damage you can count, and "Putting them on was my job." confessing before the reader knows anything else about you.
+
+The turn works too, in two steps. First you were "kind of right" about the rain and wrong about the wind, and then "that isn't the whole reason." Keep that order. I wouldn't move any paragraphs.
+
+One gap a reader will trip on: paragraph 4 says your family sells "at the Saturday night market," then paragraph 7 says your mom makes $4.10 an hour "on a normal Sunday" and Gabe wants her to stop "the weekly markets." A reader doesn't know there's a Sunday market. Mention Rillito where you first introduce the stand.
+
+
+4. Reflection lines, one at a time
+
+- "So I already knew data can fool you. I thought that made me the kind of person who checks." Earned by the swamp cooler and Glen. Keep it. This is the belief the essay tests, and it's planted before the test.
+- "I was so locked on where the rain was going that the wind just wasn't in my head." Earned by the outflow paragraph, and it sounds like you. Keep.
+- "I just wanted to win." Earned and uncomfortable. Keep.
+- Paragraph 9 says both of those things a second time. "That night I had to question something I believed about myself..." repeats the last line of paragraph 3, and "Really I was using the radar to win an argument" repeats "I just wanted to win." It also borrows the prompt's own wording. Try reading the essay without paragraph 9. If you can still point to the belief (paragraph 3) and the confession (paragraph 7), cut it. If you keep one sentence, check question 3 first.
+
+
+5. What you told me that isn't in the draft
+
+a. "Gabe didn't say anything, he just started picking up the glass." About ten words, and it shows how bad the moment was without you having to explain it.
+
+b. The $168. Your mom paid Mr. Duarte that night, cash, out of the apron. You said you'd pay her back, you're at $60, Gabe thinks you already did, and she hasn't asked once. "Part of me wants her to ask, which is weird."
+
+c. The fight in the truck. You told me Gabe said "I want the stand to stay exactly the same so I can go away and it's still there when I come back, like my nana's chair." After a long pause you said: "I'm the one who's leaving, probably. And I'm also the one saying keep doing it, standing on the gravel every Sunday, with her back." And then: "I don't know where I was going with that."
+
+There isn't room for all of it. The forecast doubt from section 1 comes first. After that, pick one of b or c, not both. (b) is short and concrete. (c) goes furthest into why you wanted to win, but it costs about 50 words, so it only fits if you shorten the weather-station paragraph, and only if you're willing to leave it as unsure as you left it with me. Don't give it a meaning you don't have. (a) is cheap and fits anywhere after the crash.
+
+
+6. Lines that sound generic, and paragraph endings
+
+- "Here is the weird part." is a run-up: it announces the next sentence instead of saying it. Cut it.
+- "I think that is what being a scientist actually means." See section 1. It's also the one line in the essay that doesn't sound like you talking. Most of the rest does ("kind of right," "literally," "just wasn't in my head").
+- Read the last sentence of every paragraph in a row: "Putting them on was my job." / "...trust me." / "...the kind of person who checks." / "I think I said it twice." / "I just wanted to win." / "I was on the roof with my graph." / "...to win an argument." / "...actually means." Most of them are short punch lines. One or two of those make an essay stronger; six start to sound like a technique. The cuts above remove two. Of the rest, "Putting them on was my job." and "I was on the roof with my graph." are worth keeping, and "I just wanted to win." is your confession. "I think I said it twice." can join the sentence before it.
+
+
+7. Making room
+
+You're at 647 of 650. Cuts, with word counts:
+- paragraph 9: 34 words (10 if you keep only the first sentence)
+- the last two sentences: 31
+- "(not the TV kind, every adult asks that)": 8. Funny, but the reader doesn't need it, and it has a comma splice.
+- "Here is the weird part.": 5
+
+That's up to 78 words. If you choose (c), shorten paragraph 3 next. At 111 words it's the longest paragraph in the essay. Glen's email and the ping-pong anemometer are the parts only you have; the list of parts around them is the easiest place to trim. You also don't have to use all 650.
+
+
+8. What works
+
+- Glen's one-line email, "Do you have an evaporative cooler?" It's funny, and it's the first proof that data can fool you, so the reader believes the last line of paragraph 3.
+- "My forecast was kind of right." A less honest essay would leave out that you were partly right. Keeping it shows the problem wasn't bad forecasting, which is what sets up paragraph 7.
+- "My mom was at the kitchen table going through the husks to see if any were still okay. I was on the roof with my graph." These are the best two sentences in the essay. You put your mom and yourself in two places in the same house and let the reader see what that means. Don't add an explanation after them.
+
+
+9. Corrections
+
+1. Paragraph 1: "was right there and her dad yanked her back" → "was right there, and her dad yanked her back"
+2. Paragraph 3: "(not the TV kind, every adult asks that)" is a comma splice. Cut it (section 7) or split it into two sentences.
+3. Paragraph 4: "a storm cell over the Rincons": readers outside Tucson won't know those are mountains. Use "the Rincon Mountains" here.
+4. Paragraph 4: I said "in a sec." → I said, "In a sec."
+5. Paragraph 5: put what you said in quotation marks, the way you did in paragraph 2: I said, "No, it's splitting, it's going north, trust me."
+6. Paragraph 5: said "la científica says we stay." → said, "La científica says we stay."
+7. Paragraph 7: When he said pack up, → When he said "pack up,"
+8. Paragraph 7: "I was thinking if we left and it missed, that's one more point for his whiteboard." The tense jumps from "was thinking" to "that's." Either set the thought in italics as the words in your head, or change "that's" to "that would be." Also check that a reader can tell what that point would prove. The way you put it to me was "see, the stand even loses nights."
+9. Paragraph 8: "47 miles an hour" starts a sentence → "Forty-seven miles an hour"
+10. Paragraph 9, if you keep it: "about myself, that I was" → "about myself: that I was"
+11. Optional: "July 18th" → "July 18," the usual written form.
+
+
+10. Questions to answer before draft 2
+
+1. Why haven't you told your mom what the numbers say? The numbers themselves can stay out of the essay. But you need this answer to write the last paragraph truthfully, and it's the question a reader finishes with.
+2. The $108 and the numbers are both things you haven't settled with your mom. Is there a connection between them for you, or are they separate? If you see one, is it real, or one you wish were there?
+3. Paragraph 9 says "That night." Did you realize you wanted to win that night on the roof, or later? Use the real timing.
+4. Paragraph 2 says you told "my whole family." Who was at the stand when you said "trust me"? If it was your mom and Gabe, say that. Also, you told me the dust came "around 6:40." If that's an estimate, "twelve minutes" is more exact than you know.
+
+The shoe guessing and your nana unplugging the lightning sensor don't belong in this essay, but either could be a good short answer if a school asks for one.
+
+Write draft 2 fast, read it out loud once, and send it back.

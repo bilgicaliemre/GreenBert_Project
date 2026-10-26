@@ -1,0 +1,17 @@
+Regional recap: Marrowfield, October 17
+
+The Gearfoxes went 3-2-1 in qualification matches at the Ostrander Valley Robotics League regional on Saturday, October 17, and finished quals ranked 9th of 32 teams. We got picked for an alliance and lost in the quarterfinals. We didn't win an award or qualify for state, so our next chance is the Elk Ridge qualifier on November 14.
+
+Fourteen students, two mentors and Coach Tibbetts made the trip to the Marrowfield Community College gym. The bus was scheduled for 5:45 a.m. and left at 6:10. Rohan Achterberg forgot the battery charger, so our driver, Mr. Lund, turned around (he also kept the same classic rock station on all day). At 8:15 we failed inspection because our bumper was 2 mm too high. We filed it down and passed at 8:50.
+
+The gym's air conditioning was broken and it was about 84°F inside. I'd worn the wrong shoes, and my feet hurt by noon. Our first match, Q4, was a 48-61 loss. In Q11 our autonomous code was mirrored wrong for the red side, and the robot drove straight into the wall as the match started. We won anyway, 72-40. Q19 was a 55-55 tie. I misread the schedule before that one, and the queuer called our number twice before we showed up.
+
+Q23 was our worst match, a 30-68 loss. The shoulder bracket on the intake arm cracked, and the arm hung limp for the rest of the match. I had printed that bracket on Thursday night at 20% infill (the inside is mostly empty) to save time. It should have been printed at 100% or made of metal.
+
+Marisol Fenwick, a sophomore, and mentor Gus Abernathy-Reyes swapped in an aluminum bracket from our spares. It took them 25 minutes, and they finished before Q31. Marisol cut her finger on an edge, but a band-aid took care of it. Q31 turned out to be our best score of the day, an 81-52 win. In Q38 the left drive motor overheated near the end, but the robot kept going and we won 64-59.
+
+Alliance captain Team 4410 (Copperline Prep, the Voltage Vultures) picked us second. Theo Brannagan wore the fox head at alliance selection, couldn't see out of it, and walked into Copperline's pit banner and knocked it over. Their whole pit laughed, and Theo bowed. In the best-of-three quarterfinal, our alliance lost 0-2, with scores of 71-77 and 60-84.
+
+The judge who did our pit interview (Ms. Ferraro-Quint, according to her name tag) said our notebook was the best-organized one she'd seen that day. She also pointed out that our CAD screenshots had no dimensions, and she asked why we were using 3D-printed parts on load-bearing joints. I didn't have a good answer. On the bus home we argued about the arm. Rohan and I wanted to rebuild the whole thing in aluminum before November 14. Marisol and Theo wanted to reprint at 100% infill and spend the time on autonomous instead. It got loud, and Coach Tibbetts said we would decide at the Tuesday meeting.
+
+Culver's beat Wendy's 9-5 in the food-stop vote, and the vending machine ate Priya's $2. Finally, thank you to Quillby's Hardware for donating aluminum stock to the team.

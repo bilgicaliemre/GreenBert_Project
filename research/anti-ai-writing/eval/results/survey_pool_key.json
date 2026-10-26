@@ -1,0 +1,162 @@
+{
+ "Q01": {
+  "brief": "ps_kacper",
+  "x": "F",
+  "y": "P"
+ },
+ "Q02": {
+  "brief": "ps_kacper",
+  "x": "L",
+  "y": "F"
+ },
+ "Q03": {
+  "brief": "supp_kacper",
+  "x": "P",
+  "y": "F"
+ },
+ "Q04": {
+  "brief": "supp_kacper",
+  "x": "L",
+  "y": "F"
+ },
+ "Q05": {
+  "brief": "ps_marisol",
+  "x": "F",
+  "y": "P"
+ },
+ "Q06": {
+  "brief": "ps_marisol",
+  "x": "F",
+  "y": "L"
+ },
+ "Q07": {
+  "brief": "supp_marisol",
+  "x": "P",
+  "y": "F"
+ },
+ "Q08": {
+  "brief": "supp_marisol",
+  "x": "L",
+  "y": "F"
+ },
+ "Q09": {
+  "brief": "argue_5",
+  "x": "P",
+  "y": "F"
+ },
+ "Q10": {
+  "brief": "argue_5",
+  "x": "L",
+  "y": "F"
+ },
+ "Q11": {
+  "brief": "argue_6",
+  "x": "P",
+  "y": "F"
+ },
+ "Q12": {
+  "brief": "argue_6",
+  "x": "L",
+  "y": "F"
+ },
+ "Q13": {
+  "brief": "explain_5",
+  "x": "P",
+  "y": "F"
+ },
+ "Q14": {
+  "brief": "explain_5",
+  "x": "L",
+  "y": "F"
+ },
+ "Q15": {
+  "brief": "explain_6",
+  "x": "F",
+  "y": "P"
+ },
+ "Q16": {
+  "brief": "explain_6",
+  "x": "L",
+  "y": "F"
+ },
+ "Q17": {
+  "brief": "lit_romeo",
+  "x": "F",
+  "y": "P"
+ },
+ "Q18": {
+  "brief": "lit_romeo",
+  "x": "L",
+  "y": "F"
+ },
+ "Q19": {
+  "brief": "lit_pride",
+  "x": "F",
+  "y": "P"
+ },
+ "Q20": {
+  "brief": "lit_pride",
+  "x": "L",
+  "y": "F"
+ },
+ "Q21": {
+  "brief": "email_extension",
+  "x": "P",
+  "y": "F"
+ },
+ "Q22": {
+  "brief": "email_extension",
+  "x": "L",
+  "y": "F"
+ },
+ "Q23": {
+  "brief": "email_lab",
+  "x": "F",
+  "y": "P"
+ },
+ "Q24": {
+  "brief": "email_lab",
+  "x": "F",
+  "y": "L"
+ },
+ "Q25": {
+  "brief": "cover_letter",
+  "x": "P",
+  "y": "F"
+ },
+ "Q26": {
+  "brief": "cover_letter",
+  "x": "L",
+  "y": "F"
+ },
+ "Q27": {
+  "brief": "blog_robotics",
+  "x": "P",
+  "y": "F"
+ },
+ "Q28": {
+  "brief": "blog_robotics",
+  "x": "L",
+  "y": "F"
+ },
+ "Q29": {
+  "brief": "lab_pendulum",
+  "x": "P",
+  "y": "F"
+ },
+ "Q30": {
+  "brief": "lab_pendulum",
+  "x": "F",
+  "y": "L"
+ },
+ "Q31": {
+  "brief": "news_cafeteria",
+  "x": "F",
+  "y": "P"
+ },
+ "Q32": {
+  "brief": "news_cafeteria",
+  "x": "L",
+  "y": "F"
+ }
+}

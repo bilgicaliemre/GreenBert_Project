@@ -1,0 +1,19 @@
+At 6:52 p.m. on July 18th, our canopy went up like a kite. It cartwheeled two booths over and landed on Mr. Duarte's honey table. Fourteen jars broke. Our steamer tipped over and six dozen tamales went into the gravel. A little girl with a mango paleta was right there and her dad yanked her back. Nobody got hurt, but the four sandbags that were supposed to hold our canopy down were still in the back of the truck. Putting them on was my job.
+
+Twelve minutes earlier I had told my whole family "trust me."
+
+I want to study atmospheric science (not the TV kind, every adult asks that). On our flat roof in Tucson I built a weather station out of a Raspberry Pi, a $31 rain gauge, a lightning sensor, and an anemometer made from ping-pong balls. The first month it said it rained 19 days in June. It didn't rain once. It was the swamp cooler dripping into the gauge. I emailed the weather service about my "unusual totals" and a man named Glen wrote back one line: "Do you have an evaporative cooler?" So I already knew data can fool you. I thought that made me the kind of person who checks.
+
+Every summer my family sells tamales at the Saturday night market behind the Mercado. On the drive over I had seen a storm cell over the Rincons, so as soon as the canopy legs were up I sat on the cooler with radar open on my phone. My mom told me to get the sandbags. I said "in a sec." I think I said it twice.
+
+Around 6:40 we could see brown dust coming from the east. My brother Gabe, who almost never works the stand, said we should pack up. I said no, it's splitting, it's going north, trust me. My mom laughed and said "la científica says we stay."
+
+Here is the weird part. The rain did go north. We got maybe four drops. My forecast was kind of right. What hit us was the outflow, the wind that runs out ahead of a storm, which is literally what I had been reading about all summer. I was so locked on where the rain was going that the wind just wasn't in my head.
+
+But honestly that isn't the whole reason. Gabe has a whiteboard on our fridge where he did the stand's numbers, and on a normal Sunday my mom makes $4.10 an hour. She has a disc problem in her back and he wants her to stop the weekly markets. When he said pack up, I was thinking if we left and it missed, that's one more point for his whiteboard. If we stayed and it missed, I'd be right in front of him. I just wanted to win.
+
+We drove home and nobody talked. I went straight up on the roof to see what my station got. 47 miles an hour, which means nothing because our house is six miles away. My mom was at the kitchen table going through the husks to see if any were still okay. I was on the roof with my graph.
+
+That night I had to question something I believed about myself, that I was the one in my family who goes by the evidence. Really I was using the radar to win an argument.
+
+Now I put the sandbags on first, before I even look at the sky. In September my mom asked me, just me, if she should drop the Saturday market next summer. I said I'd look at the numbers. They're done, in a tab next to my rain data. I haven't told her yet. But when I do, I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means.
