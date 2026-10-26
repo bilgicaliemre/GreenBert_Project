@@ -656,3 +656,38 @@ v8 wrote all 24 development essays from the same notes; the piles judge real, pl
 Exposure note: after v8 was drafted, a shell glob that matched nothing printed the closing lines of v7's versions
 for all 40 essays, test set included. These are model outputs only (no real essay text and no judgments), and
 nothing in v8 changed afterwards because of them.
+
+**Development round 1 results (24 essays, 5 versions each, 90 piles, 360 ratings).** Three judges: an editor and an
+admissions reader on the main model, and an admissions reader on a smaller model. Aggregates in
+`eval/results/human_benchmark/`.
+
+| Version | Judged a real student (p >= 50) | Mean p(real) | AUC vs real essays | Quality (1-10) |
+|---|---|---|---|---|
+| Admitted student | 100% | 88.0 | - | 5.97 |
+| Plain model | 46% | 48.7 | 0.97 | 6.42 |
+| Word list | 43% | 48.0 | 0.97 | 6.39 |
+| Skill v7 | 47% | 50.1 | 0.95 | 6.40 |
+| Skill v8 candidate | 54% | 53.4 | 0.98 | 6.14 |
+
+- Every real essay was judged real by every judge. The two main-model judges separated real essays from every AI
+  version perfectly (AUC 1.00): each real essay got a higher p(real) than each AI essay. The smaller-model judge
+  was much easier to persuade (it called 96% of v7 and 100% of v8 essays real) but still ranked the real ones
+  higher (AUC 0.94 to 0.99).
+- The judges rated the real admitted essays lowest on quality. They recognize real students by imperfection and
+  mark them down for it.
+- v7 is not better than the word list on human-likeness: +2.0 points of p(real), 95% interval over essays -2.9 to
+  +7.1. The user's pilot reading (section 20) pointed the same way.
+- The v8 candidate is a small step: +3.3 over v7 (-0.5 to +7.4) and +5.4 over the word list (+0.7 to +9.7), at a
+  cost of 0.26 quality points. Its stiff register (no contractions, "people I do not know") likely explains part of
+  the quality loss.
+- Detectors (same 24 essays): the real essays fail worst. All three under 20%: real 1 of 24, plain 2, word list 7,
+  v7 11, v8 7. Mean scores for the real essays: D1 45.5, D2 71.6, D3 65.8. This contradicts the paper's statement
+  that on personal essays the detectors passed every model-written text: built from real students' material,
+  plain-model essays fail too. The paper needs that correction.
+
+What the main-model judges said about the v8 candidate (read before any change): the essays explain their own
+meaning, glossing each scene or quote after it lands; they are even, with clean medium-length sentences joined by
+"and"; they still hedge ("I think", soft endings); they signpost ("The climb I keep thinking about was") and tie
+things up with callbacks and three-part endings. The judges' signs of a real student were errors, awkward or
+overreaching phrasing, cliché morals, résumé lists, digressions and contradictions, odd specific details, and
+irony or contrast left without comment. A blind cue coding of all 360 rationales is running.
