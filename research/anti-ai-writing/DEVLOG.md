@@ -561,3 +561,95 @@ Pilot detail (author's run, excluded): the author agreed with the three AI judge
 pairs (the judges were unanimous, 3 of 3, for the skill's text in all six). On "reads more like AI" the author
 matched the judges' higher AI-suspicion text in 3 of 6. In three pairs the author picked the same text as both
 better and more AI-like, which suggests that for this reader "better" partly meant polished and complete.
+
+## 21. Human-anchored benchmark: real admitted essays (in progress)
+
+**Why.** The user's pilot reading (section 20) did not favor the skill over the word list, and every earlier
+study judged AI text against AI text. The user asked to develop the skill against authentic pre-2022 writing:
+personal statements and short answers.
+
+**Corpus (private, not in this repository).** 90 essays published by admissions offices as examples (Hamilton 38,
+Johns Hopkins 38, Tufts 9, MIT 3, Connecticut College 2), class years up to 2026, so all were written before
+ChatGPT's release (November 2022). The texts stay out of the repository and out of the skill (copyright, and the
+writers are real students). 40 were selected (28 personal statements, 12 supplements) and split before any
+judging into a development set (24) and a test set (16).
+
+**Material.** For each essay an agent reverse-engineered the interview notes a counselor would have taken before the
+student wrote it: every fact, quote and feeling, regrouped by topic, with no run of more than six words copied
+outside quotes. Three writers then produced the essay from the notes alone: plain model (P), word list (L) and
+skill v7 (F). The notes leak almost nothing (about zero shared six-word phrases with the real essay outside quotes).
+
+**First design failed: find the human among four.** Judges saw the real essay and the three AI versions together.
+All 20 completed judgments found the real essay, 19 at the highest confidence. The judges said why, and most of it is
+the design, not the skill: the three AI versions come from the same notes, so they share paraphrases ("lit up gold"
+in all three where the student wrote "glowed like amber"), and the odd one out is the human. The real essays also
+had curly quotes and double spaces where the AI texts had straight ones. Dropped.
+
+**New design: single-text piles.** Each judge reads a pile of four essays by four different students, told that any
+mix of real and AI is possible, and rates each essay on its own (probability a real student wrote it, quality 1-10,
+evidence with quotes). No pile holds two versions of the same student's essay, every judge lens gets its own random
+piles, and all texts are normalized (straight quotes, single spaces, no titles). This is how an admissions reader
+meets an essay: alone. Metric: AUC against the real essays (0.5 = indistinguishable) and mean quality.
+
+**What the four-way judges still taught us** (8 essays, decoded after judging). Tells named in all AI
+versions: a put-on casual teen register ("kind of wild", "traveled a ton", "so cringy") where the student wrote
+earnest, reaching vocabulary ("expatriates", "instilled in me", "augmented the joy"); engineered scaffolds ("The easy
+answer is... The harder answer is", "Part of the answer is..." three times); cute framing devices ("(I counted)",
+"The obvious suspects were my parents"); motifs closed too neatly (a mood ring from the first paragraph returns at
+the end); the strongest scene moved to the end so the essay closes on a career statement. The real essays had
+errors no model makes (wrong hyphens, a restrictive "that" inside commas) and also flaws the judges disliked
+(purple openings, flat present-perfect endings). In 13 of 20 judgments the real essay was ranked below at least
+two AI versions as an essay.
+
+**Style features, development set (24 real essays vs the AI versions; after the split repair below).**
+`scripts/style_features.py`.
+
+| Feature | Real | Plain | Word list | Skill v7 |
+|---|---|---|---|---|
+| Mean sentence length (words) | 17.9 | 13.3 | 11.5 | 15.5 |
+| Sentences of 30+ words | 11% | 2% | 1% | 4% |
+| Contractions per 100 words | 1.4 | 2.0 | 2.2 | 2.9 |
+| Abstract nouns (-tion, -ness, -ity...) per 100 words | 2.9 | 1.2 | 1.0 | 1.0 |
+| Stated lessons ("I learned", "taught me") per essay | 1.2 | 0.8 | 0.5 | 0.2 |
+| Dashes per 100 words | 0.17 | 0 | 0 | 0 |
+| Paragraphs ending in a short line | 20% | 22% | 31% | 7% |
+| "really" per 10,000 words | 4.7 | 13.7 | 19.2 | 21.0 |
+| "kind of" per 10,000 words | 0 | 5.3 | 7.7 | 12.1 |
+| "learned" per 10,000 words | 20.4 | 13.0 | 8.5 | 4.8 |
+
+The skill moves away from AI on some features (fewer short kicker endings, longer sentences than plain) but away
+from the real essays on others: it has the most contractions, the fewest stated lessons and no dashes, because its
+rules ban or discourage exactly the things these admitted students did. The real essays also vary far more from
+one another (mean sentence length 11.7 to 22.3 words across the middle 80% of essays; skill v7 13.0 to 17.6), which
+matches Lee et al. (2025) on admission essays. Working hypothesis for v8: the skill models the student's speaking
+voice, but admitted students wrote in a more formal written voice; "anti-AI" rules are not the same as "human".
+The pile judgments decide whether this matters to readers.
+
+**Split repair.** Four of the eight essays behind those comments were in the test set, and I read the comments before
+noticing. A test essay the designer has studied is no longer held out, so the four moved to the development set and
+four development essays of the same type, drawn at random (seed 20261026) from those with no judge comments read,
+moved to test. The swap is driven by exposure, not by any result. The split is still 24 development and 16 test.
+One smaller exposure remains: the first style-feature table was computed over all 40 essays before I restricted it
+to the development set (aggregate means only, no per-essay values read).
+
+**v8 candidate (built from the development set only).** Reading the first and last sentences of the 24 development
+essays next to v7's versions showed one more pattern. The admitted essays end committed: a value, a belief, a plan,
+sometimes grand or a little clichéd ("There can be beauty in spite of loss."). v7's versions end on an
+understated shrug or a deflating aside ("I don't actually know.", "but it's okay", "I'm fine with that"). v7 caused
+this: it bans "taught me", recommends ending on "an honest open question", and says reflection "may be a doubt".
+It also tells the model the voice should sound like "a smart teenager talking", and the interview notes are in
+speech, so the essays inherit the filler. v8 changes the personal-essay guidance only (68 lines across three
+files):
+- Register: the notes are speech; the essay is the student's careful written voice (full sentences, some long,
+  few contractions, no carried-over filler outside quoted speech).
+- Reflection: state the student's own conclusion plainly; "I learned that..." is fine when what follows belongs
+  to this student. Only generic morals and quotable epigrams stay banned. A doubt only where the student really
+  is unsure.
+- Endings: what the student believes, values or will do, or the last moment of the story; no deflating aside,
+  no symbol the student never made. Openings: any strong start, not a default flat fact.
+- Order: chronological is often right; do not hold back the best scene for the ending.
+- Catalog: PE1 (stated lessons) narrowed to generic lessons; PE3 (abstract nouns) narrowed to inflated uses, since
+  current models already avoid journey/passion/challenge and the admitted essays use them more; new PE10, the
+  cool essay. Each number quoted in the skill was rechecked against the development data (three were corrected
+  before use).
+v8 wrote all 24 development essays from the same notes; the piles judge real, plain, word list, v7 and v8 together.
