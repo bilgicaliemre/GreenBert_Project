@@ -1,0 +1,95 @@
+{
+ "note": "Development round 2 (H real, C real copyedited for errors only, F v7, G v8 candidate, K v8b); aggregate only.",
+ "all_lenses": {
+  "n_ratings": 360,
+  "n_essays": 24,
+  "conds": {
+   "H": {
+    "n": 72,
+    "p_human": 87.06944444444444,
+    "p_human_ci": [
+     86.18055555555556,
+     87.95833333333333
+    ],
+    "judged_human": 1.0,
+    "quality": 6.0,
+    "quality_ci": [
+     5.680555555555555,
+     6.319444444444445
+    ]
+   },
+   "C": {
+    "n": 72,
+    "p_human": 85.125,
+    "p_human_ci": [
+     83.9857638888889,
+     86.25
+    ],
+    "judged_human": 1.0,
+    "quality": 6.013888888888889,
+    "quality_ci": [
+     5.722222222222222,
+     6.319444444444445
+    ],
+    "auc_vs_real": 0.6107253086419753,
+    "paired_p_human_minus_real": -1.9444444444444444,
+    "paired_quality_minus_real": 0.013888888888888888,
+    "quality_ge_real": 0.8333333333333334
+   },
+   "F": {
+    "n": 72,
+    "p_human": 47.90277777777778,
+    "p_human_ci": [
+     43.125,
+     52.820486111111116
+    ],
+    "judged_human": 0.4166666666666667,
+    "quality": 6.277777777777778,
+    "quality_ci": [
+     6.0,
+     6.555555555555555
+    ],
+    "auc_vs_real": 0.9661458333333334,
+    "paired_p_human_minus_real": -39.166666666666664,
+    "paired_quality_minus_real": 0.2777777777777778,
+    "quality_ge_real": 0.8055555555555556
+   },
+   "G": {
+    "n": 72,
+    "p_human": 47.736111111111114,
+    "p_human_ci": [
+     43.152430555555554,
+     52.48680555555556
+    ],
+    "judged_human": 0.3888888888888889,
+    "quality": 6.138888888888889,
+    "quality_ci": [
+     5.875,
+     6.402777777777778
+    ],
+    "auc_vs_real": 0.9557291666666666,
+    "paired_p_human_minus_real": -39.333333333333336,
+    "paired_quality_minus_real": 0.1388888888888889,
+    "quality_ge_real": 0.8194444444444444
+   },
+   "K": {
+    "n": 72,
+    "p_human": 54.15277777777778,
+    "p_human_ci": [
+     49.20798611111111,
+     59.263888888888886
+    ],
+    "judged_human": 0.5694444444444444,
+    "quality": 5.930555555555555,
+    "quality_ci": [
+     5.666666666666667,
+     6.194444444444445
+    ],
+    "auc_vs_real": 0.9558256172839507,
+    "paired_p_human_minus_real": -32.916666666666664,
+    "paired_quality_minus_real": -0.06944444444444445,
+    "quality_ge_real": 0.7083333333333334
+   }
+  }
+ }
+}

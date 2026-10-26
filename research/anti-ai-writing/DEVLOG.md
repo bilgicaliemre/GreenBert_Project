@@ -740,3 +740,37 @@ scan of all 40 real essays found one other possible artifact (a test essay), to 
 piles are built. The paper's abstract and detector paragraph said the detectors passed every model-written personal
 essay (89 of 89); both now say that held only for essays from invented briefs and give the development numbers
 above. The full section follows the held-out test.
+
+**Development round 2 (24 essays, 5 versions, 90 piles, 360 ratings).** Versions: real (H), real copyedited for
+outright errors only (C: 0 to 6 fixes per essay, under 1% of words), v7 (F), v8 candidate (G), v8b (K).
+
+| Version | Judged real | Mean p(real) | AUC vs real | Quality | Detectors: all three < 20% |
+|---|---|---|---|---|---|
+| Real | 100% | 87.1 | - | 6.00 | 1 of 24 |
+| Real, errors fixed | 100% | 85.1 | 0.61 | 6.01 | 1 of 24 |
+| v7 | 42% | 47.9 | 0.97 | 6.28 | 11 of 24 |
+| v8 candidate | 39% | 47.7 | 0.96 | 6.14 | 7 of 24 |
+| v8b | 57% | 54.2 | 0.96 | 5.93 | 8 of 24 |
+
+Paired over essays, all three judges (95% intervals by bootstrap over essays):
+- v8b vs v7: +6.3 p(real) [+2.2, +10.5], quality -0.35 [-0.53, -0.18]. With the main-model judges only: +6.8
+  [+1.8, +12.3]; they judged 35% of v8b essays real against 17% of v7's. They still put every real essay above
+  every v8b essay (AUC 1.00).
+- v8 candidate vs v7: -0.2 [-4.5, +3.9]. Its round 1 gain (+3.3) did not replicate. Dropped.
+- Real with errors fixed vs real: -1.9 [-3.1, -0.9], quality unchanged. **Errors are not why judges recognize
+  the real essays.** Judges cite them (80% of ratings), but fixing them barely moves p(real). Errors cited for the
+  copyedited essays (58%) are the residue: words used slightly wrong, loose logic, which a copyedit leaves alone.
+  The gap is voice and structure, which a skill can address without faking mistakes.
+
+Round 2 cue coding (blind, `dev_round2_cues.json`), as-real / as-AI percentages: v8b cut tidy structure from
+86% (v7) to 51% as AI. Still far from the real essays: reaching vocabulary (real 49 to 51% as real, v8b 1%), voice
+and humor (49 to 58% against 28%), flat or plain register (v8b 46% as AI, real 0%), generic summary (42% against
+1%), hedges (25% against 0%). Stated morals are read through the overall impression: as real in real essays
+(63 to 71%) and as AI in model essays (38 to 58%).
+
+**v8c.** From v8b: a written voice that tries hard throughout (vocabulary a notch above speech, attempted images,
+an ambitious first line, a visible device when the notes contain one; never a misused word or an added error);
+two or three scenes in place of summary, and material left out rather than compressed; names used without
+explanatory clauses; three notes-to-prose habits limited to once each (", and" chains, colon reveals, balanced
+maxims); no "I think" in any reflection. New catalog entry PE12. Round 3 judges real (H), v8b (K) and v8c (V) on the
+same 24 development essays.
