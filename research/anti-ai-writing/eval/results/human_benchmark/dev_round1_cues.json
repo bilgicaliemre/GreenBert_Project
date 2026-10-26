@@ -1,0 +1,335 @@
+{
+ "note": "Development round 1: share of the 72 ratings per version whose rationale cited each cue, as a sign of a real student or of AI. Coded blind to version by 12 coder agents.",
+ "by_version": {
+  "L": {
+   "errors": {
+    "as_human": 0.028,
+    "as_ai": 0.111
+   },
+   "awkward": {
+    "as_human": 0.292,
+    "as_ai": 0.056
+   },
+   "reaching_vocab": {
+    "as_human": 0.028,
+    "as_ai": 0.014
+   },
+   "cliche_moral": {
+    "as_human": 0.097,
+    "as_ai": 0.528
+   },
+   "resume_list": {
+    "as_human": 0.097,
+    "as_ai": 0.069
+   },
+   "uneven": {
+    "as_human": 0.222,
+    "as_ai": 0.111
+   },
+   "odd_specifics": {
+    "as_human": 0.903,
+    "as_ai": 0.014
+   },
+   "voice_humor": {
+    "as_human": 0.278,
+    "as_ai": 0.042
+   },
+   "polished": {
+    "as_human": 0.056,
+    "as_ai": 0.472
+   },
+   "tidy_structure": {
+    "as_human": 0.028,
+    "as_ai": 0.861
+   },
+   "punchy_beats": {
+    "as_human": 0.056,
+    "as_ai": 0.569
+   },
+   "flat_plain": {
+    "as_human": 0.181,
+    "as_ai": 0.306
+   },
+   "hedges": {
+    "as_human": 0.111,
+    "as_ai": 0.236
+   },
+   "casual_filler": {
+    "as_human": 0.167,
+    "as_ai": 0.389
+   },
+   "formal_stiff": {
+    "as_human": 0.0,
+    "as_ai": 0.0
+   },
+   "generic": {
+    "as_human": 0.056,
+    "as_ai": 0.333
+   }
+  },
+  "F": {
+   "errors": {
+    "as_human": 0.069,
+    "as_ai": 0.042
+   },
+   "awkward": {
+    "as_human": 0.361,
+    "as_ai": 0.056
+   },
+   "reaching_vocab": {
+    "as_human": 0.014,
+    "as_ai": 0.014
+   },
+   "cliche_moral": {
+    "as_human": 0.069,
+    "as_ai": 0.458
+   },
+   "resume_list": {
+    "as_human": 0.083,
+    "as_ai": 0.097
+   },
+   "uneven": {
+    "as_human": 0.306,
+    "as_ai": 0.222
+   },
+   "odd_specifics": {
+    "as_human": 0.889,
+    "as_ai": 0.014
+   },
+   "voice_humor": {
+    "as_human": 0.194,
+    "as_ai": 0.014
+   },
+   "polished": {
+    "as_human": 0.083,
+    "as_ai": 0.389
+   },
+   "tidy_structure": {
+    "as_human": 0.083,
+    "as_ai": 0.806
+   },
+   "punchy_beats": {
+    "as_human": 0.028,
+    "as_ai": 0.139
+   },
+   "flat_plain": {
+    "as_human": 0.194,
+    "as_ai": 0.319
+   },
+   "hedges": {
+    "as_human": 0.181,
+    "as_ai": 0.25
+   },
+   "casual_filler": {
+    "as_human": 0.278,
+    "as_ai": 0.431
+   },
+   "formal_stiff": {
+    "as_human": 0.0,
+    "as_ai": 0.0
+   },
+   "generic": {
+    "as_human": 0.111,
+    "as_ai": 0.264
+   }
+  },
+  "G": {
+   "errors": {
+    "as_human": 0.069,
+    "as_ai": 0.056
+   },
+   "awkward": {
+    "as_human": 0.333,
+    "as_ai": 0.111
+   },
+   "reaching_vocab": {
+    "as_human": 0.014,
+    "as_ai": 0.0
+   },
+   "cliche_moral": {
+    "as_human": 0.097,
+    "as_ai": 0.514
+   },
+   "resume_list": {
+    "as_human": 0.083,
+    "as_ai": 0.097
+   },
+   "uneven": {
+    "as_human": 0.292,
+    "as_ai": 0.083
+   },
+   "odd_specifics": {
+    "as_human": 0.917,
+    "as_ai": 0.028
+   },
+   "voice_humor": {
+    "as_human": 0.278,
+    "as_ai": 0.028
+   },
+   "polished": {
+    "as_human": 0.083,
+    "as_ai": 0.333
+   },
+   "tidy_structure": {
+    "as_human": 0.042,
+    "as_ai": 0.75
+   },
+   "punchy_beats": {
+    "as_human": 0.0,
+    "as_ai": 0.083
+   },
+   "flat_plain": {
+    "as_human": 0.125,
+    "as_ai": 0.417
+   },
+   "hedges": {
+    "as_human": 0.167,
+    "as_ai": 0.208
+   },
+   "casual_filler": {
+    "as_human": 0.014,
+    "as_ai": 0.028
+   },
+   "formal_stiff": {
+    "as_human": 0.014,
+    "as_ai": 0.111
+   },
+   "generic": {
+    "as_human": 0.111,
+    "as_ai": 0.347
+   }
+  },
+  "P": {
+   "errors": {
+    "as_human": 0.069,
+    "as_ai": 0.083
+   },
+   "awkward": {
+    "as_human": 0.236,
+    "as_ai": 0.028
+   },
+   "reaching_vocab": {
+    "as_human": 0.0,
+    "as_ai": 0.0
+   },
+   "cliche_moral": {
+    "as_human": 0.083,
+    "as_ai": 0.639
+   },
+   "resume_list": {
+    "as_human": 0.028,
+    "as_ai": 0.097
+   },
+   "uneven": {
+    "as_human": 0.181,
+    "as_ai": 0.111
+   },
+   "odd_specifics": {
+    "as_human": 0.875,
+    "as_ai": 0.028
+   },
+   "voice_humor": {
+    "as_human": 0.278,
+    "as_ai": 0.014
+   },
+   "polished": {
+    "as_human": 0.097,
+    "as_ai": 0.556
+   },
+   "tidy_structure": {
+    "as_human": 0.042,
+    "as_ai": 0.861
+   },
+   "punchy_beats": {
+    "as_human": 0.014,
+    "as_ai": 0.417
+   },
+   "flat_plain": {
+    "as_human": 0.097,
+    "as_ai": 0.278
+   },
+   "hedges": {
+    "as_human": 0.083,
+    "as_ai": 0.222
+   },
+   "casual_filler": {
+    "as_human": 0.181,
+    "as_ai": 0.333
+   },
+   "formal_stiff": {
+    "as_human": 0.028,
+    "as_ai": 0.028
+   },
+   "generic": {
+    "as_human": 0.056,
+    "as_ai": 0.278
+   }
+  },
+  "H": {
+   "errors": {
+    "as_human": 0.847,
+    "as_ai": 0.0
+   },
+   "awkward": {
+    "as_human": 0.681,
+    "as_ai": 0.0
+   },
+   "reaching_vocab": {
+    "as_human": 0.514,
+    "as_ai": 0.0
+   },
+   "cliche_moral": {
+    "as_human": 0.542,
+    "as_ai": 0.056
+   },
+   "resume_list": {
+    "as_human": 0.167,
+    "as_ai": 0.014
+   },
+   "uneven": {
+    "as_human": 0.514,
+    "as_ai": 0.014
+   },
+   "odd_specifics": {
+    "as_human": 0.917,
+    "as_ai": 0.0
+   },
+   "voice_humor": {
+    "as_human": 0.514,
+    "as_ai": 0.0
+   },
+   "polished": {
+    "as_human": 0.222,
+    "as_ai": 0.069
+   },
+   "tidy_structure": {
+    "as_human": 0.306,
+    "as_ai": 0.056
+   },
+   "punchy_beats": {
+    "as_human": 0.153,
+    "as_ai": 0.0
+   },
+   "flat_plain": {
+    "as_human": 0.056,
+    "as_ai": 0.0
+   },
+   "hedges": {
+    "as_human": 0.139,
+    "as_ai": 0.014
+   },
+   "casual_filler": {
+    "as_human": 0.097,
+    "as_ai": 0.0
+   },
+   "formal_stiff": {
+    "as_human": 0.125,
+    "as_ai": 0.0
+   },
+   "generic": {
+    "as_human": 0.333,
+    "as_ai": 0.014
+   }
+  }
+ }
+}

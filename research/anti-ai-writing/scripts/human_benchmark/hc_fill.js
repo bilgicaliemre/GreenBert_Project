@@ -21,7 +21,7 @@ Make it sound human, not AI-generated. Avoid these AI-sounding words and constru
 const skillP = (e, c = 'F') => `You have a writing skill at ${(A.skills || {})[c] || A.skill}. Read ${(A.skills || {})[c] || A.skill}/SKILL.md first and follow it exactly, including the reference files it points to for this genre.
 ${brief(e)}
 The student is FICTIONAL test material, so write the full essay yourself (Write mode, not Coach mode). Do not invoke other skills. Save only the essay text with the Write tool to ${A.out}/${c}/${e.id}.txt and return path and word count.`
-const W = { P: plainP, L: listP, F: e => skillP(e, 'F'), G: e => skillP(e, 'G') }
+const W = { P: plainP, L: listP }  // any other condition letter is a skill version named in args.skills
 const jobs = A.essays.flatMap(e => e.conds.map(c => ({ e, c })))
-const res = await parallel(jobs.map(({ e, c }) => () => agent(W[c](e), { label: `${c}:${e.id}`, phase: 'Write', schema: GEN }).then(r => r && { id: e.id, cond: c, ...r })))
+const res = await parallel(jobs.map(({ e, c }) => () => agent((W[c] || (x => skillP(x, c)))(e), { label: `${c}:${e.id}`, phase: 'Write', schema: GEN }).then(r => r && { id: e.id, cond: c, ...r })))
 return { results: res.filter(Boolean) }

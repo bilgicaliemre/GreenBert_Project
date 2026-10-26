@@ -58,7 +58,7 @@ by = defaultdict(list)
 for r in rows:
     by[r['cond']].append(r)
 key = {(r['id'], r['cond'], r['lens']): r for r in rows}
-conds = sorted(by, key=lambda c: 'HPLFG'.index(c) if c in 'HPLFG' else 9)
+conds = sorted(by, key=lambda c: 'HCPLFGK'.index(c) if c in 'HCPLFGK' else 9)
 summ = {'n_ratings': len(rows), 'n_essays': len({r['id'] for r in rows}), 'conds': {}}
 H = [r['p_human'] for r in by.get('H', [])]
 for c in conds:
@@ -75,7 +75,7 @@ for c in conds:
         s['quality_ge_real'] = float(np.mean([x >= 0 for x in dq])) if dq else None
     summ['conds'][c] = s
 json.dump({'summary': summ, 'rows': rows}, open(out, 'w'), indent=1)
-NAME = {'H': 'Admitted student', 'P': 'Plain Claude', 'L': 'Word list', 'F': 'Skill v7', 'G': 'Skill v8'}
+NAME = {'H': 'Admitted student', 'C': 'Admitted, copyedited', 'P': 'Plain Claude', 'L': 'Word list', 'F': 'Skill v7', 'G': 'Skill v8', 'K': 'Skill v8b'}
 print(f"{summ['n_essays']} essays, {summ['n_ratings']} ratings" + (f" (lenses {','.join(sorted(lenses))})" if lenses else ''))
 print(f"{'':17s} {'p_human':>8s} {'judged human':>13s} {'AUC vs real':>12s} {'quality':>8s} {'qual>=real':>11s}")
 for c, s in summ['conds'].items():

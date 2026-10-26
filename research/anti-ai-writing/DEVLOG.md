@@ -691,3 +691,44 @@ meaning, glossing each scene or quote after it lands; they are even, with clean 
 things up with callbacks and three-part endings. The judges' signs of a real student were errors, awkward or
 overreaching phrasing, cliché morals, résumé lists, digressions and contradictions, odd specific details, and
 irony or contrast left without comment. A blind cue coding of all 360 rationales is running.
+
+**Cue coding (all 360 rationales, coded blind to version).** Twelve coder agents marked 16 cues in each rationale and
+which way the judge read them (`scripts/human_benchmark/hc_code_cues.js`; aggregates in
+`eval/results/human_benchmark/dev_round1_cues.json`). Share of ratings citing each cue, as a sign of a real student
+/ as a sign of AI:
+
+| Cue | Real | Plain | Word list | v7 | v8 cand. |
+|---|---|---|---|---|---|
+| Tidy, engineered structure | 31 / 6 | 4 / 86 | 3 / 86 | 8 / 81 | 4 / 75 |
+| Stated moral or lesson | 54 / 6 | 8 / 64 | 10 / 53 | 7 / 46 | 10 / 51 |
+| Errors | 85 / 0 | 7 / 8 | 3 / 11 | 7 / 4 | 7 / 6 |
+| Reaching vocabulary | 51 / 0 | 0 / 0 | 3 / 1 | 1 / 1 | 1 / 0 |
+| Uneven, digressions | 51 / 1 | 18 / 11 | 22 / 11 | 31 / 22 | 29 / 8 |
+| Polished | 22 / 7 | 10 / 56 | 6 / 47 | 8 / 39 | 8 / 33 |
+| Flat, plain register | 6 / 0 | 10 / 28 | 18 / 31 | 19 / 32 | 12 / 42 |
+| Casual filler | 10 / 0 | 18 / 33 | 17 / 39 | 28 / 43 | 1 / 3 |
+| Short punchy beats | 15 / 0 | 1 / 42 | 6 / 57 | 3 / 14 | 0 / 8 |
+| Stiff, formal | 12 / 0 | 3 / 3 | 0 / 0 | 0 / 0 | 1 / 11 |
+| Odd specific details | 92 / 0 | 88 / 3 | 90 / 1 | 89 / 1 | 92 / 3 |
+
+Readings:
+- Tidy structure is the dominant sign of a model essay (75% to 86% of ratings for every AI version); no method
+  so far has moved it much.
+- A stated lesson is not itself the tell: it counted as evidence of a real student in 54% of ratings of real
+  essays and as evidence of AI in about half of ratings of AI essays. The difference the judges describe is
+  texture: real students' morals are whole-hearted and large; model morals are balanced and hedged.
+- Odd specific details count as human for every version, because the notes carry the real student's details.
+  Content is not what gives the model essays away; form is.
+- v8 removed what it targeted (casual filler 43% to 3%, punchy beats 14% to 8%) but created a flat, stiff
+  register (flat 42%, stiff 11%).
+- Errors are cited for 85% of ratings of real essays. The skill will not fake errors (hard rule 3), so a control
+  is needed: how human do the real essays look with their errors fixed?
+
+**v8b (development round 2).** Changes from the v8 candidate, all in the personal-essay guidance: a fourth failure
+mode, the engineered essay (bookends, returning motifs, paragraphs that explain their own scenes, connecting
+sentences that point out what rhymes, signposts, balanced and hedged lessons), also added to the catalog as PE11;
+a looser structure (in order, a list of what the student learned, year by year, a side detail); comment on
+meaning once; the conclusion stated whole-heartedly, never balanced or hedged; at most one "I think" in the essay;
+reach once or twice (a vivid line, a simile, a bigger word); ordinary contractions restored; the permission to add
+connective observations removed. Round 2 judges the real essays (H), the real essays copyedited for errors only (C),
+v7 (F), the v8 candidate (G) and v8b (K) on the same 24 development essays.
