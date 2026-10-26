@@ -653,3 +653,6 @@ files):
   cool essay. Each number quoted in the skill was rechecked against the development data (three were corrected
   before use).
 v8 wrote all 24 development essays from the same notes; the piles judge real, plain, word list, v7 and v8 together.
+Exposure note: after v8 was drafted, a shell glob that matched nothing printed the closing lines of v7's versions
+for all 40 essays, test set included. These are model outputs only (no real essay text and no judgments), and
+nothing in v8 changed afterwards because of them.
