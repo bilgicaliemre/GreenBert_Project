@@ -30,8 +30,9 @@ What admitted essays have in common:
   trust." (Hamilton).
 - **A moment of being wrong, small or unfinished.** Yale singles out students who "sit in the experience of
   being wrong about something", without wallowing.
-- **A voice that sounds like a smart teenager talking**, not a thesaurus: "when you use a word like
-  'alacrity', when 'speed' would work just as well…" (Yale).
+- **A voice that sounds like a smart teenager writing carefully**, not talking and not a thesaurus. Yale's
+  warning ("when you use a word like 'alacrity', when 'speed' would work just as well…") is about showing off,
+  not about formality: admitted essays are written a notch above speech.
 - **Plain handling of hard facts.** One understated sentence, then agency: "Today, Feb. 24, 2022, my life was
   upended when my city was bombed. I never managed to retrieve my backpack." (Hamilton).
 - **A shape.** Something is different at the end than at the start, and the reader understands why these
@@ -46,7 +47,36 @@ Two opposite failures to avoid:
   different kind of focus").
 - **The over-corrected essay:** every lesson removed and nothing put in its place, so the essay is the
   interview notes in a new order, vivid but flat.
-The fix for both is the same: an arc made of true events and reflection in the writer's own words.
+A third failure is what anti-AI rules produce in current models:
+- **The cool essay:** speech filler carried over from the notes ("kind of wild", "so cringy", "basically"), a flat
+  factual first sentence, framing devices ("(I counted)", "the obvious suspects were my parents"), and an ending
+  that shrugs ("I still don't know", "but it's okay") where the student's real conclusion should be. Judges in our
+  tests singled out its put-on casual register.
+- **The engineered essay:** every thread tied off. An image from the opening returns at the end, paragraphs
+  close by explaining what their scene meant, connecting sentences point out what rhymes, and the lesson arrives
+  balanced and hedged ("both good and bad, and I think accepting it made me happier"). In blind tests this was
+  the most cited sign of a model essay, in about four of five judgments, whatever the writing method.
+The fix for all four is the same: an arc made of true events and reflection in the writer's own words, written
+in the student's careful written voice.
+
+**What admitted essays look like on the page.** We compared 24 essays that Hamilton, Johns Hopkins, Tufts, MIT and
+Connecticut College published as examples (all written before 2022) with model-written versions of the same
+stories:
+- Sentences average about 18 words, and about one in nine runs past 30. Model versions average 11 to 16 words
+  and rarely run long.
+- Fewer contractions than model versions (about 1.4 per 100 words against 2 to 3), but they are there: "I'd",
+  "it's", "weren't". Speech filler (really, kind of, actually, stuff) is rare; none of the 24 says "kind of".
+- They say what the student learned or now believes, plainly and usually once, near the end. "Learned",
+  "world", "experiences" and "challenge" are all more frequent in them than in model versions.
+- They end committed: what the student believes, values, wants or will do, sometimes in large terms. The lesson
+  is stated whole-heartedly, never balanced against its opposite or hedged.
+- Their structure is loose: the story in order, a list of what the student learned, a year-by-year account, a
+  side detail the student cared about. Few callbacks, and scenes are left to stand without a sentence explaining
+  them.
+- Somewhere they reach: a dramatic first line, a vivid simile, a bigger word than speech would use.
+- They open in many ways: a dramatic scene, a bold claim, a line of dialogue, a list, a plain fact.
+- They differ from one another far more than model versions do.
+These describe the genre; they are not targets. Do not add long sentences or lessons to hit a number.
 
 ## 2. Ground rules (coach, don't ghostwrite)
 
@@ -137,16 +167,26 @@ Structures:
 **Reflection.** One to three sentences, placed after the scene that earns them, that tell the reader
 something the facts alone do not: what the writer now notices, doubts or does differently. Rules:
 - Use the student's own reflections from the interview (their words, lightly trimmed for grammar).
+- State the conclusion plainly. "I learned that…" or "I realized…" is fine when what follows belongs to this
+  student; admitted essays use it often. Avoid morals that would fit any essay ("the value of hard work") and
+  polished epigrams built to be quoted.
+- Say it whole-heartedly. Do not balance it ("both good and bad", "X matters, though Y") or hedge it ("I think",
+  "maybe"). It can be large, as long as it is the student's.
+- Comment on meaning once, not after every scene: let scenes, quotes and contrasts stand without a sentence
+  that explains them.
 - A reflection may be a question or a doubt ("I don't know yet whether keeping score made me braver or just
-  more careful"). Honest uncertainty reads as more mature than a moral.
-- Never write "taught me", "I learned the value of", or any reflection that would fit another student's essay.
+  more careful") when the student really is unsure. Do not turn a conclusion the student holds into a shrug.
 - In coach mode, if a needed connection is missing, ask the student for it; do not supply it.
 
-**Openings that work:** a scene with the body in it; an odd fact; a short flat statement ("The plants were all
-dead."). Openings that don't: a thesis about identity or passion; a definition; a quotation.
+**Openings that work:** start where the material is strongest: a scene with the body in it, a bold claim the
+essay then earns, a line someone said, a list, an odd fact. Openings that don't: a thesis about identity or
+passion; a dictionary definition; a famous quotation.
 
-**Endings that work:** a callback to the opening, changed; an action or image, then stop; a future scene; an
-honest open question. Endings that don't: "This experience taught me…"; a restated thesis; a moral.
+**Endings that work:** what the student now believes, values or will do, in their words; the last moment of the
+story, then stop; a future scene; a real open question. Endings that don't: a moral that fits any essay; a
+restated thesis; a deflating aside added to sound modest ("but it's okay"); a balanced or hedged lesson; a bookend
+that returns to the opening image; an object from the first paragraph brought back as a symbol the student never
+made.
 
 **Paragraph endings.** Vary them. If every paragraph closes on a short wry line, the essay develops a rhythm
 signature readers notice. Keep the one or two best kickers; let other paragraphs end on content.
@@ -208,10 +248,28 @@ essay needs an arc and a "so what", not only accurate details:
 - Events, people, numbers, quotes and objects come only from the notes.
 - Pick the spine with the highest stakes (where the student was wrong, ashamed, afraid or unsure) and build the
   whole essay around it. Bring in other material only where it sharpens that spine.
-- Order by the spine's logic: setup with stakes, the turn, what changed and what hasn't.
-- Reflection: use the student's own reflections from the notes first. You may add a short connective
-  observation that links two facts in the notes (two things that rhyme, a pattern across two scenes), stated
-  as the writer noticing it, never as a lesson. Do not add an event, a motive or a feeling the notes contradict
+- Order by the spine's logic: setup with stakes, the turn, what changed and what hasn't. The order things
+  happened is often the right one; do not hold back the strongest scene just so the essay can end on it.
+- Register: the notes are how the student talks; the essay is how they write. Drop speech filler (really, kind
+  of, actually, basically, stuff, super, honestly) except inside quoted speech, write full sentences and let
+  some run long, keep ordinary contractions (don't, it's, I'd) where a careful writer would use them, and keep the
+  bigger words the student uses in the notes.
+- Structure: let the essay be a little loose, the way admitted essays are. Tell it in order, or as a short list
+  of what the student learned, or year by year; a paragraph may carry a side detail the notes care about. Do not
+  tie every thread: no bookend, no motif that returns, no closing paragraph that names what each earlier scene
+  meant.
+- Comment once: let scenes, quotes and contrasts stand on their own, with no sentence after them explaining
+  what they meant ("That was when I understood...", "It was my own word for..."). Keep reflection for the end,
+  plus at most one line in the middle.
+- Reach once or twice where the notes carry strong feeling: a dramatic or vivid sentence, a simile, a bigger
+  word the student would use. The rest stays plain.
+- No signposts ("The climb I keep thinking about", "The strange part was", "What I didn't expect", "Looking
+  back"), and at most one "I think" or "I guess" in the whole essay, none in the conclusion.
+- Reflection: use the student's own reflections from the notes first. Do not add connective observations that
+  link scenes (two things that rhyme, a pattern across two scenes) unless the notes make the link; judges read
+  them as engineered. Do not turn an early object into a closing symbol. Do not add an event, a motive or a feeling the notes contradict
   or do not support.
+- Close on the student's own conclusion from the notes, stated whole-heartedly: not a shrug, not balanced, not
+  hedged.
 - Run the paragraph-ending count from SKILL.md step 4; stay under the word limit.
 - Put any "sample" label outside the essay text.

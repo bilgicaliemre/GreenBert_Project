@@ -797,3 +797,30 @@ claims (mostly interpretations the notes do not make) from 1.50 to 0.12 per essa
 fidelity gap decides it under hard rule 1. v8c is kept as `skill_versions/v8c_rejected`. Frozen before any test
 essay was generated with it. Test: the 16 held-out essays, real vs plain vs word list vs v7 vs v8, three judges,
 plus fidelity and detectors.
+
+**Held-out test (16 essays never studied; 60 piles, 240 ratings; v8 frozen).**
+
+| Version | Judged real | Mean p(real) | AUC vs real | Quality | Unsupported claims / essay | Detectors: all three < 20% |
+|---|---|---|---|---|---|---|
+| Real | 100% | 86.4 | - | 6.21 | - | 1 of 16 |
+| Plain | 38% | 44.8 | 0.96 | 6.38 | 3.06 | 2 of 16 |
+| Word list | 38% | 46.7 | 0.96 | 6.35 | 2.69 | 5 of 16 |
+| v7 | 46% | 51.9 | 0.91 | 6.29 | 0.94 | 10 of 16 |
+| v8 | 65% | 59.4 | 0.90 | 5.98 | 0.19 | 6 of 16 |
+
+Paired over essays (95% intervals): v8 vs v7 p(real) +7.5 [+2.4, +13.1], quality -0.31 [-0.58, -0.04]; with the
+main-model judges only +11.4 [+4.5, +18.7] (they judged 47% of v8 essays real, 22% of v7's, 9% of plain and word
+list). v8 vs word list +12.7 [+6.8, +18.3]; v8 vs plain +14.7 [+9.3, +20.3]. v7 vs word list +5.2 [-0.2, +10.3];
+v7 vs plain +7.1 [+2.7, +12.2]; word list vs plain +1.9 [-2.2, +6.0]. Fidelity: v8 had no unsupported claim in 13
+of 16 essays (v7 8, word list 3, plain 2).
+
+What held: the development gains replicated on new students (v8 over v7 by 7.5 points, development round 2 by
+6.3), and so did the fidelity gain. What did not move: every judge still called every real essay real, and the
+main-model judges still separate real essays from v8 almost perfectly (AUC 0.98). What it cost: a third of a
+point of judged quality, and four fewer detector passes than v7, because v8 moves toward the register of real
+admitted essays, which these detectors flag most (1 of 16 real essays passed).
+
+**Shipped: v8** (`.claude/skills/anti-ai-writing` is now a copy of `skill_versions/v8/anti-ai-writing`;
+changelog in `skill_versions/v8/CHANGELOG.md`). Reason: it is better on the two things the skill exists for,
+reading as a real writer and never inventing, on held-out data. The quality and detector costs are stated in the
+changelog. v7 stays in `skill_versions/v7` for anyone who weights detector scores more.

@@ -122,15 +122,18 @@ fix; praise only specific lines that work.
 
 ## 4. Personal-essay tells
 
-**PE1 Stated lessons.** "This experience taught me the value of hard work and perseverance." The single most
-common move in AI admissions essays. Fix: show the changed behavior in one concrete moment.
+**PE1 Generic lessons.** "This experience taught me the value of hard work and perseverance." A moral any
+applicant could claim. Fix: the student's own conclusion, specific to them, stated once; or the changed behavior
+in one concrete moment. Stating a lesson is not itself the tell: admitted essays written before 2022 say
+"learned" about four times as often as this skill's previous version did, and more often than a plain model.
 
 **PE2 Tidy epiphany.** Problem, struggle, sudden insight, better person, all resolved by the last paragraph.
 Fix: keep the part that is still unresolved; end on an image or an honest open question.
 
-**PE3 Abstract essay nouns.** journey, growth, resilience, challenge, community, passion, understanding,
-"a deep appreciation for". These are the words that most separate AI admissions essays from human ones. Fix:
-the event behind each word.
+**PE3 Inflated essay nouns.** "my journey of growth", "a testament to my resilience", "a deep appreciation
+for". Earlier models overused these words; current models already avoid them, and pre-2022 admitted essays use
+challenge, passion, experiences and world more often than current model versions do. Fix only the inflated use
+(the event behind the word); a plain "challenge" or "community" is fine.
 
 **PE4 Résumé in prose.** Titles and awards strung together. Fix: one activity, one moment inside it.
 
@@ -145,6 +148,21 @@ direction unless it adds information.
 
 **PE8 Hardship resolved into gratitude.** Illness or loss turned into growth within a paragraph. Fix: let the
 hard part stay hard.
+
+**PE10 The cool essay (what anti-AI rules produce in current models).** Speech filler carried over from notes
+("kind of wild", "so cringy", "basically", "super"), a flat factual first sentence followed by background,
+framing devices ("(I counted)", "the obvious suspects were my parents", "The easy answer is... The harder answer
+is..."), and an ending that shrugs ("I still don't know", "but it's okay") in place of the student's real
+conclusion. In our tests the skill's previous version used "really" four times as often as 24 admitted essays, and "kind
+of" 15 times where the admitted essays never used it. Fix: the student's written register and their actual conclusion (see `personal-essay.md`
+section 1).
+
+**PE11 The engineered essay (the most cited sign in blind tests).** Every thread tied off: a bookend to the
+opening image, a motif that returns, paragraphs closing on a sentence that explains their scene ("That was when I
+understood..."), connecting sentences that point out what rhymes, signposts ("The strange part was"), and a
+balanced, hedged lesson ("both good and bad, and I think..."). Judges cited tidy structure in about four of five
+judgments of model essays, with or without anti-AI rules, and in few of real students' essays. Fix: a looser
+structure, scenes left to stand, one whole-hearted conclusion.
 
 **PE9 The over-corrected essay (what anti-AI passes produce).** Every lesson removed and nothing put in its
 place: the notes reordered one paragraph per topic, paragraphs opening like interview answers ("The thing I'm
@@ -205,6 +223,8 @@ commence → start; endeavor → try.
 - Thesaurus swaps. AI text is already too varied; rarer synonyms make it worse.
 - Chopping sentences into fragments for "burstiness". Fragment runs are a tell of their own.
 - Forced slang, "tbh", jokes, contractions in a formal genre. Register mismatch is a tell.
+- Copying the spoken register of interview notes into an essay (really, kind of, actually, stuff).
+- Replacing every stated conclusion with a shrug or an open question.
 - Ending every paragraph with a short aphorism or wry kicker. Measured as the main new tell that humanizer
   rewrites create, and it showed up in our own tests of this skill.
 - Removing every reflection along with the stated lessons, so a personal essay becomes a list of facts.
@@ -230,7 +250,7 @@ Concrete names, dates, numbers and objects; small true anecdotes; plain verbs; d
 true; casual qualifiers in informal writing ("pretty", "sort of"); parenthetical asides; an occasional
 exclamation in informal writing; repeating the right word; sentence length that follows meaning; unusual
 precise words; short real quotes worked into sentences; endings that stop on a specific point; mixed
-feelings and unresolved questions.
+feelings and unresolved questions; earnest conclusions the writer actually holds.
 
 ---
 Evidence base (2023 to 2026): Wikipedia "Signs of AI writing"; Kobak et al., Science Advances 2025 (excess

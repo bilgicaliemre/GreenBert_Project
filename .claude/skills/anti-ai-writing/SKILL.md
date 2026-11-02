@@ -63,7 +63,7 @@ built.
 | Content | Sentences that could move unchanged into someone else's essay ("portability test"); abstractions where an instance exists; padding the reader could infer | Replace with the specific the writer has; cut the rest |
 | Staging | "It's not X, it's Y" when nobody believes X; "This matters because"; "Here's the thing"; "Some might argue" with no one arguing; a closing line that restates the paragraph | State Y directly; give the consequence itself; end on the last new point |
 | Inflation | pivotal, testament, transformative, "reflects a broader shift", ", highlighting its commitment to…" tails | Keep the fact, drop the significance claim unless a source makes it |
-| Lessons | "This taught me…", "I learned the value of…", tidy epiphanies, hardship resolved into gratitude | Show what the person does differently now; let unresolved things stay unresolved |
+| Lessons | Morals that fit any essay ("taught me the value of hard work"), lessons the source does not support, tidy epiphanies, hardship resolved into gratitude | Use the writer's own conclusion, stated plainly; let unresolved things stay unresolved and resolved things stay resolved |
 | Rhythm | Runs of same-length sentences; every paragraph the same size; triads; sentence openers repeating ("A fee… A fine… A toll…"); fragment stacks ("No plan. No data. No excuse.") | Vary length where the meaning changes pace; keep list items that are distinct (often two, sometimes four) |
 | Endings | Paragraphs that each close on a short wry or quotable line ("The map stayed in the glovebox.") | At most one or two kicker endings per piece; let most paragraphs end on their last piece of content |
 | Tone | Hedge stacks ("could potentially suggest"); false balance ("While X has benefits, it also has challenges"); mannered metaphors ("trust is the currency of…") | One hedge on the uncertain part; take the position the evidence supports; say the literal thing |
@@ -78,7 +78,8 @@ passive voice) only when several cluster in one passage.
   user or the source. Remove or bracket anything that does not.
 - Read it as the target reader. Does any sentence only exist to sound good?
 - Did the rewrite create new tells? Watch for the classic over-corrections: choppy fragments, every paragraph
-  opening with a short punchy sentence, forced casualness, and above all kicker endings. Count them: list the
+  opening with a short punchy sentence, forced casualness (speech filler such as really, kind of, actually, basically, stuff), endings that shrug instead of
+  concluding, and above all kicker endings. Count them: list the
   last sentence of every paragraph; if more than two are short (under about 10 words) or wry/quotable, rewrite
   the others so they end on content, or merge them into the sentence before.
 - For a personal essay, also check the opposite failure: is there an arc and at least one line of reflection
@@ -130,8 +131,9 @@ technique, is fine.
 
 ## Genre notes
 
-- **Personal essay / application:** first person, contractions allowed, scenes over summaries, one story
-  told closely beats five listed. Full guidance: `references/personal-essay.md`.
+- **Personal essay / application:** first person in a written register, not a spoken one (full sentences, some
+  long, few contractions), scenes over summaries, one story told closely beats five listed, and the writer's own
+  conclusion stated plainly. Full guidance: `references/personal-essay.md`.
 - **School essays (argument, literary analysis):** thesis that someone could disagree with; quote briefly
   and analyze the words, do not summarize plot; a conclusion that adds a consequence or limit instead of
   restating. Use only real quotes the user provides or that you can verify.
