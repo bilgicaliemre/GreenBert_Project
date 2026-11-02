@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1792998924.75708 "main.aux" "main.bbl" "main" 1792998925.60668 0
+["bibtex main"] 1793603149.27173 "main.aux" "main.bbl" "main" 1793603150.10087 0
   "./acl_natbib.bst" 1792535472.8683 45442 bb9ea745fc0a84096e0948d1c1b99bbe ""
-  "./references.bib" 1792565249.48143 29967 4eb34104baae35b8a276f06c949a51f4 ""
-  "main.aux" 1792998925.49677 32135 c9f19fe113e01e37233eebe0a0ee66d2 "pdflatex"
+  "./references.bib" 1793602846.48552 30611 148e604b984303ff86c85788b0ab09d2 ""
+  "main.aux" 1793603149.98035 37163 a996f6890543216e17c53e721e248c0c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792998924.78874 "main.tex" "main.pdf" "main" 1792998925.60703 0
+["pdflatex"] 1793603149.29848 "main.tex" "main.pdf" "main" 1793603150.10124 0
   "/etc/texmf/web2c/texmf.cnf" 1792533994.39435 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -43,6 +43,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm" 1136768653 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy9.tfm" 1136768653 520 1cc7cc05f4d7bae5c23bf7516f88fa52 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -131,10 +132,10 @@
   "acl.sty" 1792535472.86821 11615 e2c027f483aa40e577ed34264c8b0655 ""
   "fig_detectors.pdf" 1792562424.5262 28098 ae2374d888339cfdca6e1893b7b178bb ""
   "fig_rank.pdf" 1792562424.3062 20036 501ca5e9d39ee8e0faf311a8958b829a ""
-  "main.aux" 1792998925.49677 32135 c9f19fe113e01e37233eebe0a0ee66d2 "pdflatex"
-  "main.bbl" 1792998924.78077 25191 2bd2b14b1fb805f6343185be3db58e11 "bibtex main"
-  "main.out" 1792998925.50077 1734 3a32caf3259310729226ade4a3837f72 "pdflatex"
-  "main.tex" 1792998915.88623 44810 62c460662b4244c4cf088d90c19eabd3 ""
+  "main.aux" 1793603149.98035 37163 a996f6890543216e17c53e721e248c0c "pdflatex"
+  "main.bbl" 1793603149.28835 25845 3cef20d6ac16424eed93ff513050de50 "bibtex main"
+  "main.out" 1793603149.98435 2325 37c5bbd039d818d92d055d4c67825e46 "pdflatex"
+  "main.tex" 1793603148.3482 52126 ca688d6bcb97845338926b8198049c64 ""
   (generated)
   "main.aux"
   "main.log"
