@@ -49,6 +49,13 @@
    "fakespot": 72.5,
    "superannotate": 66.2,
    "pass_all_three_below_20": 1
+  },
+  "V": {
+   "n": 24,
+   "desklib": 12.5,
+   "fakespot": 23.4,
+   "superannotate": 27.6,
+   "pass_all_three_below_20": 10
   }
  }
 }

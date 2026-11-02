@@ -774,3 +774,26 @@ two or three scenes in place of summary, and material left out rather than compr
 explanatory clauses; three notes-to-prose habits limited to once each (", and" chains, colon reveals, balanced
 maxims); no "I think" in any reflection. New catalog entry PE12. Round 3 judges real (H), v8b (K) and v8c (V) on the
 same 24 development essays.
+
+**Development round 3 (24 essays: real, v8b, v8c; 54 piles, 216 ratings) and fidelity.** Round 3 resumed after a
+usage-limit interruption; v8c essays from agents that died before returning were discarded and rewritten.
+
+| | v8b | v8c |
+|---|---|---|
+| Judged real (p >= 50) | 72% | 64% |
+| Mean p(real) (real essays: 87.0) | 60.2 | 58.5 |
+| AUC vs real (main-model judges) | 0.99 | 1.00 |
+| Quality (real essays: 6.01) | 6.04 | 6.22 |
+| Unsupported claims per essay (blind check vs notes; v7: 1.50) | 0.12 | 0.58 |
+| Essays with no unsupported claim (v7: 6 of 24) | 21 of 24 | 15 of 24 |
+| Detectors: all three < 20% (v7: 11 of 24) | 8 of 24 | 10 of 24 |
+
+v8c vs v8b, paired: p(real) -1.7 [-5.1, +1.7], quality +0.18 [+0.01, +0.33], unsupported claims +0.46 [+0.12, +0.79].
+The "attempt images" and "scenes" rules brought invented physical details back ("her eyes widening with every
+foot", "I landed on the floor instead"). v8b's removal of connective observations is what cut v7's unsupported
+claims (mostly interpretations the notes do not make) from 1.50 to 0.12 per essay.
+
+**Decision: v8 = v8b, frozen** (content hash 8fe68e27a7a0e007, `skill_versions/v8`). Human-likeness tied, and the
+fidelity gap decides it under hard rule 1. v8c is kept as `skill_versions/v8c_rejected`. Frozen before any test
+essay was generated with it. Test: the 16 held-out essays, real vs plain vs word list vs v7 vs v8, three judges,
+plus fidelity and detectors.
