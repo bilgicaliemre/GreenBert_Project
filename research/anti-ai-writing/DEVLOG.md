@@ -824,3 +824,16 @@ admitted essays, which these detectors flag most (1 of 16 real essays passed).
 changelog in `skill_versions/v8/CHANGELOG.md`). Reason: it is better on the two things the skill exists for,
 reading as a real writer and never inventing, on held-out data. The quality and detector costs are stated in the
 changelog. v7 stays in `skill_versions/v7` for anyone who weights detector scores more.
+
+**Paper revision and review.** The paper now has the human-anchored benchmark as a methods paragraph, a results
+subsection with the held-out table, and a reframed abstract, discussion, conclusion and limitations; the
+personal-statement history, coaching details, per-genre results and detector figure moved to the appendix to keep the
+body at 8 pages. Three independent reviewers then checked it (numbers against the result files, claims and
+consistency, prose). They found real problems, all fixed: the 65% "judged real" headline leaned on the lenient
+third judge (it called 94% to 100% of every version real), so the two stricter judges' 22% to 47% now sits next to
+it; "v7 no more human than the word list" held on development (+2.0) but on test v7 was +5.2 [-0.2, +10.3], so the
+paper now says "only slightly more human"; the methods wrongly said all three judges read the same piles (each had
+its own); "38 of 40 flagged" now says at least one detector scored them 20% or more; several sentences still called
+v7 the released skill; and causal phrasing ("its rules caused", "gained most by relaxing rules") was softened to
+what the data show. The original split was confirmed random (stratified by type) and the 40 essays a random draw
+from the 90 (seed 20261022).

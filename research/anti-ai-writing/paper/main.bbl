@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{63}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Abdulhai et~al.(2026)Abdulhai, White, Wan, Qureshi, Leibo,
@@ -73,14 +73,6 @@ Conor Bronsdon. 2026.
 \newblock GitHub repository,
   \url{https://github.com/conorbronsdon/avoid-ai-writing}.
 \newblock Agent skill, version 3.38.0; MIT license; accessed 20 October 2026.
-
-\bibitem[{{Brown University Office of College
-  Admission}(2026)}]{brown2026integrity}
-{Brown University Office of College Admission}. 2026.
-\newblock Integrity in the application process.
-\newblock
-  \url{https://admission.brown.edu/apply/how-apply/integrity-application-process}.
-\newblock Accessed 20 October 2026.
 
 \bibitem[{Chakrabarty et~al.(2025)Chakrabarty, Laban, and
   Wu}]{chakrabarty2025salvaged}
