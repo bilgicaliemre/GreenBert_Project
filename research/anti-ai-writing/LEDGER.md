@@ -51,11 +51,46 @@ Hypothesis for the skill: short appeals need genre guidance. Keep the audience's
 translation; allow the warmth the genre uses (the group's identity, an exclamation, an emoji where the sender
 would use one); keep the no-invention rule, which the skill already gets right. Tested next on real appeals.
 
-## Benchmark: real charity-run appeals (in progress)
+## Case 2. Charity-run appeals against real ones (benchmark, 2026-11-03)
 
-Human anchor: "Why I run" texts that runners wrote for their charity-run campaign pages before 2022, sampled at
-random from a Turkish fundraising platform, with the platform's default template sentences, links and sign-off
-names removed. For each, the runner's notes are reconstructed (facts and feelings, none of the wording), and the
-appeal is rewritten from the notes by plain Claude and by the skill. Blind judges read piles of single appeals
-(any mix of real and model-written) as a donor and as an NGO editor, and rate how likely the runner wrote each one,
-how likely they would give, and how well it works. Results will be added here and in DEVLOG.
+Human anchor: 84 "Why I run" texts that runners wrote for their charity-run campaign pages for events up to 2022,
+sampled at random from a Turkish fundraising platform, with the platform's default template sentences, links and
+sign-off names removed. For each, the runner's notes were reconstructed (facts and feelings, none of the wording),
+and the appeal was rewritten from the notes by plain Claude and by the skill. Blind judges (a donor and an NGO
+editor) read piles of 12 single appeals, any mix of real and model-written, and rated how likely the runner wrote
+each one, how likely they would give and how well it works. Development set: 32 appeals.
+
+| | judged written by the runner | would give (1-10) | quality (1-10) | claims the notes don't support |
+|---|---|---|---|---|
+| real appeals | 100% | 4.7 | 5.0 | |
+| plain Claude | 25% | 5.6 | 6.2 | 1 in 32 texts |
+| skill v8 | 17% | 5.4 | 6.1 | 0 |
+
+What plain Claude returns: a clean, well-ordered appeal that judges like more than the real ones (about +1 on
+quality and on would-give) and never mistake for the real ones (every model text was rated less likely human than
+every real text). Told "use only the facts in my notes", it invents nothing; the invention problem from case 1
+shows up when the request is open.
+
+What the skill (v8) changed: nothing a reader would notice for the better. It started more texts with "I'm running
+for X" (66% vs 44% for plain, 12% for real runners) and used more semicolons (1.2 per text vs 0.7 plain, 0.4 real),
+because its rule for replacing dashes suggested colons.
+
+What a human eye notices, in the judges' own evidence:
+- **Punctuation.** Semicolons and stray colons were cited in about half of the judgments of model texts and almost
+  never for real ones. In Turkish, the formal circumflex ("imkân", "hâlâ") was also a giveaway; real runners write
+  "imkan", "hala".
+- **The assembled plan.** Story, belief, who benefits, cost, ask, thanks, every time and in that order. Judges
+  cited a tidy plan in 50 to 59% of model judgments and 12% of real ones. Real appeals are mostly one thing (a
+  story, the cause's facts, a belief) with a short ask.
+- **Carried-over tics.** The notes were written as speech ("bence", "I think"); a quarter to a third of model texts
+  kept "bence", no real text had it.
+- **Sentence shape.** Real runners write longer, more uneven sentences (15 words on average, standard deviation 8)
+  than either model version (10 to 12, SD about 4).
+- **Things the skill should not copy.** Typos, a pasted project title, run-on sentences: judges cited these as
+  signs of a person in about half of real judgments. Faking them is a trick the skill rules out.
+
+What v9 does about it: a new guide for messages and appeals (`skill_versions/v9/.../references/messages.md`). It
+says to write only in the readers' language, start an appeal from the writer's reason, let one part carry the text,
+keep money concrete, mix long and short sentences, punctuate like the register (no semicolons, no stray colons, no
+circumflex in casual Turkish), drop the notes' spoken tics and invent nothing. Held-out test on 16 unseen appeals:
+in progress.

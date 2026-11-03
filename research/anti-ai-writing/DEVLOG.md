@@ -837,3 +837,64 @@ its own); "38 of 40 flagged" now says at least one detector scored them 20% or m
 v7 the released skill; and causal phrasing ("its rules caused", "gained most by relaxing rules") was softened to
 what the data show. The original split was confirmed random (stratified by type) and the 40 essays a random draw
 from the 90 (seed 20261022).
+
+## 22. Messages and appeals: real charity-run appeals as the human anchor
+
+**Why.** The user asked for a WhatsApp message to a school running group (a donation drive moved to a children's
+cancer charity after the school fundraiser was blocked), then asked that every skill change from now on be logged
+as plain Claude vs the skill vs real human writing (`LEDGER.md`, case 1). In that case the skill drafts were
+accurate but cold, one of them appended an English translation nobody asked for, and the plain drafts invented a
+feeling and an apology. The skill had one line of guidance for messages. So we built a benchmark for the genre.
+
+**Human anchor.** "Why I run" texts that runners wrote for their pages on a Turkish charity-run platform for events
+up to 2022 (before ChatGPT), sampled by random campaign code at one request per second (robots.txt allows it).
+115 pages kept at 70+ words; cleaning removed link lines, the platform's default template sentences and sign-off
+names; screening dropped texts under 60 or over 300 words after cleaning, texts shared across pages (charity copy,
+team texts) and texts with no first-person voice: 84 remain. The corpus is private (real people's writing); only
+counts and aggregates are reported. Development set: the first 32 kept (random codes). Test set: 16 drawn at
+random from the rest (seed 20261103), never read by the developer.
+
+**Method.** As in section 21: per appeal, a model reconstructs the runner's notes (facts, reasons and feelings as
+spoken Turkish answers; no wording, no run over five words, no runner name). Plain Claude (P) and the skill (S8 =
+v8) each write the appeal from the notes alone ("Use only the facts in my notes", same length). Two blind judges
+(a donor who gets many charity links, an NGO communications editor) read piles of 12 appeals by 12 different
+runners, told any mix of real and AI is possible, and rate p(written by the runner), would-give (1-10) and quality
+(1-10) with evidence. A blind checker counts claims the notes do not support.
+
+**Development results** (32 runners, 192 ratings):
+
+| | judged human | mean p | AUC vs real | would give | quality | unsupported claims/text |
+|---|---|---|---|---|---|---|
+| real | 100% | 88.7 | | 4.67 | 5.03 | |
+| plain Claude | 25% | 40.2 | 1.00 | 5.56 | 6.20 | 0.03 |
+| skill v8 | 17% | 38.0 | 1.00 | 5.42 | 6.11 | 0.00 |
+
+Paired by runner: v8 minus plain, p -2.2 [-5.2, +0.8], give -0.14 [-0.34, +0.06], quality -0.09 [-0.30, +0.11].
+Both model versions beat the real appeals on give (+0.8 to +0.9) and quality (+1.1), and every model version was
+rated less human than every real one. The skill added nothing on this genre.
+
+**Why the models were caught** (keyword scan of the 192 judge rationales, and counts in the texts):
+- Punctuation. Judges cited semicolons in 44% (P) and 67% (S8) of model judgments vs 6% of real ones. Counts per
+  text: semicolons 0.41 real, 0.66 P, 1.22 S8; colons 0.06, 0.38, 0.47; the formal circumflex ("imkân", "hâlâ")
+  0, 0.31, 0.31. The skill's Format rule ("commas, colons or parentheses instead of dashes") pushes toward the
+  semicolon and colon tell.
+- An assembled plan: tidy or ordered structure cited in 59% (P) and 50% (S8) of judgments vs 12% (real).
+  Openings with "I'm running for X": 12% real, 44% P, 66% S8 (the skill's "request in the first two lines" rule).
+- Tics from the notes: "bence" ("I think") in 0% of real texts, 25% P, 31% S8. The notes are written as speech,
+  and both versions carried the marker over (the same lesson as v8's "written voice, not spoken").
+- Sentence shape: mean sentence length 14.8 words (SD 8.2) real vs 10.3 (4.2) P and 11.6 (4.6) S8.
+- Signs of a person that the skill never fakes (typos, pasted project titles, run-ons) were cited in about half of
+  real judgments; these stay out of reach by design (hard rule 3).
+
+**Fidelity.** With "use only the facts in my notes" in the request, plain Claude invented almost nothing (1
+unsupported claim in 32 texts), unlike the open-ended group-message case in LEDGER case 1. The no-invention rule
+matters most when the user gives few facts.
+
+**v9 (built from development data only).** New `references/messages.md` for group messages, emails and appeals:
+write only in the readers' language and never append a translation; an appeal page may start from the writer's
+reason, while action messages keep the request in the first two lines; let one part carry the text instead of the
+same six-part plan; keep money concrete; mix long and short sentences; punctuate like the register (no
+semicolons, a colon only before a list or link, no circumflex in casual Turkish unless the user writes it, one
+exclamation mark at the ask is normal); leave the notes' spoken tics behind; never invent. SKILL.md: the Format
+row now swaps dashes for commas, full stops or parentheses (colon only before a list, quote or link), the
+over-correction list names semicolons and colons, and the messages genre note points to the new file.
