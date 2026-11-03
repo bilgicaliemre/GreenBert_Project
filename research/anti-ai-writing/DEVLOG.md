@@ -898,3 +898,32 @@ semicolons, a colon only before a list or link, no circumflex in casual Turkish 
 exclamation mark at the ask is normal); leave the notes' spoken tics behind; never invent. SKILL.md: the Format
 row now swaps dashes for commas, full stops or parentheses (colon only before a list, quote or link), the
 over-correction list names semicolons and colons, and the messages genre note points to the new file.
+
+**Freeze and held-out test.** v9 frozen before the test (hash 6e56b690fba3cd03). A 4-appeal dev sanity check
+confirmed the skill agent read the new guide (no semicolons, reason-first openings). Test: 16 appeals never read
+during development, S8 and S9 written from the same notes, two blind judges, piles of 12 (96 ratings). Exposure
+note: a workflow completion notice printed the reconstructed notes (not the texts) of 10 pool appeals into the
+developer's context; the 5 test appeals among them were swapped, before any test generation, for unused unexposed
+appeals (seed 20261104). Workflows now return only counts.
+
+| held-out (16) | judged human | mean p | AUC vs real | would give | quality | unsupported/text |
+|---|---|---|---|---|---|---|
+| real | 100% | 91.6 | | 4.50 | 4.59 | |
+| skill v8 | 12% (donor 6%, editor 19%) | 37.6 | 1.00 | 5.41 | 6.22 | 0.06 |
+| skill v9 | 59% (donor 50%, editor 69%) | 49.3 | 1.00 | 5.53 | 6.16 | 0.00 |
+
+v9 minus v8, paired by runner: p +11.7 [+5.5, +17.9], give +0.12 [-0.22, +0.47], quality -0.06 [-0.38, +0.28].
+Text counts on test (real / v8 / v9): semicolons per text 0.25 / 1.75 / 0; colons 0.25 / 0.62 / 0; circumflex 0 /
+0.19 / 0; "bence" 0% / 44% / 0%; mean sentence length 13.8 / 11.9 / 14.5 words (SD 6.9 / 4.1 / 5.3). Two
+overshoots to watch: v9 uses more exclamation marks than these runners (0.77 vs 0.26 per 100 words) and opens
+with "I'm running for X" less often than they do (12% vs 31%). Every model text still scored below every real
+one, so v9 closes much of the gap but not all of it.
+
+**Shipped: v9** (`.claude/skills/anti-ai-writing` = `skill_versions/v9/anti-ai-writing`; changelog in
+`skill_versions/v9/CHANGELOG.md`; zip `anti-ai-writing-v9.zip`). Reason: large held-out gain in reading as the
+real writer on this genre, no cost in judged quality or would-give, no invented claims. The Format-row change also
+reaches other genres and was not re-tested there.
+
+**Spend.** About 11.4M subagent tokens since the 10M budget started (notes 1.2M, generation 7.0M, judging 1.6M,
+fidelity 0.8M, ledger cases 0.5M, checks 0.3M); one-per-text generation was the main cost (about 60k tokens of fixed
+overhead per agent).

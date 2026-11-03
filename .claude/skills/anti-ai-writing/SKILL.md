@@ -68,7 +68,7 @@ built.
 | Endings | Paragraphs that each close on a short wry or quotable line ("The map stayed in the glovebox.") | At most one or two kicker endings per piece; let most paragraphs end on their last piece of content |
 | Tone | Hedge stacks ("could potentially suggest"); false balance ("While X has benefits, it also has challenges"); mannered metaphors ("trust is the currency of…") | One hedge on the uncertain part; take the position the evidence supports; say the literal thing |
 | Words | The current-model list and the classic list in `references/tells.md` | Rewrite the sentence around its claim; do not just swap the word |
-| Format | Bullets where an argument belongs; bold run-in labels; Title Case headings; emoji; em dashes | Paragraphs; sentence-case headings; commas, colons or parentheses instead of dashes |
+| Format | Bullets where an argument belongs; bold run-in labels; Title Case headings; emoji; em dashes; dashes swapped for semicolons and colons | Paragraphs; sentence-case headings; commas, full stops or parentheses instead of dashes; a colon only before a list, quote or link |
 
 Act on a strong tell after one sighting. Act on weak tells (a transition word, one em dash, a formal word,
 passive voice) only when several cluster in one passage.
@@ -78,7 +78,7 @@ passive voice) only when several cluster in one passage.
   user or the source. Remove or bracket anything that does not.
 - Read it as the target reader. Does any sentence only exist to sound good?
 - Did the rewrite create new tells? Watch for the classic over-corrections: choppy fragments, every paragraph
-  opening with a short punchy sentence, forced casualness (speech filler such as really, kind of, actually, basically, stuff), endings that shrug instead of
+  opening with a short punchy sentence, semicolons and colons where a comma or full stop would do, forced casualness (speech filler such as really, kind of, actually, basically, stuff), endings that shrug instead of
   concluding, and above all kicker endings. Count them: list the
   last sentence of every paragraph; if more than two are short (under about 10 words) or wry/quotable, rewrite
   the others so they end on content, or merge them into the sentence before.
@@ -145,8 +145,10 @@ technique, is fine.
 - **Explanations (science, how-things-work):** start from a question a reader actually has, use real named
   examples and dates that are verifiable general knowledge, show the reasoning step by step, and let the
   writer's angle show. A sequence of textbook definitions is what reads as machine-made.
-- **Emails and messages:** the request or answer in the first two lines; no "I hope this email finds you
-  well"; sign off plainly.
+- **Emails, messages and appeals:** in an email or group message that needs action, the news and the request
+  in the first two lines; no "I hope this email finds you well"; sign off plainly. An appeal page (fundraising,
+  a donation drive) can start from the writer's reason instead. Write only in the readers' language, never with
+  an unrequested translation. Full guidance, including punctuation by register: `references/messages.md`.
 - **Blog posts:** a real opening (what happened, what you found), first person, at least one thing that
   surprised you, no "In today's fast-paced world".
 
@@ -163,6 +165,7 @@ the student's own work, the honest route is the Coach mode above plus following 
   over-correction list and the false-positive guard. Read it before any audit pass.
 - `references/personal-essay.md`: coaching protocol, interview questions, what admitted essays do, revision passes.
 - `references/academic.md`: register rules for reports, papers and lab write-ups.
+- `references/messages.md`: group messages, emails and appeals: language, openings, punctuation, what not to invent.
 - `references/examples.md`: before/after pairs, all meaning-preserving.
 
 ## Credits

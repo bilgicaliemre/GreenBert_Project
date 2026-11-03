@@ -92,5 +92,23 @@ What a human eye notices, in the judges' own evidence:
 What v9 does about it: a new guide for messages and appeals (`skill_versions/v9/.../references/messages.md`). It
 says to write only in the readers' language, start an appeal from the writer's reason, let one part carry the text,
 keep money concrete, mix long and short sentences, punctuate like the register (no semicolons, no stray colons, no
-circumflex in casual Turkish), drop the notes' spoken tics and invent nothing. Held-out test on 16 unseen appeals:
-in progress.
+circumflex in casual Turkish), drop the notes' spoken tics and invent nothing.
+
+Held-out test on 16 appeals nobody read during development:
+
+| | judged written by the runner | would give | quality | claims the notes don't support |
+|---|---|---|---|---|
+| real appeals | 100% | 4.5 | 4.6 | |
+| skill v8 | 12% | 5.4 | 6.2 | 1 in 16 texts |
+| skill v9 | 59% | 5.5 | 6.2 | 0 |
+
+v9 against v8, same runners: +11.7 points on the judges' probability that the runner wrote it (95% interval +5.5 to
++17.9), with no change in would-give or quality. In the texts, v9 had no semicolons, stray colons, circumflexes or
+"bence" (v8: 1.75 semicolons per text, "bence" in 44%). A reader comparing side by side can still tell: every model
+text scored below every real one. v9 also uses more exclamation marks than these runners did. v9 is now the shipped
+skill.
+
+Case 1 again with v9 (not a held-out check, since the translation rule came partly from case 1): both drafts were
+Turkish only, explained the change, closed with one exclamation mark at the ask, and invented nothing. They are still
+plainer than the human draft, which used the team's name and spirit; the request never gave a slogan, and the skill
+does not make one up.
