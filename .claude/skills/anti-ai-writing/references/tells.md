@@ -56,7 +56,7 @@ matters:", "This distinction matters", "plays a crucial role", "is key to". Fix:
 
 **S3 Run-ups and signposts.** "Here's the thing", "Let's break this down", "In this essay I will explore",
 "The answer? Simple." Fix: start with the claim. (Signposting in research papers is a convention; see
-`academic.md`.)
+`research.md`.)
 
 **S4 "-ing" tails (strong).** A clause tacked on to interpret the fact: "Emissions fell 4%, highlighting the
 company's commitment to sustainability." Fix: cut the tail, or turn it into a supported claim: "Emissions

@@ -226,6 +226,8 @@ content, explain the problem and let them rewrite it.
 
 ## 9. Short answers and supplements
 
+Full guidance is in `short-answers.md`. In brief:
+
 - **Short takes (35 to 50 words, or 280 characters):** read for personality; be specific and a little playful.
   Facts about a famous person or a place say nothing about the writer: make the answer about the writer's own
   connection to it.

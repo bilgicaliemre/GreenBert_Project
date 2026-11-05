@@ -112,3 +112,77 @@ Case 1 again with v9 (not a held-out check, since the translation rule came part
 Turkish only, explained the change, closed with one exclamation mark at the ask, and invented nothing. They are still
 plainer than the human draft, which used the team's name and spirit; the request never gave a slogan, and the skill
 does not make one up.
+
+## Case 3. Science-fair research abstracts against real ones (benchmark, 2026-11-05)
+
+Human anchor: winning ISEF abstracts from 2014 to 2021 (Society for Science's public database), chosen at random
+within four groups: Turkish winners, computing and math, environment and energy, social science. For each, the
+project notes were reconstructed (every fact and number, none of the wording). Plain Claude and the skill wrote
+the abstract from the notes ("I'm a high school student. Please write the abstract for my ISEF project…").
+Blind judges (an ISEF judge and a student-journal editor) rated single abstracts in mixed piles.
+
+What plain Claude returns: a fluent, well-ordered abstract with every number from the notes, rated a little
+better than the real ones (about 6.1 against 5.7 out of 10), and identified as AI almost every time. Its tells, in
+the judges' words: fluent and frictionless prose, stock connectors ("To address this problem", "Overall", "These
+results indicate"), hedges and self-assessments the student never wrote ("to my knowledge", "we believe"),
+promotional endings ("has the potential to revolutionize"). It invents almost nothing when the notes are full.
+
+What the general skill (v9) changed: nothing for the better. Its plain-English habits made abstracts chattier
+(simplified openings, technical terms glossed for lay readers), which judges read as AI, and its "first person is
+normal" advice gave twice the real rate of "I/we" and half the real passive voice.
+
+What a human eye notices in the real abstracts: dense technical sentences, passive procedures, coined
+abbreviations, lists of methods, numbered results, a keyword line, and errors. Fixing only the errors did not
+change the verdict: copyedited real abstracts were still judged the student's own every time. The difference is
+voice and structure, not mistakes.
+
+What v10's research mode does: technical register, no glossing, no hedges or self-assessments the notes lack, no
+narrated logic or stock connectors, conclusions within the evidence, and above all "edit the researcher's own draft
+first". Held-out test (16 abstracts):
+
+| | judged written by the student | mean p | quality | unsupported claims |
+|---|---|---|---|---|
+| real abstracts | 100% | 87.3 | 5.8 | |
+| plain Claude | 6% | 34.5 | 6.2 | 0 of 16 |
+| v10 | 12% | 38.5 | 6.1 | 0 of 16 |
+
+v10 against plain: +4.0 points of p (95% interval -0.3 to +7.9), quality unchanged; stock connectors cited 3% against
+38%, promotion 9% against 22%. Every model abstract still scored below every real one. The practical lesson: a
+student's own abstract, lightly copyedited, reads as theirs; one written from their notes by any version does not.
+
+## Case 4. College short answers against real admitted ones (benchmark, 2026-11-05)
+
+Human anchor: short answers (50 to 250 words) that admitted students published themselves (MIT applicants in The
+Tech and on MIT's blogs; Tufts' admissions blog), classes of 2026 or earlier. Writers did not get notes built from
+these answers: an agent refused to turn real students' personal answers into material for new application answers,
+and we agreed. Instead each real question got an invented applicant's notes, and plain Claude and the skill wrote
+the answer from those. Judges (an admissions reader and an essay coach) rated single answers in mixed piles.
+
+What plain Claude returns: a vivid, crafted answer that judges rate far better than the real admitted ones (7.0
+against 4.4 out of 10) and identify as AI every time. Its tells: a dense run of precise figures and names, a
+labeled-object or campus-trivia hook, comic asides and self-deprecating counts, a planted metaphor, an "honest
+limitation" beat, and a hedged or trailing last line; on the page, short clipped sentences (about 11 words), many
+contractions (3.9 per 100 words) and colons, and a punchy last line in half the answers.
+
+What a human eye notices in the real admitted answers: they are plainer than you expect. Earnest, direct,
+sometimes clichéd, with long sentences (about 21 words), almost no contractions, and conclusions stated
+whole-heartedly. Their weakness is genericness: brochure-style "why us" answers were rated lowest.
+
+What v10's short-answer mode does: one example with the details that matter instead of a run of figures, no
+quips or planted metaphors, plain conclusions, long sentences, few contractions and colons. Held-out test (12
+questions):
+
+| | judged written by the applicant | mean p | quality | unsupported claims per answer |
+|---|---|---|---|---|
+| real admitted answers | 100% | 88.1 | 4.4 | |
+| plain Claude | 0% | 14.2 | 7.0 | 0.58 |
+| v10 | 0% | 16.4 | 7.0 | 1.08 |
+
+v10 matched the real sentence length (19.7 words against 20.8; plain 10.7) and cut contractions from 3.9 to 1.0 per
+100 words, but p moved only +2.2 (-1.7 to +6.0), and it added more unsupported content than plain: its rule to state
+conclusions "whole-heartedly" turned the applicants' doubts into commitments ("I don't know whether chemistry or
+policy" became a stated goal) and added "so" and "because" links. v10.1 fixes that rule: rewritten for the same 12
+questions, it had 0.25 unsupported statements per answer, 10 of 12 clean (not a clean held-out check, and not re-judged). Caveat: the
+invented applicants were model-made, so judges partly caught invented content, not only the writing. For a real
+student the lesson is the reverse of the usual advice: AI help tends to add the over-crafted patterns; their own
+plain, committed sentences read as theirs.

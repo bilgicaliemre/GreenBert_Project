@@ -1,12 +1,32 @@
 ---
 name: anti-ai-writing
-description: Write and edit prose that reads like a skilled human wrote it. Cuts AI tells, adds real specifics, keeps the writer's voice. Use for essays, personal statements, reports, emails, posts.
+description: Write and edit prose that reads like a skilled human wrote it, with a mode for each genre: application essays and short answers (coaching), research abstracts and papers, emails and messages, other prose. Cuts AI tells, adds real specifics, keeps the writer's voice, never invents facts.
 ---
 
 # Anti-AI writing
 
 Use this skill for any prose a person will read: essays, college applications, reports and papers,
 emails, posts, cover letters, summaries. Skip it for code, data tables and one-line chat answers.
+
+## Pick the mode first
+
+Find the row for the text, read its reference file, then follow the procedure below. Each reference was built by
+comparing model writing with real writing of that kind from before AI tools existed (admitted students' essays and
+short answers, winning science-fair abstracts, charity appeals).
+
+| Text | Mode | Read |
+|---|---|---|
+| Common App personal statement, a scholarship or program essay the student will submit | Coach. Never write it. | `references/personal-essay.md` |
+| Supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
+| Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |
+| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once | `references/research.md` |
+| Email, group message, fundraising appeal, announcement | Write or Edit | `references/messages.md` |
+| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes below |
+| A sample for a clearly fictional person (teaching, testing this skill) | Write | The reference for its genre |
+
+If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or
+Coach for an application). When a project has its own writing rules (for example GreenBERT's `research-paper`
+skill), follow them too; they win on conflicts.
 
 ## Why AI prose sounds like AI
 
@@ -134,10 +154,15 @@ technique, is fine.
 - **Personal essay / application:** first person in a written register, not a spoken one (full sentences, some
   long, few contractions), scenes over summaries, one story told closely beats five listed, and the writer's own
   conclusion stated plainly. Full guidance: `references/personal-essay.md`.
+- **Short answers and supplements** (about 350 words or fewer: why us, why this major, community, short takes,
+  activity list): not a compressed essay. Answer the question directly, one example with the two or three details
+  that matter (not a run of figures and names), the conclusion stated plainly; no quips, planted metaphors or hedged
+  endings. Full guidance: `references/short-answers.md`.
 - **School essays (argument, literary analysis):** thesis that someone could disagree with; quote briefly
   and analyze the words, do not summarize plot; a conclusion that adds a consequence or limit instead of
   restating. Use only real quotes the user provides or that you can verify.
-- **Research reports and papers:** see `references/academic.md`. Signposting ("Table 2 shows"), conclusion
+- **Research abstracts, papers and reports:** see `references/research.md`. Edit the researcher's own draft lightly
+  before writing anything from notes. Signposting ("Table 2 shows"), conclusion
   and limitations sections, passive voice in methods and careful hedges are conventions, not tells. If a
   project skill sets stricter writing rules (for example `research-paper` in GreenBERT), follow those too.
   Many journals (Science's policy, and student journals that adopt it) require AI use to be disclosed with
@@ -164,7 +189,9 @@ the student's own work, the honest route is the Coach mode above plus following 
 - `references/tells.md`: the full pattern catalog with examples and fixes, current-model word lists, the
   over-correction list and the false-positive guard. Read it before any audit pass.
 - `references/personal-essay.md`: coaching protocol, interview questions, what admitted essays do, revision passes.
-- `references/academic.md`: register rules for reports, papers and lab write-ups.
+- `references/research.md`: research abstracts, paper sections and reports: edit-first, what models add, register,
+  numbers and citations.
+- `references/short-answers.md`: supplements and short answers, very short takes, activity list and honors.
 - `references/messages.md`: group messages, emails and appeals: language, openings, punctuation, what not to invent.
 - `references/examples.md`: before/after pairs, all meaning-preserving.
 
