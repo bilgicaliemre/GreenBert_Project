@@ -1354,3 +1354,41 @@ than the other three. v13 was not re-run on the edit benchmark; its Edit text is
   written (run 1 30.5M; runs 2 and 3 27.1M), with the paper rewrite still running. The 30M minimum was passed in run 1.
 - The 5-hour usage limit stopped the work twice (end of run 1 at about 23:40Z and during run 2 at about 00:45Z);
   both times every cut-off workflow was resumed from its journal, finished agents replaying from cache.
+
+### The released v13.1 against plain Claude on held-out texts (run 4)
+
+The final paper review's main objection was that the released version had never been compared with plain Claude on
+real writing. v13.1 (hash 5f1eae3111a96823) was run on the held-out halves of the edit benchmark (16 learner essays,
+16 abstracts, 15 appeals) with both requests, then judged blind in new piles of 12 together with the originals, the
+errors-only copyedits and plain Claude's edits of the same texts (piles `v131`, seed 131; two lenses per genre as
+before), and checked blind for meaning. The Edit text is v11's; nothing in the skill was changed for this run.
+
+| "Can you improve it?" (held out) | Words changed | Judged the writer's own | Mean p | Quality | v13.1 minus plain, p | v13.1 minus copyedit, p |
+|---|---|---|---|---|---|---|
+| Abstracts: copyedit / plain / v13.1 | 2% / 73% / 10% | 100% / 0% / 100% | 82.6 / 30.2 / 78.5 | 6.50 / 6.91 / 6.50 | +48.3 [+44.1, +52.3] | -4.1 [-7.4, -0.9] |
+| Appeals: copyedit / plain / v13.1 | 5% / 69% / 8% | 100% / 30% / 100% | 83.7 / 42.1 / 81.4 | 6.03 / 6.53 / 6.03 | +39.3 [+29.7, +47.9] | -2.3 [-6.3, +1.0] |
+| Learner essays: copyedit / plain / v13.1 | 16% / 93% / 21% | 56% / 3% / 62% | 56.6 / 23.6 / 55.2 | 3.53 / 5.19 / 3.62 | +31.7 [+27.4, +36.0] | -1.4 [-10.0, +7.3] |
+
+"Fix the grammar": v13.1 minus plain +28.4 [+22.3, +34.3] (abstracts), +5.9 [+0.8, +12.6] (appeals), +15.6 [+5.3,
++24.9] (learner essays). Quality of v13.1's "improve" edits was 0.41 (abstracts), 0.50 (appeals) and 1.56 (learner
+essays) points below plain's rewrites, and equal to the copyedits'. Meaning check of v13.1's "improve" edits (plain in
+brackets, from the first round on the same held-out texts): abstracts 0 added, 0.62 removed, 0.50 changed per text,
+56% with no change (plain 3.12 / 2.50 / 5.75, 0%); appeals 0 / 0 / 0, 100% (plain 2.60 / 1.07 / 3.87, 0%); learner
+essays 0.06 / 0 / 1.06, 31% (plain 4.00 / 3.19 / 7.94, 0%; the errors-only copyedit itself 56%). The abstract
+removals come with the request's "It has to stay under 250 words".
+
+What this shows and what it does not:
+- Paired within the round, the released version beats plain Claude by 32 to 48 points of p on "improve it" in all
+  three genres, and its edits sit within a few points of an errors-only copyedit. v11's identical Edit text gave the
+  same picture in its own round (gap to the copyedit: abstracts -5.0 [-7.7, -2.4], appeals -1.2 [-3.2, +1.1],
+  learner essays -11.1 [-21.3, -0.5]).
+- The absolute share judged the writer's own is not stable across rounds: it depends on what else is in the pile.
+  For learner essays the copyedit was judged the student's own in 61% (first round), 47% (v11 round) and 56% (this
+  round), and v11's and v13.1's identical Edit text scored 28% and 62%. Comparisons within a round are the result;
+  absolute shares across rounds are not.
+- For learner essays this changes the reading of the first round, where every model edit fell to 5% or below: an
+  edit at copyedit level is judged like a copyedit. The cost is the same as the copyedit's, about 40 points of p
+  below the untouched essay.
+- v13.1 behaves as an errors-only copyeditor plus a list of suggestions (which the benchmark prompt did not ask it to
+  return). That is the design; it also means its "improve" edits are rated 0.4 to 1.6 points lower in quality than a
+  rewrite.

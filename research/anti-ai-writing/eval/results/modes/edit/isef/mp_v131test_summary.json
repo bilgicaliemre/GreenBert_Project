@@ -1,0 +1,18 @@
+{
+ "UG": {
+  "n": 16,
+  "added": 0,
+  "removed": 0,
+  "changed": 0.0625,
+  "clean": 0.9375,
+  "voice_kept": 9.75
+ },
+ "UI": {
+  "n": 16,
+  "added": 0,
+  "removed": 0.625,
+  "changed": 0.5,
+  "clean": 0.5625,
+  "voice_kept": 9
+ }
+}
