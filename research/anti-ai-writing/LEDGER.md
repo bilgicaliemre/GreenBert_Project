@@ -219,7 +219,15 @@ them. A learner's practice or graded essay goes to Coach. On held-out texts, v11
 fewer statements (edits with no change in meaning: abstracts 6 to 44 percent, appeals 40 to 100, learner essays 0
 to 44) and kept more of the writer's voice (learner essays 6.9 to 8.9 of 10). The human-likeness gain over v10.1
 was clear for appeals (+4.1, interval +2.3 to +6.1) and not significant for abstracts or learner essays. The
-shipped version, v13, keeps this Edit mode unchanged.
+shipped version, v13 (now v13.1), keeps this Edit mode unchanged.
+
+The released v13.1 against plain Claude on the held-out texts (judged in the same piles, paired by text): on "improve
+it" it changed 10% of the words of an abstract, 8% of an appeal and 21% of a learner's essay (plain: 73%, 69%, 93%),
+and it scored 48, 39 and 32 points of p above plain. Its edits were judged almost exactly like an errors-only
+copyedit (within 1 to 4 points), at the copyedit's quality, 0.4 to 1.6 points below plain's rewrites. One caution
+learned here: the share of texts judged the writer's own moves with what else is in the pile (learner-essay
+edits made with the same Edit text scored 28% in one round and 62% in another), so only differences within one round
+are evidence.
 
 The lesson for a student: "improve it" is the most common request and the one where plain Claude does the most
 damage, because it answers a request for help with a rewrite in its own voice. Ask for errors to be fixed and
