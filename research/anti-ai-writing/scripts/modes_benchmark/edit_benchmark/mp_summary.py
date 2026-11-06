@@ -14,7 +14,7 @@ for r in runs:
             if not x or (split and items[x['rid']]['split'] != split): continue
             per.setdefault(x['cond'], []).append((len(t['added']), len(t['removed']), len(t['changed']), t['voice_kept']))
 out = {}
-for c in ['C', 'PG', 'SG', 'PI', 'SI', 'TG', 'TI']:
+for c in ['C', 'PG', 'SG', 'PI', 'SI', 'TG', 'TI', 'UG', 'UI']:
     v = per.get(c, [])
     if not v: continue
     out[c] = {'n': len(v), 'added': st.mean(a for a, _, _, _ in v), 'removed': st.mean(b for _, b, _, _ in v), 'changed': st.mean(c2 for _, _, c2, _ in v),
