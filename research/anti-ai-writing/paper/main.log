@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.20)  6 NOV 2026 07:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.20)  6 NOV 2026 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,17 +508,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 127.
- [4] [5] [6] [7]
-Underfull \hbox (badness 2547) in paragraph at lines 222--223
- []\T1/ptm/b/n/10.95 (+20) Edit, don't write.[] \T1/ptm/m/n/10.95 (+20) Min-i-m
-um ed-its by ver-
- []
-
-
-Underfull \vbox (badness 2103) has occurred while \output is active []
-
- [8]
-[9] [10] (./main.bbl
+ [4] [5] [6] [7] [8] [9] [10] (./main.bbl
 Underfull \hbox (badness 2181) in paragraph at lines 6--11
 []\T1/ptm/m/n/10 (+20) Marwa Ab-dul-hai, Isadora White, Yan-ming Wan,
  []
@@ -579,37 +569,37 @@ Underfull \hbox (badness 1968) in paragraph at lines 275--280
  []
 
 [12] [13])
-Underfull \hbox (badness 2680) in paragraph at lines 287--287
+Underfull \hbox (badness 2680) in paragraph at lines 317--317
 []\T1/ptm/m/n/9 (+20) written (not spo-ken) voice, one
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 289--289
+Underfull \hbox (badness 1796) in paragraph at lines 319--319
 []\T1/ptm/m/n/9 (+20) guide for mes-sages and ap-peals,
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 289--289
+Underfull \hbox (badness 7796) in paragraph at lines 319--319
 []\T1/ptm/m/n/9 (+20) 32 de-vel-op-ment ap-
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 290--290
+Underfull \hbox (badness 1412) in paragraph at lines 320--320
 []\T1/ptm/m/n/9 (+20) genre router, re-search and short-
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 290--290
+Underfull \hbox (badness 7796) in paragraph at lines 320--320
 []\T1/ptm/m/n/9 (+20) 24 de-vel-op-ment ab-
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 291--291
+Underfull \hbox (badness 1163) in paragraph at lines 321--321
 []\T1/ptm/m/n/9 (+20) conclusions no stronger than the
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 293--293
+Underfull \hbox (badness 6510) in paragraph at lines 323--323
 []\T1/ptm/m/n/9 (+20) 16 held-out rank-ing
  []
 
@@ -620,15 +610,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
 [18] [19]
-<fig_rank.pdf, id=807, 459.5964pt x 134.42345pt>
+<fig_rank.pdf, id=813, 459.5964pt x 134.42345pt>
 File: fig_rank.pdf Graphic file (type pdf)
 <use fig_rank.pdf>
-Package pdftex.def Info: fig_rank.pdf  used on input line 465.
+Package pdftex.def Info: fig_rank.pdf  used on input line 497.
 (pdftex.def)             Requested size: 455.24411pt x 133.14935pt.
-<fig_detectors.pdf, id=823, 474.33243pt x 209.58301pt>
+<fig_detectors.pdf, id=829, 474.33243pt x 209.58301pt>
 File: fig_detectors.pdf Graphic file (type pdf)
 <use fig_detectors.pdf>
-Package pdftex.def Info: fig_detectors.pdf  used on input line 476.
+Package pdftex.def Info: fig_detectors.pdf  used on input line 508.
 (pdftex.def)             Requested size: 455.24411pt x 201.15582pt.
  [20] [21 <./fig_rank.pdf> <./fig_detectors.pdf>] [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -642,16 +632,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B6FD344441B1D46392E9C618A44731A8;3287.
+(rerunfilecheck)             Checksum: EF02983F89E2FCAC90EB790F2F46C74A;3184.
  ) 
 Here is how much of TeX's memory you used:
- 14813 strings out of 476182
- 236046 string characters out of 5795594
- 1976975 words of memory out of 5000000
- 35987 multiletter control sequences out of 15000+600000
- 620200 words of font info for 394 fonts, out of 8000000 for 9000
+ 14819 strings out of 476182
+ 236101 string characters out of 5795594
+ 1973975 words of memory out of 5000000
+ 35989 multiletter control sequences out of 15000+600000
+ 620336 words of font info for 396 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,11n,93p,1796b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,93p,1885b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
@@ -666,10 +656,10 @@ usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on main.pdf (23 pages, 348569 bytes).
+Output written on main.pdf (23 pages, 352860 bytes).
 PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 899 compressed objects within 9 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 1092 PDF objects out of 1200 (max. 8388607)
+ 904 compressed objects within 10 object streams
+ 166 named destinations out of 1000 (max. 500000)
  51875 words of extra memory for PDF output out of 61914 (max. 10000000)
 

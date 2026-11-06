@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1793949357.91078 "main.aux" "main.bbl" "main" 1793949359.02645 0
+["bibtex main"] 1793971695.43822 "main.aux" "main.bbl" "main" 1793971696.45903 0
   "./acl_natbib.bst" 1792535472.8683 45442 bb9ea745fc0a84096e0948d1c1b99bbe ""
-  "./references.bib" 1793949355.1108 31926 53750f9f5ed316d1c6b70bdf3b6612a3 ""
-  "main.aux" 1793949358.90785 51935 0f2901e9fcf3dc16c093518710d42cdc "pdflatex"
+  "./references.bib" 1793971694.20096 31926 53750f9f5ed316d1c6b70bdf3b6612a3 ""
+  "main.aux" 1793971696.32204 53407 3537e1e5ec29fdefabef4f822cf1fe5d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1793949357.93755 "main.tex" "main.pdf" "main" 1793949359.02685 0
+["pdflatex"] 1793971695.47462 "main.tex" "main.pdf" "main" 1793971696.45933 0
   "/etc/texmf/web2c/texmf.cnf" 1792533994.39435 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -137,10 +137,10 @@
   "acl.sty" 1792535472.86821 11615 e2c027f483aa40e577ed34264c8b0655 ""
   "fig_detectors.pdf" 1792562424.5262 28098 ae2374d888339cfdca6e1893b7b178bb ""
   "fig_rank.pdf" 1792562424.3062 20036 501ca5e9d39ee8e0faf311a8958b829a ""
-  "main.aux" 1793949358.90785 51935 0f2901e9fcf3dc16c093518710d42cdc "pdflatex"
-  "main.bbl" 1793949357.92785 26811 fe2bfbe37f690546635333d34bbf3037 "bibtex main"
-  "main.out" 1793949358.91185 3287 b6fd344441b1d46392e9c618a44731a8 "pdflatex"
-  "main.tex" 1793949355.10746 79371 10ffab7b9a92822f01b3b07972a4de91 ""
+  "main.aux" 1793971696.32204 53407 3537e1e5ec29fdefabef4f822cf1fe5d "pdflatex"
+  "main.bbl" 1793971695.46604 26811 fe2bfbe37f690546635333d34bbf3037 "bibtex main"
+  "main.out" 1793971696.32604 3184 ef02983f89e2fcac90eb790f2f46c74a "pdflatex"
+  "main.tex" 1793971694.19877 83273 a539d9a68f9e333d74d34fa0cad548bd ""
   (generated)
   "main.aux"
   "main.log"
