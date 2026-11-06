@@ -1,0 +1,18 @@
+{
+ "TG": {
+  "n": 16,
+  "added": 0,
+  "removed": 0,
+  "changed": 0.5625,
+  "clean": 0.75,
+  "voice_kept": 9.4375
+ },
+ "TI": {
+  "n": 16,
+  "added": 0.125,
+  "removed": 0.5625,
+  "changed": 0.8125,
+  "clean": 0.5625,
+  "voice_kept": 9.125
+ }
+}

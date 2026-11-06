@@ -1,0 +1,8 @@
+judgments 32
+P     mean rank 2.22  first 11/32  quality 6.91  human 5.19  unsupported 1.31
+V9    mean rank 1.47  first 18/32  quality 7.59  human 6.31  unsupported 1.12
+V101  mean rank 2.31  first 3/32  quality 6.81  human 5.72  unsupported 1.25
+V101 ranked above P 18 of 32
+V101 ranked above V9 4 of 32
+V9 ranked above P 21 of 32
+mean rank by genre: {('argue', 'P'): 3, ('argue', 'V101'): 2, ('argue', 'V9'): 1, ('blog', 'P'): 1, ('blog', 'V101'): 3, ('blog', 'V9'): 2, ('cover', 'P'): 2, ('cover', 'V101'): 2.5, ('cover', 'V9'): 1.5, ('email', 'P'): 2.5, ('email', 'V101'): 2.5, ('email', 'V9'): 1, ('explain', 'P'): 3, ('explain', 'V101'): 1.75, ('explain', 'V9'): 1.25, ('lab', 'P'): 3, ('lab', 'V101'): 1.5, ('lab', 'V9'): 1.5, ('lit', 'P'): 2.5, ('lit', 'V101'): 2.25, ('lit', 'V9'): 1.25, ('news', 'P'): 1, ('news', 'V101'): 2.5, ('news', 'V9'): 2.5, ('ps', 'P'): 2, ('ps', 'V101'): 2.25, ('ps', 'V9'): 1.75, ('supp', 'P'): 1.25, ('supp', 'V101'): 3, ('supp', 'V9'): 1.75}

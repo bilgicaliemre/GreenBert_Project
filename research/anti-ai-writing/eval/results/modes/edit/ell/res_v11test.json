@@ -1,0 +1,147 @@
+{
+ "summary": {
+  "H": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 94.96875,
+   "quality": 2.84375,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   }
+  },
+  "C": {
+   "n": 32,
+   "human_share": 0.46875,
+   "mean_p": 51.46875,
+   "quality": 3.5,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.3125,
+    "teacher": 0.625
+   }
+  },
+  "SG": {
+   "n": 32,
+   "human_share": 0.21875,
+   "mean_p": 39.65625,
+   "quality": 4,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.1875,
+    "teacher": 0.25
+   }
+  },
+  "SI": {
+   "n": 32,
+   "human_share": 0.1875,
+   "mean_p": 38.59375,
+   "quality": 4.25,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.0625,
+    "teacher": 0.3125
+   }
+  },
+  "TG": {
+   "n": 32,
+   "human_share": 0.375,
+   "mean_p": 44.0625,
+   "quality": 3.78125,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.3125,
+    "teacher": 0.4375
+   }
+  },
+  "TI": {
+   "n": 32,
+   "human_share": 0.28125,
+   "mean_p": 40.40625,
+   "quality": 3.6875,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.1875,
+    "teacher": 0.375
+   }
+  }
+ },
+ "pairs": {
+  "TI-SI:p": [
+   1.8125,
+   -6.125,
+   10.6875,
+   16
+  ],
+  "TI-SI:q": [
+   -0.5625,
+   -0.8125,
+   -0.3125,
+   16
+  ],
+  "TG-SG:p": [
+   4.40625,
+   -1.34375,
+   10.40625,
+   16
+  ],
+  "TG-SG:q": [
+   -0.21875,
+   -0.4375,
+   0.0,
+   16
+  ],
+  "TI-C:p": [
+   -11.0625,
+   -21.28125,
+   -0.46875,
+   16
+  ],
+  "TI-C:q": [
+   0.1875,
+   0.0,
+   0.375,
+   16
+  ],
+  "TG-C:p": [
+   -7.40625,
+   -16.90625,
+   1.40625,
+   16
+  ],
+  "TG-C:q": [
+   0.28125,
+   0.15625,
+   0.4375,
+   16
+  ],
+  "TI-H:p": [
+   -54.5625,
+   -61.21875,
+   -47.6875,
+   16
+  ],
+  "TI-H:q": [
+   0.84375,
+   0.59375,
+   1.09375,
+   16
+  ]
+ }
+}
