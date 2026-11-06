@@ -1284,6 +1284,14 @@ of v9. All of this is on development briefs that I read while diagnosing, so it 
 held-out effect. The placement of a routing table at the top of an instruction file changed how well the model
 argued, which is worth knowing for anyone building multi-mode skills.
 
+**Correction (after the final paper review).** The diagnosis above, that short-answer rules leaked into other genres,
+is not supported by the later checks. In the phase-3 check the script gave every version every reference it has, so
+v10.1 could see the short-answer rules on every brief. In rg2 and rg3 the scripts gave every version, v9 included,
+only its genre's reference, so nothing could leak, yet v11 and v12 still trailed v9. Those checks therefore tested
+the loosened short-answer rules (two of five genres) and not the new router sentence. What the data support is
+narrower: with identical reference files, the v10-family SKILL.md wrote weaker school essays than v9's, and moving
+the mode table to the end recovered most of the gap, in sample.
+
 ### Surface features and a tells checker
 
 `research/anti-ai-writing/tools/tellcheck.py` flags the surface habits judges cited (hedges, stock connectors,
@@ -1325,7 +1333,7 @@ from 11 to 50: the detectors, like the judges, treat learner errors as a human s
 real texts (only 78% of real ESL essays and 34% of real abstracts pass all three), so none of this is a usable
 test of authorship.
 
-### Shipped: v13
+### Shipped: v13 (then v13.1)
 
 v13 = v12 with the mode table moved to the end of SKILL.md (hash 5e5db96e61ff8552; changelogs in
 `skill_versions/v11`, `v12`, `v13`; zip `anti-ai-writing-v13.zip`). It carries v11's Edit mode, v10.1's genre
@@ -1334,7 +1342,9 @@ fictional requests, two samples each, graded blind) passed 10 of 10 for v12 and 
 better") and "write my Why Tufts" went to Coach with the AI-policy note, "improve my abstract" and a learner's "fix my
 grammar" got errors-only edits with suggestions listed separately, and an explainer was written in full. The graders
 ran with this project's CLAUDE.md, which also says to coach application essays, so the two Coach probes test less
-than the other three. v13 was not re-run on the edit benchmark; its Edit text is v11's, unchanged.
+than the other three. v13 was not re-run on the edit benchmark; its Edit text is v11's, unchanged. v13.1 (hash
+5f1eae3111a96823) corrects two lines the final paper review found wrong: the Edit section's evidence range (0 to
+27 percent, not 0 to 33) and the mode table's pointer to the genre notes, which now sit above it.
 
 ### Notes
 - A safety filter repeatedly refused one judge pile of ISEF edits (it contained an edit that an upstream filter had

@@ -108,7 +108,7 @@ when they say "improve it":
 - After the text, list up to five bigger changes the writer could make (a missing example, an unclear claim, the
   order of paragraphs), one line each, without writing the new sentences for them.
 Why: in blind tests on real student writing, answering "improve it" with a rewrite (75 to 90 percent of words
-changed) made texts read as AI (0 to 33 percent judged the writer's own) and added three to four statements per
+changed) made texts read as AI (0 to 27 percent judged the writer's own) and added three to four statements per
 text; edits at this level kept abstracts and appeals reading as the writer's own (90 to 100 percent). For a
 learner's practice or graded essay, this is Coach territory: return the corrected text and the list, never a
 rewrite. If the user also gave a writing sample, it overrides the default style rules here, including the dash
@@ -185,7 +185,7 @@ short answers, winning science-fair abstracts, charity appeals).
 | Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |
 | Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once | `references/research.md` |
 | Email, group message, fundraising appeal, announcement | Write or Edit | `references/messages.md` |
-| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes below |
+| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes above |
 | A sample for a clearly fictional person (teaching, testing this skill) | Write | The reference for its genre |
 
 If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or

@@ -3,14 +3,14 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\citation{kobak2025delving}
-\citation{liang2024monitoring}
-\citation{reinhart2025llms}
+\citation{kobak2025delving,liang2024monitoring}
 \citation{russell2025people}
 \citation{roe2026dramaturgies}
 \citation{chen2026humanizer}
 \citation{wikipedia2026signs}
 \citation{ji2023hallucination}
+\citation{abdulhai2026distort}
+\citation{malik2026erased}
 \@LN@col{1}
 \@LN{0}{0}
 \@LN{1}{0}
@@ -40,12 +40,12 @@
 \@LN{25}{0}
 \@LN{26}{0}
 \@LN{27}{0}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@LN{28}{0}
 \@LN{29}{0}
 \@LN{30}{0}
 \@LN{31}{0}
 \@LN{32}{0}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@LN{33}{0}
 \@LN{34}{0}
 \@LN{35}{0}
@@ -94,8 +94,9 @@
 \@LN{77}{0}
 \@LN{78}{0}
 \@LN{79}{0}
+\@LN{80}{0}
+\@LN{81}{0}
 \citation{kobak2025delving,liang2024monitoring,juzek2025delve,geng2024chatgpt}
-\citation{kobak2025delving}
 \citation{reinhart2025llms}
 \citation{shaib2024syntactic}
 \citation{peng2026notx}
@@ -106,26 +107,24 @@
 \citation{adam2026gptzero}
 \citation{mitchell2023detectgpt,bao2024fastdetectgpt,hans2024binoculars}
 \citation{dugan2024raid}
-\citation{krishna2023paraphrasing,sadasivan2025reliably}
-\citation{perkins2024simple,weberwulff2023testing}
+\citation{krishna2023paraphrasing,sadasivan2025reliably,perkins2024simple,weberwulff2023testing}
 \citation{liang2023biased}
 \citation{creanga2026paradox}
 \citation{karr2026detection}
 \citation{clark2021human,jakesch2023heuristics}
-\citation{russell2025people}
 \citation{kirchenbauer2023watermark,dathathri2024synthid}
 \citation{lee2025poor,alvero2024hegemony}
 \citation{alvero2021essay}
 \citation{lee2026divide}
 \citation{isley2026admissions}
 \citation{padmakumar2024diversity,doshi2024creativity,agarwal2025homogenize}
-\citation{abdulhai2026distort}
-\citation{malik2026erased}
+\citation{fang2023chatgptgec}
 \citation{zheng2023judging,wang2024fair}
 \citation{panickssery2024llm}
+\citation{chen2026humanizer}
+\citation{bronsdon2026avoid}
+\citation{yang2026noaislop}
 \@LN@col{1}
-\@LN{80}{1}
-\@LN{81}{1}
 \@LN{82}{1}
 \@LN{83}{1}
 \@LN{84}{1}
@@ -146,8 +145,6 @@
 \@LN{99}{1}
 \@LN{100}{1}
 \@LN{101}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related work}{2}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Stylistic signatures of LLM text.}{2}{section*.1}\protected@file@percent }
 \@LN{102}{1}
 \@LN{103}{1}
 \@LN{104}{1}
@@ -156,6 +153,8 @@
 \@LN{107}{1}
 \@LN{108}{1}
 \@LN{109}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stylistic signatures of model text.}{2}{section*.1}\protected@file@percent }
 \@LN{110}{1}
 \@LN{111}{1}
 \@LN{112}{1}
@@ -178,6 +177,7 @@
 \@LN@col{2}
 \@LN{129}{1}
 \@LN{130}{1}
+\@writefile{toc}{\contentsline {paragraph}{Detecting AI text.}{2}{section*.2}\protected@file@percent }
 \@LN{131}{1}
 \@LN{132}{1}
 \@LN{133}{1}
@@ -186,7 +186,6 @@
 \@LN{136}{1}
 \@LN{137}{1}
 \@LN{138}{1}
-\@writefile{toc}{\contentsline {paragraph}{Detecting AI text.}{2}{section*.2}\protected@file@percent }
 \@LN{139}{1}
 \@LN{140}{1}
 \@LN{141}{1}
@@ -198,6 +197,7 @@
 \@LN{147}{1}
 \@LN{148}{1}
 \@LN{149}{1}
+\@writefile{toc}{\contentsline {paragraph}{AI help with human writing.}{2}{section*.3}\protected@file@percent }
 \@LN{150}{1}
 \@LN{151}{1}
 \@LN{152}{1}
@@ -211,11 +211,11 @@
 \@LN{160}{1}
 \@LN{161}{1}
 \@LN{162}{1}
-\@writefile{toc}{\contentsline {paragraph}{LLMs and admissions essays.}{2}{section*.3}\protected@file@percent }
 \@LN{163}{1}
 \@LN{164}{1}
 \@LN{165}{1}
 \@LN{166}{1}
+\@writefile{toc}{\contentsline {paragraph}{LLMs as judges.}{2}{section*.4}\protected@file@percent }
 \@LN{167}{1}
 \@LN{168}{1}
 \@LN{169}{1}
@@ -223,21 +223,23 @@
 \@LN{171}{1}
 \@LN{172}{1}
 \@LN{173}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The skill}{2}{section.3}\protected@file@percent }
+\newlabel{sec:skill}{{3}{2}{The skill}{section.3}{}}
 \@LN{174}{1}
 \@LN{175}{1}
 \@LN{176}{1}
 \@LN{177}{1}
-\@LN{178}{1}
-\citation{chen2026humanizer}
-\citation{bronsdon2026avoid}
-\citation{yang2026noaislop}
 \citation{reinhart2025llms}
 \citation{peng2026notx}
-\citation{shaib2026slop}
-\citation{russell2025people}
+\citation{russell2025people,shaib2026slop}
 \citation{lenk2026blind}
+\citation{hamilton2026essays,jhu2026essays,tufts2026essays,mit2026blogs,conncoll2026essays}
+\citation{mit2026blogs,tufts2026essays}
+\citation{thetech2016essays}
+\citation{sfs2026isef}
+\citation{crossley2023ellipse}
 \@LN@col{1}
-\@writefile{toc}{\contentsline {paragraph}{LLMs as judges.}{3}{section*.4}\protected@file@percent }
+\@LN{178}{2}
 \@LN{179}{2}
 \@LN{180}{2}
 \@LN{181}{2}
@@ -247,8 +249,7 @@
 \@LN{185}{2}
 \@LN{186}{2}
 \@LN{187}{2}
-\@writefile{toc}{\contentsline {section}{\numberline {3}The skill}{3}{section.3}\protected@file@percent }
-\newlabel{sec:skill}{{3}{3}{The skill}{section.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Hard rules.}{3}{section*.5}\protected@file@percent }
 \@LN{188}{2}
 \@LN{189}{2}
 \@LN{190}{2}
@@ -259,13 +260,13 @@
 \@LN{195}{2}
 \@LN{196}{2}
 \@LN{197}{2}
+\@writefile{toc}{\contentsline {paragraph}{Audit order.}{3}{section*.6}\protected@file@percent }
 \@LN{198}{2}
 \@LN{199}{2}
 \@LN{200}{2}
 \@LN{201}{2}
 \@LN{202}{2}
 \@LN{203}{2}
-\@writefile{toc}{\contentsline {paragraph}{Audit order.}{3}{section*.5}\protected@file@percent }
 \@LN{204}{2}
 \@LN{205}{2}
 \@LN{206}{2}
@@ -280,10 +281,10 @@
 \@LN{215}{2}
 \@LN{216}{2}
 \@LN{217}{2}
+\@writefile{toc}{\contentsline {paragraph}{Modes.}{3}{section*.7}\protected@file@percent }
 \@LN{218}{2}
 \@LN{219}{2}
 \@LN{220}{2}
-\@writefile{toc}{\contentsline {paragraph}{Hard rules.}{3}{section*.6}\protected@file@percent }
 \@LN{221}{2}
 \@LN{222}{2}
 \@LN{223}{2}
@@ -293,8 +294,8 @@
 \@LN{227}{2}
 \@LN@col{2}
 \@LN{228}{2}
-\@writefile{toc}{\contentsline {paragraph}{Over-correction checks.}{3}{section*.7}\protected@file@percent }
 \@LN{229}{2}
+\@writefile{toc}{\contentsline {paragraph}{Genre router.}{3}{section*.8}\protected@file@percent }
 \@LN{230}{2}
 \@LN{231}{2}
 \@LN{232}{2}
@@ -304,13 +305,13 @@
 \@LN{236}{2}
 \@LN{237}{2}
 \@LN{238}{2}
-\@writefile{toc}{\contentsline {paragraph}{Modes.}{3}{section*.8}\protected@file@percent }
 \@LN{239}{2}
 \@LN{240}{2}
 \@LN{241}{2}
 \@LN{242}{2}
 \@LN{243}{2}
 \@LN{244}{2}
+\@writefile{toc}{\contentsline {paragraph}{Strict Edit mode.}{3}{section*.9}\protected@file@percent }
 \@LN{245}{2}
 \@LN{246}{2}
 \@LN{247}{2}
@@ -323,8 +324,6 @@
 \@LN{254}{2}
 \@LN{255}{2}
 \@LN{256}{2}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Evaluation}{3}{section.4}\protected@file@percent }
-\newlabel{sec:eval}{{4}{3}{Evaluation}{section.4}{}}
 \@LN{257}{2}
 \@LN{258}{2}
 \@LN{259}{2}
@@ -336,7 +335,9 @@
 \@LN{265}{2}
 \@LN{266}{2}
 \@LN{267}{2}
-\@writefile{toc}{\contentsline {paragraph}{Briefs.}{3}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Benchmarks}{3}{section.4}\protected@file@percent }
+\newlabel{sec:bench}{{4}{3}{Benchmarks}{section.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Corpora.}{3}{section*.11}\protected@file@percent }
 \@LN{268}{2}
 \@LN{269}{2}
 \@LN{270}{2}
@@ -345,17 +346,11 @@
 \@LN{273}{2}
 \@LN{274}{2}
 \@LN{275}{2}
-\citation{chen2026humanizer}
-\citation{min2023factscore}
-\citation{desklib2025detector}
-\citation{fakespot2025detector}
-\citation{superannotate2024detector}
-\citation{turnitin2026report}
-\citation{hamilton2026essays}
-\citation{conncoll2026essays}
-\citation{crossley2024persuade}
+\@LN{276}{2}
 \@LN@col{1}
-\@LN{276}{3}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces The five corpora (all English except the appeals): development/test texts written from notes reconstructed from each real text (Notes), and real texts edited (Edited; texts not used for Notes). Years: when the texts were written (essays and short answers: classes of 2026 or earlier). $^{*}$Model answers were written for invented applicants.}}{4}{table.caption.10}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:corpora}{{1}{4}{The five corpora (all English except the appeals): development/test texts written from notes reconstructed from each real text (Notes), and real texts edited (Edited; texts not used for Notes). Years: when the texts were written (essays and short answers: classes of 2026 or earlier). $^{*}$Model answers were written for invented applicants}{table.caption.10}{}}
 \@LN{277}{3}
 \@LN{278}{3}
 \@LN{279}{3}
@@ -371,7 +366,6 @@
 \@LN{289}{3}
 \@LN{290}{3}
 \@LN{291}{3}
-\@writefile{toc}{\contentsline {paragraph}{Conditions.}{4}{section*.10}\protected@file@percent }
 \@LN{292}{3}
 \@LN{293}{3}
 \@LN{294}{3}
@@ -384,6 +378,7 @@
 \@LN{301}{3}
 \@LN{302}{3}
 \@LN{303}{3}
+\@writefile{toc}{\contentsline {paragraph}{Writing from notes.}{4}{section*.12}\protected@file@percent }
 \@LN{304}{3}
 \@LN{305}{3}
 \@LN{306}{3}
@@ -394,27 +389,28 @@
 \@LN{311}{3}
 \@LN{312}{3}
 \@LN{313}{3}
+\@LN@col{2}
 \@LN{314}{3}
 \@LN{315}{3}
 \@LN{316}{3}
 \@LN{317}{3}
-\@writefile{toc}{\contentsline {paragraph}{Judges.}{4}{section*.11}\protected@file@percent }
 \@LN{318}{3}
 \@LN{319}{3}
 \@LN{320}{3}
 \@LN{321}{3}
+\@writefile{toc}{\contentsline {paragraph}{Editing.}{4}{section*.13}\protected@file@percent }
 \@LN{322}{3}
 \@LN{323}{3}
 \@LN{324}{3}
 \@LN{325}{3}
 \@LN{326}{3}
-\@LN@col{2}
 \@LN{327}{3}
 \@LN{328}{3}
 \@LN{329}{3}
 \@LN{330}{3}
 \@LN{331}{3}
 \@LN{332}{3}
+\@writefile{toc}{\contentsline {paragraph}{Judging.}{4}{section*.15}\protected@file@percent }
 \@LN{333}{3}
 \@LN{334}{3}
 \@LN{335}{3}
@@ -433,12 +429,12 @@
 \@LN{348}{3}
 \@LN{349}{3}
 \@LN{350}{3}
+\@writefile{toc}{\contentsline {paragraph}{Measures.}{4}{section*.16}\protected@file@percent }
 \@LN{351}{3}
 \@LN{352}{3}
 \@LN{353}{3}
 \@LN{354}{3}
 \@LN{355}{3}
-\@writefile{toc}{\contentsline {paragraph}{Detectors.}{4}{section*.12}\protected@file@percent }
 \@LN{356}{3}
 \@LN{357}{3}
 \@LN{358}{3}
@@ -447,27 +443,27 @@
 \@LN{361}{3}
 \@LN{362}{3}
 \@LN{363}{3}
-\@LN{364}{3}
-\@LN{365}{3}
-\@LN{366}{3}
-\@LN{367}{3}
-\@writefile{toc}{\contentsline {paragraph}{Human baselines.}{4}{section*.13}\protected@file@percent }
-\@LN{368}{3}
-\@LN{369}{3}
-\@LN{370}{3}
-\@LN{371}{3}
-\@LN{372}{3}
-\@LN{373}{3}
-\@LN{374}{3}
-\@LN{375}{3}
-\@LN{376}{3}
-\@LN{377}{3}
-\citation{hamilton2026essays,jhu2026essays,tufts2026essays,mit2026blogs,conncoll2026essays}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Editing real writing (skill version~10.1, frozen before these texts were collected; development and test halves pooled; two judges per genre, about 64 ratings per text version). Words: share of the original's words changed. Own: share of model-judge ratings with $p \geq 50$, where $p$ is the judged probability that the person wrote the text with no AI writing or editing. Add: statements added per text (blind meaning check). Appendix~\ref {sec:appendix-edit} gives quality, removed and changed statements, voice, AUC and detector scores.}}{5}{table.caption.14}\protected@file@percent }
+\newlabel{tab:edit}{{2}{5}{Editing real writing (skill version~10.1, frozen before these texts were collected; development and test halves pooled; two judges per genre, about 64 ratings per text version). Words: share of the original's words changed. Own: share of model-judge ratings with $p \geq 50$, where $p$ is the judged probability that the person wrote the text with no AI writing or editing. Add: statements added per text (blind meaning check). Appendix~\ref {sec:appendix-edit} gives quality, removed and changed statements, voice, AUC and detector scores}{table.caption.14}{}}
 \@LN@col{1}
+\@LN{364}{4}
+\@LN{365}{4}
+\@LN{366}{4}
+\@LN{367}{4}
+\@LN{368}{4}
+\@LN{369}{4}
+\@LN{370}{4}
+\@LN{371}{4}
+\@LN{372}{4}
+\@writefile{toc}{\contentsline {paragraph}{Splits and freezing.}{5}{section*.17}\protected@file@percent }
+\@LN{373}{4}
+\@LN{374}{4}
+\@LN{375}{4}
+\@LN{376}{4}
+\@LN{377}{4}
 \@LN{378}{4}
 \@LN{379}{4}
 \@LN{380}{4}
-\@writefile{toc}{\contentsline {paragraph}{Human-anchored benchmark.}{5}{section*.14}\protected@file@percent }
 \@LN{381}{4}
 \@LN{382}{4}
 \@LN{383}{4}
@@ -478,7 +474,11 @@
 \@LN{388}{4}
 \@LN{389}{4}
 \@LN{390}{4}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{5}{Results}{section.5}{}}
 \@LN{391}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Editing real writing}{5}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:edit}{{5.1}{5}{Editing real writing}{subsection.5.1}{}}
 \@LN{392}{4}
 \@LN{393}{4}
 \@LN{394}{4}
@@ -487,6 +487,7 @@
 \@LN{397}{4}
 \@LN{398}{4}
 \@LN{399}{4}
+\@LN@col{2}
 \@LN{400}{4}
 \@LN{401}{4}
 \@LN{402}{4}
@@ -516,7 +517,6 @@
 \@LN{426}{4}
 \@LN{427}{4}
 \@LN{428}{4}
-\@LN@col{2}
 \@LN{429}{4}
 \@LN{430}{4}
 \@LN{431}{4}
@@ -526,57 +526,53 @@
 \@LN{435}{4}
 \@LN{436}{4}
 \@LN{437}{4}
-\@LN{438}{4}
-\@writefile{toc}{\contentsline {paragraph}{Coaching experiment.}{5}{section*.15}\protected@file@percent }
-\@LN{439}{4}
-\@LN{440}{4}
-\@LN{441}{4}
-\@LN{442}{4}
-\@LN{443}{4}
-\@LN{444}{4}
-\@LN{445}{4}
-\@LN{446}{4}
-\@LN{447}{4}
-\@LN{448}{4}
-\@LN{449}{4}
-\@LN{450}{4}
-\@LN{451}{4}
-\@LN{452}{4}
-\@LN{453}{4}
-\@LN{454}{4}
-\@LN{455}{4}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{5}{section.5}\protected@file@percent }
-\newlabel{sec:results}{{5}{5}{Results}{section.5}{}}
-\@LN{456}{4}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Held-out briefs}{5}{subsection.5.1}\protected@file@percent }
-\@LN{457}{4}
-\@LN{458}{4}
-\@LN{459}{4}
-\@LN{460}{4}
-\@LN{461}{4}
-\@LN{462}{4}
-\@LN{463}{4}
-\@LN{464}{4}
-\@LN{465}{4}
-\@LN{466}{4}
-\@LN{467}{4}
-\@LN{468}{4}
-\@LN{469}{4}
-\@LN{470}{4}
-\@LN{471}{4}
-\@LN{472}{4}
-\@LN{473}{4}
-\@LN{474}{4}
-\@LN{475}{4}
-\@LN{476}{4}
-\@LN{477}{4}
-\citation{liang2023biased,creanga2026paradox}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Mean rank with 95\% bootstrap intervals (1 = best). Left: development briefs, five texts per panel. Right: held-out briefs, six texts per panel, three judges each. Blue: the skill; orange: plain generation; grey: other approaches.}}{6}{figure.caption.16}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:rank}{{1}{6}{Mean rank with 95\% bootstrap intervals (1 = best). Left: development briefs, five texts per panel. Right: held-out briefs, six texts per panel, three judges each. Blue: the skill; orange: plain generation; grey: other approaches}{figure.caption.16}{}}
 \@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Held-out evaluation: 16 briefs, three judges each (48 judgments). Rank: mean rank among six texts (1 = best); 1st: first places; Human: judged human-likeness (1--10); Unsup.: claims per text that judges found unsupported by the facts file or wrong.}}{6}{table.caption.17}\protected@file@percent }
-\newlabel{tab:heldout}{{1}{6}{Held-out evaluation: 16 briefs, three judges each (48 judgments). Rank: mean rank among six texts (1 = best); 1st: first places; Human: judged human-likeness (1--10); Unsup.: claims per text that judges found unsupported by the facts file or wrong}{table.caption.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Writing from notes, held-out test texts. Judged: share of ratings with $p \geq 50$. AUC: real texts against the version (essays: pooled over three judges; other genres: each of two judges, one value when equal at two decimals). Qual.: quality 1--10. Unsup.: unsupported statements per text. Rows from different runs are not directly comparable. $^{*}$Invented applicants.}}{6}{table.caption.19}\protected@file@percent }
+\newlabel{tab:write}{{3}{6}{Writing from notes, held-out test texts. Judged: share of ratings with $p \geq 50$. AUC: real texts against the version (essays: pooled over three judges; other genres: each of two judges, one value when equal at two decimals). Qual.: quality 1--10. Unsup.: unsupported statements per text. Rows from different runs are not directly comparable. $^{*}$Invented applicants}{table.caption.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Version 11.}{6}{section*.18}\protected@file@percent }
+\@LN{438}{5}
+\@LN{439}{5}
+\@LN{440}{5}
+\@LN{441}{5}
+\@LN{442}{5}
+\@LN{443}{5}
+\@LN{444}{5}
+\@LN{445}{5}
+\@LN{446}{5}
+\@LN{447}{5}
+\@LN{448}{5}
+\@LN{449}{5}
+\@LN{450}{5}
+\@LN{451}{5}
+\@LN{452}{5}
+\@LN{453}{5}
+\@LN{454}{5}
+\@LN{455}{5}
+\@LN{456}{5}
+\@LN{457}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Writing from notes}{6}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:write}{{5.2}{6}{Writing from notes}{subsection.5.2}{}}
+\@LN{458}{5}
+\@LN{459}{5}
+\@LN{460}{5}
+\@LN@col{2}
+\@LN{461}{5}
+\@LN{462}{5}
+\@LN{463}{5}
+\@LN{464}{5}
+\@LN{465}{5}
+\@LN{466}{5}
+\@LN{467}{5}
+\@LN{468}{5}
+\@LN{469}{5}
+\@LN{470}{5}
+\@LN{471}{5}
+\@LN{472}{5}
+\@LN{473}{5}
+\@LN{474}{5}
+\@LN{475}{5}
+\@LN{476}{5}
+\@LN{477}{5}
 \@LN{478}{5}
 \@LN{479}{5}
 \@LN{480}{5}
@@ -600,10 +596,10 @@
 \@LN{498}{5}
 \@LN{499}{5}
 \@LN{500}{5}
-\@LN@col{2}
 \@LN{501}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Errors are a small part of the signal, except for learners}{6}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:errors}{{5.3}{6}{Errors are a small part of the signal, except for learners}{subsection.5.3}{}}
 \@LN{502}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Development round and the version comparison}{6}{subsection.5.2}\protected@file@percent }
 \@LN{503}{5}
 \@LN{504}{5}
 \@LN{505}{5}
@@ -613,33 +609,34 @@
 \@LN{509}{5}
 \@LN{510}{5}
 \@LN{511}{5}
-\@LN{512}{5}
-\@LN{513}{5}
-\@LN{514}{5}
-\@LN{515}{5}
-\@LN{516}{5}
-\@LN{517}{5}
-\@LN{518}{5}
-\@LN{519}{5}
-\@LN{520}{5}
-\@LN{521}{5}
-\@LN{522}{5}
-\@LN{523}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Detectors and human writing}{6}{subsection.5.3}\protected@file@percent }
-\@LN{524}{5}
-\@LN{525}{5}
-\@LN{526}{5}
-\@LN{527}{5}
-\@LN{528}{5}
-\@LN{529}{5}
-\@LN{530}{5}
-\@LN{531}{5}
-\@LN{532}{5}
-\@LN{533}{5}
-\@LN{534}{5}
-\@LN{535}{5}
-\@LN{536}{5}
 \@LN@col{1}
+\@LN{512}{6}
+\@LN{513}{6}
+\@LN{514}{6}
+\@LN{515}{6}
+\@LN{516}{6}
+\@LN{517}{6}
+\@LN{518}{6}
+\@LN{519}{6}
+\@LN{520}{6}
+\@LN{521}{6}
+\@LN{522}{6}
+\@LN{523}{6}
+\@LN{524}{6}
+\@LN{525}{6}
+\@LN{526}{6}
+\@LN{527}{6}
+\@LN{528}{6}
+\@LN{529}{6}
+\@LN{530}{6}
+\@LN{531}{6}
+\@LN{532}{6}
+\@LN{533}{6}
+\@LN{534}{6}
+\@LN{535}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Which parts of the skill matter}{7}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:ablation}{{5.4}{7}{Which parts of the skill matter}{subsection.5.4}{}}
+\@LN{536}{6}
 \@LN{537}{6}
 \@LN{538}{6}
 \@LN{539}{6}
@@ -659,15 +656,15 @@
 \@LN{553}{6}
 \@LN{554}{6}
 \@LN{555}{6}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Against real essays}{7}{subsection.5.4}\protected@file@percent }
-\newlabel{sec:human}{{5.4}{7}{Against real essays}{subsection.5.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Development.}{7}{section*.18}\protected@file@percent }
 \@LN{556}{6}
 \@LN{557}{6}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Rankings among model texts, and a regression}{7}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:rank}{{5.5}{7}{Rankings among model texts, and a regression}{subsection.5.5}{}}
 \@LN{558}{6}
 \@LN{559}{6}
 \@LN{560}{6}
 \@LN{561}{6}
+\@LN@col{2}
 \@LN{562}{6}
 \@LN{563}{6}
 \@LN{564}{6}
@@ -686,16 +683,13 @@
 \@LN{577}{6}
 \@LN{578}{6}
 \@LN{579}{6}
+\@writefile{toc}{\contentsline {paragraph}{Regression on general writing.}{7}{section*.20}\protected@file@percent }
 \@LN{580}{6}
 \@LN{581}{6}
 \@LN{582}{6}
 \@LN{583}{6}
 \@LN{584}{6}
 \@LN{585}{6}
-\@LN@col{2}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Held-out test: 16 admitted essays never studied during development, 240 single-text ratings by three judges. Real: share of ratings with $p(\mathrm  {real}) \geq 50$; $p$: mean $p(\mathrm  {real})$; AUC: separability from the real essays, pooled over judges (0.5 is chance); Qual.: quality 1--10; Unsup.: unsupported claims per essay (blind check against the notes); Det.: essays below 20\% on all three detectors, of 16.}}{7}{table.caption.21}\protected@file@percent }
-\newlabel{tab:human}{{2}{7}{Held-out test: 16 admitted essays never studied during development, 240 single-text ratings by three judges. Real: share of ratings with $p(\mathrm {real}) \geq 50$; $p$: mean $p(\mathrm {real})$; AUC: separability from the real essays, pooled over judges (0.5 is chance); Qual.: quality 1--10; Unsup.: unsupported claims per essay (blind check against the notes); Det.: essays below 20\% on all three detectors, of 16}{table.caption.21}{}}
-\@writefile{toc}{\contentsline {paragraph}{Errors are not the gap.}{7}{section*.19}\protected@file@percent }
 \@LN{586}{6}
 \@LN{587}{6}
 \@LN{588}{6}
@@ -706,7 +700,6 @@
 \@LN{593}{6}
 \@LN{594}{6}
 \@LN{595}{6}
-\@writefile{toc}{\contentsline {paragraph}{Iteration.}{7}{section*.20}\protected@file@percent }
 \@LN{596}{6}
 \@LN{597}{6}
 \@LN{598}{6}
@@ -723,20 +716,22 @@
 \@LN{609}{6}
 \@LN{610}{6}
 \@LN{611}{6}
-\@writefile{toc}{\contentsline {paragraph}{Held-out test.}{7}{section*.22}\protected@file@percent }
 \@LN{612}{6}
-\@LN{613}{6}
-\@LN{614}{6}
-\@LN{615}{6}
-\@LN{616}{6}
-\@LN{617}{6}
-\@LN{618}{6}
-\@LN{619}{6}
-\@LN{620}{6}
-\@LN{621}{6}
-\citation{dugan2024raid}
-\citation{creanga2026paradox,karr2026detection}
+\citation{desklib2025detector,fakespot2025detector,superannotate2024detector}
+\citation{turnitin2026report}
+\citation{liang2023biased}
 \@LN@col{1}
+\@LN{613}{7}
+\@LN{614}{7}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Detectors and surface features}{8}{subsection.5.6}\protected@file@percent }
+\newlabel{sec:detectors}{{5.6}{8}{Detectors and surface features}{subsection.5.6}{}}
+\@LN{615}{7}
+\@LN{616}{7}
+\@LN{617}{7}
+\@LN{618}{7}
+\@LN{619}{7}
+\@LN{620}{7}
+\@LN{621}{7}
 \@LN{622}{7}
 \@LN{623}{7}
 \@LN{624}{7}
@@ -748,7 +743,6 @@
 \@LN{630}{7}
 \@LN{631}{7}
 \@LN{632}{7}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Coaching}{8}{subsection.5.5}\protected@file@percent }
 \@LN{633}{7}
 \@LN{634}{7}
 \@LN{635}{7}
@@ -762,10 +756,10 @@
 \@LN{643}{7}
 \@LN{644}{7}
 \@LN{645}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{8}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Edit, don't write.}{8}{section*.21}\protected@file@percent }
 \@LN{646}{7}
 \@LN{647}{7}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{8}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Preferred is not human.}{8}{section*.23}\protected@file@percent }
 \@LN{648}{7}
 \@LN{649}{7}
 \@LN{650}{7}
@@ -779,21 +773,22 @@
 \@LN{658}{7}
 \@LN{659}{7}
 \@LN{660}{7}
+\@writefile{toc}{\contentsline {paragraph}{In short answers, judges preferred model prose and still rejected it.}{8}{section*.22}\protected@file@percent }
 \@LN{661}{7}
+\@LN@col{2}
 \@LN{662}{7}
 \@LN{663}{7}
 \@LN{664}{7}
 \@LN{665}{7}
 \@LN{666}{7}
+\@writefile{toc}{\contentsline {paragraph}{Learners' errors read as voice.}{8}{section*.23}\protected@file@percent }
 \@LN{667}{7}
 \@LN{668}{7}
 \@LN{669}{7}
 \@LN{670}{7}
-\@LN@col{2}
 \@LN{671}{7}
 \@LN{672}{7}
 \@LN{673}{7}
-\@writefile{toc}{\contentsline {paragraph}{Why content first.}{8}{section*.24}\protected@file@percent }
 \@LN{674}{7}
 \@LN{675}{7}
 \@LN{676}{7}
@@ -803,10 +798,10 @@
 \@LN{680}{7}
 \@LN{681}{7}
 \@LN{682}{7}
+\@writefile{toc}{\contentsline {paragraph}{Preference is not human-likeness.}{8}{section*.24}\protected@file@percent }
 \@LN{683}{7}
 \@LN{684}{7}
 \@LN{685}{7}
-\@writefile{toc}{\contentsline {paragraph}{Iterating on judges.}{8}{section*.25}\protected@file@percent }
 \@LN{686}{7}
 \@LN{687}{7}
 \@LN{688}{7}
@@ -816,8 +811,8 @@
 \@LN{692}{7}
 \@LN{693}{7}
 \@LN{694}{7}
-\@writefile{toc}{\contentsline {paragraph}{Detectors in admissions.}{8}{section*.26}\protected@file@percent }
 \@LN{695}{7}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}\protected@file@percent }
 \@LN{696}{7}
 \@LN{697}{7}
 \@LN{698}{7}
@@ -830,25 +825,23 @@
 \@LN{705}{7}
 \@LN{706}{7}
 \@LN{707}{7}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}\protected@file@percent }
 \@LN{708}{7}
-\@LN{709}{7}
-\@LN{710}{7}
-\@LN{711}{7}
-\@LN{712}{7}
-\@LN{713}{7}
-\@LN{714}{7}
-\@LN{715}{7}
-\@LN{716}{7}
-\@LN{717}{7}
-\@LN{718}{7}
 \citation{panickssery2024llm}
-\citation{krishna2023paraphrasing,sadasivan2025reliably}
-\citation{anthropic2026marks,bleeping2026watermark}
 \@LN@col{1}
+\@LN{709}{8}
+\newlabel{sec:limitations}{{7}{9}{Limitations}{section*.25}{}}
+\@writefile{toc}{\contentsline {paragraph}{No human raters.}{9}{section*.26}\protected@file@percent }
+\@LN{710}{8}
+\@LN{711}{8}
+\@LN{712}{8}
+\@LN{713}{8}
+\@LN{714}{8}
+\@LN{715}{8}
+\@writefile{toc}{\contentsline {paragraph}{Model judges.}{9}{section*.27}\protected@file@percent }
+\@LN{716}{8}
+\@LN{717}{8}
+\@LN{718}{8}
 \@LN{719}{8}
-\newlabel{sec:limitations}{{7}{9}{Limitations}{section*.27}{}}
-\@writefile{toc}{\contentsline {paragraph}{Model judges.}{9}{section*.28}\protected@file@percent }
 \@LN{720}{8}
 \@LN{721}{8}
 \@LN{722}{8}
@@ -877,8 +870,8 @@
 \@LN{745}{8}
 \@LN{746}{8}
 \@LN{747}{8}
+\@writefile{toc}{\contentsline {paragraph}{Judging runs.}{9}{section*.28}\protected@file@percent }
 \@LN{748}{8}
-\@writefile{toc}{\contentsline {paragraph}{Human-anchored benchmark.}{9}{section*.29}\protected@file@percent }
 \@LN{749}{8}
 \@LN{750}{8}
 \@LN{751}{8}
@@ -889,9 +882,11 @@
 \@LN{756}{8}
 \@LN{757}{8}
 \@LN{758}{8}
+\@LN@col{2}
 \@LN{759}{8}
 \@LN{760}{8}
 \@LN{761}{8}
+\@writefile{toc}{\contentsline {paragraph}{Corpora.}{9}{section*.29}\protected@file@percent }
 \@LN{762}{8}
 \@LN{763}{8}
 \@LN{764}{8}
@@ -899,15 +894,12 @@
 \@LN{766}{8}
 \@LN{767}{8}
 \@LN{768}{8}
-\@LN@col{2}
-\@writefile{toc}{\contentsline {paragraph}{Test material.}{9}{section*.30}\protected@file@percent }
 \@LN{769}{8}
 \@LN{770}{8}
 \@LN{771}{8}
 \@LN{772}{8}
 \@LN{773}{8}
 \@LN{774}{8}
-\@writefile{toc}{\contentsline {paragraph}{Detectors.}{9}{section*.31}\protected@file@percent }
 \@LN{775}{8}
 \@LN{776}{8}
 \@LN{777}{8}
@@ -916,9 +908,9 @@
 \@LN{780}{8}
 \@LN{781}{8}
 \@LN{782}{8}
-\@writefile{toc}{\contentsline {paragraph}{Scope and development.}{9}{section*.32}\protected@file@percent }
 \@LN{783}{8}
 \@LN{784}{8}
+\@writefile{toc}{\contentsline {paragraph}{Data reuse.}{9}{section*.30}\protected@file@percent }
 \@LN{785}{8}
 \@LN{786}{8}
 \@LN{787}{8}
@@ -933,38 +925,30 @@
 \@LN{796}{8}
 \@LN{797}{8}
 \@LN{798}{8}
+\@writefile{toc}{\contentsline {paragraph}{Scope.}{9}{section*.31}\protected@file@percent }
 \@LN{799}{8}
 \@LN{800}{8}
 \@LN{801}{8}
 \@LN{802}{8}
 \@LN{803}{8}
 \@LN{804}{8}
-\@writefile{toc}{\contentsline {paragraph}{Dual use.}{9}{section*.34}\protected@file@percent }
 \@LN{805}{8}
 \@LN{806}{8}
 \@LN{807}{8}
 \@LN{808}{8}
-\@LN{809}{8}
-\@LN{810}{8}
-\@LN{811}{8}
-\@LN{812}{8}
-\@LN{813}{8}
-\@LN{814}{8}
-\@LN{815}{8}
-\@LN{816}{8}
-\@LN{817}{8}
-\bibdata{references}
-\bibcite{abdulhai2026distort}{{1}{2026}{{Abdulhai et~al.}}{{Abdulhai, White, Wan, Qureshi, Leibo, Kleiman-Weiner, and Jaques}}}
-\bibcite{adam2026gptzero}{{2}{2026}{{Adam et~al.}}{{Adam, Cui, Thomas, Napier, Shmatko, Schnell, Tian, Dronavalli, Tian, and Lee}}}
-\bibcite{agarwal2025homogenize}{{3}{2025}{{Agarwal et~al.}}{{Agarwal, Naaman, and Vashistha}}}
-\bibcite{alvero2024hegemony}{{4}{2024}{{Alvero et~al.}}{{Alvero, Lee, Regla-Vargas, Kizilcec, Joachims, and Antonio}}}
-\bibcite{alvero2021essay}{{5}{2021}{{Alvero et~al.}}{{Alvero, Giebel, Gebre-Medhin, Antonio, Stevens, and Domingue}}}
-\bibcite{anthropic2026marks}{{6}{2026}{{Anthropic}}{{}}}
-\bibcite{bao2024fastdetectgpt}{{7}{2024}{{Bao et~al.}}{{Bao, Zhao, Teng, Yang, and Zhang}}}
-\bibcite{bleeping2026watermark}{{8}{2026}{{BleepingComputer}}{{}}}
-\bibcite{bronsdon2026avoid}{{9}{2026}{{Bronsdon}}{{}}}
-\bibcite{chakrabarty2025salvaged}{{10}{2025}{{Chakrabarty et~al.}}{{Chakrabarty, Laban, and Wu}}}
+\citation{krishna2023paraphrasing,sadasivan2025reliably}
+\citation{commonapp2023fraud,yale2026ai}
+\citation{anthropic2026marks,bleeping2026watermark}
 \@LN@col{1}
+\@LN{809}{9}
+\@LN{810}{9}
+\@LN{811}{9}
+\@LN{812}{9}
+\@LN{813}{9}
+\@LN{814}{9}
+\@LN{815}{9}
+\@LN{816}{9}
+\@LN{817}{9}
 \@LN{818}{9}
 \@LN{819}{9}
 \@LN{820}{9}
@@ -975,13 +959,12 @@
 \@LN{825}{9}
 \@LN{826}{9}
 \@LN{827}{9}
-\@writefile{toc}{\contentsline {paragraph}{Detector developers.}{10}{section*.35}\protected@file@percent }
 \@LN{828}{9}
 \@LN{829}{9}
 \@LN{830}{9}
 \@LN{831}{9}
+\@writefile{toc}{\contentsline {paragraph}{Dual use.}{10}{section*.33}\protected@file@percent }
 \@LN{832}{9}
-\@writefile{toc}{\contentsline {paragraph}{Human writing and raters.}{10}{section*.36}\protected@file@percent }
 \@LN{833}{9}
 \@LN{834}{9}
 \@LN{835}{9}
@@ -1008,14 +991,16 @@
 \@LN{856}{9}
 \@LN{857}{9}
 \@LN{858}{9}
+\@LN@col{2}
 \@LN{859}{9}
 \@LN{860}{9}
+\@writefile{toc}{\contentsline {paragraph}{Detector developers.}{10}{section*.34}\protected@file@percent }
 \@LN{861}{9}
 \@LN{862}{9}
 \@LN{863}{9}
-\@LN@col{2}
 \@LN{864}{9}
 \@LN{865}{9}
+\@writefile{toc}{\contentsline {paragraph}{Real writers' texts.}{10}{section*.35}\protected@file@percent }
 \@LN{866}{9}
 \@LN{867}{9}
 \@LN{868}{9}
@@ -1029,12 +1014,14 @@
 \@LN{876}{9}
 \@LN{877}{9}
 \@LN{878}{9}
+\@writefile{toc}{\contentsline {paragraph}{Fairness to learners.}{10}{section*.36}\protected@file@percent }
 \@LN{879}{9}
 \@LN{880}{9}
 \@LN{881}{9}
 \@LN{882}{9}
 \@LN{883}{9}
 \@LN{884}{9}
+\@writefile{toc}{\contentsline {paragraph}{Human raters.}{10}{section*.37}\protected@file@percent }
 \@LN{885}{9}
 \@LN{886}{9}
 \@LN{887}{9}
@@ -1057,40 +1044,40 @@
 \@LN{904}{9}
 \@LN{905}{9}
 \@LN{906}{9}
-\@LN{907}{9}
-\@LN{908}{9}
-\@LN{909}{9}
-\@LN{910}{9}
-\@LN{911}{9}
-\@LN{912}{9}
-\@LN{913}{9}
-\@LN{914}{9}
-\@LN{915}{9}
-\@LN{916}{9}
-\@LN{917}{9}
-\@LN{918}{9}
+\bibdata{references}
+\bibcite{abdulhai2026distort}{{1}{2026}{{Abdulhai et~al.}}{{Abdulhai, White, Wan, Qureshi, Leibo, Kleiman-Weiner, and Jaques}}}
+\bibcite{adam2026gptzero}{{2}{2026}{{Adam et~al.}}{{Adam, Cui, Thomas, Napier, Shmatko, Schnell, Tian, Dronavalli, Tian, and Lee}}}
+\bibcite{agarwal2025homogenize}{{3}{2025}{{Agarwal et~al.}}{{Agarwal, Naaman, and Vashistha}}}
+\bibcite{alvero2024hegemony}{{4}{2024}{{Alvero et~al.}}{{Alvero, Lee, Regla-Vargas, Kizilcec, Joachims, and Antonio}}}
+\bibcite{alvero2021essay}{{5}{2021}{{Alvero et~al.}}{{Alvero, Giebel, Gebre-Medhin, Antonio, Stevens, and Domingue}}}
+\bibcite{anthropic2026marks}{{6}{2026}{{Anthropic}}{{}}}
+\bibcite{bao2024fastdetectgpt}{{7}{2024}{{Bao et~al.}}{{Bao, Zhao, Teng, Yang, and Zhang}}}
+\bibcite{bleeping2026watermark}{{8}{2026}{{BleepingComputer}}{{}}}
+\bibcite{bronsdon2026avoid}{{9}{2026}{{Bronsdon}}{{}}}
+\bibcite{chakrabarty2025salvaged}{{10}{2025}{{Chakrabarty et~al.}}{{Chakrabarty, Laban, and Wu}}}
 \bibcite{chen2026humanizer}{{11}{2026}{{Chen}}{{}}}
 \bibcite{clark2021human}{{12}{2021}{{Clark et~al.}}{{Clark, August, Serrano, Haduong, Gururangan, and Smith}}}
 \bibcite{commonapp2023fraud}{{13}{2023}{{Common App}}{{}}}
 \bibcite{conncoll2026essays}{{14}{2026}{{Connecticut College Office of Admission}}{{}}}
 \bibcite{creanga2026paradox}{{15}{2026}{{Creanga and Dinu}}{{}}}
 \bibcite{crossley2024persuade}{{16}{2024}{{Crossley et~al.}}{{Crossley, Tian, Baffour, Franklin, Benner, and Boser}}}
-\bibcite{dathathri2024synthid}{{17}{2024}{{Dathathri et~al.}}{{Dathathri, See, Ghaisas, Huang, McAdam, Welbl, Bachani, Kaskasoli, Stanforth, Matejovicova, Hayes, Vyas, Al~Merey, Brown-Cohen, Bunel, Balle, Cemgil, Ahmed, Stacpoole, Shumailov, Baetu, Gowal, Hassabis, and Kohli}}}
-\bibcite{desklib2025detector}{{18}{2025}{{Desklib}}{{}}}
-\bibcite{doshi2024creativity}{{19}{2024}{{Doshi and Hauser}}{{}}}
-\bibcite{dugan2024raid}{{20}{2024}{{Dugan et~al.}}{{Dugan, Hwang, Trhl{\'i}k, Zhu, Ludan, Xu, Ippolito, and Callison-Burch}}}
-\bibcite{fakespot2025detector}{{21}{2025}{{Fakespot}}{{}}}
-\bibcite{geng2024chatgpt}{{22}{2024}{{Geng and Trotta}}{{}}}
-\bibcite{hamilton2026essays}{{23}{2026}{{Hamilton College Office of Admission}}{{}}}
-\bibcite{hans2024binoculars}{{24}{2024}{{Hans et~al.}}{{Hans, Schwarzschild, Cherepanova, Kazemi, Saha, Goldblum, Geiping, and Goldstein}}}
-\bibcite{isley2026admissions}{{25}{2026}{{Isley et~al.}}{{Isley, Gaebler, and Goel}}}
-\bibcite{jakesch2023heuristics}{{26}{2023}{{Jakesch et~al.}}{{Jakesch, Hancock, and Naaman}}}
-\bibcite{ji2023hallucination}{{27}{2023}{{Ji et~al.}}{{Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto, and Fung}}}
-\bibcite{jhu2026essays}{{28}{2026}{{Johns Hopkins University Office of Undergraduate Admissions}}{{}}}
-\bibcite{juzek2025delve}{{29}{2025}{{Juzek and Ward}}{{}}}
-\bibcite{karr2026detection}{{30}{2026}{{Karr et~al.}}{{Karr, Khvatskii, Hua, and Chawla}}}
-\bibcite{kirchenbauer2023watermark}{{31}{2023}{{Kirchenbauer et~al.}}{{Kirchenbauer, Geiping, Wen, Katz, Miers, and Goldstein}}}
+\bibcite{crossley2023ellipse}{{17}{2023}{{Crossley et~al.}}{{Crossley, Tian, Baffour, Franklin, Kim, Morris, Benner, Picou, and Boser}}}
+\bibcite{dathathri2024synthid}{{18}{2024}{{Dathathri et~al.}}{{Dathathri, See, Ghaisas, Huang, McAdam, Welbl, Bachani, Kaskasoli, Stanforth, Matejovicova, Hayes, Vyas, Al~Merey, Brown-Cohen, Bunel, Balle, Cemgil, Ahmed, Stacpoole, Shumailov, Baetu, Gowal, Hassabis, and Kohli}}}
+\bibcite{desklib2025detector}{{19}{2025}{{Desklib}}{{}}}
+\bibcite{doshi2024creativity}{{20}{2024}{{Doshi and Hauser}}{{}}}
 \@LN@col{1}
+\@LN{907}{10}
+\@LN{908}{10}
+\@LN{909}{10}
+\@LN{910}{10}
+\@LN{911}{10}
+\@LN{912}{10}
+\@LN{913}{10}
+\@LN{914}{10}
+\@LN{915}{10}
+\@LN{916}{10}
+\@LN{917}{10}
+\@LN{918}{10}
 \@LN{919}{10}
 \@LN{920}{10}
 \@LN{921}{10}
@@ -1133,6 +1120,7 @@
 \@LN{958}{10}
 \@LN{959}{10}
 \@LN{960}{10}
+\@LN@col{2}
 \@LN{961}{10}
 \@LN{962}{10}
 \@LN{963}{10}
@@ -1147,7 +1135,6 @@
 \@LN{972}{10}
 \@LN{973}{10}
 \@LN{974}{10}
-\@LN@col{2}
 \@LN{975}{10}
 \@LN{976}{10}
 \@LN{977}{10}
@@ -1190,39 +1177,39 @@
 \@LN{1014}{10}
 \@LN{1015}{10}
 \@LN{1016}{10}
-\@LN{1017}{10}
-\@LN{1018}{10}
-\@LN{1019}{10}
-\@LN{1020}{10}
-\@LN{1021}{10}
-\@LN{1022}{10}
-\@LN{1023}{10}
-\@LN{1024}{10}
-\@LN{1025}{10}
-\@LN{1026}{10}
-\@LN{1027}{10}
-\@LN{1028}{10}
-\bibcite{kobak2025delving}{{32}{2025}{{Kobak et~al.}}{{Kobak, Gonz{\'a}lez-M{\'a}rquez, Horv{\'a}t, and Lause}}}
-\bibcite{krishna2023paraphrasing}{{33}{2023}{{Krishna et~al.}}{{Krishna, Song, Karpinska, Wieting, and Iyyer}}}
-\bibcite{lee2025poor}{{34}{2025}{{Lee et~al.}}{{Lee, Alvero, Joachims, and Kizilcec}}}
-\bibcite{lee2026divide}{{35}{2026}{{Lee et~al.}}{{Lee, Borchers, Alvero, Joachims, and Kizilcec}}}
-\bibcite{lenk2026blind}{{36}{2026}{{Lenk}}{{}}}
-\bibcite{liang2024monitoring}{{37}{2024}{{Liang et~al.}}{{Liang, Izzo, Zhang, Lepp, Cao, Zhao, Chen, Ye, Liu, Huang, McFarland, and Zou}}}
-\bibcite{liang2023biased}{{38}{2023}{{Liang et~al.}}{{Liang, Yuksekgonul, Mao, Wu, and Zou}}}
-\bibcite{malik2026erased}{{39}{2026}{{Malik and Awan}}{{}}}
-\bibcite{min2023factscore}{{40}{2023}{{Min et~al.}}{{Min, Krishna, Lyu, Lewis, Yih, Koh, Iyyer, Zettlemoyer, and Hajishirzi}}}
-\bibcite{mit2026blogs}{{41}{2026}{{MIT Admissions}}{{}}}
-\bibcite{mitchell2023detectgpt}{{42}{2023}{{Mitchell et~al.}}{{Mitchell, Lee, Khazatsky, Manning, and Finn}}}
-\bibcite{padmakumar2024diversity}{{43}{2024}{{Padmakumar and He}}{{}}}
-\bibcite{paech2026antislop}{{44}{2026}{{Paech et~al.}}{{Paech, Roush, Goldfeder, and Shwartz-Ziv}}}
-\bibcite{panickssery2024llm}{{45}{2024}{{Panickssery et~al.}}{{Panickssery, Bowman, and Feng}}}
-\bibcite{peng2026notx}{{46}{2026}{{Peng et~al.}}{{Peng, Jing, Liu, Meng, and Liu}}}
-\bibcite{perkins2024simple}{{47}{2024}{{Perkins et~al.}}{{Perkins, Roe, Vu, Postma, Hickerson, McGaughran, and Khuat}}}
-\bibcite{reinhart2025llms}{{48}{2025}{{Reinhart et~al.}}{{Reinhart, Markey, Laudenbach, Pantusen, Yurko, Weinberg, and Brown}}}
-\bibcite{roe2026dramaturgies}{{49}{2026}{{Roe et~al.}}{{Roe, Perkins, Bannister, Furze, and Wood}}}
-\bibcite{russell2025people}{{50}{2025}{{Russell et~al.}}{{Russell, Karpinska, and Iyyer}}}
-\bibcite{sadasivan2025reliably}{{51}{2025}{{Sadasivan et~al.}}{{Sadasivan, Kumar, Balasubramanian, Wang, and Feizi}}}
+\bibcite{dugan2024raid}{{21}{2024}{{Dugan et~al.}}{{Dugan, Hwang, Trhl{\'i}k, Zhu, Ludan, Xu, Ippolito, and Callison-Burch}}}
+\bibcite{fakespot2025detector}{{22}{2025}{{Fakespot}}{{}}}
+\bibcite{fang2023chatgptgec}{{23}{2023}{{Fang et~al.}}{{Fang, Yang, Lan, Wong, Hu, Chao, and Zhang}}}
+\bibcite{geng2024chatgpt}{{24}{2024}{{Geng and Trotta}}{{}}}
+\bibcite{hamilton2026essays}{{25}{2026}{{Hamilton College Office of Admission}}{{}}}
+\bibcite{hans2024binoculars}{{26}{2024}{{Hans et~al.}}{{Hans, Schwarzschild, Cherepanova, Kazemi, Saha, Goldblum, Geiping, and Goldstein}}}
+\bibcite{isley2026admissions}{{27}{2026}{{Isley et~al.}}{{Isley, Gaebler, and Goel}}}
+\bibcite{jakesch2023heuristics}{{28}{2023}{{Jakesch et~al.}}{{Jakesch, Hancock, and Naaman}}}
+\bibcite{ji2023hallucination}{{29}{2023}{{Ji et~al.}}{{Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto, and Fung}}}
+\bibcite{jhu2026essays}{{30}{2026}{{Johns Hopkins University Office of Undergraduate Admissions}}{{}}}
+\bibcite{juzek2025delve}{{31}{2025}{{Juzek and Ward}}{{}}}
+\bibcite{karr2026detection}{{32}{2026}{{Karr et~al.}}{{Karr, Khvatskii, Hua, and Chawla}}}
+\bibcite{kirchenbauer2023watermark}{{33}{2023}{{Kirchenbauer et~al.}}{{Kirchenbauer, Geiping, Wen, Katz, Miers, and Goldstein}}}
+\bibcite{kobak2025delving}{{34}{2025}{{Kobak et~al.}}{{Kobak, Gonz{\'a}lez-M{\'a}rquez, Horv{\'a}t, and Lause}}}
+\bibcite{krishna2023paraphrasing}{{35}{2023}{{Krishna et~al.}}{{Krishna, Song, Karpinska, Wieting, and Iyyer}}}
+\bibcite{lee2025poor}{{36}{2025}{{Lee et~al.}}{{Lee, Alvero, Joachims, and Kizilcec}}}
+\bibcite{lee2026divide}{{37}{2026}{{Lee et~al.}}{{Lee, Borchers, Alvero, Joachims, and Kizilcec}}}
+\bibcite{lenk2026blind}{{38}{2026}{{Lenk}}{{}}}
+\bibcite{liang2024monitoring}{{39}{2024}{{Liang et~al.}}{{Liang, Izzo, Zhang, Lepp, Cao, Zhao, Chen, Ye, Liu, Huang, McFarland, and Zou}}}
+\bibcite{liang2023biased}{{40}{2023}{{Liang et~al.}}{{Liang, Yuksekgonul, Mao, Wu, and Zou}}}
 \@LN@col{1}
+\@LN{1017}{11}
+\@LN{1018}{11}
+\@LN{1019}{11}
+\@LN{1020}{11}
+\@LN{1021}{11}
+\@LN{1022}{11}
+\@LN{1023}{11}
+\@LN{1024}{11}
+\@LN{1025}{11}
+\@LN{1026}{11}
+\@LN{1027}{11}
+\@LN{1028}{11}
 \@LN{1029}{11}
 \@LN{1030}{11}
 \@LN{1031}{11}
@@ -1265,6 +1252,7 @@
 \@LN{1068}{11}
 \@LN{1069}{11}
 \@LN{1070}{11}
+\@LN@col{2}
 \@LN{1071}{11}
 \@LN{1072}{11}
 \@LN{1073}{11}
@@ -1280,7 +1268,6 @@
 \@LN{1083}{11}
 \@LN{1084}{11}
 \@LN{1085}{11}
-\@LN@col{2}
 \@LN{1086}{11}
 \@LN{1087}{11}
 \@LN{1088}{11}
@@ -1321,35 +1308,45 @@
 \@LN{1123}{11}
 \@LN{1124}{11}
 \@LN{1125}{11}
-\@LN{1126}{11}
-\@LN{1127}{11}
-\@LN{1128}{11}
-\@LN{1129}{11}
-\@LN{1130}{11}
-\@LN{1131}{11}
-\@LN{1132}{11}
-\@LN{1133}{11}
-\@LN{1134}{11}
-\@LN{1135}{11}
-\@LN{1136}{11}
-\@LN{1137}{11}
-\@LN{1138}{11}
-\@LN{1139}{11}
-\@LN{1140}{11}
-\@LN{1141}{11}
-\bibcite{shaib2026slop}{{52}{2026}{{Shaib et~al.}}{{Shaib, Chakrabarty, Garcia-Olano, and Wallace}}}
-\bibcite{shaib2024syntactic}{{53}{2024}{{Shaib et~al.}}{{Shaib, Elazar, Li, and Wallace}}}
-\bibcite{shan2026stylometric}{{54}{2026}{{Shan et~al.}}{{Shan, Lee, and Hao}}}
-\bibcite{superannotate2024detector}{{55}{2024}{{SuperAnnotate}}{{}}}
-\bibcite{tufts2026essays}{{56}{2026}{{Tufts University Office of Undergraduate Admissions}}{{}}}
-\bibcite{turnitin2026report}{{57}{2026}{{Turnitin}}{{}}}
-\bibcite{wang2024fair}{{58}{2024}{{Wang et~al.}}{{Wang, Li, Chen, Cai, Zhu, Lin, Cao, Kong, Liu, Liu, and Sui}}}
-\bibcite{weberwulff2023testing}{{59}{2023}{{Weber-Wulff et~al.}}{{Weber-Wulff, Anohina-Naumeca, Bjelobaba, Folt{\'y}nek, Guerrero-Dib, Popoola, {\v {S}}igut, and Waddington}}}
-\bibcite{wikipedia2026signs}{{60}{2026}{{Wikipedia contributors}}{{}}}
-\bibcite{yale2026ai}{{61}{2026}{{Yale Undergraduate Admissions}}{{}}}
-\bibcite{yang2026noaislop}{{62}{2026}{{Yang}}{{}}}
-\bibcite{zheng2023judging}{{63}{2023}{{Zheng et~al.}}{{Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, Zhang, Gonzalez, and Stoica}}}
+\bibcite{malik2026erased}{{41}{2026}{{Malik and Awan}}{{}}}
+\bibcite{min2023factscore}{{42}{2023}{{Min et~al.}}{{Min, Krishna, Lyu, Lewis, Yih, Koh, Iyyer, Zettlemoyer, and Hajishirzi}}}
+\bibcite{mit2026blogs}{{43}{2026}{{MIT Admissions}}{{}}}
+\bibcite{mitchell2023detectgpt}{{44}{2023}{{Mitchell et~al.}}{{Mitchell, Lee, Khazatsky, Manning, and Finn}}}
+\bibcite{padmakumar2024diversity}{{45}{2024}{{Padmakumar and He}}{{}}}
+\bibcite{paech2026antislop}{{46}{2026}{{Paech et~al.}}{{Paech, Roush, Goldfeder, and Shwartz-Ziv}}}
+\bibcite{panickssery2024llm}{{47}{2024}{{Panickssery et~al.}}{{Panickssery, Bowman, and Feng}}}
+\bibcite{peng2026notx}{{48}{2026}{{Peng et~al.}}{{Peng, Jing, Liu, Meng, and Liu}}}
+\bibcite{perkins2024simple}{{49}{2024}{{Perkins et~al.}}{{Perkins, Roe, Vu, Postma, Hickerson, McGaughran, and Khuat}}}
+\bibcite{reinhart2025llms}{{50}{2025}{{Reinhart et~al.}}{{Reinhart, Markey, Laudenbach, Pantusen, Yurko, Weinberg, and Brown}}}
+\bibcite{roe2026dramaturgies}{{51}{2026}{{Roe et~al.}}{{Roe, Perkins, Bannister, Furze, and Wood}}}
+\bibcite{russell2025people}{{52}{2025}{{Russell et~al.}}{{Russell, Karpinska, and Iyyer}}}
+\bibcite{sadasivan2025reliably}{{53}{2025}{{Sadasivan et~al.}}{{Sadasivan, Kumar, Balasubramanian, Wang, and Feizi}}}
+\bibcite{shaib2026slop}{{54}{2026}{{Shaib et~al.}}{{Shaib, Chakrabarty, Garcia-Olano, and Wallace}}}
+\bibcite{shaib2024syntactic}{{55}{2024}{{Shaib et~al.}}{{Shaib, Elazar, Li, and Wallace}}}
+\bibcite{shan2026stylometric}{{56}{2026}{{Shan et~al.}}{{Shan, Lee, and Hao}}}
+\bibcite{sfs2026isef}{{57}{2026}{{Society for Science}}{{}}}
+\bibcite{superannotate2024detector}{{58}{2024}{{SuperAnnotate}}{{}}}
+\bibcite{thetech2016essays}{{59}{2016}{{The Tech}}{{}}}
+\bibcite{tufts2026essays}{{60}{2026}{{Tufts University Office of Undergraduate Admissions}}{{}}}
+\bibcite{turnitin2026report}{{61}{2026}{{Turnitin}}{{}}}
+\bibcite{wang2024fair}{{62}{2024}{{Wang et~al.}}{{Wang, Li, Chen, Cai, Zhu, Lin, Cao, Kong, Liu, Liu, and Sui}}}
 \@LN@col{1}
+\@LN{1126}{12}
+\@LN{1127}{12}
+\@LN{1128}{12}
+\@LN{1129}{12}
+\@LN{1130}{12}
+\@LN{1131}{12}
+\@LN{1132}{12}
+\@LN{1133}{12}
+\@LN{1134}{12}
+\@LN{1135}{12}
+\@LN{1136}{12}
+\@LN{1137}{12}
+\@LN{1138}{12}
+\@LN{1139}{12}
+\@LN{1140}{12}
+\@LN{1141}{12}
 \@LN{1142}{12}
 \@LN{1143}{12}
 \@LN{1144}{12}
@@ -1390,6 +1387,7 @@
 \@LN{1179}{12}
 \@LN{1180}{12}
 \@LN{1181}{12}
+\@LN@col{2}
 \@LN{1182}{12}
 \@LN{1183}{12}
 \@LN{1184}{12}
@@ -1406,7 +1404,6 @@
 \@LN{1195}{12}
 \@LN{1196}{12}
 \@LN{1197}{12}
-\@LN@col{2}
 \@LN{1198}{12}
 \@LN{1199}{12}
 \@LN{1200}{12}
@@ -1420,11 +1417,7 @@
 \@LN{1208}{12}
 \@LN{1209}{12}
 \@LN{1210}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Briefs}{13}{appendix.A}\protected@file@percent }
-\newlabel{sec:appendix-briefs}{{A}{13}{Briefs}{appendix.A}{}}
 \@LN{1211}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Results by genre}{13}{appendix.B}\protected@file@percent }
-\newlabel{sec:appendix-genre}{{B}{13}{Results by genre}{appendix.B}{}}
 \@LN{1212}{12}
 \@LN{1213}{12}
 \@LN{1214}{12}
@@ -1445,8 +1438,6 @@
 \@LN{1229}{12}
 \@LN{1230}{12}
 \@LN{1231}{12}
-\@writefile{toc}{\contentsline {section}{\numberline {C}Personal statements: arc against fidelity}{13}{appendix.C}\protected@file@percent }
-\newlabel{sec:ps}{{C}{13}{Personal statements: arc against fidelity}{appendix.C}{}}
 \@LN{1232}{12}
 \@LN{1233}{12}
 \@LN{1234}{12}
@@ -1454,29 +1445,26 @@
 \@LN{1236}{12}
 \@LN{1237}{12}
 \@LN{1238}{12}
-\@LN{1239}{12}
-\@LN{1240}{12}
-\@LN{1241}{12}
-\@LN{1242}{12}
-\@LN{1243}{12}
-\@LN{1244}{12}
-\@LN{1245}{12}
-\@LN{1246}{12}
-\citation{commonapp2023fraud,yale2026ai}
-\citation{zheng2023judging}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Writing briefs. Every brief names the only permitted source of specifics (interview notes, a facts file, four quotes, or none for arguments and explainers). All people are fictional. The held-out briefs were written after version~6 was fixed and share no example text with any version of the skill.}}{14}{table.caption.39}\protected@file@percent }
-\newlabel{tab:briefs}{{3}{14}{Writing briefs. Every brief names the only permitted source of specifics (interview notes, a facts file, four quotes, or none for arguments and explainers). All people are fictional. The held-out briefs were written after version~6 was fixed and share no example text with any version of the skill}{table.caption.39}{}}
+\bibcite{weberwulff2023testing}{{63}{2023}{{Weber-Wulff et~al.}}{{Weber-Wulff, Anohina-Naumeca, Bjelobaba, Folt{\'y}nek, Guerrero-Dib, Popoola, {\v {S}}igut, and Waddington}}}
+\bibcite{wikipedia2026signs}{{64}{2026}{{Wikipedia contributors}}{{}}}
+\bibcite{yale2026ai}{{65}{2026}{{Yale Undergraduate Admissions}}{{}}}
+\bibcite{yang2026noaislop}{{66}{2026}{{Yang}}{{}}}
+\bibcite{zheng2023judging}{{67}{2023}{{Zheng et~al.}}{{Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, Zhang, Gonzalez, and Stoica}}}
 \@LN@col{1}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Personal-statement iterations in development (pairwise judgments of better writing, skill wins--plain wins; depth notes for v3--v4; unsupported claims summed over the same pairs, skill vs plain). Small samples: four judgments (two text pairs, two judges) per row. v1--v2 used the original notes, where unsupported claims were 16 vs 29 and 6 vs 33.}}{14}{table.caption.40}\protected@file@percent }
-\newlabel{tab:iterations}{{4}{14}{Personal-statement iterations in development (pairwise judgments of better writing, skill wins--plain wins; depth notes for v3--v4; unsupported claims summed over the same pairs, skill vs plain). Small samples: four judgments (two text pairs, two judges) per row. v1--v2 used the original notes, where unsupported claims were 16 vs 29 and 6 vs 33}{table.caption.40}{}}
+\@LN{1239}{13}
+\@LN{1240}{13}
+\@LN{1241}{13}
+\@LN{1242}{13}
+\@LN{1243}{13}
+\@LN{1244}{13}
+\@LN{1245}{13}
+\@LN{1246}{13}
 \@LN{1247}{13}
 \@LN{1248}{13}
 \@LN{1249}{13}
 \@LN{1250}{13}
 \@LN{1251}{13}
 \@LN{1252}{13}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Coaching experiment: details}{14}{appendix.D}\protected@file@percent }
-\newlabel{sec:appendix-coach}{{D}{14}{Coaching experiment: details}{appendix.D}{}}
 \@LN{1253}{13}
 \@LN{1254}{13}
 \@LN{1255}{13}
@@ -1487,7 +1475,6 @@
 \@LN{1260}{13}
 \@LN{1261}{13}
 \@LN{1262}{13}
-\@LN@col{2}
 \@LN{1263}{13}
 \@LN{1264}{13}
 \@LN{1265}{13}
@@ -1499,6 +1486,8 @@
 \@LN{1271}{13}
 \@LN{1272}{13}
 \@LN{1273}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Version history}{14}{appendix.A}\protected@file@percent }
+\newlabel{sec:appendix-versions}{{A}{14}{Version history}{appendix.A}{}}
 \@LN{1274}{13}
 \@LN{1275}{13}
 \@LN{1276}{13}
@@ -1517,12 +1506,348 @@
 \@LN{1289}{13}
 \@LN{1290}{13}
 \@LN{1291}{13}
-\@LN{1292}{13}
-\@LN@col{1}
-\@LN{1293}{14}
-\@writefile{toc}{\contentsline {section}{\numberline {E}Detector scores}{15}{appendix.E}\protected@file@percent }
-\newlabel{sec:appendix-det}{{E}{15}{Detector scores}{appendix.E}{}}
 \@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Detector scores per text on the held-out briefs (Skill write: version~4; Skill rebuild: version~6), with human writing collected before ChatGPT for comparison (green). D1--D3 are the detectors described in Section~\ref {sec:eval}. The dashed line is 20\%. D3's scores saturate near 73\%.}}{16}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:detectors}{{2}{16}{Detector scores per text on the held-out briefs (Skill write: version~4; Skill rebuild: version~6), with human writing collected before ChatGPT for comparison (green). D1--D3 are the detectors described in Section~\ref {sec:eval}. The dashed line is 20\%. D3's scores saturate near 73\%}{figure.caption.41}{}}
-\gdef \@abspage@last{16}
+\@LN{1292}{13}
+\@LN{1293}{13}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Every version of the skill. Differences in $p$ are paired by text with 95\% bootstrap intervals; rank differences for v12 and v13 are differences in mean rank, bootstrapped over briefs; positive means the row's version ranked better. v1--v4 rows: personal-statement pairwise judgments of better writing in development (skill wins : plain wins; four judgments per row), with unsupported claims summed over the same pairs. v3--v4 used depth notes (the student's answers to the skill's depth questions); v4 on the original notes went 1:1 with 4 vs 14 unsupported claims; v1--v2 used the original notes, where unsupported claims were 16 vs 29 and 6 vs 33. Content hashes (Section~\ref {sec:bench} says which were recorded before testing): v8 8fe68e27a7a0e007, v9 6e56b690fba3cd03, v10 d05f855dc7111b57, v10.1 3571b11768657399, v11 cdda4484b09a1155, v12 0fd7410cda39fa06, v13 5e5db96e61ff8552.}}{15}{table.caption.40}\protected@file@percent }
+\newlabel{tab:versions}{{4}{15}{Every version of the skill. Differences in $p$ are paired by text with 95\% bootstrap intervals; rank differences for v12 and v13 are differences in mean rank, bootstrapped over briefs; positive means the row's version ranked better. v1--v4 rows: personal-statement pairwise judgments of better writing in development (skill wins : plain wins; four judgments per row), with unsupported claims summed over the same pairs. v3--v4 used depth notes (the student's answers to the skill's depth questions); v4 on the original notes went 1:1 with 4 vs 14 unsupported claims; v1--v2 used the original notes, where unsupported claims were 16 vs 29 and 6 vs 33. Content hashes (Section~\ref {sec:bench} says which were recorded before testing): v8 8fe68e27a7a0e007, v9 6e56b690fba3cd03, v10 d05f855dc7111b57, v10.1 3571b11768657399, v11 cdda4484b09a1155, v12 0fd7410cda39fa06, v13 5e5db96e61ff8552}{table.caption.40}{}}
+\@LN@col{1}
+\@LN{1294}{15}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Edit benchmark: full results}{16}{appendix.B}\protected@file@percent }
+\newlabel{sec:appendix-edit}{{B}{16}{Edit benchmark: full results}{appendix.B}{}}
+\@LN{1295}{15}
+\@LN{1296}{15}
+\@LN{1297}{15}
+\@LN{1298}{15}
+\@LN{1299}{15}
+\@LN{1300}{15}
+\@LN{1301}{15}
+\@LN{1302}{15}
+\@LN{1303}{15}
+\@LN{1304}{15}
+\@LN{1305}{15}
+\@LN{1306}{15}
+\@LN{1307}{15}
+\@LN{1308}{15}
+\@LN{1309}{15}
+\@LN{1310}{15}
+\@LN{1311}{15}
+\@LN{1312}{15}
+\@LN{1313}{15}
+\@LN{1314}{15}
+\@LN{1315}{15}
+\@LN{1316}{15}
+\@LN{1317}{15}
+\@LN{1318}{15}
+\@LN{1319}{15}
+\@LN@col{2}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Edit benchmark, skill version~10.1, continued from Table~\ref {tab:edit}. Quality: 1--10. Stmts.\ rem.\,/\,chg.: statements removed and changed per text (blind meaning check). Voice: writer's voice kept, 1--10. AUC: each text version against the originals, for each judge (abstracts: journal editor, ISEF judge; appeals: donor, NGO editor; learner essays: writing researcher, teacher). D1--D3: mean detector scores (0--100, probability of AI); Pass: share passing at 50 (all three below 50). The detectors cannot score Turkish.}}{17}{table.caption.41}\protected@file@percent }
+\newlabel{tab:edit-full}{{5}{17}{Edit benchmark, skill version~10.1, continued from Table~\ref {tab:edit}. Quality: 1--10. Stmts.\ rem.\,/\,chg.: statements removed and changed per text (blind meaning check). Voice: writer's voice kept, 1--10. AUC: each text version against the originals, for each judge (abstracts: journal editor, ISEF judge; appeals: donor, NGO editor; learner essays: writing researcher, teacher). D1--D3: mean detector scores (0--100, probability of AI); Pass: share passing at 50 (all three below 50). The detectors cannot score Turkish}{table.caption.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Version~11 against version~10.1 on the edit benchmark, development and test halves. $\Delta $: version~11 minus version~10.1, paired by text, with 95\% intervals; paired over 16 texts, except abstracts development and appeals test (15). No meaning change: share of ``improve it'' edits in which the meaning check found no change (version~10.1 / version~11). Voice kept: on ``improve it'', 1--10 (version~10.1 / version~11). In these two columns, version~10.1 values come from the first meaning check and version~11 values from a separate check run of the same design.}}{17}{table.caption.42}\protected@file@percent }
+\newlabel{tab:v11}{{6}{17}{Version~11 against version~10.1 on the edit benchmark, development and test halves. $\Delta $: version~11 minus version~10.1, paired by text, with 95\% intervals; paired over 16 texts, except abstracts development and appeals test (15). No meaning change: share of ``improve it'' edits in which the meaning check found no change (version~10.1 / version~11). Voice kept: on ``improve it'', 1--10 (version~10.1 / version~11). In these two columns, version~10.1 values come from the first meaning check and version~11 values from a separate check run of the same design}{table.caption.42}{}}
+\@LN@col{1}
+\@LN{1320}{16}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Admitted essays: developing version 8}{17}{appendix.C}\protected@file@percent }
+\newlabel{sec:appendix-essays}{{C}{17}{Admitted essays: developing version 8}{appendix.C}{}}
+\@LN{1321}{16}
+\@LN{1322}{16}
+\@LN{1323}{16}
+\@LN{1324}{16}
+\@LN{1325}{16}
+\@LN{1326}{16}
+\@LN{1327}{16}
+\@LN{1328}{16}
+\@LN{1329}{16}
+\@LN{1330}{16}
+\@LN{1331}{16}
+\@LN{1332}{16}
+\@LN{1333}{16}
+\@LN{1334}{16}
+\@LN{1335}{16}
+\@LN{1336}{16}
+\@LN@col{2}
+\@LN{1337}{16}
+\@LN{1338}{16}
+\@LN{1339}{16}
+\@LN{1340}{16}
+\@LN{1341}{16}
+\@LN{1342}{16}
+\@LN{1343}{16}
+\@LN{1344}{16}
+\@LN{1345}{16}
+\@LN{1346}{16}
+\@LN{1347}{16}
+\@LN{1348}{16}
+\@LN{1349}{16}
+\@LN{1350}{16}
+\@LN{1351}{16}
+\@LN{1352}{16}
+\@LN{1353}{16}
+\@LN@col{1}
+\@LN{1354}{17}
+\@LN{1355}{17}
+\@LN{1356}{17}
+\@LN{1357}{17}
+\@LN{1358}{17}
+\@LN{1359}{17}
+\@LN{1360}{17}
+\@LN{1361}{17}
+\@LN{1362}{17}
+\@LN{1363}{17}
+\@LN{1364}{17}
+\@LN{1365}{17}
+\@LN{1366}{17}
+\@LN{1367}{17}
+\@LN{1368}{17}
+\@LN{1369}{17}
+\@LN{1370}{17}
+\@LN{1371}{17}
+\@LN{1372}{17}
+\@LN{1373}{17}
+\@LN{1374}{17}
+\@LN{1375}{17}
+\@LN{1376}{17}
+\@LN{1377}{17}
+\@LN{1378}{17}
+\@LN{1379}{17}
+\@LN{1380}{17}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Ablations and regression checks}{18}{appendix.D}\protected@file@percent }
+\newlabel{sec:appendix-ablation}{{D}{18}{Ablations and regression checks}{appendix.D}{}}
+\@LN{1381}{17}
+\@LN{1382}{17}
+\@LN{1383}{17}
+\@LN{1384}{17}
+\@LN{1385}{17}
+\@LN{1386}{17}
+\@LN{1387}{17}
+\@LN{1388}{17}
+\@LN@col{2}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Ablations of version~10.1, writing from notes on the 16 test items per genre (32 ratings per variant), in a judging run separate from Table~\ref {tab:write} (there, plain abstracts were judged real in 6\% of ratings, mean $p$ 34.5). Real: share judged real; Uns.: unsupported statements per text. Every variant's paired difference from the full skill has an interval that includes zero.}}{18}{table.caption.43}\protected@file@percent }
+\newlabel{tab:ablation}{{7}{18}{Ablations of version~10.1, writing from notes on the 16 test items per genre (32 ratings per variant), in a judging run separate from Table~\ref {tab:write} (there, plain abstracts were judged real in 6\% of ratings, mean $p$ 34.5). Real: share judged real; Uns.: unsupported statements per text. Every variant's paired difference from the full skill has an interval that includes zero}{table.caption.43}{}}
+\citation{chen2026humanizer}
+\citation{min2023factscore}
+\@LN@col{1}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Regression checks in the ranking design (Appendix~\ref {sec:appendix-rank}): mean rank among the texts of a brief (1 = best), first places, quality and human-likeness rating (1--10), unsupported claims per text. Top: the 16 ten-genre briefs that were held out in the ranking study. Middle and bottom: its development briefs (bottom: arguments, explainers and literary analyses, with two independent version~9 samples). Bottom, differences in mean rank (positive: first version better; bootstrap over briefs): v13 vs the v9 samples $-0.25$ [$-1.33$, +0.75] and $-0.21$ [$-1.00$, +0.58]; v12 vs the v9 samples $-0.71$ [$-1.71$, +0.25] and $-0.67$ [$-1.54$, +0.29]; v13 vs v12 +0.46 [$-0.38$, +1.25]; v9 sample 2 vs sample 1 $-0.04$ [$-0.92$, +0.79].}}{19}{table.caption.44}\protected@file@percent }
+\newlabel{tab:regression}{{8}{19}{Regression checks in the ranking design (Appendix~\ref {sec:appendix-rank}): mean rank among the texts of a brief (1 = best), first places, quality and human-likeness rating (1--10), unsupported claims per text. Top: the 16 ten-genre briefs that were held out in the ranking study. Middle and bottom: its development briefs (bottom: arguments, explainers and literary analyses, with two independent version~9 samples). Bottom, differences in mean rank (positive: first version better; bootstrap over briefs): v13 vs the v9 samples $-0.25$ [$-1.33$, +0.75] and $-0.21$ [$-1.00$, +0.58]; v12 vs the v9 samples $-0.71$ [$-1.71$, +0.25] and $-0.67$ [$-1.54$, +0.29]; v13 vs v12 +0.46 [$-0.38$, +1.25]; v9 sample 2 vs sample 1 $-0.04$ [$-0.92$, +0.79]}{table.caption.44}{}}
+\@LN{1389}{18}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Earlier model-versus-model evaluation}{19}{appendix.E}\protected@file@percent }
+\newlabel{sec:appendix-rank}{{E}{19}{Earlier model-versus-model evaluation}{appendix.E}{}}
+\@LN{1390}{18}
+\@LN{1391}{18}
+\@LN{1392}{18}
+\@LN{1393}{18}
+\@LN{1394}{18}
+\@writefile{toc}{\contentsline {paragraph}{Briefs.}{19}{section*.45}\protected@file@percent }
+\@LN{1395}{18}
+\@LN{1396}{18}
+\@LN{1397}{18}
+\@LN{1398}{18}
+\@LN{1399}{18}
+\@LN{1400}{18}
+\@LN{1401}{18}
+\@LN{1402}{18}
+\@LN{1403}{18}
+\@LN{1404}{18}
+\@LN{1405}{18}
+\@LN{1406}{18}
+\@LN{1407}{18}
+\@LN{1408}{18}
+\@LN{1409}{18}
+\@LN{1410}{18}
+\@LN{1411}{18}
+\@LN@col{2}
+\@writefile{toc}{\contentsline {paragraph}{Conditions.}{19}{section*.46}\protected@file@percent }
+\@LN{1412}{18}
+\@LN{1413}{18}
+\@LN{1414}{18}
+\@LN{1415}{18}
+\@LN{1416}{18}
+\@LN{1417}{18}
+\@LN{1418}{18}
+\@LN{1419}{18}
+\@LN{1420}{18}
+\@LN{1421}{18}
+\@LN{1422}{18}
+\@LN{1423}{18}
+\@LN{1424}{18}
+\@LN{1425}{18}
+\@LN{1426}{18}
+\@writefile{toc}{\contentsline {paragraph}{Judges.}{19}{section*.47}\protected@file@percent }
+\@LN{1427}{18}
+\@LN{1428}{18}
+\@LN{1429}{18}
+\@LN{1430}{18}
+\@LN{1431}{18}
+\@LN{1432}{18}
+\@LN{1433}{18}
+\@LN{1434}{18}
+\@LN{1435}{18}
+\@LN{1436}{18}
+\@LN{1437}{18}
+\@LN{1438}{18}
+\@LN{1439}{18}
+\@LN{1440}{18}
+\@LN{1441}{18}
+\@LN{1442}{18}
+\@LN{1443}{18}
+\@LN{1444}{18}
+\@LN{1445}{18}
+\@LN{1446}{18}
+\@LN{1447}{18}
+\@LN{1448}{18}
+\@LN{1449}{18}
+\@LN{1450}{18}
+\@LN{1451}{18}
+\@LN{1452}{18}
+\@LN{1453}{18}
+\@writefile{toc}{\contentsline {paragraph}{Held-out results.}{19}{section*.48}\protected@file@percent }
+\@LN{1454}{18}
+\@LN{1455}{18}
+\@LN{1456}{18}
+\@LN{1457}{18}
+\@LN{1458}{18}
+\@LN{1459}{18}
+\@LN{1460}{18}
+\@LN{1461}{18}
+\@LN{1462}{18}
+\citation{desklib2025detector}
+\citation{fakespot2025detector}
+\citation{superannotate2024detector}
+\citation{superannotate2024detector}
+\citation{hamilton2026essays,conncoll2026essays}
+\citation{crossley2024persuade}
+\@LN@col{1}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Held-out ranking round: 16 briefs, three judges each (48 judgments). Rank: mean rank among six texts (1 = best); 1st: first places; Human: human-likeness rating (1--10); Unsup.: claims per text that judges found unsupported by the facts file or wrong.}}{20}{table.caption.49}\protected@file@percent }
+\newlabel{tab:heldout}{{9}{20}{Held-out ranking round: 16 briefs, three judges each (48 judgments). Rank: mean rank among six texts (1 = best); 1st: first places; Human: human-likeness rating (1--10); Unsup.: claims per text that judges found unsupported by the facts file or wrong}{table.caption.49}{}}
+\@LN{1463}{19}
+\@LN{1464}{19}
+\@LN{1465}{19}
+\@LN{1466}{19}
+\@LN{1467}{19}
+\@LN{1468}{19}
+\@LN{1469}{19}
+\@LN{1470}{19}
+\@LN{1471}{19}
+\@LN{1472}{19}
+\@LN{1473}{19}
+\@LN{1474}{19}
+\@LN{1475}{19}
+\@LN{1476}{19}
+\@LN{1477}{19}
+\@writefile{toc}{\contentsline {paragraph}{Development round and version comparison.}{20}{section*.51}\protected@file@percent }
+\@LN{1478}{19}
+\@LN{1479}{19}
+\@LN{1480}{19}
+\@LN{1481}{19}
+\@LN{1482}{19}
+\@LN{1483}{19}
+\@LN{1484}{19}
+\@LN{1485}{19}
+\@LN{1486}{19}
+\@LN{1487}{19}
+\@LN{1488}{19}
+\@LN{1489}{19}
+\@LN{1490}{19}
+\@LN{1491}{19}
+\@LN{1492}{19}
+\@LN{1493}{19}
+\@LN{1494}{19}
+\@LN{1495}{19}
+\@LN{1496}{19}
+\@LN{1497}{19}
+\@LN{1498}{19}
+\@writefile{toc}{\contentsline {paragraph}{Detectors on invented briefs.}{20}{section*.52}\protected@file@percent }
+\@LN{1499}{19}
+\@LN{1500}{19}
+\@LN@col{2}
+\@LN{1501}{19}
+\@LN{1502}{19}
+\@LN{1503}{19}
+\@LN{1504}{19}
+\@LN{1505}{19}
+\@LN{1506}{19}
+\@LN{1507}{19}
+\@LN{1508}{19}
+\@LN{1509}{19}
+\@LN{1510}{19}
+\@LN{1511}{19}
+\@LN{1512}{19}
+\@LN{1513}{19}
+\@LN{1514}{19}
+\@LN{1515}{19}
+\@LN{1516}{19}
+\@LN{1517}{19}
+\@LN{1518}{19}
+\@LN{1519}{19}
+\@LN{1520}{19}
+\@LN{1521}{19}
+\@LN{1522}{19}
+\@LN{1523}{19}
+\@LN{1524}{19}
+\@writefile{toc}{\contentsline {paragraph}{Personal statements: arc against fidelity.}{20}{section*.55}\protected@file@percent }
+\@LN{1525}{19}
+\@LN{1526}{19}
+\@LN{1527}{19}
+\@LN{1528}{19}
+\@LN{1529}{19}
+\@LN{1530}{19}
+\@LN{1531}{19}
+\@LN{1532}{19}
+\@LN{1533}{19}
+\@LN{1534}{19}
+\@LN{1535}{19}
+\@LN{1536}{19}
+\@LN{1537}{19}
+\@LN{1538}{19}
+\@LN{1539}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Mean rank with 95\% bootstrap intervals (1 = best). Left: development briefs, five texts per panel. Right: held-out briefs, six texts per panel, three judges each. Blue: the skill; orange: plain generation; grey: other approaches.}}{21}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:rank}{{1}{21}{Mean rank with 95\% bootstrap intervals (1 = best). Left: development briefs, five texts per panel. Right: held-out briefs, six texts per panel, three judges each. Blue: the skill; orange: plain generation; grey: other approaches}{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Detector scores per text on the held-out briefs of the ranking study (Skill write: version~4; Skill rebuild: version~6), with human writing collected before November 2022 for comparison (green). D1--D3 are the detectors of Section~\ref {sec:detectors}. The dashed line is 20\%. D3's scores saturate near 73\%.}}{21}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:detectors}{{2}{21}{Detector scores per text on the held-out briefs of the ranking study (Skill write: version~4; Skill rebuild: version~6), with human writing collected before November 2022 for comparison (green). D1--D3 are the detectors of Section~\ref {sec:detectors}. The dashed line is 20\%. D3's scores saturate near 73\%}{figure.caption.53}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Writing briefs of the ranking study. Every brief names the only permitted source of specifics (interview notes, a facts file, four quotes, or none for arguments and explainers). All people are fictional. The held-out briefs were written after version~6 was fixed; they became development data after the regression check (Section~\ref {sec:rank}).}}{22}{table.caption.54}\protected@file@percent }
+\newlabel{tab:briefs}{{10}{22}{Writing briefs of the ranking study. Every brief names the only permitted source of specifics (interview notes, a facts file, four quotes, or none for arguments and explainers). All people are fictional. The held-out briefs were written after version~6 was fixed; they became development data after the regression check (Section~\ref {sec:rank})}{table.caption.54}{}}
+\citation{commonapp2023fraud,yale2026ai}
+\citation{zheng2023judging}
+\@LN@col{1}
+\@LN{1540}{22}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Coaching experiment: details}{23}{appendix.F}\protected@file@percent }
+\newlabel{sec:appendix-coach}{{F}{23}{Coaching experiment: details}{appendix.F}{}}
+\@LN{1541}{22}
+\@LN{1542}{22}
+\@LN{1543}{22}
+\@LN{1544}{22}
+\@LN{1545}{22}
+\@LN{1546}{22}
+\@LN{1547}{22}
+\@LN{1548}{22}
+\@LN{1549}{22}
+\@LN{1550}{22}
+\@LN{1551}{22}
+\@LN{1552}{22}
+\@LN{1553}{22}
+\@LN{1554}{22}
+\@LN{1555}{22}
+\@LN{1556}{22}
+\@LN@col{2}
+\@LN{1557}{22}
+\@LN{1558}{22}
+\@LN{1559}{22}
+\@LN{1560}{22}
+\@LN{1561}{22}
+\@LN{1562}{22}
+\@LN{1563}{22}
+\@LN{1564}{22}
+\@LN{1565}{22}
+\@LN{1566}{22}
+\@LN{1567}{22}
+\@LN{1568}{22}
+\@LN{1569}{22}
+\@LN{1570}{22}
+\@LN{1571}{22}
+\@LN{1572}{22}
+\@LN{1573}{22}
+\@LN{1574}{22}
+\@LN{1575}{22}
+\@LN{1576}{22}
+\@LN{1577}{22}
+\gdef \@abspage@last{23}

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1793603933.43674 "main.aux" "main.bbl" "main" 1793603934.55592 0
+["bibtex main"] 1793949357.91078 "main.aux" "main.bbl" "main" 1793949359.02645 0
   "./acl_natbib.bst" 1792535472.8683 45442 bb9ea745fc0a84096e0948d1c1b99bbe ""
-  "./references.bib" 1793602846.48552 30611 148e604b984303ff86c85788b0ab09d2 ""
-  "main.aux" 1793603934.4084 36872 d68cc53664341808b11f2e0edf1d4ac3 "pdflatex"
+  "./references.bib" 1793949355.1108 31926 53750f9f5ed316d1c6b70bdf3b6612a3 ""
+  "main.aux" 1793949358.90785 51935 0f2901e9fcf3dc16c093518710d42cdc "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1793603933.47153 "main.tex" "main.pdf" "main" 1793603934.55632 0
+["pdflatex"] 1793949357.93755 "main.tex" "main.pdf" "main" 1793949359.02685 0
   "/etc/texmf/web2c/texmf.cnf" 1792533994.39435 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -46,8 +46,12 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1248133631 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136849748 35941 f27169cc74234d5bd5e4cca5abafaabb ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 811d6c62865936705a31c797a1d5dada ""
@@ -116,6 +120,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg" 1678741534 12427 02d1873769280609ae2509e963f1fa66 ""
   "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty" 1707919699 45458 f1c6cb3edd91174e966cbbaf88993bcf ""
+  "/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty" 1137110565 4087 636308456f60d2b31cbf97867db5708d ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd" 1137110629 798 d5895e9edc628f2be019beb2c0ec66df ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd" 1137110629 774 61d7da1e9f9e74989b196d147e623736 ""
   "/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty" 1586716065 856 8e0e5c8cca7b18e0400f97f5a2b90a99 ""
@@ -132,10 +137,10 @@
   "acl.sty" 1792535472.86821 11615 e2c027f483aa40e577ed34264c8b0655 ""
   "fig_detectors.pdf" 1792562424.5262 28098 ae2374d888339cfdca6e1893b7b178bb ""
   "fig_rank.pdf" 1792562424.3062 20036 501ca5e9d39ee8e0faf311a8958b829a ""
-  "main.aux" 1793603934.4084 36872 d68cc53664341808b11f2e0edf1d4ac3 "pdflatex"
-  "main.bbl" 1793603933.4604 25526 06500703953f883e986c94ff816f333c "bibtex main"
-  "main.out" 1793603934.4124 2325 37c5bbd039d818d92d055d4c67825e46 "pdflatex"
-  "main.tex" 1793603932.37111 52125 0203c4a8d61c02d5675c4104161d40b0 ""
+  "main.aux" 1793949358.90785 51935 0f2901e9fcf3dc16c093518710d42cdc "pdflatex"
+  "main.bbl" 1793949357.92785 26811 fe2bfbe37f690546635333d34bbf3037 "bibtex main"
+  "main.out" 1793949358.91185 3287 b6fd344441b1d46392e9c618a44731a8 "pdflatex"
+  "main.tex" 1793949355.10746 79371 10ffab7b9a92822f01b3b07972a4de91 ""
   (generated)
   "main.aux"
   "main.log"

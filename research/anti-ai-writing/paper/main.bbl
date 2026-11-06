@@ -1,4 +1,4 @@
-\begin{thebibliography}{63}
+\begin{thebibliography}{67}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Abdulhai et~al.(2026)Abdulhai, White, Wan, Qureshi, Leibo,
@@ -128,6 +128,16 @@ S.~A. Crossley, Y.~Tian, P.~Baffour, A.~Franklin, M.~Benner, and U.~Boser.
   corpus for assessing written argumentation: {PERSUADE} 2.0}.
 \newblock \emph{Assessing Writing}, 61:100865.
 
+\bibitem[{Crossley et~al.(2023)Crossley, Tian, Baffour, Franklin, Kim, Morris,
+  Benner, Picou, and Boser}]{crossley2023ellipse}
+Scott~A. Crossley, Yu~Tian, Perpetual Baffour, Alex Franklin, Youngmeen Kim,
+  Wesley Morris, Meg Benner, Aigner Picou, and Ulrich Boser. 2023.
+\newblock \href {https://doi.org/10.1075/ijlcr.22026.cro} {The {English}
+  language learner insight, proficiency and skills evaluation ({ELLIPSE})
+  corpus}.
+\newblock \emph{International Journal of Learner Corpus Research},
+  9(2):248--269.
+
 \bibitem[{Dathathri et~al.(2024)Dathathri, See, Ghaisas, Huang, McAdam, Welbl,
   Bachani, Kaskasoli, Stanforth, Matejovicova, Hayes, Vyas, Al~Merey,
   Brown-Cohen, Bunel, Balle, Cemgil, Ahmed, Stacpoole, Shumailov, Baetu, Gowal,
@@ -173,6 +183,14 @@ Liam Dugan, Alyssa Hwang, Filip Trhl{\'i}k, Andrew Zhu, Josh~Magnus Ludan,
   \url{https://huggingface.co/fakespot-ai/roberta-base-ai-text-detection-v1}.
 \newblock RoBERTa-base fine-tune; Apache-2.0 license; last updated 25 Feb 2025;
   accessed 2026-10-20.
+
+\bibitem[{Fang et~al.(2023)Fang, Yang, Lan, Wong, Hu, Chao, and
+  Zhang}]{fang2023chatgptgec}
+Tao Fang, Shu Yang, Kaixin Lan, Derek~F. Wong, Jinpeng Hu, Lidia~S. Chao, and
+  Yue Zhang. 2023.
+\newblock Is {ChatGPT} a highly fluent grammatical error correction system? {A}
+  comprehensive evaluation.
+\newblock \emph{arXiv preprint arXiv:2304.01746}.
 
 \bibitem[{Geng and Trotta(2024)}]{geng2024chatgpt}
 Mingmeng Geng and Roberto Trotta. 2024.
@@ -450,6 +468,11 @@ Zhengyang Shan, Yukyung Lee, and Sophie Hao. 2026.
 \newblock ArXiv comment: EMNLP 2026 main conference; proceedings not yet
   published at time of access.
 
+\bibitem[{{Society for Science}(2026)}]{sfs2026isef}
+{Society for Science}. 2026.
+\newblock {ISEF} project abstracts.
+\newblock \url{https://abstracts.societyforscience.org/}.
+
 \bibitem[{{SuperAnnotate}(2024)}]{superannotate2024detector}
 {SuperAnnotate}. 2024.
 \newblock Superannotate/ai-detector.
@@ -457,6 +480,13 @@ Zhengyang Shan, Yukyung Lee, and Sophie Hao. 2026.
   \url{https://huggingface.co/SuperAnnotate/ai-detector}.
 \newblock RoBERTa-large fine-tune; custom license; last updated 17 Dec 2024;
   accessed 2026-10-20.
+
+\bibitem[{{The Tech}(2016)}]{thetech2016essays}
+{The Tech}. 2016.
+\newblock {MIT} application essays that worked.
+\newblock Campus Life series, 2015--2016,
+  \url{https://www.thetech.com/tags/admissions}.
+\newblock Accessed 5 November 2026.
 
 \bibitem[{{Tufts University Office of Undergraduate
   Admissions}(2026)}]{tufts2026essays}
