@@ -1,0 +1,159 @@
+{
+ "summary": {
+  "H": {
+   "n": 64,
+   "human_share": 1.0,
+   "mean_p": 95.3125,
+   "quality": 2.96875,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   }
+  },
+  "C": {
+   "n": 64,
+   "human_share": 0.609375,
+   "mean_p": 55.34375,
+   "quality": 3.75,
+   "auc_by_lens": {
+    "editor": 0.9951171875,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.625,
+    "teacher": 0.59375
+   }
+  },
+  "PG": {
+   "n": 64,
+   "human_share": 0.03125,
+   "mean_p": 29.96875,
+   "quality": 4.421875,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.0625,
+    "teacher": 0.0
+   }
+  },
+  "PI": {
+   "n": 64,
+   "human_share": 0.0,
+   "mean_p": 19.21875,
+   "quality": 5.4375,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.0,
+    "teacher": 0.0
+   }
+  },
+  "SG": {
+   "n": 64,
+   "human_share": 0.046875,
+   "mean_p": 31.890625,
+   "quality": 4.234375,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.03125,
+    "teacher": 0.0625
+   }
+  },
+  "SI": {
+   "n": 64,
+   "human_share": 0.03125,
+   "mean_p": 30.5,
+   "quality": 4.5,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "teacher": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.03125,
+    "teacher": 0.03125
+   }
+  }
+ },
+ "pairs": {
+  "SI-PI:p": [
+   11.28125,
+   8.34375,
+   14.21875,
+   32
+  ],
+  "SI-PI:q": [
+   -0.9375,
+   -1.171875,
+   -0.703125,
+   32
+  ],
+  "SG-PG:p": [
+   1.921875,
+   -0.453125,
+   4.421875,
+   32
+  ],
+  "SG-PG:q": [
+   -0.1875,
+   -0.375,
+   0.0,
+   32
+  ],
+  "C-H:p": [
+   -39.96875,
+   -45.453125,
+   -34.515625,
+   32
+  ],
+  "C-H:q": [
+   0.78125,
+   0.578125,
+   0.96875,
+   32
+  ],
+  "SI-C:p": [
+   -24.84375,
+   -30.671875,
+   -19.390625,
+   32
+  ],
+  "SI-C:q": [
+   0.75,
+   0.546875,
+   0.9375,
+   32
+  ],
+  "SG-C:p": [
+   -23.453125,
+   -29.28125,
+   -17.6875,
+   32
+  ],
+  "SG-C:q": [
+   0.484375,
+   0.296875,
+   0.671875,
+   32
+  ],
+  "SG-SI:p": [
+   1.390625,
+   -1.53125,
+   4.4375,
+   32
+  ],
+  "SG-SI:q": [
+   -0.265625,
+   -0.484375,
+   -0.046875,
+   32
+  ]
+ }
+}

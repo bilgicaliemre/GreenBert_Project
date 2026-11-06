@@ -1,0 +1,98 @@
+{
+ "ell/C": {
+  "n": 32,
+  "desklib": 50.1,
+  "fakespot": 15.8,
+  "superannotate": 44.6,
+  "all3_under50": 25,
+  "all3_under20": 3
+ },
+ "ell/PG": {
+  "n": 32,
+  "desklib": 83.5,
+  "fakespot": 76.3,
+  "superannotate": 71.2,
+  "all3_under50": 0,
+  "all3_under20": 0
+ },
+ "ell/PI": {
+  "n": 32,
+  "desklib": 98.2,
+  "fakespot": 94.0,
+  "superannotate": 72.2,
+  "all3_under50": 0,
+  "all3_under20": 0
+ },
+ "ell/SG": {
+  "n": 32,
+  "desklib": 76.9,
+  "fakespot": 67.8,
+  "superannotate": 66.2,
+  "all3_under50": 3,
+  "all3_under20": 0
+ },
+ "ell/SI": {
+  "n": 32,
+  "desklib": 83.8,
+  "fakespot": 74.0,
+  "superannotate": 70.0,
+  "all3_under50": 0,
+  "all3_under20": 0
+ },
+ "ell/real": {
+  "n": 32,
+  "desklib": 11.2,
+  "fakespot": 1.5,
+  "superannotate": 22.0,
+  "all3_under50": 78,
+  "all3_under20": 41
+ },
+ "isef/C": {
+  "n": 32,
+  "desklib": 22.1,
+  "fakespot": 32.7,
+  "superannotate": 50.1,
+  "all3_under50": 28,
+  "all3_under20": 19
+ },
+ "isef/PG": {
+  "n": 32,
+  "desklib": 63.2,
+  "fakespot": 61.6,
+  "superannotate": 70.3,
+  "all3_under50": 3,
+  "all3_under20": 0
+ },
+ "isef/PI": {
+  "n": 32,
+  "desklib": 62.7,
+  "fakespot": 65.5,
+  "superannotate": 69.6,
+  "all3_under50": 0,
+  "all3_under20": 0
+ },
+ "isef/SG": {
+  "n": 32,
+  "desklib": 35.4,
+  "fakespot": 44.9,
+  "superannotate": 65.0,
+  "all3_under50": 6,
+  "all3_under20": 0
+ },
+ "isef/SI": {
+  "n": 32,
+  "desklib": 36.6,
+  "fakespot": 42.0,
+  "superannotate": 62.3,
+  "all3_under50": 9,
+  "all3_under20": 0
+ },
+ "isef/real": {
+  "n": 32,
+  "desklib": 18.5,
+  "fakespot": 28.2,
+  "superannotate": 44.3,
+  "all3_under50": 34,
+  "all3_under20": 25
+ }
+}

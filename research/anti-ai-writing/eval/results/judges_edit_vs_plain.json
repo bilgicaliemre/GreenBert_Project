@@ -1,0 +1,1325 @@
+{
+  "summary": "Blind pairwise judging (2 reader lenses) + per-text AI-tell audits",
+  "agentCount": 22,
+  "logs": [],
+  "result": {
+    "judged": [
+      {
+        "pair": "AC-ps",
+        "lens": "editor",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 5,
+          "specificity": 8,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 6,
+          "human_likeness": 7,
+          "specificity": 9,
+          "voice": 7
+        },
+        "better_writing": "X",
+        "more_human": "Y",
+        "unsupported_X": [
+          "\"What I could not do, for years, was answer the phone.\" (contradicts the notes: she did answer it, as \"Hi, shoe repair\"; \"for years\" is also unsupported)",
+          "\"It sounded friendly enough.\"",
+          "\"Sitting across from her, I started wondering how the brain gets words back, and that question has become what I want to study\" (made-up origin story; the notes never say the grandmother caused the interest)",
+          "\"One of the first things I learned is that stuttering and aphasia are completely different things.\" (\"one of the first\" is not in the notes)",
+          "\"as if my grandmother's struggle and mine were one problem, and understanding one would explain the other\" (made-up motive; the notes say only that she \"kind of wanted\" them connected)",
+          "\"But I want to find out if she's right.\"",
+          "\"for once the word that belonged to me came out of my own mouth instead of being traded for a safer one\" (interpretation presented as her feeling)",
+          "\"I'll wait for her, too.\""
+        ],
+        "unsupported_Y": [],
+        "reasons": "X has a real essay arc. It opens on the problem of the name (\\\"which is a problem when the shop is called Carvalho\\\"), pays it off with the third-try phone call, and closes on the grandmother who can't yet say Inês's name. Its cuts are smart: it leaves out the AP Chem lie, which needs reflection it has no room for. But its connecting lines are textbook AI-essay moves: the one-line dramatic pivot \\\"What I could not do, for years, was answer the phone\\\" (which is also factually wrong, since she answered as \\\"Hi, shoe repair\\\"), the summary lines \\\"The shop taught me a different kind of listening\\\" and \\\"People tell you a lot without saying a word, if you know where to look,\\\" the bridge \\\"That mattered more than I expected,\\\" and the overwritten payoff \\\"the word that belonged to me... instead of being traded for a safer one,\\\" capped by the neat \\\"I'll wait for her, too.\\\" Y keeps strictly to the notes and keeps her real phrasing (\\\"totally different things. I kind of wanted them to be connected, and they're not\\\"). Its ending, \\\"My avó can't say my name yet. She can say 'sapato,' shoe,\\\" trusts the reader more than X's callback does. Y reads as stitched-together notes, though. The dad's \\\"The shop isn't a person\\\" quote is dropped into the phone paragraph with no link, and the forged-signature story is set up by the cute pivot \\\"I'm worse at chemistry words.\\\" That story then stops at \\\"She laughed at that part\\\" with no B+, no lie list and no reflection, which leaves an admissions reader with an unexplained confession. Overall X is the more effective personal statement but carries more AI tells and invented inner thoughts, while Y sounds more like a real student and is fully accurate but weaker as an essay."
+      },
+      {
+        "pair": "AC-ps",
+        "lens": "reader",
+        "swap": true,
+        "X": {
+          "quality": 7,
+          "human_likeness": 8,
+          "specificity": 9,
+          "voice": 7
+        },
+        "Y": {
+          "quality": 6,
+          "human_likeness": 5,
+          "specificity": 8,
+          "voice": 6
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [],
+        "unsupported_Y": [
+          "\"What I could not do, for years, was answer the phone.\" (overstated: she did answer it, just not with the name, and the notes never say 'for years')",
+          "\"It sounded friendly enough.\"",
+          "\"The shop taught me a different kind of listening.\"",
+          "\"People tell you a lot without saying a word, if you know where to look.\"",
+          "\"That mattered more than I expected.\" (invents a causal link between reading heels and her grandmother)",
+          "\"I am learning many of them for the first time\" ('many' is added)",
+          "\"Sitting across from her, I started wondering how the brain gets words back, and that question has become what I want to study\" (the notes never say her grandmother started this interest)",
+          "\"as if my grandmother's struggle and mine were one problem, and understanding one would explain the other\" (an invented explanation of why she wanted them connected)",
+          "\"But I want to find out if she's right.\"",
+          "\"for once the word that belonged to me came out of my own mouth instead of being traded for a safer one\"",
+          "\"I'll wait for her, too.\""
+        ],
+        "reasons": "Both essays come almost word for word from the same notes and use the same frame: the shop, the stutter, the heels, the grandmother and the phone call. The difference is in the connecting lines, and here X is better. X trusts its details and ends on two flat sentences, \"My avó can't say my name yet. She can say 'sapato,' shoe.\" That ending leaves the reader to link the name she couldn't say on the phone to the name her grandmother can't say. Y explains everything with thesis sentences an admissions reader would flag as AI-made or coached: \"The shop taught me a different kind of listening,\" \"People tell you a lot without saying a word, if you know where to look,\" \"That mattered more than I expected.\" Its climax is overwritten: \"for once the word that belonged to me came out of my own mouth instead of being traded for a safer one.\" Y also invents causes the brief does not allow, such as \"Sitting across from her, I started wondering how the brain gets words back\" and \"as if my grandmother's struggle and mine were one problem.\" Its tidy closing line, \"I'll wait for her, too,\" copies the man waiting on the phone too neatly. X has real weaknesses. It reads like a set of separate scenes with thin links between them. The AP Chem paragraph shows a forged signature but stops at \"She laughed at that part,\" with no growth (no B+, no list of lies), which is risky. Placing the dad's \"the shop isn't a person\" line in the phone paragraph feels arbitrary. Still, \"I'm worse at chemistry words\" is a clever, human-sounding way into that paragraph, and X keeps sharper details that Y cut, such as \"My dad's right thumb is stained black from the dye.\" Overall X is more faithful, more restrained and more believable as a 17-year-old's voice. Y has a clearer story arc but pays for it with generic, made-up reflection."
+      },
+      {
+        "pair": "AC-supp",
+        "lens": "editor",
+        "swap": true,
+        "X": {
+          "quality": 7,
+          "human_likeness": 7,
+          "specificity": 8,
+          "voice": 7
+        },
+        "Y": {
+          "quality": 6,
+          "human_likeness": 5,
+          "specificity": 7,
+          "voice": 6
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [],
+        "unsupported_Y": [
+          "That stung, then helped.",
+          "I had to stop reading about myself and start reading about her.",
+          "a word I hear every Saturday at my dad's repair shop",
+          "Those afternoons handed me a question I can't put down (the notes never say the flashcard sessions caused the interest)",
+          "I'd like to be the one who waits. (an aspiration the notes never state)"
+        ],
+        "reasons": "The two openings are almost word for word the same, so the result turns on what each text does after them. Y gives the answer a clearer shape and a closing callback: \"But last month I answered the shop phone... and the man waited. I'd like to be the one who waits.\" To build that arc, though, it invents an emotional turn the notes never mention: \"That stung, then helped. I had to stop reading about myself and start reading about her.\" It also adds a link the notes don't support: \"sapato... a word I hear every Saturday at my dad's repair shop.\" Both break the brief's only-facts-from-the-notes rule. Y also leans on familiar AI-polish moves: the stock \"handed me a question I can't put down,\" the two-beat \"That stung, then helped,\" the tidy myself/her reversal, and an ending that wraps everything up too neatly. X stays fully inside the notes and keeps the student's own spoken phrasing (\"I kind of wanted it to be connected,\" \"It isn't. Stuttering and aphasia are totally different things\"). It ends on a deadpan anticlimax, \"He wanted to know if we fix purses. We don't.\", and leaves the reader to notice the parallel between Avó's \"sapato\" and her own \"Carvalho Shoe Service.\" That reads like a confident human writer. X's weaknesses are real: the jump from \"I don't fully believe her yet.\" to \"On Saturdays I work the counter\" is abrupt, the last paragraph drifts away from the intellectual question, and in places it reads close to a transcript of the notes. Even so, it is the more honest and more human piece, while Y's extra polish is paid for with made-up material."
+      },
+      {
+        "pair": "AC-supp",
+        "lens": "reader",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 8,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 8,
+          "human_likeness": 8,
+          "specificity": 9,
+          "voice": 8
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "That stung, then helped.",
+          "I had to stop reading about myself and start reading about her.",
+          "a word I hear every Saturday at my dad's repair shop",
+          "Those afternoons handed me a question I can't put down",
+          "I'd like to be the one who waits."
+        ],
+        "unsupported_Y": [],
+        "reasons": "X frames the idea more neatly as an intellectual question. \"Those afternoons handed me a question I can't put down: how does a brain find its words again?\" turns it into a real question, but the turn it relies on in the middle is made up. \"That stung, then helped. I had to stop reading about myself and start reading about her\" is an emotional arc that is nowhere in the notes, which only say \"I kind of wanted to be connected and they're not.\" X also invents the link between \"sapato\" and the shop (\"a word I hear every Saturday at my dad's repair shop\") and ends with a tidy aphorism, \"I'd like to be the one who waits.\" That kind of ending looks manufactured to an experienced reader, and its \"stung, then helped\" contrast and closing moral are the usual polished-essay pattern. Y stays close to the notes and keeps the student's own phrasing: \"I kind of wanted it to be connected to my stutter,\" \"Stuttering and aphasia are totally different things.\" It also explains the phone moment properly with \"I used to answer the phone 'Hi, shoe repair' so I wouldn't have to say 'Carvalho.'\" Its deadpan ending, \"He wanted to know if we fix purses. We don't.\", reads like a real 17-year-old and not a neat bow. Y has its own weaknesses. Paragraph 2 is flat (\"I want to know how the brain gets words back, so I read a lot about aphasia now\"), the last paragraph crowds Ms. Halvorsen, the shop and the phone call together, and it ends away from the intellectual topic, right at the 250-word limit. Still, it is more faithful, more specific and more convincingly human than X."
+      },
+      {
+        "pair": "AC-argue",
+        "lens": "editor",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 5,
+          "specificity": 6,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 7,
+          "specificity": 7,
+          "voice": 6
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "\"the kind that builds over twenty or thirty uninterrupted minutes\" is a precise-sounding claim about attention with no support",
+          "\"nearly every one of those tasks can be done on school-issued laptops or classroom computers\" assumes every school issues laptops",
+          "\"the front office remains available for urgent calls, as it always has been\" is a sweeping generalization"
+        ],
+        "unsupported_Y": [
+          "\"the kind that builds over twenty or thirty uninterrupted minutes\" is a precise-sounding claim about attention with no support",
+          "\"nearly all of those jobs can be done on school-issued laptops or classroom computers\" assumes every school issues laptops",
+          "\"the front office stays available for urgent calls, as it always has\" is a sweeping generalization"
+        ],
+        "reasons": "The two essays share almost all of their structure and argument, so the verdict rests on sentence-level choices. X falls back on familiar machine-writing patterns. It uses the \"not X; it is Y\" frame in \"A phone is not a neutral tool sitting quietly in a backpack; it is built to pull its owner back\", the \"not only... but also\" pair, and an aphoristic paragraph closer, \"When a tool causes more problems than it solves, it makes sense to set it aside.\" It also leans on abstract stock phrases such as \"physically present but mentally somewhere else\" and \"real connection.\" Y replaces these with concrete images. It has \"surrounded by classmates who are all looking down at their phones,\" \"the temptation is gone for the day, and teachers and students no longer argue over whether a phone is out,\" and a closing line, \"for the people sitting next to you,\" that ties back to the opening scene. Y has costs too. It drops X's strong, clear line \"But normal is not the same as good\" for the flatter \"being normal does not make them good for students.\" Its thesis is less tidy, with the awkward aside \"alone and all day.\" \"real but small and its potential for distraction is large, so...\" needs a comma before \"and.\" In \"Conflicts follow students through the hallway as well,\" Y no longer says that phones cause the problem. Neither text makes up statistics, studies, or quotes. Both state the same unsupported \"twenty or thirty uninterrupted minutes\" figure as fact."
+      },
+      {
+        "pair": "AC-argue",
+        "lens": "reader",
+        "swap": true,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 6,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 5,
+          "specificity": 6,
+          "voice": 6
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [
+          "\"Learning difficult material takes sustained focus, the kind that builds over twenty or thirty uninterrupted minutes.\" This is a specific number about attention with no basis given. It is not an invented study, but it is stated as fact.",
+          "\"A phone that interrupts every few minutes\" is an overgeneralization stated as fact."
+        ],
+        "unsupported_Y": [
+          "\"Learning difficult material requires sustained focus, the kind that builds over twenty or thirty uninterrupted minutes.\" This is the same unsupported specific number about attention, stated as fact.",
+          "\"A device that breaks that focus every few minutes makes deep learning nearly impossible\" is an overgeneralization stated as fact."
+        ],
+        "reasons": "The two essays are nearly the same draft: same title, same structure, same chemistry-problem example and same safety rebuttal. The decision comes down to sentence-level choices, and Y leans on more stock phrasing. Y uses \"A phone is not a neutral tool sitting quietly in a backpack; it is built to pull its owner back,\" and X says it plainly: \"A phone is designed to pull its owner back to it again and again.\" Y adds \"it affects not only the student holding it but also classmates,\" \"surrounded by people who are physically present but mentally somewhere else,\" and the filler maxim \"When a tool causes more problems than it solves, it makes sense to set it aside.\" X replaces these with more concrete images: \"surrounded by classmates who are all looking down at their phones.\" X's ending is also stronger: \"school is meant for focused thinking and for the people sitting next to you\" beats Y's vague \"focused thinking and real connection.\" Y does have the cleaner thesis for an 11th-grade rubric: \"because phones undermine learning, weaken the social life of a school, and leave students fighting a daily battle.\" X's version, \"they leave each student to resist, alone and all day, a device designed to hold their attention,\" is clunky. X also repeats \"designed\" three times. Neither essay invents statistics, studies or sources, but both give the unsupported \"twenty or thirty uninterrupted minutes\" as fact. Both are still very polished and evenly balanced, so neither scores high on sounding human."
+      },
+      {
+        "pair": "AC-explain",
+        "lens": "editor",
+        "swap": true,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 6,
+          "voice": 5
+        },
+        "Y": {
+          "quality": 6,
+          "human_likeness": 5,
+          "specificity": 6,
+          "voice": 5
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [
+          "\"The immune system recognizes those fragments as foreign.\" followed by \"antibodies shaped to fit the spike protein\": this is an oversimplification. B cells and antibodies recognize the intact spike protein, and T cells recognize the displayed fragments. Y has the same wording.",
+          "\"The spike protein alone cannot make you sick, so it is safe for your cells to produce it\": the safety claim is stated as an absolute, which simplifies the evidence. It is the standard public-health line, though, not an invention."
+        ],
+        "unsupported_Y": [
+          "\"the cytoplasm, the fluid outside the nucleus\": this is imprecise and could be read as fluid outside the cell. X correctly says \"inside the cell but outside the nucleus\".",
+          "\"The immune system recognizes these as foreign\" followed by \"antibodies shaped to fit the spike protein\": the same simplification as X, which mixes up recognition of fragments with antibodies that bind the intact protein.",
+          "\"The spike protein on its own cannot make you sick, so producing it is safe\": the same absolute safety claim as X."
+        ],
+        "reasons": "The two texts are near-duplicates. Neither invents statistics or quotes, so the differences are small but they all point the same way. X's opening is tighter: \"mRNA vaccines send instructions instead: your own cells use them to build one harmless piece of the germ\". Y uses the stock \"take a different route: instead of delivering a piece of the germ itself, they deliver instructions...\" construction. X is more precise in its science, defining the cytoplasm as \"the fluid inside the cell but outside the nucleus\" where Y has only \"the fluid outside the nucleus\". Y also has a clumsy repetition, \"After the injection, cells near the injection site\", which X avoids with \"After the shot\". The biggest difference is the ending. Y adds a generic \"Why it matters\" heading and a labelled wrap-up, \"The big idea: an mRNA vaccine does not fight the virus directly. It gives your immune system a safe practice run...\", which restates the article in a recognisable AI-style closing. X places that point earlier (\"The vaccine never attacks the virus itself. Protection comes from memory\"), uses a specific heading (\"Quick to update\") and stops once the content is done. Still, both read like competent textbook summaries with little personality: no question to the reader, no analogy beyond the message/blueprint framing, and the same simplification about fragments versus antibodies. That keeps both mid-range on voice."
+      },
+      {
+        "pair": "AC-explain",
+        "lens": "reader",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 7,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 8,
+          "human_likeness": 7,
+          "specificity": 7,
+          "voice": 6
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "\"the mRNA is released into the cytoplasm, the fluid outside the nucleus\" -- imprecise: a student could read this as fluid outside the cell; the cytoplasm is inside the cell membrane but outside the nucleus"
+        ],
+        "unsupported_Y": [],
+        "reasons": "The two texts are almost the same: same headings for the first four sections, same examples, and neither uses invented statistics, studies or quotes. The biggest difference is accuracy. X calls the cytoplasm \"the fluid outside the nucleus,\" which a student could read as fluid outside the cell. Y fixes this with \"(the fluid inside the cell but outside the nucleus).\" Y also ties sections together better. \"Like the cell's own messages, it is broken down after being read\" points back to the opening biology section, where X just repeats \"After being read, the mRNA is broken down.\" Y also writes \"exploring the approach for influenza\" where X has a vague \"exploring it.\" Y's \"Quick to update\" section reasons well: it goes from \"Protection can fade, and viruses can mutate\" straight to why mRNA vaccines are fast to redesign. X splits that idea between the memory section and a generic \"Why it matters\" heading. X ends more strongly for teenage readers with \"It gives your immune system a safe practice run, so it is ready when the real threat arrives.\" But \"The big idea:\" followed by a recap sounds like a template, and Y's last sentence (\"...other infections and some cancers\") stops abruptly with no closing takeaway. Y leans a little on colons (\"send instructions instead: your own cells...\", \"organize the response: helper T cells...\", \"Protection comes from memory: after...\"). Even so, it reads slightly more like a careful human editor's draft."
+      },
+      {
+        "pair": "AC-report",
+        "lens": "editor",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 8,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 8,
+          "human_likeness": 7,
+          "specificity": 9,
+          "voice": 7
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "so that recall can be audited directly (\"directly\" goes beyond the facts, which say only that recall can be audited)"
+        ],
+        "unsupported_Y": [
+          "We evaluated the extractor first on a 26-sentence development set (\"first\" implies an order of evaluation that the facts do not state; minor)",
+          "That ceiling is the reason for the next stage (slightly stronger than the facts' \"motivates\"; minor)"
+        ],
+        "reasons": "The two texts share most of their skeleton and facts, so the gap is small but real. Y handles the gate sentence more cleanly with parentheses: \"either an action verb (including first-person and past-tense forms such as \\\"we reduced\\\") or a hard quantity (a number with a unit, or a count)\". X strings together commas instead: \"and, in addition, either an action verb, including first-person and past-tense forms such as \\\"we reduced\\\", or a hard quantity, such as a number with a unit or a count\", which makes the reader work to see where the either/or splits. X's evaluation paragraph also leans on stock signposting, opening with \"We evaluated the extractor in several ways.\" and announcing \"These numbers carry important caveats.\" Both are throat-clearing in the generic AI style, and Y simply drops them. On specificity, Y's caveat is sharper: \"their 33% for v3 cannot be compared directly with the 67% from the manual review of the same version\" names the exact numbers, while X's \"their precision figures are not directly comparable with the manual review\" stays abstract. Y also compresses the output figures better (\"Of the six reports loaded so far, a Unilever report yielded 583 claims and a Dr Pepper report 218\") than X's loose semicolon join. It frames the stage honestly (\"the only one built so far\"; \"a BERT classifier that has not yet been built\"), and both claims are supported. Neither text has a serious factual error. X's \"directly\" and Y's \"first\" and \"the reason for\" are minor overreaches."
+      },
+      {
+        "pair": "AC-report",
+        "lens": "reader",
+        "swap": true,
+        "X": {
+          "quality": 8,
+          "human_likeness": 7,
+          "specificity": 8,
+          "voice": 7
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 7,
+          "voice": 7
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [
+          "\"That ceiling is the reason for the next stage\" (minor overstatement: the facts say the ceiling 'motivates' the BERT stage, not that it is the sole reason)"
+        ],
+        "unsupported_Y": [
+          "\"so that recall can be audited directly\" ('directly' is an embellishment the facts do not support; recall was estimated by auditing rejected sentences)"
+        ],
+        "reasons": "The two texts share nearly all their structure and wording, and both stay faithful to the facts file. The differences are in economy and in how the caveats are handled. X turns the stricter-agent caveat into a concrete point: \"their 33% for v3 cannot be compared directly with the 67% from the manual review of the same version\". Y leaves it abstract: \"their precision figures are not directly comparable with the manual review\". X's version is the more useful one for a methods reader. Y adds generic signposting that a journal editor would cut, such as \"We evaluated the extractor in several ways\" and \"These numbers carry important caveats\". Its parentheticals are also wordier: compare \"(detected by using a part-of-speech tagger to check for a verb)\" with X's \"(checked for a verb with a part-of-speech tagger)\". Y's phrase \"The agent audits are stricter than human reviewers\" mismatches audits with people, while X correctly says \"The agents are also stricter\". Y does have one better sentence: \"Claim_Type distinguishes a Future Promise, a Strong claim supported by a hard quantity, and a Vague claim:\" runs the examples in more smoothly than X's slightly uneven \"as a Future Promise, as Strong when..., or as Vague\". X also gives useful context with \"and the only one built so far\", which Y leaves out. On balance X is tighter, more specific and less formulaic, though the gap between the two is small."
+      },
+      {
+        "pair": "AC-lit",
+        "lens": "editor",
+        "swap": true,
+        "X": {
+          "quality": 8,
+          "human_likeness": 7,
+          "specificity": 8,
+          "voice": 7
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 7,
+          "voice": 6
+        },
+        "better_writing": "X",
+        "more_human": "X",
+        "unsupported_X": [],
+        "unsupported_Y": [
+          "\"Gatsby's trembling reach shows that whatever it stands for matters to him intensely\" states the trembling as fact, but Q1 only has Nick saying he \"could have sworn he was trembling\". The hedge is dropped.",
+          "\"Across 'the great distance that had separated him from Daisy,' the light 'had seemed very near to her'\" changes Q3's \"Compared to the great distance...\" into a spatial 'across', which shifts the logic of the comparison.",
+          "\"Nick suggests that being near Daisy drains the symbol of its power: 'the colossal significance of that light had now vanished forever.'\" cuts off \"Possibly it had occurred to him\", so a speculation about Gatsby's thoughts reads as a flat statement."
+        ],
+        "reasons": "The two texts share most of their sentences, so the differences in placement and wording decide this. X opens with its thesis (\"at every stage it means something only while it stays out of reach\"). Y saves the same idea for a tacked-on summary (\"Across the novel, then, the green light changes from a distant puzzle, to a sign of Daisy, to an image of all human longing\"), and that wrap-up just repeats the body. X's readings are also more precise. It keeps Q1's uncertainty with \"Yet he 'could have sworn' Gatsby was trembling\", while Y turns that into \"Gatsby's trembling reach\". X keeps \"Compared to 'the great distance'\", where Y misquotes the frame as \"Across\". X gives a concrete grammatical observation: \"The sentence begins with 'Gatsby' and ends with 'us'\". It also shows the echo directly: \"In Chapter 1 Gatsby 'stretched out his arms'; now 'to-morrow we will run faster, stretch out our arms farther.'\" Y only says the focus \"shifts from 'Gatsby' to 'us'\" and that the lines \"echo the opening scene.\" Y has more stock essay moves: two 'not X but Y' framings (\"less a symbol than a mystery\", \"not so much a thing as a direction for desire\"), a padded evaluation (\"a revealing comparison\"), a canned \"The irony is sharp:\", and a redundancy (\"an unfinished promise ... that never reaches its conclusion\"). X ends cleanly on \"a promise left unfinished\". X still has a long, formulaic opening sentence and some flat lines (\"All Nick can report about the light is its size and its distance\"), so the gap is real but modest."
+      },
+      {
+        "pair": "AC-lit",
+        "lens": "reader",
+        "swap": false,
+        "X": {
+          "quality": 7,
+          "human_likeness": 6,
+          "specificity": 8,
+          "voice": 7
+        },
+        "Y": {
+          "quality": 8,
+          "human_likeness": 7,
+          "specificity": 9,
+          "voice": 7
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "\"Even the grammar refuses to arrive, because the passage ends on an unfinished promise, 'And one fine morning——,' that never reaches its conclusion.\" The broken sentence is accurate, but the passage does not end there. Q4 is an excerpt, and the novel goes on to 'So we beat on...'. The ending is an effect of where the excerpt was cut.",
+          "\"Across 'the great distance that had separated him from Daisy,' the light 'had seemed very near to her'\": Q3 says 'Compared to the great distance'. Changing that to 'Across' turns a comparison into a spatial claim.",
+          "\"Nick suggests that being near Daisy drains the symbol of its power: 'the colossal significance of that light had now vanished forever.'\" The quote leaves out 'Possibly it had occurred to him', so the speculative thought reads as a firmer statement than Q3 gives."
+        ],
+        "unsupported_Y": [
+          "\"the passage ends at 'And one fine morning——,' a promise left unfinished\": X has the same problem. Q4 is an excerpt and the novel's passage goes on past this line.",
+          "\"All Nick can report about the light is its size and its distance.\" This overstates things: Q1 also tells us it is single, green, and 'might have been the end of a dock'.",
+          "\"it only 'might have been' a dock\": this shortens the source wording, 'might have been the end of a dock'. Minor."
+        ],
+        "reasons": "The two essays share the same argument and much of the same wording, so the comparison comes down to execution, and Y edges ahead. Y puts a real thesis at the top (\"at every stage it means something only while it stays out of reach\"). X saves its claim for a formulaic wrap-up (\"Across the novel, then, the green light changes from a distant puzzle, to a sign of Daisy... What stays constant is...\"). Y also handles quotations more precisely. It keeps Fitzgerald's \"Compared to 'the great distance...'\" where X writes \"Across,\" and it quotes the hedge \"Possibly it had occurred to him\" while calling it a guess by Nick. Y's close reading is more concrete as well: \"The sentence begins with 'Gatsby' and ends with 'us'\" points to the text, while X only says \"The focus shifts\". Y also lays the two gestures side by side (\"In Chapter 1 Gatsby 'stretched out his arms'; now '...stretch out our arms farther'\"), where X just says the lines \"echo the opening scene.\" X leans on stock AI-sounding frames such as \"less a symbol than a mystery,\" \"not so much a thing as a direction for desire,\" \"The irony is sharp:\" and the rather precious \"Even the grammar refuses to arrive.\" Y says the same thing more plainly with \"Even Nick's sentence never arrives.\" Y has its own weaknesses. Its first paragraph repeats itself (\"sees the direction of Gatsby's desire and nothing more... All Nick can report about the light is its size and its distance\"), and it stops abruptly with no closing sentence. Both essays wrongly say the passage \"ends\" at \"And one fine morning——\"."
+      },
+      {
+        "pair": "AC-blog",
+        "lens": "editor",
+        "swap": false,
+        "X": {
+          "quality": 6,
+          "human_likeness": 5,
+          "specificity": 7,
+          "voice": 6
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 7,
+          "specificity": 8,
+          "voice": 5
+        },
+        "better_writing": "Y",
+        "more_human": "Y",
+        "unsupported_X": [
+          "Lesson one: most of a report is not a claim.",
+          "Each filter names a kind of sentence that sounds important but doesn't say what a company did or will do."
+        ],
+        "unsupported_Y": [],
+        "reasons": "X follows the title more openly. Its \"Lesson one/two/three/four\" headings and its closing line \"I look for the verb, the number and the evidence, and I notice when they're missing\" deliver on \"taught me about corporate language.\" The trouble is that the scaffolding is formulaic and the prose relies on stock tells: \"taught me less about code than about how companies write,\" \"worlds apart,\" \"hard to unsee,\" \"honest numbers are humbling,\" \"I'm not there yet. But...\". X is also looser with the facts. It asserts \"most of a report is not a claim\" with no proportion in the facts, and it says every filter targets sentences that \"sound important,\" which doesn't fit navigation text or broken fragments. Its numbers paragraph is also less clear: \"Stricter full-corpus audits\" doesn't say stricter than whom, and dropping the version labels hides that 67% and 33% describe the same v3. Y fixes exactly this with \"gave that same v3 33%\" and \"which judge more strictly than people do,\" and it draws a real conclusion from it: \"The estimate of how many are real claims depends on who checks.\" Y's sharpest point is about the language itself: sentences the filters remove \"already passed the gate... and it still isn't a claim\". Its last paragraph states the ceiling plainly: \"a keyword rule only sees which words it contains.\" Y has weaknesses too. It reads more like a tidied technical report than a blog post, and \"the remaining claim type is Future Promise\" is clunky. It drops \"v4.0/v4 final\" on a general reader, and it ends abruptly on the BERT classifier without a personal payoff, so its voice is flatter than X's. Even so, Y is more accurate and more precise, and it has fewer generic AI-blog moves. That makes it the stronger and more human-sounding piece, though not by much."
+      },
+      {
+        "pair": "AC-blog",
+        "lens": "reader",
+        "swap": true,
+        "X": {
+          "quality": 6,
+          "human_likeness": 7,
+          "specificity": 9,
+          "voice": 5
+        },
+        "Y": {
+          "quality": 7,
+          "human_likeness": 5,
+          "specificity": 7,
+          "voice": 7
+        },
+        "better_writing": "Y",
+        "more_human": "X",
+        "unsupported_X": [
+          "\"I could also audit 1,767 of them for missed claims\" (the facts say 1,767 rejected sentences were audited but do not say the author did the audit; the agent audits may have done it)"
+        ],
+        "unsupported_Y": [
+          "\"Lesson one: most of a report is not a claim.\" (the facts give no total sentence count and no ratio of claims to non-claims)",
+          "\"Each filter names a kind of sentence that sounds important but doesn't say what a company did or will do.\" (not in the facts, and wrong for navigation, headers and broken fragments, which do not 'sound important')",
+          "\"so I could audit 1,767 of them to estimate recall\" (the facts do not say the author did the audit)",
+          "\"I already read corporate language differently: I look for the verb, the number and the evidence, and I notice when they're missing.\" (a personal behavioural claim with no basis in the facts, though it reads as reflection)"
+        ],
+        "reasons": "Y fits the brief better. Its opening line (\"Building it taught me less about code than about how companies write\") and its closing line (\"I look for the verb, the number and the evidence, and I notice when they're missing\") actually pay off the title. X reads like a careful project summary: it ends on \"it's why the next stage, which I haven't built yet, is a BERT classifier\" and never says what the work taught the author. X is the more accurate and specific text. It keeps the POS-tagger detail, ties the version labels to each result (\"gave that same v3 33%, then 39% for v4.0 and 44% for v4 final\"), and makes the best point about corporate language in either text: \"Every sentence those filters catch has already passed the gate... and it still isn't a claim.\" Y blurs the numbers into \"33%, then 39%, then 44% across versions\" and adds generalizations the facts do not support, namely \"most of a report is not a claim\" and the claim that every filtered sentence \"sounds important,\" which is false for navigation text and broken fragments. Y also reads as templated. The \"Lesson one... Lesson four\" scaffolding, tidy aphorisms like \"hard to unsee\" and \"honest numbers are humbling,\" and the \"I'm not there yet. But...\" turn all feel formulaic, and \"Lesson four: keywords can't read meaning\" is about the tool, not about corporate language. X's plainer and slightly clunky phrasing (\"the remaining claim type is Future Promise\") sounds more like a real student. Overall, Y is the better blog post by a narrow margin, while X is more human and more faithful to the facts."
+      }
+    ],
+    "audits": [
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/ps_1.txt",
+        "tell_count": 8,
+        "by_category": {
+          "content": 2,
+          "staging": 3,
+          "inflation_tone": 0,
+          "personal_essay": 2,
+          "rhythm_punct": 1,
+          "vocabulary": 0,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "That mattered more than I expected.",
+            "pattern": "S2 importance flag (strong; 'mattered' is a current-Claude marker), used as a transition",
+            "fix": "Delete it and start the paragraph with 'Two years ago my avó, Rosa, had a stroke'. If the link to heel-reading matters, state it concretely (what you now notice in her face or hands)."
+          },
+          {
+            "quote": "People tell you a lot without saying a word, if you know where to look.",
+            "pattern": "C4 redundant exposition / C1 portable aphorism closing a paragraph (the 61-entry heel notebook already shows this)",
+            "fix": "Cut it and end the paragraph on 'Entry 1 is my dad's work boots.'"
+          },
+          {
+            "quote": "and for once the word that belonged to me came out of my own mouth instead of being traded for a safer one.",
+            "pattern": "C4 interpretive tail explaining the scene, with mild corrective 'X instead of Y' framing",
+            "fix": "End at 'But I said our name, and he heard it.'"
+          },
+          {
+            "quote": "The shop taught me a different kind of listening.",
+            "pattern": "PE1 stated lesson used as a topic sentence",
+            "fix": "Open with the observation itself: 'I can usually tell how someone walks from the wear on their heels.'"
+          },
+          {
+            "quote": "My avó is still working on mine. I'll wait for her, too.",
+            "pattern": "PE2 tidy callback ending that pairs the patient caller with the narrator to tie off both threads",
+            "fix": "Keep 'My avó is still working on mine.' and drop 'I'll wait for her, too.' so the essay ends on the unresolved fact."
+          },
+          {
+            "quote": "The funny part is that she is relearning these words while I am learning many of them for the first time.",
+            "pattern": "S3 run-up that tells the reader how to feel about the fact",
+            "fix": "'She is relearning these words while I learn many of them for the first time.'"
+          },
+          {
+            "quote": "What I could not do, for years, was answer the phone.",
+            "pattern": "S9/S3 one-sentence pseudo-cleft paragraph staged as a dramatic turn",
+            "fix": "Fold it into the next paragraph: 'For years I didn't answer the phone. I have a stutter...'"
+          },
+          {
+            "quote": "She can say \"sapato.\" Shoe.",
+            "pattern": "Fragment punchline as a paragraph-closing button (part of a run of clipped endings: 'Now I don't.' 'They aren't.' 'We don't.')",
+            "fix": "Match the earlier gloss: 'She can say \"sapato,\" shoe.'"
+          }
+        ],
+        "verdict": "An expert would probably read this as human, or as human writing that was heavily edited. The odd, specific details (Lurdes, the 61-entry heel notebook, the man asking about purses, 'cowboy's basement') and the mixed punctuation carry it. A few staged moves could still raise a flag: 'That mattered more than I expected,' the aphorism closing the heel paragraph, the interpretive tail in the phone scene, and the neat callback ending."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/ps_1.txt",
+        "tell_count": 5,
+        "by_category": {
+          "content": 1,
+          "staging": 2,
+          "inflation_tone": 0,
+          "personal_essay": 1,
+          "rhythm_punct": 1,
+          "vocabulary": 0,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "My dad's right thumb is stained black from the dye. / I don't know if that was a yes or a no. / She laughed at that part. / I don't fully believe her yet. / We don't.",
+            "pattern": "R1/R2 rhythm (also close to the section 8 'button line on every paragraph' over-correction): all 8 of 8 paragraphs end on a short, deadpan closing line, so the cadence becomes predictable.",
+            "fix": "Let two or three paragraphs stop mid-thought on their last fact (for example, end P3 at 'entry 1 is my dad's work boots' and drop the button lines elsewhere) so the closers stop rhyming."
+          },
+          {
+            "quote": "So I used to answer with \"Hi, shoe repair.\" That meant I never said my own family's name to a caller.",
+            "pattern": "C4 redundant exposition: the second sentence explains a point the reader has already worked out from the stutter on 'C' and the Carvalho name.",
+            "fix": "Cut 'That meant I never said my own family's name to a caller.' The next sentence ('My dad noticed...') already carries it."
+          },
+          {
+            "quote": "The funny part is that she's relearning the words while I'm learning them for the first time.",
+            "pattern": "S3 signpost / C4: 'The funny part is' tells the reader how to react to the irony before showing it.",
+            "fix": "Say it directly: 'She's relearning the words; I'm learning them for the first time.' The agulha/telemóvel lines then supply the humor."
+          },
+          {
+            "quote": "He wanted to know if we fix purses. We don't.",
+            "pattern": "S9 one-line punchline: a two-word fragment used as a deadpan button.",
+            "fix": "Merge into one sentence ('He wanted to know if we fix purses, which we don't') or end on the man waiting through all three tries."
+          },
+          {
+            "quote": "My avó can't say my name yet. She can say \"sapato,\" shoe.",
+            "pattern": "PE2-adjacent tidy callback (weak): the last line is built to tie together the name, shoe and word-learning motifs, and it follows the neat 'first time I answered with our name' resolution.",
+            "fix": "This is optional because it ends on an image and stays unresolved. If you change anything, take the 'yet' out of the final line or trim the redemptive 'first time' paragraph so the ending is less engineered."
+          }
+        ],
+        "verdict": "An expert reader probably would not suspect AI. The essay is full of specific, odd and unresolved details (Barge cement, supination, the 54 reported as an 85, the forged signature, Lurdes, 61 heel entries), it has real stakes and uses no AI vocabulary. The only things that look machine-made are the uniformly polished deadpan paragraph closers and the neatly engineered callback ending, which read more like writing-workshop craft than generic AI text."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/argue_1.txt",
+        "tell_count": 16,
+        "by_category": {
+          "content": 3,
+          "staging": 8,
+          "inflation_tone": 3,
+          "personal_essay": 0,
+          "rhythm_punct": 1,
+          "vocabulary": 1,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "A phone is not a neutral tool sitting quietly in a backpack; it is built to pull its owner back again and again.",
+            "pattern": "S1 corrective framing ('not X; it is Y') plus current-model vocabulary 'quietly' (V)",
+            "fix": "State Y directly: 'A phone is built to pull its owner back again and again.'"
+          },
+          {
+            "quote": "But normal is not the same as good.",
+            "pattern": "S1 corrective framing used as a one-line pivot that rejects a claim no one made",
+            "fix": "Cut it and go straight from the opening scene to the thesis sentence."
+          },
+          {
+            "quote": "When a tool causes more problems than it solves, it makes sense to set it aside.",
+            "pattern": "S6 summary closer / C4 redundant exposition: a portable maxim restating the paragraph",
+            "fix": "Delete it; end the paragraph on 'its potential for distraction is large.'"
+          },
+          {
+            "quote": "It lets everyone start from the same place.",
+            "pattern": "S6 summary closer that only restates 'a clear school-wide rule'",
+            "fix": "Delete it, or replace it with a concrete consequence the writer can support (e.g. class time no longer spent on confiscations)."
+          },
+          {
+            "quote": "Removing phones during the day gives students a few hours of relief from that constant social pressure.",
+            "pattern": "S6 paragraph-closing restatement",
+            "fix": "End the paragraph on the specific rumor example ('...before third') and cut the summary."
+          },
+          {
+            "quote": "Supporters of phones in school often argue that the devices are educational tools.",
+            "pattern": "C6 vague attribution ('supporters often argue')",
+            "fix": "Name an actual source (a district policy, a teacher, a survey) or present it as the writer's own anticipated objection; never invent one."
+          },
+          {
+            "quote": "Walk into almost any high school classroom a few minutes before the bell, and you will see the same scene",
+            "pattern": "C2 category instead of instance: a generic scene, and the essay has no named school, policy, data or source anywhere",
+            "fix": "Use the writer's own classroom or one real school or policy (ask the writer for it; do not invent one)."
+          },
+          {
+            "quote": "because phones undermine learning, weaken the social life of a school, and leave students fighting a daily battle for their own attention that they should not have to fight alone",
+            "pattern": "S8 forced triad thesis plus T4 mannered metaphor ('daily battle')",
+            "fix": "Keep the reasons but say the third one literally: 'and ask students to resist, on their own, a device designed to hold their attention.'"
+          },
+          {
+            "quote": "Phones are not evil, and students will use them for the rest of their lives.",
+            "pattern": "S5 arguing with no one: concession to a position nobody in the essay holds",
+            "fix": "Cut it; the conclusion can open with 'School is meant to...' or, better, a specific point."
+          },
+          {
+            "quote": "But school is meant to be a place for focused thinking and real connection.",
+            "pattern": "C1 portable line with T2 vague rating ('real connection')",
+            "fix": "Replace it with a point specific to this essay, such as the twenty-to-thirty-minute focus claim or the lunch-table example."
+          },
+          {
+            "quote": "surrounded by people who are physically present but mentally somewhere else",
+            "pattern": "T4 stock phrasing / cliche",
+            "fix": "Say it literally: 'at a table where everyone else is scrolling.'"
+          }
+        ],
+        "verdict": "An expert reader would moderately suspect AI: the essay follows a clean five-paragraph template with a triadic thesis, two 'not X; it is Y' pivots, summary maxims closing most paragraphs, and no concrete source, school or data, though it avoids the classic AI vocabulary and could pass as a polished student essay."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/argue_1.txt",
+        "tell_count": 7,
+        "by_category": {
+          "content": 4,
+          "staging": 2,
+          "inflation_tone": 0,
+          "personal_essay": 0,
+          "rhythm_punct": 1,
+          "vocabulary": 0,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "A quiet student who might have been pulled into a conversation is left alone instead, surrounded by classmates who are all looking down at their phones.",
+            "pattern": "C2 Categories instead of instances: the essay's support is all hypothetical stand-ins (\"A quiet student\", \"Anyone who has tried\", \"Parents understandably want\"). It names no school, study, statistic or actual ban.",
+            "fix": "Replace one hypothetical with a real case the writer can supply, such as their own school's policy, a named district's or country's ban and what happened, or a study. Ask for it rather than inventing one."
+          },
+          {
+            "quote": "Supporters of phones in school often argue that the devices are educational tools",
+            "pattern": "C6 Vague attribution: an unnamed group \"often argue[s]\"",
+            "fix": "Name who makes the argument (a teacher, a district policy, a parent group), or state the objection directly: \"Phones can serve as calculators and research tools.\""
+          },
+          {
+            "quote": "Phones are not evil, and students will use them for the rest of their lives.",
+            "pattern": "S5/S1 Arguing with no one: a disclaimer against a claim nobody in the essay made",
+            "fix": "Cut it. The conclusion can start from the policy point (school hours only) without the disclaimer."
+          },
+          {
+            "quote": "For seven hours a day, the phones can wait.",
+            "pattern": "S6/S9 Summary closer that ends on a title-callback punchline and restates the thesis instead of adding a point",
+            "fix": "End on the last concrete point, e.g. the locker or pouch arrangement until dismissal, or the strongest specific consequence. Drop the aphorism."
+          },
+          {
+            "quote": "Walk into almost any high school classroom a few minutes before the bell and you will see the same scene: rows of students bent over their phones, thumbs moving, barely speaking to the person next to them.",
+            "pattern": "C1 Portability: a stock hook that could open any phone-ban essay",
+            "fix": "Use a scene the writer actually saw (which class, what happened), or open with the thesis sentence."
+          },
+          {
+            "quote": "Asking a teenager to ignore a device designed to be irresistible, hour after hour, is asking a great deal.",
+            "pattern": "C7 Low density: repeats the thesis clause (\"resist, alone and all day, a device designed to hold their attention\") and paragraph 2's \"A phone is designed to pull its owner back\". Third use of \"designed to\".",
+            "fix": "Merge the fairness paragraph into the distraction paragraph, or give it a new reason it currently lacks, such as uneven teacher enforcement under the current rules."
+          },
+          {
+            "quote": "A phone that interrupts every few minutes... / A phone's educational value is real but small... / A school day without phones gives students... / A clear school-wide rule puts every student...",
+            "pattern": "R3 Repeated openers: seven sentences open on a generic \"A [noun]\" subject, and four of the five body paragraphs end on one as a wrap-up verdict",
+            "fix": "Let some paragraphs end on their concrete detail (the rumor that spreads \"before third\" period is a strong one), and vary the subject in the others."
+          }
+        ],
+        "verdict": "An expert reader might moderately suspect AI. The prose is clean and has no vocabulary, dash or inflation tells, but the template structure (stock hook, three-reason thesis, two easily answered objections, a \"Finally,\" paragraph, a title-callback punchline), the evidence-free hypotheticals, the vague \"supporters argue\" and the \"Phones are not evil\" disclaimer all read as polished model output. It could still pass as a strong student essay."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/explain_1.txt",
+        "tell_count": 8,
+        "by_category": {
+          "content": 2,
+          "staging": 5,
+          "inflation_tone": 0,
+          "personal_essay": 0,
+          "rhythm_punct": 0,
+          "vocabulary": 0,
+          "formatting": 1,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "Why it matters",
+            "pattern": "S2 importance flag (strong; also on the Claude-era vocabulary list as 'why X matters'), used as a section heading",
+            "fix": "Use a literal heading such as 'Faster to design', or drop the heading and merge the speed point into the previous section."
+          },
+          {
+            "quote": "The big idea: an mRNA vaccine does not fight the virus directly. It gives your immune system a safe practice run, so it is ready when the real threat arrives.",
+            "pattern": "S6 summary closer with an S3-style 'The big idea:' label; the line would fit any vaccine explainer and restates the intro",
+            "fix": "Delete the paragraph and end on the last new fact (the influenza and cancer work, or the point that protection fades)."
+          },
+          {
+            "quote": "an mRNA vaccine does not fight the virus directly. It gives your immune system a safe practice run",
+            "pattern": "S1 corrective framing ('does not X. It Y'); no reader in this context believes X, so rejecting it adds nothing",
+            "fix": "If any of it stays, state Y directly: 'The vaccine trains the immune system on one viral protein.'"
+          },
+          {
+            "quote": "The most important result is memory.",
+            "pattern": "S2 importance flag / ranking run-up that comes before the actual content",
+            "fix": "Open with the fact: 'After the response calms down, some B and T cells remain as long-lived memory cells.'"
+          },
+          {
+            "quote": "When you hear \"vaccine,\" you might picture a weakened or inactivated germ being injected into your arm.",
+            "pattern": "S3 run-up: the stock 'When you hear X, you might picture...' explainer hook",
+            "fix": "Start with the claim: 'Many traditional vaccines inject a weakened or inactivated germ; mRNA vaccines instead deliver instructions...'"
+          },
+          {
+            "quote": "mRNA is short-lived; cells break it down after use.",
+            "pattern": "C7 low density: repeated later in 'After being read, the mRNA is broken down, typically within a few days.'",
+            "fix": "Keep only the second version, since it adds the 'few days' timescale, and cut the first."
+          },
+          {
+            "quote": "Researchers are exploring it for influenza, other infections, and some cancers.",
+            "pattern": "C2 categories instead of instances ('other infections', 'some cancers'), forming a filler triad",
+            "fix": "Name a specific instance if the writer has one (for example a particular cancer-vaccine trial). Otherwise keep 'influenza' and cut the vague items."
+          },
+          {
+            "quote": "Start with the message / Getting the message inside / Sounding the alarm / Remembering for later",
+            "pattern": "Formatting: five headings in about 430 words (one every ~85 words), several of them cute or metaphorical",
+            "fix": "Use fewer, literal headings (for example 'How the mRNA gets into cells', 'Immune response', 'Immune memory'), or none in a piece this short."
+          }
+        ],
+        "verdict": "An expert would probably suspect AI from the frame rather than the body. The stock hook, the 'Why it matters' heading, the 'most important result' flag and the 'The big idea: does not X, it Y' closer look templated, while the middle sections are concrete, accurate and varied in rhythm."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/explain_1.txt",
+        "tell_count": 5,
+        "by_category": {
+          "content": 0,
+          "staging": 3,
+          "inflation_tone": 0,
+          "personal_essay": 0,
+          "rhythm_punct": 1,
+          "vocabulary": 0,
+          "formatting": 1,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "When you hear \"vaccine,\" you might picture a weakened or inactivated germ being injected into your arm.",
+            "pattern": "S3 run-up / stock explainer hook (weak): a 'when you hear X, you might picture' opener that could start any vaccine explainer",
+            "fix": "Start with the contrast itself: \"Many traditional vaccines inject a weakened or inactivated germ; mRNA vaccines instead send instructions...\""
+          },
+          {
+            "quote": "Researchers are exploring the approach for influenza, other infections and some cancers.",
+            "pattern": "S7 forward-looking send-off with a vague category list (C2-adjacent) as the closing line",
+            "fix": "End on the update-speed point, or name one specific sourced trial or approved product if the writer has one. Do not invent one."
+          },
+          {
+            "quote": "The vaccine never attacks the virus itself. Protection comes from memory:",
+            "pattern": "S1 staged negation (weak): the text rejects an idea it never raised so it can reveal the real answer",
+            "fix": "Cut the first sentence and open with \"Protection comes from memory: after the response calms down...\""
+          },
+          {
+            "quote": "Start with the message / Getting the message inside / Sounding the alarm / Remembering for later / Quick to update",
+            "pattern": "Formatting: a metaphor-styled heading roughly every 75 words, each over a single short paragraph",
+            "fix": "Drop the headings, or keep two or three plain ones (e.g. \"How the cell reads it\", \"How immunity forms\") and merge the short sections."
+          },
+          {
+            "quote": "(every section body is one paragraph of 3-4 sentences)",
+            "pattern": "R2 uniform paragraphs: all seven paragraphs are 3-4 sentences, whatever their content",
+            "fix": "Let length follow content: give the immune-response mechanism more room and merge the two delivery sections."
+          }
+        ],
+        "verdict": "Probably not flagged with confidence: the prose is concrete, accurate and varied, with plain verbs, parentheses and colons, and no tell vocabulary. Only template-level signs show: a stock hook, a staged \"never attacks\" reveal, a forward-looking closer, and dense cute headings over uniform one-paragraph sections."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/lit_1.txt",
+        "tell_count": 9,
+        "by_category": {
+          "content": 1,
+          "staging": 5,
+          "inflation_tone": 2,
+          "personal_essay": 0,
+          "rhythm_punct": 1,
+          "vocabulary": 0,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "In Chapter 1, the green light is less a symbol than a mystery.",
+            "pattern": "S1 corrective framing ('less a X than a Y'), used as the thesis opener",
+            "fix": "State the claim directly: \"In Chapter 1, Fitzgerald withholds what the green light means.\""
+          },
+          {
+            "quote": "From the start, the light is not so much a thing as a direction for desire.",
+            "pattern": "S1 corrective framing again ('not so much X as Y') in the same paragraph, plus an alliterative aphorism as the closer (T4 flavour)",
+            "fix": "Cut it and end on the previous sentence about distance and Gatsby's trembling reach, which already makes the point."
+          },
+          {
+            "quote": "The light was enchanted only while it stood in for something he could not reach.",
+            "pattern": "S6 summary closer: restates the 'irony' sentence just before it",
+            "fix": "Delete. End the paragraph on the irony sentence or on the 'diminished by one' quote."
+          },
+          {
+            "quote": "Across the novel, then, the green light changes from a distant puzzle, to a sign of Daisy, to an image of all human longing.",
+            "pattern": "S6 recap: repeats the three-paragraph structure back to the reader",
+            "fix": "Cut, or replace it with one new point, e.g. what the unfinished 'And one fine morning——' says about Nick himself."
+          },
+          {
+            "quote": "What stays constant is that its meaning depends on remaining out of reach.",
+            "pattern": "S6 aphoristic final line echoing the Chapter 5 closer; every paragraph ends this way",
+            "fix": "End on the concrete observation about the unfinished sentence instead of a maxim."
+          },
+          {
+            "quote": "The irony is sharp: getting closer to what he wanted makes Gatsby's dream smaller.",
+            "pattern": "T2 verdict label ('The irony is sharp') in front of the actual point",
+            "fix": "Drop the label: \"Getting closer to what he wanted makes Gatsby's dream smaller.\""
+          },
+          {
+            "quote": "Even the grammar refuses to arrive, because the passage ends on an unfinished promise",
+            "pattern": "T4 mannered personification doing clever work in place of the plain observation",
+            "fix": "\"The passage ends on an unfinished sentence, 'And one fine morning——,' which never reaches its conclusion.\""
+          },
+          {
+            "quote": "the light becomes a symbol of the hope everyone carries for a better future, a future that moves away as we approach it",
+            "pattern": "C1 portable, generic paraphrase that only repeats the quoted 'recedes before us'",
+            "fix": "Stay with the text: \"so the light now stands for a future that, in Nick's words, 'recedes before us.'\""
+          },
+          {
+            "quote": "In Chapter 1, ... In Chapter 5, ... In Chapter 9, ...",
+            "pattern": "R3 repeated paragraph openers: a template built on chapter order",
+            "fix": "Open each paragraph with its claim and work the chapter reference into the sentence."
+          }
+        ],
+        "verdict": "An expert would probably suspect AI, though not with certainty. The giveaways are structural: two 'less X than Y' corrective framings in the first paragraph, and every paragraph closes on a summarizing aphorism, which then turns into a recap of the whole essay. The close reading itself is dense and accurate (the 'always'/'all night' point, the star-and-moon comparison, the unfinished final sentence) and has no classic AI vocabulary, so the content reads like a strong student's."
+      },
+      {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/lit_1.txt",
+        "tell_count": 4,
+        "by_category": {
+          "content": 3,
+          "staging": 1,
+          "inflation_tone": 0,
+          "personal_essay": 0,
+          "rhythm_punct": 0,
+          "vocabulary": 0,
+          "formatting": 0,
+          "overcorrection": 0
+        },
+        "top_issues": [
+          {
+            "quote": "The light was enchanted only while it stood in for something he could not reach.",
+            "pattern": "C4 redundant exposition: restates the essay's thesis just before the quote that already makes the point",
+            "fix": "Delete it and go straight from \"made Gatsby's dream smaller\" to \"As Nick puts it, ...\"."
+          },
+          {
+            "quote": "All Nick can report about the light is its size and its distance.",
+            "pattern": "C4/C7 low density: repeats \"minute and far away\" and the previous sentence's \"nothing more\", so two sentences do one job",
+            "fix": "Cut it, or fold it into the earlier sentence: \"...nothing more: a gesture of longing and a light he can describe only as small and far off.\""
+          },
+          {
+            "quote": "Gatsby's lonely gesture has become a shared human habit.",
+            "pattern": "C4 redundant exposition: spells out what the two quotes placed side by side already show, and repeats the earlier point that the sentence \"begins with 'Gatsby' and ends with 'us'\"",
+            "fix": "Delete it and let the paired quotes (\"stretched out his arms\" / \"stretch out our arms farther\") carry the point."
+          },
+          {
+            "quote": "the passage ends at \"And one fine morning——,\" a promise left unfinished.",
+            "pattern": "S6 (weak): a short appositive at the very end that sums things up with an aphorism",
+            "fix": "End on the observation itself: \"Even Nick's sentence never arrives: the passage breaks off at 'And one fine morning——'.\""
+          }
+        ],
+        "verdict": "An expert would probably not suspect AI. The essay stays close to the text with exact quotes and its own observations (a star and the moon look close only from far below; the sentence starts with \"Gatsby\" and ends with \"us\"; Nick's final sentence is left unfinished), and its sentence length and punctuation vary. The only weak tells are three sentences that re-explain what the quotes already show and one tidy closing tag."
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Judge"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Audit"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "judge:AC-ps:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a35377a79c9c323fa",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526857103,
+      "queuedAt": 1792526857062,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Common App personal statement (max 650 words) for the student in the interview notes; use only facts from the notes.\nFacts file (the only permitted source of specifics; flag anything not …",
+      "promptFramed": true,
+      "lastProgressAt": 1792526912253,
+      "tokens": 62601,
+      "toolCalls": 2,
+      "durationMs": 55149,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":5,\"specificity\":8,\"voice\":6},\"Y\":{\"quality\":6,\"human_likeness\":7,\"specificity\":9,\"voice\":7},\"unsupported_X\":[\"\\\"What I could not do, for years, was answer the phone.\\\" (contradicts the notes: she did answer it, as \\\"Hi, shoe repair\\\"; \\\"for years\\\" is also unsupported)\",\"\\\"It sounded friendly enough.\\\"\",\"\\\"Sitting across from…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "judge:AC-ps:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a2b356285619bb91f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526857104,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who has read thousands of personal statements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Common App personal statement (max 650 words) for the student in the interview notes; use only facts from the notes.\nFacts file (the …",
+      "promptFramed": true,
+      "lastProgressAt": 1792526902081,
+      "tokens": 63047,
+      "toolCalls": 5,
+      "durationMs": 43838,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":8,\"specificity\":9,\"voice\":7},\"Y\":{\"quality\":6,\"human_likeness\":5,\"specificity\":8,\"voice\":6},\"unsupported_X\":[],\"unsupported_Y\":[\"\\\"What I could not do, for years, was answer the phone.\\\" (overstated: she did answer it, just not with the name, and the notes never say 'for years')\",\"\\\"It sounded friendly enough.\\\"\",\"\\\"The shop …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "judge:AC-supp:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a8850d91c0442845f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526903742,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use only facts from the notes.\nFacts file (the only per…",
+      "promptFramed": true,
+      "lastProgressAt": 1792526954191,
+      "tokens": 61444,
+      "toolCalls": 2,
+      "durationMs": 50449,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":7,\"specificity\":8,\"voice\":7},\"Y\":{\"quality\":6,\"human_likeness\":5,\"specificity\":7,\"voice\":6},\"unsupported_X\":[],\"unsupported_Y\":[\"That stung, then helped.\",\"I had to stop reading about myself and start reading about her.\",\"a word I hear every Saturday at my dad's repair shop\",\"Those afternoons handed me a question I can't put …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "judge:AC-supp:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "ae30cd2200c537c8c",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526914133,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who reads supplements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use only facts from the n…",
+      "promptFramed": true,
+      "lastProgressAt": 1792526953820,
+      "tokens": 61442,
+      "toolCalls": 2,
+      "durationMs": 39687,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":8,\"voice\":6},\"Y\":{\"quality\":8,\"human_likeness\":8,\"specificity\":9,\"voice\":8},\"unsupported_X\":[\"That stung, then helped.\",\"I had to stop reading about myself and start reading about her.\",\"a word I hear every Saturday at my dad's repair shop\",\"Those afternoons handed me a question I can't put down\",\"I'd like to …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "judge:AC-argue:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "ab423204e70fce711",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526955563,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Argumentative essay for 11th-grade English: 'Should high schools ban student phones during the school day?' Clear position; no invented statistics, studies, quotes or named sources.\nNo fa…",
+      "promptFramed": true,
+      "lastProgressAt": 1792526980320,
+      "tokens": 60699,
+      "toolCalls": 3,
+      "durationMs": 24756,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":5,\"specificity\":6,\"voice\":6},\"Y\":{\"quality\":7,\"human_likeness\":7,\"specificity\":7,\"voice\":6},\"unsupported_X\":[\"\\\"the kind that builds over twenty or thirty uninterrupted minutes\\\" is a precise-sounding claim about attention with no support\",\"\\\"nearly every one of those tasks can be done on school-issued laptops or classroom co…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "judge:AC-argue:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "aee8720858387af5a",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526956212,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are an experienced 11th-grade English teacher grading argumentative essays, wary of AI-written work. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Argumentative essay for 11th-grade English: 'Should high schools ban student phones during the school day?' Clear position; no invented statistics, studies, quotes or named sources.\nNo f…",
+      "promptFramed": true,
+      "lastProgressAt": 1792526984509,
+      "tokens": 60697,
+      "toolCalls": 3,
+      "durationMs": 28296,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":6,\"voice\":6},\"Y\":{\"quality\":7,\"human_likeness\":5,\"specificity\":6,\"voice\":6},\"unsupported_X\":[\"\\\"Learning difficult material takes sustained focus, the kind that builds over twenty or thirty uninterrupted minutes.\\\" This is a specific number about attention with no basis given. It is not an invented study, but …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "judge:AC-explain:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "aba90ad93d1678987",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526982069,
+      "queuedAt": 1792526857063,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Explanatory article for a high-school science club blog: 'How do mRNA vaccines teach the immune system?' Accurate general science; no invented statistics or quotes.\nNo facts file: flag in…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527013007,
+      "tokens": 60472,
+      "toolCalls": 3,
+      "durationMs": 30938,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":6,\"voice\":5},\"Y\":{\"quality\":6,\"human_likeness\":5,\"specificity\":6,\"voice\":5},\"unsupported_X\":[\"\\\"The immune system recognizes those fragments as foreign.\\\" followed by \\\"antibodies shaped to fit the spike protein\\\": this is an oversimplification. B cells and antibodies recognize the intact spike protein, and T …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "judge:AC-explain:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a58968f728c6111ab",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792526986395,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a high-school science teacher who edits the science club blog. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Explanatory article for a high-school science club blog: 'How do mRNA vaccines teach the immune system?' Accurate general science; no invented statistics or quotes.\nNo facts file: flag invented statistics, studies, named…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527020185,
+      "tokens": 60460,
+      "toolCalls": 3,
+      "durationMs": 33789,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":6},\"Y\":{\"quality\":8,\"human_likeness\":7,\"specificity\":7,\"voice\":6},\"unsupported_X\":[\"\\\"the mRNA is released into the cytoplasm, the fluid outside the nucleus\\\" -- imprecise: a student could read this as fluid outside the cell; the cytoplasm is inside the cell membrane but outside the nucleus\"],\"unsupp…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "judge:AC-report:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "ae713833c5e3d51a3",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527014829,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: 'Claim extraction' methods subsection (prose) of the GreenBERT report, ending with evaluation numbers and caveats. Formal academic register, first person plural.\nFacts file (the only perm…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527041261,
+      "tokens": 61366,
+      "toolCalls": 2,
+      "durationMs": 26432,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":8,\"voice\":6},\"Y\":{\"quality\":8,\"human_likeness\":7,\"specificity\":9,\"voice\":7},\"unsupported_X\":[\"so that recall can be audited directly (\\\"directly\\\" goes beyond the facts, which say only that recall can be audited)\"],\"unsupported_Y\":[\"We evaluated the extractor first on a 26-sentence development set (\\\"first\\\" i…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "judge:AC-report:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a894d1a3fc3a1b5f2",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527022013,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a reviewer for a student research journal reading a methods section. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: 'Claim extraction' methods subsection (prose) of the GreenBERT report, ending with evaluation numbers and caveats. Formal academic register, first person plural.\nFacts file (the only permitted source of specifics; …",
+      "promptFramed": true,
+      "lastProgressAt": 1792527045103,
+      "tokens": 61333,
+      "toolCalls": 2,
+      "durationMs": 23090,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":8,\"human_likeness\":7,\"specificity\":8,\"voice\":7},\"Y\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":7},\"unsupported_X\":[\"\\\"That ceiling is the reason for the next stage\\\" (minor overstatement: the facts say the ceiling 'motivates' the BERT stage, not that it is the sole reason)\"],\"unsupported_Y\":[\"\\\"so that recall can be audited directl…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 11,
+      "label": "judge:AC-lit:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a9429acede3e7e95f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527043084,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Short literary analysis (2-3 paragraphs) on what the green light means in The Great Gatsby and how its meaning changes. Quote only from the provided quotes file.\nFacts file (the only perm…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527081151,
+      "tokens": 60880,
+      "toolCalls": 2,
+      "durationMs": 38066,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":8,\"human_likeness\":7,\"specificity\":8,\"voice\":7},\"Y\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":6},\"unsupported_X\":[],\"unsupported_Y\":[\"\\\"Gatsby's trembling reach shows that whatever it stands for matters to him intensely\\\" states the trembling as fact, but Q1 only has Nick saying he \\\"could have sworn he was trembling\\\". The hedge …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 12,
+      "label": "judge:AC-lit:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "aaac5c90f421b9ace",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527046919,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are an experienced high-school English teacher grading literary analysis, wary of AI-written work. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Short literary analysis (2-3 paragraphs) on what the green light means in The Great Gatsby and how its meaning changes. Quote only from the provided quotes file.\nFacts file (the only permi…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527095746,
+      "tokens": 60870,
+      "toolCalls": 2,
+      "durationMs": 48827,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":8,\"voice\":7},\"Y\":{\"quality\":8,\"human_likeness\":7,\"specificity\":9,\"voice\":7},\"unsupported_X\":[\"\\\"Even the grammar refuses to arrive, because the passage ends on an unfinished promise, 'And one fine morning——,' that never reaches its conclusion.\\\" The broken sentence is accurate, but the passage does not end the…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 13,
+      "label": "judge:AC-blog:editor",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a58bfb0262cbe8216",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527083126,
+      "queuedAt": 1792526857064,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: First-person blog post by the student who built GreenBERT: 'What building a greenwashing detector taught me about corporate language.' Only facts from the fact sheet.\nFacts file (the only…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527128080,
+      "tokens": 61521,
+      "toolCalls": 2,
+      "durationMs": 44953,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":6,\"human_likeness\":5,\"specificity\":7,\"voice\":6},\"Y\":{\"quality\":7,\"human_likeness\":7,\"specificity\":8,\"voice\":5},\"unsupported_X\":[\"Lesson one: most of a report is not a claim.\",\"Each filter names a kind of sentence that sounds important but doesn't say what a company did or will do.\"],\"unsupported_Y\":[],\"reasons\":\"X follows the title more openly.…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 14,
+      "label": "judge:AC-blog:reader",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "afe263dbe9e597245",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527097735,
+      "queuedAt": 1792526857065,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are an editor of a popular student blog about tech and research. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: First-person blog post by the student who built GreenBERT: 'What building a greenwashing detector taught me about corporate language.' Only facts from the fact sheet.\nFacts file (the only permitted source of specifics; fla…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527143368,
+      "tokens": 61713,
+      "toolCalls": 4,
+      "durationMs": 45633,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"X\",\"X\":{\"quality\":6,\"human_likeness\":7,\"specificity\":9,\"voice\":5},\"Y\":{\"quality\":7,\"human_likeness\":5,\"specificity\":7,\"voice\":7},\"unsupported_X\":[\"\\\"I could also audit 1,767 of them for missed claims\\\" (the facts say 1,767 rejected sentences were audited but do not say the author did the audit; the agent audits may have done it)\"],\"unsupported_Y\":[\"\\\"Lesson one:…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 15,
+      "label": "audit:A/ps_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "aba05160bd16138ef",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527145220,
+      "queuedAt": 1792527145186,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert would probably read this as human, or as human wr…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/ps_1.txt. You do not know who wrote it. Count distinct instances by category (be consi…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527203105,
+      "tokens": 64745,
+      "toolCalls": 3,
+      "durationMs": 57884,
+      "resultPreview": "{\"tell_count\":8,\"by_category\":{\"content\":2,\"staging\":3,\"inflation_tone\":0,\"personal_essay\":2,\"rhythm_punct\":1,\"vocabulary\":0,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"That mattered more than I expected.\",\"pattern\":\"S2 importance flag (strong; 'mattered' is a current-Claude marker), used as a transition\",\"fix\":\"Delete it and start the paragraph with 'Two years ago my avó, Rosa, had…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 16,
+      "label": "audit:C1/ps_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "abdc504ada58ae41c",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527145221,
+      "queuedAt": 1792527145186,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert reader probably would not suspect AI. The essay i…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/ps_1.txt. You do not know who wrote it. Count distinct instances by category (be cons…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527188041,
+      "tokens": 64781,
+      "toolCalls": 3,
+      "durationMs": 41954,
+      "resultPreview": "{\"tell_count\":5,\"by_category\":{\"content\":1,\"staging\":2,\"inflation_tone\":0,\"personal_essay\":1,\"rhythm_punct\":1,\"vocabulary\":0,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"My dad's right thumb is stained black from the dye. / I don't know if that was a yes or a no. / She laughed at that part. / I don't fully believe her yet. / We don't.\",\"pattern\":\"R1/R2 rhythm (also close to the secti…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 17,
+      "label": "audit:A/argue_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "a6a1369b936ac1807",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527189865,
+      "queuedAt": 1792527145186,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert reader would moderately suspect AI: the essay fol…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/argue_1.txt. You do not know who wrote it. Count distinct instances by category (be co…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527252641,
+      "tokens": 64706,
+      "toolCalls": 3,
+      "durationMs": 62775,
+      "resultPreview": "{\"tell_count\":16,\"by_category\":{\"content\":3,\"staging\":8,\"inflation_tone\":3,\"personal_essay\":0,\"rhythm_punct\":1,\"vocabulary\":1,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"A phone is not a neutral tool sitting quietly in a backpack; it is built to pull its owner back again and again.\",\"pattern\":\"S1 corrective framing ('not X; it is Y') plus current-model vocabulary 'quietly' (V)\",\"fix…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 18,
+      "label": "audit:C1/argue_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "aee58dc92a30c11f8",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527205155,
+      "queuedAt": 1792527145186,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert reader might moderately suspect AI. The prose is …",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/argue_1.txt. You do not know who wrote it. Count distinct instances by category (be c…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527297522,
+      "tokens": 71864,
+      "toolCalls": 4,
+      "durationMs": 92366,
+      "resultPreview": "{\"tell_count\":7,\"by_category\":{\"content\":4,\"staging\":2,\"inflation_tone\":0,\"personal_essay\":0,\"rhythm_punct\":1,\"vocabulary\":0,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"A quiet student who might have been pulled into a conversation is left alone instead, surrounded by classmates who are all looking down at their phones.\",\"pattern\":\"C2 Categories instead of instances: the essay's sup…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 19,
+      "label": "audit:A/explain_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "a8af56f40059f3328",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527254597,
+      "queuedAt": 1792527145186,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert would probably suspect AI from the frame rather t…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/explain_1.txt. You do not know who wrote it. Count distinct instances by category (be …",
+      "promptFramed": true,
+      "lastProgressAt": 1792527304550,
+      "tokens": 64589,
+      "toolCalls": 3,
+      "durationMs": 49953,
+      "resultPreview": "{\"tell_count\":8,\"by_category\":{\"content\":2,\"staging\":5,\"inflation_tone\":0,\"personal_essay\":0,\"rhythm_punct\":0,\"vocabulary\":0,\"formatting\":1,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"Why it matters\",\"pattern\":\"S2 importance flag (strong; also on the Claude-era vocabulary list as 'why X matters'), used as a section heading\",\"fix\":\"Use a literal heading such as 'Faster to design', or drop the headi…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 20,
+      "label": "audit:C1/explain_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "a477c113074e886e3",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527299250,
+      "queuedAt": 1792527145187,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Probably not flagged with confidence: the prose is concrete…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/explain_1.txt. You do not know who wrote it. Count distinct instances by category (be…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527343762,
+      "tokens": 64541,
+      "toolCalls": 3,
+      "durationMs": 44512,
+      "resultPreview": "{\"tell_count\":5,\"by_category\":{\"content\":0,\"staging\":3,\"inflation_tone\":0,\"personal_essay\":0,\"rhythm_punct\":1,\"vocabulary\":0,\"formatting\":1,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"When you hear \\\"vaccine,\\\" you might picture a weakened or inactivated germ being injected into your arm.\",\"pattern\":\"S3 run-up / stock explainer hook (weak): a 'when you hear X, you might picture' opener that could …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 21,
+      "label": "audit:A/lit_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "ae5e2b5503e3832e2",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527307043,
+      "queuedAt": 1792527145187,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert would probably suspect AI, though not with certai…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/lit_1.txt. You do not know who wrote it. Count distinct instances by category (be cons…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527367771,
+      "tokens": 64530,
+      "toolCalls": 3,
+      "durationMs": 60727,
+      "resultPreview": "{\"tell_count\":9,\"by_category\":{\"content\":1,\"staging\":5,\"inflation_tone\":2,\"personal_essay\":0,\"rhythm_punct\":1,\"vocabulary\":0,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"In Chapter 1, the green light is less a symbol than a mystery.\",\"pattern\":\"S1 corrective framing ('less a X than a Y'), used as the thesis opener\",\"fix\":\"State the claim directly: \\\"In Chapter 1, Fitzgerald withholds…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 22,
+      "label": "audit:C1/lit_1.txt",
+      "phaseIndex": 2,
+      "phaseTitle": "Audit",
+      "agentId": "acd73cc2cbd473790",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792527345529,
+      "queuedAt": 1792527145187,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "An expert would probably not suspect AI. The essay stays cl…",
+      "promptPreview": "Audit this text for AI-writing tells. Read the catalog /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v1/anti-ai-writing/references/tells.md first, then the text /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/C1/lit_1.txt. You do not know who wrote it. Count distinct instances by category (be con…",
+      "promptFramed": true,
+      "lastProgressAt": 1792527382544,
+      "tokens": 64550,
+      "toolCalls": 3,
+      "durationMs": 37014,
+      "resultPreview": "{\"tell_count\":4,\"by_category\":{\"content\":3,\"staging\":1,\"inflation_tone\":0,\"personal_essay\":0,\"rhythm_punct\":0,\"vocabulary\":0,\"formatting\":0,\"overcorrection\":0},\"top_issues\":[{\"quote\":\"The light was enchanted only while it stood in for something he could not reach.\",\"pattern\":\"C4 redundant exposition: restates the essay's thesis just before the quote that already makes the point\",\"fix\":\"Delete it a…"
+    }
+  ],
+  "totalTokens": 1382851,
+  "totalToolCalls": 62
+}

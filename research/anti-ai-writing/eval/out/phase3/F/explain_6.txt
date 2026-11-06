@@ -1,0 +1,15 @@
+Why 2000 had a February 29 and 2100 won't
+
+The year 2000 had a February 29. The year 1900 didn't, and 2100 won't, even though both divide evenly by 4. The exception repairs an error that built up in the calendar for more than 1,600 years.
+
+From one March equinox to the next, Earth takes about 365 days, 5 hours and 49 minutes. A calendar has to track that span (astronomers call it the tropical year) to keep the seasons in place, but it can only count whole days. With 365 every year, the calendar would slip almost six hours a year, and after 400 years the March equinox would land in late June.
+
+Julius Caesar's calendar, which took effect in 45 BC, added a day every fourth year. That makes the average year 365 days and 6 hours, about 11 minutes too long, which comes to a whole day roughly every 128 years. By the 1500s the spring equinox, which the church used to set the date of Easter, was falling around March 11 instead of March 21.
+
+In 1582 Pope Gregory XIII ordered two changes. Ten days were dropped at once, so in the first countries to adopt the reform, Thursday, October 4 was followed by Friday, October 15. And the leap-year rule changed so the drift would not return. A year divisible by 4 is still a leap year, unless it is divisible by 100; those century years are leap years only if they are also divisible by 400. So 1700, 1800 and 1900 lost their leap days, 2000 kept its, and 2100 will lose it.
+
+The 400 comes from the arithmetic, which you can check on a phone calculator. Eleven extra minutes a year for 400 years is 4,400 minutes, about three days. Each 400-year stretch contains four century years; the century rule cancels all four leap days and the 400 rule restores one, so three are removed. That leaves 97 leap days per 400 years instead of 100, and an average year of 365.2425 days.
+
+Britain and its American colonies didn't switch until 1752, when the gap had reached 11 days and September 2 was followed by September 14. Records give George Washington, born before the switch, two birthdays: February 11 by the old calendar and February 22 by the new.
+
+The Gregorian year is still too long, by less than half a minute, which adds up to a day in somewhat more than 3,000 years. The rules say nothing about that day, and it is hard to predict, because tides raised by the Moon are slowly lengthening Earth's day and changing how many days fit into a year.

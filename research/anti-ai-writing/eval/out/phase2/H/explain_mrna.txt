@@ -1,0 +1,17 @@
+How do mRNA vaccines teach the immune system?
+
+Your immune system is very good at fighting germs it has met before. The trouble is the first meeting. When a new virus shows up, your body can take days to work out how to fight it, and you can get quite sick while it does. Vaccines give the immune system a practice round. mRNA vaccines set that round up in a clever way, by using machinery your cells already have.
+
+That machinery runs on mRNA. Inside your cells, DNA holds the instructions for making proteins, but DNA stays in the nucleus. To build a protein, the cell copies the relevant instructions into a short-lived molecule called messenger RNA, or mRNA. The message travels to ribosomes, the cell's protein-building machines, which read it and assemble the protein. Afterward, the cell breaks the mRNA down.
+
+An mRNA vaccine borrows this system. Scientists write an mRNA message that codes for a single viral protein, usually one on the virus's surface. For the COVID-19 vaccines, that was the spike protein, which the coronavirus uses to latch onto human cells. The vaccine carries only these instructions and no virus, so it cannot cause an infection.
+
+Because mRNA is fragile, it is wrapped in tiny bubbles of fat called lipid nanoparticles. They protect it and help it get into cells near the injection site, where ribosomes read the mRNA and make copies of the viral protein. Some copies are displayed on the cell's surface; others are released and picked up by immune cells.
+
+The immune system then responds to the protein. B cells make antibodies that fit its shape, like a key cut for one lock. Helper T cells coordinate the response, and killer T cells learn to destroy cells showing pieces of that protein. The most important result is that some of these B and T cells become memory cells, which can last a long time.
+
+If the real virus shows up later, those memory cells recognize it quickly. The immune system doesn't have to start from scratch, so it can respond fast, often before the infection becomes serious.
+
+The vaccine does not change your DNA. The mRNA works outside the nucleus, and cells have no normal way to turn it into DNA. It is broken down within days, like the cell's own messages.
+
+These vaccines could also be made quickly. Once scientists know a virus's genetic sequence, they can design matching mRNA without growing the virus. Researchers had been studying mRNA technology for decades before COVID-19, too, so they weren't starting from zero when the pandemic arrived.

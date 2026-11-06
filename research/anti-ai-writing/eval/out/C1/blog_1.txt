@@ -1,0 +1,18 @@
+What building a greenwashing detector taught me about corporate language
+
+GreenBERT is my high-school research project. I'm the first author, working with a university co-author, and the aim is to detect possible greenwashing in corporate ESG (environmental, social and governance) reports. The end goal is a public website where you upload a report as a PDF and get back a greenwashing assessment with an explanation. So far only the first stage exists, a rule-based claim extractor, and building it meant deciding what counts as a claim at all.
+
+The extractor converts the PDF into text with page numbers (PyMuPDF) and splits it into sentences (NLTK). Each sentence then has to pass a gate. It needs an ESG topic word plus either an action verb, including first-person and past forms like "we reduced," or a hard quantity, meaning a number with a unit or a count. A topic word on its own counts as description, and the sentence is dropped.
+
+Passing the gate isn't enough. I wrote non-claim filters that remove boilerplate, reference-dense text, navigation and headers, broken fragments (a part-of-speech tagger checks whether there's a verb), policy content, governance role descriptions, activity reports, methodology text, general statements and risk descriptions. Every sentence those filters catch has already passed the gate, so it has an ESG topic word and an action verb or a hard quantity, and it still isn't a claim.
+
+The sentences that survive get labels. Compare these two:
+
+"We are committed to a sustainable future."
+"We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline."
+
+Both sound green, but only the second can be checked. The extractor calls the first Vague and the second Strong, because it contains a hard quantity; the remaining claim type is Future Promise. Each claim also gets an evidence mark (Yes, Partial or No), an E, S or G tag based on which kind of keyword dominates, and a risk signal.
+
+On one Unilever report the extractor found 583 claims, and on a Dr Pepper report 218. Six reports are loaded in total. The estimate of how many are real claims depends on who checks. A 26-sentence development set reached 92% precision, but I tuned the filters on it, so it isn't a fair headline. An independent manual review of 100 claims from an earlier version (v3) found 67%. Automated full-corpus audits by AI agents, which judge more strictly than people do, gave that same v3 33%, then 39% for v4.0 and 44% for v4 final. Because every rejected sentence is saved with its drop reason, I could also audit 1,767 of them for missed claims: recall rose from 48% in v4.0 to 73% in v4 final. All of these are in-sample, so they're optimistic.
+
+The errors that remain are about what a sentence means, and a keyword rule only sees which words it contains. That is the ceiling the rules hit, and it's why the next stage, which I haven't built yet, is a BERT classifier.

@@ -1,0 +1,42 @@
+{
+ "C": {
+  "n": 15,
+  "added": 0,
+  "removed": 0,
+  "changed": 0,
+  "clean": 1.0,
+  "voice_kept": 10
+ },
+ "PG": {
+  "n": 15,
+  "added": 0,
+  "removed": 0,
+  "changed": 0.4,
+  "clean": 0.7333333333333333,
+  "voice_kept": 9.2
+ },
+ "SG": {
+  "n": 15,
+  "added": 0,
+  "removed": 0,
+  "changed": 0.06666666666666667,
+  "clean": 0.9333333333333333,
+  "voice_kept": 9.866666666666667
+ },
+ "PI": {
+  "n": 15,
+  "added": 2.6,
+  "removed": 1.0666666666666667,
+  "changed": 3.8666666666666667,
+  "clean": 0.0,
+  "voice_kept": 6.066666666666666
+ },
+ "SI": {
+  "n": 15,
+  "added": 0.26666666666666666,
+  "removed": 0,
+  "changed": 0.6,
+  "clean": 0.4,
+  "voice_kept": 8.666666666666666
+ }
+}

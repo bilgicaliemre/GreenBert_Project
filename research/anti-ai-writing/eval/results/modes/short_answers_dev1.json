@@ -1,0 +1,57 @@
+{
+ "summary": {
+  "H": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 87.28125,
+   "quality": 4.78125,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "coach": 1.0,
+    "reader": 1.0
+   }
+  },
+  "P": {
+   "n": 32,
+   "human_share": 0.0,
+   "mean_p": 9.03125,
+   "quality": 7.09375,
+   "auc_by_lens": {
+    "coach": 1.0,
+    "reader": 1.0
+   },
+   "human_share_by_lens": {
+    "coach": 0.0,
+    "reader": 0.0
+   }
+  },
+  "S0": {
+   "n": 32,
+   "human_share": 0.0,
+   "mean_p": 9.65625,
+   "quality": 6.96875,
+   "auc_by_lens": {
+    "coach": 1.0,
+    "reader": 1.0
+   },
+   "human_share_by_lens": {
+    "coach": 0.0,
+    "reader": 0.0
+   }
+  }
+ },
+ "pairs": {
+  "S0-P:p": [
+   0.625,
+   -1.125,
+   2.375,
+   16
+  ],
+  "S0-P:q": [
+   -0.125,
+   -0.375,
+   0.125,
+   16
+  ]
+ }
+}

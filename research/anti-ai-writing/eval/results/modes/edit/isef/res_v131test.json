@@ -1,0 +1,147 @@
+{
+ "summary": {
+  "H": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 86.125,
+   "quality": 6.375,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   }
+  },
+  "C": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 82.625,
+   "quality": 6.5,
+   "auc_by_lens": {
+    "editor": 0.646484375,
+    "isef": 0.64453125
+   },
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   }
+  },
+  "PG": {
+   "n": 32,
+   "human_share": 0.375,
+   "mean_p": 46.28125,
+   "quality": 6.4375,
+   "auc_by_lens": {
+    "editor": 0.998046875,
+    "isef": 0.98046875
+   },
+   "human_share_by_lens": {
+    "editor": 0.3125,
+    "isef": 0.4375
+   }
+  },
+  "PI": {
+   "n": 32,
+   "human_share": 0.0,
+   "mean_p": 30.25,
+   "quality": 6.90625,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.0,
+    "isef": 0.0
+   }
+  },
+  "UG": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 74.65625,
+   "quality": 6.5,
+   "auc_by_lens": {
+    "editor": 0.8359375,
+    "isef": 0.83203125
+   },
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   }
+  },
+  "UI": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 78.5,
+   "quality": 6.5,
+   "auc_by_lens": {
+    "editor": 0.8203125,
+    "isef": 0.708984375
+   },
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   }
+  }
+ },
+ "pairs": {
+  "UI-PI:p": [
+   48.25,
+   44.09375,
+   52.28125,
+   16
+  ],
+  "UI-PI:q": [
+   -0.40625,
+   -0.6875,
+   -0.09375,
+   16
+  ],
+  "UG-PG:p": [
+   28.375,
+   22.34375,
+   34.34375,
+   16
+  ],
+  "UG-PG:q": [
+   0.0625,
+   -0.1875,
+   0.3125,
+   16
+  ],
+  "C-H:p": [
+   -3.5,
+   -5.65625,
+   -1.40625,
+   16
+  ],
+  "C-H:q": [
+   0.125,
+   -0.03125,
+   0.28125,
+   16
+  ],
+  "UI-C:p": [
+   -4.125,
+   -7.40625,
+   -0.875,
+   16
+  ],
+  "UI-C:q": [
+   0.0,
+   -0.25,
+   0.28125,
+   16
+  ],
+  "UG-C:p": [
+   -7.96875,
+   -12.5625,
+   -4.0,
+   16
+  ],
+  "UG-C:q": [
+   0.0,
+   -0.15625,
+   0.125,
+   16
+  ]
+ }
+}

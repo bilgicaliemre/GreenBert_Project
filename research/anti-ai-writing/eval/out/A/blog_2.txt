@@ -1,0 +1,21 @@
+What Building a Greenwashing Detector Taught Me About Corporate Language
+
+I'm a high-school student, and for my research project I'm building GreenBERT with a university co-author. It looks for possible greenwashing in corporate ESG reports, the documents where companies describe their environmental, social and governance record. The end goal is a public website: you upload a report PDF and get back a greenwashing assessment with an explanation. What exists so far is the first stage, a rule-based system that pulls claims out of a report. Building it changed how I read these documents.
+
+Lesson one: most of a sustainability report isn't a claim.
+
+The program converts the PDF to text, keeps the page numbers, and splits it into sentences. A sentence only gets through what I call the gate if it mentions an ESG topic and also has either an action verb, like "we reduced," or a hard quantity, such as a number with a unit. A sentence that only names a topic is treated as description and dropped. Filters then remove boilerplate, navigation and headers, broken fragments, policy text, governance role descriptions, methodology notes, general statements and risk descriptions. A surprising share of report text sounds green without committing the company to anything.
+
+Lesson two: the gap between vague and strong is the whole story.
+
+Compare two sentences. "We are committed to a sustainable future." And: "We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline." Both sound responsible. Only the second can be checked. So every claim my system keeps is labelled E, S or G, then typed as a Future Promise, Strong (it has a hard quantity) or Vague, and separately marked for evidence: Yes, Partial or No. Once you see sentences sorted this way, it's hard to stop noticing which bucket each line falls into.
+
+Lesson three: be honest about your own numbers.
+
+On one Unilever report the system found 583 claims; on a Dr Pepper report, 218. Six reports are loaded in total. The flashiest number I have is 92% precision on a 26-sentence development set, but I tuned my filters on that set, so it isn't a fair headline. An independent manual review of 100 claims from an earlier version found 67%. Precision in automated audits by AI agents, which are stricter than humans, rose from 33% to 44% across versions. Recall, estimated by auditing 1,767 rejected sentences (every one is saved with its drop reason), rose from 48% to 73%. All of these are in-sample, so they're optimistic.
+
+Lesson four: meaning beats keywords.
+
+The errors that remain are about meaning, not vocabulary. Keyword rules can't always tell a real commitment from a sentence that only borrows its words. That's why the next stage is a BERT classifier, which I haven't built yet.
+
+The biggest thing I've learned is that corporate language is very good at sounding like action. My project is about teaching a computer to keep asking two questions: did they actually do it, and can they show it?

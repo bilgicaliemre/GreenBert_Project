@@ -1,0 +1,161 @@
+{
+ "summary": {
+  "H": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 91.15625,
+   "quality": 5.21875,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "donor": 1.0,
+    "editor": 1.0
+   }
+  },
+  "AC": {
+   "n": 32,
+   "human_share": 0.4375,
+   "mean_p": 48.75,
+   "quality": 6.34375,
+   "auc_by_lens": {
+    "donor": 0.998046875,
+    "editor": 0.99609375
+   },
+   "human_share_by_lens": {
+    "donor": 0.5,
+    "editor": 0.375
+   }
+  },
+  "AF": {
+   "n": 32,
+   "human_share": 0.59375,
+   "mean_p": 51.1875,
+   "quality": 6.15625,
+   "auc_by_lens": {
+    "donor": 1.0,
+    "editor": 0.99609375
+   },
+   "human_share_by_lens": {
+    "donor": 0.6875,
+    "editor": 0.5
+   }
+  },
+  "AR": {
+   "n": 32,
+   "human_share": 0.5,
+   "mean_p": 50.90625,
+   "quality": 6.25,
+   "auc_by_lens": {
+    "donor": 0.994140625,
+    "editor": 1.0
+   },
+   "human_share_by_lens": {
+    "donor": 0.4375,
+    "editor": 0.5625
+   }
+  },
+  "AS": {
+   "n": 32,
+   "human_share": 0.59375,
+   "mean_p": 52.96875,
+   "quality": 6.3125,
+   "auc_by_lens": {
+    "donor": 0.990234375,
+    "editor": 0.994140625
+   },
+   "human_share_by_lens": {
+    "donor": 0.625,
+    "editor": 0.5625
+   }
+  },
+  "AT": {
+   "n": 32,
+   "human_share": 0.5625,
+   "mean_p": 52.28125,
+   "quality": 6.0625,
+   "auc_by_lens": {
+    "donor": 0.990234375,
+    "editor": 1.0
+   },
+   "human_share_by_lens": {
+    "donor": 0.4375,
+    "editor": 0.6875
+   }
+  },
+  "P": {
+   "n": 32,
+   "human_share": 0.15625,
+   "mean_p": 35.4375,
+   "quality": 6.25,
+   "auc_by_lens": {
+    "donor": 1.0,
+    "editor": 1.0
+   },
+   "human_share_by_lens": {
+    "donor": 0.0625,
+    "editor": 0.25
+   }
+  }
+ },
+ "pairs": {
+  "AF-P:p": [
+   15.75,
+   8.78125,
+   23.0,
+   16
+  ],
+  "AF-P:q": [
+   -0.09375,
+   -0.4375,
+   0.25,
+   16
+  ],
+  "AT-AF:p": [
+   1.09375,
+   -3.71875,
+   6.53125,
+   16
+  ],
+  "AT-AF:q": [
+   -0.09375,
+   -0.375,
+   0.21875,
+   16
+  ],
+  "AS-AF:p": [
+   1.78125,
+   -1.3125,
+   5.0,
+   16
+  ],
+  "AS-AF:q": [
+   0.15625,
+   -0.15625,
+   0.46875,
+   16
+  ],
+  "AR-AF:p": [
+   -0.28125,
+   -6.8125,
+   6.34375,
+   16
+  ],
+  "AR-AF:q": [
+   0.09375,
+   -0.09375,
+   0.25,
+   16
+  ],
+  "AC-AF:p": [
+   -2.4375,
+   -9.65625,
+   4.625,
+   16
+  ],
+  "AC-AF:q": [
+   0.1875,
+   -0.125,
+   0.5,
+   16
+  ]
+ }
+}

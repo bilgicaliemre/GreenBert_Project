@@ -1,0 +1,13 @@
+How mRNA vaccines teach the immune system
+
+Most vaccines give your body a piece of a germ to study: a killed or weakened version of it, or a purified protein from its surface. An mRNA (messenger RNA) vaccine sends instructions instead. Your own cells read them and build one viral protein, and your immune system learns to recognize it. In the Pfizer-BioNTech and Moderna COVID-19 vaccines, that protein is spike, which the coronavirus uses to latch onto human cells.
+
+Cells use mRNA all the time. Your DNA stays in the nucleus, and when a cell needs a protein, it copies the gene into mRNA, which travels out to the ribosomes. A ribosome reads the mRNA three letters at a time and links amino acids in the order those letters spell out. The vaccine hands the ribosomes a ready-made message for spike.
+
+Loose RNA is fragile, and enzymes break it down quickly, so the vaccine packs it into lipid nanoparticles, tiny bubbles of fat that cells absorb. (That fragility is part of why the Pfizer-BioNTech vaccine first had to be shipped in ultra-cold freezers.) Foreign RNA also trips the body's virus alarms, which cause inflammation and can stop the cell from making much protein. Katalin Karikó and Drew Weissman found that swapping one RNA building block, uridine, for a slightly altered version calmed those alarms. That work won them the 2023 Nobel Prize in Physiology or Medicine.
+
+After the shot, muscle cells and immune cells near the injection site take in the particles and start making spike. Dendritic cells, which collect samples of foreign material, carry spike pieces to nearby lymph nodes, where T cells and B cells inspect them. With help from helper T cells, the B cells whose antibodies happen to fit spike multiply and pump out antibodies. Killer T cells learn to find and destroy cells that display spike fragments on their surface, as infected cells do. Some of both kinds become memory cells, which stay after the response fades. If the real virus arrives later, they recognize spike and respond far faster than a first-time response, which takes a week or more to build.
+
+The vaccine mRNA never enters the nucleus, so it cannot change your DNA, and the cell breaks it down within a few days. A sore arm or a tired day afterward is usually the immune response at work.
+
+Because the instructions are just a string of letters, changing the target means rewriting the string. Moderna designed its COVID-19 vaccine sequence within days of the virus's genome being posted online in January 2020. When later variants changed the shape of spike, the manufacturers updated their vaccines to match.

@@ -1,0 +1,637 @@
+{
+ "items": [
+  {
+   "severity": "critical",
+   "location": "Abstract, sentences 3-7 (merged: skeptic x3, consistency reviewer, numbers reviewer)",
+   "problem": "This merges five reviewer items on one passage. (1) The abstract reports version 4's held-out numbers as \"the skill's output\" but never says version 4 was chosen for release after these results were known. (2) The humanizer edited the plain draft while the skill wrote from the brief, so the comparison is not like-for-like. (3) \"A second model\" reads as independent, but it is from the same family. (4) \"Every model-written personal essay we produced\" goes beyond the data: 89 were scored, and the v5 Write and Rebuild, pilot X4/Y4 and coaching texts were not. (5) The coaching result is one model counselor rating six simulated students. \"Blind\" is also dropped because file paths showed the condition letters (see the Judges item). Merging all five naively gives about 225 words. The replacement is 198 words, under ACL's 200-word limit. To get there, the panel-effect clause was shortened and \"the most popular\" became \"a popular\".",
+   "evidence": "DEVLOG sec. 17 and skill_versions/v7/CHANGELOG.md: \"Base: v4, the version that ranked first in the held-out evaluation\". analyze.py on phase3_judges.json: v6 Write ranked above plain 47/48, word list 37/48 (Wilcoxon p=0.0095), humanizer 40/48 (p=0.0032). scripts/phase3.js: humE receives P's draft. Detector score files cover 89 ps/supp texts (25 phase-1, 40 development, 24 held-out), max 8.3%, all pass; eval/out/phase2/V, phase2/R, X4, Y4 and coach/* have no scores. coach_judges.json: one feedback_judged entry per student, six in total. Word count of the merged abstract: 198.",
+   "old_text": "On 16 held-out briefs in ten genres, blind panels of model judges ranked the skill's output above plain generation in 47 of 48 judgments, above a word-list prompt in 43 and above the most popular open-source humanizer in 44, and it made a third as many unsupported claims as plain generation (1.17 against 3.38 per text). A judge running on a second model gave the same order. Two later versions built from judge feedback did not improve on the released writing procedure, and personal-statement rankings changed with the other texts in the panel. Three open-source detectors passed every model-written personal essay we produced, plain or not, while flagging most real admitted college essays written before ChatGPT. In a coaching experiment, the skill's coaching mode gave more useful feedback with less invented content than plain feedback.",
+   "new_text": "On 16 held-out briefs in ten genres, model judges ranked the skill's writing procedure above plain generation in 47 of 48 judgments, above a word-list prompt in 43 and a popular humanizer's edit of the plain draft in 44, with about a third as many unsupported claims (1.17 against 3.38 per text). We chose it from two frozen candidates after seeing these results; the other also beat every baseline. A judge on a second, same-family model agreed. Two later versions built from judge feedback did not improve on it, and personal-statement rankings shifted with panel composition. Three open-source detectors passed all 89 model-written personal essays we scored, plain or not, but flagged most pre-ChatGPT admitted college essays. A model counselor rated the skill's coaching of six simulated students above plain feedback, with less invented content."
+  },
+  {
+   "severity": "critical",
+   "location": "Sec. 5.1 Held-out briefs, first paragraph (merged: skeptic critical; numbers and consistency reviewers on \"final design\")",
+   "problem": "The held-out claim isn't clean for the released skill. Version 4's Write procedure was chosen over version 6's after the held-out results were seen. Reporting the better of two candidates as \"the skill\" on the same test set gives an optimistic figure. The sentence also says the briefs were written \"after the final design was fixed\", which is false: version 7 was assembled afterwards, and the appendix caption already says \"after version~6 was fixed\". Version 6 also beat every baseline, so the conclusion survives once the selection is stated.",
+   "evidence": "DEVLOG sec. 14 (\"written after v6's design was fixed\") and sec. 17; v7/CHANGELOG.md \"Base: v4\". Recomputed with analyze.py: v6 Write mean rank 2.42, above plain 47/48, word list 37/48 (p=0.0095, Holm 0.047), humanizer 40/48 (p=0.0032, Holm 0.023). Friedman chi2=50.99, p=8.7e-10.",
+   "old_text": "On 16 briefs written after the final design was fixed, ten genres among them, the skill's Write mode (version~4) ranked first in 23 of 48 judgments and had a mean rank of 1.92 out of 6, against 5.65 for plain generation (Friedman $\\chi^2 = 51.0$, $p < 10^{-8}$).",
+   "new_text": "The 16 held-out briefs, in ten genres, were written after versions~4 and~6 were frozen, but we chose which of the two to release after seeing these results, so version~4's figures are the better of two candidates and somewhat optimistic for the released skill; version~6, the other candidate, also beat all three baselines (Table~\\ref{tab:heldout}). Version~4's Write mode ranked first in 23 of 48 judgments and had a mean rank of 1.92 out of 6, against 5.65 for plain generation (Friedman $\\chi^2 = 51.0$, $p < 10^{-8}$)."
+  },
+  {
+   "severity": "critical",
+   "location": "Limitations, \"Model judges\" (merged: skeptic critical; consistency reviewer wording)",
+   "problem": "The main validity threat is understated. The paper argues that self-preference cannot favor any one condition, but the circularity is wider than that. Same-family agents drafted the skill. Versions 5 and 6 were built from these judges' comments. The editor prompt in every round, and seven of the ten held-out reader prompts, cast the judge as someone hunting for AI writing, which is what the skill targets. The held-out round is held out over briefs, not over judges. The wording is also inconsistent with the rest of the paper: \"shuffled labels\" (Sec. 4 says no labels), \"reader lenses\" and \"model tier\". \"Hid labels\" would also be inaccurate, because file paths showed the condition (see the Judges item).",
+   "evidence": "phase2.js:80, phase2_v5.js:77, phase3.js:92 editor = \"a demanding professional editor and writing teacher who knows the research on AI-writing tells\". phase3.js READER: ps, supp, argue, lit, email, cover and lab personas mention AI-written work (7 of 10). DEVLOG sec. 13: v6 built from every judge comment in both panels. Recomputed mean Kendall tau on held-out rankings: editor-reader 0.78, editor-reader2 0.62, reader-reader2 0.55.",
+   "old_text": "We shuffled labels, used two reader lenses, and in the held-out study added a judge running on a different model tier; we did not test judges from other model families or recruit enough human raters.",
+   "new_text": "We replaced condition names with neutral labels (though file paths still showed them; Section~\\ref{sec:eval}), shuffled the order of texts, used two judge roles (editor and genre reader), and in the held-out round added a judge running on another model of the same family; we did not test judges from other model families or recruit enough human raters. The circularity goes beyond self-preference: agents from the same family drafted the skill, versions~5 and~6 were built from these judges' comments, and the editor prompt in every round, like most reader prompts, cast the judge as someone watching for AI writing (``knows the research on AI-writing tells'', ``wary of AI-written work''), which is what the skill was built to remove. The held-out round is held out over briefs, not over judges, so our results show what judges from this family prefer. The two same-model judges also agreed with each other (mean Kendall $\\tau$ 0.78) more than with the third judge (0.55--0.62)."
+  },
+  {
+   "severity": "major",
+   "location": "Table 1 (tab:heldout), rows (merged: numbers reviewer; consistency reviewer capitalization)",
+   "problem": "Version 4's human-likeness is 7.1458. That rounds to 7.1, not 7.2; the paper rounded DEVLOG's 7.15 a second time. At one decimal, v4 and the v6 Rebuild (7.10) tie, so the bold no longer marks a unique maximum. Two decimals keep v4 on top and match the other columns. The mode names are also capitalized here to match \"Write mode\" and \"Rebuild mode\" in the text.",
+   "evidence": "Recomputed: python3 scripts/analyze.py OUT eval/results/phase3_judges.json gives human_likeness P 4.4792, L 6.4792, H 5.6875, F 7.1458, S 6.9583, B 7.1042. Ranks, first places and unsupported rates match the table.",
+   "old_text": "Plain & 5.65 & 0 & 4.5 & 3.38 \\\\\nWord list & 4.17 & 3 & 6.5 & 2.98 \\\\\nHumanizer edit & 4.25 & 2 & 5.7 & 1.88 \\\\\nSkill write (v4) & \\textbf{1.92} & \\textbf{23} & \\textbf{7.2} & 1.17 \\\\\nSkill write (v6) & 2.42 & 17 & 7.0 & 0.96 \\\\\nSkill rebuild (v6) & 2.60 & 3 & 7.1 & \\textbf{0.79} \\\\",
+   "new_text": "Plain & 5.65 & 0 & 4.48 & 3.38 \\\\\nWord list & 4.17 & 3 & 6.48 & 2.98 \\\\\nHumanizer edit & 4.25 & 2 & 5.69 & 1.88 \\\\\nSkill Write (v4) & \\textbf{1.92} & \\textbf{23} & \\textbf{7.15} & 1.17 \\\\\nSkill Write (v6) & 2.42 & 17 & 6.96 & 0.96 \\\\\nSkill Rebuild (v6) & 2.60 & 3 & 7.10 & \\textbf{0.79} \\\\"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.2, \"The version comparison also exposed a measurement problem\" (merged: numbers reviewer, consistency reviewer, skeptic)",
+   "problem": "This passage has three problems. (a) \"8 of 8 in both panels\" is false for short answers, which went 7 of 8 and then 6 of 8. (b) DEVLOG's hedge (\"may have marked down\") was dropped. (c) The held-out panels contain the same kind of near-copy of the plain draft (the humanizer edit), so they are not a clean escape from the panel effect. The 12-of-12 personal-statement and short-answer lead may be inflated the same way.",
+   "evidence": "Recount of v4 (O) above plain (P) by genre. phase2_judges.json: ps 8/8, supp 7/8, argue 8/8, explain 8/8, lit 8/8. v5_judges.json: ps 3/8, supp 6/8, argue/explain/lit 8/8. Held-out F above P: ps 6/6, supp 6/6. Share of each edit's word 6-grams found in P's draft (recomputed): held-out H 0.44, B 0.17; first development panel H 0.48, E 0.55; version-comparison R 0.18. DEVLOG sec. 12: \"may have marked down the whole family\".",
+   "old_text": "The first panel contained two edits of the plain draft, and judges noticed the shared sentences and marked the whole family down. In the other genres the comparison held (8 of 8 in both panels). Rankings of personal statements depend on what they are ranked against, which is one reason we report the held-out round as the main result.",
+   "new_text": "The first panel contained two edits of the plain draft; judges noticed the shared sentences and may have marked the whole family down. On arguments, explainers and literary analyses the comparison held (8 of 8 in both panels); on short answers it went from 7 of 8 to 6 of 8. Rankings of personal statements depend on what they are ranked against, and the held-out panels do not escape this: they again include the humanizer's edit of the plain draft, which shares 44\\% of its word 6-grams with that draft (48\\% and 55\\% for the two edits in the first development panel, 18\\% for the rebuild in the second), so version~4's held-out lead over plain generation on personal statements and short answers (12 of 12 judgments) may be inflated in the same way."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, opening paragraph (merged: numbers reviewer, skeptic, consistency reviewer)",
+   "problem": "The held-out briefs were written after version 6 was fixed. The released version 7 was assembled after the held-out results were known, so \"after the final version was fixed\" is false; the appendix caption already says \"after version~6\". The section also never mentions the seven-brief pilot on which versions 1-4 were developed, though Table 2 reports results from it. \"The coaching mode\" should be \"Coach mode\", the name used everywhere else.",
+   "evidence": "DEVLOG sec. 2.3-6 (pilot, 7 briefs), sec. 14 (\"written after v6's design was fixed\"), sec. 17 (v7 shipped after phase 3). Appendix Table 3 caption.",
+   "old_text": "We evaluated the skill in three rounds: a development round on 20 briefs, a version comparison on the same briefs, and a held-out round on 16 new briefs written after the final version was fixed. A separate experiment tests the coaching mode.",
+   "new_text": "We evaluated the skill in three rounds, after a seven-brief pilot that shaped versions~1--4 (Table~\\ref{tab:iterations}): a development round on 20 briefs, a version comparison on the same briefs, and a held-out round on 16 new briefs written after versions~4 and~6 were frozen. The released version~7 was assembled after the held-out round. A separate experiment tests Coach mode."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Briefs\" paragraph (merged: all three of numbers reviewer, skeptic, consistency reviewer)",
+   "problem": "The held-out description has three errors. First, it lists \"six genres\" with the two emails counted separately, so 5 + 6 = 11, while the abstract, introduction and Sec. 5.1 say ten. Appendix Table 3 and the analysis count \"Email (2)\" as one genre. Second, \"never tested on\" is false for the blog post, which was in the pilot (v1 won it 4-0); the blog post is also where the skill lost on held-out. Third, \"fact files\" should be \"facts files\", the term used everywhere else.",
+   "evidence": "phase3_judges.json has 10 task values (email covers two briefs). eval/briefs/tasks.json (pilot) has ids ps, supp, argue, explain, report, lit, blog (\"first-person blog post\"). DEVLOG sec. 3: \"blog 4-0\".",
+   "old_text": "and six genres the skill was never tested on: an email to a teacher, a cold email to a professor, a cover letter, a team blog post, the discussion section of a lab report, and a school news article. Every brief names the only permitted source of specifics; the people in the fact files are fictional.",
+   "new_text": "and six briefs in five genres outside the development set: two emails (an extension request to a teacher and a cold email to a professor), a cover letter, a team blog post, the discussion section of a lab report, and a school news article. The seven-brief pilot that shaped versions~1--4 had included a first-person blog post and a research-report methods section. Every brief names the only permitted source of specifics; the people in the facts files are fictional."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Judges\" paragraph, first sentence (skeptic; corrected after recheck)",
+   "problem": "The judges weren't fully blind. Each judge opened the texts by file paths that contained the condition's folder name: P, L, H, E, O, V, R, F, S or B in the writing panels, and D0, RS, RP, FS or FP in the coaching experiment. The skeptic said no writing judge's explanation used these names. That is wrong: my recheck found 6 of 128 writing-panel judgments that name each text's condition letter (e.g. \"T3 (L)\"). The coaching counselor labelled every feedback by its full path, which includes FS or FP.",
+   "evidence": "phase3.js:93 builds \"T1: eval/out/phase3/P/...\" lists. Regex over explanations: phase3 supp_marisol reader, blog_robotics reader, news_cafeteria reader2; phase2 supp_thea reader, lit_frankenstein reader; v5 explain_2 editor (e.g. supp_marisol reader: \"5. T3 (L) answers the prompt literally\", map T3=L). coach_judges.json feedback labels: \"F1 (coach/out/FP/ines.txt)\" for all six students; ansar verdict \"F2 (FS)\".",
+   "old_text": "Judge agents read all texts for a brief in a shuffled order without labels: a strict editor,",
+   "new_text": "Judge agents read all texts for a brief in a shuffled order under neutral labels (T1, T2, \\dots), but each judge opened the texts by file path, and the path contained the condition's folder name (a single letter such as P or H; D0, RS, RP, FS or FP in the coaching experiment). Blinding was therefore imperfect: in 6 of the 128 writing-panel judgments the explanation names each text's condition letter (for example ``T3 (L)''), and the coaching counselor labelled every piece of feedback by its path. The judges were a strict editor,"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Judges\" paragraph, last sentence (skeptic)",
+   "problem": "The unit of analysis isn't stated. Counts such as \"47 of 48 judgments\" suggest 48 independent observations, but the three judgments of a brief rate the same texts. The bootstrap intervals resample judgments, so they are too narrow, and the 15 pairwise tests per round get no multiple-comparison correction. The tests themselves correctly use per-brief means, and every reported result survives Holm correction, so stating this is all that's needed. The threshold is 0.025, not the skeptic's 0.023: v4 vs word list adjusts to 0.0234.",
+   "evidence": "scripts/analyze.py: boot_ci resamples per-judgment rows; Friedman and Wilcoxon (zero_method='zsplit') run on per-brief mean ranks. Recomputed brief-level bootstrap: v4 [1.52, 2.38] (reported [1.62, 2.23]). Holm over analyze.py's 15 held-out p-values: v4 vs plain 0.006, v4 vs humanizer 0.009, Rebuild vs humanizer 0.009, v4 vs word list 0.0234, v6 vs word list 0.047, v4 vs Rebuild 0.085.",
+   "old_text": "We report mean rank with bootstrap confidence intervals, a Friedman test across conditions on per-brief mean ranks, and pairwise Wilcoxon signed-rank tests.",
+   "new_text": "We report mean rank with bootstrap confidence intervals over judgments, a Friedman test across conditions on per-brief mean ranks, and pairwise Wilcoxon signed-rank tests on per-brief mean ranks, so the unit of every test is the brief (16 held-out), not the judgment (48). Judgments of one brief rate the same texts, and the two same-model judges agreed closely (mean Kendall $\\tau$ 0.78), so the intervals understate uncertainty: resampling briefs instead widens version~4's held-out interval from [1.62, 2.23] to [1.52, 2.38]. Over the 15 held-out pairwise tests, Holm's correction keeps every comparison we report as significant below an adjusted $p$ of 0.025."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Detectors\" paragraph, first sentence (merged: consistency reviewer D1-D3; citation reviewer on SuperAnnotate training data; overreach on \"every text\")",
+   "problem": "Three problems in one sentence. (1) Figure 2 and Sec. 5.3 use the labels D1, D2 and D3, but the text never defines them. (2) Sec. 6 says \"Two of the detectors were trained on RAID\", but the methods tell readers this only for D1; the SuperAnnotate card says half its training data is a RAID subset. (3) \"Every text\" is not true: the version-comparison (v5 Write and Rebuild), pilot X4/Y4 and coaching texts were never scored.",
+   "evidence": "fig_detectors.pdf panel titles: \"D1 (DeBERTa, RAID)\", \"D2 (RoBERTa-base)\", \"D3 (RoBERTa-large)\". DEVLOG sec. 7 (D3 training data includes Anthropic models and RAID). Score files exist only for phase2 P/L/H/E/O, phase3 P/L/H/F/S/B and phase-1 A/B1/B2/C1/N3/P3/W3.",
+   "old_text": "We scored every text with three open-source classifiers: a DeBERTa-v3-large model trained on RAID \\citep{desklib2025detector}, a RoBERTa-base model \\citep{fakespot2025detector}, and a RoBERTa-large model whose training data includes Anthropic-model output \\citep{superannotate2024detector}.",
+   "new_text": "We scored the development-round and held-out texts with three open-source classifiers: D1, a DeBERTa-v3-large model trained on RAID \\citep{desklib2025detector}; D2, a RoBERTa-base model \\citep{fakespot2025detector}; and D3, a RoBERTa-large model trained on a RAID subset plus generations that include Anthropic-model output \\citep{superannotate2024detector}."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Detectors\" paragraph, last sentence (merged: citation reviewer; consistency reviewer TBD version superseded)",
+   "problem": "The paper's main detector metric, the share of texts below 20%, rests on a factual claim about Turnitin with no source. \"Hides\" is also imprecise: below 20%, Turnitin shows an asterisk instead of a number. The bib entry is added in the references.bib item.",
+   "evidence": "notes/detector_facts.md lines 16-20: Turnitin \"How to access the AI Writing Report\" (edited 2026-03-06): \"An asterisk (*%) appears when AI detection is below 20% ... In this range (1-19%), no exact percentage or highlights are shown.\"",
+   "old_text": "We report the share below 20\\%, the threshold below which Turnitin hides its AI score.",
+   "new_text": "We report the share below 20\\%, the threshold below which Turnitin shows only an asterisk instead of an AI score \\citep{turnitin2026report}."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 4 Evaluation, \"Human baselines\" paragraph (merged: citation reviewer, numbers reviewer, skeptic)",
+   "problem": "This passage has three problems. (1) The admitted essays are third-party published texts with no source cited; bib entries are added in the references.bib item. (2) \"Top-scored\" is not accurate: 3 of the 18 PERSUADE essays scored 5. (3) The \"three science explainers\" are three excerpts from two sources.",
+   "evidence": "eval/human_baselines/SOURCES.md: Hamilton URLs (2022-essays-that-worked; 2014-essays-that-worked = class of 2018), Connecticut College URL; PERSUADE \"Cell phones at school (grade 8, score 5-6)\"; rescore3.json files human_phones8_4/5/6_g8_s5 (score 5), other 15 _s6; explainers human_explain_berthub_2020, human_explain_conversation_2020 and ..._2020_intro.",
+   "old_text": "16 admitted college essays published by Hamilton College (classes of 2018 and 2022) and Connecticut College (class of 2025); 18 top-scored argument essays from the PERSUADE 2.0 corpus \\citep{crossley2024persuade}; and three science explainers published in 2020.",
+   "new_text": "16 admitted college essays published by Hamilton College (classes of 2018 and 2022; \\citealp{hamilton2026essays}) and Connecticut College (class of 2025; \\citealp{conncoll2026essays}); 18 high-scoring argument essays from the PERSUADE 2.0 corpus \\citep{crossley2024persuade} (15 with the top score of 6, three with 5); and three excerpts from two science explainers published in 2020 (one by Bert Hubert, two from one article in The Conversation)."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 3 The skill, first paragraph (merged: citation reviewer on uncited MIT skills; numbers reviewer on survey count; consistency reviewer on what each skill supplied)",
+   "problem": "The paper borrows from two other MIT-licensed skills, including the \"portability test\" used in the next paragraph, but never names or cites them. The released skill's own Credits section names both. The survey count is also off: 16 repositories were surveyed, and only 11 of them are humanizer or anti-slop skills. Bib entries are in the references.bib item.",
+   "evidence": ".claude/skills/anti-ai-writing/SKILL.md lines 168-171: '\"Never inject\" guardrails adapted from conorbronsdon/avoid-ai-writing (MIT). Minimum-edit principle and portability test adapted from petergyang/no-ai-slop (MIT).' notes/github_candidates.md: sections 1-6 plus 10 rows in \"Others checked\" = 16 repositories; humanizer/anti-slop: blader, avoid-ai-writing, no-ai-slop, stop-slop, skill-deslop, theclaymethod/unslop, Aboudjem, brandonwise, jalaalrd, isatimur, maxgoff = 11.",
+   "old_text": "a survey of 15 open-source humanizer skills, which supplied the procedure of \\citet{chen2026humanizer} and guardrails from two other MIT-licensed skills,",
+   "new_text": "a survey of 16 open-source writing-skill repositories (11 of them humanizer or anti-slop skills), which supplied the procedure of \\citet{chen2026humanizer}, the ``never inject'' guardrails of \\citet{bronsdon2026avoid}, and the minimum-edit principle and portability test of \\citet{yang2026noaislop} (both MIT-licensed),"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 3, \"Audit order\" (citation reviewer)",
+   "problem": "Two claims overstate their sources. (1) \"The strongest measured signals are structural\" has no citation, and the literature contradicts it: measured word ratios (28x to over 1,000x) far exceed structural ones (2-5x). (2) Russell et al. do not show that experts rely on content \"as much as words\"; vocabulary is by far their most-cited clue.",
+   "evidence": "related_work_notes.md: russell2025people 53.1% vocabulary-related clues (confirmed in full text); kobak 'delves' r=28.0; paech \"over 1,000x\"; reinhart 2-5x participial clauses; shaib2026slop syntax AUROC 0.64 vs lexical 0.49 (arXiv v3 Fig. 4).",
+   "old_text": "The catalog showed that the strongest measured signals are structural (participial tails, corrective framing, importance flags, uniform sentence length) and that expert readers rely on content as much as words \\citep{russell2025people,shaib2026slop}.",
+   "new_text": "The catalog showed that several well-measured signals are structural (participial tails \\citep{reinhart2025llms}, corrective framing \\citep[measured in Mandarin by][]{peng2026notx}, importance flags, uniform sentence length), that syntactic features predict expert slop judgments better than lexical ones \\citep{shaib2026slop}, and that expert readers, although they cite vocabulary most often, also rely on sentence structure and originality \\citep{russell2025people}."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 3, \"Over-correction checks\" (citation reviewer)",
+   "problem": "The attribution is wrong. The blind test is GitHub issue #229, opened by an outside contributor, not the humanizer's own test. The rhythm and closer counts appear only in that issue, not in the repository that chen2026humanizer cites. The new bib entry is in the references.bib item.",
+   "evidence": "notes/github_candidates.md lines 28-31: \"Issue #229 (Ryan Lenk, 2026-08-19) ... 'uniform beat rate' rose from 60 to 101 and 'aphoristic closers' from 38 to 61\"; README links #229 only for the 16-of-16 claim. related_work_notes.md row chen2026humanizer: judges in #229 were LMs from one family.",
+   "old_text": "Humanizer rewrites create tells of their own: the humanizer's own blind test reports more uniform rhythm and more aphoristic closers after rewriting \\citep{chen2026humanizer}.",
+   "new_text": "Humanizer rewrites create tells of their own: a blind test by a contributor, linked from the humanizer's README, counted more uniform-rhythm tells (60 to 101) and more aphoristic closers (38 to 61) after the rewrite pass \\citep{lenk2026blind}."
+  },
+  {
+   "severity": "major",
+   "location": "references.bib, after the last entry (yale2026ai): new entries needed by the citation fixes",
+   "problem": "Seven citation fixes need bib entries that don't exist yet: lenk2026blind, turnitin2026report, bronsdon2026avoid, yang2026noaislop, hamilton2026essays, conncoll2026essays and anthropic2026marks. They're anchored to the last entry so the edit applies once. The college-essay entries have no access date; add the real date the essays were downloaded.",
+   "evidence": "URLs and dates from notes/github_candidates.md (issue #229 author and date; avoid-ai-writing v3.38.0 MIT, Conor Bronsdon; no-ai-slop MIT, Peter Yang), notes/detector_facts.md line 16 (Turnitin page, edited 2026-03-06), eval/human_baselines/SOURCES.md (college URLs), notes/tells_catalog.md line 75 and policies_and_access.md line 41 (Anthropic support page, model table as of 2026-10-08). Field order follows the existing @misc entries.",
+   "old_text": "@misc{yale2026ai,\n  author       = {{Yale Undergraduate Admissions}},\n  title        = {Policy on the use of {AI} in application materials},\n  year         = {2026},\n  howpublished = {\\url{https://admissions.yale.edu/ai-policy}},\n  note         = {Accessed 20 October 2026}\n}",
+   "new_text": "@misc{yale2026ai,\n  author       = {{Yale Undergraduate Admissions}},\n  title        = {Policy on the use of {AI} in application materials},\n  year         = {2026},\n  howpublished = {\\url{https://admissions.yale.edu/ai-policy}},\n  note         = {Accessed 20 October 2026}\n}\n\n@misc{lenk2026blind,\n  author       = {Lenk, Ryan},\n  title        = {Blind study: the rewrite pass wins 16/16 on quality, and does not move {AI} detection},\n  year         = {2026},\n  howpublished = {GitHub issue \\#229, blader/humanizer, \\url{https://github.com/blader/humanizer/issues/229}},\n  note         = {Opened 19 August 2026; accessed 21 October 2026}\n}\n\n@misc{turnitin2026report,\n  author       = {{Turnitin}},\n  title        = {How to access the {AI} Writing Report},\n  year         = {2026},\n  howpublished = {Turnitin Guides, \\url{https://guides.turnitin.com/hc/en-us/articles/28457596598925-How-to-access-the-AI-Writing-Report}},\n  note         = {Last edited 6 March 2026; accessed 20 October 2026}\n}\n\n@misc{bronsdon2026avoid,\n  author       = {Bronsdon, Conor},\n  title        = {avoid-ai-writing},\n  year         = {2026},\n  howpublished = {GitHub repository, \\url{https://github.com/conorbronsdon/avoid-ai-writing}},\n  note         = {Agent skill, version 3.38.0; MIT license; accessed 20 October 2026}\n}\n\n@misc{yang2026noaislop,\n  author       = {Yang, Peter},\n  title        = {no-ai-slop},\n  year         = {2026},\n  howpublished = {GitHub repository, \\url{https://github.com/petergyang/no-ai-slop}},\n  note         = {Agent skill; MIT license; accessed 20 October 2026}\n}\n\n@misc{hamilton2026essays,\n  author       = {{Hamilton College Office of Admission}},\n  title        = {College essays that worked},\n  year         = {2026},\n  howpublished = {\\url{https://www.hamilton.edu/admission/apply/college-essays-that-worked}},\n  note         = {Essays by the classes of 2018 and 2022}\n}\n\n@misc{conncoll2026essays,\n  author       = {{Connecticut College Office of Admission}},\n  title        = {Essays that worked},\n  year         = {2026},\n  howpublished = {\\url{https://www.conncoll.edu/admission/apply/essays-that-worked/}},\n  note         = {Essays by the class of 2025}\n}\n\n@misc{anthropic2026marks,\n  author       = {{Anthropic}},\n  title        = {How {Claude} marks {AI}-generated content},\n  year         = {2026},\n  howpublished = {Claude Help Center, \\url{https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content}},\n  note         = {Accessed 20 October 2026}\n}"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 2 Related work, \"Stylistic signatures\", Chakrabarty and Shaib sentences (merged: citation reviewer x2, skeptic positioning)",
+   "problem": "Chakrabarty et al.'s taxonomy is not \"led by\" clich\u00e9s and unnecessary exposition. Their most frequent categories are awkward word choice (28%) and poor sentence structure (20%), and the misreading tilts the evidence toward the paper's content-over-vocabulary thesis. The paper is also the closest prior work (an automatic detect-then-edit pipeline judged by experts) but is cited only for its taxonomy. Separately, Shaib et al.'s \"lexical\" features are stylometric, not vocabulary choice, and even syntax predicts slop only weakly. The merged text keeps the skeptic's positioning sentence.",
+   "evidence": "Full text of arXiv 2409.14509 (local copy): \"most common categories being Awkward Word Choice and Phrasing (28%), Poor Sentence Structure (20%), Unnecessary/Redundant Exposition (18%), and Clich\u00e9s (17%)\". related_work_notes.md: writer-edited mean rank 1.5, LLM-edited 1.99, raw 2.51. Shaib arXiv 2509.19163 v3: lexical features = hapax ratio, word-length distribution, punctuation and letter frequencies; LR syntax AUROC 0.64 vs lexical 0.49.",
+   "old_text": "Professional writers editing model paragraphs agree on a taxonomy of idiosyncrasies led by clich\\'es and unnecessary exposition \\citep{chakrabarty2025salvaged}, and an expert taxonomy of ``slop'' finds that syntax-only features predict slop judgments better than vocabulary \\citep{shaib2026slop}.",
+   "new_text": "Professional writers editing model-written creative paragraphs agree on a seven-category taxonomy of idiosyncrasies, led by awkward word choice (28\\%) and poor sentence structure (20\\%) ahead of unnecessary exposition and clich\\'es; their detect-then-edit pipeline improves model text but stays below expert edits in expert rankings \\citep{chakrabarty2025salvaged}. Our humanizer and Edit conditions are edits of this kind; the skill differs in applying its audit while writing and in forbidding invented facts, and we evaluate it with model judges rather than experts. A study of ``slop'' built on an expert taxonomy finds that syntactic features predict slop judgments better than lexical ones, though weakly (AUROC 0.64 against 0.49) \\citep{shaib2026slop}."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 2 Related work, \"Stylistic signatures\", Peng sentence (citation reviewer)",
+   "problem": "This overgeneralizes the source. Peng et al. study only the Mandarin construction bushi X, ershi Y, but the sentence reads as a general (English) finding. The paper later uses corrective framing as a key structural signal.",
+   "evidence": "related_work_notes.md row peng2026notx: \"The Mandarin 'not X, but Y' construction ... of 307 uses, 1.30% defective, 52.8% optional\" (arXiv 2610.22249 abstract).",
+   "old_text": "and overuse corrective framings such as ``not X, but Y'' even where X is not a live alternative \\citep{peng2026notx}.",
+   "new_text": "and, in Mandarin, overuse the corrective ``not X, but Y'' construction, where over half of annotated uses (52.8\\%) were correct but unneeded \\citep{peng2026notx}."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 2 Related work, \"LLMs as judges\", last sentence (consistency reviewer)",
+   "problem": "\\label{sec:limitations} sits after the unnumbered \\section*{Limitations}, so \\ref picks up the last numbered section. The PDF reads \"Section 7\", which is the Conclusion.",
+   "evidence": "pdftotext main.pdf: \"...bear on our design in Section 7.\" Section 7 is the Conclusion.",
+   "old_text": "We discuss how these biases bear on our design in Section~\\ref{sec:limitations}.",
+   "new_text": "We discuss how these biases bear on our design in the Limitations section."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.1, paragraph on version 6, last sentence (merged: skeptic, consistency reviewer)",
+   "problem": "The released skill is version 7, and it was never evaluated as a whole. Its Write procedure is version 4's with example sentences replaced, which could change behavior because models copy examples. Its Rebuild is version 6's, adapted so that topic-only drafts go to version 4's Write procedure. The paper never names version 7 here and implies that the tested system is the released one.",
+   "evidence": "diff skill_versions/v4 vs v7 SKILL.md: Rhythm and Endings examples changed, Rebuild block added (\"run Write from step 1\"), watermark sentence changed. v7/CHANGELOG.md: \"Six examples in v4 came from development briefs\". DEVLOG sec. 17: smoke test on 3 held-out plain drafts; \"Three briefs is a sanity check, not an evaluation\".",
+   "old_text": "We release version~4's Write procedure with version~6's Rebuild mode added (Section~\\ref{sec:skill}).",
+   "new_text": "We therefore released version~7: version~4's Write procedure, with six examples that came from development briefs replaced, plus version~6's Rebuild mode, adapted so that drafts built from the topic alone go to version~4's Write procedure (Section~\\ref{sec:skill}). Version~7 as a whole did not go through the held-out panels; its only direct check is a smoke test on three held-out plain drafts, so the held-out numbers describe its parts."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.3, first paragraph: skill pass counts (merged: numbers reviewer, consistency reviewer, skeptic)",
+   "problem": "The claim that all 16 texts written with the skill passed is true only for version 4. Version 6's Write mode, which Table 1 also labels \"Skill write\", passed 15 of 16.",
+   "evidence": "analyze.py --scores eval/results/phase3_scores.json: under20_all P 9, L 12, H 12, F 16, S 15, B 16. Failing text eval/out/phase3/S/explain_6.txt: D1 35.6, D2 0.1, D3 1.9.",
+   "old_text": "All 16 texts written with the skill and all 16 rebuilds scored below 20\\% on all three detectors,",
+   "new_text": "All 16 texts written with version~4's Write mode and all 16 version~6 rebuilds scored below 20\\% on all three detectors (version~6's Write mode: 15 of 16),"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.3, first paragraph: personal-essay maximum (numbers reviewer)",
+   "problem": "The claim of no score above 3% in either round is false for the development round, where personal-essay texts reached 6.2%, 4.0% and 3.2%. Only the held-out round stays under 3% (maximum 2.7%).",
+   "evidence": "Recomputed from phase2_scores.json: eval/out/phase2/E/supp_thea.txt fakespot 6.2; L/supp_thea.txt superannotate 4.0; H/supp_ines.txt superannotate 3.2. phase3_scores.json maximum over ps/supp: 2.7 (L/supp_marisol, superannotate).",
+   "old_text": "with no score above 3\\% in either round.",
+   "new_text": "with no score above 3\\% on the held-out briefs and none above 6.2\\% in the development round."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.3, admitted-essay sentence (merged: consistency reviewer, numbers reviewer)",
+   "problem": "\"Only 5 did on the first two\" can be read as 5 on each detector. The 5 is the count below 20% on both D1 and D2; D1 alone passed 8. This uses the D1-D3 names that the Detectors item defines.",
+   "evidence": "Recomputed from rescore3.json, 16 admitted essays: D1<20 8, D2<20 5, both 5, D3<20 0, D3 mean 61.4.",
+   "old_text": "None of the 16 admitted college essays scored below 20\\% on the third detector, whose mean for them was 61\\%, and only 5 did on the first two;",
+   "new_text": "None of the 16 admitted college essays scored below 20\\% on D3, whose mean for them was 61\\%, and only 5 scored below 20\\% on both D1 and D2;"
+  },
+  {
+   "severity": "major",
+   "location": "Figure 2 caption (consistency reviewer)",
+   "problem": "The caption doesn't say which version \"Skill write\" and \"Skill rebuild\" are; the held-out round had v4 Write, v6 Write and v6 Rebuild. It also has no colour key and doesn't point to where D1-D3 are defined.",
+   "evidence": "Rendered fig_detectors.pdf: the \"Skill write\" row has no D1 point above 20%, so it is F (v4); S has explain_6 at 35.6. scripts/figures.py: HUMAN colour #1baf7a (green).",
+   "old_text": "\\caption{Detector scores per text on the held-out briefs, with human writing collected before ChatGPT for comparison. The dashed line is 20\\%. D3's scores saturate near 73\\%.}",
+   "new_text": "\\caption{Detector scores per text on the held-out briefs (Skill write: version~4; Skill rebuild: version~6), with human writing collected before ChatGPT for comparison (green). D1--D3 are the detectors described in Section~\\ref{sec:eval}. The dashed line is 20\\%. D3's scores saturate near 73\\%.}"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.4 Personal statements, version 3 quote (consistency reviewer)",
+   "problem": "The quotation marks enclose DEVLOG's condensed paraphrase, not the judge's words. The sentence also reads as if version 3 said it.",
+   "evidence": "eval/results/judges_v3.json: \"it then mostly walks through the notes in order. Its climax, the realization paragraph (...), lands in paragraph 7 of 9.\" DEVLOG sec. 5 has the shortened form.",
+   "old_text": "version~3, for example, ``walks through the notes in order; climax in paragraph 7 of 9.''",
+   "new_text": "one judge wrote that a version~3 essay ``mostly walks through the notes in order'' and that its climax ``lands in paragraph 7 of 9.''"
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 5.5 Coaching, last sentence (merged: skeptic on measurement; numbers reviewer on length)",
+   "problem": "The feedback result rests on weak measurement. There is one counselor judgment per student (n=6). The counselor was primed with the Common App rule that Coach mode cites, and it saw the condition in every file path. Coach responses were about 1.5 times longer, and LLM judges favor length. The experiment also ran version 6's personal-essay reference rather than the released version 7's, and four of the six students are development personas. Separately, the mean Coach length is 2,263 words by wc -w (2,267 by whitespace split); 2,264 is not reproducible either way, while the plain figure of 1,468 checks out.",
+   "evidence": "coach_loop.js:50 counselor prompt: \"you know the Common App fraud policy counts 'substantive content or output of an artificial intelligence platform'...\". coach_judges.json labels e.g. \"F1 (coach/out/FP/ines.txt)\", kacper labels also show word counts. DEVLOG sec. 16: \"FS, v6 files\"; four development students. personal-essay.md: v6 243 lines vs v7 217 (v7 = v4's). wc -w eval/out/coach/FS/*.txt total 13580 / 6 = 2263.3; FP 8805 / 6 = 1467.5.",
+   "old_text": "Coach mode's responses were also about 1.5 times longer (2,264 words against 1,468), which may be more than a student will read.",
+   "new_text": "Coach mode's responses were also about 1.5 times longer (2,263 words against 1,468), which may be more than a student will read and may have helped them with the counselor, since model judges tend to favor longer answers \\citep{zheng2023judging}. The feedback comparison rests on one counselor judgment per student, six in all, from a model that was told the Common App rule Coach mode cites and that could see each condition's folder name in the file path. The experiment ran version~6's personal-essay reference, whose Coach-mode section differs from the released version~7's, and four of the six students are development personas."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 6 Discussion, \"Why content first\", last two sentences (merged: skeptic, consistency reviewer)",
+   "problem": "The title and this paragraph state a mechanism that no experiment tests: nothing ablates the audit order, the no-invention rule or two-pass drafting. The skill also differs from the word-list baseline in instruction length (173 lines plus four reference files against one paragraph). \"Judges recognized edits of the same draft as one family\" is also stronger than the evidence (DEVLOG says \"may have\").",
+   "evidence": "Conditions are only P, L, H, Edit/Rebuild and Write (phase2.js, phase3.js); no condition removes a single component. WORDLIST is one line in phase3.js. DEVLOG sec. 12: \"may have marked down the whole family\".",
+   "old_text": "The humanizer edit removed tells sentence by sentence and kept the draft's plan, and judges recognized edits of the same draft as one family. The skill's gains came from what the vocabulary pass cannot reach: what the text claims, in what order, and from which facts.",
+   "new_text": "The humanizer edit removed tells sentence by sentence and kept the draft's plan, and judges noticed when two texts were edits of the same draft. We read the skill's gains as coming from what a vocabulary pass cannot reach (what the text claims, in what order, and from which facts), but that reading rests on judges' comments. We did not ablate the audit order, the no-invention rule or two-pass drafting, and the skill gives the model far longer instructions than the word-list prompt, so the evaluation shows that the skill as a whole helps, not which part does."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 6 Discussion, \"Detectors in admissions\", first sentence (consistency reviewer)",
+   "problem": "'Model essays written with the skill' is narrower than the evidence and the abstract ('plain or not'): plain model essays also scored low.",
+   "evidence": "Sec. 5.3: \"on personal statements and short answers every condition passed, plain generation included\"; held-out ps/supp maximum 2.7%.",
+   "old_text": "they scored real admitted essays high and model essays written with the skill low.",
+   "new_text": "they scored real admitted essays high and model essays low, with or without the skill."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 6 Discussion, \"Detectors in admissions\" (merged: consistency reviewer, skeptic)",
+   "problem": "This generalizes from three open-source detectors and 16 essays to \"a detector score\", including Turnitin and GPTZero, which the Limitations section says were not tested.",
+   "evidence": "Limitations: \"Commercial detectors used by schools (Turnitin, GPTZero) were not tested\". DEVLOG sec. 9: \"Paper must state this as a property of these open-source detectors, not of all detectors\".",
+   "old_text": "Whatever the cause, a detector score is not evidence that an applicant used AI.",
+   "new_text": "Whatever the cause, a score from these three detectors is not evidence that an applicant used AI; commercial detectors may behave differently, and we did not test them."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 6 Discussion, \"Coaching versus ghostwriting\", first sentence (merged: numbers reviewer, consistency reviewer, skeptic)",
+   "problem": "This holds only for the development round. On the held-out briefs, the main result, version 4 won personal statements clearly and lost only the blog post and the cover letter, as Sec. 5.1 itself reports. \"The reason is instructive\" is also an importance flag of the kind the skill removes.",
+   "evidence": "Recomputed phase3 by_task: ps F 1.33 (best); blog F 4.67 vs L 1.67; cover F 2.33 vs L 2.00. phase2 by_task: ps O 2.50 vs L 2.25 and E 2.38, the only genre where O is not best; v5 panel ps O 2.88 vs L 2.25.",
+   "old_text": "Personal statements were the one genre where the skill's writing did not clearly win, and the reason is instructive.",
+   "new_text": "In development, personal statements were the one genre where the skill's writing did not clearly win (on the two held-out students it ranked first, in panels that may favor it; Section~\\ref{sec:results})."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 6 Discussion, \"Coaching versus ghostwriting\", last sentence (citation reviewer)",
+   "problem": "This overstates policy compliance. Yale allows grammar and spelling review and \"general advice or topic suggestions at the start of the writing process\". Coach mode also proposes a structure (a beat outline) and critiques drafts, which that policy doesn't cover. Brown allows spelling and grammar review only, and Caltech bans AI outlines.",
+   "evidence": "notes/admissions_ai_policies.md lines 58-61, 95-97: Brown \"Spelling and grammar review only\"; Yale \"general advice or topic suggestions at the start of the writing process\"; Caltech bans \"Relying on AI generated content to outline\". Skill references/personal-essay.md line 154: \"Give the plan to the student as a beat outline\". brown2026integrity is already in references.bib.",
+   "old_text": "Coach mode does this and leaves the writing to the student, which also keeps the essay inside policies that allow brainstorming and proofreading but not AI-written content \\citep{yale2026ai}.",
+   "new_text": "Coach mode does this and leaves the writing to the student, so the essay's text stays the student's own. Policies differ on the rest: Yale permits grammar and spelling review and ``general advice or topic suggestions at the start of the writing process'' \\citep{yale2026ai}, while Brown permits only spelling and grammar review \\citep{brown2026integrity}, so whether a proposed structure and draft critique are allowed depends on the school."
+  },
+  {
+   "severity": "major",
+   "location": "Sec. 7 Conclusion (consistency reviewer; extended to carry the selection and same-family caveats)",
+   "problem": "The conclusion has four problems. (1) \"Could not tell ... from human ones\" misstates the finding: the detectors inverted the two groups rather than failing to separate them. (2) \"Gave more useful feedback\" turns one model counselor's rating into a plain fact. (3) \"A third\" rounds 0.35 down, in the direction that helps the argument. (4) It repeats \"blind model judges\" and \"briefs it was not developed on\" without the selection and same-family caveats added in Sec. 5.1 and the Limitations.",
+   "evidence": "1.17/3.38 = 0.346. Sec. 5.5: counselor usefulness 8.67 vs 7.17 (recomputed from coach_judges.json). Sec. 5.3: model personal essays passed, admitted essays flagged.",
+   "old_text": "produced writing that blind model judges preferred to plain generation, a word-list prompt and a popular humanizer on briefs it was not developed on, with a third of plain generation's unsupported claims. Its coaching mode gave more useful feedback than plain feedback while leaving the writing to the student. The detectors we tested could not tell its personal essays, or plain model essays, from human ones, and flagged most real admitted essays, so they should not be used as evidence in admissions.",
+   "new_text": "produced writing that model judges from one model family preferred to plain generation, a word-list prompt and a popular humanizer on briefs it was not developed on (though we chose it from two candidates on those briefs), with about a third of plain generation's unsupported claims. A model counselor rated its Coach-mode feedback more useful than plain feedback, and that feedback left the writing to the student. The detectors we tested scored its personal essays, and plain model essays, as human and flagged most real admitted essays, so they should not be used as evidence in admissions."
+  },
+  {
+   "severity": "major",
+   "location": "Limitations, \"Scope and development\" (merged: numbers reviewer x2, skeptic x2, consistency reviewer)",
+   "problem": "This paragraph has four problems. (1) \"Phase-2\" is never defined in the paper, and version 5 was never in the development (phase-2) panel; it was scored only in the version comparison. (2) It leaves out the in-sample contamination of versions 1-4: five pilot briefs are in the development set, and version 4 quoted six development example phrases. The data show this had little effect, which can be said in the same sentence. (3) \"Two to four briefs\" is wrong, because four held-out genres have one brief each. (4) Each condition produced one text per brief, so sampling luck is mixed into each result.",
+   "evidence": "phase2_judges.json conditions P, L, H, E, O; V and R only in v5_judges.json. Pilot tasks.json: Ines ps/supp, phones argument, mRNA explainer, Gatsby (all in phase2 brief ids). v7/CHANGELOG.md: \"Six examples in v4 came from development briefs\". Recomputed v4 development mean rank: 1.40 on the five pilot briefs (10 judgments), 1.47 on the other 15 (30). Appendix Table 3: Cover letter (1), Blog post (1), Lab discussion (1), News article (1). phase3.js generates one text per condition per brief. DEVLOG sec. 13: v6 built from both panels.",
+   "old_text": "Version 5 of the skill was revised after the phase-2 results on the same 20 briefs, so its phase-2 scores are in-sample; the held-out study uses 16 new briefs, but they were written by the same team that built the skill. Per-genre results rest on two to four briefs each and should be read as descriptive.",
+   "new_text": "Versions~1--4 were developed on a seven-brief pilot (Table~\\ref{tab:iterations}), and five of those briefs (one student's two essays, the phone-ban argument, the mRNA explainer and the Gatsby analysis) are in the 20-brief development set; version~4 also contained six example phrases taken from development briefs. Version~4 ranked about the same on those five briefs (mean 1.40) as on the other fifteen (1.47). Version~5 was built from the development-round judgments and version~6 from both development panels, all on the same 20 briefs, so version~5's version-comparison scores are in-sample. The held-out round uses 16 new briefs, but they were written by the same team that built the skill. Per-genre results rest on one to four briefs each (one brief in each of four held-out genres) and should be read as descriptive; each condition produced one text per brief, so a result on a brief also reflects the luck of that single sample."
+  },
+  {
+   "severity": "major",
+   "location": "Ethical considerations, \"Dual use\" (skeptic; narrowed to version 4)",
+   "problem": "The claim that the skill \"adds nothing to the attack literature\" sits badly with the paper's own data. The skill works as a detector-evasion method in exactly the school genres where homework cheating is the risk. The evaluation also shows it writing 11th-grade assignments on request, and its integrity rule routes work to Coach mode only when the user says it is theirs to submit. The skeptic wrote \"every text the skill wrote passed\", but version 6 Write's explain_6 failed D1, so the claim is narrowed to version 4.",
+   "evidence": "phase3_scores.json, held-out argue/explain/lit: every plain text has D1 >= 37.3 (e.g. argue_5 42.6/49.0/51.1); every v4 (F) text is under 20 on all three (max 10.9); v6 Write explain_6 D1 35.6. phase3.js: \"Use the skill's Write mode\"; briefs \"for an 11th-grade English class\". v7 SKILL.md line 120: Coach for \"college application essays and other work the student must submit as their own\".",
+   "old_text": "The skill uses no evasion tricks (typos, homoglyphs, invisible characters), so it adds nothing to the attack literature on detectors \\citep{krishna2023paraphrasing,sadasivan2025reliably}.",
+   "new_text": "The skill uses no evasion tricks (typos, homoglyphs, invisible characters) of the kind studied in the attack literature \\citep{krishna2023paraphrasing,sadasivan2025reliably}, but it lowers detector scores anyway: on the six held-out argument, explainer and literary-analysis briefs, every plain text was flagged by at least one detector and every text version~4 wrote passed all three. Its integrity rule sends work a student must submit as their own to Coach mode only when the user says so; our evaluation prompts asked for Write mode on 11th-grade assignments and got finished essays, and a student could do the same with homework."
+  },
+  {
+   "severity": "major",
+   "location": "Ethical considerations, \"Human writing and raters\", first sentence (skeptic)",
+   "problem": "The paper says it reports \"only their scores\", but the released result files attach AI-likelihood scores to named real students. Two Connecticut College essays are keyed by their writers' full names, with D3 scores of 66% and 72%. Renaming the keys (and the detector/calib file names) before release is data hygiene, not a new experiment. The new sentence describes the state after that rename, so do the rename first.",
+   "evidence": "eval/results/rescore3.json (tracked in git) has two keys of the form detector/calib/human_essay_conn_<firstname-lastname>-25.txt with superannotate 66.2 and 72.1.",
+   "old_text": "We scored published admitted essays and PERSUADE essays and report only their scores; we do not redistribute their texts.",
+   "new_text": "We scored published admitted essays and PERSUADE essays and report only their scores; we do not redistribute their texts, and the released score files identify each essay by source and number rather than by its writer's name, so no named student is linked to an AI score."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, first sentence (consistency reviewer)",
+   "problem": "This contradicts Related Work (\"Untrained humans detect AI text at about chance\"); the supporting citation covers only heavy users.",
+   "evidence": "Sec. 2: \"Untrained humans detect AI text at about chance \\citep{clark2021human,jakesch2023heuristics}, while frequent LLM users do far better\".",
+   "old_text": "Readers have learned to recognize machine-written prose.",
+   "new_text": "Experienced readers have learned to recognize machine-written prose."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, Kobak/Liang sentence (citation reviewer)",
+   "problem": "This is partly unsupported. Liang et al. never measure \"delve\" or \"underscore\"; their study covers only adjectives in peer reviews.",
+   "evidence": "related_work_notes.md: liang2024monitoring vocabulary = adjectives; commendable 9.8x, meticulous 34.7x, intricate 11.2x (Fig. 1). Local full text of 2403.07183 has no \"delve\". kobak: delves r=28.0, underscores r=13.8.",
+   "old_text": "Corpus studies trace sharp rises in words such as \\emph{delve} and \\emph{underscore} after the release of ChatGPT \\citep{kobak2025delving,liang2024monitoring}",
+   "new_text": "Corpus studies trace sharp rises after the release of ChatGPT in words such as \\emph{delve} and \\emph{underscore} in biomedical abstracts \\citep{kobak2025delving} and \\emph{commendable} and \\emph{meticulous} in peer reviews \\citep{liang2024monitoring}"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, Russell sentence (citation reviewer)",
+   "problem": "This overstates the finding. \"Near-perfect accuracy\" describes the majority vote of five experts, not individual heavy users.",
+   "evidence": "related_work_notes.md: \"Majority vote of 5 expert annotators 'misclassifies only 1 of 300 articles'\"; 53.1% vocabulary clues confirmed.",
+   "old_text": "People who use these tools heavily can identify AI-written articles with near-perfect accuracy, and they cite vocabulary, structure and lack of originality as their evidence \\citep{russell2025people}.",
+   "new_text": "Five people who use these tools heavily, voting together, misclassified only 1 of 300 articles, and they cited vocabulary, sentence structure and originality as their evidence \\citep{russell2025people}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, humanizer definition (citation reviewer)",
+   "problem": "This embellishes the source. Roe et al. define humanizers as services that alter AI text to avoid automated or human detection, not ones that rewrite \"until a detector scores it as human\".",
+   "evidence": "Roe et al. abstract (per reviewer): \"internet-based services that alter AI-generated text to avoid automated or human detection\"; related_work_notes.md: 55 sites cataloged.",
+   "old_text": "The second is the commercial humanizer, which rewrites text until a detector scores it as human \\citep{roe2026dramaturgies}.",
+   "new_text": "The second is the commercial humanizer, which rewrites AI-generated text to avoid automated or human detection \\citep{roe2026dramaturgies}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, Wikipedia sentence (citation reviewer)",
+   "problem": "Nothing shows that \"most word lists\" derive from the Wikipedia guide. The survey documents only the humanizer (and one bundled copy) as built on it.",
+   "evidence": "notes/github_candidates.md: blader/humanizer built on Wikipedia's \"Signs of AI writing\"; softaworks bundles a copy; no other surveyed skill documented as deriving from it. Humanizer is the most-starred (58.8k).",
+   "old_text": "Wikipedia's editors, whose guide most word lists derive from, warn against exactly this",
+   "new_text": "Wikipedia's editors, whose guide the most-starred humanizer skill is built on \\citep{chen2026humanizer}, warn against exactly this"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, paragraph 2, last sentence (consistency reviewer)",
+   "problem": "'Belong to someone else' is a mannered phrase and inexact: the invented feelings belong to no one, and they get attributed to the writer.",
+   "evidence": "Prose audit against the skill's tells.md T4.",
+   "old_text": "and in personal writing those details are feelings and memories that belong to someone else.",
+   "new_text": "and in personal writing those details are feelings and memories the writer never reported."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, paragraph 3, last sentence (consistency reviewer)",
+   "problem": "This is empty self-description used as a short paragraph closer, and the contributions list follows at once.",
+   "evidence": "Prose audit against references/academic.md and tells.md S11.",
+   "old_text": " This paper reports what happened when we tested it.",
+   "new_text": ""
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, first contribution bullet (numbers reviewer)",
+   "problem": "The survey covered 16 repositories, not 15 humanizer skills; only 11 are humanizer or anti-slop skills.",
+   "evidence": "notes/github_candidates.md: sections 1-6 plus 10 rows in \"Others checked\" (lists, a Strunk guide and an academic-writing skill among them).",
+   "old_text": "and of 15 existing open-source humanizer skills",
+   "new_text": "and of 16 existing open-source writing-skill repositories (11 of them humanizer or anti-slop skills)"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 1 Introduction, last contribution bullet (consistency reviewer)",
+   "problem": "'Coaching mode' should be 'Coach mode', the name used in Secs. 3-5.",
+   "evidence": "Sec. 3 \"Modes\": \"\\emph{Coach}\"; Sec. 5.5 \"Coach-mode feedback\".",
+   "old_text": "\\item A coaching experiment comparing the skill's coaching mode with plain feedback on simulated student drafts.",
+   "new_text": "\\item A coaching experiment comparing the skill's Coach mode with plain feedback on simulated student drafts."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 2 Related work, \"Stylistic signatures\", first sentence (citation reviewer)",
+   "problem": "The sentence misdescribes the corpora: Geng & Trotta analyze arXiv abstracts. \"Mostly verbs and adjectives\" is Kobak's PubMed result; Liang restricts itself to adjectives by design.",
+   "evidence": "related_work_notes.md: geng2024chatgpt \"1M arXiv abstracts\"; kobak 66% verbs / 14% adjectives of 379 excess style words; liang vocabulary = all adjectives.",
+   "old_text": "Excess-vocabulary analyses of PubMed and peer reviews show that LLM adoption shifted the frequency of style words, mostly verbs and adjectives \\citep{kobak2025delving,liang2024monitoring,juzek2025delve,geng2024chatgpt}.",
+   "new_text": "Excess-vocabulary analyses of PubMed and arXiv abstracts and of peer reviews show that LLM adoption shifted the frequency of style words \\citep{kobak2025delving,liang2024monitoring,juzek2025delve,geng2024chatgpt}, which in PubMed were mostly verbs and adjectives \\citep{kobak2025delving}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 2 Related work, \"Stylistic signatures\", Paech sentence (citation reviewer)",
+   "problem": "The citation is selective. Token banning breaks down at about 2,000 patterns, and the same paper shows that backtracking and fine-tuning suppress thousands of patterns while keeping quality.",
+   "evidence": "related_work_notes.md: token banning \"becomes unusable at just 2,000\" patterns; FTPO \"90% slop reduction\"; Antislop Sampler suppresses 8,000+ patterns (abstract).",
+   "old_text": "Token-level bans on such patterns degrade output quickly \\citep{paech2026antislop}.",
+   "new_text": "Banning such patterns token by token makes output unusable at about 2,000 patterns, whereas backtracking at inference time or targeted fine-tuning suppresses thousands of them while keeping quality \\citep{paech2026antislop}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 2 Related work, \"Detecting AI text\", first sentence (citation reviewer)",
+   "problem": "All three cited works are zero-shot methods, so \"trained classifiers\" has no citation. adam2026gptzero is in references.bib but never cited.",
+   "evidence": "grep references.bib: adam2026gptzero present; not cited in main.tex. DetectGPT, Fast-DetectGPT, Binoculars are zero-shot.",
+   "old_text": "Detectors range from trained classifiers to zero-shot statistics \\citep{mitchell2023detectgpt,bao2024fastdetectgpt,hans2024binoculars}.",
+   "new_text": "Detectors range from trained classifiers \\citep{adam2026gptzero} to zero-shot statistics \\citep{mitchell2023detectgpt,bao2024fastdetectgpt,hans2024binoculars}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 2 Related work, \"Detecting AI text\", Perkins/Weber-Wulff (citation reviewer)",
+   "problem": "This misstates Weber-Wulff et al.'s method. They tested manual editing and machine paraphrasing, not prompting; only Perkins et al. used adversarial prompting.",
+   "evidence": "Local full text of arXiv 2306.15666: \"RQ4: Does manual editing or machine paraphrasing affect the detection of ChatGPT-generated text?\". related_work_notes.md: perkins 39.5% to 22.1% under prompting techniques.",
+   "old_text": "and simple prompting lowers already modest accuracy \\citep{perkins2024simple,weberwulff2023testing}.",
+   "new_text": "and simple evasion, from adversarial prompting to manual edits and machine paraphrasing, lowers already modest accuracy \\citep{perkins2024simple,weberwulff2023testing}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 2 Related work, \"Detecting AI text\", Creanga (citation reviewer)",
+   "problem": "This overgeneralizes from one RoBERTa-based detector to \"detectors\".",
+   "evidence": "related_work_notes.md row creanga2026paradox: \"A RoBERTa detector tracks statistical complexity\"; \"76.3% false-positive rate on formal human writing\".",
+   "old_text": "and flag formal human prose \\citep{creanga2026paradox}",
+   "new_text": "and one RoBERTa detector flagged formal human writing at a 76.3\\% false-positive rate \\citep{creanga2026paradox}"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 3 The skill, first sentence (consistency reviewer)",
+   "problem": "The released version should be named where the skill is first described, so it matches Sec. 5.1.",
+   "evidence": "skill_versions/v7/anti-ai-writing/SKILL.md (173 lines) matches the installed skill.",
+   "old_text": "The released skill is a Markdown instruction file (173 lines)",
+   "new_text": "The released skill (version~7) is a Markdown instruction file (173 lines)"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Briefs\" paragraph, table reference (consistency reviewer)",
+   "problem": "Table 3 is in the appendix and is cited before Tables 1 and 2 appear, so name the appendix.",
+   "evidence": "main.pdf: Table 3 cited on p.3, printed on p.11.",
+   "old_text": "four each (Table~\\ref{tab:briefs})",
+   "new_text": "four each (Appendix~\\ref{sec:appendix-briefs}, Table~\\ref{tab:briefs})"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Conditions\", word list (numbers reviewer)",
+   "problem": "The word-list prompt has 31 items: 24 single words, six phrases or constructions, and em dashes.",
+   "evidence": "scripts/phase3.js line 10 WORDLIST (same in phase2.js and phase2_v5.js): delve ... resilience (24 words), six quoted phrases/constructions, \"em dashes\".",
+   "old_text": "an instruction to avoid 30 common AI words and constructions",
+   "new_text": "an instruction to avoid 24 common AI words, six stock phrases and constructions, and em dashes"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Conditions\", humanizer description (merged: consistency reviewer name; skeptic framing)",
+   "problem": "Three small issues. The bold name doesn't match \"Humanizer edit\" in Table 1 and the figures. \"Most popular\" has no measure or date. The humanizer edits the plain draft, so its like-for-like comparison is Edit or Rebuild on the same draft, not Write mode. The skeptic's \"of the 15 ... we surveyed\" is corrected to 11 humanizer skills.",
+   "evidence": "notes/github_candidates.md: blader/humanizer 58.8k stars (2026-10-20), the most-starred humanizer; related_work_notes.md \"about 58.9k\". phase3.js humE takes P's draft.",
+   "old_text": "\\textbf{Humanizer} (H): the most popular open-source humanizer skill \\citep{chen2026humanizer}, applied to P's draft.",
+   "new_text": "\\textbf{Humanizer edit} (H): the most-starred of the 11 humanizer skills we surveyed (about 59k GitHub stars on 20 October 2026) \\citep{chen2026humanizer}, applied to P's draft. It edits a draft rather than writing from the brief, so its like-for-like comparison is with the skill's Edit or Rebuild mode on the same draft, not with Write mode."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Conditions\", prompt asymmetry (skeptic; scope corrected)",
+   "problem": "The prompts weren't identical across conditions apart from the condition instruction. On briefs with fictional people, the skill and humanizer prompts added a line saying they were fictional (so the skill would write rather than coach), and the plain and word-list prompts didn't get it. Per the scripts, in development this applied to personal statements and short answers; held-out, to every brief with a facts file except literary analysis.",
+   "evidence": "phase2.js / phase2_v5.js line 12: fiction() only for ps and supp, used in oursW, humE, oursE (and the v5 rebuild), not plainP/listP. phase3.js line 12: fiction() when b.facts and not lit, used in skillW, humE, skillR.",
+   "old_text": "The skill conditions were the Write mode, the Edit mode applied to P's draft, and from version~5 on a Rebuild mode for drafts the user says an AI wrote.",
+   "new_text": "The skill conditions were the Write mode, the Edit mode applied to P's draft, and from version~5 on a Rebuild mode for drafts the user says an AI wrote. Every prompt carried the same brief and facts-file instruction; on briefs about fictional people, the skill and humanizer prompts also said the people were fictional, so that the skill would write the piece instead of switching to Coach mode."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Judges\", third judge (consistency reviewer)",
+   "problem": "The third judge's model is described inconsistently: \"a different model\" here, \"within one model family\" in Sec. 5.1 and \"a different model tier\" in the Limitations.",
+   "evidence": "DEVLOG sec. 14-15: \"a second genre reader running on a different model tier\"; \"within one model family\".",
+   "old_text": "In the held-out round a third judge, a second genre reader, ran on a different model (\\judgemodel{}).",
+   "new_text": "In the held-out round a third judge, a second genre reader, ran on a different model of the same family (\\judgemodel{})."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Judges\", unsupported-claims metric (citation reviewer)",
+   "problem": "The headline unsupported-claims metric cites no prior work. min2023factscore is in references.bib (the notes call it the closest precedent) but is never cited.",
+   "evidence": "related_work_notes.md row min2023factscore: \"the closest precedent for counting unsupported claims\".",
+   "old_text": "and quoted every claim not supported by the facts file (or every invented statistic, source or factual error when there was none).",
+   "new_text": "and quoted every claim not supported by the facts file (or every invented statistic, source or factual error when there was none), a coarser, judge-based version of checking generated facts against a knowledge source \\citep{min2023factscore}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 4 Evaluation, \"Coaching experiment\" (consistency reviewer)",
+   "problem": "The text doesn't say which version's Coach mode was tested. It was version 6, and personal-essay.md differs between v6 and the released v7. \"Each feedback\" is also ungrammatical.",
+   "evidence": "DEVLOG sec. 16: \"the skill's Coach mode (FS, v6 files)\"; personal-essay.md v6 243 lines vs v7 217.",
+   "old_text": "The draft then received feedback from the skill's Coach mode or from the plain model asked for feedback, and the student agent revised it with each feedback separately.",
+   "new_text": "The draft then received feedback from the skill's Coach mode (version~6 files) or from the plain model asked for feedback, and the student agent revised it once with each set of feedback."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.1, first sentence (consistency reviewer)",
+   "problem": "Figure 1 (fig:rank) is never referenced in the text.",
+   "evidence": "grep main.tex: fig:rank appears only in \\label.",
+   "old_text": "Table~\\ref{tab:heldout} gives the main result.",
+   "new_text": "Table~\\ref{tab:heldout} and Figure~\\ref{fig:rank} give the main result."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.1, version 6 paragraph, \"arithmetic-heavy\" quote (merged: numbers reviewer, consistency reviewer; downgraded from major)",
+   "problem": "One judge used the phrase once, about one essay, so \"Its argument essays ... were called\" overgeneralizes. That essay was the version 6 Rebuild of argue_6; one reviewer said the quote was misattributed, but the Rebuild also runs on version 6's files, which is why this is downgraded from major. The v6 Write essay on the same brief was called \"dry and mechanical\" by another judge.",
+   "evidence": "phase3_judges.json argue_6: editor map T1=B, comment on T1 \"flat and arithmetic-heavy for an English class\"; the only occurrence in the file. Reader map T2=S: \"The prose is dry and mechanical ... the essay stops on a numbers paragraph without a real conclusion.\"",
+   "old_text": "Its argument essays, built around a worked numerical case, were called ``arithmetic-heavy for an English class.''",
+   "new_text": "Its argument essays were built around a worked numerical case; one judge called its Write-mode essay on graded homework ``dry and mechanical,'' and another called its Rebuild of the same brief ``arithmetic-heavy for an English class.''"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.1, third-judge sentence (consistency reviewer)",
+   "problem": "The trailing qualifier \", within one model family\" sits awkwardly at the end of the sentence.",
+   "evidence": "Prose audit (tells.md T5/S4).",
+   "old_text": "so the ranking does not depend on one judge model, within one model family.",
+   "new_text": "so within one model family the ranking does not depend on the judge model."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.1, by-genre paragraph, first sentence (numbers reviewer)",
+   "problem": "The list of genres where v4 ranked best leaves out the emails, so it reads as complete when it isn't.",
+   "evidence": "Recomputed phase3 by_task email: F 1.67, S 2.00, B 2.50, H 4.00, L 5.17, P 5.67.",
+   "old_text": "By genre, version~4 ranked best on personal statements (1.33), arguments (1.33), literary analysis (1.33) and the news article (1.00).",
+   "new_text": "By genre, version~4 ranked best on personal statements (1.33), arguments (1.33), literary analysis (1.33), the emails (1.67) and the news article (1.00)."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.1, by-genre paragraph, last sentence (merged: skeptic, consistency reviewer)",
+   "problem": "The paragraph gives a mechanism for the blog and cover-letter losses, but each rests on one brief and three judgments, and the cover-letter gap is small. A cover letter is also not \"casual\". The by-genre data also show that the no-invention rule did little in genres with no source file, which the paper doesn't report.",
+   "evidence": "Recomputed phase3 by_task (n=3 judgments each for blog and cover): cover L 2.00 vs F 2.33. Unsupported per text F vs P: argue 3.17 vs 4.00, explain 1.50 vs 1.33, lit 1.50 vs 3.50, ps 0.67 vs 4.83, supp 0.67 vs 4.17.",
+   "old_text": "With one or two briefs per genre these are descriptive, but both losses are in casual first-person genres, where the skill's audit may strip the looseness the genre wants.",
+   "new_text": "With one or two briefs per genre these are descriptive. Both losses are in first-person genres, where the audit may strip the looseness the genre wants, but each rests on one brief and three judgments, and the cover-letter gap (2.00 against 2.33) is small. The no-invention rule also did little where there was no source file: version~4's argument essays had 3.17 unsupported or wrong claims per text against 4.00 for plain generation, and its explainers 1.50 against 1.33, so most of the overall drop comes from the genres with a facts or quotes file."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.2, first paragraph (skeptic)",
+   "problem": "Version 5's loss to version 4 (28 of 40) is reported with no test, and it isn't significant. \"Did not improve\" is right, but readers may read it as \"worse\".",
+   "evidence": "Recomputed analyze.py on v5_judges.json: O>V wins 28/40, Wilcoxon p=0.055.",
+   "old_text": "but ranked below version~4 in 28 of 40 judgments:",
+   "new_text": "but ranked below version~4 in 28 of 40 judgments (Wilcoxon $p = 0.055$, so it did not improve on version~4 rather than clearly doing worse):"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.3, development-round sentence (numbers reviewer)",
+   "problem": "'Skill texts' is ambiguous because the development round had two skill conditions: 17 of 20 is the Write mode, and the Edit mode passed 10 of 20.",
+   "evidence": "Recomputed analyze.py on phase2 with --scores: under20_all P 9, L 11, H 10, E 10, O 17.",
+   "old_text": "The development round agreed (17 of 20 skill texts against 9 of 20 plain).",
+   "new_text": "The development round agreed (17 of 20 Write-mode texts against 9 of 20 plain; the Edit mode passed 10 of 20)."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.3, end of first paragraph (merged: numbers reviewer, skeptic)",
+   "problem": "'Every model-written text we produced' goes beyond the data. All 89 scored personal essays pass, but 34 produced ones were never scored: v5 Write and Rebuild, pilot X4/Y4 and the coaching drafts. The finding also isn't connected to earlier false-positive reports, and the comparison is confounded: the human essays were selected and edited by the colleges, and the model essays were written from fictional notes.",
+   "evidence": "Recomputed: 25 phase-1 + 40 development + 24 held-out ps/supp texts scored, maximum 8.3%. Related Work already cites liang2023biased and creanga2026paradox. SOURCES.md: college-selected \"Essays That Worked\".",
+   "old_text": "On personal essays these detectors passed every model-written text we produced and flagged most human ones.",
+   "new_text": "On personal essays these detectors passed every model-written text we scored (89 of 89 across all rounds) and flagged most human ones. This extends earlier reports of false positives on non-native and formal human writing \\citep{liang2023biased,creanga2026paradox} to admissions essays, on a small sample that the colleges selected and edited, and the human and model essays differ in source material as well as in authorship."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.4 Personal statements, version 4 win (numbers reviewer)",
+   "problem": "'Its first win' is ambiguous. On the original notes the v1 Edit mode had already won one of two personal-statement judgments. The v4 win is the Write mode's first, and it is 1 of 2 judgments.",
+   "evidence": "Recomputed scripts/judges.py: AC|ps better_edit 1, better_plain 1; AY|ps better_v4 1, better_plain 1, unsup v4 4 vs plain 14.",
+   "old_text": "its first win against plain generation on the original notes, with 4 unsupported claims against 14.",
+   "new_text": "the Write mode's first personal-statement win against plain generation on the original notes (1 of 2 judgments), with 4 unsupported claims against 14."
+  },
+  {
+   "severity": "minor",
+   "location": "Table 2 (tab:iterations) caption (merged: numbers reviewer, skeptic)",
+   "problem": "Every row has exactly four judgments, so \"2--4 pairs per cell\" doesn't match the table. The \"--\" in the v1 and v2 rows suggests unsupported claims were not counted, but they were (on the original notes). The direction of the \"vs. plain\" column is also unstated.",
+   "evidence": "Recomputed scripts/judges.py: AB|ps n=4 (unsup v1 16, plain 29); AV|ps n=4 (v2 6, plain 33); PW|ps n=4 (v3 1, plain 16); PX|ps n=4 (v4 1 win, plain 3; unsup 6 vs 19).",
+   "old_text": "\\caption{Personal-statement iterations in development (pairwise judgments of better writing against plain generation, depth notes for v3--v4; unsupported claims summed over the same pairs). Small samples: 2--4 pairs per cell.}",
+   "new_text": "\\caption{Personal-statement iterations in development (pairwise judgments of better writing, skill wins--plain wins; depth notes for v3--v4; unsupported claims summed over the same pairs, skill vs plain). Small samples: four judgments (two text pairs, two judges) per row. v1--v2 used the original notes, where unsupported claims were 16 vs 29 and 6 vs 33.}"
+  },
+  {
+   "severity": "minor",
+   "location": "Table 2, v2 row (consistency reviewer)",
+   "problem": "'Sample mode' is an internal term the paper never defines.",
+   "evidence": "DEVLOG sec. 4: \"sample mode: reflection only from the student's words\".",
+   "old_text": "v2 & stricter sample mode & 0--4 & -- \\\\",
+   "new_text": "v2 & stricter sample-essay rules & 0--4 & -- \\\\"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.5 Coaching, copying figure (numbers reviewer)",
+   "problem": "'Under 1%' holds for the means but not for every revision: one Coach-feedback revision copied 3.7%.",
+   "evidence": "Recomputed from coach_overlap.json: kacper RS 0.037 (24 copied 6-grams), ansar RP 0.011, ines RS 0.010; mean RS 0.0095, RP 0.0050.",
+   "old_text": "(under 1\\% of word 6-grams)",
+   "new_text": "(on average under 1\\% of word 6-grams; at most 3.7\\% in one revision)"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 5.5 Coaching, plain-feedback sentence (merged: numbers reviewer, skeptic, consistency reviewer, citation reviewer)",
+   "problem": "This merges four items. (1) Only plain feedback's essay-ready sentences are reported. Coach mode also wrote some (0.67 per response, three in one response) even though its rules forbid any. (2) The sentence is hard to parse: the quoted words are the counselor's description, not the line itself. (3) The policy verdict reads as the authors' own. (4) The policy claim has no citation here.",
+   "evidence": "Recomputed coach_judges.json ghostwriting_sentences: FS [1,0,3,0,0,0] mean 0.67; FP [1,0,6,0,0,1] mean 1.33. Ansar (F1=FP): \"F1 supplies the essay's interpretive center ('A notebook is something you write your own name in') and frames it as Ansar's own answer ... that is substantive content\".",
+   "old_text": "Plain feedback rarely wrote whole sentences for the student (1.33 per response), but it supplied the essay's interpretation: one response handed a student ``the essay's interpretive center'' that he never said, which is the substantive content that admissions policies forbid.",
+   "new_text": "Neither kind of feedback wrote many whole sentences for the student (1.33 per response for plain feedback; 0.67 for Coach mode, whose rules forbid any, with three in one response), but plain feedback supplied the essay's interpretation: one response supplied what the counselor called ``the essay's interpretive center,'' a line the student never said, and framed it as his own answer; the counselor counted this as substantive content of the kind admissions policies forbid \\citep{commonapp2023fraud,yale2026ai}."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 6 Discussion, \"Iterating on judges\", arithmetic-heavy (numbers reviewer)",
+   "problem": "This overstates the evidence. One judge used \"arithmetic-heavy\", about one essay (the v6 Rebuild of argue_6); the v6 Write essay was called \"dry and mechanical\".",
+   "evidence": "phase3_judges.json argue_6: editor on T1=B (\"arithmetic-heavy\"); reader on T2=S (\"dry and mechanical ... stops on a numbers paragraph\").",
+   "old_text": "produced essays judges called arithmetic-heavy on new topics.",
+   "new_text": "produced held-out argument essays that judges called dry, mechanical and, in one case, arithmetic-heavy."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 6 Discussion, \"Iterating on judges\", comparison sentence (consistency reviewer)",
+   "problem": "'Compared with its predecessor' is inaccurate: version 6 was compared with version 4, not with version 5.",
+   "evidence": "Sec. 4 Conditions: held-out round compared v4 Write and v6 Write; version comparison compared v4 and v5.",
+   "old_text": "Both regressions were caught only because each version was compared with its predecessor on the same panel and, finally, on held-out briefs.",
+   "new_text": "Both regressions were caught only because each version was compared with version~4 in the same panel: version~5 on the development briefs and version~6 on the held-out briefs."
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 6 Discussion, \"Detectors in admissions\", policy sentence (citation reviewer)",
+   "problem": "This mislabels a source: the Common App is an application platform, not a college.",
+   "evidence": "commonapp2023fraud is the Common App's own fraud policy.",
+   "old_text": "Colleges that forbid substantive AI content",
+   "new_text": "The Common App and colleges that forbid substantive AI content"
+  },
+  {
+   "severity": "minor",
+   "location": "Sec. 6 Discussion, \"Detectors in admissions\", last clause (citation reviewer)",
+   "problem": "The claim that style detection falls hardest on polished writers rests on 16 essays. Two papers already cited support the mechanism.",
+   "evidence": "related_work_notes.md: creanga2026paradox \"76.3% false-positive rate on formal human writing\"; karr2026detection (scores track long-token and Academic Word List density, per reviewer).",
+   "old_text": "and our results suggest that style-based detection would fall hardest on applicants who write in the polished register that essay coaching teaches.",
+   "new_text": "and our results, together with evidence that detector scores rise with formal, academic-register writing \\citep{creanga2026paradox,karr2026detection}, suggest that style-based detection would fall hardest on applicants who write in the polished register that essay coaching teaches."
+  },
+  {
+   "severity": "minor",
+   "location": "Limitations, \"Test material\" (consistency reviewer)",
+   "problem": "This generalization about real interview notes is stated as fact with no data behind it.",
+   "evidence": "Neither the paper nor DEVLOG measures real interview notes.",
+   "old_text": "real interview notes are shorter, messier and less quotable.",
+   "new_text": "real interview notes are likely to be shorter, messier and less quotable."
+  },
+  {
+   "severity": "minor",
+   "location": "Ethical considerations, \"Dual use\", last two sentences (merged: consistency reviewer, citation reviewer)",
+   "problem": "'Plainly' is on the skill's own tell list, and the colon joins two unrelated claims. The watermark claim also cites only a secondary news report; Anthropic's help-center page is the primary source (its bib entry is in the references.bib item).",
+   "evidence": "v7 SKILL.md line 126: \"the Common App, Yale and many programs count substantive AI-written content as not the applicant's own work\"; line 153: \"It is not a way to hide AI use.\" notes/tells_catalog.md line 75: support.claude.com article 16266773.",
+   "old_text": "and it states institutional AI policies plainly. And it tells users that recent model output may carry a provenance watermark \\citep{bleeping2026watermark}: style editing does not make model text the user's own work.",
+   "new_text": "and it tells the student that the Common App, Yale and many programs count substantive AI-written content as not the applicant's own work. And it tells users that recent model output may carry a provenance watermark \\citep{anthropic2026marks,bleeping2026watermark} and that the skill is not a way to hide AI use."
+  },
+  {
+   "severity": "minor",
+   "location": "Ethical considerations, \"Human writing and raters\", last sentence (skeptic)",
+   "problem": "The released survey admits raters under 18 on self-attested parental permission, and the paper doesn't say so. The survey's answer key sits in the released results folder, which would let raters unblind themselves; remove it from the public repository before rating starts. The \\TBD marker is unchanged.",
+   "evidence": "survey/reading-study.html line 68: \"If you are under 18, please take part only with a parent's or guardian's permission.\" eval/results/survey_pool_key.json is tracked in git and maps each question to its conditions (e.g. Q01 ps_kacper x=F, y=P).",
+   "old_text": "Any human rating study uses volunteers who give informed consent, collects no names or contact details, and \\TBD{had approval from <school or teacher>}.",
+   "new_text": "Any human rating study uses volunteers who give informed consent, collects no names or contact details, and \\TBD{had approval from <school or teacher>}. Raters under 18 take part only with a parent's or guardian's permission, which the survey asks for but cannot verify, and the survey's answer key is withheld from the public release until rating ends."
+  },
+  {
+   "severity": "minor",
+   "location": "Appendix A, table placement (consistency reviewer)",
+   "problem": "A two-column float with the [h] specifier triggers a LaTeX warning.",
+   "evidence": "Scratch compile log: \"LaTeX Warning: `h' float specifier changed to `ht'.\"",
+   "old_text": "\\begin{table*}[h]",
+   "new_text": "\\begin{table*}[t]"
+  },
+  {
+   "severity": "minor",
+   "location": "references.bib, karr2026detection author field (citation reviewer)",
+   "problem": "The first author's generational suffix is missing.",
+   "evidence": "Local full text of arXiv 2608.11256: title page \"Jonathan A. Karr Jr.\".",
+   "old_text": "author    = {Karr, Jonathan A. and Khvatskii, Grigorii and Hua, Ting and Chawla, Nitesh V.},",
+   "new_text": "author    = {Karr, Jr., Jonathan A. and Khvatskii, Grigorii and Hua, Ting and Chawla, Nitesh V.},"
+  }
+ ],
+ "summary": "The four reviewers' findings came to 79 edits: 3 critical, 32 major and 44 minor. Overlapping items were merged into one edit each.\n\n**The skeptic's three most important concerns, in plain words**\n1. **The released version was picked using the test set.** Versions 4 and 6 were both frozen before the held-out briefs were written. The author then chose version 4 because it did better on those same briefs. The released version 7 was assembled after that and was never tested as a whole. So \"the skill beat everything on held-out briefs\" is somewhat flattering. The conclusion still holds, because version 6 also beat every baseline, but the paper has to say so.\n2. **One model family did everything.** Same-family agents wrote the skill, produced every text and judged them. Versions 5 and 6 were tuned on those judges' comments. Most judges were told to hunt for AI writing, which is exactly what the skill hides. The held-out round tests new briefs, not new judges. So the results show what this model family likes, not what human readers like.\n3. **The judging was not fully blind.** Judges opened the texts through file paths that contained the condition letter. My recheck found this is worse than the skeptic reported: 6 of 128 writing judgments name each text's condition letter (for example \"T3 (L)\"), and the coaching counselor labelled all six students' feedback by path.\n\n**Verification.** I recomputed every numeric correction from eval/results using analyze.py, judges.py, the score files, the coaching files and the scripts. Where the local notes or full texts allowed, I also checked the citation claims, including Chakrabarty's 28%/20%/18%/17% and Karr's \"Jr.\".\n\nAll reviewer numbers held except these, which I changed:\n- The skeptic said no writing judge named a condition. That is false (see concern 3).\n- The skeptic's Holm threshold of 0.023 is really 0.0234, so the edit says \"below 0.025\".\n- \"Every text the skill wrote passed\" is false for version 6 (its explain_6 text scored 35.6% on D1), so the edit names version 4.\n- The skeptic's \"15 humanizer skills\" is 11.\n- The coach feedback length is 2,263 by wc -w; the paper's 2,264 is not reproducible by either counting method.\n- The \"arithmetic-heavy\" quote is about the version 6 Rebuild, which also runs on version 6's files. That makes it an overgeneralization rather than a misattribution, so I downgraded it to minor.\n\n**Checks on the edit list**\n- Every old_text occurs exactly once in main.tex or references.bib, and no two edits overlap.\n- I applied all 79 edits to a scratch copy and compiled it: no undefined citations or references and no overfull boxes.\n- The body still ends on page 8, so there is very little room for anything more.\n- The merged abstract is 198 words, under ACL's 200-word limit.\n- The new bib entries are one edit appended after the yale2026ai entry. Add real access dates to the two college-essay entries.\n\n**Dropped**\n- The scripts/figures.py change: it is not in main.tex. Its label fixes are still worth making by hand.\n- The Turnitin \\TBD placeholder: replaced by the real citation.\n\n**Data changes needed alongside the text** (two edits describe the state after these are done):\n- Rename the two Connecticut College keys in eval/results/rescore3.json that contain the students' names.\n- Remove eval/results/survey_pool_key.json from the public repo before rating starts.\n\nEdit list with all fields: /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/edits.json. Patched scratch build: /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/build/main.pdf."
+}

@@ -1,0 +1,332 @@
+{
+ "note": "Held-out test: 16 admitted essays never studied during development. H real, P plain, L word list, F skill v7, K skill v8 (frozen, hash 8fe68e27a7a0e007). Paired differences: [mean, 95% CI by bootstrap over essays]. Aggregate only.",
+ "piles_all_lenses": {
+  "n_ratings": 240,
+  "n_essays": 16,
+  "conds": {
+   "H": {
+    "n": 48,
+    "p_human": 86.35416666666667,
+    "p_human_ci": [
+     84.72916666666667,
+     87.85416666666667
+    ],
+    "judged_human": 1.0,
+    "quality": 6.208333333333333,
+    "quality_ci": [
+     5.958333333333333,
+     6.479166666666667
+    ]
+   },
+   "P": {
+    "n": 48,
+    "p_human": 44.770833333333336,
+    "p_human_ci": [
+     38.7078125,
+     50.83437500000001
+    ],
+    "judged_human": 0.375,
+    "quality": 6.375,
+    "quality_ci": [
+     6.041666666666667,
+     6.666666666666667
+    ],
+    "auc_vs_real": 0.9646267361111112,
+    "paired_p_human_minus_real": -41.583333333333336,
+    "paired_quality_minus_real": 0.16666666666666666,
+    "quality_ge_real": 0.7916666666666666
+   },
+   "L": {
+    "n": 48,
+    "p_human": 46.6875,
+    "p_human_ci": [
+     40.72864583333333,
+     52.604166666666664
+    ],
+    "judged_human": 0.375,
+    "quality": 6.354166666666667,
+    "quality_ci": [
+     6.125,
+     6.583333333333333
+    ],
+    "auc_vs_real": 0.9626736111111112,
+    "paired_p_human_minus_real": -39.666666666666664,
+    "paired_quality_minus_real": 0.14583333333333334,
+    "quality_ge_real": 0.8333333333333334
+   },
+   "F": {
+    "n": 48,
+    "p_human": 51.895833333333336,
+    "p_human_ci": [
+     45.3125,
+     58.708333333333336
+    ],
+    "judged_human": 0.4583333333333333,
+    "quality": 6.291666666666667,
+    "quality_ci": [
+     6.041145833333334,
+     6.5625
+    ],
+    "auc_vs_real": 0.9064670138888888,
+    "paired_p_human_minus_real": -34.458333333333336,
+    "paired_quality_minus_real": 0.08333333333333333,
+    "quality_ge_real": 0.75
+   },
+   "K": {
+    "n": 48,
+    "p_human": 59.416666666666664,
+    "p_human_ci": [
+     53.7078125,
+     64.97968750000001
+    ],
+    "judged_human": 0.6458333333333334,
+    "quality": 5.979166666666667,
+    "quality_ci": [
+     5.729166666666667,
+     6.229166666666667
+    ],
+    "auc_vs_real": 0.8986545138888888,
+    "paired_p_human_minus_real": -26.9375,
+    "paired_quality_minus_real": -0.22916666666666666,
+    "quality_ge_real": 0.625
+   }
+  }
+ },
+ "by_lens": {
+  "editor": {
+   "H": {
+    "p_human": 85.6,
+    "judged_human": 1.0,
+    "quality": 6.0
+   },
+   "P": {
+    "p_human": 28.4,
+    "judged_human": 0.0,
+    "quality": 6.06
+   },
+   "L": {
+    "p_human": 34.2,
+    "judged_human": 0.062,
+    "quality": 6.25
+   },
+   "F": {
+    "p_human": 38.6,
+    "judged_human": 0.188,
+    "quality": 6.19
+   },
+   "K": {
+    "p_human": 47.4,
+    "judged_human": 0.375,
+    "quality": 5.88
+   }
+  },
+  "reader": {
+   "H": {
+    "p_human": 84.9,
+    "judged_human": 1.0,
+    "quality": 6.19
+   },
+   "P": {
+    "p_human": 36.8,
+    "judged_human": 0.188,
+    "quality": 6.38
+   },
+   "L": {
+    "p_human": 33.9,
+    "judged_human": 0.125,
+    "quality": 6.25
+   },
+   "F": {
+    "p_human": 38.3,
+    "judged_human": 0.25,
+    "quality": 6.06
+   },
+   "K": {
+    "p_human": 52.2,
+    "judged_human": 0.562,
+    "quality": 5.94
+   }
+  },
+  "reader2": {
+   "H": {
+    "p_human": 88.6,
+    "judged_human": 1.0,
+    "quality": 6.44
+   },
+   "P": {
+    "p_human": 69.1,
+    "judged_human": 0.938,
+    "quality": 6.69
+   },
+   "L": {
+    "p_human": 71.9,
+    "judged_human": 0.938,
+    "quality": 6.56
+   },
+   "F": {
+    "p_human": 78.8,
+    "judged_human": 0.938,
+    "quality": 6.62
+   },
+   "K": {
+    "p_human": 78.6,
+    "judged_human": 1.0,
+    "quality": 6.12
+   }
+  }
+ },
+ "paired": {
+  "K-F": {
+   "p_human": [
+    7.52,
+    2.44,
+    13.08
+   ],
+   "quality": [
+    -0.31,
+    -0.58,
+    -0.04
+   ],
+   "p_human_main_judges": [
+    11.38,
+    4.53,
+    18.66
+   ]
+  },
+  "K-L": {
+   "p_human": [
+    12.73,
+    6.79,
+    18.25
+   ],
+   "quality": [
+    -0.38,
+    -0.62,
+    -0.1
+   ],
+   "p_human_main_judges": [
+    15.75,
+    7.84,
+    23.78
+   ]
+  },
+  "K-P": {
+   "p_human": [
+    14.65,
+    9.33,
+    20.27
+   ],
+   "quality": [
+    -0.4,
+    -0.71,
+    -0.04
+   ],
+   "p_human_main_judges": [
+    17.22,
+    10.5,
+    24.25
+   ]
+  },
+  "F-L": {
+   "p_human": [
+    5.21,
+    -0.19,
+    10.33
+   ],
+   "quality": [
+    -0.06,
+    -0.29,
+    0.15
+   ],
+   "p_human_main_judges": [
+    4.38,
+    -1.59,
+    10.56
+   ]
+  },
+  "F-P": {
+   "p_human": [
+    7.12,
+    2.69,
+    12.15
+   ],
+   "quality": [
+    -0.08,
+    -0.4,
+    0.25
+   ],
+   "p_human_main_judges": [
+    5.84,
+    0.12,
+    11.91
+   ]
+  },
+  "L-P": {
+   "p_human": [
+    1.92,
+    -2.19,
+    6.04
+   ],
+   "quality": [
+    -0.02,
+    -0.29,
+    0.27
+   ],
+   "p_human_main_judges": [
+    1.47,
+    -3.72,
+    6.09
+   ]
+  }
+ },
+ "fidelity": {
+  "P": {
+   "mean_unsupported": 3.062,
+   "essays_with_zero": 2
+  },
+  "L": {
+   "mean_unsupported": 2.688,
+   "essays_with_zero": 3
+  },
+  "F": {
+   "mean_unsupported": 0.938,
+   "essays_with_zero": 8
+  },
+  "K": {
+   "mean_unsupported": 0.188,
+   "essays_with_zero": 13
+  }
+ },
+ "detectors": {
+  "H": {
+   "desklib": 37.8,
+   "fakespot": 66.8,
+   "superannotate": 61.2,
+   "pass_all_three_below_20": 1
+  },
+  "P": {
+   "desklib": 28.4,
+   "fakespot": 46.7,
+   "superannotate": 32.0,
+   "pass_all_three_below_20": 2
+  },
+  "L": {
+   "desklib": 20.9,
+   "fakespot": 34.4,
+   "superannotate": 20.9,
+   "pass_all_three_below_20": 5
+  },
+  "F": {
+   "desklib": 7.0,
+   "fakespot": 11.7,
+   "superannotate": 13.0,
+   "pass_all_three_below_20": 10
+  },
+  "K": {
+   "desklib": 18.4,
+   "fakespot": 22.1,
+   "superannotate": 21.9,
+   "pass_all_three_below_20": 6
+  }
+ }
+}

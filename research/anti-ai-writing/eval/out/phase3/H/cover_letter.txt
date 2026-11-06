@@ -1,0 +1,18 @@
+Subject: Junior Counselor application, Code Sprouts (Wren Abernathy-Solís)
+
+Dear Ms. Fenwick,
+
+I'd like to apply for the Junior Counselor position at Code Sprouts this summer. I'm a sophomore at Bramblecote High School. As a little kid I went to Saturday story time at the library, and these days it's where I study.
+
+Since July 2025 I have babysat two kids, ages 6 and 9, about two evenings a week, which adds up to more than 70 visits. In November the 9-year-old saw my laptop, so I showed him Scratch. He built a cat sprite that runs away from a dog, and now he asks to "do the cat game" most visits. He added a score counter himself, and getting more kids to that point is what I'd most like to do at Code Sprouts.
+
+I joined my school's Scratch club in the fall of ninth grade. We meet Wednesdays at lunch, with about eight regulars. On March 12, when middle schoolers visited, our adviser, Mr. Idris Vantongeren, had me run a 40-minute session for 11 sixth graders. Two laptops wouldn't log in and we lost ten minutes, but by the end every student had a sprite moving with the arrow keys.
+
+My own project for the February club showcase went worse. I planned a library book quiz game with 40 questions, a timer, and a score. It froze whenever the timer hit zero during a score update, and I couldn't fix it, so I showed six questions and no timer. I should have built five questions and tested them before adding the timer. That's the advice I'd give a beginner, too: get a small version working first.
+
+I'm not CPR certified yet, but I signed up for the Port Ellery Fire Department community class on May 3. A family trip means I would miss Monday, July 20. I can work all the other camp days.
+
+Mr. Vantongeren has agreed to be my reference. Thank you for considering my application, and I'm happy to answer any questions.
+
+Sincerely,
+Wren Abernathy-Solís

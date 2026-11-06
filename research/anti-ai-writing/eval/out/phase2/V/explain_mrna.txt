@@ -1,0 +1,13 @@
+How do mRNA vaccines teach the immune system?
+
+There is no virus in an mRNA vaccine, not even a dead one. The syringe holds a strand of genetic instructions wrapped in fat, and your own cells follow those instructions to build one piece of a virus for your immune system to study.
+
+Your immune system's targeted defenses have to learn to recognize a new germ before they can attack it, and the first time that takes a week or more while the virus multiplies. Most older vaccines teach the lesson early by injecting the target: a weakened or killed virus, or a purified viral protein. An mRNA vaccine has your own cells make the target instead.
+
+Messenger RNA is a molecule your cells use constantly to carry protein recipes from your DNA to the ribosomes, which assemble proteins. The COVID-19 vaccines from Pfizer-BioNTech and Moderna carry the recipe for the spike protein, the knobs on the coronavirus's surface (the "crown" in its name) that let it attach to human cells. Loose mRNA breaks apart quickly, so it travels inside lipid nanoparticles, tiny bubbles of fat that protect it and help it get into cells near the injection site.
+
+Inside a cell, ribosomes read the mRNA and make spike proteins. Pieces of spike end up on the cell's surface, and immune cells called dendritic cells carry spike to nearby lymph nodes. There, B cells whose receptors fit spike multiply and start making antibodies that stick to the virus and block it. Helper T cells coordinate the response, and killer T cells learn to destroy infected cells. Some of these B and T cells stay on as memory cells, so the next time spike shows up, the defense starts much faster.
+
+Can the mRNA change your DNA? No. It never enters the nucleus, where your DNA is kept, and the cell breaks it down within a few days. Spike alone can't give you COVID-19 either, because it carries none of the virus's genes and can't copy itself. A sore arm or a tired day after the shot is a sign of the immune response getting started.
+
+Researchers had been trying to make mRNA vaccines work since the 1990s, but lab-made mRNA set off inflammation and was destroyed too quickly. Katalin Karikó and Drew Weissman found that swapping one of its chemical building blocks, uridine, for a slightly modified version greatly reduced the inflammation, and they shared the 2023 Nobel Prize in Physiology or Medicine for it. Because the vaccine is mostly a genetic sequence, companies could start designing COVID-19 vaccines once the new coronavirus's genetic code was published in January 2020, without first growing the virus in a lab.

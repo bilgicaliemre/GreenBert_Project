@@ -1,0 +1,28 @@
+{
+ "ps_1.txt": {
+  "words": 625,
+  "chunks": 2,
+  "desklib": 2.2,
+  "desklib_chunks": [
+   0.1,
+   3.9
+  ],
+  "fakespot": 4.7,
+  "fakespot_chunks": [
+   0.2,
+   8.6
+  ]
+ },
+ "supp_1.txt": {
+  "words": 247,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.3,
+  "fakespot_chunks": [
+   0.3
+  ]
+ }
+}
