@@ -1,0 +1,12 @@
+judgments 40
+P    mean rank 2.70  first 16/40  quality 7.08  human 5.25  unsupported 1.10
+V9   mean rank 1.93  first 15/40  quality 7.62  human 6.00  unsupported 1.73
+V11  mean rank 2.80  first 3/40  quality 6.92  human 5.50  unsupported 1.90
+V12  mean rank 2.58  first 6/40  quality 7.00  human 5.62  unsupported 1.27
+V12 ranked above V9 in 13 of 40; mean rank advantage -0.65 [-1.2, -0.05] (bootstrap over briefs)
+V12 ranked above P in 23 of 40; mean rank advantage +0.12 [-0.7, 0.95] (bootstrap over briefs)
+V12 ranked above V11 in 21 of 40; mean rank advantage +0.23 [-0.35, 0.8] (bootstrap over briefs)
+V11 ranked above V9 in 8 of 40; mean rank advantage -0.88 [-1.32, -0.38] (bootstrap over briefs)
+V11 ranked above P in 21 of 40; mean rank advantage -0.10 [-0.97, 0.8] (bootstrap over briefs)
+V9 ranked above P in 24 of 40; mean rank advantage +0.78 [-0.17, 1.65] (bootstrap over briefs)
+mean rank by genre: {"argue": {"V9": 1.5, "V11": 2.25, "P": 3.88, "V12": 2.38}, "explain": {"V9": 1.12, "V11": 2.5, "V12": 2.5, "P": 3.88}, "lit": {"V12": 2.12, "V9": 1.62, "P": 3.75, "V11": 2.5}, "ps": {"P": 1, "V12": 2.62, "V11": 3.62, "V9": 2.75}, "supp": {"P": 1, "V12": 3.25, "V9": 2.62, "V11": 3.12}}

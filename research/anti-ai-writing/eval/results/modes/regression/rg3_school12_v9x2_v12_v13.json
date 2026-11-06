@@ -1,0 +1,113 @@
+{
+ "n_judgments": 24,
+ "conds": {
+  "V9": {
+   "mean_rank": 2.25,
+   "first": 10,
+   "n": 24,
+   "quality": 7.71,
+   "human": 5.25,
+   "unsupported": 3.08
+  },
+  "V9b": {
+   "mean_rank": 2.29,
+   "first": 6,
+   "n": 24,
+   "quality": 7.67,
+   "human": 5.29,
+   "unsupported": 3.17
+  },
+  "V12": {
+   "mean_rank": 2.96,
+   "first": 4,
+   "n": 24,
+   "quality": 7.12,
+   "human": 5.12,
+   "unsupported": 2.96
+  },
+  "V13": {
+   "mean_rank": 2.5,
+   "first": 4,
+   "n": 24,
+   "quality": 7.54,
+   "human": 5.17,
+   "unsupported": 2.92
+  }
+ },
+ "pairs": {
+  "V13>V9": {
+   "wins": 10,
+   "losses": 14,
+   "rank_gain": -0.25,
+   "ci95": [
+    -1.33,
+    0.75
+   ]
+  },
+  "V13>V9b": {
+   "wins": 11,
+   "losses": 13,
+   "rank_gain": -0.21,
+   "ci95": [
+    -1,
+    0.58
+   ]
+  },
+  "V13>V12": {
+   "wins": 15,
+   "losses": 9,
+   "rank_gain": 0.46,
+   "ci95": [
+    -0.38,
+    1.25
+   ]
+  },
+  "V12>V9": {
+   "wins": 8,
+   "losses": 16,
+   "rank_gain": -0.71,
+   "ci95": [
+    -1.71,
+    0.25
+   ]
+  },
+  "V12>V9b": {
+   "wins": 8,
+   "losses": 16,
+   "rank_gain": -0.67,
+   "ci95": [
+    -1.54,
+    0.29
+   ]
+  },
+  "V9b>V9": {
+   "wins": 12,
+   "losses": 12,
+   "rank_gain": -0.04,
+   "ci95": [
+    -0.92,
+    0.79
+   ]
+  }
+ },
+ "by_genre": {
+  "argue": {
+   "V9b": 2.62,
+   "V9": 1.88,
+   "V13": 2.62,
+   "V12": 2.88
+  },
+  "explain": {
+   "V9b": 2.12,
+   "V13": 2.12,
+   "V9": 2.12,
+   "V12": 3.62
+  },
+  "lit": {
+   "V9b": 2.12,
+   "V12": 2.38,
+   "V9": 2.75,
+   "V13": 2.75
+  }
+ }
+}

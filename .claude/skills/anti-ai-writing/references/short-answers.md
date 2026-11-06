@@ -48,12 +48,13 @@ the risk for a real student is that AI help adds the over-crafted patterns.)
    endings ("Maybe both", "I think") on a conclusion the student is sure of. Where the student is unsure, say so
    once, plainly ("I don't know yet whether it will be chemistry or policy"); never turn an open question into a
    goal, a doubt into a certainty, or "kind of proud" into "proud".
-5. **Add no links the student did not make.** Facts the student gave separately stay separate: no "so", "because"
-   or "which is why" that turns two facts into cause and effect, and no reason for a choice the student did not
-   give.
-6. **Write in the student's careful written voice.** Full sentences, many of them long; contractions rare;
-   commas and full stops rather than colons and semicolons; a bigger word where the student would reach for one.
-   No clipped fragments for rhythm, no put-on casualness, no speech filler from the notes.
+5. **Add no causes or reasons the student did not give.** No "so", "because" or "which is why" that turns two of
+   the student's facts into cause and effect, and no motive for a choice the student did not state. Putting the
+   student's facts in order and joining them into one story is fine; that is writing, not invention.
+6. **Write in the student's careful written voice.** Full sentences, many of them long; ordinary contractions
+   where the student would use them (admitted answers used few, but stripping every one makes a 17-year-old sound
+   stiff); commas and full stops rather than colons and semicolons; a bigger word where the student would reach for
+   one. No clipped fragments for rhythm, no put-on casualness, no speech filler from the notes.
 7. **"Why us" starts from the student.** What the student already did, read, built or wondered about, then the
    specific course, lab, tradition or practice at this school that continues it, and why. Include only school
    details the student supplied and can stand behind; never add a program, course number or professor's name.
@@ -86,6 +87,6 @@ we had no set of real activity lists to test it against.)
 - Any quip, labeled reveal, planted metaphor or self-deprecating count? Cut it.
 - Read the last sentence alone: hedged, trailing or a punchline? End on the plain conclusion or the last fact.
 - Fact diff: every goal, conclusion, feeling and "so"/"because" link is in the notes, at the same strength.
-- Contractions, colons, clipped fragments: rare.
+- Colons and clipped fragments: rare. Contractions: as the student would write them, not zero.
 - "Why us": is every school detail supplied by the user, and could another applicant paste this elsewhere?
 - Word count within the limit.

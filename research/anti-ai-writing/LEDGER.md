@@ -186,3 +186,41 @@ questions, it had 0.25 unsupported statements per answer, 10 of 12 clean (not a 
 invented applicants were model-made, so judges partly caught invented content, not only the writing. For a real
 student the lesson is the reverse of the usual advice: AI help tends to add the over-crafted patterns; their own
 plain, committed sentences read as theirs.
+
+## Case 5. "Can you improve it?": editing real writing (benchmark, 2026-11-06)
+
+Human anchor: three kinds of real text written before 2022, 32 of each: essays by English learners in grades 9 to
+12 (the ELLIPSE corpus), winning ISEF abstracts, and Turkish charity-run appeals. Each was given to plain Claude
+and to the skill with the request a student would actually type, "Can you improve it?" or "Can you fix the grammar
+and mistakes?", and a one-line framing (my practice essay, my science-fair abstract, my campaign page). Blind judges
+rated single texts in mixed piles; a separate blind checker compared every edit with its original.
+
+What plain Claude returns for "improve it": a new text. It changed 75 to 90 percent of the words and added three
+to four statements per text that the writer never made: a thesis preview, a definition, a statistic or an
+authority, a reason the writer did not give, a stronger conclusion. Judges rated these edits better written than
+the originals and identified them as AI almost every time (0 percent of abstracts and 27 percent of appeals were
+judged the writer's own). Even "fix the grammar" rewrote a third of an abstract.
+
+What the skill (v10.1) returns for the same request: the writer's text with errors fixed and the clearest tells cut.
+On abstracts and appeals it changed 15 to 24 percent of the words, added 0.1 to 0.3 statements, and 91 to 99
+percent of its edits were judged the writer's own, about 36 to 40 points of p above plain on "improve". Quality was 0.25 to 0.45
+points lower than plain's rewrite and above the original.
+
+What a human eye notices: in a learner's essay, the errors are the voice. An errors-only copyedit alone dropped the
+share judged the student's own from 100 to 61 percent, and every model edit, plain or skill, fell to 5 percent or
+below. Judges named what gave the skill's edits away: template transitions ("First", "Additionally", "In
+conclusion"), definitions and authorities the student had not written, native idioms, and grammar that was clean
+everywhere instead of in places.
+
+What v11 changed: Edit mode now fixes only outright errors and anything that blocks meaning, adds nothing (no
+transitions, definitions, examples, statistics, reasons, idioms), never makes a claim stronger, keeps a non-native
+writer's grammatical phrasing, and lists up to five bigger changes for the writer to decide on instead of making
+them. A learner's practice or graded essay goes to Coach. On held-out texts, v11's "improve" edits changed far
+fewer statements (edits with no change in meaning: abstracts 6 to 44 percent, appeals 40 to 100, learner essays 0
+to 44) and kept more of the writer's voice (learner essays 6.9 to 8.9 of 10). The human-likeness gain over v10.1
+was clear for appeals (+4.1, interval +2.3 to +6.1) and not significant for abstracts or learner essays. The
+shipped version, v13, keeps this Edit mode unchanged.
+
+The lesson for a student: "improve it" is the most common request and the one where plain Claude does the most
+damage, because it answers a request for help with a rewrite in its own voice. Ask for errors to be fixed and
+bigger changes to be listed, and make those changes yourself.

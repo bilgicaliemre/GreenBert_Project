@@ -6,27 +6,8 @@ description: Write and edit prose that reads like a skilled human wrote it, with
 # Anti-AI writing
 
 Use this skill for any prose a person will read: essays, college applications, reports and papers,
-emails, posts, cover letters, summaries. Skip it for code, data tables and one-line chat answers.
-
-## Pick the mode first
-
-Find the row for the text, read its reference file, then follow the procedure below. Each reference was built by
-comparing model writing with real writing of that kind from before AI tools existed (admitted students' essays and
-short answers, winning science-fair abstracts, charity appeals).
-
-| Text | Mode | Read |
-|---|---|---|
-| Common App personal statement, a scholarship or program essay the student will submit | Coach. Never write it. | `references/personal-essay.md` |
-| Supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
-| Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |
-| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once | `references/research.md` |
-| Email, group message, fundraising appeal, announcement | Write or Edit | `references/messages.md` |
-| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes below |
-| A sample for a clearly fictional person (teaching, testing this skill) | Write | The reference for its genre |
-
-If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or
-Coach for an application). When a project has its own writing rules (for example GreenBERT's `research-paper`
-skill), follow them too; they win on conflicts.
+emails, posts, cover letters, summaries. Skip it for code, data tables and one-line chat answers. The table near the
+end says which mode and reference file to use for each kind of text.
 
 ## Why AI prose sounds like AI
 
@@ -115,9 +96,23 @@ version!" or end with offers.
 **Write** (user asks for new text). Run the full procedure. If the user gave no facts and the genre needs them
 (a personal story, a report on their data), ask two or three targeted questions first.
 
-**Edit** (user gives their own text). Minimum effective edit. Keep their voice: their contractions,
-sentence habits, humor, punctuation preferences. If they also gave a writing sample, it overrides the
-default style rules here, including the dash rule.
+**Edit** (user gives their own text and asks you to improve, fix or polish it). Minimum effective edit, even
+when they say "improve it":
+- Fix outright errors (spelling, grammar, agreement, articles, punctuation) and anything that blocks the meaning.
+  Cut clear AI tells if the text has them.
+- Keep everything else: their sentences and their order, vocabulary, repetitions, paragraphing, contractions,
+  humor and punctuation habits. Do not add transitions ("First", "Additionally", "In conclusion"), a thesis
+  preview, definitions, examples, statistics, appeals to authority ("research shows"), idioms or reasons the
+  writer did not write, and do not make a claim stronger or more certain. For a writer whose first language is
+  not English, fix the grammar but do not make the phrasing sound native.
+- After the text, list up to five bigger changes the writer could make (a missing example, an unclear claim, the
+  order of paragraphs), one line each, without writing the new sentences for them.
+Why: in blind tests on real student writing, answering "improve it" with a rewrite (75 to 90 percent of words
+changed) made texts read as AI (0 to 33 percent judged the writer's own) and added three to four statements per
+text; edits at this level kept abstracts and appeals reading as the writer's own (90 to 100 percent). For a
+learner's practice or graded essay, this is Coach territory: return the corrected text and the list, never a
+rewrite. If the user also gave a writing sample, it overrides the default style rules here, including the dash
+rule.
 
 **Rebuild** (the user says an AI wrote it or asks you to rewrite an AI draft; if you only suspect it, use Edit,
 since tells are not proof of authorship). For a student's own application essay, use Coach mode. Polishing keeps
@@ -176,6 +171,26 @@ technique, is fine.
   an unrequested translation. Full guidance, including punctuation by register: `references/messages.md`.
 - **Blog posts:** a real opening (what happened, what you found), first person, at least one thing that
   surprised you, no "In today's fast-paced world".
+
+## Which mode and reference for which text
+
+Find the row for the text and read its reference file (only that one: the rules in the other references are for other kinds of text). Each reference was built by
+comparing model writing with real writing of that kind from before AI tools existed (admitted students' essays and
+short answers, winning science-fair abstracts, charity appeals).
+
+| Text | Mode | Read |
+|---|---|---|
+| Common App personal statement, a scholarship or program essay the student will submit | Coach. Never write it. | `references/personal-essay.md` |
+| Supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
+| Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |
+| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once | `references/research.md` |
+| Email, group message, fundraising appeal, announcement | Write or Edit | `references/messages.md` |
+| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes below |
+| A sample for a clearly fictional person (teaching, testing this skill) | Write | The reference for its genre |
+
+If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or
+Coach for an application). When a project has its own writing rules (for example GreenBERT's `research-paper`
+skill), follow them too; they win on conflicts.
 
 ## Integrity, stated plainly
 

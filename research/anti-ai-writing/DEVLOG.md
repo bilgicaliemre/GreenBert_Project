@@ -1101,3 +1101,246 @@ about 82M tokens, which I first reported to the user as the round's overrun befo
 workflow count; excluding cache reads the whole round used about 6M; (2) open-ended web agents need a turn cap, or
 collection should be a script, as it was for ISEF.
 
+
+## 24. Edit mode against real writing, ablations, a regression check, v11 to v13
+
+**Request.** An open budget over two runs (at least 30M workflow tokens), for tuning the skill, other useful work, and
+then the paper. Run 1 ended when the user's five-hour limit ran out (30.5M tokens by the workflow count); run 2
+started when it reset, resumed every cut-off workflow from its journal (finished agents replay from cache) and
+continued until the limit ran out again; run 3 picked up from there.
+
+### Edit mode on real pre-2022 writing (the main result)
+
+Every earlier benchmark asked how a text written from notes compares with the real one. The more common use is the
+opposite: a person has a draft and asks for help. So we took real texts and asked for edits.
+
+**Texts (32 per genre, 16 development and 16 test, none used before):**
+- ESL essays: 32 essays by English learners in grades 9 to 12 from the ELLIPSE corpus (CC BY 4.0), 250 to 500
+  words, overall proficiency 2.5 to 4.0 of 5, at most three per prompt, none with anonymization placeholders.
+- ISEF abstracts: 32 winning abstracts 2014 to 2021 not used in section 23, including the remaining seven from Turkey.
+- Turkish charity-run appeals: 31 "Neden Koşuyorum" texts not used in the write benchmark of section 22.
+
+**Versions of each text:** the original (H); an errors-only copyedit (C: spelling, grammar and punctuation, nothing
+else); plain Claude asked "Can you improve it?" (PI) and "Can you fix the grammar and mistakes?" (PG), with a short
+realistic framing (a practice essay for English class; my science-fair abstract; my campaign page text); the skill
+(v10.1) given the same two requests (SI, SG). Two texts per agent, each handled as a separate request.
+
+**Measures:** blind single-text piles of 12 with two lenses per genre (English teacher and writing researcher; ISEF
+judge and journal editor; Turkish donor and NGO editor), rating p(the person wrote it with no AI writing or editing)
+and quality; a blind meaning check comparing each edit with its original (statements added, removed or changed,
+and how much of the writer's voice is kept, 1 to 10); and the share of the original's words changed.
+
+ISEF abstracts (32):
+
+| Version | Words changed | Judged the writer's own | Mean p | Quality | Statements added / changed per text | Voice kept (1-10) |
+|---|---|---|---|---|---|---|
+| Original | - | 100% | 84.8 | 6.11 | - | - |
+| Errors-only copyedit | 3% | 100% | 80.6 | 6.17 | 0.00 / 0.00 | 10.0 |
+| Plain: "fix the grammar" | 36% | 30% | 43.9 | 6.34 | 0.91 / 2.91 | 7.4 |
+| Skill v10.1: "fix the grammar" | 10% | 91% | 69.7 | 6.36 | 0.09 / 0.47 | 9.4 |
+| Plain: "improve it" | 76% | 0% | 28.6 | 6.67 | 3.34 / 5.91 | 5.1 |
+| Skill v10.1: "improve it" | 15% | 91% | 67.7 | 6.42 | 0.12 / 1.19 | 8.9 |
+
+Paired over texts: skill against plain on "improve" +39.5 [+36.0, +42.9], on "fix grammar" +27.4 [+23.4, +31.5]; copyedit against original -3.7 [-5.7, -1.8].
+
+Turkish appeals (31):
+
+| Version | Words changed | Judged the writer's own | Mean p | Quality | Statements added / changed per text | Voice kept (1-10) |
+|---|---|---|---|---|---|---|
+| Original | - | 100% | 89.9 | 5.57 | - | - |
+| Errors-only copyedit | 6% | 98% | 83.7 | 5.78 | 0.00 / 0.00 | 10.0 |
+| Plain: "fix the grammar" | 21% | 97% | 75.0 | 5.94 | 0.00 / 0.55 | 8.9 |
+| Skill v10.1: "fix the grammar" | 10% | 98% | 81.8 | 5.92 | 0.00 / 0.06 | 9.8 |
+| Plain: "improve it" | 75% | 27% | 40.9 | 6.55 | 2.74 / 3.52 | 6.0 |
+| Skill v10.1: "improve it" | 24% | 99% | 77.1 | 6.10 | 0.29 / 0.68 | 8.7 |
+
+Paired over texts: skill against plain on "improve" +35.9 [+30.5, +41.7], on "fix grammar" +7.1 [+3.9, +10.7]; copyedit against original -6.4 [-8.8, -4.3].
+
+ESL essays (32):
+
+| Version | Words changed | Judged the writer's own | Mean p | Quality | Statements added / changed per text | Voice kept (1-10) |
+|---|---|---|---|---|---|---|
+| Original | - | 100% | 95.3 | 2.97 | - | - |
+| Errors-only copyedit | 16% | 61% | 55.3 | 3.75 | 0.03 / 0.62 | 9.4 |
+| Plain: "fix the grammar" | 38% | 3% | 30.0 | 4.42 | 0.81 / 4.38 | 6.9 |
+| Skill v10.1: "fix the grammar" | 34% | 5% | 31.9 | 4.23 | 0.41 / 2.91 | 7.9 |
+| Plain: "improve it" | 90% | 0% | 19.2 | 5.44 | 3.91 / 8.31 | 4.3 |
+| Skill v10.1: "improve it" | 47% | 3% | 30.5 | 4.50 | 0.62 / 3.69 | 7.0 |
+
+Paired over texts: skill against plain on "improve" +11.3 [+8.3, +14.2], on "fix grammar" +1.9 [-0.5, +4.4]; copyedit against original -40.0 [-45.5, -34.5].
+
+What it shows:
+- Asked to "improve" a student's text, plain Claude rewrites most of it (75 to 90 percent of words), adds three to
+  four statements the writer never made, and the result reads as AI: 0 percent of abstracts and 27 percent of
+  appeals were judged the writer's own. The skill, given the same request, changed 15 to 24 percent of the words,
+  added 0.1 to 0.3 statements, and 91 to 99 percent were judged the writer's own (paired differences +39.5 and +35.9
+  points of p, intervals far from zero).
+- Asked only to fix grammar, plain Claude is much closer to the skill for appeals (both about 98 percent) but not for
+  abstracts (30 against 91 percent): even a "grammar" pass by plain Claude rewrote 36 percent of an abstract.
+- The English learners' essays are the exception. Their errors are their voice: an errors-only copyedit alone dropped
+  the judged-human share from 100 to 61 percent, and every model edit, plain or skill, fell to 0 to 5 percent. The
+  skill's "improve" edit was still 11 points of p above plain's, but no edit of a learner's essay passes as unedited.
+- Quality: the skill's edits scored about the same as plain Claude's (0.25 to 0.45 points lower on "improve", equal on
+  "fix grammar") and above the originals.
+
+### v11: a stricter Edit mode (developed on the development halves, tested on the test halves)
+
+Judges' reasons for the skill's ESL edits (development only): template transitions ("First", "Additionally", "In
+conclusion"), definitions and appeals to authority the student did not write, native idioms, uniformly clean grammar.
+v11 changes only the Edit-mode paragraph of SKILL.md: fix outright errors and anything that blocks meaning, keep
+everything else, add no transitions, thesis preview, definitions, examples, statistics, authority, idioms or reasons,
+never make a claim stronger, do not make a non-native writer's phrasing native, and list up to five bigger changes for
+the writer instead of making them; a learner's practice or graded essay goes to Coach.
+
+| Genre | Split | v11 vs v10.1, "improve" | v11 vs v10.1, "fix grammar" | Quality change, "improve" | Clean edits, "improve" (v10.1 / v11) | Voice kept, "improve" (v10.1 / v11) |
+|---|---|---|---|---|---|---|
+| Abstracts | dev | +7.3 [+3.1, +12.6] | +2.3 [-1.8, +7.2] | -0.03 | 31% / 56% | 9.1 / 9.1 |
+| Abstracts | test | +0.2 [-3.1, +3.6] | +2.5 [+0.4, +4.8] | -0.12 | 6% / 44% | 8.7 / 9.1 |
+| Appeals | dev | +4.0 [+1.6, +6.3] | +1.1 [-0.3, +2.6] | -0.31 | 50% / 94% | 8.7 / 9.8 |
+| Appeals | test | +4.1 [+2.3, +6.1] | +1.7 [-1.0, +4.3] | -0.30 | 40% / 100% | 8.7 / 10.0 |
+| ESL essays | dev | +8.4 [+2.7, +14.0] | +3.5 [-0.9, +8.0] | -0.41 | 0% / 31% | 7.2 / 8.4 |
+| ESL essays | test | +1.8 [-6.1, +10.7] | +4.4 [-1.3, +10.4] | -0.56 | 0% / 44% | 6.9 / 8.9 |
+
+### Ablations: which parts of the skill matter when writing from notes
+
+Writing from notes (test items, 16 per genre; same judges and piles design as sections 22 and 23). Variants of
+v10.1: full skill (AF), without `tells.md` (AT), SKILL.md alone (AS), the genre reference alone (AR), and a compact
+SKILL.md of 1,094 words (AC). Unsupported = statements the notes do not support, from a blind checker.
+
+| Variant | Abstracts: judged human / mean p | Abstracts: unsupported per text | Appeals: judged human / mean p | Appeals: unsupported per text |
+|---|---|---|---|---|
+| Plain | 22% / 39.2 | 0.19 | 16% / 35.4 | 0.69 |
+| Full skill (AF) | 22% / 40.7 | 0.06 | 59% / 51.2 | 0.44 |
+| No tells catalog (AT) | 38% / 41.7 | 0.00 | 56% / 52.3 | 0.50 |
+| SKILL.md only (AS) | 44% / 45.2 | 0.06 | 59% / 53.0 | 0.50 |
+| Genre reference only (AR) | 28% / 42.8 | 0.12 | 50% / 50.9 | 1.06 |
+| Compact SKILL.md (AC) | 25% / 39.8 | 0.06 | 44% / 48.8 | 0.81 |
+
+- For appeals the skill beats plain by +15.8 [+8.8, +23.0] points of p; no variant differs from the full skill by
+  more than the noise (all intervals cross zero). For abstracts written from notes nothing beats plain (AF +1.4
+  [-3.2, +5.8]), which repeats section 23: in this genre the gain comes from editing a real draft, not from writing.
+- Fidelity separates the variants where human-likeness does not: dropping SKILL.md (AR) or shortening it (AC) about
+  doubles unsupported statements in appeals (1.06 and 0.81 against 0.44). The hard rules and the fact diff in
+  SKILL.md carry the "never invent" behaviour; the long tells catalog adds little on these two genres.
+- Decision: keep the full skill. The compact version saves about 1,000 words of context but loses fidelity.
+
+### Regression check on the ten-genre briefs
+
+v10.1 had only been tested on the genres it was built for. To check that the new modes did not hurt everything
+else, I reran the 16 phase-3 briefs from sections 14 and 15 (personal statement, short answer, argument, explainer,
+literary analysis, two emails, cover letter, blog post, lab-report discussion, news article) with plain Claude, v9 and v10.1, and a
+panel of two lenses ranked the three versions of each brief blind (32 judgments).
+
+| Version | Mean rank (1 best) | Ranked first | Quality | Human-likeness (1-10) | Unsupported per text |
+|---|---|---|---|---|---|
+| Plain | 2.22 | 11 of 32 | 6.91 | 5.19 | 1.31 |
+| v9 | 1.47 | 18 of 32 | 7.59 | 6.31 | 1.12 |
+| v10.1 | 2.31 | 3 of 32 | 6.81 | 5.72 | 1.25 |
+
+This is a regression: v10.1 lost to v9 in 28 of 32 judgments and was no better than plain. Reading the judges'
+reasons and the texts showed three causes (from here on these 16 briefs count as development data). All references were loaded for every brief, so
+the short-answer rules (no contractions, no quips) leaked into blogs and emails and made them stiff. Short-answer
+rule 5 ("do not link facts with reasons the student did not give") was applied to every genre and turned notes into
+lists of sentences. And the stiffness itself: a personal statement with no contractions read like a form.
+
+v12 fixes these: the router says to read only the matching reference ("the rules in the other references are for
+other kinds of text"), rule 5 now forbids invented causes but allows joining the student's facts into one story,
+and ordinary contractions are allowed in short answers. It keeps v11's Edit mode. The check below uses the 20
+phase-2 briefs from section 8 (personal statements, short answers, arguments, explainers, literary analyses), each
+version given only its genre's reference, four versions per brief.
+
+Result (40 judgments; rank among four, 1 best):
+
+| Version | Mean rank | Ranked first | Quality | Human-likeness (1-10) | Unsupported per text |
+|---|---|---|---|---|---|
+| Plain | 2.70 | 16 of 40 | 7.08 | 5.25 | 1.10 |
+| v9 | 1.93 | 15 of 40 | 7.62 | 6.00 | 1.73 |
+| v11 | 2.80 | 3 of 40 | 6.92 | 5.50 | 1.90 |
+| v12 | 2.58 | 6 of 40 | 7.00 | 5.62 | 1.27 |
+
+v12 still lost to v9: ranked above it in 13 of 40, mean rank 0.65 worse [0.05, 1.2] (bootstrap over briefs). Scoping
+the references helped only a little (v12 against v11 +0.23, interval crossing zero). By genre, plain ranked first in
+every personal-statement and short-answer judgment, against every skill version; the gap between v9 and v12 sat in
+arguments, explainers and literary analyses, where the two versions got identical files apart from SKILL.md and
+their texts had the same surface features (sentence length, contractions, hedges, colons within 0.1 per 100 words).
+Judges described the v12 essays as accurate but more generic, and in six judgments named an ending on a caveat, an
+aside or a limitations note where v9 ended on the case.
+
+What differs in SKILL.md for these genres is mostly the "Pick the mode first" table that v10 put at the top. v13
+moves that table to the end (with a one-line pointer at the top) and changes nothing else. Test on the 12 school
+briefs, with a second, independent v9 sample (same prompt) to measure sampling noise; 24 judgments, four texts each:
+
+| Version | Mean rank | Ranked first | Quality |
+|---|---|---|---|
+| v9 (sample 1) | 2.25 | 10 of 24 | 7.71 |
+| v9 (sample 2) | 2.29 | 6 of 24 | 7.67 |
+| v12 | 2.96 | 4 of 24 | 7.12 |
+| v13 | 2.50 | 4 of 24 | 7.54 |
+
+The two v9 samples tied (12 of 24, -0.04), so the noise is centred. v12 lost to each v9 sample in 16 of 24
+judgments, the third time a v10-family version trailed v9 on these genres. v13 recovered most of the gap: against
+the v9 samples -0.25 [-1.33, +0.75] and -0.21 [-1.00, +0.58], against v12 +0.46 [-0.38, +1.25], quality within 0.2
+of v9. All of this is on development briefs that I read while diagnosing, so it shows the direction, not a clean
+held-out effect. The placement of a routing table at the top of an instruction file changed how well the model
+argued, which is worth knowing for anyone building multi-mode skills.
+
+### Surface features and a tells checker
+
+`research/anti-ai-writing/tools/tellcheck.py` flags the surface habits judges cited (hedges, stock connectors,
+inflated words, -ing tails, "not X but Y", signposts, punchline paragraph endings, clipped sentences, and sentence
+length, contractions and colons against the real texts in our data). It is not a detector, and its README says so.
+
+How far do surface features alone separate real from model text? A logistic regression on 22 features
+(`scripts/modes_benchmark/tools/surface_auc.py`), 5-fold cross-validated AUC, plus transfer (train on the other
+three genres):
+
+| Genre | Real / model texts | CV AUC | Transfer AUC | Strongest single features (AUC) |
+|---|---|---|---|---|
+| Application essays | 40 / 185 | 0.997 | 0.89 | dashes 0.998, colons 0.98, digits 0.90 |
+| Short answers | 28 / 68 | 0.92 | 0.79 | long sentences 0.78, sentence length 0.77 |
+| Fundraising appeals (Turkish) | 76 / 100 | 0.80 | 0.79 | spread of sentence length 0.81, sentence length 0.72 |
+| Research abstracts | 40 / 128 | 0.77 | 0.64 | spread of sentence length 0.66 |
+
+For essays, punctuation alone nearly identifies model text, which is why the skill's rules on dashes and colons
+matter there. For abstracts surface features are weak (0.77) while judges still separate model abstracts
+perfectly (AUC 1.00 in section 23), so what gives them away is content and structure, not word-level habits.
+
+### Detectors on the edits
+
+Three open-source detectors (desklib, fakespot, superannotate; score 0 to 100 = probability of AI) on the
+English edits. They cannot score Turkish, so appeals are left out. Pass = all three under 50.
+
+| Version | ESL essays: desklib / fakespot / superannotate | ESL: pass | Abstracts: desklib / fakespot / superannotate | Abstracts: pass |
+|---|---|---|---|---|
+| Original | 11 / 2 / 22 | 78% | 18 / 28 / 44 | 34% |
+| Errors-only copyedit | 50 / 16 / 45 | 25% | 22 / 33 / 50 | 28% |
+| Plain: "fix the grammar" | 84 / 76 / 71 | 0% | 63 / 62 / 70 | 3% |
+| Skill v10.1: "fix the grammar" | 77 / 68 / 66 | 3% | 35 / 45 / 65 | 6% |
+| Plain: "improve it" | 98 / 94 / 72 | 0% | 63 / 66 / 70 | 0% |
+| Skill v10.1: "improve it" | 84 / 74 / 70 | 0% | 37 / 42 / 62 | 9% |
+
+The detectors agree with the judges in direction. On abstracts the skill's edits score about half of plain's on
+two of three detectors, though few pass all three. On ESL essays an errors-only copyedit already moves desklib
+from 11 to 50: the detectors, like the judges, treat learner errors as a human signal. The detectors also flag
+real texts (only 78% of real ESL essays and 34% of real abstracts pass all three), so none of this is a usable
+test of authorship.
+
+### Shipped: v13
+
+v13 = v12 with the mode table moved to the end of SKILL.md (hash 5e5db96e61ff8552; changelogs in
+`skill_versions/v11`, `v12`, `v13`; zip `anti-ai-writing-v13.zip`). It carries v11's Edit mode, v10.1's genre
+references with v12's scoping, and v9's opening. A routing probe (`scripts/modes_benchmark/routing_probe.js`; five
+fictional requests, two samples each, graded blind) passed 10 of 10 for v12 and v13: an application essay ("make it
+better") and "write my Why Tufts" went to Coach with the AI-policy note, "improve my abstract" and a learner's "fix my
+grammar" got errors-only edits with suggestions listed separately, and an explainer was written in full. The graders
+ran with this project's CLAUDE.md, which also says to coach application essays, so the two Coach probes test less
+than the other three. v13 was not re-run on the edit benchmark; its Edit text is v11's, unchanged.
+
+### Notes
+- A safety filter repeatedly refused one judge pile of ISEF edits (it contained an edit that an upstream filter had
+  also flagged while editing); that pile is missing from the editor lens, so ISEF has 60 to 67 ratings per version
+  instead of 64.
+- Spend (workflow token count, the measure used throughout): 57.6M since run 1 started when this section was
+  written (run 1 30.5M; runs 2 and 3 27.1M), with the paper rewrite still running. The 30M minimum was passed in run 1.
+- The 5-hour usage limit stopped the work twice (end of run 1 at about 23:40Z and during run 2 at about 00:45Z);
+  both times every cut-off workflow was resumed from its journal, finished agents replaying from cache.
