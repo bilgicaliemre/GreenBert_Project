@@ -1,0 +1,17 @@
+{
+ "note": "Development set fidelity: unsupported claims per essay against the interview notes, blind checker (24 essays).",
+ "by_version": {
+  "F": {
+   "mean_unsupported": 1.5,
+   "essays_with_zero": 6
+  },
+  "K": {
+   "mean_unsupported": 0.125,
+   "essays_with_zero": 21
+  },
+  "V": {
+   "mean_unsupported": 0.583,
+   "essays_with_zero": 15
+  }
+ }
+}

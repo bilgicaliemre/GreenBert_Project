@@ -1,0 +1,11 @@
+Discussion
+
+Our results fit T = 2π√(L/g). The graph of T² against L is a straight line with an intercept of about −0.002 s², effectively zero, and its slope of 4.105 s²/m gives g = 9.62 m/s², about 1.9% below the textbook 9.81 m/s². All five periods came out about 1% longer than predicted from the textbook g (at 1.00 m, 2.026 s against 2.006 s). Random error would scatter points on both sides of the prediction, so an excess at every length suggests a systematic error.
+
+The most likely cause is the string. The cotton twine from the art room (proper string had run out) stretched: the 1.00 m length, measured before the bob was hung, was about 1.01 m after a few minutes loaded. We did not re-measure the other lengths, so each recorded L is probably too short, which makes g too low. If every length stretched by the same 1%, g would be about 9.72 m/s², closing roughly half the gap, but we only checked the stretch at 1.00 m.
+
+Timing fits the pattern less well. I did all the timing, and the ruler-drop test put my reaction time at about 0.2 s, or 0.02 s per swing. A reaction delay would add about the same time at every length, but our excess per swing grows from 0.009 s at 0.20 m to 0.020 s at 1.00 m. Jonah thinks I started the stopwatch late a couple of times; that would shorten the measured time, so it may widen the spread (up to 0.15 s over 10 swings) but cannot lengthen the periods. The release angle is not the cause either: it was eyeballed below 0.60 m and set with a protractor from there on, yet both groups are about 1% long.
+
+We left out trial 2 at 0.60 m (14.11 s, against 15.71 and 15.66 s). Jonah lost count when Mr. Pell came in to borrow stands, and 14.11 s divided by 9 gives 1.568 s, matching the other two trials, so we almost certainly timed 9 swings. Including it lowers R² from 1.000 to 0.997, though the slope barely changes because 0.60 m is the middle point.
+
+Next time we would use a phone light-gate app, Jonah's idea, to remove reaction time, and a less stretchy string, measuring each length with the bob hanging. We would also record which trials had a doubtful start.

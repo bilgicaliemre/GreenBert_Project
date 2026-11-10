@@ -1,0 +1,19 @@
+How does photosynthesis turn sunlight into food for a plant?
+
+A tree weighs far more than its seed, and the obvious guess is that the extra mass came from the soil. In the 1600s the Flemish chemist Jan van Helmont tested that. He grew a willow for five years in a pot of weighed soil, giving it only rainwater. The tree gained a lot of weight and the soil lost almost none, so he concluded the tree was made of water. He was partly right, but most of the wood itself came from the air.
+
+Photosynthesis is how a plant builds itself from air and water using light. The overall reaction is:
+
+6 CO2 + 6 H2O + light energy → C6H12O6 + 6 O2
+
+Carbon dioxide enters the leaf through tiny pores called stomata, and water comes up from the roots. Light ends up in no molecule; it supplies the energy, since glucose (C6H12O6) stores much more chemical energy than carbon dioxide and water do.
+
+The reaction runs in two stages inside chloroplasts, small structures in leaf cells that hold the pigment chlorophyll. Chlorophyll absorbs red and blue light and reflects green, which is why leaves look green.
+
+In the first stage, the light-dependent reactions, absorbed light sends electrons from chlorophyll along a chain of proteins in the chloroplast's inner membranes. The plant replaces those electrons by splitting water, and the leftover oxygen leaves through the stomata. Nearly all the oxygen in the air came from water split this way. The captured energy is stored in two carrier molecules, ATP and NADPH.
+
+The second stage, the Calvin cycle, spends that energy. An enzyme called rubisco attaches carbon dioxide to a five-carbon sugar, and ATP and NADPH turn the product into three-carbon sugars that the plant joins into glucose. This stage needs no light itself, but it stops soon after dark because it runs on the first stage's carriers.
+
+Glucose is the plant's food. The plant breaks some down in cellular respiration, as your cells do, and stores some as starch in places like potatoes. Much of the rest becomes cellulose, the tough material of cell walls and wood. That solves van Helmont's puzzle: the carbon in his willow's wood came from carbon dioxide in the air.
+
+You can watch the first stage at home. Put a sprig of the aquarium pondweed Elodea in a glass of water with a pinch of baking soda, under a bright lamp. Small bubbles, mostly oxygen, should rise from the cut end of the stem. Count them for a minute, then move the lamp farther away and count again; with less light, the bubbles should come more slowly.

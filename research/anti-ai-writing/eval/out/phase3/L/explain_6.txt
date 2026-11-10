@@ -1,0 +1,17 @@
+Why February Sometimes Gets a 29th Day
+
+Every four years, February picks up an extra day, and most of us never stop to ask why. Then someone mentions that 2100 won't be a leap year, and the system suddenly looks odd. The reason comes down to two numbers that refuse to divide evenly.
+
+For calendar purposes, a year is the time Earth takes to go from one spring equinox to the next. Astronomers call this the tropical year, and it lasts about 365 days, 5 hours, 48 minutes and 46 seconds. A calendar, though, has to count in whole days. You can't end one year at quarter to six in the morning and start the next one at lunch.
+
+What happens if you ignore those extra hours? Every year the calendar slips out of step with the Sun by almost a quarter of a day. After four years it's off by a full day. After a century it's off by about 24 days. Wait long enough and northern summer would arrive in what the calendar calls December.
+
+The Romans noticed. The calendar introduced under Julius Caesar in 46 BCE handled the problem the simple way: add one day every four years. That makes the average calendar year 365.25 days long, which is very close to the real thing.
+
+Very close isn't exact. A quarter of a day is six hours, but the true leftover is about 5 hours and 49 minutes. So the Julian calendar ran roughly 11 minutes long every year. Eleven minutes sounds like nothing. Over centuries it adds up to about one day every 128 years, and by the 1500s the spring equinox was landing around ten days earlier on the calendar than it had in the early centuries of the Church. That bothered church leaders, because the date of Easter is worked out from the equinox.
+
+In 1582, Pope Gregory XIII brought in a fix with two parts. First, ten days were simply deleted. In countries that switched right away, Thursday, October 4 was followed by Friday, October 15. Second, the leap year rule got an exception. A year divisible by 4 is still a leap year, unless it's divisible by 100. Those century years are skipped, unless they're also divisible by 400.
+
+That's why 1900 was not a leap year but 2000 was. 2100 won't be one either.
+
+Dropping three leap days every 400 years brings the average calendar year to 365.2425 days. The real figure is about 365.2422. That leaves the Gregorian calendar drifting by only one day in more than 3,000 years. Not perfect, sure. But nobody reading this will have to deal with it.

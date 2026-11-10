@@ -1,0 +1,130 @@
+[
+ {
+  "id": "ps_kacper",
+  "task": "ps",
+  "genre": "college personal statement",
+  "words": "550-650",
+  "facts": "eval/briefs3/persona_5_depth.md",
+  "brief": "Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Describe a problem you've solved or would like to solve. It can be an intellectual challenge, a research query, an ethical dilemma - anything that is of personal importance, no matter the scale. Explain its significance to you and what steps you took or could be taken to identify a solution.' Use only facts from the notes."
+ },
+ {
+  "id": "supp_kacper",
+  "task": "supp",
+  "genre": "college supplemental short answer",
+  "words": "230-250",
+  "facts": "eval/briefs3/persona_5_depth.md",
+  "brief": "Write the student's supplemental short answer (max 250 words): 'Why do you want to study engineering, and what would you bring to our engineering community?' Use only facts from the notes."
+ },
+ {
+  "id": "ps_marisol",
+  "task": "ps",
+  "genre": "college personal statement",
+  "words": "550-650",
+  "facts": "eval/briefs3/persona_6_depth.md",
+  "brief": "Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Reflect on a time when you questioned or challenged a belief or idea. What prompted your thinking? What was the outcome?' Use only facts from the notes."
+ },
+ {
+  "id": "supp_marisol",
+  "task": "supp",
+  "genre": "college supplemental short answer",
+  "words": "230-250",
+  "facts": "eval/briefs3/persona_6_depth.md",
+  "brief": "Write the student's supplemental short answer (max 250 words): 'Describe the world you come from (your family, community or school) and how it has shaped your dreams and aspirations.' Use only facts from the notes."
+ },
+ {
+  "id": "argue_5",
+  "task": "argue",
+  "genre": "argumentative essay, 11th-grade English class",
+  "words": "500-600",
+  "facts": null,
+  "brief": "Write an argumentative essay for an 11th-grade English class: 'Should high schools start the school day later, at 9:00 a.m. or after?' Take a clear position. Do NOT invent statistics, studies, quotes or named sources; argue from reasoning and everyday school experience."
+ },
+ {
+  "id": "argue_6",
+  "task": "argue",
+  "genre": "argumentative essay, 11th-grade English class",
+  "words": "500-600",
+  "facts": null,
+  "brief": "Write an argumentative essay for an 11th-grade English class: 'Should homework count toward a student's grade, or be practice only?' Take a clear position. Do NOT invent statistics, studies, quotes or named sources; argue from reasoning and everyday school experience."
+ },
+ {
+  "id": "explain_5",
+  "task": "explain",
+  "genre": "explanatory article for a high-school science blog",
+  "words": "380-450",
+  "facts": null,
+  "brief": "Write an explanatory article for a high-school science club blog: 'How do noise-cancelling headphones make sound disappear?' Accurate general science only. Do NOT invent statistics, studies, quotes or named sources."
+ },
+ {
+  "id": "explain_6",
+  "task": "explain",
+  "genre": "explanatory article for a high-school science blog",
+  "words": "380-450",
+  "facts": null,
+  "brief": "Write an explanatory article for a high-school science club blog: 'Why do we have leap years, and why are some century years not leap years?' Accurate general science only. Do NOT invent statistics, studies, quotes or named sources."
+ },
+ {
+  "id": "lit_romeo",
+  "task": "lit",
+  "genre": "literary analysis essay paragraph(s) for English class",
+  "words": "420-500",
+  "facts": "eval/briefs3/lit_romeo_quotes.md",
+  "brief": "Write a short literary analysis (2-3 paragraphs) for an English class on Romeo and Juliet: Does the play blame fate or the characters' own haste for the lovers' deaths? Quote only from the provided quotes file."
+ },
+ {
+  "id": "lit_pride",
+  "task": "lit",
+  "genre": "literary analysis essay paragraph(s) for English class",
+  "words": "420-500",
+  "facts": "eval/briefs3/lit_pride_quotes.md",
+  "brief": "Write a short literary analysis (2-3 paragraphs) for an English class on Pride and Prejudice: How does Elizabeth Bennet's first impression of Mr. Darcy mislead her, and what does the novel suggest about judging people quickly? Quote only from the provided quotes file."
+ },
+ {
+  "id": "email_extension",
+  "task": "email",
+  "genre": "email from a student to a teacher",
+  "words": "120-200",
+  "facts": "eval/briefs3/email_extension_facts.md",
+  "brief": "Write the student's email to her chemistry teacher asking for an extension on the lab report. Use only facts from the notes."
+ },
+ {
+  "id": "email_lab",
+  "task": "email",
+  "genre": "cold email from a high-school student to a university professor",
+  "words": "150-250",
+  "facts": "eval/briefs3/email_lab_facts.md",
+  "brief": "Write the student's email to the professor asking whether she could volunteer in the lab next summer. Use only facts from the notes."
+ },
+ {
+  "id": "cover_letter",
+  "task": "cover",
+  "genre": "cover letter for a summer job",
+  "words": "250-350",
+  "facts": "eval/briefs3/cover_letter_facts.md",
+  "brief": "Write the applicant's cover letter for the junior counselor job. Use only facts from the notes."
+ },
+ {
+  "id": "blog_robotics",
+  "task": "blog",
+  "genre": "post on a high-school robotics team blog",
+  "words": "400-550",
+  "facts": "eval/briefs3/blog_robotics_facts.md",
+  "brief": "Write the team member's blog post about the regional competition for the team's blog. Use only facts from the notes."
+ },
+ {
+  "id": "lab_pendulum",
+  "task": "lab",
+  "genre": "Discussion section of a high-school physics lab report",
+  "words": "300-400",
+  "facts": "eval/briefs3/lab_pendulum_facts.md",
+  "brief": "Write the Discussion section of the student's pendulum lab report. Use only the data and facts in the notes; do your own arithmetic carefully if you compute anything."
+ },
+ {
+  "id": "news_cafeteria",
+  "task": "news",
+  "genre": "school newspaper news article",
+  "words": "350-450",
+  "facts": "eval/briefs3/news_cafeteria_facts.md",
+  "brief": "Write the school newspaper article about the reusable-tray program. Use only facts and quotes from the reporter's notes; quote people exactly."
+ }
+]

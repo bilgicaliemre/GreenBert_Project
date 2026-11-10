@@ -1,0 +1,98 @@
+{
+ "argue_1.txt": {
+  "words": 575,
+  "chunks": 2,
+  "desklib": 47.9,
+  "desklib_chunks": [
+   43.0,
+   53.1
+  ],
+  "fakespot": 40.5,
+  "fakespot_chunks": [
+   8.4,
+   74.8
+  ]
+ },
+ "blog_1.txt": {
+  "words": 497,
+  "chunks": 2,
+  "desklib": 9.8,
+  "desklib_chunks": [
+   15.0,
+   0.4
+  ],
+  "fakespot": 0.7,
+  "fakespot_chunks": [
+   1.0,
+   0.1
+  ]
+ },
+ "explain_1.txt": {
+  "words": 416,
+  "chunks": 2,
+  "desklib": 80.9,
+  "desklib_chunks": [
+   87.4,
+   60.7
+  ],
+  "fakespot": 74.4,
+  "fakespot_chunks": [
+   97.8,
+   2.2
+  ]
+ },
+ "lit_1.txt": {
+  "words": 468,
+  "chunks": 2,
+  "desklib": 28.2,
+  "desklib_chunks": [
+   72.6,
+   2.4
+  ],
+  "fakespot": 1.2,
+  "fakespot_chunks": [
+   2.9,
+   0.2
+  ]
+ },
+ "ps_1.txt": {
+  "words": 612,
+  "chunks": 2,
+  "desklib": 1.0,
+  "desklib_chunks": [
+   1.9,
+   0.2
+  ],
+  "fakespot": 1.7,
+  "fakespot_chunks": [
+   0.2,
+   2.9
+  ]
+ },
+ "report_1.txt": {
+  "words": 443,
+  "chunks": 2,
+  "desklib": 10.4,
+  "desklib_chunks": [
+   12.5,
+   6.7
+  ],
+  "fakespot": 0.4,
+  "fakespot_chunks": [
+   0.3,
+   0.7
+  ]
+ },
+ "supp_1.txt": {
+  "words": 250,
+  "chunks": 1,
+  "desklib": 0.1,
+  "desklib_chunks": [
+   0.1
+  ],
+  "fakespot": 0.2,
+  "fakespot_chunks": [
+   0.2
+  ]
+ }
+}

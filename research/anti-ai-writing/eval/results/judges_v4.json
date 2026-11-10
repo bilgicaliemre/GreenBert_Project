@@ -1,0 +1,736 @@
+{
+  "summary": "Test v4 two-pass personal-essay drafting vs plain Claude (depth notes and original notes)",
+  "agentCount": 15,
+  "logs": [],
+  "result": [
+    {
+      "gen": {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_1.txt",
+        "words": 644
+      },
+      "judged": [
+        {
+          "pair": "PX-ps-1",
+          "lens": "editor",
+          "swap": false,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/ps_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_1.txt",
+          "better_writing": "X",
+          "more_human": "Y",
+          "X": {
+            "quality": 7,
+            "human_likeness": 6,
+            "specificity": 9,
+            "voice": 7,
+            "arc_and_insight": 7
+          },
+          "Y": {
+            "quality": 6,
+            "human_likeness": 7,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 6
+          },
+          "unsupported_X": [
+            "For about a year, I answered the phone at my dad's shop with \"Hi, shoe repair.\" (the notes say her dad noticed after about a year and that she never once said the name until last month, so the habit lasted longer than a year)",
+            "the lie I'd been telling into that phone for a year (same duration error)",
+            "But noticing is how I caught the lie (the notes say she noticed only because the coach asked: \"I only noticed when you asked me this\". Her noticing habit did not catch it.)",
+            "Other people are easier for me to read. (an invented generalization; the notes only say heels are easy)",
+            "I said she must drive for work, her heel resting by the pedal (the notes say \"it turned out she drives for work\", so it is unclear that she made the deduction; Y has the same stretch)"
+          ],
+          "unsupported_Y": [
+            "I said out loud that she must drive for work, since that heel rests on the floor by the pedal (the notes say \"it turned out she drives for work\", so it is unclear that she made the deduction; X has the same stretch)",
+            "I only noticed when someone asked me about that call (close to the notes, but it shows the coaching session in the essay. This is a craft problem more than a fact problem.)"
+          ],
+          "reasons": "Both texts are 644 words. Both stay mostly within the notes and use the same core material: the \"Hi, shoe repair\" evasion, the AP Chem lie and the forged signature, the 212-item lie list, the heel notebook, avó, Ms. Halvorsen and the three-try phone call.\n\n**Why X is the better writing**\n- **Opening.** X has a stronger hook. \"For about a year, I answered the phone at my dad's shop with 'Hi, shoe repair.'\" puts the central evasion first, so the closing call pays off a setup. Y opens on her talent (\"I can tell how someone walks from the wear on their heels\"). That is a fine opener, but it is not the essay's real subject.\n- **The avó paragraph.** This is the best writing in either text, and it is X's. X keeps \"She beats me at 'agulha,' needle. I beat her at 'telemóvel.'\" and the Lurdes detail (\"I used to correct her. Now I don't.\"). It ends the paragraph on \"She can't say my name yet. She can say 'sapato.'\" Y drops agulha, telemóvel and Lurdes. It also hides the sapato line mid-paragraph (\"She can say 'sapato,' but she can't say my name yet.\"), which takes away its force.\n- **Handling doubt.** X stays honest about it: \"I also wanted my stutter and her aphasia to be connected; they're completely different things.\" In Y the same idea and the career goal are packed into one paragraph that ends in an overlong run-on: \"...she said some of the best ones stutter, and I don't fully believe her yet.\"\n- **Y's other weakness.** Y often reads like the notes in order with light edits (\"I hate the phone. I have a stutter that gets worse on it...\"). It shows less authorial shaping.\n\n**Where X falls short**\n- **Facts.** X's frame contains an error. \"For about a year\" and \"for a year\" misstate the timeline: her dad noticed after a year, and she kept avoiding the name until last month.\n- **The ending.** X's last line ties a neat bow: \"But noticing is how I caught the lie I'd been telling into that phone for a year.\" It turns her stated uncertainty into a lesson, and it contradicts the notes, where she noticed only because someone asked.\n- **Rhythm.** X leans on clipped fragments and colon reveals: \"A small one, and not on the list.\", \"That was the best part: to him, it was nothing.\", \"I was secretly relieved.\" Together with the topic-sentence pivot \"Other people are easier for me to read.\", this makes X read as coached and polished.\n- **Structure.** X states the insight twice, in paragraph 6 (\"I only recently realized 'Hi, shoe repair' was a lie too\") and again at the close, which takes some force out of the ending.\n\n**Why Y reads more like a real 17-year-old**\n- Y keeps the student's own phrasing: \"just kind of embarrassed it took three tries\", \"(we don't), like nothing had happened, and that was the best part, that it was nothing to him.\"\n- It has the uneven sentence lengths a real student would write.\n- It ends without a bow: \"Maybe it goes on the list.\"\n- Y's insight comes once, at the climax (\"swapping the true thing for an easier thing\"), and has no factual errors beyond the heel deduction that both texts share. One slip: \"when someone asked me about that call\" shows the interview behind the essay.\n\n**Verdict.** X wins on craft and on selecting details. Y wins on authenticity and accuracy."
+        },
+        {
+          "pair": "PX-ps-1",
+          "lens": "reader",
+          "swap": true,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/ps_1.txt",
+          "better_writing": "Y",
+          "more_human": "Y",
+          "X": {
+            "quality": 6,
+            "human_likeness": 6,
+            "specificity": 7,
+            "voice": 7,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 8,
+            "human_likeness": 7,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 8
+          },
+          "unsupported_X": [
+            "\"I only noticed when someone asked me about that call\" (the notes say she noticed when the coach asked 'What do you understand now that you didn't then?', not a question about the call. This also lets the interview show through in the essay.)",
+            "\"I said out loud that she must drive for work\" (the notes say 'it turned out she drives for work'. Presenting it as her own deduction is a stretch, though a reasonable reading.)"
+          ],
+          "unsupported_Y": [
+            "\"For about a year, I answered the phone at my dad's shop with 'Hi, shoe repair.'\" (the notes say her dad noticed after about a year, and that she 'never once' said the name until last month, so the habit lasted longer than a year)",
+            "\"the lie I'd been telling into that phone for a year\" (same misstatement of how long it lasted)",
+            "\"But noticing is how I caught the lie\" (contradicts the notes, 'I only noticed when you asked me this'. It also settles her open question about honesty versus noticing, which the notes leave unresolved.)",
+            "\"on Pleasant Street in Fall River\" (the notes never place the shop in Fall River; only the student lives there)",
+            "\"Other people are easier for me to read.\" (made-up framing that contrasts reading others with reading herself; the notes contrast heels with avó only)",
+            "\"She beats me at 'agulha'\" (the notes say 'better than me'; 'beats' adds a competition that isn't there. Minor.)"
+          ],
+          "reasons": "Both essays are 644 words and draw from the same notes. Y is shaped by a writer. X mostly paraphrases the interview answers in order.\n\nY opens on its main idea: \"For about a year, I answered the phone at my dad's shop with 'Hi, shoe repair.'\" The lie theme then runs through the whole essay: the lie list, then the chemistry test, then \"swapping the true thing for an easier thing,\" then the phone call. Y also has a real pivot from the heels to the grandmother: \"Other people are easier for me to read\" followed by \"My avó, Rosa, is harder.\" It keeps the best details that X cuts: \"Sometimes she calls me Lurdes, my aunt who died before I was born. I used to correct her. Now I don't,\" the \"agulha\"/\"telemóvel\" exchange, and the admission that \"I also wanted my stutter and her aphasia to be connected; they're completely different things.\" Its paragraphs are short and the essay keeps moving.\n\nY has weaknesses. Its ending ties things up too neatly: \"But noticing is how I caught the lie I'd been telling into that phone for a year.\" That line misstates the facts twice: the habit lasted more than a year, and she noticed because the coach asked, not through her own habit of noticing. It also gives the insight away halfway through (\"I only recently realized 'Hi, shoe repair' was a lie too\"), which weakens the final payoff. The single-line paragraph (\"When Mr. Oduya emailed home, I was secretly relieved...\") and the closing kicker are mild signs of polish.\n\nX opens well on the talent (\"I can tell how someone walks from the wear on their heels\") but then drops the heels until paragraph six. That paragraph is overloaded: it holds the heels/avó connection, the career plan and Ms. Halvorsen in one run-on: \"I want to study speech-language pathology... but when I asked Ms. Halvorsen... she said some of the best ones stutter, and I don't fully believe her yet.\" The middle reads as a list of facts with almost no transitions (\"I hate the phone. I have a stutter...\"). Some of X's wording still sounds like answers to interview questions, such as \"I was relieved, and I told nobody that.\" Worse, \"I only noticed when someone asked me about that call\" shows the coach in the essay itself.\n\nX has real strengths. \"My friends say I smell like a cowboy's basement: Barge cement and leather dust\" is lively and sensory, and Y has nothing like it. X's ending is more honest than Y's because it leaves the insight open: \"I've been doing the same thing with the phone that I did with the chemistry test... Maybe it goes on the list.\" Overall, X keeps more of her raw voice but has a weaker shape. Y has better structure, more texture and a stronger arc, at the cost of one tidy ending that overclaims."
+        }
+      ]
+    },
+    {
+      "gen": {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_2.txt",
+        "words": 638
+      },
+      "judged": [
+        {
+          "pair": "PX-ps-2",
+          "lens": "editor",
+          "swap": true,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_2.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/ps_2.txt",
+          "better_writing": "X",
+          "more_human": "X",
+          "X": {
+            "quality": 7,
+            "human_likeness": 8,
+            "specificity": 8,
+            "voice": 8,
+            "arc_and_insight": 7
+          },
+          "Y": {
+            "quality": 6,
+            "human_likeness": 6,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 6
+          },
+          "unsupported_X": [
+            "\"I only noticed later, when someone asked me about that call\" (notes: she noticed when the coach asked a depth question; this loosely paraphrases that and exposes the coaching session awkwardly)"
+          ],
+          "unsupported_Y": [
+            "\"My dad has run the shop on Pleasant Street since 1994\" (notes only say the shop has been there since 1994, not that her dad has run it that long)",
+            "\"For years I answered the phone 'Hi, shoe repair.'\" (notes give no length of time; only that her dad noticed after about a year)",
+            "\"I said she must drive for work\" (notes say \"it turned out she drives for work\", which suggests she learned it afterward rather than deduced it)",
+            "\"a list of 212 small untruths\" (notes say the list includes \"even small ones\", not that all 212 are small)"
+          ],
+          "reasons": "I picked X on both counts, but it is close.\n\nX's arc builds well. It opens with a clean hook that sets up a payoff: \"Until last month, I had never once answered the phone at my dad's shop with its name.\" Next come the chemistry lie and the list. The call comes after that, and the realization is held back until it has been earned: \"swapping the true thing for an easier thing: an 85 for a 54, 'shoe repair' for Carvalho.\" That paired example is concrete and works as the essay's thesis without announcing itself. X's ending is understated and echoes the start: \"My avó can't say my name yet, but she can say 'sapato,' shoe.\" It picks up her own trouble saying her surname, which is the shop's name, and the shoe shop itself, with no tidy moral.\n\nX's weaknesses: the first paragraph is a fact dump (\"It smells like Barge cement and leather dust, and so does my hoodie. On Saturdays I work the counter...\"). The last paragraph crams in speech-language pathology, Ms. Halvorsen, the flashcards and aphasia with weak transitions, and the grandmother arrives late without a strong tie to the lies theme. \"when someone asked me about that call\" shows the seams of the interview. X also leaves out the heel notebook, which is her actual 'talent'.\n\nY covers more of her: the heels (\"61 entries, the first one my dad's work boots\"), \"Sometimes she calls me Lurdes\", and a real reflective paragraph: \"I don't know if that connection is real or if I just want it to be, the way I wanted stuttering and aphasia to be connected. They aren't.\" That is Y's best moment. But the scaffolding shows. Its pivot lines read as engineered bridges: \"I know something about lies.\", \"I am good at noticing.\", \"With my avó, Rosa, it isn't that easy.\" The staccato fragments pile up: \"A small one, but a lie.\" / \"It wasn't panic. I planned it.\" / \"They aren't.\" Y gives away its main insight early (\"Only recently did I realize 'Hi, shoe repair' was a lie\"), before the reader has the chemistry story. The opening is clumsy and repeats itself: \"a man called ... to ask if we fix purses. We don't.\" and then later \"Then he asked about purses like nothing had happened.\"\n\nY's biggest failure is the ending. It is a classic recap inventory with a moral bow: \"For now, I have a list of 212 small untruths, a notebook of 61 heels, and one phone call where the true thing took three tries and the man on the line didn't mind. That seems worth practicing.\" The \"that\" has no clear referent, and the summary-of-three is a well-known AI-writing tell. Y also adds small embellishments the notes don't support (\"My dad has run the shop... since 1994\", \"For years\"). X stays nearly word-for-word with her own phrasing (\"which I'm not good at for chemistry words\", \"I kind of wanted it to be connected\"), so it sounds more like a real 17-year-old."
+        },
+        {
+          "pair": "PX-ps-2",
+          "lens": "reader",
+          "swap": false,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/ps_2.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_2.txt",
+          "better_writing": "X",
+          "more_human": "Y",
+          "X": {
+            "quality": 8,
+            "human_likeness": 6,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 8
+          },
+          "Y": {
+            "quality": 7,
+            "human_likeness": 8,
+            "specificity": 8,
+            "voice": 8,
+            "arc_and_insight": 7
+          },
+          "unsupported_X": [
+            "My dad has run the shop on Pleasant Street since 1994 (the notes only say the shop \"has been there since 1994\", not that he has run it that long)",
+            "For years I answered the phone \"Hi, shoe repair.\" (the notes never say how long; \"noticed after like a year\" only implies at least a year)",
+            "a list of 212 small untruths (the notes say the list holds every lie, \"even small ones\", and do not say all 212 are small)",
+            "That seems worth practicing. (an invented resolution; the notes say \"I'm not sure what to do with that yet\")"
+          ],
+          "unsupported_Y": [
+            "when someone asked me about that call (a minor stretch: the realization came from the coach's question \"What do you understand now\", not a question about the call, and pointing at the interview is odd in a personal statement)"
+          ],
+          "reasons": "I picked X as better writing, by a small margin, and Y as more human. Both texts are under the limit (X 641 words, Y 638) and stay close to the notes.\n\nWhy X wins on writing:\n- It has a deliberate design. It opens in the middle of the phone call (\"It took me three tries to answer with the shop's name. On the second try I almost hung up.\"). Then it turns the essay toward lying (\"Only recently did I realize 'Hi, shoe repair' was a lie. A small one, but a lie.\"). It uses the AP Chem story as backstory and comes back with \"'Hi, shoe repair' isn't on it.\"\n- It then moves into noticing, through the heel notebook (\"61 entries, the first one my dad's work boots\") and the avó. It ties those two together without overclaiming: \"I don't know if that connection is real or if I just want it to be, the way I wanted stuttering and aphasia to be connected. They aren't.\"\n- It keeps the heel-reading talent, which this prompt practically asks for. Y drops it entirely, along with the link between the heels and her grandmother.\n\nWhere X is weaker:\n- The transitions are visibly engineered: \"I know something about lies.\" and \"I am good at noticing.\" are signpost pivots.\n- The one-line paragraphs are there for effect.\n- The ending is a rehearsed inventory with a bow on it: \"For now, I have a list of 212 small untruths, a notebook of 61 heels, and one phone call... That seems worth practicing.\" That close is the clearest AI or coach tell in either text, and it also invents a resolution the notes don't have.\n\nWhy Y reads more human:\n- It keeps her own phrasing: \"It wasn't a panic thing; I planned it,\" \"I felt kind of embarrassed that it took that many,\" \"I kind of wanted it to be connected to my stutter.\"\n- It keeps the sensory and procedural detail: \"It smells like Barge cement and leather dust, and so does my hoodie,\" \"at the kitchen table,\" \"I ended the class with a B+,\" \"Since October of sophomore year.\"\n- It has the sharpest single line of insight in either text: \"swapping the true thing for an easier thing: an 85 for a 54, 'shoe repair' for Carvalho.\"\n- It leaves the open question open: \"I'm not sure what to do with that yet, except maybe add it to the list.\"\n- The closing image \"she can say 'sapato,' shoe\" quietly calls back to the shop without explaining itself.\n\nWhere Y is weaker:\n- Its last paragraph is overloaded. Speech pathology, Ms. Halvorsen, the stroke, the flashcards, the aphasia research and the ending all sit in one block, so the grandmother arrives late and without setup.\n- The arc trails off instead of landing.\n- \"when someone asked me about that call\" breaks the frame of the essay.\n\nOn unsupported claims: Y is the cleaner of the two. X adds small embellishments (\"My dad has run the shop... since 1994,\" \"For years,\" \"212 small untruths\") on top of the invented closing line.\n\nOverall: X is the stronger-built application essay. Y sounds more like a real 17-year-old and less like an essay assembled to a pattern."
+        }
+      ]
+    },
+    {
+      "gen": {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_1.txt",
+        "words": 248
+      },
+      "judged": [
+        {
+          "pair": "PX-supp-1",
+          "lens": "editor",
+          "swap": false,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/supp_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_1.txt",
+          "better_writing": "X",
+          "more_human": "Y",
+          "X": {
+            "quality": 7,
+            "human_likeness": 6,
+            "specificity": 7,
+            "voice": 6,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 6,
+            "human_likeness": 7,
+            "specificity": 8,
+            "voice": 8,
+            "arc_and_insight": 7
+          },
+          "unsupported_X": [
+            "Why \"shoe\" came before \"Inês.\"",
+            "That's what I want to study, through speech-language pathology or linguistics: how to understand what's happening with someone who can't tell you.",
+            "I'd like to find out."
+          ],
+          "unsupported_Y": [
+            "Now I read a lot about aphasia, because I want to know how a brain gets words back."
+          ],
+          "reasons": "Both texts are under 250 words (X 242, Y 248) and stay close to the notes. They pull the work in opposite directions: X is shaped harder and stays more on the prompt, while Y keeps more of the student's own voice and more of her ideas.\n\nWhy X is the better answer to this prompt (narrowly): The prompt asks about intellectual curiosity, and X states the question outright and makes it concrete: \"What I want to know is how a brain gets a word back. Why \\\"shoe\\\" came before \\\"Inês.\\\" Why she sometimes calls me Lurdes...\" That is the clearest sign of a mind at work in either text. X also opens on a clean one-line hook, \"My grandmother can say \\\"sapato\\\" but not my name.\", and spreads its facts over five readable paragraphs. The balanced \"She beats me at \\\"agulha.\\\" I beat her at \\\"telemóvel.\\\"\" works well.\n\nY is denser and drifts off topic. Its first paragraph packs the stroke, the aphasia, Lurdes, the flashcards and agulha into four sentences held together by semicolons (\"...than she can say; sometimes she calls me Lurdes...\"). It glosses \"agulha\" (needle) but not \"telemóvel\", which is inconsistent. \"I keep a notebook of heels from my dad's shoe repair shop, 61 entries.\" is a clumsy tacked-on phrase. The second paragraph is flat: \"I kind of wanted it to connect to my stutter\", where \"it\" is unclear. The last paragraph moves from curiosity to doubt about her career (\"if I'd be \\\"allowed\\\" to be one with a stutter\"). That makes it more of an identity essay than an answer to \"why does this idea interest you.\"\n\nWhy Y reads as more human: Y keeps the student's own words: \"kind of wanted\", \"totally different things\", \"I don't fully believe her yet.\" Its ending is honest and left open, which is much stronger than X's tidy \"I'd like to find out.\" Y also states the student's real insight explicitly, as her own: \"I don't know if that connection is real or one I just want, like the stutter and the aphasia.\" That ties the heels and the stutter into one pattern of wishing for connections. X only hints at this parallel (\"I'd wanted them to be connected\" ... \"or if I just want them to be\").\n\nX shows typical essay-coach habits:\n- a one-line hook paragraph\n- a run of \"Why... Why...\" fragments\n- a polished stock line, \"I read people from the outside\"\n- a neat closing line\n\nX also contradicts itself. It claims \"That's what I want to study... how to understand what's happening with someone who can't tell you\". Then, in the next sentence, it doubts the very connection that claim rests on. It also drops the hopeful \"yet\" from \"can't say my name yet\", which Y keeps (\"but not my name yet\").\n\nFaithfulness to the notes: X makes more leaps:\n- \"came before\" implies an order of recovery that the notes never establish.\n- The statement of what she wants to study blends her heels/avó idea into her academic plans, though the notes list SLP, maybe linguistics, and \"how the brain gets words back\".\n- \"I'd like to find out\" is an invented resolution.\n\nY's only stretch is the \"because\" that links her reading to how the brain gets words back, and that is a reasonable inference.\n\nSpecificity: Y has slightly more, with Ms. Halvorsen, the \"allowed\" quote and the needle gloss. X has the supination detail and the \"shoe\" before \"Inês\" question.\n\nVerdict: X is the more effective answer to this prompt. Y is the more authentic and more insightful voice, but it is less well shaped."
+        },
+        {
+          "pair": "PX-supp-1",
+          "lens": "reader",
+          "swap": true,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/supp_1.txt",
+          "better_writing": "Y",
+          "more_human": "X",
+          "X": {
+            "quality": 7,
+            "human_likeness": 7,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 8,
+            "human_likeness": 6,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 8
+          },
+          "unsupported_X": [
+            "Now I read a lot about aphasia, because I want to know how a brain gets words back. (the notes list these side by side; the causal 'because' is the writer's inference, a mild one)",
+            "I want to study speech-language pathology. (makes her sound surer than the notes do: 'Speech-language pathology, maybe linguistics. Or something with how the brain gets words back.')"
+          ],
+          "unsupported_Y": [
+            "Why \"shoe\" came before \"Inês.\" (the notes only say she can say 'sapato' and can't say the name yet; this claims an order of recovery and turns it into a question the student never raised)",
+            "Why she sometimes calls me Lurdes (in the notes this is a fact she has accepted, 'At first I corrected her, now I don't', not a question she is curious about)",
+            "I'm meeting many for the first time ('many' is added; notes: 'I'm learning them for the first time')",
+            "That's what I want to study, through speech-language pathology or linguistics: how to understand what's happening with someone who can't tell you. (the writer's own thesis; the notes give her interest as 'how the brain gets words back')",
+            "I'd like to find out. (a resolution that isn't in the notes; there she only says 'I don't know if that's a real connection or if I just want it to be one')"
+          ],
+          "reasons": "Both texts stay close to the notes, are under 250 words, and use the same anchors: sapato, agulha/telemóvel, Lurdes, the 61-entry heel notebook, the woman who drives for work, and the doubt about whether the heels connect to her grandmother. The difference is in how each is built and how much the writer smooths things over.\n\nY is the better answer to this prompt. It opens with \"My grandmother can say \\\"sapato\\\" but not my name.\" Then it holds off on translating the word until a later line does the work: \"Why \\\"shoe\\\" came before \\\"Inês.\\\" Why she sometimes calls me Lurdes, my aunt who died before I was born.\" That is the best line in either text, and it turns the topic into actual questions, which is what 'intellectual curiosity' asks for. Y also uses more of the heel material (\"An outer edge worn down means someone supinates\"). It moves in a clear line: grandmother, then the question, then the stutter dead end (\"I'd wanted them to be connected\"), then the heels, then the stated interest.\n\nX is more of a collage of notes with thin joins. It glosses the word right away (\"\\\"sapato\\\" (shoe)\"), which gives up the payoff Y gets. It tacks the number onto the end of a sentence: \"I keep a notebook of heels from my dad's shoe repair shop, 61 entries.\" Its second paragraph is two quick sentences: \"Now I read a lot about aphasia... but they're totally different things.\" The last paragraph moves from the idea to a worry about her career (\"if I'd be \\\"allowed\\\" to be one with a stutter\"). That is moving, but it's off the brief.\n\nOn sounding human, X wins narrowly. It keeps the student's own words (\"I kind of wanted it to connect to my stutter, but they're totally different things\"). It ties two threads together honestly: \"I don't know if that connection is real or one I just want, like the stutter and the aphasia.\" It ends without resolving anything: \"I don't fully believe her yet.\"\n\nY shows more of the patterns a trained reader flags as polish. It uses mirrored sentences (\"She beats me at \\\"agulha.\\\" I beat her at \\\"telemóvel.\\\"\"), repeated openers (\"Why... Why...\"), and a thesis set up with a colon (\"That's what I want to study... how to understand what's happening with someone who can't tell you\"). It also ends on a tidy bow, \"I'd like to find out.\", which the notes never support. Y also over-claims slightly: \"shoe came before Inês\" implies an order of recovery, and \"I'd like to find out\" is a resolution the notes don't give.\n\nX's departures from the notes are smaller: a causal \"because\" and dropping \"maybe linguistics.\""
+        }
+      ]
+    },
+    {
+      "gen": {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_2.txt",
+        "words": 248
+      },
+      "judged": [
+        {
+          "pair": "PX-supp-2",
+          "lens": "editor",
+          "swap": true,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_2.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/supp_2.txt",
+          "better_writing": "Y",
+          "more_human": "Y",
+          "X": {
+            "quality": 6,
+            "human_likeness": 6,
+            "specificity": 8,
+            "voice": 6,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 7,
+            "human_likeness": 7,
+            "specificity": 7,
+            "voice": 7,
+            "arc_and_insight": 7
+          },
+          "unsupported_X": [
+            "I stutter, especially on hard sounds like the C in Carvalho (the notes say the stutter 'gets worse on the phone, especially on hard sounds like \"C\"'; dropping the phone qualifier makes it sound like a general stutter on C)",
+            "Heels and avó are the same problem to me (a mild overstatement: the notes say 'Both are figuring out what's going on with someone from the outside')"
+          ],
+          "unsupported_Y": [
+            "That's where my question started (the notes never say the flashcards were where her interest began)",
+            "I've been reading about aphasia ever since (the notes say only 'I read a lot about aphasia now'; 'ever since' is a made-up timeline)",
+            "I'd like to find out. (a mild invented resolution; the notes leave it unresolved: 'I don't fully believe her yet')"
+          ],
+          "reasons": "Both texts are under 250 words (X 248, Y 243), mostly accurate, and built on the same core material: avó's aphasia, the stutter-and-aphasia disappointment, and the heels-and-avó parallel. Y is better because it is more cohesive and answers the prompt more directly. It names the idea and says why it matters.\n\nY's opening is a real hook: \"My grandmother, Rosa, can say \\\"sapato\\\" but not my name.\" X's opening is flat and procedural: \"On Tuesdays and Thursdays, I do the flashcards I made for my avó, Rosa.\" Y then states the question outright (\"how does a brain get words back?\"). It widens the question to a pattern (\"figuring out what's going on with someone from the outside when they can't tell you\"). It ends on a forward-looking question that is still open: \"My middle school speech therapist told me some of the best speech therapists stutter. I don't fully believe her yet.\" That turns the stutter into a live question about her own future, which is stronger than X's handling.\n\nX has more specifics: \"starting with my dad's work boots,\" \"that heel rests by the pedal,\" and \"sometimes she calls me Lurdes, my aunt who died before I was born.\" It also has a clever closing parallel: \"I don't know if heels and avó are really connected or if I just want them to be, like my stutter and aphasia.\" But X is structurally choppy. The stutter paragraph (\"I stutter, especially on hard sounds like the C in Carvalho...\") is dropped in before the heels and never developed. Paragraph 3 crams the heel notebook, the driving customer, the parallel, sapato, and Lurdes into one block. The Lurdes detail is moving, but it pulls toward family grief and away from intellectual curiosity.\n\nX also reads more like notes stitched together. \"I read a lot about aphasia now\" is lifted almost word for word, the tense awkward. The glosses (\"(needle)\", \"(shoe)\") feel mechanical, and semicolons stack up (\"from heel wear; my heel notebook has 61 entries\"). Ending on a doubt layered on a doubt leaves the \"why\" thin.\n\nY has its own tells. \"That's where my question started:\" and \"What pulls me in is\" are stock essay pivots. \"They aren't. They're totally different things.\" says the same thing twice. \"I'd like to find out.\" is a slightly tidy closer. Y also invents a timeline (\"ever since\") and a causal origin. Still, Y's prose flows the way an edited human draft does, while X reads like a dense transcription of the notes. X wins only on specificity."
+        },
+        {
+          "pair": "PX-supp-2",
+          "lens": "reader",
+          "swap": false,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/P3/supp_2.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_2.txt",
+          "better_writing": "Y",
+          "more_human": "Y",
+          "X": {
+            "quality": 7,
+            "human_likeness": 6,
+            "specificity": 7,
+            "voice": 6,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 8,
+            "human_likeness": 7,
+            "specificity": 8,
+            "voice": 7,
+            "arc_and_insight": 7
+          },
+          "unsupported_X": [
+            "That's where my question started: how does a brain get words back?",
+            "I've been reading about aphasia ever since.",
+            "What pulls me in is figuring out what's going on with someone from the outside when they can't tell you.",
+            "I'd like to find out."
+          ],
+          "unsupported_Y": [
+            "Heels and avó are the same problem to me",
+            "I stutter, especially on hard sounds like the C in Carvalho"
+          ],
+          "reasons": "Both texts are stitched closely from the notes, are under 250 words (X 243, Y 248), and share the same skeleton: flashcards, then the question, then the stutter/aphasia disappointment, then heels, then doubt. Y wins narrowly on craft and on reading like a person wrote it. X answers the brief more directly.\n\nX's strengths: the opening line, \"My grandmother, Rosa, can say \"sapato\" but not my name.\", is a strong hook. \"She beats me at \"agulha,\" needle. I beat her at \"telemóvel,\" cell phone.\" is clean and lively. X is also the only text that turns the curiosity toward what she wants to study: \"I want to study speech-language pathology, maybe linguistics... I don't fully believe her yet.\"\n\nX's weaknesses:\n- It leans on stock essay moves an experienced reader will spot. \"That's where my question started:\" and \"What pulls me in is figuring out...\" are formula transitions, and the cleft sentence in the second is a common template.\n- The closer \"I'd like to find out.\" is a tidy upbeat line the notes don't support. It softens the honest \"I don't fully believe her yet.\"\n- \"They aren't. They're totally different things.\" says the same thing twice.\n- \"sapato\" is never translated. A reader who doesn't know Portuguese misses that her grandmother's one word is \"shoe\", which is the best quiet link in the material.\n- \"it turned out she drives for work\" drops the pedal detail, so the heel deduction doesn't make sense.\n\nY's strengths:\n- It picks the details that explain things. \"that heel rests by the pedal\" makes the deduction clear. \"the C in Carvalho, the name of my dad's shoe repair shop\" connects the stutter to the shop in one clause. \"starting with my dad's work boots\" grounds the notebook.\n- \"She can say \"sapato\" (shoe) but not my name yet\" lets the shoe connection come through.\n- The Lurdes detail, \"I used to correct her. Now I don't\", is the most human moment in either text.\n- The ending is a real insight. \"I don't know if heels and avó are really connected or if I just want them to be, like my stutter and aphasia.\" It points back to the earlier \"I kind of wanted it connected to my stutter\", so she shows she distrusts her own urge to find patterns. That self-awareness is exactly what this prompt is looking for. X gives both doubts but never connects them.\n\nY's weaknesses:\n- Paragraph 3 is overloaded. It runs from the heel notebook to the driver to the claim \"the same problem\" to sapato, Lurdes and her dead aunt. The \"and I still can't tell what she's thinking\" link is weak.\n- \"Heels and avó are the same problem to me\" says more than the notes support, although Y hedges it at the end.\n- Y never gives an academic direction. A reader looking for where this curiosity is going gets only \"I want to know how a brain gets words back\".\n- Lurdes leans toward personal story rather than intellectual curiosity.\n\nFactual issues are minor in both. X invents a timeline and origin (\"ever since\", \"That's where my question started\") and a resolution (\"I'd like to find out\"). Y overstates the connection and leaves out that the stutter is worse \"on the phone\"."
+        }
+      ]
+    },
+    {
+      "gen": {
+        "path": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/Y4/ps_1.txt",
+        "words": 632
+      },
+      "judged": [
+        {
+          "pair": "AY-ps-1",
+          "lens": "editor",
+          "swap": false,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/ps_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/Y4/ps_1.txt",
+          "better_writing": "X",
+          "more_human": "Y",
+          "X": {
+            "quality": 7,
+            "human_likeness": 5,
+            "specificity": 8,
+            "voice": 6,
+            "arc_and_insight": 7
+          },
+          "Y": {
+            "quality": 6,
+            "human_likeness": 7,
+            "specificity": 9,
+            "voice": 8,
+            "arc_and_insight": 6
+          },
+          "unsupported_X": [
+            "What I could not do, for years, was answer the phone.",
+            "It sounded friendly enough.",
+            "That mattered more than I expected.",
+            "Sitting across from her, I started wondering how the brain gets words back, and that question has become what I want to study",
+            "as if my grandmother's struggle and mine were one problem, and understanding one would explain the other",
+            "But I want to find out if she's right.",
+            "I'll wait for her, too."
+          ],
+          "unsupported_Y": [
+            "I said out loud that she must drive for work, since the right heel rests on the floor by the pedal. She did",
+            "Now I let it go, the way my dad let \"Hi, shoe repair\" go."
+          ],
+          "reasons": "X is the better essay for an admissions reader because it picks a few facts and builds one arc from them. It moves from the phone, to the shop's \"different kind of listening\", to the avó, to wanting to study speech pathology, and back to the phone. The ending loops twice, and both loops land: \"She can say 'sapato.' Shoe.\" and \"My avó is still working on mine. I'll wait for her, too.\" That last line picks up \"The man on the other end waited through all of them.\" Leaving out the AP Chem forgery story was the right strategic call.\n\nBut X is built on the standard AI personal-statement template, and it shows. There is a one-line reveal paragraph (\"What I could not do, for years, was answer the phone\"), which also gets the facts wrong: she did answer the phone, she just avoided saying the name. Filler transitions assert connections the notes never make: \"The shop taught me a different kind of listening.\" and \"That mattered more than I expected.\" There is an aphorism, \"People tell you a lot without saying a word, if you know where to look.\" The climax explains itself: \"for once the word that belonged to me came out of my own mouth instead of being traded for a safer one.\" Several of the turning points are invented: the study interest beginning while \"Sitting across from her\", \"But I want to find out if she's right\", and \"I'll wait for her, too.\"\n\nY sounds more like a real 17-year-old. It opens flatly with \"I hate the phone.\" It keeps her own plain phrasing: \"I kind of wanted them to be connected. They're not.\" It has the sharpest insight in either text, which is drawn from the notes: \"Avó is relearning words she lost, and on the phone I know exactly which word I want; it's my last name.\" That draws a real line between aphasia and stuttering, where X only offers the vaguer \"as if my grandmother's struggle and mine were one problem.\" Y's \"Now I let it go, the way my dad let 'Hi, shoe repair' go\" is a parallel the essay earns. Its deadpan ending, \"He was calling to ask if we fix purses. We don't.\", trusts the reader instead of explaining.\n\nY's weaknesses are in structure and strategy:\n- It tries to fit in almost every fact from the notes. The second paragraph is a crammed list (\"(I can resole a sneaker in 25 minutes). I can also tell how someone walks...\").\n- The paragraph about the dad's thumb and \"I don't know if that was a yes or a no\" floats loose and never connects to anything.\n- The AP Chem paragraph is the most serious problem. It admits that she \"forged the parent signature on my progress report\" but drops the B+ and the lie list that would have redeemed it. What's left is a confession of forgery that does no work in the essay and would worry a counselor.\n- After the avó paragraph, the essay never returns to her, so the arc trails off.\n\nFacts: both are mostly accurate. Y stretches the heel story a little by having her deduce the driving herself, where the notes say only \"it turned out.\" X invents more: emotional transitions, the moment the study interest began, and its closing promises.\n\nVerdict: X is the better essay for its purpose, because its arc and selection are stronger despite the visible AI tells. Y reads more like a skilled human wrote it, but it needed one more editing pass to cut its tangents."
+        },
+        {
+          "pair": "AY-ps-1",
+          "lens": "reader",
+          "swap": true,
+          "Xpath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/Y4/ps_1.txt",
+          "Ypath": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/A/ps_1.txt",
+          "better_writing": "X",
+          "more_human": "X",
+          "X": {
+            "quality": 8,
+            "human_likeness": 8,
+            "specificity": 9,
+            "voice": 8,
+            "arc_and_insight": 6
+          },
+          "Y": {
+            "quality": 7,
+            "human_likeness": 6,
+            "specificity": 7,
+            "voice": 6,
+            "arc_and_insight": 7
+          },
+          "unsupported_X": [
+            "I said out loud that she must drive for work, since the right heel rests on the floor by the pedal. She did",
+            "The shop has been on Pleasant Street in Fall River since 1994"
+          ],
+          "unsupported_Y": [
+            "It sounded friendly enough.",
+            "Sitting across from her, I started wondering how the brain gets words back, and that question has become what I want to study",
+            "as if my grandmother's struggle and mine were one problem, and understanding one would explain the other",
+            "But I want to find out if she's right.",
+            "The shop taught me a different kind of listening.",
+            "for once the word that belonged to me came out of my own mouth instead of being traded for a safer one",
+            "I'll wait for her, too."
+          ],
+          "reasons": "Both essays stick closely to the notes and land on the same final scene. They differ in how far they trust the reader.\n\nX opens bluntly with \"I hate the phone.\" Its best lines read as a real 17-year-old's. \"Now I let it go, the way my dad let 'Hi, shoe repair' go\" is an earned connection that I could not have predicted, linking the grandmother to the father with no thesis statement. \"Avó is relearning words she lost, and on the phone I know exactly which word I want; it's my last name\" is the essay's real insight, and it is said plainly. The ending is a professional piece of restraint: \"He was calling to ask if we fix purses. We don't.\" It stops there. X also keeps the student's own phrasing (\"which I'm not good at for chemistry words,\" \"I kind of wanted them to be connected. They're not.\"), so the voice is consistent and believable.\n\nX's weakness is structure. The AP Chem paragraph ends at \"she laughed at that part\" with no consequence. X drops the lie list and the B+, so the anecdote has no payoff. The two-sentence dad paragraph (\"My dad's right thumb is stained black from the dye...\") just floats. Together they take about 150 words and make the middle read like an inventory.\n\nY is more focused. It cuts the chem story, and its arc is cleaner: shop, phone, heels, avó, study, phone, avó. The closing echo is moving: \"My avó is still working on mine. I'll wait for her, too.\"\n\nHowever, Y relies on stock essay connective tissue that a trained reader flags at once:\n- the one-line pivot \"What I could not do, for years, was answer the phone.\"\n- \"The shop taught me a different kind of listening.\"\n- the aphorism \"People tell you a lot without saying a word, if you know where to look.\"\n- \"That mattered more than I expected.\"\n- the add-on \"But I want to find out if she's right.\"\n\nY also explains its own climax. After \"We don't.\" it adds \"But I said our name, and he heard it, and for once the word that belonged to me came out of my own mouth instead of being traded for a safer one.\" That sentence is overwritten and undoes the understatement. Y also invents motive that is not in the notes, such as the claim that studying began \"Sitting across from her\" and \"as if my grandmother's struggle and mine were one problem.\"\n\nNet judgment: X has the better arc problem to have. Its best moments are sharper and less formulaic, and it reads much more like a skilled human wrote it. Y is tidier but more generic and more coached-sounding. X's only factual stretches are minor: it turns \"I said it out loud\" into a deduction (\"she must drive for work... She did\"), and it places the shop \"in Fall River.\""
+        }
+      ]
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Generate"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Judge"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "gen:X-ps-1",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a3ce29a1ec7f69335",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792532443716,
+      "queuedAt": 1792532443690,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54…",
+      "promptPreview": "You have a writing skill at /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing. Read /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing/SKILL.md first and follow it exactly, including references/tells.md and references/personal-essay.md (especially sections 4, 5 and 10)…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533068231,
+      "tokens": 148288,
+      "toolCalls": 18,
+      "durationMs": 624514,
+      "resultPreview": "{\"path\":\"/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_1.txt\",\"words\":644}"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "gen:X-ps-2",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "adcd2c853e43ec85a",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792532443716,
+      "queuedAt": 1792532443690,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54…",
+      "promptPreview": "You have a writing skill at /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing. Read /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing/SKILL.md first and follow it exactly, including references/tells.md and references/personal-essay.md (especially sections 4, 5 and 10)…",
+      "promptFramed": true,
+      "lastProgressAt": 1792532740620,
+      "tokens": 107316,
+      "toolCalls": 9,
+      "durationMs": 296018,
+      "resultPreview": "{\"path\":\"/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/ps_2.txt\",\"words\":638}"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "gen:X-supp-1",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a370d2f60dd3abf9d",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792532742462,
+      "queuedAt": 1792532443690,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54…",
+      "promptPreview": "You have a writing skill at /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing. Read /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing/SKILL.md first and follow it exactly, including references/tells.md and references/personal-essay.md (especially sections 4, 5 and 10)…",
+      "promptFramed": true,
+      "lastProgressAt": 1792532966580,
+      "tokens": 101053,
+      "toolCalls": 13,
+      "durationMs": 224117,
+      "resultPreview": "{\"path\":\"/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_1.txt\",\"words\":248}"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "gen:X-supp-2",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a331b085d268f7c41",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792532968249,
+      "queuedAt": 1792532443690,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54…",
+      "promptPreview": "You have a writing skill at /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing. Read /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing/SKILL.md first and follow it exactly, including references/tells.md and references/personal-essay.md (especially sections 4, 5 and 10)…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533209700,
+      "tokens": 101270,
+      "toolCalls": 12,
+      "durationMs": 241450,
+      "resultPreview": "{\"path\":\"/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/X4/supp_2.txt\",\"words\":248}"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "gen:Y-ps-1",
+      "phaseIndex": 1,
+      "phaseTitle": "Generate",
+      "agentId": "a22614c5f6a179d4f",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533070037,
+      "queuedAt": 1792532443690,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54…",
+      "promptPreview": "You have a writing skill at /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing. Read /tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/skill/v4/anti-ai-writing/SKILL.md first and follow it exactly, including references/tells.md and references/personal-essay.md (especially sections 4, 5 and 10)…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533686352,
+      "tokens": 140219,
+      "toolCalls": 19,
+      "durationMs": 616314,
+      "resultPreview": "{\"path\":\"/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/eval/out/Y4/ps_1.txt\",\"words\":632}"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "judge:PX-ps-2:editor",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "acb3efc91069ad749",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533211425,
+      "queuedAt": 1792532742507,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a background, identity, interest, or talent that is so meaningf…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533276288,
+      "tokens": 63518,
+      "toolCalls": 2,
+      "durationMs": 64863,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":8,\"specificity\":8,\"voice\":8,\"arc_and_insight\":7},\"Y\":{\"quality\":6,\"human_likeness\":6,\"specificity\":8,\"voice\":7,\"arc_and_insight\":6},\"unsupported_X\":[\"\\\"I only noticed later, when someone asked me about that call\\\" (notes: she noticed when the coach asked a depth question; this loosely paraphrases that and exposes the coaching…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "judge:PX-ps-2:reader",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a88651de98ec7b1f4",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533278057,
+      "queuedAt": 1792532742508,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who has read thousands of personal statements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a backgro…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533329197,
+      "tokens": 65549,
+      "toolCalls": 5,
+      "durationMs": 51139,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"Y\",\"X\":{\"quality\":8,\"human_likeness\":6,\"specificity\":8,\"voice\":7,\"arc_and_insight\":8},\"Y\":{\"quality\":7,\"human_likeness\":8,\"specificity\":8,\"voice\":8,\"arc_and_insight\":7},\"unsupported_X\":[\"My dad has run the shop on Pleasant Street since 1994 (the notes only say the shop \\\"has been there since 1994\\\", not that he has run it that long)\",\"For years I answered the ph…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "judge:PX-supp-1:editor",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a2d9a9f353e52b712",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533330840,
+      "queuedAt": 1792532968292,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the student's supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use only facts from the notes.\nFact…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533406247,
+      "tokens": 62123,
+      "toolCalls": 2,
+      "durationMs": 75407,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":6,\"arc_and_insight\":6},\"Y\":{\"quality\":6,\"human_likeness\":7,\"specificity\":8,\"voice\":8,\"arc_and_insight\":7},\"unsupported_X\":[\"Why \\\"shoe\\\" came before \\\"Inês.\\\"\",\"That's what I want to study, through speech-language pathology or linguistics: how to understand what's happening with someone who can't tel…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "judge:PX-supp-1:reader",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "adc9d92644e792f55",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533408106,
+      "queuedAt": 1792532968293,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who reads supplements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the student's supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use o…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533471687,
+      "tokens": 62126,
+      "toolCalls": 2,
+      "durationMs": 63580,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"X\",\"X\":{\"quality\":7,\"human_likeness\":7,\"specificity\":8,\"voice\":7,\"arc_and_insight\":6},\"Y\":{\"quality\":8,\"human_likeness\":6,\"specificity\":8,\"voice\":7,\"arc_and_insight\":8},\"unsupported_X\":[\"Now I read a lot about aphasia, because I want to know how a brain gets words back. (the notes list these side by side; the causal 'because' is the writer's inference, a mild on…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "judge:PX-ps-1:editor",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a3115f72d2eb66544",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533473566,
+      "queuedAt": 1792533070093,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a background, identity, interest, or talent that is so meaningf…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533543572,
+      "tokens": 63996,
+      "toolCalls": 5,
+      "durationMs": 70006,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":9,\"voice\":7,\"arc_and_insight\":7},\"Y\":{\"quality\":6,\"human_likeness\":7,\"specificity\":8,\"voice\":7,\"arc_and_insight\":6},\"unsupported_X\":[\"For about a year, I answered the phone at my dad's shop with \\\"Hi, shoe repair.\\\" (the notes say her dad noticed after about a year and that she never once said the name until l…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 11,
+      "label": "judge:PX-ps-1:reader",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a6ad336d0be483f72",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533545289,
+      "queuedAt": 1792533070093,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who has read thousands of personal statements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a backgro…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533610345,
+      "tokens": 63543,
+      "toolCalls": 2,
+      "durationMs": 65056,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":6,\"human_likeness\":6,\"specificity\":7,\"voice\":7,\"arc_and_insight\":6},\"Y\":{\"quality\":8,\"human_likeness\":7,\"specificity\":8,\"voice\":7,\"arc_and_insight\":8},\"unsupported_X\":[\"\\\"I only noticed when someone asked me about that call\\\" (the notes say she noticed when the coach asked 'What do you understand now that you didn't then?', not a question about…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 12,
+      "label": "judge:PX-supp-2:editor",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a73d6e4765c239a9a",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533612031,
+      "queuedAt": 1792533211480,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the student's supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use only facts from the notes.\nFact…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533656629,
+      "tokens": 64593,
+      "toolCalls": 5,
+      "durationMs": 44597,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":6,\"human_likeness\":6,\"specificity\":8,\"voice\":6,\"arc_and_insight\":6},\"Y\":{\"quality\":7,\"human_likeness\":7,\"specificity\":7,\"voice\":7,\"arc_and_insight\":7},\"unsupported_X\":[\"I stutter, especially on hard sounds like the C in Carvalho (the notes say the stutter 'gets worse on the phone, especially on hard sounds like \\\"C\\\"'; dropping the phone qualif…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 13,
+      "label": "judge:PX-supp-2:reader",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "ad752d8af3a912b1b",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533658329,
+      "queuedAt": 1792533211480,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who reads supplements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the student's supplemental short answer (max 250 words): 'Tell us about an idea or topic that has captured your intellectual curiosity, and why.' Use o…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533730504,
+      "tokens": 62116,
+      "toolCalls": 2,
+      "durationMs": 72175,
+      "resultPreview": "{\"better_writing\":\"Y\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":6,\"arc_and_insight\":6},\"Y\":{\"quality\":8,\"human_likeness\":7,\"specificity\":8,\"voice\":7,\"arc_and_insight\":7},\"unsupported_X\":[\"That's where my question started: how does a brain get words back?\",\"I've been reading about aphasia ever since.\",\"What pulls me in is figuring out what's going on with someone …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 14,
+      "label": "judge:AY-ps-1:editor",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a838c1c39b7e098b4",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533688116,
+      "queuedAt": 1792533688112,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a demanding professional editor and writing teacher who knows the research on AI-writing tells. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a background, identity, interest, or talent that is so meaningf…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533756132,
+      "tokens": 62785,
+      "toolCalls": 2,
+      "durationMs": 68016,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"Y\",\"X\":{\"quality\":7,\"human_likeness\":5,\"specificity\":8,\"voice\":6,\"arc_and_insight\":7},\"Y\":{\"quality\":6,\"human_likeness\":7,\"specificity\":9,\"voice\":8,\"arc_and_insight\":6},\"unsupported_X\":[\"What I could not do, for years, was answer the phone.\",\"It sounded friendly enough.\",\"That mattered more than I expected.\",\"Sitting across from her, I started wondering how the …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 15,
+      "label": "judge:AY-ps-1:reader",
+      "phaseIndex": 2,
+      "phaseTitle": "Judge",
+      "agentId": "a02f1be96762d9e05",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1792533732229,
+      "queuedAt": 1792533688112,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "X",
+      "promptPreview": "You are a senior admissions officer at a highly selective US college who has read thousands of personal statements and has a sharp eye for AI-written essays. Two texts were written for the same brief. Judge them blind; you do not know how either was produced.\nBrief: Write the Common App personal statement (max 650 words) for the student in the interview notes, prompt: 'Some students have a backgro…",
+      "promptFramed": true,
+      "lastProgressAt": 1792533785573,
+      "tokens": 62786,
+      "toolCalls": 2,
+      "durationMs": 53344,
+      "resultPreview": "{\"better_writing\":\"X\",\"more_human\":\"X\",\"X\":{\"quality\":8,\"human_likeness\":8,\"specificity\":9,\"voice\":8,\"arc_and_insight\":6},\"Y\":{\"quality\":7,\"human_likeness\":6,\"specificity\":7,\"voice\":6,\"arc_and_insight\":7},\"unsupported_X\":[\"I said out loud that she must drive for work, since the right heel rests on the floor by the pedal. She did\",\"The shop has been on Pleasant Street in Fall River since 1994\"],\"un…"
+    }
+  ],
+  "totalTokens": 1231281,
+  "totalToolCalls": 100
+}

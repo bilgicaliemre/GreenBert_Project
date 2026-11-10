@@ -1,0 +1,17 @@
+What my keyword rules can't see in an ESG report
+
+"We are committed to a sustainable future."
+
+"We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline."
+
+Both sentences sound responsible. Only the second can be checked, because it gives an amount and a year to compare against. My program labels the first one Vague and the second one Strong. Telling those two apart was the easy part.
+
+I'm a high-school student and the first author of GreenBERT, a research project with a university co-author. It looks for possible greenwashing in corporate ESG (environmental, social, governance) reports. The stage I've built so far uses rules. It turns a PDF into text with page numbers (PyMuPDF) and splits the text into sentences (NLTK). A sentence gets through the "gate" only if it has an ESG topic word plus either an action verb, including forms like "we reduced", or a hard quantity such as a number with a unit. A topic word on its own counts as description, and the sentence is dropped.
+
+The gate has two conditions. After it come ten filters, one for each kind of sentence that gets past the gate and still isn't a claim: boilerplate, reference-dense text, navigation and headers, broken fragments, policy content, governance role descriptions, activity reports, methodology text, general statements and risk descriptions. For broken fragments, a part-of-speech tagger checks whether there is a verb at all. Every rejected sentence is saved with its drop reason, so I can audit what I threw away. On one Unilever report the program keeps 583 claims; on a Dr Pepper report it keeps 218.
+
+The best precision number I have is 92%, on a development set of 26 sentences. I tuned the filters on those same 26, so it isn't a fair test. An independent manual review of 100 claims from an earlier version (v3) found 67% were real claims. AI agents that audited the full output were stricter than people: 33% for v3, 39% for v4.0 and 44% for v4 final. An audit of 1,767 rejected sentences put recall at 48% for v4.0, which means that version dropped more than half of the real claims. In v4 final it reached 73%. All of these numbers are in-sample, so they're optimistic.
+
+Under the strict audit, fewer than half of the sentences v4 final keeps are claims, and the errors that remain are about meaning. A rule can see a past-tense verb and a percentage. It can't see whether the sentence reports something the company did or explains how a number was calculated, and that is the difference a reader needs.
+
+So the next stage is a BERT classifier, which I haven't built yet. The end goal is a public website where anyone can upload an ESG report PDF and get back a greenwashing assessment with an explanation. The two sentences at the top of this post are already handled. The classifier is for the sentences my rules still get wrong.

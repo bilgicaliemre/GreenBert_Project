@@ -1,0 +1,11 @@
+Discussion
+
+The graph of T² against L was a straight line through the origin, as T = 2π√(L/g) predicts (slope 4.105 s²/m, intercept about −0.002 s², R² = 1.000). From the slope, g = 4π²/4.105 = 9.62 m/s², 1.9% below the textbook 9.81 m/s². The error was systematic: all five mean periods were 0.9% to 1.0% longer than predicted from 9.81 m/s² (2.026 s against 2.006 s at 1.00 m). Since T is proportional to 1/√g, periods 1% too long give a g about 2% too low.
+
+We left out trial 2 at 0.60 m (14.11 s). Jonah lost count when Mr. Pell came in to borrow stands, so we almost certainly timed nine swings, not ten: 14.11 s divided by 9 is 1.568 s, almost exactly the mean of the other two (1.569 s). Including it lowers R² from 1.000 to 0.997 but barely moves the slope, because 0.60 m is the middle length.
+
+I did all the timing. My ruler-drop reaction time, about 0.2 s, could explain the spread of up to 0.15 s between ten-swing trials. But a reaction delay adds a roughly fixed time, while our periods were about 1% long at every length: 0.09 s per ten swings at 0.20 m, 0.20 s at 1.00 m. Jonah thinks I started the stopwatch late a couple of times (we did not record which), but a late start shortens the time and would push g up.
+
+The string is a more likely cause. We used stretchy cotton twine, and the 1.00 m length, measured before hanging the bob, was about 1.01 m after a few minutes loaded. The others were not re-measured. With L = 1.01 m the predicted period is 2.016 s, halfway to our 2.026 s. If every length stretched by 1%, the error would be the same percentage everywhere, as we found, and g would correct to 9.71 m/s². That is still 1.0% low, so stretching could explain about half the error. Eyeballing the release angle at 0.20 and 0.40 m does not seem to explain the rest: those periods were no further off than the protractor-released ones. Our data do not show what caused the other half.
+
+Next time we would use a less stretchy string and measure each length with the bob hanging. Jonah wants to try a phone light-gate app, which would take my reaction time out of the timing.

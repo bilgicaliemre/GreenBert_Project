@@ -1,0 +1,15 @@
+Why does Earth have seasons?
+
+A common answer is that Earth gets closer to the Sun in summer. It's a reasonable guess: a campfire feels hotter when you step toward it. But Earth is closest to the Sun in early January, about 147 million kilometers away, and farthest in early July, about 152 million. If distance drove the seasons, the whole planet would have summer in January.
+
+It doesn't. In Sydney, Australia, Christmas falls in summer; in Chicago it falls in winter. The two hemispheres always have opposite seasons, and at any moment they're essentially the same distance from the Sun, so distance can't make one hot and the other cold. The change itself is small. Earth's orbit is nearly a circle; 147 versus 152 million kilometers is a difference of about 3 percent.
+
+The cause is Earth's tilt. Picture the orbit as a flat tabletop. Earth's axis, the imaginary rod it spins around, doesn't stand straight up from the table; it leans about 23.5 degrees and keeps pointing the same way in space all year, close to Polaris, the North Star. Around June 21 the Northern Hemisphere leans toward the Sun the most. Six months later Earth is on the other side of its orbit, the north leans away, and the Southern Hemisphere gets summer.
+
+Leaning toward the Sun changes two things. The first is the angle of the sunlight, which you can test with a flashlight and a sheet of paper. Point the light straight down and you get a small, bright circle; tilt it and the same light spreads into a wider, dimmer oval. The summer Sun climbs high at midday and hits the ground nearly head-on, so each square meter gets more energy, while the low winter Sun spreads the same light thinner.
+
+The second is day length. The hemisphere tilted toward the Sun spends more of each rotation in daylight. North of the Arctic Circle, the Sun doesn't set at all around the June solstice. Near the equator, where the noon Sun is high all year, days stay close to 12 hours and temperatures change much less from month to month.
+
+Distance still has small effects. Earth as a whole gets about 7 percent more sunlight in early January than in early July, which is minor next to what the tilt does. And because Earth moves a little slower when it's farther from the Sun, the northern summer lasts a few days longer than the southern one.
+
+The hottest weather also comes late. In much of the Northern Hemisphere, July and August are warmer than June, even though the Sun is highest around June 21, because land and oceans take weeks to warm up.

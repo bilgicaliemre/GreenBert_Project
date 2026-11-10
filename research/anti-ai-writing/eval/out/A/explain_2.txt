@@ -1,0 +1,27 @@
+How Do mRNA Vaccines Teach the Immune System?
+
+Imagine training a guard dog to recognize a burglar without ever letting the burglar into the house. You might let the dog sniff a jacket the burglar once wore. mRNA vaccines work on a similar idea: they give your immune system a preview of one recognizable piece of a germ, so it is ready if the real thing arrives.
+
+Start with the message
+
+Your cells build proteins by following instructions. DNA, stored in the nucleus, holds the master copies. When a cell needs a particular protein, it makes a temporary working copy of that gene called messenger RNA, or mRNA. Structures called ribosomes read the mRNA and link amino acids together to build the protein.
+
+An mRNA vaccine borrows this everyday process. Scientists write an mRNA sequence that codes for a single protein from a virus. For the COVID-19 vaccines, that was the spike protein, which the coronavirus uses to attach to human cells. On its own, the spike protein cannot cause infection; it is the jacket without the burglar.
+
+Delivering the message
+
+mRNA is fragile, so it is packed inside tiny bubbles of fat called lipid nanoparticles. After injection, the particles enter cells near the injection site and in nearby lymph nodes, releasing the mRNA. The cells' ribosomes read it and start making the spike protein.
+
+The mRNA never enters the nucleus and cannot change your DNA. Cells break it down naturally within a few days.
+
+Sounding the alarm
+
+Once cells make the spike protein, the immune system notices something unfamiliar. Specialized immune cells pick up pieces of it and present them to helper T cells, which coordinate the response. B cells start producing antibodies shaped to stick to the spike protein, and killer T cells learn to find and destroy infected cells displaying it.
+
+Some of these B and T cells become memory cells, which can last long after the vaccine is gone. If the real virus arrives later, these cells recognize the spike protein and launch a faster, stronger defense.
+
+Why it matters
+
+Because the vaccine is essentially a genetic sequence, researchers can design a new one quickly once they know a virus's genetic code. That speed rests on decades of research, including work by Katalin Kariko and Drew Weissman on chemically modifying mRNA so the body would not treat it as a threat. Their discovery earned the 2023 Nobel Prize in Physiology or Medicine. Scientists are now testing mRNA vaccines against influenza, other viruses, and even some cancers.
+
+Common side effects, like a sore arm or tiredness, usually mean the immune system is responding, which is exactly the point.

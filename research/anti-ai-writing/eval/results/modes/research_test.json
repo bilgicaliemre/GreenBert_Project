@@ -1,0 +1,57 @@
+{
+ "summary": {
+  "H": {
+   "n": 32,
+   "human_share": 1.0,
+   "mean_p": 87.34375,
+   "quality": 5.78125,
+   "auc_by_lens": {},
+   "human_share_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   }
+  },
+  "P": {
+   "n": 32,
+   "human_share": 0.0625,
+   "mean_p": 34.46875,
+   "quality": 6.15625,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.125,
+    "isef": 0.0
+   }
+  },
+  "V10": {
+   "n": 32,
+   "human_share": 0.125,
+   "mean_p": 38.46875,
+   "quality": 6.0625,
+   "auc_by_lens": {
+    "editor": 1.0,
+    "isef": 1.0
+   },
+   "human_share_by_lens": {
+    "editor": 0.0625,
+    "isef": 0.1875
+   }
+  }
+ },
+ "pairs": {
+  "V10-P:p": [
+   4.0,
+   -0.28125,
+   7.875,
+   16
+  ],
+  "V10-P:q": [
+   -0.09375,
+   -0.34375,
+   0.1875,
+   16
+  ]
+ }
+}

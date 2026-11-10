@@ -1,0 +1,31 @@
+How photosynthesis turns sunlight into food
+
+Every leaf you walk past is running a small chemical factory powered by light. Plants don't eat the way animals do, yet they build stems, roots, fruit and wood out of little more than air, water and sunshine. They do it through photosynthesis.
+
+The ingredients
+
+Photosynthesis needs carbon dioxide, water and light. Carbon dioxide gets into the leaf through tiny pores called stomata, most of which are on the underside. Water comes up from the roots through tubes called xylem. The overall reaction is usually written like this:
+
+6CO2 + 6H2O + light energy -> C6H12O6 + 6O2
+
+In words: carbon dioxide and water, using energy from light, become glucose (a sugar) and oxygen.
+
+Where it happens
+
+Leaf cells contain small structures called chloroplasts. Chloroplasts are green because they hold chlorophyll, a pigment that absorbs red and blue light well but reflects much of the green, and that reflected green light is the color your eyes pick up.
+
+Stage one: capturing light
+
+The first stage, the light-dependent reactions, takes place inside the chloroplast in stacks of membranes called thylakoids. When chlorophyll absorbs light, the energy boosts electrons to a higher energy level. Those energized electrons get passed along a chain of proteins, and their energy is used to make two energy-carrying molecules, ATP and NADPH. You can think of the two as charged batteries.
+
+The plant replaces the electrons it gave away by splitting water molecules, and this step is where the oxygen comes from. The oxygen you breathe is made from the water the plant pulls apart, not from the carbon dioxide it takes in, even though both appear in the equation above.
+
+Stage two: building sugar
+
+The second stage, the Calvin cycle, happens in the fluid around the thylakoids, which is called the stroma. It doesn't use light directly, but it depends on the ATP and NADPH made in stage one. An enzyme called rubisco attaches carbon dioxide to a molecule already in the cell. Over a series of steps powered by those "batteries," the carbon is rearranged into a three-carbon sugar, and the plant combines these small sugars to make glucose and other compounds.
+
+What the plant does with the sugar
+
+Glucose feeds the plant in two ways. Some of it is broken down in cellular respiration, which releases energy for growth and repair. The rest becomes building material: cellulose for cell walls, starch for storage, and the starting point for proteins and fats.
+
+Because the plant's body is built from that sugar, and the sugar's carbon came from the air, most of a plant's dry mass started out as carbon dioxide gas.

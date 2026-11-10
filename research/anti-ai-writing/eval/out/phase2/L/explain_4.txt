@@ -1,0 +1,19 @@
+Why the Sky Is Blue (and Why Sunsets Aren't)
+
+Look up on a clear afternoon and the sky is blue. Look again at sunset and the same sky is orange, pink and red. The air hasn't changed much in those few hours. What has changed is how far the sunlight has to travel to reach you.
+
+Start with the light itself. Sunlight looks white, but it's a mix of every color in the rainbow. Each color is a wave with its own wavelength. Red light has long waves. Blue and violet have short ones.
+
+Our atmosphere is mostly nitrogen and oxygen molecules, and they are tiny, much smaller than the wavelength of visible light. When sunlight hits them, some of it gets knocked off in new directions. Physicists call this Rayleigh scattering. The rule that matters here is simple: the shorter the wavelength, the more it scatters. Blue light scatters several times more strongly than red.
+
+So as sunlight crosses the sky, the blue part gets bounced from molecule to molecule until it seems to come at you from every direction. Look anywhere except straight at the sun and you're seeing that scattered blue.
+
+If short waves scatter most, why isn't the sky violet? Three things work against it. The sun gives off less violet than blue. Some violet gets absorbed high in the atmosphere. And our eyes just aren't very sensitive to violet, so the blend of scattered light registers as plain sky blue.
+
+Now the sunset. At midday the sun is high, and its light comes down through a fairly thin slice of air. When the sun sits near the horizon, its light has to cut sideways through far more atmosphere before it reaches you. Along that long path, most of the blue is scattered off to the sides and never arrives. What's left is mostly the longer wavelengths: yellow, orange and red.
+
+That leftover light also hits the undersides of clouds, which is why a good sunset can light up half the sky. Dust, smoke and ash can deepen the colors further, so sunsets after a big wildfire or volcanic eruption can look unusually intense.
+
+Clouds look white for a related reason. Their water droplets are much bigger than gas molecules, so they scatter all colors about equally, and all the colors together make white.
+
+You can test this at home. Fill a clear glass with water, stir in a few drops of milk, and shine a flashlight through it in a dark room. From the side, the water looks faintly blue. Look through the glass toward the flashlight, and the beam turns orange. You've just made a sky and a sunset in a cup.

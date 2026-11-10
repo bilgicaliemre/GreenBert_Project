@@ -1,0 +1,13 @@
+Discussion
+
+Our graph of T² against L is a straight line with a slope of 4.105 s²/m and an intercept of about −0.002 s², so it passes through the origin as T = 2π√(L/g) predicts. The slope gives g = 4π²/4.105 = 9.62 m/s², 1.9% below the textbook 9.81 m/s².
+
+Every mean period was 0.9% to 1.0% longer than the formula predicts with g = 9.81 m/s² (at 1.00 m, 2.026 s against 2.006 s). Since g = 4π²L/T², periods 1% too long make g about 2% too low, as we found.
+
+Because the excess is the same percentage at every length, I do not think timing caused it. A fixed error of 0.2 s, my ruler-drop reaction time, would be 2% of a 9 s run at 0.20 m but only 1% of a 20 s run at 1.00 m, yet both lengths came out 1.0% long. Random errors, like the spread of up to 0.15 s between trials, would push some means down, and all five are high. Jonah thinks I started the stopwatch late a couple of times, but a late start shortens the time. Wider swings take slightly longer, and the release angle was only eyeballed below 0.60 m, but the excess is just as large where we used the protractor.
+
+The cotton twine fits better. After a few minutes with the bob hanging, the 1.00 m length measured about 1.01 m, and if every length stretched by the same fraction, every period would be long by the same percentage. Recalculating g from the 1.00 m point with L = 1.01 m gives 9.71 m/s² instead of 9.62 m/s², about half the gap. We did not re-measure the other lengths, so the rest is unexplained. The twine may have kept stretching: it had been loaded about 40 minutes by the time we redid the 0.20 m trial 3.
+
+We left out trial 2 at 0.60 m (14.11 s). Jonah lost count when Mr. Pell came in, and 14.11/9 = 1.568 s matches the 1.569 s mean of the other two, so we almost certainly timed 9 swings. Including it lowers R² from 1.000 to 0.997 but barely changes the slope.
+
+Next time we would use a less stretchy string, measure each length with the bob hanging, use the protractor throughout, and try Jonah's phone light-gate app to take reaction time out of the timing.

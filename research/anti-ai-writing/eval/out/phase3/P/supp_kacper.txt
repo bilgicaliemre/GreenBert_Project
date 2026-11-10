@@ -1,0 +1,7 @@
+In March, Oleh, a Glovo courier, brought his Xiaomi Pro 2 to the basement bike room where I fix scooters. It was dying on hills: one group of ten cells sat at 2.9 volts while the rest were near 4. I swapped in salvaged cells and soldered the strips, because a spot welder cost 400 złoty. Nineteen days later it cut out at night in the rain, and he pushed it four kilometers to my building.
+
+I said "it got wet" before unscrewing anything, and gave back 150 złoty on that basis. When I later opened the pack properly, I found a cracked solder joint and a cell I had cooked. That winter I had argued online for three days that soldering cells is fine if you're fast enough.
+
+I bought a spot welder and a fire extinguisher, and I stopped doing batteries for customers. That bothers me, because the controller and battery board are exactly what I want to study. Mechanically, you understand a scooter in an hour. Electrically, I knew just enough to be confidently wrong. I want electrical engineering so next time I know instead of guess.
+
+What I'd bring: 41 scooters rebuilt since summer 2024, a 4.9-star rating, an M365 inner tube changed in seven minutes forty, and experience managing Igor, nine, who negotiated his screw-sorting wage from three złoty an hour to five. I'd also bring an appetite for a lab that stays open late. Our building administrator kicks me out at ten.

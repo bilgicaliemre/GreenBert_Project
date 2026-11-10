@@ -1,0 +1,58 @@
+{
+ "essay": {
+  "n_human": 40,
+  "n_model": 185,
+  "cv_auc_all_features": 0.9972972972972973,
+  "top_single_features_auc": {
+   "dashes_100": 0.998,
+   "colons_100": 0.982,
+   "digits_100": 0.904,
+   "long30_share": 0.804,
+   "sent_sd": 0.789,
+   "hedges_100": 0.243
+  },
+  "transfer_auc": 0.8928378378378379
+ },
+ "short": {
+  "n_human": 28,
+  "n_model": 68,
+  "cv_auc_all_features": 0.9233193277310924,
+  "top_single_features_auc": {
+   "digits_100": 0.186,
+   "long30_share": 0.78,
+   "sent_len": 0.771,
+   "short8_share": 0.278,
+   "hedges_100": 0.308,
+   "contractions_100": 0.315
+  },
+  "transfer_auc": 0.7941176470588236
+ },
+ "abstract": {
+  "n_human": 40,
+  "n_model": 128,
+  "cv_auc_all_features": 0.7666015625,
+  "top_single_features_auc": {
+   "sent_sd": 0.656,
+   "semicolons_100": 0.386,
+   "long30_share": 0.593,
+   "short8_share": 0.435,
+   "hype_100": 0.561,
+   "contractions_100": 0.559
+  },
+  "transfer_auc": 0.6400390625
+ },
+ "appeal": {
+  "n_human": 76,
+  "n_model": 100,
+  "cv_auc_all_features": 0.7990789473684211,
+  "top_single_features_auc": {
+   "sent_sd": 0.807,
+   "sent_len": 0.715,
+   "long30_share": 0.678,
+   "semicolons_100": 0.337,
+   "paras_per_100w": 0.41,
+   "exclam_100": 0.587
+  },
+  "transfer_auc": 0.786578947368421
+ }
+}

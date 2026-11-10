@@ -1,0 +1,15 @@
+How do mRNA vaccines teach the immune system?
+
+Your immune system deals quickly with germs it has met before. A new virus is harder: working out a response can take days, and you can get quite sick in the meantime. A vaccine lets the immune system learn ahead of time, and an mRNA vaccine does it without any virus. It delivers instructions, and your own cells make the viral protein the immune system then studies.
+
+DNA holds the recipes for your proteins but stays in the nucleus, so a cell copies each recipe it needs into a short-lived molecule called messenger RNA, or mRNA. Ribosomes, the cell's protein-building machines, read the copy and assemble the protein, and the cell then breaks the mRNA down.
+
+The vaccine adds one more message: mRNA coding for a single viral protein, usually one from the virus's surface. For COVID-19 vaccines it was the spike protein, which the coronavirus uses to latch onto human cells. With no virus in the shot, it cannot cause an infection. The fragile mRNA travels inside lipid nanoparticles, tiny bubbles of fat that protect it and help it into cells, mostly near the injection site.
+
+Ribosomes in those cells read the vaccine's mRNA and make copies of the viral protein. Some copies are displayed on the cell's surface; others are released and picked up by immune cells. B cells make antibodies shaped to fit the protein. Helper T cells coordinate the response, and killer T cells learn to destroy cells showing pieces of it. Some of these B and T cells become memory cells, which can last a long time.
+
+How can one protein protect you from a whole virus? Antibodies stuck to the spike can stop the virus from latching onto your cells, and killer T cells spot infected cells by the spike fragments they display. When the real virus arrives, memory cells recognize it, so the immune system skips the slow first encounter and can often respond before the infection becomes serious.
+
+The vaccine does not change your DNA. The mRNA never enters the nucleus, where DNA is kept, and cells have no normal way to turn it into DNA; their enzymes break it down within days.
+
+These vaccines were made quickly because scientists can design matching mRNA from a virus's genetic sequence without growing the virus. The coronavirus's sequence was shared in January 2020, and the first mRNA vaccines were authorized that December. Researchers had been studying mRNA for decades before that. Katalin Karikó and Drew Weissman found that swapping in a modified chemical building block kept lab-made mRNA from setting off inflammation, work that won them the 2023 Nobel Prize in Physiology or Medicine.

@@ -1,0 +1,17 @@
+Where a Plant's Food Comes From
+
+Ask most people where a tree gets the material to build its trunk and they'll point at the ground. It's a fair guess. It's also mostly wrong. The bulk of a plant's body is built from carbon dioxide pulled out of the air, and the energy for that building comes from sunlight. The process that ties the two together is photosynthesis.
+
+Start with the ingredients. A plant needs light, water and carbon dioxide. Water travels up from the roots through tubes in the stem. Carbon dioxide drifts into the leaves through tiny pores called stomata. Light just lands on the leaf.
+
+Inside the leaf cells sit small green structures called chloroplasts. They get their color from a pigment called chlorophyll, which absorbs red and blue light well and reflects much of the green. That reflected green is the color you see in a lawn.
+
+Photosynthesis happens in two stages. The first one needs light directly. When chlorophyll absorbs light, some of its electrons jump to a higher energy level. Those energized electrons get passed along a chain of proteins, and to replace them, the plant splits water molecules apart. Splitting water releases oxygen, which drifts out through the stomata. Many people guess that this oxygen comes from carbon dioxide, but it comes from the water. The captured energy is stored briefly in two carrier molecules, ATP and NADPH. Think of them as charged batteries.
+
+The second stage is called the Calvin cycle. It doesn't use light directly, but it runs on the batteries the first stage charged. An enzyme called rubisco grabs a carbon dioxide molecule and attaches it to a five-carbon molecule already in the cell. Through a loop of reactions powered by ATP and NADPH, that captured carbon becomes a small three-carbon sugar. Some of the sugar leaves the cycle. The rest is rebuilt into the starting molecule so the loop keeps going.
+
+The overall equation is tidy. Six molecules of carbon dioxide plus six of water, with light energy, make one molecule of glucose and six of oxygen.
+
+So what does the plant do with its sugar? It burns some for energy through cellular respiration, the same basic process your own cells use. It links glucose into long chains of starch to save for later, or into cellulose to build cell walls. Sugar is also the starting point for fats and, with nitrogen from the soil, for proteins.
+
+Which brings us back to the tree. The soil supplies water and a handful of minerals. The trunk itself is mostly carbon that used to be floating in the air, stitched together with energy from the sun.

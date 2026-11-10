@@ -1,0 +1,21 @@
+Regional recap: 9th of 32, out in the quarterfinals
+
+On Saturday, October 17, fourteen of us, our two mentors and Coach Tibbetts spent the day at the Ostrander Valley Robotics League regional in the Marrowfield Community College gym. We went 3-2-1 in qualifications, ranked 9th of 32, got picked for an alliance and lost in the quarterfinals. We didn't win any awards and didn't qualify for state, so our next chance is the Elk Ridge qualifier on November 14.
+
+The bus was supposed to leave at 5:45 and left at 6:10, and the driver also had to turn around because Rohan Achterberg forgot the battery charger. At 8:15 we failed inspection because our bumper was 2mm too high, so we filed it down and passed at 8:50.
+
+Q4, our first match, was a 48-61 loss. In Q11 our autonomous was mirrored wrong for the red side and the robot drove straight into the wall at the start, and we still won 72-40. Q19 was a 55-55 tie, and the queuer had to call our number twice before we showed up for it, because I misread the schedule.
+
+In Q23 the shoulder bracket on our intake arm cracked, the arm hung limp for the rest of the match, and we lost 30-68. I made that bracket. I printed it Thursday night at 20% infill to save time, when it should have been 100%, or metal. Sophomore Marisol Fenwick and mentor Gus Abernathy-Reyes swapped in an aluminum bracket from our spares in 25 minutes, done before Q31. Marisol cut her finger on the edge, got a band-aid and was fine. Q31 was our best score of the day, 81-52. In Q38 the left drive motor overheated near the end, but the robot kept going and we won 64-59.
+
+Alliance captain Team 4410, the Voltage Vultures from Copperline Prep, picked us second. Theo Brannagan wore the fox head to alliance selection, couldn't see out of it, and walked into Copperline's pit banner and knocked it over. Their whole pit laughed and Theo bowed. We lost the best-of-three quarterfinal 0-2, 71-77 and 60-84.
+
+At our pit interview, the judge (her name tag said Ms. Ferraro-Quint) told us our notebook was the best-organized she had seen that day. She also pointed out that our CAD screenshots had no dimensions, and she asked why we were using 3D-printed parts on load-bearing joints. I didn't have a good answer, and the bracket that cracked in Q23 was a 3D-printed part.
+
+On the bus home we argued about the arm. Rohan and I want to rebuild the whole thing in aluminum before November 14. Marisol and Theo want to reprint at 100% infill and spend the time on autonomous instead. It got loud, and Coach Tibbetts said we'll decide at Tuesday's meeting.
+
+Thank you to Quillby's Hardware for donating our aluminum stock.
+
+For anyone who wasn't there: the gym's AC was broken and it was about 84°F inside, the vending machine ate Priya's $2, our driver, Mr. Lund, kept the same classic rock station on all day, Culver's beat Wendy's 9-5 in the food-stop vote, and I wore the wrong shoes, so my feet hurt by noon.
+
+Dana Okafor-Lindqvist, junior and mechanical lead

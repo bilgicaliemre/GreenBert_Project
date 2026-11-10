@@ -1,0 +1,13 @@
+Discussion
+
+Our results support the model T = 2π√(L/g). The graph of T² against L is a straight line with a slope of 4.105 s²/m and an intercept of about −0.002 s², which is effectively zero, so the line passes through the origin as predicted. From the slope, g = 4π²/4.105 = 9.62 m/s², about 1.9% below the accepted value of 9.81 m/s².
+
+The error looks systematic rather than random. All five mean periods were about 1% longer than predicted. At 1.00 m, for example, the formula gives 2.006 s but we measured 2.026 s. Because g depends on T², a 1% error in the period becomes roughly a 2% error in g, which matches our result.
+
+The most likely cause is the string. The proper string had run out, so we used cotton twine, and it stretched: the 1.00 m length measured about 1.01 m after a few minutes with the bob hanging. Using 1.01 m for that point gives g ≈ 9.71 m/s², closing about half the gap. The other lengths were not re-measured, so I cannot say how much each one stretched, but a real length longer than the recorded one would make every period too long, which is the pattern we saw.
+
+Timing explains the pattern less well. My reaction time is about 0.2 s and the spread within each length was at most 0.15 s over 10 swings, but random errors like these would push some periods up and others down. Jonah thinks I started the stopwatch late a couple of times, which would make times shorter, not longer. The release angle may have added a little, since it was only estimated by eye below 0.60 m, and wider swings take slightly longer than the formula predicts.
+
+We left out one trial. At 0.60 m, trial 2 (14.11 s) was almost certainly 9 swings, not 10, because Jonah lost count when Mr. Pell came in. Dividing by 9 gives 1.568 s, nearly identical to the 1.569 s mean of the other two trials. Including it lowers R² from 1.000 to 0.997 but barely changes the slope.
+
+Next time we would use a less stretchy string and measure each length after the bob has hung for a few minutes, use the protractor at every length, and try Jonah's phone light-gate app to remove reaction-time and counting errors.

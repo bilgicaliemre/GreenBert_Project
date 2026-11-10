@@ -1,0 +1,15 @@
+Why is the sky blue, and why do sunsets turn red and orange?
+
+On a clear afternoon the sky overhead is blue. By evening, the sky around the setting Sun is orange and red. Both colors come from the same air acting on the same sunlight; what changes is how much air the light passes through.
+
+Sunlight looks white but is a mix of every color of the rainbow, which a prism can split apart. Blue light has a short wavelength, around 450 nanometers (a nanometer is a billionth of a meter), and red light is closer to 700.
+
+Air is mostly nitrogen and oxygen molecules, each far smaller than either wavelength. When light hits something that small, part of it is sent off in a new direction. This is called scattering, and the British physicist Lord Rayleigh worked out its rule in 1871: scattering is proportional to 1 divided by the wavelength to the fourth power. Halve the wavelength and you get 16 times the scattering. By that rule, blue light scatters about six times more than red. Light from any patch of sky away from the Sun was bounced toward you by air molecules, so it leans heavily toward blue.
+
+Violet has an even shorter wavelength, so why isn't the sky violet? Sunlight contains less violet than blue to begin with, and human eyes are much less sensitive to it. The scattered mix triggers the color-sensing cells in your eyes in a ratio your brain reads as pale blue.
+
+At sunset, the light comes in low and crosses dozens of times more air than it would with the Sun straight overhead. Along that path, most of the blue and much of the green get scattered out to the sides, and what reaches you is mostly yellow, orange and red.
+
+Particles in the air also scatter light, and their size decides which colors get scattered most. Cloud droplets are large compared with a wavelength and scatter all colors about equally, which is why clouds look white. Smoke and fine volcanic particles are small enough to favor blue, so they strip even more of it from a low Sun. After Krakatoa erupted in Indonesia in 1883, people as far away as Europe reported deep red sunsets for months.
+
+You can make both colors with a glass of water and a few drops of milk. In a dark room, shine a flashlight through the glass. Looking from the side, you should see a faint blue tint. Look through the glass straight at the flashlight and the beam looks yellow-orange. Stir in more milk and the beam gets redder, as the Sun does when its light crosses more air.

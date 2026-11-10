@@ -1,0 +1,202 @@
+{
+ "ham2014_busstop.txt": {
+  "words": 564,
+  "chunks": 2,
+  "desklib": 60.6,
+  "desklib_chunks": [
+   85.8,
+   24.4
+  ],
+  "fakespot": 25.5,
+  "fakespot_chunks": [
+   40.0,
+   4.7
+  ]
+ },
+ "ham2014_height.txt": {
+  "words": 514,
+  "chunks": 2,
+  "desklib": 39.4,
+  "desklib_chunks": [
+   1.2,
+   95.3
+  ],
+  "fakespot": 59.5,
+  "fakespot_chunks": [
+   32.1,
+   99.4
+  ]
+ },
+ "ham2014_hurricane.txt": {
+  "words": 620,
+  "chunks": 2,
+  "desklib": 52.7,
+  "desklib_chunks": [
+   81.2,
+   25.2
+  ],
+  "fakespot": 95.5,
+  "fakespot_chunks": [
+   97.8,
+   93.3
+  ]
+ },
+ "ham2014_novel.txt": {
+  "words": 653,
+  "chunks": 2,
+  "desklib": 0.5,
+  "desklib_chunks": [
+   0.3,
+   0.6
+  ],
+  "fakespot": 0.5,
+  "fakespot_chunks": [
+   0.5,
+   0.4
+  ]
+ },
+ "ham2014_shoelace.txt": {
+  "words": 628,
+  "chunks": 2,
+  "desklib": 1.2,
+  "desklib_chunks": [
+   2.2,
+   0.6
+  ],
+  "fakespot": 20.3,
+  "fakespot_chunks": [
+   2.9,
+   31.2
+  ]
+ },
+ "ham2014_speech.txt": {
+  "words": 650,
+  "chunks": 2,
+  "desklib": 51.9,
+  "desklib_chunks": [
+   7.9,
+   91.6
+  ],
+  "fakespot": 41.5,
+  "fakespot_chunks": [
+   4.8,
+   74.6
+  ]
+ },
+ "ham2014_subway.txt": {
+  "words": 627,
+  "chunks": 2,
+  "desklib": 1.6,
+  "desklib_chunks": [
+   1.5,
+   1.7
+  ],
+  "fakespot": 14.4,
+  "fakespot_chunks": [
+   14.4,
+   14.4
+  ]
+ },
+ "ham2022_control.txt": {
+  "words": 651,
+  "chunks": 2,
+  "desklib": 90.2,
+  "desklib_chunks": [
+   97.5,
+   84.7
+  ],
+  "fakespot": 54.8,
+  "fakespot_chunks": [
+   32.9,
+   71.4
+  ]
+ },
+ "ham2022_dad.txt": {
+  "words": 646,
+  "chunks": 2,
+  "desklib": 19.6,
+  "desklib_chunks": [
+   36.6,
+   1.4
+  ],
+  "fakespot": 14.3,
+  "fakespot_chunks": [
+   9.5,
+   19.4
+  ]
+ },
+ "ham2022_donor.txt": {
+  "words": 649,
+  "chunks": 3,
+  "desklib": 43.4,
+  "desklib_chunks": [
+   12.0,
+   83.1,
+   25.1
+  ],
+  "fakespot": 48.7,
+  "fakespot_chunks": [
+   4.6,
+   100.0,
+   36.8
+  ]
+ },
+ "ham2022_flyfishing.txt": {
+  "words": 647,
+  "chunks": 2,
+  "desklib": 3.0,
+  "desklib_chunks": [
+   3.8,
+   2.3
+  ],
+  "fakespot": 4.5,
+  "fakespot_chunks": [
+   0.6,
+   8.0
+  ]
+ },
+ "ham2022_globe.txt": {
+  "words": 610,
+  "chunks": 2,
+  "desklib": 39.1,
+  "desklib_chunks": [
+   67.3,
+   2.2
+  ],
+  "fakespot": 37.4,
+  "fakespot_chunks": [
+   64.9,
+   1.2
+  ]
+ },
+ "ham2022_salon.txt": {
+  "words": 598,
+  "chunks": 2,
+  "desklib": 18.3,
+  "desklib_chunks": [
+   3.7,
+   31.6
+  ],
+  "fakespot": 33.1,
+  "fakespot_chunks": [
+   3.3,
+   60.1
+  ]
+ },
+ "ham2022_yaya.txt": {
+  "words": 643,
+  "chunks": 3,
+  "desklib": 2.4,
+  "desklib_chunks": [
+   1.2,
+   1.0,
+   11.5
+  ],
+  "fakespot": 7.3,
+  "fakespot_chunks": [
+   3.6,
+   1.9,
+   39.2
+  ]
+ }
+}

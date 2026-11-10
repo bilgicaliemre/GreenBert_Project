@@ -1,0 +1,23 @@
+Why February sometimes gets a 29th day
+
+Most people know that every fourth year gets an extra day. Fewer know that the rule has an exception, and that the exception has an exception of its own. Both come from the same problem: a year isn't a whole number of days.
+
+For calendar purposes, a year is the time it takes for the seasons to come back around, such as from one spring equinox to the next. Astronomers call this the tropical year, and it lasts about 365.2422 days, or roughly 365 days, 5 hours and 49 minutes. A calendar has to count whole days, though. You can't end the year at 5:49 in the morning and start the next one there.
+
+Ignore that leftover quarter day, and the calendar slips about one day against the seasons every four years. Within a century it would be off by more than three weeks, and after roughly 750 years, July in the Northern Hemisphere would land in the middle of winter.
+
+The first fix was the Roman calendar reform under Julius Caesar, which added one day every four years. That makes the average calendar year 365.25 days, which is close but about 11 minutes too long.
+
+Eleven minutes a year adds up to a full day roughly every 128 years. By the 1500s the calendar had drifted about ten days away from the seasons. The church cared, because Easter's date is tied to the spring equinox.
+
+In 1582, Pope Gregory XIII introduced the calendar most of the world uses today. It made two changes. First, it skipped ten days to bring the equinox back to around March 21. In the countries that switched right away, Thursday, October 4 was followed by Friday, October 15. Second, it tightened the leap year rule:
+
+1. A year divisible by 4 is a leap year,
+2. unless it is divisible by 100, in which case it is not,
+3. unless it is also divisible by 400, in which case it is a leap year after all.
+
+So 1700, 1800 and 1900 were not leap years, 2000 was, and 2100 will not be. Dropping three leap days every 400 years leaves 97 leap years per 400, for an average year of 365.2425 days.
+
+That average is longer than the tropical year by only about 26 seconds, so the calendar drifts by one day in roughly 3,300 years. The length of the day and of the tropical year also change slowly, which means no fixed rule stays exact forever, but this one will hold up for a very long time.
+
+Test yourself: will 2400 be a leap year? What about 2200? (Yes, and no.)

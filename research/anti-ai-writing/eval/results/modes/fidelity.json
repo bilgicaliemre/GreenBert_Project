@@ -1,0 +1,50 @@
+{
+ "research_dev1": {
+  "P": {
+   "n": 24,
+   "unsupported_per_text": 0.16666666666666666,
+   "clean": 20
+  },
+  "V9": {
+   "n": 24,
+   "unsupported_per_text": 0.25,
+   "clean": 20
+  },
+  "R0": {
+   "n": 24,
+   "unsupported_per_text": 0.08333333333333333,
+   "clean": 22
+  }
+ },
+ "research_test": {
+  "V10": {
+   "n": 16,
+   "unsupported_per_text": 0.0,
+   "clean": 16
+  },
+  "P": {
+   "n": 16,
+   "unsupported_per_text": 0.0,
+   "clean": 16
+  }
+ },
+ "short_answers_test": {
+  "P": {
+   "n": 12,
+   "unsupported_per_text": 0.5833333333333334,
+   "clean": 5
+  },
+  "V10": {
+   "n": 12,
+   "unsupported_per_text": 1.0833333333333333,
+   "clean": 4
+  }
+ },
+ "short_answers_test_v10.1": {
+  "V101": {
+   "n": 12,
+   "unsupported_per_text": 0.25,
+   "clean": 10
+  }
+ }
+}

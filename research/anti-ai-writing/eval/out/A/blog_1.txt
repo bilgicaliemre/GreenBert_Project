@@ -1,0 +1,22 @@
+What Building a Greenwashing Detector Taught Me About Corporate Language
+
+GreenBERT is my high-school research project: a tool that tries to detect possible greenwashing in corporate ESG (environmental, social and governance) reports. I'm the first author, working with a university co-author, and so far only the first stage exists, a rule-based claim extractor. Building it taught me less about code than about how companies write.
+
+Lesson one: most of a report is not a claim.
+The pipeline first converts a PDF into text with page numbers (using PyMuPDF) and splits it into sentences (using NLTK). Each sentence then has to pass a "gate": it needs an ESG topic word plus either an action verb, like "we reduced," or a hard quantity, such as a number with a unit. A topic word alone counts as description and is dropped.
+
+Even past the gate, plenty of text isn't a claim. I wrote filters for boilerplate, reference-heavy passages, navigation and headers, broken fragments, policy content, governance role descriptions, activity reports, methodology, general statements and risk descriptions. Each filter names a kind of sentence that sounds important but doesn't say what a company did or will do.
+
+Lesson two: "vague" and "strong" are worlds apart.
+Compare these:
+"We are committed to a sustainable future."
+"We reduced Scope 1 and 2 emissions by 4% against our 2019 baseline."
+Both sound green. Only the second can be checked. So every kept claim is labelled a Future Promise, Strong (it contains a hard quantity) or Vague, and separately marked for evidence: Yes, Partial or No. It also gets an E, S or G tag and a risk signal. Once you sort sentences this way, the difference between sounding committed and showing results is hard to unsee.
+
+Lesson three: honest numbers are humbling.
+For one Unilever report the extractor found 583 claims; for a Dr Pepper report, 218. Six reports are loaded so far. But finding sentences isn't finding the right ones. A 26-sentence development set reached 92% precision, but I tuned the filters on it, so that's not a fair headline. An independent manual review of 100 claims from an earlier version found 67%. Stricter full-corpus audits by AI agents put precision at 33%, then 39%, then 44% across versions. Every rejected sentence is saved with its drop reason, so I could audit 1,767 of them to estimate recall, which rose from 48% to 73%. All of these are in-sample, so they're optimistic.
+
+Lesson four: keywords can't read meaning.
+Keyword rules hit a ceiling. The errors that remain are about what a sentence means, not which words it contains. That's why the next stage, not built yet, is a BERT classifier.
+
+The end goal is a public website where anyone can upload an ESG report PDF and get back a greenwashing assessment with an explanation. I'm not there yet. But I already read corporate language differently: I look for the verb, the number and the evidence, and I notice when they're missing.

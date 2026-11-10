@@ -1,0 +1,13 @@
+How do noise-cancelling headphones make sound disappear?
+
+Wear noise-cancelling headphones on a bus and the engine's drone fades almost to nothing, while a friend talking beside you still comes through, just muffled. The headphones get rid of the drone by playing a second sound of their own, built to cancel it at your ear. Why the same trick does so little to a voice comes down to timing.
+
+Sound is a pattern of pressure in the air. A vibrating engine part or speaker cone squeezes the air, then lets it spread out, over and over, and your eardrum moves in and out in the same pattern. The number of these cycles per second is the frequency, measured in hertz. A low hum might be around 100 hertz, a high whistle a few thousand.
+
+When two sounds reach the same spot, their pressures add. If one sound squeezes the air at the exact moment the other stretches it by the same amount, the pressure doesn't change at all, and your eardrum has nothing to move it. Physicists call this destructive interference, and noise-cancelling headphones are built around it.
+
+Microphones on the ear cups pick up the noise, and a chip builds the opposite pattern: a stretch wherever the noise squeezes. The speaker plays this "anti-noise" along with your music. The cancelling only happens inside the ear cup, so the person in the next seat hears the bus as loudly as ever.
+
+The electronics need a little time, and a delay hurts some sounds far more than others. Suppose the anti-noise is a perfect opposite of the noise but arrives one ten-thousandth of a second late. (The number is picked for easy arithmetic, not measured from real headphones.) A 100-hertz hum takes a hundredth of a second per cycle, so the delay is 1 percent of a cycle. The waves still nearly line up, and what's left is about 6 percent as big as the original. A 2,000-hertz whistle finishes a cycle every two-thousandth of a second, so the same delay is a fifth of a cycle. A sixth of a cycle late, the sum already matches the noise alone. At a fifth, the two waves add up to one about 18 percent bigger than the whistle, so the headphones would make it louder.
+
+That is why the anti-noise mostly goes after low sounds and leaves higher pitches to the ear cushions, which block high sounds much better than low rumble. A bus engine's drone sits low, where a small delay costs almost nothing. Your friend's words depend on consonants like "s" and "t", which are high-pitched, so the electronics mostly leave them alone and the cushions only muffle them.

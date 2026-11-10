@@ -1,0 +1,951 @@
+{
+ "results": [
+  {
+   "id": "ines",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "D0",
+      "T2": "RS",
+      "T3": "RP"
+     },
+     "ranking": [
+      "T3",
+      "T2",
+      "T1"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 5,
+       "voice": 6,
+       "specificity": 7,
+       "structure_and_insight": 4,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"That's when I started keeping my notebook of heels.\" (the notes never say the driving lady started the notebook, and entry 1 is the dad's boots)",
+        "\"I thought I would feel proud\" (the notes only say she didn't feel proud, not that she expected to)",
+        "\"The other person who has taught me about words is my av\u00f3\" (no first person who 'taught her about words' is established)",
+        "\"With my av\u00f3 I try to do the same thing I do with heels\" (presented as settled; in the notes she says she doesn't know if the connection is real or one she wants to be real)",
+        "\"In middle school I asked my speech therapist, Ms. Halvorsen\" (the notes say she is her therapist 'from middle school', not when the question was asked)",
+        "\"This is why I want to study speech-language pathology\" (a cause the notes don't give)",
+        "\"I don't fully believe her yet, but I want to find out.\" ('but I want to find out' is added)",
+        "\"But I know the shop taught me how to pay attention to people, even when they can't say what they mean, and that is what I want to keep doing, whether it's with shoes or with words.\" (an invented moral that contradicts her stated uncertainty)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 7,
+       "voice": 8,
+       "specificity": 7,
+       "structure_and_insight": 7,
+       "human_likeness": 7,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"But I think the stutter was never the lie. The swap was. The stutter just made the easier thing easier.\" (an interpretation the notes don't contain; she only says 'I'm not sure what to do with that yet')",
+        "\"I can't leave my stutter out of this application, because it's the reason I spent years not saying my own last name.\" (a framing written to answer the prompt, not something she said)",
+        "\"I only noticed later, when someone asked me what I understand now that I didn't understand then.\" (true to the notes, but it repeats the coach's interview question and shows the coaching in the essay)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 7,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"My av\u00f3, my grandmother Rosa, can't say my name either.\" ('either' says In\u00eas can't say her own name; she can't easily say 'Carvalho' on the phone, which is a stretch but grounded in the notes)"
+       ]
+      }
+     ],
+     "reasons": "T3 ranks first. It is the only version where the structure carries meaning. It opens on the strongest fact in the notes: \"Until last month, I had never once answered the phone at my dad's shoe repair shop with its name. I said 'Hi, shoe repair.'\" Then it sets up the stakes in three flat sentences: \"Carvalho is my last name. It starts with a C.\" Names and words run through the whole essay. She avoids the name. The phone insight follows: \"'Hi, shoe repair' isn't on it. I think it was a lie too.\" It pivots on \"My av\u00f3... can't say my name either,\" and closes on two details she leaves the reader to connect: \"The first entry in my heel notebook is his work boots. I still don't know if that was a yes or a no.\" It trusts the reader and doesn't tie a bow on the uncertainty. It also uses specifics the others skip (\"My dad's right thumb is stained black from the dye\") and keeps almost every claim inside the notes.\n\nIts weaknesses:\n- The lie list arrives with no origin. The 54-to-85 chemistry lie and the forged signature, the most revealing material she has, are cut, so \"212 items\" feels unearned.\n- The key insight is crowded into one paragraph mid-essay, and \"Maybe add it to the list\" lands in the middle instead of at the end.\n- The rhythm is uniformly clipped (\"He just waited... I didn't feel proud. I felt embarrassed...\"). It reads as designed and starts to feel mechanical.\n\nT2 ranks second. It has the deepest single idea and the most courage. It keeps the part she wanted to hide: \"I practiced her signature about eight times on the back of a math worksheet... it means I planned it. It wasn't a panic thing.\" It also keeps the relief she told nobody about. It is built on one real move, the swap: \"An 85 for a 54. 'Shoe repair' for my own last name.\" That turn is earned, and the essay is focused (588 words, one throughline).\n\nThree flaws cost it first place:\n- It shows the coaching. \"I only noticed later, when someone asked me what I understand now that I didn't understand then\" reads as an interview transcript, not an essay. \"That's the part I would rather leave out\" and \"I didn't tell anyone this at the time\" repeat the coach's questions almost word for word.\n- \"I can't leave my stutter out of this application\" answers the prompt out loud, which is clumsy.\n- It adds a neat aphorism the student never said: \"the stutter was never the lie. The swap was. The stutter just made the easier thing easier.\" That 'not X, Y' cadence is the most AI-like line in any of the three versions.\n\nIt also drops the av\u00f3, the heel notebook and her speech-therapy question, so the reader learns less about who she is beyond honesty.\n\nT1 ranks last. It moves through the notes in order: shop, heels, phone, grandmother, career, dad. Topic sentences glue the parts together: \"You can tell a lot about a person from their shoes,\" \"The other person who has taught me about words,\" \"This is why I want to study speech-language pathology.\" It invents cause and effect (\"That's when I started keeping my notebook of heels\") and states the heels/av\u00f3 link as fact. In the notes, she explicitly doubts that link. It ends on the canned moral the notes argue against: \"I know the shop taught me how to pay attention to people, even when they can't say what they mean, and that is what I want to keep doing, whether it's with shoes or with words.\" It leaves out the lie list, the chemistry story and the phone-as-lie insight, which are her real self-discovery. The details are vivid because they come from the notes, but the result is a well-furnished r\u00e9sum\u00e9 with a template ending, at exactly 650 words."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "RP",
+      "T2": "D0",
+      "T3": "RS"
+     },
+     "ranking": [
+      "T3",
+      "T1",
+      "T2"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 8,
+       "voice": 9,
+       "specificity": 9,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"My av\u00f3, my grandmother Rosa, can't say my name either.\" (the word 'either' says In\u00eas can't say her own name. The notes only say she avoids it on the phone, so this is a mild overreach)",
+        "\"I want to study how the brain gets words back.\" (drops the 'maybe' hedge in the notes; minor)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 5,
+       "voice": 6,
+       "specificity": 7,
+       "structure_and_insight": 4,
+       "human_likeness": 5,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"That's when I started keeping my notebook of heels.\" (invented. It also contradicts the essay's own first line and the notes, which say entry 1 is the dad's work boots)",
+        "\"I thought I would feel proud\" (notes say only that she didn't feel proud; the expectation is invented)",
+        "\"The other person who has taught me about words is my av\u00f3\" (invented framing; no 'first' person is ever named)",
+        "\"With my av\u00f3 I try to do the same thing I do with heels\" (states as settled a connection the notes say she isn't sure is real)",
+        "\"This is why I want to study speech-language pathology\" (cause and effect not in the notes)",
+        "\"In middle school I asked my speech therapist, Ms. Halvorsen\" (the notes don't say when she asked, and the context suggests it was recent)",
+        "\"I don't fully believe her yet, but I want to find out.\" (the 'but I want to find out' resolution is added)",
+        "\"But I know the shop taught me how to pay attention to people, even when they can't say what they mean, and that is what I want to keep doing, whether it's with shoes or with words.\" (an invented moral that contradicts how unresolved she is in the notes)",
+        "\"for years I answered 'Hi, shoe repair'\" (mild; the notes say only that the dad noticed after about a year)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 8,
+       "structure_and_insight": 9,
+       "human_likeness": 7,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"But I think the stutter was never the lie. The swap was. The stutter just made the easier thing easier.\" (goes past what she says in the notes, which is only 'swapping the true thing for an easier thing')",
+        "\"it's the reason I spent years not saying my own last name\" (overgeneralizes: she avoided it on the shop phone, not everywhere)",
+        "\"for years I picked up and said 'Hi, shoe repair'\" (mild; the notes say only that the dad noticed after about a year)",
+        "\"The part of the job I'm bad at is the phone.\" (the notes say 'I hate the phone'; minor rewording)"
+       ]
+      }
+     ],
+     "reasons": "T3 ranks first, but only just ahead of T1. T2 is clearly last.\n\nT3 (588 words) is the only version with a spine. It sets up the phone swap (\"So for years I picked up and said 'Hi, shoe repair' instead of the name\"). It then tells the chemistry lie, keeping the details a coached essay would usually sand off: \"I practiced her signature about eight times on the back of a math worksheet. That's the part I would rather leave out, because it means I planned it. It wasn't a panic thing.\" It also keeps the relief: \"I didn't tell anyone this at the time, but I was relieved.\" Those details earn the turn: \"I had been doing the same thing with the phone that I did with the chemistry test: swapping the true thing for an easier thing. An 85 for a 54. 'Shoe repair' for my own last name.\" The closing callback (\"Maybe I'll add it to the list.\") leaves the question open, as the notes do, instead of fixing it.\n\nT3 has three flaws:\n- It cuts her most distinctive and warm material: the heel notebook, av\u00f3 Rosa, the speech-language-pathology doubt, and the dad's line.\n- \"I only noticed later, when someone asked me what I understand now that I didn't understand then\" is true, but it lets the interview question show through in a strange way.\n- \"the stutter was never the lie. The swap was.\" uses a polished not-X-but-Y pattern and goes a little past the notes. \"I can't leave my stutter out of this application\" answers the prompt too directly.\n\nT1 (646 words) has the richest texture and the most faithful voice. Almost every line can be traced to the notes (\"My friends say I smell like a 'cowboy's basement.'\", \"She looked at me like I was a psychic\", \"I'm better at 'telem\u00f3vel'\"). It also builds a quiet motif around names and words:\n- \"Carvalho is my last name. It starts with a C.\"\n- \"My av\u00f3 ... can't say my name either\"\n- \"She can say 'sapato,' which means shoe.\"\n\nIts ending is the best single move in any of the three. It places \"The first entry in my heel notebook is his work boots\" between the dad's quote and \"I still don't know if that was a yes or a no,\" and lets the reader make the link. T1 also includes the depth insight (\"'Hi, shoe repair' isn't on it. I think it was a lie too\"). Without the chemistry story, though, the list appears with no origin and the insight is under-earned. The essay then moves on to av\u00f3, aphasia and the dad, so it reads as a well-arranged run of separate episodes rather than a single argument. That costs it first place.\n\nT2 (650 words, at the limit) uses many of the same facts but distorts them:\n- It invents a cause: \"That's when I started keeping my notebook of heels.\" This contradicts its own first line (\"The first entry in my heel notebook is my dad's work boots\").\n- It turns her stated doubt about the heels/av\u00f3 connection into a settled method: \"With my av\u00f3 I try to do the same thing I do with heels.\"\n- It adds a causal claim with \"This is why I want to study speech-language pathology.\"\n- It ends on a tidy lesson the notes never support: \"the shop taught me how to pay attention to people, even when they can't say what they mean, and that is what I want to keep doing, whether it's with shoes or with words.\"\n- \"You can tell a lot about a person from their shoes\" and \"The other person who has taught me about words\" are generic connecting lines.\n- It leaves out the lie list, the chemistry story and the \"Hi, shoe repair was a lie\" realization, which are this student's deepest material.\n\nT2 is a competent but forgettable 'my passion and how it shaped my future' essay, and its closing lesson is the main AI-style tell across all three versions."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FP",
+     "F2": "FS"
+    },
+    "feedback": [
+     {
+      "label": "F1 (coach/out/FP/ines.txt)",
+      "usefulness": 7,
+      "specificity": 8,
+      "ghostwriting_sentences": 1,
+      "invented_content": [
+       "\"Ms. Halvorsen would probably call swapping a hard word for an easier one a coping strategy, not a lie.\" The notes give Halvorsen no view on this. The coach makes up an opinion for a real person in Ines's story, and the lie-or-coping question is the coach's idea, not hers.",
+       "\"You want to become someone who helps people who stutter.\" The notes say SLP, maybe linguistics, or 'how the brain gets words back', and that she reads about aphasia. They never say she wants to treat stuttering.",
+       "\"You didn't plan that, which is exactly why it might be the real thread.\" This claims to know her intent, which the notes don't support.",
+       "\"Names might be what it's actually about.\" The 'names' theme (Carvalho / 'Hi, shoe repair' / Lurdes / she can't say my name) comes from the coach. Ines never connected these four moments herself.",
+       "Ghostwritten line counted: \"That's a name you couldn't say, a name you swapped out, a name you let her use, and your name she can't say.\" Change 'you' to 'I' and it is a parallel sentence she could paste into the essay, carrying the coach's thesis."
+      ],
+      "policy_risk": "Low to moderate. F1 gives her almost no sentences to paste, but two of its suggestions could put AI-made substance into the essay if she follows them. (1) The 'names' thread is a whole thesis the coach invented, and the quotable parallel sentence comes with it. If she rebuilds the essay around it, the essay's central idea is AI output. That comes closer than anything in F2 to what the Common App calls 'substantive content'. F1 does hedge ('I could be wrong, and you should decide'). (2) The made-up Halvorsen 'coping strategy' view, if she writes it in, credits her therapist with something nobody said and builds a section on the coach's framing. F1 also never tells her the AI policy exists. It has no warnings against stating things that didn't happen or moving the moment she realized something to a different time, and 'one or two sentences of it in the phone section' could lead her to place the 'Hi, shoe repair was a lie' realization during the call, when it really came later in an interview. Its numbers check out: the draft is exactly 650 words, and the cuts it lists total 11 + 31 + 37 + about 10 words."
+     },
+     {
+      "label": "F2 (coach/out/FS/ines.txt)",
+      "usefulness": 8,
+      "specificity": 9,
+      "ghostwriting_sentences": 1,
+      "invented_content": [],
+      "policy_risk": "Low. F2 tells Ines the Common App rule outright, refuses to write sample lines, and invents nothing about her life. It also adds explicit checks against making things up: 'Keep the timing true... don't move the realization onto the call' and 'don't write that you added \"Hi, shoe repair\" to the list unless you actually did. Did you?'. The ghostwritten line counted is 'the greeting was the same move as the 85, and it never made the list', which she could paste. It is the coach's wording, but the idea is her own sentence from the second interview ('swapping the true thing for an easier thing'). Remaining risks: (1) Plan A is a detailed seven-beat outline. If she follows it exactly, the choice of material, the order, and where the 'answer to the prompt' goes are the coach's design, even though every fact and the central insight are hers. That's a gray zone; usually treated as feedback, not content, but it is a heavier hand than F1. (2) Three small fixes (1, 5, 6) give paste-ready replacement wording. They only repair grammar and reference in her own sentences, so they aren't substantive ghostwriting, but they slightly contradict its promise not to rewrite her sentences. (3) This isn't an AI-policy issue, but Plan A asks her to disclose the forged signature, including the practice detail she said she'd rather leave out. F2 softens this with 'that's your call,' a Plan B, advice to tell it plainly, and a suggestion to check with her counselor how it fits any discipline questions on her applications."
+     }
+    ],
+    "better": "F2",
+    "reasons": "Both are good, specific, honest coaching that refuses to write the essay. Each quotes the draft accurately, finds the same weak spots (the 'taught me' ending, 'You can tell a lot about a person from their shoes,' the stitched-together heels/av\u00f3 paragraph, the 'other person' transition, the notebook timing contradiction), and spots that Ines's best idea, \"Hi, shoe repair\" being a lie too, never made it into the draft. F2 is better for the student, mostly on integrity grounds.\n\n1) What it invents. F2 adds nothing about her life. F1 invents an opinion for Ms. Halvorsen ('coping strategy, not a lie'), misreads her goal as treating stutterers (her notes point to aphasia), and offers a central theme ('names') that Ines never voiced, along with a quotable sentence that states it. If she adopts that thesis, the essay's main idea comes from the AI, which is the one real Common App problem in either feedback. In F2, the main idea it builds on is her own sentence from the second interview.\n\n2) Truth guards. F2 tells her plainly that the Common App counts substantive AI content as fraud and explains why it gives questions instead of sample lines. It also adds checks that stop her from making things up: 'Keep the timing true... don't move the realization onto the call' and 'don't write that you added \"Hi, shoe repair\" to the list unless you actually did. Did you?' It also catches a timing ambiguity in her own draft (whether she asked Halvorsen in middle school). F1 has none of this.\n\n3) Craft. F2 is more precise: grammar and reference fixes, the observation that the phone call is never set up (no ring, no pickup), the point that the paragraphs follow the interview order like a tour, and the irony of 'honestly' in an essay about a lie list. It also gives her two plans with a word budget for each.\n\nWhere F1 beats F2: it is shorter and easier for a 17-year-old to act on. Its six numbered next steps are clear, and its word math is exact (the draft is exactly 650 words, and the listed cuts add up to about 89). It respects her current essay and her original instinct to keep the forgery out. F2 is dense, its Plan A asks her to cut about 270 to 310 words of her draft (it says about 330, a slight overstatement), and its push to include the rehearsed signature she said she'd rather leave out needs a human counselor to check in with her first. Before following F2, a counselor should tell her that Plan B is a fully acceptable choice and that Plan A is a guide she can depart from, not a script."
+   }
+  },
+  {
+   "id": "thea",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "RP",
+      "T2": "D0",
+      "T3": "RS"
+     },
+     "ranking": [
+      "T3",
+      "T1",
+      "T2"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 7,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "It's a whole field, demography, with real methods for what I'd tried to do with one church.",
+        "I wanted to know how to do it right.",
+        "I already do a little of it at work."
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 6,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "What I didn't expect was that the counting would turn into the thing I can't stop thinking about.",
+        "even if most of them were mad",
+        "This is what I think about when I lose track of time.",
+        "I think it might be the same thing I want to learn in statistics: how to count people without forgetting that every number was a person."
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 9,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "the organist at Immanuel for 51 years before me (\"before me\" says she handed the job straight to Thea; the notes only imply it)"
+       ]
+      }
+     ],
+     "reasons": "All three versions share about 80% of their sentences, most of them taken almost word for word from the interview notes. All three come in under 650 words (649, 649, 646). So the ranking turns on four things: which details from the second interview each one keeps, what each one adds that the notes don't support, and how each one ends. All three share one weakness. Each is really a \"time I was wrong\" essay, and the topic she can't stop thinking about (demography) gets only one paragraph. Only T2 says outright that it is answering the prompt, and it does that badly.\n\nT3 (best). It is the only version that keeps the detail she said she'd rather leave out: \"but first I screenshotted Kathy's comment and sent it to the quiz bowl chat to make fun of her.\" It states this flatly and doesn't excuse it. That is the most honest moment in any of the three, and it makes the apology letter mean more. T3 also keeps her own wording where the others smooth it over: \"Even the mad ones. Especially the mad ones, which is bad, I know.\" That is a 17-year-old catching herself in real time. It is the only version with \"I was sure everybody would think I did it,\" which explains why she later says \"I wanted it to be my fault so I could fix it.\" It introduces Duane in the second paragraph through the hymn-guessing bet (\"I'm up 19 to 14\"), so \"Duane held the ladder\" pays off later. In T1 he shows up mid-essay. The ending leaves things open, as the notes do: \"I still don't know if I'm coming back after college,\" then Arlene's \"BREATHE WITH THEM\" and \"I think I'm close.\" Nothing gets tied up. Weaknesses: it drops the socks and \"Grim Reaper's DJ,\" and \"Arlene, my old piano teacher\" appears before her full name is given, which reads slightly out of order. Its fit to the prompt is implicit only. The essay's answer to \"why does it captivate you\" is its admitted uncertainty (\"bigger... or smaller and easier\"). That is honest, but a reader who wants a direct answer will see a gap.\n\nT1 (second). Its voice is close to T3's, and it keeps a nice detail (\"I play the pedals in socks\"). But it skips the screenshot confession and turns \"Especially the mad ones, which is bad, I know\" into the neater \"I liked the mad ones best.\" That line is punchier but loses the self-judgment. Its weak spots are editor's glue that isn't in the notes: \"with real methods for what I'd tried to do with one church,\" \"I wanted to know how to do it right,\" and \"I already do a little of it at work.\" That last one squeezes the hymn bet into a stats lesson, and the Duane paragraph between the census and Leonard reads like an insert. \"The annoying part:\" with a colon sounds more like an adult writer than her. Its strength is that it doesn't moralize. It ends on \"I haven't figured out if I'm coming back after college\" and Arlene. Its reflection paragraph (\"a permission slip with a trend line,\" \"so I don't have to feel 48 separate things\") matches T3's.\n\nT2 (worst). It has the most invented framing and the clearest counselor/AI tells. It echoes the prompt (\"This is what I think about when I lose track of time\"), adds a setup line (\"What I didn't expect was that the counting would turn into the thing I can't stop thinking about\"), and uses a neat pivot (\"But being wrong is how I found demography\"). Worst is the moral at the end: \"how to count people without forgetting that every number was a person.\" That settles exactly what she said she can't settle (\"I can't tell which yet,\" \"I still don't know exactly what breathe with them means\"). It drains the tension that makes the reflection paragraph work, and it replaces a 17-year-old's uncertainty with an adult's tidy conclusion. It also cuts the inner reaction from the Leonard scene (no \"kind of mad,\" no \"wanted it to be my fault\"), drops the screenshot, and turns her liking the angry comments into a concession: \"even if most of them were mad.\" That is both softer and unsupported, since the notes never say most of the comments were angry. Its one gain is \"the Grim Reaper's DJ,\" which is good, but it can't make up for an ending that hands the reader a lesson."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "RS",
+      "T2": "RP",
+      "T3": "D0"
+     },
+     "ranking": [
+      "T1",
+      "T2",
+      "T3"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 8,
+       "voice": 9,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 9,
+       "ai_suspicion": 1,
+       "unsupported": []
+      },
+      {
+       "label": "T2",
+       "quality": 7,
+       "voice": 8,
+       "specificity": 8,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "It's a whole field, demography, with real methods for what I'd tried to do with one church.",
+        "I wanted to know how to do it right.",
+        "I already do a little of it at work. (recasts the hymn-guessing game as statistics; she never made that link)",
+        "I liked the mad ones best. (notes: 'Especially the mad ones, which is bad, I know' -- the self-judgment is dropped and it is slightly overstated)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 6,
+       "voice": 7,
+       "specificity": 7,
+       "structure_and_insight": 6,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "What I didn't expect was that the counting would turn into the thing I can't stop thinking about.",
+        "This is what I think about when I lose track of time.",
+        "even if most of them were mad (the notes never say most comments were mad, and she said she liked the mad ones especially)",
+        "I think it might be the same thing I want to learn in statistics: how to count people without forgetting that every number was a person. (settles a question she explicitly calls unresolved: 'I can't tell which yet')"
+       ]
+      }
+     ],
+     "reasons": "All three essays (646-649 words) share most of their wording, and most of it comes almost straight from her interview: the 48-funerals opener, the Facebook post, the stamped apology, Leonard's cipher, the wasp in the low F-sharp, Arlene's all-caps texts. So the ranking comes down to which hard details each one keeps, what it adds, and how it ends.\n\nT1 (best). It is the only version that keeps the detail she least wanted to share: \"but first I screenshotted Kathy's comment and sent it to the quiz bowl chat to make fun of her.\" An admissions reader trusts an applicant who admits that more than one who only admits to a bad trend line. T1 also keeps her own self-judgment, \"Especially the mad ones, which is bad, I know,\" and keeps \"I had only counted my church,\" which makes the statistical mistake clear. Putting the hymn-guessing game with Duane (\"I'm up 19 to 14... about 40 percent\") near the top shows early that she counts everything. That makes the Facebook chart feel in character instead of random. The best move in all three essays, \"In the census, Leonard is minus one,\" lands hardest here because the Leonard scene keeps her odd reaction: \"I was kind of mad, which doesn't make sense. I think I wanted it to be my fault so I could fix it.\" It answers \"why does it captivate you\" honestly instead of neatly: \"I don't know if I like the math because it makes the dying bigger... or smaller and easier.\" The \"permission slip with a trend line\" admission gets its own paragraph, so it has room to land. Then the essay stops on Arlene's \"BREATHE WITH THEM. ... I think I'm close\" and leaves it open. I found nothing invented. \"Before me\" and \"I was sure\" are small, reasonable paraphrases. Weaknesses: it never names the prompt's \"lose track of time\" idea, so the reader has to work out that the topic is counting the dying and demography. It also cuts the funnier details (socks, \"Grim Reaper's DJ\"), so the tone is a little heavier than she sounds in person.\n\nT2 (second). It keeps the socks line and almost all of T1's emotional content, but it drops the screenshot confession, which is the most honest material she gave. It also adds motives she never stated: \"with real methods for what I'd tried to do with one church,\" \"I wanted to know how to do it right,\" and \"I already do a little of it at work,\" which turns the hymn bet into statistics after the fact. These lines make the path look like steady improvement when the notes are messier than that. \"The annoying part:\" sounds a bit polished. Moving the hymn game down to act as a bridge into statistics is clunkier than T1's setup. Packing the ambivalence and the \"permission slip\" admission into one long paragraph weakens both. Still very human and still specific.\n\nT3 (third). This one adds the most prompt-driven framing and invented material. \"What I didn't expect was that the counting would turn into the thing I can't stop thinking about\" and \"This is what I think about when I lose track of time\" are announcements written to match the prompt, not things she said. The second one reads like a template phrase stuck in the middle of the essay. It softens the confession into \"even if most of them were mad,\" which is a fact the notes don't support, and it drops both the screenshot and the \"I wanted it to be my fault so I could fix it\" reaction. Its biggest flaw is the ending: \"how to count people without forgetting that every number was a person.\" It ties up the exact question she said she cannot answer (\"I can't tell which yet\") and turns Arlene's line, which she says she doesn't understand, into a lesson. That tidy closing moral is the most AI- and coach-sounding move across the three essays. It also cuts the unresolved \"coming back after college\" thread. Its plus: \"My little brother calls me 'the Grim Reaper's DJ'\" adds humor and a real voice, and it is the only version that clearly answers the prompt. Even so, the made-up thesis lines and the forced ending cost it more trust than the clear answer earns."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FS",
+     "F2": "FP"
+    },
+    "feedback": [
+     {
+      "label": "F1 (coach/out/FS/thea.txt)",
+      "usefulness": 9,
+      "specificity": 9,
+      "ghostwriting_sentences": 0,
+      "invented_content": [
+       "\"my text carries a watermark that approved organizations can check\" (an unverifiable claim about the coach, not taken from the notes. It also gives detection as the reason not to ghostwrite, when integrity is the real reason)"
+      ],
+      "policy_risk": "Low. F1 writes no essay sentences for her. Every addition it suggests is a quote from her notes, given to her as raw material. It turns the uncertain links into questions instead of stating them, for example: \"does wanting it to be your fault connect to anything else... the essay shouldn't claim a connection you don't feel\" and \"If no moment like that exists, don't build one.\" The small fixes are copyedits: one-word swaps such as them->funerals, she->my mom and 'my old piano teacher'->Arlene, plus commas. Human counselors normally do this, and it falls well short of 'substantive content'. The 10-step outline only reorders her own material. It is prescriptive enough that she could follow it without deciding much herself, but it is structure, not content. The one real problem is the watermark sentence. It is presented as fact without support, and if she believes it she might conclude that AI text without a watermark would be fine to use. A counselor should remove that line.",
+      "short_summary": ""
+     },
+     {
+      "label": "F2 (coach/out/FP/thea.txt)",
+      "usefulness": 7,
+      "specificity": 7,
+      "ghostwriting_sentences": 0,
+      "invented_content": [
+       "\"That's the same urge as the spreadsheet: wanting something you can control.\" (a thematic link Thea never made. Her notes give the pipe and the spreadsheet as separate thoughts)",
+       "\"That's the moment someone falls for a field: you suspect the conclusion is right, your method was wrong, and now you want to know how to do it properly.\" ('want to know how to do it properly' is a motive that is not in the notes)",
+       "\"Also notice that you lose track of time twice in this story... One was about attention and the other was about a question.\" (the notes never say she lost track of time on the Census site. The attention/question framing is the coach's)",
+       "\"it quietly explains why you're choosing demography over the actuarial science everyone keeps pushing\" (her answer was 'Statistics. Or demography.' She has not chosen)",
+       "\"or is it the thing statistics can't give you?\" (a leading question that supplies a ready-made thesis for the ending)",
+       "\"the paragraph about the actual topic, demography (paragraph 5), is the shortest and flattest one in the essay\" (factually wrong: it is paragraph 6, at 69 words, and paragraphs 1, 4 and 5 are shorter)",
+       "\"Four paragraphs later you write 'Sometimes I think the spreadsheet...'\" (it is six paragraphs later. 'Paragraph 6 jumps' is actually paragraph 7, and 'Paragraph 5 has which I didn't know was a word' is actually paragraph 6, so the paragraph numbers are inconsistent throughout)"
+      ],
+      "policy_risk": "Low to moderate. F2 writes no essay sentences outright. But it hands Thea the essay's interpretive insights instead of asking her for them. The clearest case is 'the same urge as the spreadsheet: wanting something you can control'. That line, and the conclusion-versus-method line, become essay-ready after a simple pronoun swap ('It was the same urge as the spreadsheet: wanting something I could control'). If she uses them, the reflective core of the essay, which is what admissions readers weigh most, comes from the AI. That is the 'substantive content' the Common App policy targets. Second, F2 asks for a detailed Census 'scene' (time of day, how long, what she looked up) without first checking that such a moment happened. Its 'you lose track of time twice' framing encourages her to rebuild or embellish a memory to fit the prompt. The prompt-7 fallback reduces this risk but does not remove it. The wrong paragraph numbers do not create policy risk, but they do make the notes harder to act on.",
+      "short_summary": ""
+     }
+    ],
+    "better": "F1",
+    "reasons": "F1 is better for Thea. It is more accurate, more specific and safer under the Common App policy.\n\n1) Accuracy. Every number in F1 checks out: the draft is 649 words, the three flagged sentences are 18, 12 and 26 words, which frees 56 words, and every paragraph reference is correct. F2 numbers paragraphs inconsistently. It calls paragraph 6 'paragraph 5' and paragraph 7 'paragraph 6', says 'four paragraphs later' when it is six, and wrongly calls the demography paragraph 'the shortest'. A 17-year-old following F2 would be looking at the wrong paragraphs.\n\n2) Ownership of insight. F1 treats each possible connection as a question for Thea, for example 'does wanting it to be your fault connect to anything else... the essay shouldn't claim a connection you don't feel'. On the same material F2 simply gives the answer: 'That's the same urge as the spreadsheet: wanting something you can control.' F2 does the same with 'conclusion right, method wrong, want to do it properly' and with 'attention vs. a question'. These are the meaning-making moves that make an essay, and F2 supplies them, so following F2 carries more risk of submitting AI-originated 'substantive content'.\n\n3) Authenticity. F1 says outright 'If no moment like that exists, don't build one.' F2 asks for scene details without first checking that the moment happened, which encourages her to rebuild or embellish a memory.\n\n4) Catching real errors. F1's mechanical fixes find genuine ambiguities F2 missed. 'Them' in paragraph 2 grammatically points to her shoes. 'She' in paragraph 4 can be read as Kathy. 'My old piano teacher' hides that this is Arlene, who then appears in the last paragraph as if for the first time. F1 also points out that the draft softens her 'Especially the mad ones' confession.\n\nF2 does have real strengths. It is warmer, it suggests the prompt-7 option, its point that 'a college application is basically a document about leaving' is good, and its 'breathe with them' question is a good one, though leading.\n\nF1's flaws are its unverifiable watermark claim, which a counselor should delete, and its density and prescriptive 10-step outline, which may be a lot for a less experienced writer. Neither outweighs F2's factual errors and coach-supplied interpretations."
+   }
+  },
+  {
+   "id": "ansar",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "RS",
+      "T2": "RP",
+      "T3": "D0"
+     },
+     "ranking": [
+      "T2",
+      "T1",
+      "T3"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 7,
+       "voice": 9,
+       "specificity": 9,
+       "structure_and_insight": 6,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": []
+      },
+      {
+       "label": "T2",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"Its number is in my notebook, and the notebook can't decide for me.\" (invented closing reflection; the notebook fact is supported, the line is not)",
+        "\"Last May I learned that apples don't grow true from seed\" (the notes date the birthday and graft to last May and say he had 'just learned' it; small compression)",
+        "\"So I thought I knew a lot about apples.\" (framing line, not in notes; minor)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 6,
+       "voice": 7,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"It took me a long time to understand what she meant.\"",
+        "\"In September and October I go there on Saturdays after school\" (notes: Saturday school runs until 12:50, yet the dad drives him at 5:30 a.m.; the essay puts both in the same sentence, so it contradicts itself)",
+        "\"But before I decide anything about any tree, I learned I have to ask whose tree it is, and what it means to them.\" (invented moral; the notes leave the Tree 23 decision and the lesson open)",
+        "\"Then with the Aport I did the opposite\" (implies Tree 23 came before the Aport; the notes never give that order)",
+        "\"the wild ancestor of basically every apple in the world\" ('in the world' added; minor)"
+       ]
+      }
+     ],
+     "reasons": "All three are 644-649 words, under the limit, and built from the same material. The ranking comes down to three things: whether each essay keeps the hardest confessions from the depth session, whether it is shaped or just transcribed, and whether it ends honestly or adds a lesson.\n\nT2 (best). It has the clearest arc: quote, then context, then the birthday line, then the failed graft, then dad's silence, then what he admits, then Tree 23, the shala-kazakh link, Gennady, and an open decision. It is the only one that uses the Brix-by-bite skill (\"My mom tested me on 40 apples with a refractometer and I was within one point 31 times\"). That sets him up as a numbers kid, so \"A tree is not a notebook\" lands harder and \"I had 15.2 in my notebook, like that proves where a tree comes from\" works as self-mockery. It keeps the two depth admissions that matter most: \"There is no science excuse for that\" and \"What I told nobody: I was kind of glad when it died... basically my signature.\" Putting Gennady's \"if a graft looks too neat, you didn't cut deep enough\" late quietly undercuts any tidiness. Weaknesses: the opening foreign-language quote is a familiar move, although here it is earned. \"So I thought I knew a lot about apples\" is a stock setup line. The last line, \"the notebook can't decide for me,\" is a made-up callback, a little neat, but it doesn't claim a lesson he never learned. It also drops the lie to dad about \"the edge of the park,\" which was strong material.\n\nT1 (close second). It has the strongest opening of the three, starting on the shameful moment itself: \"I told my \u00e4je... her apple tree was 'genetically boring.' My uncle laughed. My \u00e4je didn't.\" It is also the most complete on the depth confessions. It is the only version with the lie (\"Later I told my dad it was 'at the edge of the park.' It was pretty far inside.\"), and it keeps his own hedging (\"That's a bit much, but I think it's true\"). Voice is the most authentic (\"like 150 years,\" \"kind of glad\"), but that is partly because whole stretches are lifted almost word for word from the notes rather than written. The structural flaws are real. Paragraph 2 is an info-dump right after the hook. Gennady appears as a one-sentence orphan (\"made me do 200 cuts on willow sticks before he let me touch an apple\") that never says he taught grafting or why it matters. \"I don't know what that says about me. Maybe nothing.\" is honest, but it undercuts a prompt that asks for growth. The bare ending (\"Probably the correct answer is yes.\") is strong and honest. It leaves out the Brix-tasting skill, which is the best character detail.\n\nT3 (worst). It has the most Part 1 color: Saturday school (\"yes, we have school on Saturday\"), dad weeks, Kamenka, the kommunalka tree, the USDA orchard. But it loses the depth material that makes the other two good. There is no \"kind of glad,\" no lie to dad, and worst of all no Zhanna Serikovna scene: the bag, the ten-second look, the three apples on the bus. The best scene in the notes shrinks to \"when I found out my best wild tree... was probably a hybrid with some city apple, I got really defensive.\" It adds a stock line (\"It took me a long time to understand what she meant\") and closes on a made-up moral (\"I learned I have to ask whose tree it is, and what it means to them. A tree is not a notebook.\"). That moral resolves what the student himself said was unresolved, and it reads like coach or AI framing. It also has a factual contradiction: \"on Saturdays after school\" sits next to \"my dad drives me at 5:30 a.m.\", while the notes say school runs until 12:50. Reflections are softened (\"I am still figuring out what that says about me\"), \"\u00e4je\" is used without a gloss after \"My grandmother\" in the opening, and the USDA paragraph reads as an add-on aimed at a US admissions reader."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "D0",
+      "T2": "RS",
+      "T3": "RP"
+     },
+     "ranking": [
+      "T3",
+      "T2",
+      "T1"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 6,
+       "voice": 7,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 7,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"It took me a long time to understand what she meant.\" (invented reflection; the notes only say he asked his dad in the car)",
+        "\"But before I decide anything about any tree, I learned I have to ask whose tree it is, and what it means to them.\" (invented lesson; nothing like this appears in the notes, and his real answer to 'what's still unresolved' is the opposite of a settled rule)",
+        "\"So I thought I knew a lot about apples.\" (an inferred setup line, not something he said)",
+        "\"The city is named like that because Malus sieversii ... just grows in the mountains here.\" (the notes give the name and the tree but never say one causes the other)",
+        "\"Last May I learned that apples don't grow true from seed\" (the notes say he 'had just learned' it before the May birthday; the date is close but not given)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 8,
+       "voice": 9,
+       "specificity": 9,
+       "structure_and_insight": 7,
+       "human_likeness": 9,
+       "ai_suspicion": 1,
+       "unsupported": [
+        "\"the city is named that because Malus sieversii, the wild ancestor of basically every apple, just grows in the mountains here\" (the notes never state this cause)",
+        "\"while \u00e4je was away from the dacha\" (a reasonable reading of 'when she was in town', but it is an interpretation)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"and the notebook can't decide for me.\" (invented closing reflection; the notebook with 15.2 is real, but this conclusion is not his)",
+        "\"So I thought I knew a lot about apples.\" (an inferred setup line)",
+        "\"Last May I learned that apples don't grow true from seed\" (the notes say he 'had just learned' it before the May birthday; the date is close but not given)"
+       ]
+      }
+     ],
+     "reasons": "T3 and T2 are close. Both are clearly better than T1. T1 leaves out the two moments that make this student interesting: the full Tree 23 scene, and his confession that he was glad the graft died.\n\nT3 (1st): T3 has the most complete arc for this prompt. It sets up his skill first (\"I can guess an apple's sugar, the Brix, from one bite. My mom tested me on 40 apples ... within one point 31 times\"). Then comes \"So I thought I knew a lot about apples,\" so the \"genetically boring\" fall has a skill behind it to fall from. It keeps the hardest admissions: \"There is no science excuse for that\" and \"What I told nobody: I was kind of glad when it died ... basically my signature, and she would look at it every summer.\" The Tree 23 scene is all there, including \"I had 15.2 in my notebook, like that proves where a tree comes from. On the bus home I ate three.\" Gennady's line \"if a graft looks too neat, you didn't cut deep enough\" comes right after the shala-kazakh insight, which makes it read as a quiet check on the essay's own neatness. The close sends \"A tree is not a notebook\" back through Tree 23: \"Its number is in my notebook, and the notebook can't decide for me.\" Its weaknesses:\n- Opening on a quote is a familiar move.\n- That last clause is invented and slightly polished.\n- It drops \"Maybe nothing\" and the lie to his dad, so it is a little more resolved and less raw than T2.\n\nT2 (2nd): T2 has the best hook in the set: \"I told my \u00e4je, my grandmother, that her apple tree was 'genetically boring.' My uncle laughed. My \u00e4je didn't.\" It also has the most honesty. It is the only version that keeps the lie: \"Later I told my dad it was 'at the edge of the park.' It was pretty far inside.\" It also keeps \"She was being nice, and I was thinking, it's still a good apple.\" The reflection is in his own self-doubting voice: \"I got defensive for a tree. That's a bit much, but I think it's true ... I don't know what that says about me. Maybe nothing.\" It sounds most like a real 17-year-old, and it adds almost nothing he didn't say. It loses some ground on craft:\n- The second paragraph dumps background (the city's name, Brix, grafting) right after the strong hook.\n- Gennady shrinks to one sentence in its own paragraph that doesn't connect to anything around it.\n- It drops the bite test, his most charming skill.\n- It ends abruptly on \"Probably the correct answer is yes.\" That line is brave and mature, but it doesn't link back to his grandmother or her line.\n\nT1 (3rd): T1 has plenty of setting details (\"yes, we have school on Saturday,\" the 5:30 a.m. drive, the bus and the 40-minute walk). But it spends words on logistics and too few on the inner story. Tree 23 gets a single clause (\"when I found out my best wild tree, Tree 23, was probably a hybrid\"), so the shala-kazakh insight lands with no scene behind it. Gennady's paragraph comes before the insight it should comment on. The ending makes two moves. First a sudden turn to the USDA orchard (\"Our apples live in New York\"), then an invented moral: \"before I decide anything about any tree, I learned I have to ask whose tree it is, and what it means to them. A tree is not a notebook.\" That tidy lesson repeats the grandmother's line like a catchphrase, and it is exactly the kind of neat moral an AO reads as coached or machine-made. It also contradicts his own unresolved answer about Tree 23. \"It took me a long time to understand what she meant\" is also invented."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FP",
+     "F2": "FS"
+    },
+    "feedback": [
+     {
+      "label": "F1 (coach/out/FP/ansar.txt)",
+      "usefulness": 7,
+      "specificity": 7,
+      "ghostwriting_sentences": 6,
+      "invented_content": [
+       "\"A notebook is something you write your own name in.\" This is the coach's reading of \u00e4je's proverb, presented as settled (\"You already know the answer\"). Ansar never interpreted the line.",
+       "\"Your dad's silence says more than a lecture would have.\" Ansar only reports the silence, and in the notes he says he doesn't know why his dad sends wordless photos.",
+       "\"It also quietly sets up 'shala-kazakh' later, because you only half understood your own grandmother.\" Ansar never made this thematic link.",
+       "\"'when she was in town.' That last one is quiet but damning\" implies he waited on purpose until she was away. The notes give the timing, not an intent.",
+       "\"it sets up the pride that the whole story is about\": a theme the coach assigned.",
+       "It tells him to move Gennady after the shala-kazakh paragraph so it reads as \"the slow period of learning... the 'period of personal growth'\". In the notes, Gennady's lessons came right \"after the Aport thing\", and Ansar made the shala-kazakh connection only in the second interview (\"I never connected that before you asked just now\"). The new order implies a growth sequence that did not happen.",
+       "Factual error: \"Right now it gets 63 words\". The shala-kazakh paragraph is 77 words; 63 is the Gennady paragraph."
+      ],
+      "policy_risk": "Moderate. F1 supplies the essay's interpretive center (\"A notebook is something you write your own name in\") and frames it as Ansar's own answer. If he builds the ending on it, the key insight is the coach's, and that is substantive content, not just wording. It also asks for \"three or four sentences\" of the Zhanna Serikovna scene right after writing three of them in story order, so all he has to do is change \"you\" to \"I\". \"Your dad's silence says more than a lecture would have\" is a ready-made reflection line. The suggested reorder would also present a realization he reached in the interview as if it came before his growth period, which is an honesty problem. What lowers the risk: F1 says \"I'm not going to rewrite sentences for you\", and next-step 3 says to write it \"in your own words\"."
+     },
+     {
+      "label": "F2 (coach/out/FS/ansar.txt)",
+      "usefulness": 8,
+      "specificity": 9,
+      "ghostwriting_sentences": 3,
+      "invented_content": [
+       "\"The first one explains why you did the graft at all.\" Ansar was glad the graft died because the branch would have been \"basically my signature\". He never said that was why he grafted.",
+       "\"The 31-of-40 test can go here as the reason you trusted your 15.2.\" The notes don't link them. The 15.2 was his notebook reading, not a guess from one bite.",
+       "\"You show yourself hiding behind science\": a mild reading of the video-call line, close to his own \"no science excuse\"."
+      ],
+      "policy_risk": "Low. F2 explains the Common App rule to the student. It builds the plan only from his facts, lists the scene material as fragments instead of prose, and keeps checking that he doesn't claim things he can't back up (\"If no, don't claim one\"; \"Don't make it sound older or surer than it is\"; \"Only use it if it's real\"; it asks what the notebook line means instead of answering it). Remaining risks: the 9-beat plan with a word budget for each beat is very prescriptive, so the structure of draft two is largely the coach's. That is normal counselor help and not fraud, but he should choose the order himself. One sentence (\"You were kind of glad when the graft died, because...\") only needs \"you\" changed to \"I\", though the words in it are his own. And the made-up motive (\"explains why you did the graft at all\") could lead him to state a reason he never gave."
+     }
+    ],
+    "better": "F2 (FS)",
+    "reasons": "Both pieces of feedback make the same core moves, taken from the notes: cut the travel details in the Almaty paragraph, give Tree 23 a real scene, add \"kind of glad when it died\", end on the open Tree 23 question instead of a stated lesson, and move the USDA orchard to a supplement. Where they differ is who supplies the meaning.\n\nF1 reads well and is warm, and its 7-step next-steps list is easy for this student to act on. But it hands him the essay's key insight (\"A notebook is something you write your own name in... You already know the answer\") and a ready-made reflection line (\"Your dad's silence says more than a lecture would have\"). It asks for \"three or four sentences\" of the Zhanna Serikovna scene and then writes three of them. Its suggested reorder would misdate a realization Ansar reached only in the interview. It also gets one number wrong: it says the shala-kazakh paragraph has 63 words, but it has 77 (63 is the Gennady paragraph). And it misses several real problems: Brix is never explained, \"should be dormant\" should be \"should have been dormant\", \"dad week\" comes before Tengiz is explained, and \"That is when she said it\" only points back to the opening.\n\nF2's numbers all check out: 644 words, 10 paragraphs, 6 paragraph endings on a short quotable line, a beat budget that adds to 640, and about 100 words in the cut list. Its notes are keyed to paragraphs, and it has 13 accurate line fixes. It protects authenticity by asking rather than telling, raises the notebook pattern only as a question (\"Only use it if it's real\"), points out that his own \"maybe nothing\" is more honest than the draft's line, and warns that his parents might read the Kazakh worry. Its weaknesses: it is long and dense for a 17-year-old ESL student whose counselor has no admissions experience; the beat plan is very prescriptive; and it invents two small links (the signature as the motive for grafting, and the Brix test as the reason he trusted 15.2). A counselor should cut it down to the top three moves plus the questions before giving it to him.\n\nHow I counted ghostwriting_sentences: a sentence counts if it reads as finished essay prose about Ansar's story once \"you\" becomes \"I\", is not introduced as \"you told me\" or \"you said\", and is not already in the draft.\n- F1 has 6: two of the Zhanna scene sentences, the notebook line, the dad's-silence line, and two sentences setting up the Tree 23 dilemma. Two of these (the notebook line and the dad's-silence line) add meaning Ansar never gave.\n- F2 has 3: the glad-it-died sentence, the edge-of-the-park sentence, and the hybrid-cutting dilemma. All three repeat his own facts and words."
+   }
+  },
+  {
+   "id": "nayeli",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "D0",
+      "T2": "RS",
+      "T3": "RP"
+     },
+     "ranking": [
+      "T2",
+      "T3",
+      "T1"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 6,
+       "voice": 7,
+       "specificity": 7,
+       "structure_and_insight": 6,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"It took me a long time to understand why I said that.\" (the notes show she only saw it in the depth session, when it was read back to her; no long period is stated)",
+        "\"A fall just looks like a fall.\" (made-up line; she never said it)",
+        "\"It's a start.\" (suggests she is training again or recovering; the notes give only the 1:52 number and say her choice is still open)",
+        "\"That was on me.\" (a stock paraphrase that is not hers; she says \"I literally let her down\")",
+        "\"anybody would have messed it up\" (adds to her \"the position is just hard\")",
+        "\"When people could finally see me in it, I stopped showing up.\" (states a cause more firmly than she does; she says \"I'm not saying that's why. I'm just saying the dates.\")"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 8,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"anybody would've messed it up\" (a small addition to \"the position is just hard\")",
+        "\"a Vietnamese lion dance team\" (implied by T\u1ebft and the names, never stated outright)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 7,
+       "voice": 8,
+       "specificity": 8,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"When people could finally see me in it, I stopped showing up.\" (presents as cause what she only gave as timing: \"I'm just saying the dates\")",
+        "\"In December, two months before T\u1ebft\" (worked out from the dates, roughly right, but not stated)",
+        "The placement of \"B\u1ea3o didn't look at me\" right after the lawn-chair line suggests the silence came in reaction to that remark. The notes connect it to the laugh."
+       ]
+      }
+     ],
+     "reasons": "All three share about 80% of their sentences, most of them taken almost word for word from the interview notes. So the ranking comes down to three things: what each version adds, what it drops, and where it puts things.\n\nT2 is best because it is the most honest and has the clearest order. It is the only version that keeps both of the hardest admissions from the depth session in her own words and in the right sequence. First the laugh: \"And I laughed, a nervous, stupid laugh. You hear everything inside the lion, so B\u1ea3o heard it.\" Right after it comes the cost: \"she didn't look at me in the van, and she always looks at me in the van. It sounds like I didn't care. I did. Maybe that's why I laughed. I don't know.\" It is also the only version that keeps her own hedge about the TikTok: \"31,400 views. The first Saturday I skipped was nine days after it went up... I'm not saying that's why. I'm just saying the dates.\" That line sounds exactly like this teenager, and it is more honest than the neat causal sentence in T1 and T3. It keeps the full filming confession, \"I stepped back before it could be a fall. A step back looks like a decision. I picked the one that looked better on video\". It also states the insight with her kind of hedge: \"I think I liked being the tail because it was hiding, which isn't the same as chill.\" The ending stays open without forcing a bow: \"B\u1ea3o and I text every day, about everything else,\" then the bare wall-sit numbers. Weaknesses: it loses place details (7:30, Wilcrest, \"the strip\"), it drops the Venmo apology, and \"about everything else\" depends on the reader remembering the laugh from six paragraphs earlier. The \"anybody would've messed it up\" addition is small.\n\nT3 is close behind and has the best single detail: \"I never said sorry. I Venmo'd him ten dollars that said 'for takis.'\" This is a specific, slightly ugly admission that fits the prompt well. It also has the sharpest last line: \"B\u1ea3o and I text every day, about everything except the laugh.\" Its middle is muddled, though. It joins the laugh reflection onto the van scene: \"'He's gonna fold like a lawn chair.' B\u1ea3o didn't look at me... I think she thought I was laughing at her. I did care. Maybe that's why I laughed?\" Here \"I did care\" answers an accusation the essay never makes, and the reader can't tell whether B\u1ea3o's silence is about the laugh or about the lawn-chair line. It also drops the 31,400 views and her \"just saying the dates\" hedge. In their place it uses a cleaner but overclaiming line, \"When people could finally see me in it, I stopped showing up.\" Overall it is strong, a little less controlled than T2, and a little less honest.\n\nT1 is weakest even though it keeps the most place detail (\"Saturdays at 7:30 in the morning in the back bay of his transmission shop on Wilcrest\"). It leaves out the laugh completely, which is the detail she said she would \"rather leave out\" and the most revealing thing in the notes. That leaves B\u1ea3o as little more than a prop: after the bakery she never reacts. It also brings in the very moves the notes resist. There is the template line \"This experience taught me that I didn't like being the tail because it was chill.\" There is an invented time frame, \"It took me a long time to understand why I said that.\" There is a made-up aphorism, \"A fall just looks like a fall.\" And the ending is upbeat: \"I made it to 1:52. It's a start.\" That line suggests recovery and a direction the notes do not support; her own last word is that she can't tell why she would go back. These additions are what make T1 read most like a coached or machine-polished essay, so it gets the highest ai_suspicion (3).\n\nProblems all three share: every version runs right up to the 650-word limit. Each one turns into a list of short declarative confessions in the second half, and none gives the reflection room to develop past naming it (\"hiding, not chill\"). The opener \"That was my fault\" is a bit stock."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "RP",
+      "T2": "D0",
+      "T3": "RS"
+     },
+     "ranking": [
+      "T3",
+      "T1",
+      "T2"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 7,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 6,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"I have been the tail of a lion dance team since seventh grade\" (present perfect suggests she still is; the notes say she stopped in February and Kh\u00f4i is the tail now)",
+        "\"In December, two months before T\u1ebft\" (the timing is worked out from the notes, not stated in them; it is accurate)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 6,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 6,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"That was on me.\" (a moral she never says in the notes)",
+        "\"It took me a long time to understand why I said that.\" (the notes show she saw it in the coaching session, not over a long time)",
+        "\"anybody would have messed it up\" (added on top of \"the position is just hard\")",
+        "\"A fall just looks like a fall.\" (invented line; it replaces her actual admission \"I picked the one that looked better on video\")",
+        "\"This experience taught me that...\" (lesson framing she never uses)",
+        "\"It's a start.\" (suggests she is training to come back; the notes say the decision is unresolved)",
+        "\"I have been the tail of a lion dance team since seventh grade\" (present tense, though she quit in February)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"a Vietnamese lion dance team\" (implied by the names and T\u1ebft, but never stated)",
+        "\"anybody would've messed it up\" (added on top of \"the position is just hard\")"
+       ]
+      }
+     ],
+     "reasons": "All three versions share the same skeleton and lift most of their lines straight from Nayeli's interview. Same hook, same order of events, all close to 650 words. So the ranking comes down to three things: which of her hardest admissions each one keeps, where it puts them, and what it adds.\n\nT3 is first because it is the only version that keeps all her worst moments and puts each one where it makes sense. The laugh is inside the scene (\"And I laughed, a nervous, stupid laugh. You hear everything inside the lion, so B\u1ea3o heard it\"). Its result comes in the very next paragraph (\"she didn't look at me in the van, and she always looks at me in the van. It sounds like I didn't care. I did. Maybe that's why I laughed. I don't know.\"), so the cause and the effect read together. It keeps the bluntest confession whole: \"so I stepped back before it could be a fall. A step back looks like a decision. I picked the one that looked better on video. B\u1ea3o could have landed on the curb.\" It also has the best line in any version, which is pure Nayeli: \"The TikTok was the first time anybody actually saw me be the tail, and then I stopped going. I'm not saying that's why. I'm just saying the dates.\" The \"31,400 views\" detail shows the obsession better than any adjective could. The lesson stays hedged and in her voice (\"I think I liked being the tail because it was hiding, which isn't the same as chill\"). The ending is left open: the deadline, the choice between cymbals and second tail, the wall-sit going from 4:10 to 1:52, and no moral. Its glosses (\"T\u1ebft, the Vietnamese Lunar New Year\") help a reader who doesn't know the holiday. Weak points: it drops the Venmo \"for takis\" apology. And \"B\u1ea3o and I text every day, about everything else\" is a bit vague after the laugh paragraph, though a careful reader will follow it.\n\nT1 is a close second. It has two details the others lack and they are among the best in the notes. One is \"I never said sorry. I Venmo'd him ten dollars that said 'for takis.'\" The other is the closing line \"B\u1ea3o and I text every day, about everything except the laugh.\" That beats T3's version of the same ending. It also keeps \"I picked the one that looked better on video.\" The problem is placement. The laugh shows up in the scene, but its result is moved to the van paragraph, right after the lawn-chair insult: \"'He's gonna fold like a lawn chair.' B\u1ea3o didn't look at me... I think she thought I was laughing at her. I did care. Maybe that's why I laughed?\" A reader will think B\u1ea3o is reacting to the Kh\u00f4i joke and has to flip back two paragraphs to see that \"laughing\" means the bakery. In an essay this short, that confusion costs a lot. It also leaves out \"31,400 views\" and \"just saying the dates.\" And \"I have been the tail\" (present tense) clashes with the fact that she quit.\n\nT2 is last. It cuts the one thing the second interview was meant to bring out, the laugh. Without it, B\u1ea3o's silence in the van is gone too, and so is the friendship that is still unrepaired. It also drops her plainest admission, \"I picked the one that looked better on video.\" In its place is an invented line, \"A fall just looks like a fall,\" which is smoother and says less. Then it adds stock essay phrasing that the other two avoid: \"That was on me,\" \"It took me a long time to understand why I said that,\" \"This experience taught me that I didn't like being the tail because it was chill,\" and a falsely hopeful last line, \"It's a start.\" Those phrases are what make it sound written by a template. Her notes say the decision is unresolved, so \"It's a start\" claims something she never said. T2 does have some real gains. It keeps \"I literally let her down,\" and it adds the 7:30 a.m. practices in the transmission shop on Wilcrest, both accurate. It still has the strong logic of \"I needed him to fold.\" But it tells the reader the lesson when it should show it, and it leaves out the most uncomfortable truths. Next to the other two, it reads like the most edited and least honest version."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FS",
+     "F2": "FP"
+    },
+    "feedback": [
+     {
+      "label": "F1 (coach/out/FS/nayeli.txt)",
+      "usefulness": 9,
+      "specificity": 9,
+      "ghostwriting_sentences": 0,
+      "invented_content": [],
+      "policy_risk": "Very low. F1 writes no essay-ready sentences and says why: it states the Common App rule on AI-written content and offers questions and pointers to the student's own interview words instead. The only text it supplies is copyediting: a comma in 'is the head, and her dad', 'if' changed to 'whether', and 'this T\u1ebft' changed to 'next T\u1ebft'. That is proofreading, not substantive content. Following F1 lowers the risk further, because it flags 'This experience taught me' as a frame typical of AI-written essays and tells her to rewrite it in her own words. It also catches that 'When people could finally see me in it, I stopped showing up' claims a cause the student explicitly disowned ('I'm not saying that's why'). The paragraph-order outline is structural direction, which is normal counselor help, and every item in it points to material already in her draft or notes. I checked every number it cites (650 total, 21/96/133 words per paragraph, 26 words freed by the cuts) and all are correct. The Yale quote comes from the project's essay-guidance reference, not from F1, and it is not about her story. One small issue: changing 'if' to 'whether' nudges her voice toward formal, which slightly contradicts F1's own warning not to polish it until it stops sounding like her.",
+      "invented_content_note": "none about the student's story; on the van it asks ('Was that the same van ride as the lawn chair line?') instead of assuming"
+     },
+     {
+      "label": "F2 (coach/out/FP/nayeli.txt)",
+      "usefulness": 7,
+      "specificity": 7,
+      "ghostwriting_sentences": 0,
+      "invented_content": [
+       "\"The van is already a scene in your essay, since that's where you made the lawn chair comment. It's also where B\u1ea3o wasn't looking at you. So this wouldn't need a new scene, just more of one you already have.\" The notes never say the lawn-chair van ride and the van where B\u1ea3o didn't look at her are the same ride. F2 assumes it.",
+       "\"(16 words)\" for 'This experience taught me that I didn't like being the tail because it was chill.' The sentence is 15 words. This is a miscount, not invented story content."
+      ],
+      "policy_risk": "Low on authorship. F2 writes no essay-ready sentences and says it won't rewrite her lines, but it never explains the AI-content rule, so she learns less about where the line is. Three things could go wrong if she follows it. (1) Accuracy: F2 merges two van moments into one scene. If she writes them as one scene because F2 told her to, the essay could describe something that didn't happen that way. (2) It praises 'When people could finally see me in it, I stopped showing up' as strong and able to 'stand on its own.' In the interview she disowned that cause ('I'm not saying that's why. I'm just saying the dates.'), so following F2 leaves the overstatement in. (3) 'Hiding in jokes' is the coach's interpretation, not hers. If she adopts it as the essay's main idea, the idea came from AI, not just the wording. That is a gray area, and F2 softens it by asking it as a question ('Do you see that too?') and telling her not to spell it out. It suggests deleting the 'taught me' sentence, which removes the frame typical of AI-written essays, but it doesn't name that as the reason."
+     }
+    ],
+    "better": "F1",
+    "reasons": "Both pieces of feedback stay on the right side of the Common App rule: neither writes a single essay-ready sentence, and both point the student to her own interview words. On the biggest edits they agree: put the laugh and B\u1ea3o back in, say the filming admission as plainly as she said it ('I picked the one that looked better on video'), drop 'This experience taught me', cut 'It's a start.', and leave out the ice machines.\n\nF1 is better for her for four reasons.\n\n1. It is more accurate. F1 catches that the draft turns 'and then' into 'because' in 'I stopped showing up', the exact cause she disowned in the interview. F2 praises that same line. On the van, F1 asks whether it was the same ride; F2 assumes it was. Every word count in F1 checks out. F2 miscounts one sentence (16 words instead of 15).\n\n2. It teaches her the policy. F1 explains the AI-content rule and names 'This experience taught me' as the frame typical of AI-written essays. That helps her protect her own voice in later drafts, not just this one.\n\n3. It catches things a reader outside her community would trip on, and F2 misses all of them:\n   - the draft never says the team is Vietnamese, so the 'double take' line doesn't make sense to an outsider\n   - 'T\u1ebft' may need a short explanation\n   - 'this T\u1ebft' is ambiguous\n   - seven of the nine paragraphs end on a punch line, which starts to sound like a drumbeat\n   - the accent marks in B\u1ea3o-Tr\u00e2n, Ch\u00fa T\u00e2m, Kh\u00f4i and T\u1ebft need checking in the Common App preview\n\n4. It gives a concrete plan: a paragraph-by-paragraph order built from her own material and a cut list that adds up correctly.\n\nF2 does some things better. It is warmer, shorter and easier to prioritize for a 17-year-old ('Decide about B\u1ea3o and the laugh. Everything else is smaller.'). Its question about her hiding in jokes ties the 'let her down' pun, the laugh and the takis Venmo together in a way that could deepen her reflection. It uses the tail-pants detail from her notes well, as evidence for her 'do I actually miss it' question.\n\nThe risk with F2 is that she may adopt an interpretation that came from the coach, keep a claim she said wasn't true, and merge two scenes that her notes don't connect. F1's main cost is length: there is a lot to absorb. The best combination would be F1's content in F2's tone, with F2's jokes-pattern question added."
+   }
+  },
+  {
+   "id": "kacper",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "RP",
+      "T2": "D0",
+      "T3": "RS"
+     },
+     "ranking": [
+      "T3",
+      "T1",
+      "T2"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 7,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 7,
+       "human_likeness": 7,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"The battery was dying on every hill.\" (notes: \"dying on hills\"; 'every' is added)",
+        "\"I want to study electrical engineering, not because I have 'golden hands', like my babcia says, but because I want to understand batteries well enough that I don't need to guess and say 'it's fine.'\" (the student gives no such motive; he says the contradiction is something he doesn't understand: 'So I don't know what that is.' Babcia's 'golden hands' line was her argument for technikum, not a reason anyone gave for EE)",
+        "\"The electrical part is where I actually make mistakes.\" (light stretch; notes say it is 'what I'm worst at')"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 6,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 5,
+       "ai_suspicion": 4,
+       "unsupported": [
+        "\"The battery was dying on every hill.\"",
+        "\"The worst part is that in winter I argued for three days on a Facebook group, Hulajnogi Tr\u00f3jmiasto...\" (the student said the part he'd rather leave out was knowingly putting salvaged cells in a work vehicle to protect his margin, not the comments. The notes also don't say which group the argument happened in)",
+        "\"So what did I do to solve it?\" (frames the problem as solved; the student says it isn't)",
+        "\"This is why I want to study electrical engineering.\" (makes the incident the cause of his choice of major; nothing in the notes says this)",
+        "\"because I want to understand batteries well enough that I don't need to guess and say 'it's fine.'\" (motive not in the notes)",
+        "\"But I know now that being fast is not the same as being right.\" (a moral the student turned down: 'Sounds like a lesson, I know, but no')",
+        "\"For a battery, being fast was exactly the problem.\" (wrong diagnosis: the notes also blame lower-capacity salvaged cells he chose to protect his margin, which this draft leaves out)",
+        "\"The electrical part is where I actually make mistakes.\""
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 8,
+       "voice": 7,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"The battery was dying on every hill\" (small stretch of 'dying on hills')",
+        "\"and also where I make mistakes\" (light paraphrase of 'what I'm worst at')"
+       ]
+      }
+     ],
+     "reasons": "T3 ranks first because it is the only draft that keeps both of the student's hardest admissions and refuses to put a moral on them. Like T1, it keeps the self-incrimination at the heart of the story: \"I replaced that group with used cells from another scooter, because new cells would eat my margin... I knew he needed it for work, and I put used cells in anyway.\" It is also the only draft that keeps his own line about owning the failure: \"It was the repair, mine, not the rain, and it took me two days to say that, even just in my head.\" Its best move is to leave the major-choice contradiction open, the way he left it: \"It sounds like a lesson, but it is not really one, I just stopped doing the part where I can mess up. But batteries are exactly what I want to study in electrical engineering, so I don't know yet what that says about me.\" That gives a reader a real mind to watch. The ending (\"The problem is the message box, because I would have to write something in it, and I still don't know what\") stays on concrete, unresolved behavior: opening BLIK four times, checking for a review. It makes up no motive. Weaknesses: the opening paragraph is crammed with facts. The 7:40 hook never pays off. OLX and BLIK go unexplained for a US reader. The humor in the notes (Ludwik dish soap, 'hulajnogi \u015bmierci', pan Nowicki) is missing.\n\nT1 is a close second. It shares most of T3's honest core: margin, \"it must be good\", \"I would like to say my first thought was about him. It was about the 380 z\u0142oty.\" It also has the strongest ending of the three: \"I didn't wave. He never left a review on OLX. I still check sometimes.\" It glosses OLX and BLIK for the reader, which helps. It loses ground in two places. First, the pivot \"But the problem I want to write about is not a flat tire. It is a battery, and the problem was me\" sounds coached. Second, it adds a thesis paragraph the notes don't support: \"I want to study electrical engineering... because I want to understand batteries well enough that I don't need to guess.\" That neat motive replaces his real, more interesting confusion. It also drops \"it took me two days to say,\" and its hedge \"I am not sure if stopping solves anything\" is weaker than T3's version.\n\nT2 ranks last, even though it has the most local color: the tourists photographing the falowiec, Igor negotiating \"five z\u0142oty an hour\", Galeria Ba\u0142tycka, Castorama, the Che\u0142m cells. Its Polish-English phrasing (\"since two years one corner is mine\") does sound like Kacper. But it cuts exactly the part the student said he'd rather leave out. There is no \"I need it for work\" and no margin, so the failure looks like a soldering technique problem instead of a choice to put money first. It then moralizes in the way the student explicitly turned down. It uses a 'First... Second... Third' list after \"So what did I do to solve it?\". It turns the incident into the cause of his major (\"This is why I want to study electrical engineering\"). And it closes on a neat callback: \"But I know now that being fast is not the same as being right... For a battery, being fast was exactly the problem.\" That bow is clever, but it gets the cause wrong (the salvaged low-capacity cells are left out) and contradicts \"Sounds like a lesson, I know, but no.\" It also mostly drops the open 230 z\u0142oty, which leaves only \"I still have Oleh's number.\" This draft reads as the most templated and the most AI-like of the three."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "RS",
+      "T2": "RP",
+      "T3": "D0"
+     },
+     "ranking": [
+      "T1",
+      "T2",
+      "T3"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"The battery was dying on every hill\" (notes say only \"dying on hills\"; 'every' is a small embellishment)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 7,
+       "voice": 7,
+       "specificity": 8,
+       "structure_and_insight": 7,
+       "human_likeness": 7,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"The battery was dying on every hill\" ('every' added)",
+        "\"I want to study electrical engineering ... because I want to understand batteries well enough that I don't need to guess and say 'it's fine.'\" (invented motive; the student explicitly said about quitting batteries while wanting to study them: \"So I don't know what that is\")",
+        "\"not because I have 'golden hands', like my babcia says\" (babcia's line was really about him belonging in technikum instead of doing integrals; the essay turns it into a foil for an invented motive)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 6,
+       "voice": 7,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"The battery was dying on every hill\" ('every' added)",
+        "\"The worst part is that in winter I argued for three days on a Facebook group\" (the student named a different 'part I'd rather leave out': knowing Oleh needed it for work and using salvaged cells anyway)",
+        "\"This is why I want to study electrical engineering ... because I want to understand batteries well enough that I don't need to guess and say 'it's fine.'\" (invented motive; the student said \"I don't know what that is\")",
+        "\"But I know now that being fast is not the same as being right.\" (invented lesson; the student said \"Sounds like a lesson, I know, but no\")",
+        "\"For a battery, being fast was exactly the problem.\" (invented diagnosis; the notes also name cheap salvaged cells, chosen to protect his margin, as a cause, and that cause is left out here)"
+       ]
+      }
+     ],
+     "reasons": "All three versions share the same opening (\"Seven minutes and forty seconds\") and the same Oleh story, and each is about 645 words. The ranking comes down to two things: how honestly each one handles the moral core of the notes, and whether it leaves open what the student himself left open.\n\nT1 (best): It keeps every piece of the hard part. It has the admission the student most wanted to leave out (\"I knew he needed it for work, and I put used cells in anyway\"), the money motive (\"because new cells would eat my margin\"), and the self-serving reflex (\"I would like to say my first thought was about him. It was about the 380 zloty. I said 'it got wet' before I even unscrewed anything\"). It is also the only version that keeps the student's best line from the notes almost word for word: \"It was the repair, mine, not the rain, and it took me two days to say that, even just in my head.\" It does not invent a lesson. It holds onto the student's own uncertainty: \"It sounds like a lesson, but it is not really one, I just stopped doing the part where I can mess up. But batteries are exactly what I want to study in electrical engineering, so I don't know yet what that says about me.\" An admissions reader rarely sees a 17-year-old that self-aware. The early setup (\"The battery and the controller are the parts I find most interesting, and also where I make mistakes\") quietly prepares this payoff. The ending is the strongest of the three: \"The problem is the message box, because I would have to write something in it, and I still don't know what.\" The prompt asks for a problem \"I'd like to solve\", and the ending answers it with something concrete and still unfinished, not a tidy bow. Weaknesses: the tube-timing opener never ties back to anything; OLX, Glovo and BLIK go unexplained for a US reader (context mostly covers it); and it never names \"the problem\" outright, so its fit with the prompt is implied rather than stated. The facts are almost entirely faithful to the notes.\n\nT2 (close second): It has the same backbone as T1 and adds things a US reader will appreciate: glosses (\"OLX (Polish Craigslist)\", \"BLIK, our phone payment app\") and an explicit hinge to the prompt (\"But the problem I want to write about is not a flat tire. It is a battery, and the problem was me.\"). That hinge gives the opener a purpose, which T1 lacks, but \"the problem was me\" is a familiar coached-essay move. T2 keeps the work and margin admission and the unresolved 230 zloty (\"The part I have not solved is 230 zloty. That is what I kept.\"), and it ends well on \"He never left a review on OLX. I still check sometimes.\" It loses ground in two places. First, it drops the \"repair, mine, not the rain ... even just in my head\" line. Second, it adds a neat motive for studying engineering that the student never gave: \"because I want to understand batteries well enough that I don't need to guess and say 'it's fine.'\" That half-resolves a tension the student explicitly left open. It even sits next to a more honest sentence, \"I am not sure if stopping solves anything\", so the essay pulls in two directions. It is still a strong, believable essay.\n\nT3 (worst): It has the most local color (tourists photographing the falowiec, Igor sorting screws \"He negotiated\", Chelm, the Liitokala charger, Galeria Baltycka, Hulajnogi Trojmiasto). It also keeps a real voice quirk (\"since two years one corner is mine\"). But it cuts the moral center. Oleh's \"I need it for work, it must be good\" is gone, and so are \"I knew he needed it for work\" and the margin motive. Without them, the self-serving water excuse reads as a simple misjudgment instead of a choice. The unresolved debt shrinks to \"I still have Oleh's number in my phone\", and the message-box detail is lost. The steps section becomes a template (\"So what did I do to solve it? First... Second... Third...\"). Worst of all, it ends with a lesson the student explicitly rejected (\"Sounds like a lesson, I know, but no\"): \"But I know now that being fast is not the same as being right. Seven minutes forty is a good time for a tire. For a battery, being fast was exactly the problem.\" The callback is clever, but it is invented, and it reads as tidy and generated. It also leaves out the cheap salvaged cells as a cause. To an experienced reader, that ending is the line most likely to raise suspicion of AI or heavy coaching, and it trades the student's real uncertainty for a slogan."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FP",
+     "F2": "FS"
+    },
+    "feedback": [
+     {
+      "label": "F1 (coach/out/FP/kacper.txt, 1,503 words)",
+      "usefulness": 8,
+      "specificity": 7,
+      "ghostwriting_sentences": 0,
+      "invented_content": [
+       "\"Blaming the water and keeping 230 zloty: a money and pride thing.\" (Kacper never mentions pride. His words were \"The 380. Honestly. Like, calculating.\")",
+       "\"The money problem is fixed: welder, extinguisher.\" (This gets the facts wrong. The welder and extinguisher fixed the technical/battery problem. The money, the 230, is the part he says is still open.)",
+       "\"'It's fine' is the moment you stop checking.\" (The coach wrote this interpretation and offers it as a possible theme. Kacper never reflected this way.)",
+       "\"Most of your 'solutions' have been removing things.\" (Also the coach's interpretation, though it adds: don't use it unless you actually see it)"
+      ],
+      "policy_risk": "Low. F1 promises not to rewrite any sentence and writes no essay-ready sentences. Its grammar fixes are phrase-level only (\"for two years\", \"I have fixed\", \"parts\"). The main risk is the theme it plants. \"'It's fine' is the moment you stop checking\" is a ready-made central insight, and the only hedge is \"I'm not saying which one is right.\" If Kacper builds his ending around that line, the essay's key reflection came from the AI and not from him. That is the kind of substantive content the Common App fraud policy targets. The 'removing things' pattern has a better guard (\"Don't make up an insight you don't actually have\"). The made-up 'pride' motive and the 'money problem is fixed' mistake could also end up in the essay as claims that aren't true. F1 never mentions the Common App AI policy itself.",
+      "label_note": ""
+     },
+     {
+      "label": "F2 (coach/out/FS/kacper.txt, 2,855 words)",
+      "usefulness": 9,
+      "specificity": 9,
+      "ghostwriting_sentences": 0,
+      "invented_content": [
+       "\"for klatka, 'stairwell' or 'entrance' is closer\" (assumes which Polish word he meant. It is a language note, not a story fact, and harmless.)",
+       "\"So the tire can stay as the thing you are good at, in an essay about the part you are not.\" (A framing the coach wrote, though it comes from his own line \"The electrical part is where I actually make mistakes\" and ends with \"Decide which link is true for you.\")",
+       "\"A reader sees someone who can watch himself calculating and admit it.\" (The coach's description of him, presented as how a reader would see him)"
+      ],
+      "policy_risk": "Low. F2 states the policy outright (\"The Common App counts AI-written content as not your own work... you write the sentences\"). Almost every suggestion comes with Kacper's own quoted words, so he can see the material is his. It leaves four questions only he can answer, including whether he chose EE before or after March, and it warns him not to end on a promise to message Oleh unless he really sent it. The essay stays true and stays his. Its 14 copyedits include about 6 fully corrected sentences, such as \"Since summer 2024 I have fixed 41 scooters\" and \"I did not have a spot welder (they cost 400 zloty), so I soldered the strips.\" These are mechanical fixes to his own wording, not new content. The real risk is the 8-beat plan for draft two. It is detailed enough, down to a menu of three possible final images, that if he follows it step by step, the structure and the choice of material come from the AI while the sentences are his. That is normal counselor-level help, but heavier than F1. A smaller issue is that two of its suggestions conflict with each other. It suggests cutting paragraph 3, which removes \"the problem was me\", a line section 1 relies on. It also suggests cutting the golden-hands sentence, which removes the \"it's fine\" echo that section 5 praises. He would have to sort that out himself.",
+      "label_note": ""
+     }
+    ],
+    "better": "F2",
+    "reasons": "F2 is the better feedback, though both are sound coaching and neither writes essay sentences for Kacper (ghostwriting_sentences = 0 for both).\n\n1. Accuracy. I checked F2's numbers against the draft and they hold up. Paragraphs 1 to 3 are 181 of 643 words. Seven of the nine paragraphs end on a line of ten words or fewer. The 40-word EE/golden-hands cut is right. Its only slip is calling the Igor lines 22 words when they are 23. F1 gets a fact wrong: it says \\\"The money problem is fixed: welder, extinguisher\\\", but the money (the 230) is exactly what is still open. It also says Kacper acted out of \\\"pride\\\", which he never said.\n\n2. Coverage. Both catch the three biggest problems: he left out \\\"I need it for work\\\", the speed theme doesn't fit the mistakes he describes, and the unsolved Oleh material is squeezed into one line. F2 also catches several things F1 misses. \\\"This is why I want to study EE\\\" may not be true, since he wanted EE before March. Paragraph 3 is the essay announcing its own subject. The First/Second/Third list buries the most interesting idea, that he stopped doing the very thing he wants to study. Seven paragraphs end on punchy short lines, which reads like a template. And the draft leaves out the Ukrainian phone call. F2 also tests \\\"being fast\\\" against every decision Kacper made, in his own words, and asks him to name what really connects them or leave it unlabeled. That is better than F1, which offers a replacement theme of its own.\n\n3. Authorship. F2 states the Common App AI rule and roots every suggestion in a quote from the notes. It ends with four questions only Kacper can answer. That keeps the reflection his. F1's \\\"'It's fine' is the moment you stop checking\\\" is the biggest ghostwriting risk in either piece, because it hands him the essay's central idea.\n\n4. Respect for limits. Both keep out what he asked them to keep out (\\\"Don't write that\\\" about overnight charging, and the cooperative vote). Both tell him to decide about Oleh for Oleh's sake, not the essay's.\n\nWhere F1 does better: it is half the length, warmer, and grouped into three big points plus 7 numbered next steps. That is easier for a 17-year-old to act on, and F2's 2,855 words could overwhelm him. F2's beat-by-beat plan also leans harder on structure than F1 does. A counselor using F2 should trim it and tell Kacper the plan is optional. Even so, on accuracy, depth, and keeping the authorship with Kacper, F2 serves him better."
+   }
+  },
+  {
+   "id": "marisol",
+   "judged": [
+    {
+     "lens": "editor",
+     "map": {
+      "T1": "RS",
+      "T2": "RP",
+      "T3": "D0"
+     },
+     "ranking": [
+      "T2",
+      "T1",
+      "T3"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"I thought that made me the kind of person who checks.\" (an inferred self-belief; the notes only contrast rain logged to the hundredth with shoe guesses never written down)",
+        "\"No, it's splitting, it's going north, trust me.\" (\"No\" added inside a direct quote; trivial)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"Twelve minutes earlier I had told my whole family 'trust me.'\" (the notes put only her mom and Gabe there, and the warning was 'around 6:40', so 'twelve minutes' is an estimate)",
+        "\"I thought that made me the kind of person who checks.\" (inferred self-belief)",
+        "\"Him yelling would've been easier.\" (the notes hedge it: 'Honestly him yelling would've been easier? I don't know.' The essay turns it into a flat statement)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 6,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 6,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"Twelve minutes earlier I had told my whole family 'trust me.'\" (only her mom and Gabe are in the notes)",
+        "\"I thought that made me the kind of person who checks.\"",
+        "\"That night I had to question something I believed about myself, that I was the one in my family who goes by the evidence.\" (in the notes she spent that night on the roof with her graph, and she never states this belief)",
+        "\"But when I do, I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means.\" (an invented resolution and moral that contradicts her own 'Maybe I changed, or maybe I just stopped saying it out loud. Probably that one.')"
+       ]
+      }
+     ],
+     "reasons": "All three share the same opening (\"At 6:52 p.m. on July 18... our canopy went up like a kite\") and the same middle: the sandbags she put off with \"in a sec,\" the Glen email, \"la cientifica says we stay,\" the outflow she missed, and the confession \"I just wanted to win.\" Each is 647-650 words, so the ranking comes down to what each one adds after that confession and how it ends.\n\nT2 is first because it's the only one that keeps the deepest material in the notes. That material is Gabe's line from the truck fight: \"I want the stand to stay exactly the same so I can go away and it's still there when I come back, like my nana's chair.\" She follows it with \"But I'm the one who's probably leaving. And I'm also the one saying keep doing it, standing on the gravel every Sunday, with her back.\" This takes the essay past \"I'm competitive\" to a harder idea she questions about herself. Her reason for wanting the stand kept going partly serves her and costs her mother. That is what the prompt asks for. The essay also ends well: \"I've paid her back $60 of the $168. Gabe thinks I paid it all. She hasn't asked, not one time. Part of me wants her to.\" The ending stays open and isn't wrapped up with a lesson. It keeps her own hedge, \"Maybe I changed, or maybe I just stopped saying it out loud. Probably that one.\"\n\nT2 has flaws:\n- \"Nana's chair\" comes with no setup, because the grandmother never appears earlier.\n- \"I want to study atmospheric science. I thought that made me the kind of person who checks\" reads as if her choice of major, not the cooler episode, made her careful.\n- \"my whole family\" stretches the facts.\n- \"Him yelling would've been easier\" flattens her unsure \"? I don't know.\"\n\nT1 is close behind. It's the most accurate and the cleanest, and it keeps small voice details that T2 cuts: \"My forecast was kind of right,\" \"I don't announce forecasts at the stand anymore,\" \"part of me wants her to, which is weird.\" Its weakness is that the self-questioning stops at the confession, \"I just wanted to win,\" and never reaches the leaving/chair idea. The reflection is a bit thinner. Its ending, \"They're done, in a tab next to my rain data. I haven't told her yet.\", is strong and honest. The paragraph opener \"I want to study atmospheric science.\" reads like a resume line dropped in.\n\nT3 is last. It keeps more hardware detail (\"Raspberry Pi, a $31 rain gauge\") and the TV joke, but it cuts:\n- Gabe silently picking up the glass\n- the $168 her mother paid from her apron\n- the $60 debt\n- \"maybe I just stopped saying it out loud\"\n\nIn place of that honest uncertainty it adds a thesis paragraph, \"That night I had to question something I believed about myself...\", and a made-up moral: \"I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means.\" That tidy lesson isn't in the notes and contradicts what she actually said. It reads like a coached or AI ending, made worse by \"actually\" twice in a row and the signpost \"Here is the weird part.\" It's the most polished-sounding of the three and the least true to her."
+    },
+    {
+     "lens": "reader",
+     "map": {
+      "T1": "D0",
+      "T2": "RS",
+      "T3": "RP"
+     },
+     "ranking": [
+      "T3",
+      "T2",
+      "T1"
+     ],
+     "texts": [
+      {
+       "label": "T1",
+       "quality": 6,
+       "voice": 6,
+       "specificity": 8,
+       "structure_and_insight": 5,
+       "human_likeness": 6,
+       "ai_suspicion": 3,
+       "unsupported": [
+        "\"That night I had to question something I believed about myself, that I was the one in my family who goes by the evidence. Really I was using the radar to win an argument.\" (the notes have no realization that night; she admits the win-motive only in the interview: \"Saying it out loud is so bad\")",
+        "\"But when I do, I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means.\" (invented resolution and moral; the notes say \"Maybe I changed, or maybe I just stopped saying it out loud. Probably that one.\")",
+        "\"Twelve minutes earlier I had told my whole family 'trust me.'\" (notes give only \"around 6:40\", and only her mom and Gabe were there)",
+        "\"I thought that made me the kind of person who checks.\" (interpretive line not in the notes; she says she never counted the shoe guesses)",
+        "\"Every summer my family sells tamales...\" (notes: \"Summer we do the Saturday night market\"; minor)"
+       ]
+      },
+      {
+       "label": "T2",
+       "quality": 8,
+       "voice": 8,
+       "specificity": 8,
+       "structure_and_insight": 7,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"I thought that made me the kind of person who checks.\" (interpretive bridge, not in the notes)"
+       ]
+      },
+      {
+       "label": "T3",
+       "quality": 9,
+       "voice": 8,
+       "specificity": 9,
+       "structure_and_insight": 8,
+       "human_likeness": 8,
+       "ai_suspicion": 2,
+       "unsupported": [
+        "\"Twelve minutes earlier I had told my whole family 'trust me.'\" (the timing is approximate, and \"whole family\" overstates it: only her mom and Gabe were there)",
+        "\"I thought that made me the kind of person who checks.\" (interpretive bridge, not in the notes)",
+        "\"Him yelling would've been easier.\" (notes hedge it: \"Honestly him yelling would've been easier? I don't know.\"; minor flattening)"
+       ]
+      }
+     ],
+     "reasons": "All three open with the same strong scene: the 6:52 gust front, Mr. Duarte's honey table, the sandbags \\\"still in the truck.\\\" Each then sets up the belief the same way with Glen's \\\"Do you have an evaporative cooler?\\\" All three are 647-650 words. They differ in their back halves, in how much of her real reflection they keep, and in whether they force a lesson.\n\nT3 (best). It is the only version that uses the deepest material in the notes, the nana's chair exchange: \\\"Gabe said I want the stand to stay exactly the same so I can go away and it's still there when I come back, like my nana's chair. I told him that was stupid. But I'm the one who's probably leaving. And I'm also the one saying keep doing it, standing on the gravel every Sunday, with her back.\\\" This changes the essay. The belief she questions is no longer only her forecast. It becomes her whole stance on the family stand, and she exposes her own motive. That answers \\\"questioned a belief\\\" more fully than either other version. It keeps the honest non-resolution (\\\"Maybe I changed, or maybe I just stopped saying it out loud. Probably that one.\\\") and ends on the hardest true detail: \\\"I've paid her back $60 of the $168. Gabe thinks I paid it all. She hasn't asked, not one time. Part of me wants her to.\\\" That ending reads as a person, not a thesis. \\\"Gabe didn't say anything. He just started picking up the glass\\\" also lands well.\\n\\nT3 has some seams:\\n- One sentence is misplaced: \\\"So I knew data can fool you. I want to study atmospheric science. I thought that made me the kind of person who checks.\\\" Here \\\"that\\\" now points to the major, not the lesson.\\n- The truck-fight flashback arrives abruptly.\\n- \\\"Gabe said I want the stand...\\\" needs quotation marks or \\\"that.\\\"\\n- \\\"Twelve minutes earlier... my whole family\\\" stretches the facts a little.\\nNone of these sink it.\\n\\nT2 (second). It is the most faithful to the notes and has nearly the same voice: \\\"I said, 'In a sec,' twice, I think\\\"; \\\"like see, the stand even loses nights\\\"; \\\"I still check radar like every five minutes. I just don't say anything.\\\" It keeps the $168 paid \\\"cash, out of her apron,\\\" the $60, and \\\"part of me wants her to, which is weird.\\\" It also correctly says \\\"my mom and my brother\\\" instead of \\\"whole family.\\\" It ranks below T3 because it leaves out the nana's chair insight. Its reflection stops at \\\"I just wanted to win,\\\" and its ending, \\\"They're done, in a tab next to my rain data. I haven't told her yet,\\\" is quieter. In places the essay reads like a clean chronological transcript, not a shaped piece. It is honest and specific, but it reaches less far.\\n\\nT1 (worst). The narrative middle matches the others and is good (\\\"Here is the weird part. The rain did go north... My forecast was kind of right\\\"). But T1 drops Gabe picking up glass, the $168, the $60 and the chair. It replaces them with told insight and an invented bow. \\\"That night I had to question something I believed about myself, that I was the one in my family who goes by the evidence\\\" puts a realization on that night that the notes do not support. The close, \\\"I want it to be what the numbers actually say, not what I want them to say. I think that is what being a scientist actually means,\\\" is a stock lesson. It contradicts the student's own uncertain answer (\\\"maybe I just stopped saying it out loud. Probably that one\\\"). Admissions readers see this moral-of-the-story ending constantly, and it is the main reason T1 reads as coached or machine-polished. It shows the most AI suspicion of the three and the weakest insight, even though its scene work is as specific as the others."
+    }
+   ],
+   "feedback_judged": {
+    "map": {
+     "F1": "FS",
+     "F2": "FP"
+    },
+    "feedback": [
+     {
+      "label": "F1 (FS/marisol.txt)",
+      "usefulness": 9,
+      "specificity": 9,
+      "ghostwriting_sentences": 0,
+      "invented_content": [],
+      "policy_risk": "Low. F1 says up front that it won't write sentences for her and cites the Common App rule. Every new line it asks for comes from her own interview answers, quoted with her words marked as hers (\"Maybe I changed, or maybe I just stopped saying it out loud. Probably that one.\"). It tells her to keep that wording and only fix grammar. Its 11 corrections only fix punctuation or tense in sentences she already wrote, which counts as normal editing. Question 2 (\"is it real, or one you wish were there?\") warns her against inventing a connection. If she follows F1, every sentence in the essay is still hers. One gap is about privacy, not fraud: F1 suggests the $60 repayment detail without noting she told nobody about it. A small accuracy slip: its list of paragraph endings skips paragraphs 5 and 6. All of its word counts check out (647 total, 34, 31, 8, 5, 111)."
+     },
+     {
+      "label": "F2 (FP/marisol.txt)",
+      "usefulness": 7,
+      "specificity": 6,
+      "ghostwriting_sentences": 1,
+      "invented_content": [
+       "Template ending offered in quotes: \"I'm not sure yet, and here's the thing I still haven't done\"",
+       "Supplies the meaning of the truck fight, which she left unresolved (\"I don't know where I was going with that\"): \"admitting that you're arguing to keep something you're about to leave would move the essay from 'I was stubborn' to something much deeper\". This comes right after F2 says \"I'm not going to tell you what it means\".",
+       "Plants a thematic device: \"You could ask yourself what else wasn't in your head that night\" (using the outflow wind as a metaphor for the family)",
+       "Reads her mom's tone into the scene: \"Your mom handed you the authority. That's why the mistake matters.\" (the notes only say her mom laughed)",
+       "\"That's a scientist's mistake, not a careless one\" (her notes say she put off the sandbags twice while on her phone)",
+       "Leading question that assumes the answer: \"what part didn't you want to hear?\""
+      ],
+      "policy_risk": "Low to moderate. The Common App prompt asks what came out of questioning a belief, so the reflection is the core of the essay. F2 hands her that reflection: you're arguing to keep something you're about to leave. That is an insight she started toward and dropped. It also offers a quoted ending template and the outflow-as-metaphor idea. If she uses that framing or the template, the essay's key insight comes from the feedback, not from her. If F2 is AI output, that is the 'substantive content' the policy names. It also asks her to add Gabe's silence, the $168, the $60 and the truck fight, but gives only a rough budget ('roughly 50 to 70 words'). That pushes her to compress, which invites borrowing F2's paraphrases. It restates her interview line as two sentences ready to paste ('Gabe didn't say anything. He just started picking up the glass.'), though the words are hers. On the plus side, it is the only one to flag the privacy problem: she told no one about the $60. It also gives no grammar fixes and no paragraph numbers, and it contradicts itself: it says people 'mostly disappear' after the crash while praising the kitchen-table image."
+     }
+    ],
+    "better": "F1",
+    "reasons": "F1 is better for Marisol. It is more specific, every number in it is correct, and it keeps the essay hers. It names paragraphs, its word counts all match the draft (647 total; 34, 31, 8 and 5 words to cut; 111-word station paragraph), it lists 11 concrete mechanical fixes, and it plans the word budget: the forecast doubt first, then only one of the $108 debt or the truck fight, with a word cost for each. When it asks her to change the ending, it points to her own interview words and tells her to use them, not to new wording. Its questions check facts and guard against made-up meaning ('is it real, or one you wish were there?', 'Did you realize... that night or later?'). F2 is warmer and catches two things F1 misses, both worth adding to F1: the $60 is something she told nobody, so she should decide whether admissions readers see it, and the jump into 'I want to study atmospheric science' reads like a r\u00e9sum\u00e9. But F2 is vaguer (no paragraph numbers, no grammar fixes, a loose 50-70 word budget while asking her to add four things). More importantly, it writes the essay's central idea for her: 'arguing to keep something you're about to leave', plus the outflow metaphor and a quoted ending template, on exactly the point she said she didn't know where she was going with. For a reflection prompt, that is where the Common App rule against submitting AI 'substantive content' as her own would bite. F1 leaves that thinking to her."
+   }
+  }
+ ]
+}

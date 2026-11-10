@@ -1,0 +1,12 @@
+judgments 24
+V9   mean rank 2.25  first 10/24  quality 7.71  human 5.25  unsupported 3.08
+V9b  mean rank 2.29  first 6/24  quality 7.67  human 5.29  unsupported 3.17
+V12  mean rank 2.96  first 4/24  quality 7.12  human 5.12  unsupported 2.96
+V13  mean rank 2.50  first 4/24  quality 7.54  human 5.17  unsupported 2.92
+V13 ranked above V9 in 10 of 24; mean rank advantage -0.25 [-1.33, 0.75] (bootstrap over briefs)
+V13 ranked above V9b in 11 of 24; mean rank advantage -0.21 [-1, 0.58] (bootstrap over briefs)
+V13 ranked above V12 in 15 of 24; mean rank advantage +0.46 [-0.38, 1.25] (bootstrap over briefs)
+V12 ranked above V9 in 8 of 24; mean rank advantage -0.71 [-1.71, 0.25] (bootstrap over briefs)
+V12 ranked above V9b in 8 of 24; mean rank advantage -0.67 [-1.54, 0.29] (bootstrap over briefs)
+V9b ranked above V9 in 12 of 24; mean rank advantage -0.04 [-0.92, 0.79] (bootstrap over briefs)
+mean rank by genre: {"argue": {"V9b": 2.62, "V9": 1.88, "V13": 2.62, "V12": 2.88}, "explain": {"V9b": 2.12, "V13": 2.12, "V9": 2.12, "V12": 3.62}, "lit": {"V9b": 2.12, "V12": 2.38, "V9": 2.75, "V13": 2.75}}
