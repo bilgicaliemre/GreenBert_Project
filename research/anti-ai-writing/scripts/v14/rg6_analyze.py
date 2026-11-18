@@ -2,7 +2,7 @@
 import json, sys, statistics as st, random
 sys.path.insert(0, 'tools'); from wfread import results
 m = json.load(open('rg6/panel_map.json'))
-C = ['V131', 'V14', 'V14b']
+C = ['V131c', 'V14b']
 rows = []
 for r in sys.argv[1:]:
     for lab, res in results(r).items():
@@ -36,7 +36,7 @@ def pair(a, b):
         return st.mean(v) if v else 0
     boots = sorted(md([rng.choice(B) for _ in B]) for _ in range(4000))
     return w, l, round(md(B), 2), [round(boots[100], 2), round(boots[3899], 2)]
-for a, b in (('V14b', 'V131'), ('V14b', 'V14'), ('V14', 'V131')):
+for a, b in (('V14b', 'V131c'),):
     w, l, d, ci = pair(a, b)
     out['pairs'][f'{a}>{b}'] = {'wins': w, 'losses': l, 'rank_gain': d, 'ci95': ci}
     print(f'{a} ranked above {b} in {w} of {w + l}; mean rank advantage {d:+.2f} {ci} (bootstrap over briefs)')

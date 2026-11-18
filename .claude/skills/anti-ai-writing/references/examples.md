@@ -11,12 +11,13 @@ Before: "It is important to note that our extraction pipeline, which leverages a
 filters, achieved a precision of 44% in the automated audit. This underscores the pivotal role that semantic
 understanding plays in claim detection, paving the way for future BERT-based approaches."
 
-After: "In the automated audit, 44% of the sentences the pipeline extracted were real claims. Most remaining
-errors depend on what a sentence means rather than which words it contains, and keyword filters cannot
-see meaning. This is the reason for the planned BERT classifier."
+After: "In the automated audit, the extraction pipeline reached a precision of 44%. Claim detection needs
+semantic understanding, which is the reason for the planned BERT-based approach.
+[ask: which errors show that the filters miss meaning?]"
 
 Why: "It is important to note", "leverages", "comprehensive", "underscores the pivotal role", "paving the
-way" carried no information. The after states the number with what it measures, and the reasoning.
+way" carried no information. The after keeps the number and the claim, and asks for the evidence the claim
+needs instead of supplying it.
 
 ---
 
@@ -32,19 +33,18 @@ classes?" Then start the essay with that position.
 
 ---
 
-**3. Personal essay (student's own draft): minimum edit**
+**3. Personal essay (student's own draft): coach, do not rewrite**
 
 Before: "Working at the animal shelter was a journey that taught me compassion, responsibility, and the
 importance of community. Every Saturday I cleaned the cat room, which smelled like ammonia no matter how much
 bleach we used, and I learned that every animal deserves love."
 
-Feedback: The ammonia-and-bleach detail is the best thing here; keep it. Cut "a journey that taught me
-compassion, responsibility, and the importance of community" and "I learned that every animal deserves
-love": both could sit in anyone's essay. What do you do now, after months of Saturdays, that you didn't do at
-first? Show that instead of naming the lesson.
+Returned draft: unchanged; it has no outright errors.
 
-Minimum edit while you rewrite: "Every Saturday I cleaned the cat room at the shelter. It smelled like
-ammonia no matter how much bleach we used."
+Feedback: The ammonia-and-bleach detail is the best thing here; keep it. "A journey that taught me
+compassion, responsibility, and the importance of community" and "I learned that every animal deserves
+love" could sit in anyone's essay. What do you do now, after months of Saturdays, that you didn't do at
+first? Put that in their place, in your own words, and say plainly what you concluded from it.
 
 ---
 
@@ -52,7 +52,7 @@ ammonia no matter how much bleach we used."
 
 Before: "Greenwashing isn't just about misleading ads; it's about a fundamental breakdown of trust."
 
-After: "Greenwashing erodes trust in what companies report."
+After: "Greenwashing is a fundamental breakdown of trust. [ask: whose trust, in what?]"
 
 Why: nobody in the text claimed greenwashing was only about ads, so rejecting that view adds nothing.
 Keep an "it's not X" only when X is a view someone actually holds.
@@ -74,9 +74,8 @@ Before: "I hope this email finds you well! I wanted to reach out to kindly ask w
 be willing to write a letter of recommendation for me. I truly value the insights I gained in your class.
 Please let me know if you have any questions!"
 
-After: "Would you be willing to write me a recommendation letter for college? The first deadline is [date].
-I'm asking you because [one specific thing from your class]. I can send my résumé and a short list of what I
-worked on in your class."
+After: "Would you be willing to write a letter of recommendation for me? [ask: for what, and by when?] I'm
+asking you because [ask: one specific thing you took from the class]."
 
 ---
 
@@ -88,19 +87,19 @@ After: "The argument depends on this assumption. Without it, the conclusion does
 
 ---
 
-**8. Rhythm without chopping**
+**8. Tightening without chopping**
 
 Before: "Tides are caused mainly by the gravitational pull of the Moon on Earth's oceans. This pull raises
 a bulge of water on the side of Earth that faces the Moon at any given time. A second bulge forms on the
 opposite side because the gravitational force differs across the planet. As Earth rotates through both
 bulges, most coasts experience two high tides each day."
 
-After: "The Moon's gravity pulls on Earth's oceans and raises a bulge of water on the side facing it. A
-second bulge forms on the far side, because the pull is not the same everywhere on the planet. Earth turns
-through both bulges, so most coasts get two high tides a day."
+After: "Tides are caused mainly by the Moon's gravity, which pulls on Earth's oceans and raises a bulge of water
+on the side facing it. A second bulge forms on the far side, because the pull is not the same everywhere on
+the planet. Earth turns through both bulges, so most coasts get two high tides a day."
 
-Why: four sentences of nearly equal length and identical shape became three that differ, with no fact
-added or lost.
+Why: the repeated "gravitational pull", "This pull" and "gravitational force" are gone, nothing was chopped
+into fragments, and no fact or hedge was lost.
 
 ---
 

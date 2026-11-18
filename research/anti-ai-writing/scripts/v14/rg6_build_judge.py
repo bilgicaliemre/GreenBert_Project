@@ -5,7 +5,7 @@ sys.path.insert(0, 'tools'); import bench
 sys.path.insert(0, 'rg')
 R = '/home/user/GreenBert_Project/research/anti-ai-writing'
 briefs = {b['id']: b for b in json.load(open('rg2/briefs2.json')) if b['id'].split('_')[0] in ('argue', 'explain', 'lit')}
-DIRC = {'V131': 'rg5/V131', 'V14': 'rg5/V14', 'V14b': 'rg6/V14b'}
+DIRC = {'V131c': 'rg6/V131c', 'V14b': 'rg6/V14b'}
 READER = {
   'ps': 'a senior admissions officer at a highly selective US college who has read thousands of personal statements and has a sharp eye for AI-written essays',
   'supp': 'a senior admissions officer at a highly selective US college who reads supplements and has a sharp eye for AI-written essays',
@@ -21,7 +21,7 @@ EDITOR = 'a professional editor who knows the research on AI-written text and re
 import importlib.util
 spec_b = importlib.util.spec_from_file_location('b', 'rg/build.py')
 rng = random.Random(161); m = {}; jobs = []
-conds = ['V131', 'V14', 'V14b']
+conds = ['V131c', 'V14b']
 def facts_text(b):
     if not b.get('facts'): return 'No facts were supplied: the writer was told not to invent statistics, studies, quotes or named sources.'
     p = b['facts'] if os.path.exists(b['facts']) else f'{R}/eval/briefs/{os.path.basename(b["facts"])}'
@@ -36,9 +36,9 @@ for bid, b in briefs.items():
             while lab in m: lab = f'V{rng.randrange(100, 1000)}'
             m[lab] = {'rid': bid, 'cond': c, 'lens': lens}; labs.append(lab)
             body.append(f'----- {lab} -----\n' + bench.norm(open(f'{DIRC[c]}/{bid}.txt').read()))
-        prompt = (f'You are {who}. Three writers wrote the same piece from the same brief and facts. Read all three.\n\nBrief: {b["genre"]}, {b["words"]} words. {b["brief"]}\n\n'
+        prompt = (f'You are {who}. Two writers wrote the same piece from the same brief and facts. Read both.\n\nBrief: {b["genre"]}, {b["words"]} words. {b["brief"]}\n\n'
                   f'{facts_text(b)}\n\n' + '\n\n'.join(body) +
-                  '\n\nRank the three best to worst for this reader. For each give quality (1-10), human_likeness (1-10: how likely a skilled person, not an AI, wrote it), '
+                  '\n\nRank the two, better first, for this reader. For each give quality (1-10), human_likeness (1-10: how likely a skilled person, not an AI, wrote it), '
                   'and unsupported: every specific claim, number, quote, name or event not supported by the facts (empty if none). '
                   'Return ranking: [labels best to worst], texts: [{label, quality, human_likeness, unsupported: [str], note}], reasons (2-4 sentences).')
         jobs.append({'label': f'{lens}:{bid}', 'schema': 'panel', 'prompt': prompt})

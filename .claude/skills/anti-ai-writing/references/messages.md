@@ -15,7 +15,7 @@ plan, and by tics carried over from the notes.
 
 | | real appeals | model versions |
 |---|---|---|
-| open with "I'm running for X" | 12% | 44 to 66% |
+| open with "I'm running for X" | 12 to 31% | 44 to 66% |
 | semicolons per text | 0.4 | 0.7 to 1.2 |
 | colons per text (not before a list or link) | 0.06 | 0.4 to 0.5 |
 | sentence length, mean (spread) | 15 words (SD 8) | 10 to 12 words (SD 4 to 5) |
@@ -48,8 +48,8 @@ things this skill never fakes: typos, a pasted project title, a run-on sentence.
    short, even declaratives.
 6. **Punctuate like the register.** Commas and full stops. No semicolons. A colon only before a list, an
    account number or a link. In casual Turkish, write "imkan", "hala", "kar" as most people do, unless the
-   user writes the circumflex. One exclamation mark at the ask or at the line the writer feels most is normal
-   in this genre; more is the user's call.
+   user writes the circumflex. An exclamation mark at the ask is fine when the user's notes have that energy, but
+   do not add one by default: real appeals average about one per 400 words.
 7. **Address readers the way the writer would.** A greeting is optional ("Merhaba sevgili dostlar"); "siz" for
    a mixed or older audience, "sen" for friends; the team's own name and its in-jokes if the user gave them.
    An emoji only in chat channels, and only if the user uses them.
@@ -61,8 +61,10 @@ things this skill never fakes: typos, a pasted project title, a run-on sentence.
 
 ## Check before returning
 
-- Does the text open with "I'm running for X"? If the reason is stronger, start there.
-- Count semicolons and colons; remove every semicolon and any colon that does not introduce a list or link.
+- Does the text open with "I'm running for X"? Some real appeals do (one in eight to one in three); start from the
+  reason only when it is stronger.
+- In text you wrote, count semicolons and colons; remove every semicolon and any colon that does not introduce a
+  list, an account number or a link. In the user's own text, leave their punctuation.
 - Is every part present, in the usual order? Cut one or two.
 - Any "bence" or "I think" that came from the notes? Cut it unless the opinion needs marking.
 - Is there an unrequested translation, a sign-off name you made up, or a feeling the user never stated?

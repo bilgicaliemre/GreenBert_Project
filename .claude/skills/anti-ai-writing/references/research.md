@@ -9,7 +9,7 @@ conventions; remove the decoration; never add content.
 The usual case is a student or researcher with a draft. Edit it; do not rewrite it. In our tests, real student
 abstracts with only their outright errors fixed (spelling, grammar, punctuation, decimal commas) were still judged
 written by the student every time, and judges rated them slightly better. Every version a model wrote from the
-same notes was identified as AI, with or without this skill. So:
+same notes was rated below every real abstract, with or without this skill. So:
 
 - Fix outright errors. Keep the writer's phrasing when it is grammatical, even if it is not how you would say it:
   their sentence order, repetitions, "I" or "we", the way they name their own variables and groups, numbered
@@ -17,16 +17,21 @@ same notes was identified as AI, with or without this skill. So:
 - Then remove only the problems listed below (inflation, hedges they did not mean, invented content) and anything
   the venue's format forbids.
 - Do not smooth the text into fluent, evenly linked prose. Fluency was the sign judges cited most for model
-  versions (83 to 96% of judgments, against about 20% for real abstracts).
+  versions (83 to 96% of judgments, against 23% for real abstracts).
 
 Write from notes only when there is no draft, and tell the user that expert readers will likely recognize a
 model-written abstract; their own draft, edited lightly, is the stronger submission.
 
+For a science-fair entry, do not write at all. ISEF's rules from 2026-27, which its affiliated fairs follow, ban
+generative AI from writing the research plan, the abstract, the poster and the citations, and allow only grammar
+and syntax edits that the student discloses (Form 2A). Fix outright errors in the student's own draft, list
+anything bigger for them to change, and remind them to disclose the help.
+
 ## What a model adds that a researcher does not
 
 We compared 24 winning ISEF abstracts (2014 to 2021, a third of them by students in Turkey) with model versions
-written from the same project notes. Blind judges (a fair judge and a journal editor) identified every model
-version, with or without the earlier version of this skill. What they cited, as a share of their judgments of model versions
+written from the same project notes. Blind judges (a fair judge and a journal editor) rated every model
+version below every real abstract, with or without the earlier version of this skill. What they cited, as a share of their judgments of model versions
 versus real ones:
 
 | Sign | Model versions | Real abstracts |
@@ -61,7 +66,10 @@ A model writing from a researcher's notes also tends to:
   framing ("three properties at the same time: a, b and c") that the notes do not count.
 - **Fill gaps.** A sample size, a baseline, a p-value, a citation or an application the notes never gave.
 
-## Rules
+## Rules for abstracts
+
+Rules 1, 4, 5 and 6 hold for paper sections too. For papers, "Paper sections" and "Conventions to keep" below
+win where they differ (domain terms are defined once; background is cited).
 
 1. **Never invent.** No number, unit, sample size, dataset, statistic, citation, comparison, mechanism or
    application that the notes do not contain. If a claim needs a source, write `[cite: source for X]`. If a

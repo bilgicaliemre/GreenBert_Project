@@ -2,9 +2,12 @@
 
 For college and program questions with a limit of about 350 words or fewer: "why us", "why this major",
 community, intellectual interest, the MIT-style 100 to 250 word answers, Tufts' 100-word "Why Tufts?", 35 to 50
-word short takes, the Stanford roommate note, and short program applications. With a real student, this is
-Coach mode (see `personal-essay.md`, sections 2 to 8): the student writes; you ask, diagnose and correct. Write
-a sample only for a clearly fictional person.
+word short takes, the Stanford roommate note, and short program applications. For college questions, and for
+any form whose rules require the applicant's own writing or ban AI-written text, this is Coach mode (see
+`personal-essay.md`, sections 2 to 8): the student writes; you ask, diagnose and correct, and you write a
+sample only for a clearly fictional person. For other short forms (a mentorship or club application, an
+internship form, a competition that allows AI help), write or edit the answer with the rules below when the
+user asks.
 
 ## What we learned from real admitted answers
 
@@ -22,7 +25,7 @@ the first version of this guide. They also rated the model answers as better ans
   Tufts?" answers that list course titles or praise "the creators, the thinkers, and the doers" were rated lowest.
 - **Model answers fail by over-crafting.** Judges cited the same signs again and again: a dense run of precise
   numbers and names ("eleven Folgers cans", "my cousin Lily, who is 12", "112 eggs, and 79 hatchlings"), a
-  labeled-object or campus-trivia hook, comic asides and self-deprecating counts ("23 bowls, maybe four good"), a
+  labeled-object hook (an opening built on an object and what is written on it) or a campus-trivia hook, comic asides and self-deprecating counts ("23 bowls, maybe four good"), a
   planted metaphor ("Acting and engines are the same: you wait for the thing to catch"), an "honest limitation"
   beat, and a hedged or trailing ending ("Maybe both.", "I think.", "if that is possible"). Hedges were cited in
   about half of the judgments of model answers and in none of the real ones. Plain model answers also used short
@@ -41,7 +44,7 @@ the risk for a real student is that AI help adds the over-crafted patterns.)
 2. **One example that carries the point, with two or three details that matter.** A name, a place, one number if
    it is the point. Do not stack numbers, ages and labels to look specific; a run of precise figures is the most
    cited sign of a model answer.
-3. **No tricks.** No labeled-object reveal, no campus-trivia hook turned into a metaphor, no comic aside or
+3. **No tricks.** No labeled-object hook, no campus-trivia hook turned into a metaphor, no comic aside or
    self-deprecating count, no planted metaphor that explains the student to themselves.
 4. **State the conclusion and the enthusiasm plainly, as strongly as the student holds them and no stronger.**
    "I want to study materials science because…", "I knew that Tufts was it." No hedged, balanced or trailing
@@ -67,9 +70,10 @@ the risk for a real student is that AI help adds the over-crafted patterns.)
 ## Coaching a student's draft
 
 Check the draft for the over-crafted patterns above, especially if the student used AI to brainstorm or polish:
-stacked figures, quirky labels, quips, hedged endings, clipped fragments. Ask for the plain version in the
+stacked figures, labeled-object hooks, quips, hedged endings, clipped fragments. Ask for the plain version in the
 student's words. Check the opposite failure too: an answer that is all praise for the school, or all adjectives
-about the student, with no example. Give corrections as a list; do not write replacement sentences.
+about the student, with no example. Return the draft with outright errors fixed in place, then the list of
+bigger changes; do not write replacement sentences.
 
 ## Activity list and honors (Common App)
 
@@ -84,7 +88,7 @@ we had no set of real activity lists to test it against.)
 
 - Does the answer address the question early and directly?
 - Count the precise numbers, names and labels: are they the two or three that matter, or decoration?
-- Any quip, labeled reveal, planted metaphor or self-deprecating count? Cut it.
+- Any quip, labeled-object hook, planted metaphor or self-deprecating count? Cut it (a short take's own humor stays).
 - Read the last sentence alone: hedged, trailing or a punchline? End on the plain conclusion or the last fact.
 - Fact diff: every goal, conclusion, feeling and "so"/"because" link is in the notes, at the same strength.
 - Colons and clipped fragments: rare. Contractions: as the student would write them, not zero.

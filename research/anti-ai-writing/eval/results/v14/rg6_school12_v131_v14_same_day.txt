@@ -1,0 +1,5 @@
+judgments 24
+V131c mean rank 1.58  first 10/24  quality 7.42  human 6.25  unsupported 2.42
+V14b mean rank 1.42  first 14/24  quality 7.58  human 6.12  unsupported 1.75
+V14b ranked above V131c in 14 of 24; mean rank advantage +0.17 [-0.33, 0.67] (bootstrap over briefs)
+mean rank by genre: {"argue": {"V131c": 1.5, "V14b": 1.5}, "explain": {"V131c": 1.5, "V14b": 1.5}, "lit": {"V131c": 1.75, "V14b": 1.25}}
