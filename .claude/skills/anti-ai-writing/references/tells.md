@@ -1,7 +1,9 @@
 # AI-writing tells: catalog and fixes
 
 Ordered the way to audit: content first, words last. Each entry: what to look for, a short example,
-the fix. "Strong" tells justify an edit on one sighting; "weak" ones only when several cluster.
+the fix. Entries marked "strong" justify an edit on one sighting. "Strong in aggregate" or "at paragraph
+level" means act on the pattern across the piece, not on one instance; treat unmarked entries the same way. The
+weak tells in section 9 never justify an edit alone.
 
 Contents
 1. Content
@@ -31,7 +33,7 @@ supplied an instance, ask; never invent one.
 what could have gone wrong, what the writer believed that turned out false, the detail that does not fit.
 
 **C4 Redundant exposition.** Telling the reader what the example just showed: "This shows how important
-patience is." Professional editors cut this more than anything else in AI drafts. Fix: delete; let the
+patience is." Professional editors often cut this in AI drafts. Fix: delete; let the
 example work.
 
 **C5 Prompt echo.** Repeating the question's words back ("This challenge helped me grow and taught me
@@ -48,7 +50,8 @@ sentence must add a fact, a reason or a step the reader lacks.
 **S1 Corrective framing (strong).** "It's not X, it's Y", "not just X but Y", "X rather than Y", "less a X
 than a Y", "This isn't about X. It's about Y." Test: does anyone in this context actually believe X, and does
 rejecting X add information? If not, state Y. "Greenwashing isn't just a marketing problem, it's a governance
-failure" becomes "Greenwashing is a governance failure: boards sign off on the claims."
+failure" becomes "Greenwashing is a governance failure." If the sentence then needs its reason, use the
+writer's, or ask: `[ask: why governance?]`.
 
 **S2 Importance flags (strong; very frequent in current Claude).** "This matters because", "Why this
 matters:", "This distinction matters", "plays a crucial role", "is key to". Fix: give the consequence:
@@ -59,11 +62,13 @@ matters:", "This distinction matters", "plays a crucial role", "is key to". Fix:
 `research.md`.)
 
 **S4 "-ing" tails (strong).** A clause tacked on to interpret the fact: "Emissions fell 4%, highlighting the
-company's commitment to sustainability." Fix: cut the tail, or turn it into a supported claim: "Emissions
-fell 4%, short of the 10% target."
+company's commitment to sustainability." Fix: cut the tail: "Emissions fell 4%." If the source gives something
+to measure the fact against (a target, last year's figure), state that; if it does not, leave the fact alone or
+ask: `[ask: against what target?]`.
 
 **S5 Arguing with no one.** "Some might argue…", "To be clear, this isn't to say…", "Don't get me wrong". Fix:
-keep an objection only if a real person or source raised it; name them and answer.
+keep an objection only if a real person or source raised it (name them), or if it is the strongest objection a
+fair reader would raise; answer it either way.
 
 **S6 Summary closers (strong at paragraph level).** A last sentence restating the paragraph; "In
 conclusion"; "Ultimately,"; a final paragraph that repeats the introduction. Fix: end on the last new point,
@@ -85,7 +90,8 @@ real tradeoff or say it was not measured.
 seven paragraphs end on a short wry, poignant or quotable line ("The map stayed in the glovebox." "He never
 asked again." "Nobody did."). One such ending can be the best line in the piece; a pattern of them is a
 rhythm signature. Fix: keep the strongest one or two; end the other paragraphs on their last piece of
-content, or merge the kicker into the sentence before it.
+content, or merge the kicker into the sentence before it. A short last sentence that simply gives the final
+fact, result or request is not a kicker; leave it.
 
 **S12 Staged self-correction.** Stating something false in order to reverse it ("I've never lost a chess
 game. Actually, that stopped being true two weeks ago."). Fine once if it is the writer's real
@@ -125,10 +131,10 @@ fix; praise only specific lines that work.
 **PE1 Generic lessons.** "This experience taught me the value of hard work and perseverance." A moral any
 applicant could claim. Fix: the student's own conclusion, specific to them, stated once; or the changed behavior
 in one concrete moment. Stating a lesson is not itself the tell: admitted essays written before 2022 say
-"learned" about four times as often as this skill's previous version did, and more often than a plain model.
+"learned" about four times as often as an early version of this skill (v7) did, and more often than a plain model.
 
 **PE2 Tidy epiphany.** Problem, struggle, sudden insight, better person, all resolved by the last paragraph.
-Fix: keep the part that is still unresolved; end on an image or an honest open question.
+Fix: keep whatever is really unresolved; end on the student's actual conclusion, or on an open question only if the student is in fact unsure.
 
 **PE3 Inflated essay nouns.** "my journey of growth", "a testament to my resilience", "a deep appreciation
 for". Earlier models overused these words; current models already avoid them, and pre-2022 admitted essays use
@@ -149,11 +155,11 @@ direction unless it adds information.
 **PE8 Hardship resolved into gratitude.** Illness or loss turned into growth within a paragraph. Fix: let the
 hard part stay hard.
 
-**PE10 The cool essay (what anti-AI rules produce in current models).** Speech filler carried over from notes
+**PE10 The cool essay (what a model writing from spoken notes produces; anti-AI rules make it worse).** Speech filler carried over from notes
 ("kind of wild", "so cringy", "basically", "super"), a flat factual first sentence followed by background,
 framing devices ("(I counted)", "the obvious suspects were my parents", "The easy answer is... The harder answer
 is..."), and an ending that shrugs ("I still don't know", "but it's okay") in place of the student's real
-conclusion. In our tests the skill's previous version used "really" four times as often as 24 admitted essays, and "kind
+conclusion. In our tests an early version of this skill (v7) used "really" four times as often as 24 admitted essays, and "kind
 of" 15 times where the admitted essays never used it. Fix: the student's written register and their actual conclusion (see `personal-essay.md`
 section 1).
 
@@ -161,7 +167,8 @@ section 1).
 opening image, a motif that returns, paragraphs closing on a sentence that explains their scene ("That was when I
 understood..."), connecting sentences that point out what rhymes, signposts ("The strange part was"), and a
 balanced, hedged lesson ("both good and bad, and I think..."). Judges cited tidy structure in about four of five
-judgments of model essays, with or without anti-AI rules, and in few of real students' essays. Fix: a looser
+judgments of model essays written without the rules in `personal-essay.md` (about half once they were applied),
+and in few of real students' essays. Fix: a looser
 structure, scenes left to stand, one whole-hearted conclusion.
 
 **PE9 The over-corrected essay (what anti-AI passes produce).** Every lesson removed and nothing put in its
@@ -184,11 +191,12 @@ restructure; give sentences real subjects (people, the school, the writer).
 **R4 Elegant variation.** Renaming the same thing each time (Unilever, the firm, the conglomerate, the
 multinational). AI text is more lexically varied than human text. Fix: repeat the precise term.
 
-**R5 Punctuation monotony.** Only periods and commas; no parentheses, semicolons or colons. Fix: use them
-where they state a real relation (aside, close link, explanation).
+**R5 Colons and semicolons.** Model text uses more of both than real writing of the same kind, and readers
+cite them. Fix: a comma or a full stop; keep a colon only before a list, a quote or a link, and use
+parentheses for a true aside. Never add either mark for variety.
 
 **R6 Em dashes.** Readers and teachers treat them as an AI sign even though current models rarely use them.
-Default: avoid them; use a comma, colon or parentheses. A user's own drafts or style rules override this.
+Default: avoid them; use a comma, a full stop or parentheses. A user's own drafts or style rules override this.
 
 ## 6. Vocabulary (last pass; rewrite the sentence, never just swap the word)
 

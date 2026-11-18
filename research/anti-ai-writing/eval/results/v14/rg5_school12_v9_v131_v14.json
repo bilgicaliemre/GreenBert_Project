@@ -1,0 +1,75 @@
+{
+ "n_judgments": 24,
+ "conds": {
+  "V9": {
+   "mean_rank": 2.12,
+   "first": 4,
+   "n": 24,
+   "quality": 7.33,
+   "human": 5.79,
+   "unsupported": 2.08
+  },
+  "V131": {
+   "mean_rank": 2,
+   "first": 8,
+   "n": 24,
+   "quality": 7.42,
+   "human": 5.83,
+   "unsupported": 2.08
+  },
+  "V14": {
+   "mean_rank": 1.88,
+   "first": 12,
+   "n": 24,
+   "quality": 7.46,
+   "human": 6.12,
+   "unsupported": 3.33
+  }
+ },
+ "pairs": {
+  "V14>V131": {
+   "wins": 12,
+   "losses": 12,
+   "rank_gain": 0.12,
+   "ci95": [
+    -0.62,
+    0.88
+   ]
+  },
+  "V14>V9": {
+   "wins": 15,
+   "losses": 9,
+   "rank_gain": 0.25,
+   "ci95": [
+    -0.46,
+    0.88
+   ]
+  },
+  "V131>V9": {
+   "wins": 12,
+   "losses": 12,
+   "rank_gain": 0.12,
+   "ci95": [
+    -0.38,
+    0.67
+   ]
+  }
+ },
+ "by_genre": {
+  "argue": {
+   "V14": 1.38,
+   "V131": 2,
+   "V9": 2.62
+  },
+  "explain": {
+   "V9": 1.62,
+   "V131": 2.38,
+   "V14": 2
+  },
+  "lit": {
+   "V131": 1.62,
+   "V14": 2.25,
+   "V9": 2.12
+  }
+ }
+}

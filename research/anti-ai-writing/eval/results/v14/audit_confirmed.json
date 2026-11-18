@@ -1,0 +1,762 @@
+[
+ {
+  "lens": "contradiction",
+  "id": "contradiction-rebuild-trigger",
+  "severity": "high",
+  "files": "SKILL.md",
+  "quote_a": "SKILL.md L117-118: \"**Rebuild** (the user says an AI wrote it or asks you to rewrite an AI draft; if you only suspect it, use Edit, since tells are not proof of authorship).\"",
+  "quote_b": "SKILL.md L191-192: \"If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or Coach for an application).\"",
+  "problem": "The mode description says a text that only looks AI-written gets Edit (minimum edit). The sentence under the mode table says a text that \"reads as AI-written\" gets Rebuild (sentences written fresh). \"Reads as AI-written\" is exactly the agent's own suspicion, so the two rules pick opposite modes for the same input, and the skill's own data (L110-112) says a rewrite makes a human text read as AI.",
+  "fix": "L191: replace \"if it reads as AI-written and they want it fixed, Rebuild\" with \"if the user says an AI wrote it and wants it fixed, Rebuild\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Both quotes exist (SKILL.md L117-118, L191-192). L117 sends a merely suspected AI text to Edit; L191 sends a text that 'reads as AI-written' to Rebuild, and nothing nearby scopes L191 to cases where the user said an AI wrote it."
+   },
+   {
+    "real": true,
+    "reason": "Both quotes exist (SKILL.md L117-118, L191-192). For a pasted text that reads as AI with no word on authorship, L117 says Edit and L191 says Rebuild; no nearby sentence resolves it."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-research-vs-coach-scope",
+  "severity": "high",
+  "files": "SKILL.md; references/research.md",
+  "quote_a": "SKILL.md L136: \"**Coach** (college application essays and other work the student must submit as their own).\" and L188: \"Write or Edit (Coach if it will be graded or judged as the student's own work)\" and L139: \"You do not write the essay\"",
+  "quote_b": "SKILL.md L186: \"| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once |\"; research.md L3: \"For research abstracts (science fairs, competitions, conferences, journals), paper sections, project reports, posters and lab write-ups.\"; research.md L22: \"Write from notes only when there is no draft\"",
+  "problem": "A science-fair abstract is judged as the student's own work and a lab write-up is graded, so the Coach definition and the L188 caveat forbid writing them. The research row and research.md allow Write from notes for the same texts, and the research row has no Coach caveat. The two rules give opposite answers (never write it / write it with a warning).",
+  "fix": "Pick one and say it in the research row (L186), e.g. append \"; if a class or fair requires the student's own writing, never Write from notes (corrections only)\". If Write is intended, narrow L136 instead: \"...and other work whose rules require the student's own writing; research write-ups follow the research row\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Coach covers 'other work the student must submit as their own' (L136) and the Integrity section (L199-200) repeats it, yet the research row (L186) and research.md L22 allow Write from notes for a science-fair abstract or graded lab write-up, with no Coach caveat like row 188 has."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Coach covers 'other work the student must submit as their own' and row 188 carries a Coach caveat, but the research row (L186) allows Write from notes for science-fair abstracts and graded lab write-ups with no caveat. Medium rather than high: the row itself is explicit, but precedence is unstated."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-edit-mode-two-senses",
+  "severity": "medium",
+  "files": "SKILL.md; references/personal-essay.md",
+  "quote_a": "SKILL.md L55-56: \"Pass two: treat that draft as someone else's and run Edit mode on it (steps 3 and 4).\"; personal-essay.md L248-249: \"shape first, then a full Edit-mode pass on your own draft.\"",
+  "quote_b": "SKILL.md L99-104: \"**Edit** ... Minimum effective edit, even when they say \"improve it\": ... - Keep everything else: their sentences and their order, vocabulary, repetitions, paragraphing, contractions, humor and punctuation habits.\"",
+  "problem": "\"Edit mode\" names two different procedures. In step 2 it means the full nine-pass audit of steps 3 and 4 (replace portable sentences, vary rhythm, rewrite kicker endings). In the Modes section it means fix errors, cut clear tells and keep every sentence, its order and paragraphing. Applied literally to a pass-one draft, the Modes definition would keep the model's own sentences untouched; applied to a user's text, step 3 would break \"keep everything else\".",
+  "fix": "SKILL.md L56: replace \"run Edit mode on it (steps 3 and 4)\" with \"run the full audit and checks on it (steps 3 and 4; not the minimum-edit Edit mode)\". personal-essay.md L248-249: replace \"a full Edit-mode pass\" with \"the full audit (SKILL.md steps 3 and 4)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. 'Edit mode' is now defined as a minimum edit that keeps the sentences (L99-104) and never mentions steps 3 and 4, while step 2 and personal-essay.md L248-249 use the name for the full audit that cuts and replaces. The parenthesis '(steps 3 and 4)' softens it in SKILL.md, but personal-essay.md has no such gloss."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. 'Edit mode' is defined in Modes as a minimum edit that keeps the sentences, but step 2 and personal-essay.md L248-249 use it to mean the full step 3 and 4 audit of the model's own draft. The parenthetical '(steps 3 and 4)' softens it in SKILL.md only. Low to medium."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-output-three-lines-vs-five",
+  "severity": "medium",
+  "files": "SKILL.md; references/research.md",
+  "quote_a": "SKILL.md L90-92: \"**5. Output.** Return the finished text only. When editing someone else's text, add at most three lines on what changed and why, unless they asked for a full critique.\"",
+  "quote_b": "SKILL.md L108-109: \"- After the text, list up to five bigger changes the writer could make (a missing example, an unclear claim, the order of paragraphs), one line each\"; SKILL.md L122-123: \"and say in one line what you dropped as wrong\"; research.md L22-23: \"tell the user that expert readers will likely recognize a model-written abstract\"; research.md L128: \"remind the user once to keep a log\"",
+  "problem": "Step 5 caps what follows an edited text at three lines and says to return the text only. Edit mode requires a list of up to five lines after the text, Rebuild requires a one-line note, and research.md requires a warning and a disclosure reminder. An edit of a research draft cannot obey the three-line cap and the mode rules at once.",
+  "fix": "L90-91: replace \"Return the finished text only. When editing someone else's text, add at most three lines on what changed and why\" with \"Return the finished text, then only the notes the mode or reference requires (Edit's list of up to five changes, Rebuild's one line, a required reminder). In Write, add nothing else\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Step 5 says 'finished text only' plus at most three lines on what changed; Edit requires up to five suggestion lines, Rebuild a one-line note, research.md a warning and a disclosure reminder. No sentence says how these combine."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Step 5 says 'finished text only' plus at most three lines on what changed; Edit requires a list of up to five suggestions, Rebuild a one-line note, research.md a warning and a reminder. No precedence is stated. Low: the mode rule is followed in practice (DEVLOG L1392-1393)."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-claims-survive-vs-cut-fixes",
+  "severity": "medium",
+  "files": "SKILL.md; references/tells.md",
+  "quote_a": "SKILL.md L34-35: \"2. **Keep the meaning.** When editing, every claim, hedge and number survives unless the user agrees to cut it.\" and L106-107 (Edit): \"do not make a claim stronger or more certain.\"",
+  "quote_b": "SKILL.md L66: \"Keep the fact, drop the significance claim unless a source makes it\"; SKILL.md L70: \"take the position the evidence supports\"; tells.md L23-24: \"Fix: replace it with what only this writer knows, or delete it.\"; tells.md L40-41: \"Fix: name the source and what it said, or cut the claim.\"; tells.md L112-113: \"Fix: take the position the evidence supports and say how strong it is.\"",
+  "problem": "Hard rule 2 lets no claim be cut without the user's agreement. The audit fixes tell the editor to delete portable sentences, cut unsourced claims and drop significance claims on sight, and the false-balance fix replaces the writer's balanced statement with a firmer position, which Edit forbids (\"more certain\"). No rule says which wins when a tell is also a claim.",
+  "fix": "SKILL.md L34-35: after the first sentence add \"A tell that carries a claim (a significance verdict, an unsourced 'studies show', a both-sides sentence) may be cut, but name each cut in the change note, and never replace it with a position the writer did not take.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Hard rule 2 lets no claim or hedge go without the user's agreement; the audit drops 'the significance claim' (L66), cuts unsourced claims (tells C6), deletes portable sentences (C1), trims hedge stacks and replaces a balanced sentence with a position (T6). No precedence is given for editing someone's text."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Hard rule 2 says every claim and hedge survives when editing; Edit says 'cut clear AI tells' and the audit fixes drop significance claims, delete portable sentences and cut unsourced claims (SKILL.md L66 itself calls it a 'significance claim'). No precedence is given. The step 3 audit mainly targets the agent's own draft, so the conflict bites in Edit and Rebuild."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-short-take-character-limit",
+  "severity": "medium",
+  "files": "references/personal-essay.md; references/short-answers.md",
+  "quote_a": "personal-essay.md L231: \"- **Short takes (35 to 50 words, or 280 characters):** read for personality; be specific and a little playful.\"",
+  "quote_b": "short-answers.md L62: \"8. **Very short takes (35 to 50 words, 200 characters):** one concrete, slightly unexpected answer;\"",
+  "problem": "The character limit for the same short-take format is 280 in one file and 200 in the other.",
+  "fix": "personal-essay.md L231: replace \"or 280 characters\" with \"or 200 characters\" (or drop the count there, since L229 already defers to short-answers.md).",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified: personal-essay.md L231 says 280 characters, short-answers.md L62 says 200, for the same 35 to 50 word short take. Trivial but real."
+   },
+   {
+    "real": true,
+    "reason": "personal-essay.md L231 says 280 characters, short-answers.md L62 says 200, for the same 35 to 50 word short take. Low severity."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-short-take-humor",
+  "severity": "medium",
+  "files": "SKILL.md; references/short-answers.md; references/personal-essay.md",
+  "quote_a": "SKILL.md L152-155: \"- **Short answers and supplements** (about 350 words or fewer: why us, why this major, community, short takes, activity list): ... no quips, planted metaphors or hedged endings.\"; short-answers.md L44-45: \"no comic aside or self-deprecating count\"; short-answers.md L87: \"- Any quip, labeled reveal, planted metaphor or self-deprecating count? Cut it.\"",
+  "quote_b": "short-answers.md L62-63: \"8. **Very short takes (35 to 50 words, 200 characters):** ... humor if the student has it, without explaining the joke.\"; personal-essay.md L231: \"read for personality; be specific and a little playful.\"",
+  "problem": "SKILL.md names short takes inside the scope of \"no quips\", and the short-answers checklist cuts any quip with no exception. Step 8 of the same file and personal-essay.md ask for humor and playfulness in short takes. A funny 40-word take is both required style and a line the checklist deletes.",
+  "fix": "SKILL.md L154: change \"no quips\" to \"no quips (a 35 to 50 word short take may be funny if the student is)\". short-answers.md L87: add \"(a short take's own humor stays)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. SKILL.md L152-155 names short takes inside 'no quips' and the short-answers checklist (L87) cuts any quip with no exception, while rule 8 (L62-63) and personal-essay.md L231 ask for humor or playfulness. Rule 8 can be read as the specific exception, so severity is low, but the checklist line is unqualified."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. SKILL.md L152-155 puts short takes under 'no quips' and the short-answers checklist (L87) cuts any quip without exception, while rule 8 (L62-63) allows humor in very short takes. Low: rule 8 reads as the specific exception but the checklist does not say so."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-pe2-open-question-fix",
+  "severity": "medium",
+  "files": "references/tells.md; SKILL.md; references/personal-essay.md",
+  "quote_a": "tells.md L130-131: \"**PE2 Tidy epiphany.** Problem, struggle, sudden insight, better person, all resolved by the last paragraph. Fix: keep the part that is still unresolved; end on an image or an honest open question.\"",
+  "quote_b": "tells.md L227 (Over-corrections to avoid): \"- Replacing every stated conclusion with a shrug or an open question.\"; tells.md L164-165: \"Fix: a looser structure, scenes left to stand, one whole-hearted conclusion.\"; SKILL.md L67: \"let unresolved things stay unresolved and resolved things stay resolved\"; personal-essay.md L274-275: \"Close on the student's own conclusion from the notes, stated whole-heartedly: not a shrug\"",
+  "problem": "PE2's fix is unconditional: end on an image or an open question. The same file lists swapping a conclusion for an open question as an over-correction, PE11's fix is one whole-hearted conclusion, and SKILL.md says resolved things stay resolved. For an essay whose resolution is real, PE2 prescribes the exact failure the other rules warn against.",
+  "fix": "tells.md L131: replace the fix with \"Fix: keep whatever is really unresolved; end on the student's actual conclusion, or on an open question only if the student is in fact unsure.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. PE2's fix (tells.md L130-131, v7 wording unchanged) says to end on an image or open question with no condition; tells.md L227 lists that as an over-correction, PE11 asks for one whole-hearted conclusion, SKILL.md L67 says resolved things stay resolved. DEVLOG L637-639 names this exact advice as the cause of v7's shrug endings."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. PE2's fix (end on an image or an honest open question) is unchanged v7 text; it clashes with tells.md L227, PE11's fix, SKILL.md L67 and personal-essay.md L274-275, and DEVLOG L637-639 names this advice as the cause of v7's shrug endings."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-montage-vs-no-returning-motif",
+  "severity": "medium",
+  "files": "references/personal-essay.md; references/tells.md",
+  "quote_a": "personal-essay.md L163-164: \"- **Montage:** 4 to 7 short sections linked by one thread (an object, a list, a set of files, a recurring place), each showing a different side of the student, with the thread itself changing meaning by the end.\"",
+  "quote_b": "personal-essay.md L260-262: \"Do not tie every thread: no bookend, no motif that returns, no closing paragraph that names what each earlier scene meant.\"; tells.md L160-161: \"Every thread tied off: a bookend to the opening image, a motif that returns\"; personal-essay.md L272: \"Do not turn an early object into a closing symbol.\"",
+  "problem": "The recommended Montage structure is a recurring object or place that returns in every section and changes meaning at the end. That is a returning motif and an early object turned into a closing symbol, which PE11 and section 10 name as marks of the engineered essay.",
+  "fix": "personal-essay.md L164: replace \"with the thread itself changing meaning by the end\" with \"a thread the student chose themselves; do not bring it back at the end as a symbol\". L261: change \"no motif that returns\" to \"no motif that returns unless the notes are built on it\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The Montage structure the coach may propose (L163-164) is a recurring thread that changes meaning by the end, which is the returning motif that PE11 (tells.md L160-161) lists as a sign and that critique item 7 sends the coach to flag. Low severity: section 10's ban is scoped to model-written samples, so the clash is mainly with PE11."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Section 5 offers a Montage whose thread recurs and changes meaning by the end; PE11 and section 10 name a returning motif and an early object as closing symbol as engineered-essay marks. Low: section 10 is scoped to fictional samples and section 5 to coaching, but PE11 is unscoped and is applied in the critique step."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-spine-only-vs-side-detail",
+  "severity": "medium",
+  "files": "references/personal-essay.md",
+  "quote_a": "personal-essay.md L251-252: \"build the whole essay around it. Bring in other material only where it sharpens that spine.\" and L155-157: \"Each paragraph should move the story or the thinking forward; a paragraph that only adds another interesting fact is a candidate to cut.\"",
+  "quote_b": "personal-essay.md L259-260 (same section 10 list): \"Structure: let the essay be a little loose, the way admitted essays are. ... a paragraph may carry a side detail the notes care about.\"",
+  "problem": "Two bullets in the same list disagree: other material enters only where it sharpens the spine, and a paragraph may carry a side detail that does not. Section 5 and critique item 3 (L210, \"Does every paragraph move the spine forward?\") side with the first.",
+  "fix": "L252: replace \"Bring in other material only where it sharpens that spine.\" with \"Bring in other material where it sharpens that spine, plus at most one side detail the notes clearly care about.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. In the same section 10 list, L251-252 says other material enters 'only where it sharpens that spine' and L259-260 says a paragraph may carry a side detail the notes care about. Low severity, but the two bullets cannot both be literal."
+   },
+   {
+    "real": true,
+    "reason": "Both bullets sit in the same section 10 list: 'Bring in other material only where it sharpens that spine' (L252) and 'a paragraph may carry a side detail the notes care about' (L260). Low."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-example3-rewrites-student-essay",
+  "severity": "medium",
+  "files": "references/examples.md; SKILL.md; references/personal-essay.md",
+  "quote_a": "examples.md L35: \"**3. Personal essay (student's own draft): minimum edit**\" and L46-47: \"Minimum edit while you rewrite: \"Every Saturday I cleaned the cat room at the shelter. It smelled like ammonia no matter how much bleach we used.\"\"",
+  "quote_b": "SKILL.md L138-140: \"give grammar and clarity fixes as a list of discrete corrections. You do not write the essay, and you do not write example sentences built from the student's own story\"; personal-essay.md L93: \"- write the essay, rewrite its paragraphs, or write example sentences built from the student's story\"",
+  "problem": "The only personal-essay example shows the agent handing a student rewritten sentences made from their own story (two sentences split and reworded, two lessons cut). Coach, which governs a student's personal essay, allows corrections only as a list and forbids exactly this. Coach also points to examples.md as the place to find a model to imitate. (A third location beyond the known Edit L113 clash.)",
+  "fix": "examples.md: retitle L35 \"**3. Personal essay (student's own draft): coach feedback**\" and delete L46-47 (the rewritten sentences).",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Example 3 hands a student rewritten sentences from their own personal essay and cuts two of their claims, which Coach forbids (SKILL.md L138-140, personal-essay.md L93) and which also exceeds Edit's 'keep their sentences'. Coach points to this file as the place for neutral examples. Different location from known item 1."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Example 3 hands a student rewritten sentences from their own personal essay (one sentence split, 'at the shelter' moved) under the title 'minimum edit'; Coach (SKILL.md L138-140, personal-essay.md L93) forbids this and Coach points to examples.md for models. Different location from known item 1."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-rebuild-objection-vs-s5",
+  "severity": "low",
+  "files": "SKILL.md; references/tells.md",
+  "quote_a": "SKILL.md L128: \"Keep its position, what the user supplied and any objection a fair reader would raise;\"",
+  "quote_b": "tells.md L65-66: \"**S5 Arguing with no one.** ... Fix: keep an objection only if a real person or source raised it; name them and answer.\"",
+  "problem": "Rebuild keeps an objection a hypothetical fair reader would raise. S5 keeps an objection only if a real, nameable person or source raised it. An AI draft's unattributed objection passes one rule and fails the other.",
+  "fix": "tells.md L66: change the fix to \"keep an objection only if a real person or source raised it (name them), or if it is the strongest objection a fair reader would raise to this claim; answer it either way.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Rebuild keeps 'any objection a fair reader would raise' (L128) and then runs Write, whose audit applies S5: keep an objection only if a real, nameable person or source raised it. An unattributed fair objection passes one rule and fails the other. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Rebuild (L128) keeps 'any objection a fair reader would raise'; S5's fix keeps an objection only if a real, named person or source raised it. An unattributed fair objection passes one rule and fails the other. Low."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-research-fluency-percent",
+  "severity": "low",
+  "files": "references/research.md",
+  "quote_a": "research.md L19-20: \"Fluency was the sign judges cited most for model versions (83 to 96% of judgments, against about 20% for real abstracts).\"",
+  "quote_b": "research.md L34: \"| Fluent, polished, frictionless prose | 83 to 96% | 23% |\"",
+  "problem": "The same figure is \"about 20%\" in the text and 23% in the table, rounded in the direction that widens the gap, which the file's own rule (L120, \"Do not round in a direction that helps the argument\") forbids.",
+  "fix": "L20: replace \"about 20%\" with \"23%\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified: 'about 20%' at L19-20 and 23% in the table at L34 for the same figure. Trivial, and 'about 20%' is a loose rounding and not a strict contradiction, but the two should match."
+   },
+   {
+    "real": true,
+    "reason": "research.md L20 says 'about 20%', the table at L34 says 23% for the same figure. Low."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-messages-colon-account-number",
+  "severity": "low",
+  "files": "references/messages.md",
+  "quote_a": "messages.md L49-50: \"A colon only before a list, an account number or a link.\"",
+  "quote_b": "messages.md L65: \"- Count semicolons and colons; remove every semicolon and any colon that does not introduce a list or link.\"",
+  "problem": "Rule 6 allows a colon before an account number; the checklist removes any colon that does not introduce a list or link, so the allowed colon is deleted.",
+  "fix": "L65: replace \"a list or link\" with \"a list, an account number or a link\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Rule 6 (L49-50) allows a colon before a list, an account number or a link; the checklist (L65) removes any colon that does not introduce a list or link."
+   },
+   {
+    "real": true,
+    "reason": "messages.md L49-50 allows a colon before a list, an account number or a link; the checklist at L65 removes any colon that does not introduce a list or link. Low."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-failure-count-two-three-four",
+  "severity": "low",
+  "files": "references/personal-essay.md",
+  "quote_a": "personal-essay.md L45: \"Two opposite failures to avoid:\" and L50: \"A third failure is what anti-AI rules produce in current models:\" (followed by two bullets, the cool essay and the engineered essay)",
+  "quote_b": "personal-essay.md L59: \"The fix for all four is the same\"; L57-58: \"the most cited sign of a model essay, in about four of five judgments, whatever the writing method.\"",
+  "problem": "\"A third failure\" introduces two failures, and the text then counts four. The same lead-in says both are produced by anti-AI rules, while the engineered-essay bullet says it appears whatever the method.",
+  "fix": "L50: replace \"A third failure is what anti-AI rules produce in current models:\" with \"Two more failures, the first produced by anti-AI rules in current models:\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. 'A third failure' (L50) introduces two bullets and L59 then says 'all four'; the lead-in attributes both to anti-AI rules while the engineered-essay bullet says 'whatever the writing method'. Editorial, no effect on behaviour."
+   },
+   {
+    "real": true,
+    "reason": "L45 'Two opposite failures', L50 'A third failure' introducing two bullets, L59 'all four'. The lead-in also attributes both bullets to anti-AI rules while the engineered-essay bullet says 'whatever the writing method'. Low, mostly wording."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-written-voice-vs-out-loud",
+  "severity": "low",
+  "files": "references/personal-essay.md; SKILL.md",
+  "quote_a": "personal-essay.md L33-35: \"- **A voice that sounds like a smart teenager writing carefully**, not talking and not a thesaurus. ... admitted essays are written a notch above speech.\"; SKILL.md L149: \"first person in a written register, not a spoken one\"",
+  "quote_b": "personal-essay.md L217: \"8. **Voice:** lines that don't sound like them out loud. Ask a friend: \"does this sound like me?\"\"; personal-essay.md L200-201: \"write the first draft fast, the way they'd tell it to a cousin in line at a family reunion\"",
+  "problem": "The target voice is written, a notch above speech, and a spoken register is named as a failure. The critique step flags lines that do not sound like the student speaking aloud, so a correctly written line is flagged as a voice problem.",
+  "fix": "L217: replace \"lines that don't sound like them out loud\" with \"lines that don't sound like them writing carefully (too grand, or chattier than they write)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. L217 is v7 text (identical line in v7) that flags lines that do not sound like the student 'out loud', while section 1 and SKILL.md L149 now set a written register a notch above speech. DEVLOG L624-625 and L640-641 tie the spoken standard to the filler problem. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Section 1 and SKILL.md L149 set a written register 'not talking'; critique item 8 (L217, unchanged v7 text) flags lines that do not sound like the student out loud. DEVLOG L624-625 and L640-641 tie the spoken standard to the filler problem v8 fixed."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-only-that-one-vs-cross-references",
+  "severity": "low",
+  "files": "SKILL.md; references/short-answers.md",
+  "quote_a": "SKILL.md L177: \"read its reference file (only that one: the rules in the other references are for other kinds of text).\"",
+  "quote_b": "short-answers.md L5-6: \"With a real student, this is Coach mode (see `personal-essay.md`, sections 2 to 8)\"; SKILL.md L141: \"To show a technique, use a neutral example from `references/examples.md`.\"",
+  "problem": "Beyond the known tells.md case: the short-answers row needs personal-essay.md sections 2 to 8 for its coaching protocol, and Coach needs examples.md, so \"only that one\" and its stated reason are also false for these pairs. A fix that only adds tells.md would leave them.",
+  "fix": "L177: replace \"(only that one: the rules in the other references are for other kinds of text)\" with \"(that one, plus any file it or the mode points to; do not apply another genre's rules)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Same sentence as known item 2, but these are different pairs: short-answers.md L5-6 needs personal-essay.md sections 2 to 8, and Coach needs examples.md. A fix that only adds tells.md would leave them, so fold this into that fix."
+   },
+   {
+    "real": true,
+    "reason": "Extends known item 2 with new instances that a tells.md-only fix would miss: short-answers.md L5-6 requires personal-essay.md sections 2 to 8, and Coach (SKILL.md L141) requires examples.md, against 'only that one' at L177. Low."
+   }
+  ]
+ },
+ {
+  "lens": "contradiction",
+  "id": "contradiction-example1-glosses-technical-term",
+  "severity": "low",
+  "files": "references/examples.md; references/research.md",
+  "quote_a": "examples.md L8 and L14: \"**1. Report: inflation, importance flag, \"-ing\" tail**\" ... After: \"In the automated audit, 44% of the sentences the pipeline extracted were real claims.\" (before, L11: \"achieved a precision of 44%\")",
+  "quote_b": "research.md L84-85: \"Technical terms stay technical and unexplained unless the notes define them\"; research.md L56: \"- **Simplify for a lay reader.** Plain-English rewrites of technical terms\"",
+  "problem": "The model fix for a report sentence replaces the term \"precision\" with a plain-English paraphrase, which research.md lists as a model habit and rule 7 forbids.",
+  "fix": "examples.md L14: replace \"44% of the sentences the pipeline extracted were real claims\" with \"the pipeline's precision was 44%\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The only report example replaces 'precision of 44%' with a plain-English paraphrase and rewrites every sentence; research.md lists that as a model sign (L56), forbids it in rule 7 and lists 'precision' as a domain term to keep (L115). examples.md predates research.md and was never updated."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. The report example replaces 'a precision of 44%' with a plain-English paraphrase, which research.md L56 lists as a model habit and rule 7 forbids ('precision' is named at L115 as a domain term). Low."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-strong-weak-unlabelled",
+  "severity": "high",
+  "files": "references/tells.md; SKILL.md",
+  "quote_a": "tells.md:4: \"\\\"Strong\\\" tells justify an edit on one sighting; \\\"weak\\\" ones only when several cluster.\" and SKILL.md:74: \"Act on a strong tell after one sighting. Act on weak tells (a transition word, one em dash, a formal word,\"",
+  "quote_b": "tells.md:96: \"**T1 Significance inflation.**\" (no label); tells.md:84: \"**S11 Kicker endings everywhere (strong in aggregate; the main tell that anti-AI rewrites create).**\"; tells.md:68: \"**S6 Summary closers (strong at paragraph level).**\"; SKILL.md:102: \"Cut clear AI tells if the text has them.\"",
+  "problem": "The act-or-wait threshold depends on a label most entries lack. Of 45 coded entries, 5 are marked plain \"(strong)\" (C1, C2, S1, S2, S4), 3 carry qualifiers the legend never defines (\"strong in aggregate\" for S11 and R1, \"strong at paragraph level\" for S6), none is marked weak, and 37 have no label. \"Strong in aggregate\" also contradicts \"one sighting\". Edit mode uses a third undefined word, \"clear AI tells\". The agent cannot tell whether one T1 or T8 in a user's text justifies an edit.",
+  "fix": "Extend tells.md line 4: \"Entries with no label are strong. 'Strong in aggregate' and 'strong at paragraph level' mean act on the pattern across the piece, not on one instance. The weak tells are the ones listed in section 9.\" (state a different default if that is not the intent). In SKILL.md line 102 change \"clear AI tells\" to \"strong tells (step 3)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Verified by count: 45 coded entries, 5 marked '(strong)' (C1, C2, S1, S2, S4), 3 with undefined qualifiers (S6, S11, R1), none marked weak, 37 unlabelled. The legend at tells.md L4 makes the act-or-wait decision depend on that label, and Edit's 'clear AI tells' (L102) is a third undefined term. Weak tells are only given by example in SKILL.md L74-75 and section 9."
+   },
+   {
+    "real": true,
+    "reason": "Verified by count: 45 coded entries, 5 marked '(strong)', 3 with undefined qualifiers ('strong in aggregate' for S11 and R1, 'strong at paragraph level' for S6), none marked weak, 37 unlabelled. The legend at tells.md L4 keys the act-or-wait threshold to labels most entries lack; Edit adds a third undefined term, 'clear AI tells'. Medium."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-coach-trigger-unknowable",
+  "severity": "medium",
+  "files": "SKILL.md; references/personal-essay.md",
+  "quote_a": "SKILL.md:188: \"| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes above |\"",
+  "quote_b": "personal-essay.md:83-84: \"For any essay the student will submit as their own (Common App, YYGS and other programs, supplements, scholarships, graded assignments that forbid AI writing):\"; SKILL.md:112-113: \"For a learner's practice or graded essay, this is Coach territory\"",
+  "problem": "Whether a school essay will be graded, and whether the assignment forbids AI, cannot be seen from the request, and no line tells the agent to ask or what to assume. The trigger is also worded three ways (any practice or graded essay; graded or judged as the student's own; graded assignments that forbid AI writing), which give different answers for a graded essay where AI help is allowed.",
+  "fix": "Line 188 parenthetical: \"(if a student has not said whether the text will be handed in for a grade, ask once; if it will, Coach)\". Use the same wording, \"handed in for a grade or judged as the student's own work\", in SKILL.md line 113 and personal-essay.md line 84.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Row 188 makes the choice between writing a school essay and refusing to write it depend on whether it will be graded, which the request rarely says; nearly every school essay is graded, no line says to ask or what to assume, and the trigger is worded three ways (L188, L112-113, personal-essay.md L83-84)."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. The Coach trigger for school work is worded three ways (SKILL.md L112-113 practice or graded; L188 graded or judged as own; personal-essay.md L84 graded assignments that forbid AI writing), which differ for a graded essay with no AI rule, and no line tells the agent to ask when the request does not say. Low to medium (the routing probe passed)."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-coach-school-essay-no-protocol",
+  "severity": "medium",
+  "files": "SKILL.md; references/personal-essay.md",
+  "quote_a": "SKILL.md:136-137: \"**Coach** (college application essays and other work the student must submit as their own). Follow `references/personal-essay.md`.\"",
+  "quote_b": "SKILL.md:188: \"... (Coach if it will be graded or judged as the student's own work) | Genre notes above |\"; personal-essay.md:205: \"Read the draft once as an officer with 30 essays left today.\"",
+  "problem": "For a graded school essay the table's Read cell names only the genre notes, while the only Coach protocol is personal-essay.md, whose steps are built for admissions essays (life interview, spine, admissions-officer critique, 650 words). Nothing says which of those steps apply to an argument or literary-analysis essay, so the agent has a mode with no usable procedure.",
+  "fix": "Row 188 Read cell: \"Genre notes above; when coaching, also `references/personal-essay.md` sections 2 and 8 (ground rules, corrections as a list), and critique against the genre note instead of section 7\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. For a graded school essay the Read cell names only the genre notes, while Coach says to follow personal-essay.md, whose steps are admissions-specific (life interview, spine, officer critique, 650 words). The Coach paragraph gives the general shape, so an agent can adapt; low to medium severity."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Coach says 'Follow references/personal-essay.md' but row 188's Read cell names only the genre notes and L177 says to read only that one; the protocol's steps are admissions-specific. 'No usable procedure' is overstated (the Coach paragraph and sections 2 and 8 are generic), so low."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-research-rules-scope",
+  "severity": "medium",
+  "files": "references/research.md",
+  "quote_a": "research.md:70-71: \"One background sentence at most, and only with a concrete fact from the notes.\"; research.md:84-85: \"Technical terms stay technical and unexplained unless the notes define them\"",
+  "quote_b": "research.md:99-100: \"- **Introduction:** the specific problem, what earlier work did (with real citations from the user), the gap that work leaves, and what this paper does, with its main result.\"; research.md:115: \"- Domain terms (precision, recall, tokenizer, Scope 1 emissions), each defined once. One concept, one name.\"",
+  "problem": "The heading \"## Rules\" (line 64) does not say which texts it covers, and the file covers abstracts, paper sections and reports. Applied to a paper, Rule 2 cannot be met by an Introduction or a Related work section, and Rule 7 (terms left unexplained) contradicts \"each defined once\". Applied to abstracts only, paper sections have no never-invent or hedge rule.",
+  "fix": "Line 64: \"## Rules for abstracts\", plus one line under it: \"Rules 1, 4, 5 and 6 also hold for paper sections; where 'Paper sections' or 'Conventions to keep' differ from the rest, they win for papers.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. '## Rules' (L64) is unscoped in a file that covers abstracts, paper sections and reports. Rule 2 (one background sentence at most) cannot hold for an Introduction or Related work (L99-102), and rule 7 (terms unexplained) contradicts 'each defined once' (L115, carried over from v7's academic.md)."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. '## Rules' (L64) is unscoped though rules 2 and 9 only fit abstracts; applied to paper sections, rule 2 (one background sentence) cannot be met by an Introduction or Related work, and rule 7 clashes with L115. Overlaps contradiction-research-terms-defined-vs-unexplained on that one instance."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-activity-list-mode",
+  "severity": "medium",
+  "files": "SKILL.md; references/short-answers.md",
+  "quote_a": "SKILL.md:185: \"| Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |\"",
+  "quote_b": "short-answers.md:5-6: \"With a real student, this is Coach mode (see `personal-essay.md`, sections 2 to 8): the student writes; you ask, diagnose and correct.\"; short-answers.md:79-80: \"With a real student, edit their entries; do not invent numbers.\"",
+  "problem": "\"Coach or Edit\" gives no condition for choosing, and the two produce different output (a list of corrections against corrected text). The reference says Coach for the whole file in line 5 and \"edit their entries\" in line 79. \"Additional information\" is routed to a section that never mentions it.",
+  "fix": "Row 185: \"| Activity list, honors | Edit the student's own entries; never write one from nothing |\". short-answers.md line 5: add \"(except the activity list, below)\" after \"Coach mode\". Remove \"additional information\" from the row, or add one sentence on it to the activity section.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. 'Coach or Edit' in row 185 gives no condition, and 'additional information' is routed to a section that never mentions it. Low severity: inside short-answers.md the Coach statement at L5-6 covers the listed questions and the activity section says to edit entries, so the file itself is consistent."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Row 185 says 'Coach or Edit' with no condition, and routes 'additional information' to a section that never mentions it. The claim that L5 puts the whole file under Coach is overstated (its list does not name the activity list). Low."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-messages-semicolons-vs-edit",
+  "severity": "medium",
+  "files": "references/messages.md; SKILL.md",
+  "quote_a": "messages.md:65: \"- Count semicolons and colons; remove every semicolon and any colon that does not introduce a list or link.\"",
+  "quote_b": "SKILL.md:103-104: \"- Keep everything else: their sentences and their order, vocabulary, repetitions, paragraphing, contractions, humor and punctuation habits.\"; messages.md:49-50: \"A colon only before a list, an account number or a link.\"; SKILL.md:72: \"a colon only before a list, quote or link\"",
+  "problem": "Row 187 allows Edit for messages. When the user's own message uses semicolons, one rule removes all of them and the other keeps the writer's punctuation habits, with no order given. The permitted colon uses also differ in three places (list or link; list, account number or link; list, quote or link).",
+  "fix": "Line 65: \"- In text you wrote, count semicolons and colons; remove every semicolon and any colon that does not introduce a list, an account number, a quote or a link. In the user's own text, leave their punctuation.\" Use the same four colon cases in messages.md line 49 and SKILL.md line 72.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Row 187 allows Edit for messages; the checklist (L65) removes every semicolon with no exception for the user's own text, while Edit (L103-104) keeps punctuation habits. The colon-case mismatch inside messages.md is also reported in contradiction-messages-colon-account-number."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Row 187 allows Edit for messages; the unscoped checklist (messages.md L65) removes every semicolon while Edit keeps the writer's punctuation habits. The permitted colon uses also differ in three places (L65, L49-50, SKILL.md L72)."
+   }
+  ]
+ },
+ {
+  "lens": "executability",
+  "id": "executability-labeled-object-undefined",
+  "severity": "low",
+  "files": "references/short-answers.md",
+  "quote_a": "short-answers.md:44: \"3. **No tricks.** No labeled-object reveal, no campus-trivia hook turned into a metaphor, no comic aside or\"",
+  "quote_b": "short-answers.md:25: \"labeled-object or campus-trivia hook\"; short-answers.md:70: \"stacked figures, quirky labels, quips, hedged endings, clipped fragments.\"; short-answers.md:87: \"- Any quip, labeled reveal, planted metaphor or self-deprecating count? Cut it.\"",
+  "problem": "The pattern has four names (labeled-object hook, labeled-object reveal, quirky labels, labeled reveal), no definition and no example, although every other sign in lines 24 to 27 has a quoted one. The agent cannot recognise what it is told to cut.",
+  "fix": "Line 25: give one name and one quoted example from the judged answers, for instance \"a labeled-object hook (an opening built on an object and the label written on it: \\\"<quote from a model answer>\\\")\", then use \"labeled-object hook\" in lines 44, 70 and 87.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The pattern appears under four names (L25, L44, L70, L87) with no definition and no quoted example, although the neighbouring signs in L24-27 have examples; 'labels' is also used in another sense at L42 and L86. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Verified: the pattern is named four ways (L25, L44, L70, L87) with no definition or quoted example, and DEVLOG L1028 gives none either. 'Every other sign has a quoted one' is slightly off (the 'honest limitation' beat has none). Low."
+   }
+  ]
+ },
+ {
+  "lens": "examples",
+  "id": "examples-ex4-added-and-weakened",
+  "severity": "medium",
+  "files": "references/examples.md",
+  "quote_a": "references/examples.md:55 \u2014 After: \"Greenwashing erodes trust in what companies report.\"",
+  "quote_b": "references/examples.md:53 \u2014 Before: \"Greenwashing isn't just about misleading ads; it's about a fundamental breakdown of trust.\"",
+  "problem": "\"in what companies report\" is not in the before, which never says whose trust or trust in what. \"a fundamental breakdown\" is weakened to \"erodes\". The concession that misleading ads are part of the problem (\"isn't just about\") is dropped without a note. This is a second, separate case from the known tells.md S1 one.",
+  "fix": "Change the After to: \"Greenwashing is a fundamental breakdown of trust. [ask: whose trust, in what?]\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. 'in what companies report' is not in the before, and 'a fundamental breakdown of trust' becomes 'erodes trust', so example 4 also breaks the header at examples.md L3. A separate example from the three in contradiction-examples-not-fact-preserving. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Verified: the after (L55) adds 'in what companies report' and weakens 'a fundamental breakdown of trust' to 'erodes trust'; the header says afters use only facts in the before. Low."
+   }
+  ]
+ },
+ {
+  "lens": "examples",
+  "id": "examples-ex8-rhythm-not-shown",
+  "severity": "medium",
+  "files": "references/examples.md, references/tells.md",
+  "quote_a": "references/examples.md:91 \u2014 \"**8. Rhythm without chopping**\" AND references/examples.md:102-103 \u2014 \"Why: four sentences of nearly equal length and identical shape became three that differ\"",
+  "quote_b": "references/examples.md:98-100 \u2014 the After's three sentences, which count 18, 19 and 14 words; the Before's four (lines 93-96) count 14, 20, 16 and 14. AND references/tells.md:175 \u2014 \"**R1 Uniform sentence length (strong in aggregate).** Six sentences of 18 to 22 words.\"",
+  "problem": "By word count the after is no more varied than the before (spread 14 to 19 against 14 to 20), and two of its three sentences sit in the 18 to 22 band that R1 names as the tell. The before sentences are also not \"identical shape\" (one passive, one plain subject-verb, one with a because-clause, one with a fronted As-clause). The example shows tightening, so it teaches that merging two sentences is a rhythm fix.",
+  "fix": "Retitle to \"8. Tightening without chopping\" and change the Why to: \"Why: the repeated 'gravitational pull', 'This pull' and 'gravitational force' are gone, and nothing was chopped into fragments.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Word counts checked by hand: before 14, 20, 16, 14; after 18, 19, 14. The after is no more varied, two of its three sentences sit at the edge of R1's 18 to 22 band, and the before sentences are not 'identical shape'. The example shows tightening, not the rhythm fix its title and Why line claim."
+   },
+   {
+    "real": true,
+    "reason": "Word counts verified: before 14, 20, 16, 14; after 18, 19, 14. The after is no more varied, two of its three sentences sit in or next to R1's 18 to 22 band, and the before sentences are not of identical shape, so the Why line misdescribes the example."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-research-every-model-identified",
+  "severity": "medium",
+  "files": "references/research.md",
+  "quote_a": "research.md lines 11-12: \"Every version a model wrote from the same notes was identified as AI, with or without this skill.\" research.md lines 28-29: \"Blind judges (a fair judge and a journal editor) identified every model version, with or without the earlier version of this skill.\"",
+  "quote_b": "DEVLOG.md lines 963-965, column \"Judged human\": \"| Plain | 17% | 37.6 | 1.00 | 6.17 |\", \"| v9 | 4% | 34.0 | 1.00 | 6.08 |\", \"| r0 | 8% | 33.8 | 1.00 | 5.94 |\". DEVLOG.md lines 1052-1053: \"| Plain | 6% | 34.5 |\", \"| v10 | 12% | 38.5 |\". DEVLOG.md lines 1212-1215 (abstracts written from notes, judged human / mean p): \"| Plain | 22% / 39.2 |\", \"| Full skill (AF) | 22% / 40.7 |\", \"| SKILL.md only (AS) | 44% / 45.2 |\".",
+  "problem": "The log does not show every model abstract identified. In section 23, 2 to 17 percent of model-written abstracts were judged human, and in the section 24 ablation round 22 to 44 percent were. What the log supports is narrower: in section 23 every model version was rated below every real abstract (AUC 1.00).",
+  "fix": "Line 11-12: \"Versions a model wrote from the same notes were rated below every real abstract, with or without this skill (judged the student's own in 2 to 44% of ratings depending on the round, against 100%).\" Line 28-29: replace \"identified every model version\" with \"rated every model version below every real abstract (4 to 17% of model versions were still judged human)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified in both files. research.md L11-12 and L28-29 say every model version was identified as AI, but the log shows 2 to 17% of model abstracts judged human in section 23 (L963-965, L984-985, L1052-1053) and 22 to 44% in the section 24 ablation (L1212-1215). What the log supports is AUC 1.00: every model version rated below every real abstract."
+   },
+   {
+    "real": true,
+    "reason": "Verified against the log: model abstracts were judged human in 4 to 17% of ratings in section 23 (L963-965), 6 to 12% held out (L1052-1053) and 22 to 44% in the section 24 ablations (L1212-1215). What holds is AUC 1.00 in section 23 (each model version rated below each real one), not 'identified every model version'."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-expert-readers-content",
+  "severity": "medium",
+  "files": "SKILL.md; references/tells.md",
+  "quote_a": "SKILL.md lines 25-26: \"Expert readers (admissions officers, editors, teachers who use AI themselves) catch AI text mostly by content and structure, not by individual words. So fix content first and vocabulary last.\" tells.md line 20: \"## 1. Content (fix these first; they drive expert judgments)\"",
+  "quote_b": "paper/review_edits.json line 110 (the citation review logged in DEVLOG.md section 19, lines 514-517): \"Russell et al. do not show that experts rely on content \\\"as much as words\\\"; vocabulary is by far their most-cited clue.\" DEVLOG.md lines 720-721: \"Odd specific details count as human for every version, because the notes carry the real student's details. Content is not what gives the model essays away; form is.\"",
+  "problem": "The claim dates from the research phase (DEVLOG.md lines 46-47 credit it to Russell et al. 2025). The paper review checked that source, found vocabulary was the experts' most-cited clue (53.1% of clues), and corrected the paper, but the skill still states the old version. The project's own essay benchmark also found that form, not content, separated model essays when the facts were the writer's.",
+  "fix": "SKILL.md lines 25-26: \"Expert readers (admissions officers, editors, teachers who use AI themselves) cite vocabulary most often, and also sentence structure and lack of originality; in our own blind tests judges told model text from real writing by structure and form even when the facts were the writer's. So fix content and structure first and vocabulary last.\" tells.md line 20: \"## 1. Content (fix these first)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified (SKILL.md L25-26, tells.md L20, paper/review_edits.json L110-113, DEVLOG L46-47 and L720-721). The claim about expert readers traces to Russell et al., and the project's own citation review found vocabulary was their most cited clue (53.1%); the paper was corrected and the skill was not. Note the support is in section 19 and review_edits.json, outside sections 21 to 24, but I checked it."
+   },
+   {
+    "real": true,
+    "reason": "Verified: DEVLOG L46-47 credits the claim to Russell et al.; paper/review_edits.json (item at line 110) found vocabulary is their most-cited clue and corrected the paper. The project's own tests support structure and form over vocabulary (essays L720-721, abstracts L1312-1314), but not 'content', so the sentence at SKILL.md L25-26 and the tells.md L20 heading overstate the source. Low to medium; the fix order itself is not contradicted."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-research-hedges-convention",
+  "severity": "medium",
+  "files": "SKILL.md; references/research.md",
+  "quote_a": "SKILL.md lines 160-161: \"Signposting (\"Table 2 shows\"), conclusion and limitations sections, passive voice in methods and careful hedges are conventions, not tells.\"",
+  "quote_b": "DEVLOG.md lines 969-970: \"model versions by fluency (83 to 96%), hedges (31 to 38% against 6%) and promotion\". research.md line 36: \"| Hedges and self-assessments (\"to my knowledge\", \"we believe\", \"though not for all\") | 31 to 38% | 6% |\". research.md line 81: \"6. **No hedges or self-assessments the notes do not contain.**\" DEVLOG.md lines 1056-1057: \"hedges were not reduced (28% against 22%)\".",
+  "problem": "The SKILL.md sentence is carried over from the old academic.md. Section 23 then found hedges were the second most cited sign of a model abstract, and research.md was rewritten to ban hedges the notes lack. SKILL.md still tells the writer that hedges are not tells, and on the held-out test the skill's abstracts were cited for hedges more often than plain Claude's.",
+  "fix": "In SKILL.md line 161 replace \"and careful hedges are conventions, not tells\" with \"and hedges the researcher's own draft or notes contain are conventions, not tells; a hedge the model adds is a tell (see `references/research.md`)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. SKILL.md L160-161 says careful hedges are 'conventions, not tells', while research.md's own table (L36) and DEVLOG L969-970 show hedges were the second most cited sign of model abstracts, and rule 6 bans hedges the notes lack. The sentence is carried over from the old academic.md. Low severity because research.md governs when it is read."
+   },
+   {
+    "real": true,
+    "reason": "Verified: SKILL.md L160-161 (unchanged from v7) says careful hedges are 'not tells'; research.md's table lists hedges as the second most cited sign of model abstracts (31 to 38% vs 6%) and rule 6 bans hedges the notes lack; held-out hedges were not reduced (L1056-1057). Low: the sentence is right for hedges in a researcher's own draft but is unqualified."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-whole-hearted-unqualified",
+  "severity": "medium",
+  "files": "references/personal-essay.md; SKILL.md",
+  "quote_a": "personal-essay.md lines 173-174: \"- Say it whole-heartedly. Do not balance it (\"both good and bad\", \"X matters, though Y\") or hedge it (\"I think\", \"maybe\").\" personal-essay.md lines 274-275: \"- Close on the student's own conclusion from the notes, stated whole-heartedly: not a shrug, not balanced, not hedged.\" SKILL.md lines 154-155: \"the conclusion stated plainly; no quips, planted metaphors or hedged endings.\"",
+  "quote_b": "DEVLOG.md lines 1069-1072: \"most of v10's additions were doubts turned into commitments (\"I don't know whether chemistry or policy\" became a stated goal) and \"so\"/\"because\" links between separate facts. The cause is s1's rule to state conclusions \"whole-heartedly\", which overrode the applicants' real uncertainty.\" DEVLOG.md line 1074: \"**v10.1 (shipped).** Rule 4 now limits a conclusion to the strength the student holds\". short-answers.md line 46: \"4. **State the conclusion and the enthusiasm plainly, as strongly as the student holds them and no stronger.**\"",
+  "problem": "The log traced invented certainty to the unqualified \"whole-heartedly, not hedged\" rule, and v10.1 corrected it in short-answers.md only. The same unqualified wording is still in personal-essay.md (the sample-essay rules have no exception for a hedge the notes contain) and in the SKILL.md genre note for short answers.",
+  "fix": "personal-essay.md lines 274-275: \"Close on the student's own conclusion from the notes, as strongly as the notes hold it and no stronger: no shrug, balance or hedge that the notes do not contain.\" Line 173: append \"unless the balance or the hedge is the student's own\". SKILL.md line 154-155: \"no quips, planted metaphors or hedged endings the student did not write\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. DEVLOG L1069-1074 traced invented certainty to the unqualified 'whole-heartedly' rule and v10.1 fixed short-answers.md only; personal-essay.md L274-275 and L269 (sample rules) still say 'not balanced, not hedged' with no exception for a balance or hedge the notes contain, and L173-174 has an exception only for doubt (L177-178). Caveat: the log shows the failure in short answers, not in essays, where v8's fidelity was good."
+   },
+   {
+    "real": true,
+    "reason": "Verified: DEVLOG L1069-1074 traced invented certainty to the unqualified 'whole-heartedly' rule and fixed short-answers.md only. personal-essay.md L274-275 (section 10) still says 'not balanced, not hedged' with no exception for a hedge the notes contain, and SKILL.md L154-155 bans 'hedged endings' without the qualifier. Section 5 has an exception for real doubt (L177-178), so the gap is section 10 and the genre note."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-step5-stale-ai-words",
+  "severity": "medium",
+  "files": "references/personal-essay.md",
+  "quote_a": "personal-essay.md lines 215-216: \"7. **AI-sounding lines** (see `tells.md` sections 2 and 4): stated lessons, journey/growth/resilience words, identity as a label, stock metaphors, tidy bow endings, kicker endings everywhere, thesaurus words.\"",
+  "quote_b": "DEVLOG.md lines 651-652: \"PE3 (abstract nouns) narrowed to inflated uses, since current models already avoid journey/passion/challenge and the admitted essays use them more\". DEVLOG.md line 612: \"| Abstract nouns (-tion, -ness, -ity...) per 100 words | 2.9 | 1.2 | 1.0 | 1.0 |\". DEVLOG.md line 705: \"| Reaching vocabulary | 51 / 0 | 0 / 0 | 3 / 1 | 1 / 1 | 1 / 0 |\" (cited as a sign of a real student in 51% of ratings of real essays, never as AI). personal-essay.md line 76: \"- Somewhere they reach: a dramatic first line, a vivid simile, a bigger word than speech would use.\"",
+  "problem": "Separate from known item 8 (\"stated lessons\"): the same v7-era list also tells the coach to flag \"journey/growth/resilience words\" and \"thesaurus words\" as AI-sounding. The log found the reverse on both: admitted essays use those nouns more than current models, and reaching vocabulary was one of the judges' main signs of a real student.",
+  "fix": "In lines 215-216 replace \"journey/growth/resilience words\" with \"inflated phrases (\"my journey of growth\")\" and \"thesaurus words\" with \"words chosen only to show off\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Item 7 is the v7 list (same text in v7) and still labels 'journey/growth/resilience words' as AI-sounding, against PE3's narrowing and DEVLOG L651-652 and L612. Same line as known item 8 but different list entries, so fix them together. The 'thesaurus words' half is weaker, since L33-35 already separates showing off from reaching."
+   },
+   {
+    "real": true,
+    "reason": "Verified: item 7 (L215-216) is unchanged v7 text. Beyond known item 8's 'stated lessons', it flags 'journey/growth/resilience words' and 'thesaurus words', against DEVLOG L651-652 (admitted essays use those nouns more than current models), L705 (reaching vocabulary cited as a real-student sign in 51% of ratings, never as AI) and personal-essay.md L76. Extends known item 8 to other entries in the same list."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-tidy-whatever-method",
+  "severity": "low",
+  "files": "references/personal-essay.md; references/tells.md",
+  "quote_a": "personal-essay.md lines 57-58: \"In blind tests this was the most cited sign of a model essay, in about four of five judgments, whatever the writing method.\" tells.md lines 163-164: \"Judges cited tidy structure in about four of five judgments of model essays, with or without anti-AI rules, and in few of real students' essays.\"",
+  "quote_b": "DEVLOG.md lines 765-766: \"v8b cut tidy structure from 86% (v7) to 51% as AI.\"",
+  "problem": "\"Whatever the writing method\" was true of round 1 (75 to 86% for plain, word list, v7 and the v8 candidate). Round 2 overturned it: the rules now in this file cut the figure to 51%.",
+  "fix": "personal-essay.md line 58: replace \", whatever the writing method\" with \" of plain-model and early-skill essays (about half once the rules below were applied)\". tells.md line 164: replace \", with or without anti-AI rules,\" with \" written without the rules in this entry (about half with them),\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. 'Whatever the writing method' and 'with or without anti-AI rules' describe round 1 (75 to 86%); DEVLOG L765-766 shows the rules now in this entry cut the figure to 51%. Low severity: a stale evidence claim with no effect on behaviour."
+   },
+   {
+    "real": true,
+    "reason": "Verified: 'whatever the writing method' and 'with or without anti-AI rules' held for round 1 (75 to 86%), but DEVLOG L765-766 shows the rules now in this file cut it to 51%. Low; a stale universal."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-previous-version-label",
+  "severity": "low",
+  "files": "references/tells.md",
+  "quote_a": "tells.md lines 127-128: \"admitted essays written before 2022 say \"learned\" about four times as often as this skill's previous version did\". tells.md lines 156-157: \"In our tests the skill's previous version used \"really\" four times as often as 24 admitted essays, and \"kind of\" 15 times where the admitted essays never used it.\"",
+  "quote_b": "DEVLOG.md line 607 (table header): \"| Feature | Real | Plain | Word list | Skill v7 |\"; lines 616-618: \"| \"really\" per 10,000 words | 4.7 | 13.7 | 19.2 | 21.0 |\", \"| \"kind of\" per 10,000 words | 0 | 5.3 | 7.7 | 12.1 |\", \"| \"learned\" per 10,000 words | 20.4 | 13.0 | 8.5 | 4.8 |\".",
+  "problem": "The numbers are right, but they are v7's. The sentences were written for v8; in v13.1 \"the previous version\" is v13, six releases later, and the log has no such counts for any version after v7.",
+  "fix": "In both places replace \"this skill's previous version\" / \"the skill's previous version\" with \"an early version of this skill (v7)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified; the numbers are v7's (DEVLOG L607, L616-618: 'learned' 20.4 against 4.8, 'really' 21.0 against 4.7). In v13.1 'the previous version' reads as v13, for which the log has no such counts. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Verified: the figures at tells.md L127-128 and L156-157 are v7's (DEVLOG L607-618). In v13.1 'previous version' no longer means v7. Low."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-exclamation-normal",
+  "severity": "low",
+  "files": "references/messages.md",
+  "quote_a": "messages.md lines 51-52: \"One exclamation mark at the ask or at the line the writer feels most is normal in this genre; more is the user's call.\"",
+  "quote_b": "DEVLOG.md lines 917-918: \"Two overshoots to watch: v9 uses more exclamation marks than these runners (0.77 vs 0.26 per 100 words)\"",
+  "problem": "The held-out test showed this rule makes the skill use about three times as many exclamation marks as the real runners. At 0.26 per 100 words, a real appeal has roughly one per 400 words, so one per appeal is not the norm. The log flagged it and the wording was never changed.",
+  "fix": "Replace the sentence with \"An exclamation mark at the ask is fine when the user's notes have that energy, but do not add one by default: real appeals average about one per 400 words.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. messages.md L51-52 calls one exclamation mark 'normal in this genre'; the held-out test found the skill at 0.77 per 100 words against 0.26 for real runners (DEVLOG L917-918), which is under one per typical appeal, and the log flagged it as an overshoot that was never acted on. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Verified: DEVLOG L917-918 flags the overshoot (v9 0.77 exclamation marks per 100 words vs 0.26 for real runners) and messages.md L51-52 still calls one per appeal 'normal in this genre'. Low."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-running-for-x-opening",
+  "severity": "low",
+  "files": "references/messages.md",
+  "quote_a": "messages.md line 18: \"| open with \"I'm running for X\" | 12% | 44 to 66% |\". messages.md line 64: \"- Does the text open with \"I'm running for X\"? If the reason is stronger, start there.\"",
+  "quote_b": "DEVLOG.md lines 918-919: \"and opens with \"I'm running for X\" less often than they do (12% vs 31%).\"",
+  "problem": "12% is the development-set figure for real appeals. On the held-out set real runners opened this way 31% of the time, and the guide pushed the skill down to 12%, which the log flagged as the second overshoot. The table and the check still treat the opening as something to move away from.",
+  "fix": "Line 18: change \"12%\" to \"12 to 31%\". Line 64: \"Does the text open with \"I'm running for X\"? Some real appeals do (one in eight to one in three); start from the reason only when it is stronger.\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The table's 12% is the development figure; on held-out appeals real runners opened this way 31% of the time and the guide pushed the skill to 12% (DEVLOG L918-919, flagged as the second overshoot). Low severity: the direction away from the model rate (44 to 66%) is still right, only the size overshoots."
+   },
+   {
+    "real": true,
+    "reason": "Verified: the table's 12% is the development figure; on held-out appeals real runners opened this way 31% of the time and the guide pushed the skill to 12% (DEVLOG L918-919, the second flagged overshoot). The table and the check were not updated. Low."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-chakrabarty-most-cut",
+  "severity": "low",
+  "files": "references/tells.md",
+  "quote_a": "tells.md lines 33-35: \"**C4 Redundant exposition.** Telling the reader what the example just showed: \"This shows how important patience is.\" Professional editors cut this more than anything else in AI drafts.\"",
+  "quote_b": "DEVLOG.md line 532: \"- **Citations:** Chakrabarty et al.'s taxonomy is led by awkward word choice and poor sentence structure\". paper/review_edits.json line 134: \"Their most frequent categories are awkward word choice (28%) and poor sentence structure (20%)\". notes/tells_catalog.md line 377: \"\"Unnecessary/redundant exposition\" was 18% of 8,035 professional-writer edits\".",
+  "problem": "The source is Chakrabarty et al. (cited in the file's evidence base as \"professional edits of AI text\"). The section 19 review found redundant exposition is third in that study, not first, and fixed the paper; the skill kept the overstatement.",
+  "fix": "Replace the sentence with \"Professional editors cut this often in AI drafts (about one edit in five).\"",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified (tells.md L33-35, DEVLOG L532, review_edits.json L134-135, notes/tells_catalog.md L377). Redundant exposition is third in that study at 18%, behind awkward word choice (28%) and sentence structure (20%), so 'more than anything else' is wrong. The support is in section 19, outside sections 21 to 24, but it checks out. Low severity."
+   },
+   {
+    "real": true,
+    "reason": "Verified: notes/tells_catalog.md L377 gives redundant exposition as 18% of edits, and the paper review (review_edits.json item at line 134, DEVLOG L532) found the taxonomy is led by awkward word choice (28%) and sentence structure (20%). 'More than anything else' at tells.md C4 is false. Low."
+   }
+  ]
+ },
+ {
+  "lens": "evidence",
+  "id": "evidence-cool-essay-cause",
+  "severity": "low",
+  "files": "references/personal-essay.md; references/tells.md",
+  "quote_a": "personal-essay.md line 50: \"A third failure is what anti-AI rules produce in current models:\". tells.md line 152: \"**PE10 The cool essay (what anti-AI rules produce in current models).**\"",
+  "quote_b": "DEVLOG.md lines 594-595: \"Tells named in all AI versions: a put-on casual teen register (\"kind of wild\", \"traveled a ton\", \"so cringy\")\". DEVLOG.md line 709: \"| Casual filler | 10 / 0 | 18 / 33 | 17 / 39 | 28 / 43 | 1 / 3 |\" (real, plain, word list, v7, v8 candidate; second number = cited as AI). DEVLOG.md lines 616-617: plain model \"really\" 13.7 and \"kind of\" 5.3 per 10,000 words against 4.7 and 0 in real essays.",
+  "problem": "The log found the casual register in the plain model too (cited as an AI sign in 33% of its ratings, with no anti-AI rules), and names the spoken notes as the cause (lines 640-641). Anti-AI rules made it worse (43%) but did not create it. Line 50 also files the engineered essay under the same heading while its own bullet says \"whatever the writing method\".",
+  "fix": "personal-essay.md line 50: \"Two more failures come from how current models write from spoken notes, and anti-AI rules make the first one worse:\". tells.md line 152: \"(what a model writing from spoken notes produces; anti-AI rules make it worse)\".",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The log found the casual register and framing devices in all AI versions, the plain model included (DEVLOG L594-598, L709: cited as AI in 33% of plain ratings against 43% for v7), and names the spoken notes as a cause (L640-641). 'What anti-AI rules produce' overstates it. Low severity, a causal label with no effect on behaviour; partly overlaps contradiction-failure-count-two-three-four at L50."
+   },
+   {
+    "real": true,
+    "reason": "Verified: DEVLOG L594-598 lists the casual register and framing devices as tells in all AI versions, L709 shows casual filler cited as AI for the plain model too (33%, vs 43% for v7), and L640-641 names the spoken notes as a cause. 'What anti-AI rules produce' (personal-essay.md L50, tells.md L152) overstates; only the shrug ending is specific to v7's rules. Low."
+   }
+  ]
+ }
+]

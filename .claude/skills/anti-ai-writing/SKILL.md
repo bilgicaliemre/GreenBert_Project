@@ -1,6 +1,6 @@
 ---
 name: anti-ai-writing
-description: Write and edit prose that reads like a skilled human wrote it, with a mode for each genre: application essays and short answers (coaching), research abstracts and papers, emails and messages, other prose. Cuts AI tells, adds real specifics, keeps the writer's voice, never invents facts.
+description: Use when the user asks to write, edit, improve, proofread, polish or humanize prose (essays, college application essays and short answers, research abstracts and papers, reports, emails, messages, posts, cover letters), or says "make this sound less like AI", "humanize this" or "does this sound like AI?". Edits the user's own text minimally and keeps their voice, writes new text from the user's facts without inventing any, cuts AI tells, and coaches college application essays instead of writing them.
 ---
 
 # Anti-AI writing
@@ -22,23 +22,31 @@ they produce text that could belong to anyone. The giveaways follow from that:
 - **Even rhythm.** Sentences of similar length and shape; paragraphs of similar size; lists of three.
 - **One register for everything.** The same polished, noun-heavy voice in a lab report and a personal story.
 
-Expert readers (admissions officers, editors, teachers who use AI themselves) catch AI text mostly by
-content and structure, not by individual words. So fix content first and vocabulary last.
+Expert readers (admissions officers, editors, teachers who use AI themselves) cite vocabulary most often, but
+swapping words does not fool them: in our blind tests judges told model text from real writing by content and
+structure even where word-level features could not. So fix content first and vocabulary last.
 
 ## Hard rules
 
-1. **Never invent anything.** No fact, name, number, date, quote, source, anecdote, feeling or memory that
-   the user or the source did not provide. A made-up specific is worse than the vague sentence it replaced.
-   If a sentence needs a detail you lack, ask, or write `[ask: what did your dad actually say?]`, or write a
-   plainer sentence.
+1. **Never invent anything.** About the user and their material (their life, work, data and sources, the
+   people and organizations they mention), use no fact, name, number, date, quote, source, anecdote, feeling or
+   memory that they or their source did not provide. A made-up specific is worse than the vague sentence it
+   replaced. If a sentence needs a detail you lack, ask, or write `[ask: what did your dad actually say?]`, or
+   write a plainer sentence. The one exception is an explanation of how something works: there you may use
+   general knowledge you are sure of and a reader could verify. A made-up statistic, figure, study, quote or
+   source is never allowed, and when the user supplies the source (passages, a quotes file, data), claim nothing
+   about it beyond what it shows.
 2. **Keep the meaning.** When editing, every claim, hedge and number survives unless the user agrees to cut
-   it. Never make a claim stronger than its evidence.
+   it. Never make a claim stronger than its evidence. If you cut a sentence because it is a tell (a significance
+   verdict, an unsourced "studies show"), say so after the text, and never put a position the writer did not
+   take in its place.
 3. **No tricks.** No deliberate typos, no swapped-in rare synonyms, no slang to sound casual, no invisible
    characters or look-alike letters. These make writing worse, and the point of this skill is good writing.
 4. **Minimum effective edit** on human-written text. Fix what is broken; leave strong sentences alone,
    including the writer's odd word choices, asides and mixed feelings. If a passage is already clean, say so
    and return it unchanged.
-5. **Application essays are coached, not ghostwritten.** See the section below.
+5. **College application essays and graded schoolwork are coached, not ghostwritten.** See Coach below for the
+   three cases; outside them, if the user asks you to write something, write it.
 
 ## Procedure
 
@@ -53,7 +61,7 @@ the same name.
 For personal essays and other narratives, draft in two passes, because auditing while drafting produces
 flat, note-by-note essays. Pass one: write for shape, the way a strong writer would, with the arc, the turn
 and the "so what" as the goal; put the climax late and connect the scenes. Pass two: treat that draft as
-someone else's and run Edit mode on it (steps 3 and 4). The fact diff is where invented feelings, causes and
+someone else's and run the full audit and checks on it (steps 3 and 4). The fact diff is where invented feelings, causes and
 events get cut or replaced with the writer's own reflections from the notes; keep the structure that pass one
 built.
 
@@ -77,19 +85,23 @@ passive voice) only when several cluster in one passage.
 **4. Check before returning.**
 - Fact diff: list every name, number, date, quote and claim in the output and confirm each comes from the
   user or the source. Remove or bracket anything that does not.
+- Numbers: recompute any number that can be derived from others in the text (a percentage from two counts, F1
+  from precision and recall, a total from its parts). If two disagree, do not correct one silently: say so in
+  one line after the text and ask.
 - Read it as the target reader. Does any sentence only exist to sound good?
 - Did the rewrite create new tells? Watch for the classic over-corrections: choppy fragments, every paragraph
   opening with a short punchy sentence, semicolons and colons where a comma or full stop would do, forced casualness (speech filler such as really, kind of, actually, basically, stuff), endings that shrug instead of
   concluding, and above all kicker endings. Count them: list the
   last sentence of every paragraph; if more than two are short (under about 10 words) or wry/quotable, rewrite
-  the others so they end on content, or merge them into the sentence before.
+  the others so they end on content, or merge them into the sentence before. A short last sentence that simply
+  gives the final fact, result or request is not a kicker; leave it.
 - For a personal essay, also check the opposite failure: is there an arc and at least one line of reflection
   that tells the reader something the facts alone do not?
 - Length: respect hard limits (650 words for the Common App, school word counts).
 
-**5. Output.** Return the finished text only. When editing someone else's text, add at most three lines on
-what changed and why, unless they asked for a full critique. Never wrap the text in "Here's your revised
-version!" or end with offers.
+**5. Output.** Return the finished text, then only what the mode or the reference calls for (Edit's list,
+Rebuild's one line, a number flag, a required reminder), in a few lines unless they asked for a full critique.
+Never wrap the text in "Here's your revised version!" or end with offers.
 
 ## Modes
 
@@ -109,13 +121,13 @@ when they say "improve it":
   order of paragraphs), one line each, without writing the new sentences for them.
 Why: in blind tests on real student writing, answering "improve it" with a rewrite (75 to 90 percent of words
 changed) made texts read as AI (0 to 27 percent judged the writer's own) and added three to four statements per
-text; edits at this level kept abstracts and appeals reading as the writer's own (90 to 100 percent). For a
-learner's practice or graded essay, this is Coach territory: return the corrected text and the list, never a
-rewrite. If the user also gave a writing sample, it overrides the default style rules here, including the dash
-rule.
+text; edits at this level kept abstracts and appeals reading as the writer's own (90 to 100 percent). A
+learner's practice or graded essay gets the same and no more: their draft with outright errors fixed in place,
+then the list, never a rewrite. If the user also gave a writing sample, it overrides the default style rules
+here, including the dash rule.
 
 **Rebuild** (the user says an AI wrote it or asks you to rewrite an AI draft; if you only suspect it, use Edit,
-since tells are not proof of authorship). For a student's own application essay, use Coach mode. Polishing keeps
+since tells are not proof of authorship). For a student's own college application essay, use Coach mode. Polishing keeps
 an AI draft's generic plan and its errors. First check each of its facts, quotes and claims against the user's
 material: run the fact diff (step 4), and for every sentence that interprets a quote, a note or data, check that
 the source supports the reading and not only the words. A generalization stated as fact and a remedy that
@@ -133,12 +145,18 @@ pattern, give a one-line fix. Do not guess whether a human or a model wrote it: 
 generic writing, not proof of authorship. Lead with the most important problem; praise only specific things
 that work.
 
-**Coach** (college application essays and other work the student must submit as their own).
+**Coach** (writing the student must submit as their own). Three cases only: admission essays and supplements
+for colleges and the programs they run (the Common App, a college's own questions, a pre-college program such as
+Yale Young Global Scholars); schoolwork the user says will be graded or handed in as their own; and an
+application, form or fair entry whose rules, as the user tells you or as you know, require the applicant's own
+writing or ban AI-written text. Anything else (a mentorship or club form, a job application, a cover letter, a
+competition that allows AI help) is Write or Edit: if the user asks you to write it, write it.
 Follow `references/personal-essay.md`. You interview, find the story, propose a structure, critique the
-student's drafts the way an admissions reader would, and give grammar and clarity fixes as a list of
-discrete corrections. You do not write the essay, and you do not write example sentences built from the
-student's own story: model-written sentences pull every essay toward the same voice, and even "grammar only"
-rewrites drift meaning. To show a technique, use a neutral example from `references/examples.md`. Say why
+student's drafts the way an admissions reader would, and return their draft with outright errors (spelling,
+grammar, punctuation) fixed in place, then the list of those fixes and of the bigger changes they should make
+themselves. You do not write the essay, rephrase their sentences, or write example sentences built from the
+student's own story: model-written sentences pull every essay toward the same voice, and rephrasing drifts
+meaning. To show a technique, use a neutral example from `references/examples.md`. Say why
 once, briefly: the Common App, Yale and many programs count substantive AI-written content as not the
 applicant's own work, and the material that makes these essays work (true, specific, slightly uncomfortable
 detail) only exists in the student's head. Writing a sample essay for a clearly fictional person, to teach
@@ -151,14 +169,15 @@ technique, is fine.
   conclusion stated plainly. Full guidance: `references/personal-essay.md`.
 - **Short answers and supplements** (about 350 words or fewer: why us, why this major, community, short takes,
   activity list): not a compressed essay. Answer the question directly, one example with the two or three details
-  that matter (not a run of figures and names), the conclusion stated plainly; no quips, planted metaphors or hedged
-  endings. Full guidance: `references/short-answers.md`.
+  that matter (not a run of figures and names), the conclusion stated plainly; no planted metaphors or hedged
+  endings, and no quips outside the 35 to 50 word short takes. Full guidance: `references/short-answers.md`.
 - **School essays (argument, literary analysis):** thesis that someone could disagree with; quote briefly
   and analyze the words, do not summarize plot; a conclusion that adds a consequence or limit instead of
   restating. Use only real quotes the user provides or that you can verify.
 - **Research abstracts, papers and reports:** see `references/research.md`. Edit the researcher's own draft lightly
   before writing anything from notes. Signposting ("Table 2 shows"), conclusion
-  and limitations sections, passive voice in methods and careful hedges are conventions, not tells. If a
+  and limitations sections, passive voice in methods and the hedges in the researcher's own draft or notes are
+  conventions, not tells; a hedge you add is a tell. If a
   project skill sets stricter writing rules (for example `research-paper` in GreenBERT), follow those too.
   Many journals (Science's policy, and student journals that adopt it) require AI use to be disclosed with
   the tool, version and prompts: remind the user to keep that log.
@@ -174,22 +193,23 @@ technique, is fine.
 
 ## Which mode and reference for which text
 
-Find the row for the text and read its reference file (only that one: the rules in the other references are for other kinds of text). Each reference was built by
+Always read `references/tells.md`. Then find the row for the text and read the genre reference named in that row, plus any file it or the mode points to; do not apply another genre's rules. Each genre reference was built by
 comparing model writing with real writing of that kind from before AI tools existed (admitted students' essays and
 short answers, winning science-fair abstracts, charity appeals).
 
 | Text | Mode | Read |
 |---|---|---|
-| Common App personal statement, a scholarship or program essay the student will submit | Coach. Never write it. | `references/personal-essay.md` |
-| Supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
-| Activity list, honors, additional information | Coach or Edit the student's own entries | `references/short-answers.md` (activity list section) |
-| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft; remind about AI-use disclosure once | `references/research.md` |
+| College admission essay (Common App personal statement, a college's or its pre-college program's essay) | Coach. Never write it. | `references/personal-essay.md` |
+| College supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
+| Other applications and forms (mentorship, club, internship, job, a competition that allows AI help) | Write or Edit; Coach only if its rules require the applicant's own writing or ban AI-written text | `references/short-answers.md` for short answers |
+| Activity list, honors | Edit the student's own entries; never write or invent one | `references/short-answers.md` (activity list section) |
+| Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft and it is not a science-fair entry or graded schoolwork (those are never written for the student); remind about AI-use disclosure once | `references/research.md` |
 | Email, group message, fundraising appeal, announcement | Write or Edit | `references/messages.md` |
-| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if it will be graded or judged as the student's own work) | Genre notes above |
+| School essay, explanation, blog post, cover letter, other prose | Write or Edit (Coach if the user says it will be graded or handed in as their own work) | Genre notes above (when coaching schoolwork, also `references/personal-essay.md` sections 2 and 8) |
 | A sample for a clearly fictional person (teaching, testing this skill) | Write | The reference for its genre |
 
-If the user's text is their own draft, use Edit; if it reads as AI-written and they want it fixed, Rebuild (or
-Coach for an application). When a project has its own writing rules (for example GreenBERT's `research-paper`
+If the user's text is their own draft, use Edit; if they say an AI wrote it and want it fixed, Rebuild (or
+Coach for a college application). When a project has its own writing rules (for example GreenBERT's `research-paper`
 skill), follow them too; they win on conflicts.
 
 ## Integrity, stated plainly

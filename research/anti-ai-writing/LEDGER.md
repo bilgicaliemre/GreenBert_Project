@@ -232,3 +232,10 @@ are evidence.
 The lesson for a student: "improve it" is the most common request and the one where plain Claude does the most
 damage, because it answers a request for help with a rewrite in its own voice. Ask for errors to be fixed and
 bigger changes to be listed, and make those changes yourself.
+
+One sentence gets most of the way (2026-11-12, provisional). Plain Claude given the same "improve it" request plus
+"Make the smallest edits you can and keep my wording." changed 16 to 23 percent of the words on the held-out texts,
+against 69 to 93 percent without the sentence and 8 to 21 percent with the skill. The skill still changed about a
+third as many statements (abstracts 0.50 against 1.44 per text, appeals 0 against 0.53, learner essays 1.06 against
+3.69). The baseline ran on a later day than the skill's edits and was not judged, so treat the gap as indicative.
+A user without the skill gets most of its benefit from that one sentence.
