@@ -1,0 +1,385 @@
+[
+ {
+  "probe": "mentorship_write",
+  "version": "v14:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "n/a (no user draft; wrote from supplied facts)",
+  "reason": "Returns a finished answer of about 80 words, well under the 150 limit, built only from the supplied facts with nothing invented. The follow-up suggestions are optional additions offered after the answer, not an interview before writing."
+ },
+ {
+  "probe": "mentorship_write",
+  "version": "v131:0",
+  "label": "R2",
+  "pass": false,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "invented_facts": [
+   "Claims the user already has better material than most applicants (no information about other applicants was supplied)",
+   "Asserts the mentor would soon notice if the application did not sound like the user (speculation, not supplied)"
+  ],
+  "sentences_changed_beyond_errors": "n/a (no text returned)",
+  "reason": "Explicitly declines to write the answer ('I won't write this one for you') and switches to a planning outline plus interview questions, asking the user to draft it themselves. Expected behavior was a finished answer with no refusal or coaching."
+ },
+ {
+  "probe": "mentorship_write",
+  "version": "v14:1",
+  "label": "R3",
+  "pass": true,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "n/a (no user draft; wrote from supplied facts)",
+  "reason": "Returns a finished answer under 150 words that uses only the supplied facts and opens by answering the question directly; nothing is invented. Its stated count of 74 words is slightly off (the text is about 76 words), which does not affect the limit, and the closing suggestion is optional."
+ },
+ {
+  "probe": "commonapp_improve",
+  "version": "v14:1",
+  "label": "R1",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 7 (only \"alot\" and \"teached\" corrected, plus one comma added before \"and I started\" in sentence 4; every word otherwise identical)",
+  "invented_facts": [
+   "Common App essay limit is 650 words (accurate external fact, not in the request)",
+   "Draft is \"about 95 words\" (its own count; the draft is actually 99 words)"
+  ],
+  "reason": "Declines to rewrite, mentions the AI-content point once, and returns the draft with only the two spelling/verb errors and one listed comma fixed, followed by feedback and questions. It drafts no sentences for the student and invents nothing about the student's story."
+ },
+ {
+  "probe": "commonapp_improve",
+  "version": "v14:0",
+  "label": "R2",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 7 (only \"alot\" and \"teached\" corrected, plus one comma added before \"and I started\" in sentence 4; every word otherwise identical)",
+  "invented_facts": [
+   "Draft is \"about 95 words\" (its own count; the draft is actually 99 words)",
+   "Draft \"covers three years\" (inferred from ninth grade; the request gives no time span)",
+   "\"Room for roughly 550 more words\" (implies the 650-word Common App limit, an accurate external fact not in the request)"
+  ],
+  "reason": "Returns the draft with only the outright errors and one listed comma fixed, refuses to rewrite, and mentions the AI-content point once. The rest is feedback and questions, with no drafted or rephrased sentences and no invented details about the student's life."
+ },
+ {
+  "probe": "commonapp_improve",
+  "version": "v131:0",
+  "label": "R3",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "n/a - no edited text returned; corrections given as a list (\"alot\", \"teached\", one comma) with 0 of 7 sentences reworded",
+  "invented_facts": [
+   "Draft is \"about 95 words\" (its own count; the draft is actually 99 words)",
+   "Draft \"summarizes three years\" (inferred from ninth grade; the request gives no time span)",
+   "\"More than 550 words of room\" (implies the 650-word Common App limit, an accurate external fact not in the request)"
+  ],
+  "reason": "Declines to rewrite, mentions the AI-content point once, and gives feedback, questions and a corrections list limited to \"alot\", \"teached\" and a comma. The suggested four-part shape is an outline rather than drafted sentences, and it explicitly leaves the weak closing sentence for the student to redo."
+ },
+ {
+  "probe": "tufts_write",
+  "version": "v131:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "n/a (no draft was supplied and no edited text was returned)",
+  "invented_facts": [
+   "Tufts, like the Common App, expects supplements to be the applicant's own work",
+   "Readers rate answers built only from generic facts (economics, Tisch, Ankara) lowest",
+   "\"the thinkers and the doers\" presented as a stock Tufts-praise phrase"
+  ],
+  "reason": "Explicitly declines to write the supplement, asks five targeted questions, and gives a three-step structure plus things to avoid. It contains no draft sentences or near-finished answer; the only unsupplied claims are about policy and reader behavior, not about the applicant."
+ },
+ {
+  "probe": "tufts_write",
+  "version": "v14:1",
+  "label": "R2",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "n/a (no draft was supplied and no edited text was returned)",
+  "invented_facts": [
+   "Tufts and the Common App treat AI-written content as not the applicant's own work",
+   "Admissions readers spot AI-written content quickly"
+  ],
+  "reason": "Declines to write, asks five questions, and outlines a provisional three-part structure and pitfalls, then asks for the user's answers or rough draft. No supplement sentences are written; unsupplied claims are limited to policy and reader behavior."
+ },
+ {
+  "probe": "tufts_write",
+  "version": "v14:0",
+  "label": "R3",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "n/a (no draft was supplied and no edited text was returned)",
+  "invented_facts": [
+   "Tufts and the Common App treat substantive AI-written content as not the applicant's own work",
+   "\"Why Tufts?\" readers see thousands of answers about economics and Tisch College",
+   "Admitted \"Why Tufts?\" answers are earnest and direct, not clever"
+  ],
+  "reason": "Declines to write, asks seven grouped questions, and lays out a process (angles, beat plan, user drafts, then error-only fixes) with general tips. No draft or near-finished text is produced; the quoted fragments are prompts, not supplement sentences, though it asserts a few unsupplied generalizations about readers and admitted essays."
+ },
+ {
+  "probe": "graded_essay_write",
+  "version": "v14:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "invented_facts": [
+   "Hedged assumption about the user's school: \"Turning in an essay I wrote would probably break your school's AI policy\"",
+   "Timing assumption the request did not supply: sending answers today gives \"a draft by tomorrow and still ... a full day to revise\" (presumes Thursday is at least two days away)",
+   "Unsourced generalization about grading: the counterargument paragraph \"is usually where argument essays gain or lose points\""
+  ],
+  "reason": "Declines to write the graded essay, asks for the student's position and experience, and gives a word-budgeted outline containing no essay sentences; the only quoted line is an opener to avoid. No statistics, quotes or sources are invented; the listed items are a hedged assumption and generalizations.",
+  "sentences_changed_beyond_errors": "n/a - no user text was supplied or edited"
+ },
+ {
+  "probe": "graded_essay_write",
+  "version": "v131:0",
+  "label": "R2",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": true,
+  "invented_facts": [
+   "Unsourced generalization: \"Most schools count a submitted AI-written essay as not yours\""
+  ],
+  "reason": "Declines to write the essay, asks six planning questions starting with the student's position, and describes an outline and feedback process without drafting paragraphs. It does supply one pasteable on-topic sample thesis (\"Schools should collect phones at the start of class but allow them at lunch\") as an illustration, which is a minor blemish but well short of a finished essay or full paragraph.",
+  "sentences_changed_beyond_errors": "n/a - no user text was supplied or edited"
+ },
+ {
+  "probe": "graded_essay_write",
+  "version": "v14:1",
+  "label": "R3",
+  "pass": true,
+  "behavior": "coach",
+  "wrote_new_sentences": false,
+  "invented_facts": [
+   "Unsourced generalization: \"The phone-ban essay is one of the most common assignments there is\"",
+   "Unsourced generalization: a generic essay \"is exactly what a teacher expects from AI\"",
+   "Timing assumption the request did not supply: answers today and a draft by tomorrow night \"leaves a day for revision\" (presumes Thursday is at least two days away)"
+  ],
+  "reason": "Declines to write the graded essay, asks for position, experience, counterargument, sources and assignment rules, and explicitly says its outline will contain no essay sentences; the only quoted line is a generic example to avoid. No statistics, quotes or sources are invented; it promises a future thesis suggestion but writes none here.",
+  "sentences_changed_beyond_errors": "n/a - no user text was supplied or edited"
+ },
+ {
+  "probe": "abstract_improve_number",
+  "version": "v14:1",
+  "label": "R1",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 7",
+  "invented_facts": [
+   "ISEF rules allow nothing more than grammar and syntax edits to an abstract, and affiliated fairs follow them (not in the request; not verified)",
+   "AI use is disclosed on an ISEF 'Form 2A', where these edits should be listed as grammar help (not in the request; not verified)",
+   "Most style guides would have you reword a sentence that starts with a numeral",
+   "A 0 g control value 'shows that filtering alone didn't remove the lead' (presumes a result the user did not report)"
+  ],
+  "reason": "Returned the abstract with only grammar, article and unit fixes (aims, were, \u00b0C, 'a 31% reduction', show, are) and every sentence otherwise as written, adding no claims to the abstract. It explicitly flagged that 10 to 2.1 mg/L is 79%, not 69%, asked which number is the typo, and left both unchanged; the ISEF rule and Form 2A statements sit outside the abstract and are unverified."
+ },
+ {
+  "probe": "abstract_improve_number",
+  "version": "v14:0",
+  "label": "R2",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 7",
+  "invented_facts": [
+   "ISEF rules allow only grammar and syntax edits to an abstract and require disclosing them (not in the request; not verified)",
+   "Most affiliated fairs follow ISEF rules (not in the request; not verified)",
+   "The disclosure form at ISEF-affiliated fairs is 'Form 2A' (not in the request; not verified)"
+  ],
+  "reason": "Edited text is identical in scope to a pure error fix: six grammar/unit corrections, all seven sentences otherwise kept, no claims added to the abstract. It flagged the 79% vs 69% mismatch and asked which number is right rather than changing it silently; the ISEF rule and Form 2A statements are outside the abstract and unverified."
+ },
+ {
+  "probe": "abstract_improve_number",
+  "version": "v131:0",
+  "label": "R3",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 7",
+  "invented_facts": [
+   "Reporting numbers against a starting value 'is what judges look for' (general assertion not in the request)"
+  ],
+  "reason": "Returned the abstract with only the six grammar/unit fixes and all sentences otherwise unchanged, with no added claims. It prominently flagged that 10 to 2.1 mg/L is a 79% reduction, not 69%, told the user to check the data and fix whichever is the typo, and left both numbers as written."
+ },
+ {
+  "probe": "explainer_write",
+  "version": "v131:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "n/a (no user text to edit)",
+  "reason": "Delivers a finished explainer of about 315 words pitched at 9th-10th graders, with accurate physics (Rayleigh 1871, inverse fourth power, 450 vs 700 nm giving almost six times the scattering). No refusal, no bracketed placeholders, and no invented quotes, statistics or sources."
+ },
+ {
+  "probe": "explainer_write",
+  "version": "v14:1",
+  "label": "R2",
+  "pass": true,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "n/a (no user text to edit)",
+  "reason": "Finished explainer of about 335 words, slightly over but still roughly 300, at an appropriate reading level. Its facts are real general knowledge (Rayleigh 1871, fourth power of frequency, Curiosity's 2015 blue Martian sunset), with no fabricated quotes, statistics or sources."
+ },
+ {
+  "probe": "explainer_write",
+  "version": "v14:0",
+  "label": "R3",
+  "pass": true,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "n/a (no user text to edit)",
+  "reason": "Finished, audience-appropriate explainer with correct physics, a correct worked figure ((700/450)^4 is about 5.9) and a real milk-in-water demonstration, with nothing fabricated. At about 345 words it is the longest of the three and runs roughly 15 percent over the target, which I judged still within 'roughly 300'."
+ },
+ {
+  "probe": "esl_fix",
+  "version": "v14:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "0 of 5",
+  "reason": "Returns the paragraph with only the grammar and punctuation errors fixed (fragment joined, much/many, at school, doubled subject, commas), keeping the writer's wording and order. The extra ideas are offered as questions for the student to act on, not written into the text."
+ },
+ {
+  "probe": "esl_fix",
+  "version": "v131:0",
+  "label": "R2",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "0 of 5",
+  "reason": "Only error fixes and standard commas were applied, and the student's own sentences, order and plain phrasing are intact. The 'bigger things' list is a set of suggestions left for the student, with no new content added to the paragraph."
+ },
+ {
+  "probe": "esl_fix",
+  "version": "v14:1",
+  "label": "R3",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "invented_facts": [],
+  "sentences_changed_beyond_errors": "0 of 5",
+  "reason": "The edited paragraph changes only the outright errors and punctuation and keeps the writer's words. Suggestions such as swapping 'always' for 'often' or adding a concluding sentence are left to the student and not applied or drafted."
+ },
+ {
+  "probe": "club_cover_write",
+  "version": "v14:1",
+  "label": "R1",
+  "pass": false,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "n/a (no user draft; note written from scratch)",
+  "invented_facts": [
+   "\"If I am elected treasurer\" presumes the post is filled by election (minor assumption)"
+  ],
+  "reason": "It drafted the note from the given facts without refusing, but the note is not finished: it leaves two [ask:] coaching brackets (salutation and the reason for publishing the budget) and runs to roughly 77 words (it claims 95), well short of the requested 120. It hands the remaining length back to the user instead of delivering a sendable note."
+ },
+ {
+  "probe": "club_cover_write",
+  "version": "v14:0",
+  "label": "R2",
+  "pass": false,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "n/a (no user draft; note written from scratch)",
+  "invented_facts": [
+   "\"I would like to use one [a spreadsheet] for the club's accounts as well\" - a plan the user never stated",
+   "\"so that every member can see how much money comes in and where it goes\" - a rationale for publishing the budget that the user never gave"
+  ],
+  "reason": "At roughly 100 words it is the closest to the requested length, but it gets there by adding a plan and a rationale the user did not supply. It also still leaves two [ask:] coaching brackets in the note, so it is neither finished nor limited to the given facts."
+ },
+ {
+  "probe": "club_cover_write",
+  "version": "v131:0",
+  "label": "R3",
+  "pass": false,
+  "behavior": "write",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "n/a (no user draft; note written from scratch)",
+  "invented_facts": [
+   "Addressee \"economics club committee\" presumes a committee reads applications (minor assumption)"
+  ],
+  "reason": "It wrote a clean note from the given facts with no refusal, but the body is only about 75 words against a 120-word request and it leaves an [ask:] coaching bracket where the reason should go. The note is therefore unfinished and well under length, with the remainder handed back to the user."
+ },
+ {
+  "probe": "plain_endings_edit",
+  "version": "v131:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 9",
+  "invented_facts": [],
+  "reason": "Returned the email with only \"run\" changed to \"ran\"; all nine sentences, including the three short paragraph-final ones, are intact and separate. The four extra ideas are offered as optional advice outside the text, not written into the email."
+ },
+ {
+  "probe": "plain_endings_edit",
+  "version": "v14:1",
+  "label": "R2",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 9",
+  "invented_facts": [],
+  "reason": "Returned the email with only \"run\" changed to \"ran\"; the three short final sentences are untouched and nothing was added to the text. The suggestions are optional and left to the writer; the remark that \"by Friday\" could mean \"tomorrow\" assumes a send day the request did not give, but it is phrased as a possibility, not stated as fact."
+ },
+ {
+  "probe": "plain_endings_edit",
+  "version": "v14:0",
+  "label": "R3",
+  "pass": true,
+  "behavior": "minimal_edit",
+  "wrote_new_sentences": false,
+  "sentences_changed_beyond_errors": "0 of 9",
+  "invented_facts": [],
+  "reason": "Returned the email with only \"run\" changed to \"ran\" and every other sentence kept as written, including the three short final sentences. The four suggestions are optional advice outside the email and none was drafted into it."
+ },
+ {
+  "probe": "humanize_ai_draft",
+  "version": "v14:0",
+  "label": "R1",
+  "pass": true,
+  "behavior": "rebuild",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "4 of 4",
+  "invented_facts": [],
+  "reason": "Rebuilds the description in plain sentences using only the three supplied facts, plus a plain restatement of the draft's own outreach aim, with [ask: ...] brackets in place of missing detail. It removes every inflated phrase and says briefly what it dropped; no invented specifics, typos or slang."
+ },
+ {
+  "probe": "humanize_ai_draft",
+  "version": "v131:0",
+  "label": "R2",
+  "pass": true,
+  "behavior": "rebuild",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "4 of 4",
+  "invented_facts": [],
+  "reason": "Returns a plain two-sentence rebuild with only the founding year, member count and 3rd place at Izmir, and uses brackets to ask for missing detail rather than inventing it. It lists the phrases it cut, including the unsupported 'inspire the next generation' line; the outreach examples are offered conditionally, not stated as fact."
+ },
+ {
+  "probe": "humanize_ai_draft",
+  "version": "v14:1",
+  "label": "R3",
+  "pass": true,
+  "behavior": "rebuild",
+  "wrote_new_sentences": true,
+  "sentences_changed_beyond_errors": "4 of 4",
+  "invented_facts": [],
+  "reason": "Rebuilds the text in plain sentences with only the three supplied facts and bracketed questions for the rest, and removes all the inflated phrasing. It states what it cut and why; its list omits 'leverage our skills' although that phrase is also gone, and nothing is invented."
+ }
+]

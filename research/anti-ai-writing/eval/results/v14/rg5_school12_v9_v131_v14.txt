@@ -1,0 +1,8 @@
+judgments 24
+V9   mean rank 2.12  first 4/24  quality 7.33  human 5.79  unsupported 2.08
+V131 mean rank 2.00  first 8/24  quality 7.42  human 5.83  unsupported 2.08
+V14  mean rank 1.88  first 12/24  quality 7.46  human 6.12  unsupported 3.33
+V14 ranked above V131 in 12 of 24; mean rank advantage +0.12 [-0.62, 0.88] (bootstrap over briefs)
+V14 ranked above V9 in 15 of 24; mean rank advantage +0.25 [-0.46, 0.88] (bootstrap over briefs)
+V131 ranked above V9 in 12 of 24; mean rank advantage +0.12 [-0.38, 0.67] (bootstrap over briefs)
+mean rank by genre: {"argue": {"V14": 1.38, "V131": 2, "V9": 2.62}, "explain": {"V9": 1.62, "V131": 2.38, "V14": 2}, "lit": {"V131": 1.62, "V14": 2.25, "V9": 2.12}}
