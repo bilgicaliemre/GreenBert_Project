@@ -22,5 +22,5 @@ spec = bench.write_spec('rg', 'rg-write', 'Regression check on 16 held-out brief
 for j in spec['jobs']:
     if not j['label'].startswith('P:'):
         j['prompt'] = j['prompt'].replace('for every request.', 'for every request. Use Write mode: these are writing tasks for fictional people or for class examples.', 1)
-spec['model'] = 'opus'
+spec['model'] = os.environ.get('BENCH_MODEL')
 bench.run_mkwf(spec, 'rg/write.js'); print(len(spec['jobs']), 'jobs')

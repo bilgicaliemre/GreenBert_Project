@@ -28,5 +28,5 @@ json.dump(m, open(f'{B}/mp_{tag}.json', 'w'))
 L = {'type': 'array', 'items': {'type': 'string'}}
 schema = {'mp': {'type': 'object', 'properties': {'texts': {'type': 'array', 'items': {'type': 'object', 'properties': {
     'code': {'type': 'string'}, 'added': L, 'removed': L, 'changed': L, 'voice_kept': {'type': 'integer'}}, 'required': ['code', 'added', 'removed', 'changed', 'voice_kept']}}}, 'required': ['texts']}}
-bench.run_mkwf({'name': f'eb-mp-{G}-{tag}', 'description': f'Meaning-preservation check ({G})', 'phase': 'Check', 'model': 'opus', 'schemas': schema, 'jobs': jobs}, f'{B}/mp_{tag}.js')
+bench.run_mkwf({'name': f'eb-mp-{G}-{tag}', 'description': f'Meaning-preservation check ({G})', 'phase': 'Check', 'model': os.environ.get('BENCH_MODEL'), 'schemas': schema, 'jobs': jobs}, f'{B}/mp_{tag}.js')
 print(G, len(jobs), 'mp jobs')
