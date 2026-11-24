@@ -6,6 +6,7 @@ sys.path.insert(0, 'tools'); import bench
 G, conds, tag = sys.argv[1], sys.argv[2].split(','), sys.argv[3]
 batch = int(sys.argv[4]) if len(sys.argv) > 4 else 4
 B = f'eb3/{G}'
+GEN = G.rstrip('0123456789')  # isef2 = clean rerun of isef, same texts
 items = json.load(open(f'{B}/items.json'))
 rng = random.Random(71)
 src = lambda r, c: f'{B}/PI/{r}.txt' if c.startswith('R') else f'{B}/real/{r}.txt'

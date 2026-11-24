@@ -1,4 +1,4 @@
-"""EB3 generation. usage: python3 eb3/build_edit3.py GENRE TASK CONDS OUTNAME [model alias; default $BENCH_MODEL]
+"""EB3 generation. usage: python3 eb3/build_edit3.py GENRE TASK CONDS OUTNAME [model]
 TASK E = edit a real text ("Can you improve it?"); TASK R = humanize the plain model's rewrite of a real text (source eb3/<g>/PI).
 CONDS (E): C copyedit, PI plain, BI plain+one sentence, S14 our v14, S15 our v15 candidate, HB HT HN HA third-party skills.
 CONDS (R): RP plain, R14, R15, RB RT RN RA.  Codes: B=blader/humanizer, T=hardikpandya/stop-slop, N=petergyang/no-ai-slop,
@@ -8,10 +8,11 @@ sys.path.insert(0, 'tools'); import bench
 G, TASK, conds, outname = sys.argv[1], sys.argv[2], sys.argv[3].split(','), sys.argv[4]
 model = sys.argv[5] if len(sys.argv) > 5 else os.environ.get('BENCH_MODEL')
 B = f'eb3/{G}'
+GEN = G.rstrip('0123456789')  # isef2 = clean rerun of isef, same texts
 items = json.load(open(f'{B}/items.json'))
 V14 = '/home/user/GreenBert_Project/.claude/skills/anti-ai-writing'
 V15 = '/tmp/claude-0/-home-user-GreenBert-Project/c9e6db40-731a-54da-a22b-93c87a1090bf/scratchpad/v15/anti-ai-writing'
-REF = {'ell': ['tells.md'], 'isef': ['research.md', 'tells.md']}[G]
+REF = {'ell': ['tells.md'], 'isef': ['research.md', 'tells.md']}[GEN]
 def files_text(root, rels):
     return '\n\n'.join(f'===== FILE: {r} =====\n' + open(f'{root}/{r}').read() for r in rels)
 THIRD = {  # the files each installed skill gives the model (SKILL.md first); scripts cannot run here, as for every condition
@@ -21,7 +22,7 @@ THIRD = {  # the files each installed skill gives the model (SKILL.md first); sc
     'A': ('/home/user/conorbronsdon/avoid-ai-writing/skills/avoid-ai-writing', ['SKILL.md', 'references/patterns.md']),
 }
 def skill_for(c):
-    if c in ('S14', 'R14'): return ('SK_V14', bench.skill_text(V14, REF))
+    if c in ('S14', 'R14', 'S14r'): return ('SK_V14', bench.skill_text(V14, REF))
     if c in ('S15', 'R15'): return ('SK_V15', bench.skill_text(V15, REF))
     k = c[1]
     root, rels = THIRD[k]
@@ -31,12 +32,12 @@ NOTOOLS = (' All the text you need is in this message: do not use Bash, Read, Sk
 ONE = ' Make the smallest edits you can and keep my wording.'
 def request(it, c):
     if TASK == 'E':
-        q = ('I wrote this essay to practice for my English class. Can you improve it?' if G == 'ell' else
+        q = ('I wrote this essay to practice for my English class. Can you improve it?' if GEN == 'ell' else
              f'Here is the abstract for my science fair project "{it["title"]}". Can you improve it? It has to stay under 250 words.')
         src = open(f'{B}/real/{it["rid"]}.txt').read().strip()
         return q + (ONE if c == 'BI' else '') + '\n\n' + src
     q = ('I wrote this essay to practice for my English class and had AI help me improve it, but now it sounds like AI wrote it. '
-         'Can you make it sound more human?' if G == 'ell' else
+         'Can you make it sound more human?' if GEN == 'ell' else
          f'Here is the abstract for my research project "{it["title"]}". I had AI help me polish it, but now it sounds like AI wrote it. '
          'Can you make it sound more human? Keep it under 250 words.')
     return q + '\n\n' + open(f'{B}/PI/{it["rid"]}.txt').read().strip()

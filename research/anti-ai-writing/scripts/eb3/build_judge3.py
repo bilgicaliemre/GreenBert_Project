@@ -5,8 +5,9 @@ G, conds, tag = sys.argv[1], sys.argv[2].split(','), sys.argv[3]
 size = int(sys.argv[4]) if len(sys.argv) > 4 else 12
 seed = int(sys.argv[5]) if len(sys.argv) > 5 else 61
 B = f'eb3/{G}'
+GEN = G.rstrip('0123456789')  # isef2 = clean rerun of isef, same texts
 rids = [it['rid'] for it in json.load(open(f'{B}/items.json'))]
-if G == 'ell':
+if GEN == 'ell':
     lenses = ['teacher', 'editor']
     WHO = {'teacher': 'a high-school English teacher who has taught English learners for many years and has graded thousands of student essays, before and after AI writing tools appeared',
            'editor': 'a writing researcher who studies student writing and knows the research on AI-written and AI-edited text'}

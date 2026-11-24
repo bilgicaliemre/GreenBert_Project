@@ -34,10 +34,19 @@ Scripts that ship with the third-party skills cannot run in this setup, as for e
 
 ## Known problem: the triggering message reached every agent
 
-The workflow harness passes the user message that started a run to every agent. For this run that message asked to add
-humanizer skills and a "Claude watermark remover" to our skill. On the ISEF abstracts, 22 of 384 edits were refusals
+The workflow harness passes the user message that started a run to every agent. For the first run that message asked to
+add humanizer skills and a "Claude watermark remover" to our skill. On the ISEF abstracts, 22 of 384 edits were refusals
 or safety-classifier stops that cited it (plain 8, stop-slop 6, no-ai-slop 4, blader 2, v14 2), and 8 of 72 judge piles
-came back empty (rerun; 2 stayed empty). These outputs are excluded. Learner-essay edit sizes match a run from before that
-message within 0.02, and no essay output refused. Rerun the abstracts from a neutral message before using them in a paper.
+came back empty. Learner-essay edit sizes match a run from before that message within 0.02, and no essay output refused.
+
+The abstracts were therefore rerun from a neutral message (`isef2`: the same 48 texts, every condition, plus v15 and a
+second v14 run, judged in one round of 17 conditions). Edit sizes in the two runs agree within 0.05 for every condition.
+Two pairs of abstracts set off safety stops in every run whatever the message; outputs that failed are listed in
+`eval/results/eb3/excluded.json` and left out. Two v14 outputs in task R are deliberate declines (it inferred a
+science-fair entry and cited ISEF's rule on AI-written abstracts), also excluded from the scores. 13 of 136 judge piles
+came back empty in the clean round; 6 stayed empty after one rerun. The first abstract run is kept as
+`isef_run1_contaminated_*` for robustness only; `isef2_*` is the main abstract result.
+
+Builders take `G=isef2` for the rerun (`GEN` strips the digit, so prompts and judge lenses are the abstract ones).
 
 Set `BENCH_MODEL` to the model alias to run them; paths point to the session that ran them.
