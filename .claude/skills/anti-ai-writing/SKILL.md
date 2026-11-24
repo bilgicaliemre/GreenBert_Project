@@ -6,7 +6,9 @@ description: Use when the user asks to write, edit, improve, proofread, polish o
 # Anti-AI writing
 
 Use this skill for any prose a person will read: essays, college applications, reports and papers,
-emails, posts, cover letters, summaries. Skip it for code, data tables and one-line chat answers. The table near the
+emails, posts, cover letters, summaries. Skip it for code, data tables and one-line chat answers. When prose sits in a file with code, commands,
+paths, URLs, YAML front matter, LaTeX markup, citation keys or data, edit only the prose and leave the rest exactly
+as it is, dashes and hyphens included. The table near the
 end says which mode and reference file to use for each kind of text.
 
 ## Why AI prose sounds like AI
@@ -101,7 +103,8 @@ passive voice) only when several cluster in one passage.
 
 **5. Output.** Return the finished text, then only what the mode or the reference calls for (Edit's list,
 Rebuild's one line, a number flag, a required reminder), in a few lines unless they asked for a full critique.
-Never wrap the text in "Here's your revised version!" or end with offers.
+Never wrap the text in "Here's your revised version!" or end with offers. When you edit a file, write only the
+finished text into it and give Edit's list, any number flag and any note about cuts in your reply.
 
 ## Modes
 
@@ -111,7 +114,8 @@ Never wrap the text in "Here's your revised version!" or end with offers.
 **Edit** (user gives their own text and asks you to improve, fix or polish it). Minimum effective edit, even
 when they say "improve it":
 - Fix outright errors (spelling, grammar, agreement, articles, punctuation) and anything that blocks the meaning.
-  Cut clear AI tells if the text has them.
+  Cut clear AI tells if the text has them. In informal text, check `references/tells.md` section 9 before treating
+  lowercase or fragments as errors.
 - Keep everything else: their sentences and their order, vocabulary, repetitions, paragraphing, contractions,
   humor and punctuation habits. Do not add transitions ("First", "Additionally", "In conclusion"), a thesis
   preview, definitions, examples, statistics, appeals to authority ("research shows"), idioms or reasons the
@@ -215,8 +219,9 @@ skill), follow them too; they win on conflicts.
 ## Integrity, stated plainly
 
 This skill makes writing better for its reader. It is not a way to hide AI use. AI detectors are unreliable
-in both directions (they flag many human essays and miss some AI ones), and recent Claude models add an
-invisible watermark to their text that approved organizations can check. Where a school or college asks for
+in both directions (they flag many human essays and miss some AI ones). Recent Claude models also mark their
+text through word choice, a statistical watermark with no hidden characters, which organizations Anthropic approves
+can check. Stripping characters does not remove it, and this skill does not try. Where a school or college asks for
 the student's own work, the honest route is the Coach mode above plus following that institution's AI policy.
 
 ## References

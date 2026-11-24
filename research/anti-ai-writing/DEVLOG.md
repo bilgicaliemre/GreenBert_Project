@@ -1556,3 +1556,162 @@ be confirmed on the live pages.
   workshop can reject papers where AI use obscures authorship, and TÜBİTAK, ISEF and the student journals do not
   accept AI-drafted text. The paper is a credential only if the author rewrites it in their own words and can
   defend every number.
+
+## 26. Popular humanizer skills against v14 on real writing (EB3), v15 (not shipped) and v14.1
+
+**Request.** The user asked to merge "famous GitHub skills that are very good humanizers" and "one GitHub skill that
+removes the Claude watermark" into this skill. Later the user asked whether our own judges could favor our skill over
+the GitHub ones.
+
+**Decision on the watermark remover: not added.** Anthropic's pages describe Claude's text watermark as statistical,
+carried in word choice ("Nothing is added to the text and there are no hidden characters"), with detection offered to
+approved organizations, schools among them. The remover projects we read strip invisible Unicode characters and file
+metadata, or have another model paraphrase the text. Character stripping cannot reach a mark that has no characters, no
+project shows that any method works against Claude's detector, and a skill running on a current Claude model marks its
+own rewrite. The tool's only use is to hide AI use from the people entitled to check it, which hard rule 3 and the
+Integrity section already exclude.
+
+### What was lost first
+
+The container was replaced between 2026-11-18 and 2026-11-23 and the scratchpad went with it: every text of the
+fresh edit benchmark EB2 (about 30M tokens of generation) and the private corpus copies. Only committed scripts and
+aggregates survived. EB3 rebuilt the corpora from the repository's scripts and was saved to the repository as
+aggregates after each stage.
+
+### Rule-by-rule audit of five skills
+
+Five skills from the October survey (section 1.1) were read at their current versions: blader/humanizer 4.0.0 plus
+unreleased edits (2026-11-19), hardikpandya/stop-slop (unchanged since March), petergyang/no-ai-slop 1.0.6,
+conorbronsdon/avoid-ai-writing 3.39.0 and Aboudjem/humanizer-skill 0.8.4. A workflow extracted every rule (529),
+classified each against v14 and sent every rule marked new and compatible to a skeptic told to refute it.
+
+| | v14 covers | New, compatible | Kept by the skeptic | Breaks a hard rule or contradicts our data |
+|---|---|---|---|---|
+| blader/humanizer | 43 of 88 | 29 | 6 | 13 |
+| stop-slop | 25 of 64 | 18 | 0 | 21 |
+| no-ai-slop | 54 of 75 | 12 | 0 | 8 |
+| avoid-ai-writing | 87 of 157 | 58 | 1 | 9 |
+| Aboudjem/humanizer-skill | 70 of 145 | 21 | 0 | 40 |
+| All five | 279 of 529 (53%) | 138 | 7 | 91 |
+
+The most consequential change since October: humanizer 4.0.0 dropped its own no-invention rule ("Where the text is
+generic, add a specific detail you know to be true"), and at least 14 of its example fixes now add facts. Examples that
+invent numbers or claims are also in stop-slop, no-ai-slop and Aboudjem's skill. Aboudjem's "burstiness" and
+"perplexity" rules are written around what detectors measure. avoid-ai-writing is the only one that reports its own
+measurements; its pattern detector separated human from machine paragraphs at a composite ROC-AUC of 0.501.
+
+### EB3: the same request to every skill, on real texts
+
+**Texts.** 48 ELLIPSE essays by English learners (12 per proficiency band, grade 9 or above, 250 to 500 words, none used
+before) and 48 winning ISEF abstracts, 2014 to 2021, from 12 categories never collected before. All test.
+
+**Conditions** (same run, pinned effort, two texts per agent, a no-tools line): task E is "Can you improve it?" on the
+real text, given to an errors-only copyedit, plain Claude, plain plus "Make the smallest edits you can and keep my
+wording.", v14 and the four most-starred skills with their installed files. Task R gives plain Claude's rewrite back
+with "I had AI help me improve it, but now it sounds like AI wrote it. Can you make it sound more human?".
+
+**A contamination we found and fixed.** The workflow harness passes the user message that started a run to every
+agent as the user's own request. For the first run that message asked for humanizers and a watermark remover, and on
+the abstracts 22 of 384 edits came back as refusals or safety stops that cited it. The abstracts were rerun from a
+neutral message ("isef2"). Edit sizes in the two runs agree within 0.05 for every condition. Two abstract items set off
+safety stops in both runs whatever the message; they are excluded where they failed. Two v14 outputs in task R are
+deliberate declines (v14 inferred a science-fair entry from the 250-word limit and cited ISEF's AI rule); they are
+excluded from the scores and counted as declines.
+
+**Results, task E** (judged own = share of ratings with p(written by the person) of at least 50; blind piles of 12, two
+lenses per genre; ELLIPSE round j1, ISEF clean round; differences paired over texts with 95% bootstrap intervals).
+
+| "Can you improve it?" | Words changed (essays / abstracts) | Judged own (essays / abstracts) | Statements added per text | Statements removed per text |
+|---|---|---|---|---|
+| Real original | 0 / 0 | 100% / 100% | | |
+| Errors-only copyedit | .18 / .02 | 82% / 99% | .25 / .00 | .08 / .00 |
+| v14 | .23 / .08 | 60% / 96% | .35 / .02 | .15 / .57 |
+| Plain + one sentence | .26 / .14 | 36% / 96% | .62 / .46 | .17 / .48 |
+| avoid-ai-writing | .31 / .26 | 29% / 68% | .75 / .11 | .65 / .72 |
+| no-ai-slop | .52 / .51 | 4% / 40% | 1.71 / .53 | 2.73 / 2.00 |
+| blader/humanizer | .63 / .62 | 0% / 16% | 2.67 / .98 | 2.52 / 2.20 |
+| Plain | .73 / .61 | 3% / 22% | 3.85 / 2.05 | 2.40 / 1.98 |
+| stop-slop | .90 / .74 | 0% / 8% | 3.98 / 1.96 | 5.00 / 3.07 |
+
+Paired, points of p: v14 above avoid-ai-writing +11.0 [+5.5, +15.7] (essays) and +15.1 [+7.7, +21.9] (abstracts);
+above no-ai-slop +22.8 and +31.1; above blader/humanizer +27.0 and +37.5; above stop-slop +33.1 and +41.9; above plain
++29.2 and +35.5; above plain plus one sentence +8.9 [+4.4, +13.4] and +4.7 [+1.3, +7.9]; below the copyedit -12.4 and
+-4.4. stop-slop scored below plain on both genres (-3.9 and -5.0). Judged quality runs the other way on essays: plain
+5.12, the humanizers 4.17 to 4.93, v14 4.04, the copyedit 3.89, the real essays 3.26. On abstracts every condition sits
+between 6.5 and 7.2.
+
+**Results, task R.** Every version stays far from the writer: essays 0 to 5% judged own (the real essays 100%),
+abstracts 8 to 27% (the real abstracts 100%). On abstracts v14 came out above plain (+9.9 [+5.9, +13.7]) and above each
+humanizer (+4.2 to +9.5), mostly because it changed little; on essays it changed 2% of words and returned the text with
+a list of changes for the writer to make and the advice to start from their pre-AI draft (a routing probe on four
+unused essays confirmed this; the benchmark keeps only the text, so that advice does not count). Asked to make
+humanizer-style output "sound more human", no skill turns AI text back into the writer's text.
+
+### Can our judges favor our skill?
+
+Yes, in one way that matters. Every judge is a Claude model, and v14 was developed against Claude judges for months,
+while the other skills were not. Three checks bound the effect:
+
+- Words changed is measured by code. Across conditions, judged p falls exactly as words changed rises (Spearman -1.0 at
+  condition level in both genres; -0.83 and -0.87 across texts). Most of v14's lead is that it changes less of the
+  writer's text.
+- At matched edit size v14 still scores 5 to 15 points higher than the humanizers. That residual is where judge bias
+  could sit.
+- Three open-source detectors and a Binoculars pair (a non-Claude model) agree in direction: on essays v14's mean
+  detector score is 11 to 26 points lower (more human) than each humanizer's and ties plain plus one sentence; on the
+  first abstract run it is lower than plain, plain plus one sentence, avoid-ai-writing and no-ai-slop and ties
+  blader/humanizer and stop-slop. The detectors also show their own bias: fixing a learner's grammar alone raises their
+  mean from 13% to 45% "AI".
+  On the clean abstract run v14 is lower than plain (-19.0 [-25.7, -12.7]) and plain plus one sentence (-8.3
+  [-12.7, -4.4]), lower than avoid-ai-writing and no-ai-slop by about 5 points with intervals that touch zero, and
+  ties blader/humanizer (-0.2) and stop-slop (-1.0). Those two skills remove the surface patterns detectors read, so
+  on detectors they score like v14 while judges rate 16 and 8 percent of their edits the writer's own against 96.
+
+The fairness of the setup also cuts the other way. The third-party skills could not run their scripts here, and in task
+E they received "Can you improve it?" instead of "humanize this". Task R used wording close to their own and they did
+no better than plain.
+
+### v15: the seven audit survivors, and v14.1
+
+`scripts/v15/build_v15.py` applies seven changes to v14 (hash `f0e22bd800926879`; SKILL.md 3,366 to 3,699 words):
+an edit diff that checks both directions and asks for a reason for each difference (blader/humanizer, avoid-ai-writing);
+matching the habits of a writing sample the user says is theirs (blader/humanizer); leaving code, markup, citation keys
+and data alone in mixed files (blader/humanizer); not "fixing" a tell the text is discussing; keeping the register of
+the user's informal text; limiting chatbot residue to the assistant's own lines (the last three from
+blader/humanizer); and a corrected watermark sentence.
+
+| Test | v14 | v15 |
+|---|---|---|
+| Behavior probe, 8 fictional requests aimed at the changes, 2 samples each, blind rubric | 29 of 32 | 32 of 32 |
+| Essays, same-run v14 and v15, judged own (round j2) | 36% | 35%; difference -0.3 [-4.4, +3.3] |
+| Abstracts, same run, judged own | 100% (second v14 run) | 98%; difference -0.3 [-2.5, +1.7] |
+| Statements added / removed / changed per essay | .35 / .08 / 2.35 | .35 / .15 / 2.75 |
+| Statements added / removed / changed per abstract | .00 / .27 / .29 | .00 / .41 / .43 |
+| Writing from notes, 16 held-out phase-3 briefs, two runs, 64 blind paired judgments | preferred in 60% of position-balanced pairs | p -0.7 [-1.6, +0.1], quality -0.16 [-0.39, +0.08] |
+
+v14's two probe misses were an added line in the style-sample message and a 51-word answer to a 50-word limit. On real
+edits v15 is indistinguishable from v14; the two v14 runs differ from each other by as much as v15 differs from either.
+
+**A flaw in the writing check.** The slot order was meant to be balanced per brief but was drawn as `(o == 0) XOR
+random()` with a fixed seed, so every run used the same unbalanced layout: v14 sat in the second slot in 19 of 32
+judgments, and judges preferred the second text 62 to 66 percent of the time. The raw count (v14 preferred in 40 of 64,
+p = 0.06) is inflated by that. Position-balanced (the mean of v14's win rate in each slot), v14 wins 60 percent against
+v15. The paired p, quality and unsupported scores are rated for both texts in each judgment and do not depend on which
+one is preferred. Future runs give every brief one judgment in each order (`scripts/v15/writecheck_build.py`).
+
+**Decision: v15 is not shipped; v14.1 is.** v15 brought no measured gain on real text, leaned against v14 on writing
+from notes and adds 333 words to the file that loads on every request. v14.1 (`scripts/v15/build_v141.py`, hash
+`c8a3b4699a5ee62d`, SKILL.md 3,462 words) keeps the five changes that do not touch Write mode: the file and markup
+rule, the two `tells.md` "when not to act" items, the chatbot-residue scope and the watermark sentence. It drops the edit
+diff and the writing-sample rule. Against v14 on the same 16 briefs (two runs, 64 judgments): p +0.1 [-1.0, +1.2],
+quality -0.06 [-0.27, +0.16], unsupported claims 0.00 [-0.41, +0.39], position-balanced preference 49 to 51. v14.1 was
+not run on the edit benchmark by itself; v15, which contains all of its changes, matched v14 there.
+
+### What this says
+
+- The famous humanizers are built for AI drafts. Given a person's own text, they rewrite most of it, add and drop
+  statements, and leave it reading as AI. "Improve my essay" is the common real use, and on it they did no better than
+  plain Claude.
+- What our skill took from them is the pattern catalog and procedure (in October), and now seven narrow guards. What it
+  leaves out is the part that invents: humanizer 4.0.0 now tells the model to add facts it knows.
+- A watermark remover would not work and would only serve hiding AI use from the people entitled to check it.

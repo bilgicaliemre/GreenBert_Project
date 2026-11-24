@@ -122,6 +122,9 @@ evidence supports and say how strong it is.
 negative.
 
 **T8 Chatbot residue.** "Great question", "I hope this helps", "Let me know if…", "Certainly!". Delete.
+This covers an assistant talking to its user ("Let me know if you'd like me to expand this"). In the user's own
+message, a greeting, a sign-off or a "let me know" that asks the reader for something ("let me know by Friday if
+you can drive") is ordinary correspondence. Keep it.
 
 **T9 Sycophantic feedback.** "What a powerful essay!" Fix: the most important problem first, with a concrete
 fix; praise only specific lines that work.
@@ -246,6 +249,11 @@ commence → start; endeavor → try.
 ## 9. When not to act
 
 - Quotations, titles, names, and text written before late 2022.
+- Text that talks about a pattern instead of using it, such as a paper, log or guide that names "delve" or "It's
+  not X, it's Y" as an example of an AI tell.
+- The user's own informal text (a chat message, a comment, a review, a casual post). Lowercase, short forms such as
+  "lmk", fragments and emphatic stops such as "Worst. Service. Ever." belong to the register, so leave them and fix
+  only what blocks the meaning. Never add them to text you write.
 - Technical senses: robust (statistics), significant (with a test), landscape (terrain), key (music,
   cryptography), load-bearing (engineering).
 - One weak tell alone: a transition word, one dash, passive voice, formal vocabulary, curly quotes.
