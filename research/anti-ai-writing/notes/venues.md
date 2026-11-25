@@ -324,3 +324,29 @@ template and TÜBİTAK's generative-AI guide. A research workflow read them and 
   in writing with 2204a@tubitak.gov.tr that a workshop paper is not a "proje yarışması".
 - **Advisor.** Optional; must be a teacher at an MEB school or a Deneyap trainer, not a university academic.
 - **Human participants.** Any survey needs signed volunteer forms; leave the unfinished human-rating study out.
+
+## 12. Where this paper goes instead of TÜBİTAK (2026-11-25; international only, by the user's choice)
+
+GreenBERT holds the student's single 2204-A slot, and the user does not want Turkish competitions. A workflow searched
+four angles (international fairs, essay prizes, peer-reviewed venues, admissions value) and a checker re-read each
+shortlisted venue's official page.
+
+| Rank | Venue | Track | Deadline | From Turkey | Note |
+|---|---|---|---|---|---|
+| 1 | NAACL 2027 SRW | long paper, archival | Jan 11, 2027 AoE; decision Mar 8 | yes | Only real credential; in-person presentation in San Francisco (Jun 1-5), no remote option stated |
+| 2 | AIGCTrustDetect @ COLING 2027 | long, non-archival | Jan 10, 2027; decision Feb 10 | yes | Exact topic fit; only with written OK from the SRW chairs (NAACL: "Dual submissions are not allowed") |
+| 3 | MOSTRATEC-LIBERATO 2027 (Brazil) | high school, Computer Science | ~Jul 2027 (2026: Jul 1-31) | yes (direct selection) | Fall-2027 only; rules disqualify projects "created using AI": needs a self-written report and organizers' OK |
+| 4 | Royal Institute of Philosophy Think Essay Prize | 1,200-word essay, set question on machines and thinking | Apr 19, 2027 | yes, ages 15-18 | Total AI ban; viva for shortlist |
+| 5 | Trinity College Cambridge Languages and Cultures Essay Prize | up to 3,000 words | ~Jul 31, 2027 | penultimate-year students only | Questions out Feb 2027 |
+| 6 | John Locke Global Essay Prize | Science & Technology or Philosophy | ~May 31, 2027 | yes, under 19 | Only if a 2027 question fits; AI use counts against |
+
+Skip: pay-to-publish journals (JSR, NHSJS, IJHSR, Curieux, STEM Fellowship), contests that borrow a university's name
+(Oxford Agora, Cambridge Re:think, Immerse, HIR), medal fairs (Infomatrix gives every Software finalist a medal), and any
+second archival venue while the SRW reviews the paper (BEA and LT-EDI on Feb 5 are out unless used instead of the SRW).
+Fallback after a Mar 8 rejection: ACL 2027 SRW (call not out) or an ACL 2027 workshop.
+
+Application side (verified official pages): MIT Research Supplement (SlideRoom, one project, $10, due with the application),
+Yale STEM Research Supplement (answer Yes by Jan 2; form by Jan 9), Harvard portal upload (Jan 1), Caltech STEM portfolio
+(materials by Jan 10), Princeton via Additional Information. Common App Additional Information is 300 words since 2025-26.
+Every college rule treats AI-written application text as the student's misrepresentation: all application text is written
+by the student, with one plain sentence separating the student's part from the AI's part.
