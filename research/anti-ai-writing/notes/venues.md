@@ -297,3 +297,30 @@ I downloaded fresh copies of the cited official pages and PDFs and compared ever
 ### Could not verify
 - **Journal of Student Research.** jsr.org still returns HTTP 522 (and its DNS fails from the fetch tool), so its fees and AI policy remain UNVERIFIED.
 - **LUHME's Jul 15, 2026 deadline.** I did not re-check it. It has passed, so it does not change any recommendation.
+
+## 11. TÜBİTAK 2204-A 2027: verified rules for this paper (2026-11-25)
+
+Source: 2027 call text (`Ek-1b_2204_A_cagri_metni_2026-2027_17.08.2026_onaya_sunulan_v2.pdf`, identical to
+`2026-10/2204_A_cagri_duyurusu_2026-2027.pdf`), Proje Rehberi 2027 (`2026-10/2204A_proje_rehberi_2027.pdf`), the report
+template and TÜBİTAK's generative-AI guide. A research workflow read them and a checker confirmed 70 claims verbatim.
+
+- **One project per student.** §4.1.2: "Yarışmaya her öğrenci yalnızca bir proje ile katılabilir ve her proje en çok üç
+  öğrenci tarafından hazırlanır." Applications once a year (§3). "Birden fazla" applies only to advisors (§4.1.3).
+- **Areas.** 12 main areas (Tablo 1): Biyoloji, Kimya, Tarih, Coğrafya, Matematik, Türk Dili ve Edebiyatı, Değerler
+  Eğitimi, Sosyoloji, Teknolojik Tasarım, Fizik, Psikoloji, Yazılım; plus one of 67 thematic areas (Rehber Tablo 2).
+  The main area follows the project's subject and final aim, not the fields it borrows from (§4.1.13); it cannot be
+  changed after the deadline. Best fit for this paper: **Yazılım + Yapay Zekâ** (the theme names doğal dil işleme; the
+  Algoritma Tasarımı theme explicitly excludes NLP). Possible: Yazılım + Yabancı Dil Eğitimi or E-Öğrenme; Türk Dili ve
+  Edebiyatı + Dil ve Edebiyat (weaker: English texts, no Turkish).
+- **AI use.** The call text itself has no AI rule; the report template's "Yapay Zeka Araçları Kullanım Beyanı" and the
+  generative-AI guide make declaration mandatory (tool, version, dates, purpose, scope, human intervention).
+- **Own work (the real risk).** §4.1.7: projects must come from the students' own ideas and be shaped "kendi bilgi ve
+  becerileri ile", and finished; a project found not developed by its team is eliminated. The Turkish report must be
+  written by the student (template; AI drafts cannot be the final text).
+- **Brand rule.** §4.1.11: no institution, company, commercial product or brand may be "öne çıkarılmamalıdır" in any
+  document; elimination at any stage. Use neutral labels in the text, real names once in methods and references.
+- **Other competitions.** §4.1.9: a project that applied to any project competition with the same or similar content
+  before the 2204-A deadline is eliminated. Submit 2204-A (Jan 4, 2027, 17:30) before the NAACL SRW (Jan 11) and confirm
+  in writing with 2204a@tubitak.gov.tr that a workshop paper is not a "proje yarışması".
+- **Advisor.** Optional; must be a teacher at an MEB school or a Deneyap trainer, not a university academic.
+- **Human participants.** Any survey needs signed volunteer forms; leave the unfinished human-rating study out.
