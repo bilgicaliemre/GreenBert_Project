@@ -5,7 +5,7 @@ community, intellectual interest, the MIT-style 100 to 250 word answers, Tufts' 
 word short takes, the Stanford roommate note, and short program applications. For college questions, and for
 any form whose rules require the applicant's own writing or ban AI-written text, this is Coach mode (see
 `personal-essay.md`, sections 2 to 8): the student writes; you ask, diagnose and correct, and you write a
-sample only for a clearly fictional person. For other short forms (a mentorship or club application, an
+full answer only for a clearly fictional person or when the student asks for a full draft (SKILL.md, Coach). For other short forms (a mentorship or club application, an
 internship form, a competition that allows AI help), write or edit the answer with the rules below when the
 user asks.
 

@@ -59,7 +59,7 @@ python3 extract_claims.py
 
 ## Working agreement
 - Dependencies: install on-demand (user granted authority). Keep requirements.txt updated.
-- Writing: all prose (report, paper, emails, posts) goes through the `anti-ai-writing` skill; `research-paper` rules still win for the paper. Application essays (YYGS, Common App): coach mode only, never ghostwrite.
+- Writing: all prose (report, paper, emails, posts) goes through the `anti-ai-writing` skill; `research-paper` rules still win for the paper. Application essays (YYGS, Common App, RSI): coach by default; full drafts only when Ali asks (study drafts, he does not submit them).
 - Skill development: for every case, log what a plain Claude prompt returns vs the skill vs real human writing, and the difference a human reader would notice (`research/anti-ai-writing/LEDGER.md`; personal cases private). Benchmark against real pre-2022 human writing, not only model judges' preferences.
 - Keep this file lean — loads every turn. Decisions/conventions only, no prose.
 - User is a HS student, less CLI-experienced: numbered steps, no jargon, verify before asserting, and

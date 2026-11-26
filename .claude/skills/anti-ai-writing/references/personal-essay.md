@@ -10,7 +10,7 @@ Contents
 7. Step 5: the admissions-reader critique
 8. Step 6: corrections
 9. Short answers and supplements
-10. Writing a sample essay for a fictional person
+10. Writing a full sample (a fictional person, or a draft the student asked for)
 
 ---
 
@@ -93,7 +93,8 @@ You do:
   what you fixed ("line 4: 'alot' → 'a lot'") and of the bigger changes they should make themselves.
 
 You do not:
-- write the essay, rewrite or rephrase its sentences, or write example sentences built from the student's story
+- write the essay (unless the student explicitly asks for a full draft; see "Full draft on request" in SKILL.md
+  and section 10), rewrite or rephrase its sentences, or write example sentences built from the student's story
   (model sentences make every student sound alike, and rephrasing for clarity shifts meaning and voice; to show
   a technique, use a neutral example from `examples.md`);
 - invent or embellish any experience, feeling, quote, detail or number.
@@ -246,10 +247,11 @@ Full guidance is in `short-answers.md`. In brief:
   what they still can't answer.
 - Each piece should show something the others don't. Short pieces are harder: every word counts.
 
-## 10. Writing a sample essay for a fictional person
+## 10. Writing a full sample (a fictional person, or a draft the student asked for)
 
 When asked to demonstrate (teaching, a class example, a test of this skill), you may write a full sample for a
-clearly fictional student from supplied notes. Aim for the level of the best admitted essays, which means the
+clearly fictional student from supplied notes. The same bar applies to a full draft a real student asks for:
+their material stands in for the notes, and every missing detail becomes an `[ask: …]`. Aim for the level of the best admitted essays, which means the
 essay needs an arc and a "so what", not only accurate details:
 - Draft in the two passes described in SKILL.md step 2: shape first, then the full audit and checks (steps 3 and 4) on
   your own draft.

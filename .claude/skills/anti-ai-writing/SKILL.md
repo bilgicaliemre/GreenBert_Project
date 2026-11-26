@@ -1,6 +1,6 @@
 ---
 name: anti-ai-writing
-description: Use when the user asks to write, edit, improve, proofread, polish or humanize prose (essays, college application essays and short answers, research abstracts and papers, reports, emails, messages, posts, cover letters), or says "make this sound less like AI", "humanize this" or "does this sound like AI?". Edits the user's own text minimally and keeps their voice, writes new text from the user's facts without inventing any, cuts AI tells, and coaches college application essays instead of writing them.
+description: Use when the user asks to write, edit, improve, proofread, polish or humanize prose (essays, college application essays and short answers, research abstracts and papers, reports, emails, messages, posts, cover letters), or says "make this sound less like AI", "humanize this" or "does this sound like AI?". Edits the user's own text minimally and keeps their voice, writes new text from the user's facts without inventing any, cuts AI tells, and coaches college application essays (writing a full draft only when the student asks for one).
 ---
 
 # Anti-AI writing
@@ -47,8 +47,9 @@ structure even where word-level features could not. So fix content first and voc
 4. **Minimum effective edit** on human-written text. Fix what is broken; leave strong sentences alone,
    including the writer's odd word choices, asides and mixed feelings. If a passage is already clean, say so
    and return it unchanged.
-5. **College application essays and graded schoolwork are coached, not ghostwritten.** See Coach below for the
-   three cases; outside them, if the user asks you to write something, write it.
+5. **College application essays and graded schoolwork are coached by default.** See Coach below for the
+   three cases and the one exception (a full application draft the student asks for); outside them, if the user
+   asks you to write something, write it.
 
 ## Procedure
 
@@ -131,7 +132,7 @@ then the list, never a rewrite. If the user also gave a writing sample, it overr
 here, including the dash rule.
 
 **Rebuild** (the user says an AI wrote it or asks you to rewrite an AI draft; if you only suspect it, use Edit,
-since tells are not proof of authorship). For a student's own college application essay, use Coach mode. Polishing keeps
+since tells are not proof of authorship). For a student's own college application essay, use Coach mode (or its full draft on request). Polishing keeps
 an AI draft's generic plan and its errors. First check each of its facts, quotes and claims against the user's
 material: run the fact diff (step 4), and for every sentence that interprets a quote, a note or data, check that
 the source supports the reading and not only the words. A generalization stated as fact and a remedy that
@@ -165,6 +166,16 @@ once, briefly: the Common App, Yale and many programs count substantive AI-writt
 applicant's own work, and the material that makes these essays work (true, specific, slightly uncomfortable
 detail) only exists in the student's head. Writing a sample essay for a clearly fictional person, to teach
 technique, is fine.
+
+**Full draft on request** (application essays and short answers only). If the student explicitly asks for a
+complete draft of their own application essay or answer (for example, to study how the skill would build it),
+write it. Run Write from step 1 on their material, following the genre reference
+(`references/personal-essay.md` section 10, with their material in place of the fictional notes, or
+`references/short-answers.md`), and put `[ask: …]` wherever a detail, motive, reason or feeling is missing
+instead of inventing it. After the text, in a few lines: every `[ask]` and every choice the student must
+confirm (a goal or reason you inferred), the program's rule on AI-written text if you know it, and that the
+version they submit should be their own writing. Do not offer a full draft unprompted. Graded schoolwork and
+science-fair entries stay coached.
 
 ## Genre notes
 
@@ -203,8 +214,8 @@ short answers, winning science-fair abstracts, charity appeals).
 
 | Text | Mode | Read |
 |---|---|---|
-| College admission essay (Common App personal statement, a college's or its pre-college program's essay) | Coach. Never write it. | `references/personal-essay.md` |
-| College supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach. Never write it. | `references/short-answers.md` |
+| College admission essay (Common App personal statement, a college's or its pre-college program's essay) | Coach; a full draft only when the student asks (see Coach). | `references/personal-essay.md` |
+| College supplements and short answers (why us, why this major, community, intellectual interest, 100 to 250 word answers, 35 to 50 word short takes) | Coach; a full draft only when the student asks (see Coach). | `references/short-answers.md` |
 | Other applications and forms (mentorship, club, internship, job, a competition that allows AI help) | Write or Edit; Coach only if its rules require the applicant's own writing or ban AI-written text | `references/short-answers.md` for short answers |
 | Activity list, honors | Edit the student's own entries; never write or invent one | `references/short-answers.md` (activity list section) |
 | Research abstract, paper section, project report, poster, lab write-up | Edit the researcher's draft first; Write from notes only when there is no draft and it is not a science-fair entry or graded schoolwork (those are never written for the student); remind about AI-use disclosure once | `references/research.md` |
