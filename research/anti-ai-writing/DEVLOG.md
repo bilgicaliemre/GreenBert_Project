@@ -1715,3 +1715,30 @@ not run on the edit benchmark by itself; v15, which contains all of its changes,
 - What our skill took from them is the pattern catalog and procedure (in October), and now seven narrow guards. What it
   leaves out is the part that invents: humanizer 4.0.0 now tells the model to add facts it knows.
 - A watermark remover would not work and would only serve hiding AI use from the people entitled to check it.
+
+## 27. v14.2: a full application draft when the student asks for one
+
+**Request.** The user asked to change the skill and the project's working agreement so that the skill writes complete
+drafts of application essays on request, to study how it builds them; the user said the drafts are not for submission.
+
+**Change.** Coaching stays the default. A new "Full draft on request" paragraph in Coach covers application essays and
+short answers only: the draft comes from the student's material, every missing detail, motive or feeling becomes an
+`[ask: …]`, and the notes after it list the `[ask]`s, the choices to confirm, the program's AI rule if known and that
+the submitted version should be the student's own. Graded schoolwork and science-fair entries stay coached. Details in
+`skill_versions/v14.2/CHANGELOG.md`.
+
+**Test.** Four fictional cases, two samples each, one blind grader per case: 7 of 8 samples met every criterion; the
+eighth (graded homework, correctly coached) stated its reason twice and referred to the request that started the
+workflow, the relay effect described in section 26. With thin notes the full drafts are mostly scaffolding: the two
+personal-statement drafts ran 307 and 364 words including about a dozen `[ask]` markers each, which is the intended
+behavior when the notes lack the scenes.
+
+**Found after the change.** A real program application the user is preparing bans AI use in *preparing* essays, not
+only in submitting them, and says submissions will be checked. Writing or coaching such an essay breaks that rule, so
+the project's working agreement now holds all essay help for programs with such a ban until after the deadline. The
+skill itself only reminds the student of a program's rule; whether it should refuse to draft or coach when a ban
+covers preparation is an open decision for the user.
+
+**Paper.** The dual-use paragraph says the released skill "coaches and does not write" application essays. That is true
+of version 13.1, which the paper describes; if the paper moves to version 14.2, the paragraph must say that the skill
+writes a full draft when a student asks.
