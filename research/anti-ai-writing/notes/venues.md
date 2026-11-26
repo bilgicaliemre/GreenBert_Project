@@ -350,3 +350,52 @@ Yale STEM Research Supplement (answer Yes by Jan 2; form by Jan 9), Harvard port
 (materials by Jan 10), Princeton via Additional Information. Common App Additional Information is 300 words since 2025-26.
 Every college rule treats AI-written application text as the student's misrepresentation: all application text is written
 by the student, with one plain sentence separating the student's part from the AI's part.
+
+## 13. Journals after the SRW (2026-11-26; the user applies in fall 2027)
+
+The user is in the second-to-last year of high school, so applications go out in fall 2027 (UCAS ~Oct 15, 2027; US
+early Nov 1, 2027; US regular ~Jan 1, 2028). Every application-side date in section 12 moves one year later. A workflow
+read each journal's official author pages (some figures from search snippets where the page blocked us; marked below).
+
+Three kinds of "peer-reviewed" journal: real academic journals (count with faculty readers), free selective high-school
+journals (CJSJ: a student honor, not a research credential) and pay-to-publish journals (count for little; ProPublica
+2023: 4 of 8 reviewers listed by JSR said they were never asked to review). In NLP the ACL Anthology entry from the SRW
+is the main credential; a journal is the step after it.
+
+| Rank | Journal | Fee | Review time | Extended version of an archival workshop paper | Main risk |
+|---|---|---|---|---|---|
+| 1 | Computational Linguistics (MIT Press / ACL), Short Papers track | none | first decision 28 days on average (2024) | yes: "Substantially extended versions of conference papers may be acceptable" | high bar; a 6-8 page paper "typically does not contain sufficient content"; single-blind |
+| 2 | Assessing Writing (Elsevier) | none on the subscription route (OA ~USD 3,950, snippet) | ~36 days first decision, ~8 months to acceptance, ~18% accepted (snippets) | not stated: ask the editor | best topic fit (detectors as writing assessment, the 13% to 45% grammar-fix result); slow |
+| 3 | Journal of Writing Analytics | no fee mentioned (volunteer nonprofit; confirm) | "reviewed within four weeks"; 4-6 months to publication with pre-contact | not stated: ask the editors | small journal; Scopus-indexed |
+| 4 | JAIR, AI & Society track | none | 8-12 weeks to decision | yes, explicitly, with disclosure | 10.6% accepted; desk reject for papers that "merely apply known AI techniques"; reproducibility checklist mandatory |
+| 5 | Language Resources and Evaluation (Springer) | none on the subscription route (OA USD 3,590, no Turkey waiver) | median 36 days first decision | yes, "an expansion of previous work" | mid-tier (IF 2.0); frame as an evaluation dataset |
+| 6 | Columbia Junior Science Journal | none | yearly; ~Sep 30, 2027 deadline (guess from the 2026 cycle) | no: requires the work be unpublished, so only if the SRW rejects | undergraduate reviewers; CS not named in scope |
+
+Rules that bind every path:
+- Nothing under review at any journal from Jan 11 to Mar 8, 2027 (SRW double-submission rule covers "all journals ...
+  without exception"), and nothing at a journal on Jan 11 either. Splitting off the detector result counts as overlap.
+- An extended version needs new results, not length: a human-rater study (teachers and English learners judge voice and
+  "reads as AI" on original vs edit; needs ethics approval or equivalent plus consent, so start in December), more texts
+  and models, and statistical tests. Cover letter states what is new. AI-use disclosure in the form each journal asks for;
+  keep a tools/versions/prompts log from now.
+- Read and cite "False Positive Risk in AI Detection of L2 Academic Writing" (Jul 2026; found, not yet checked).
+
+Plan. Dec 2026: finish the SRW paper, ORCID iD, school email, rater-study design and ethics request, AI-use log.
+Jan 11: SRW (archival). Jan 11 to Mar 8: rater study, no journal submissions. Mar 8 decision.
+- Path A (accepted): camera-ready Mar 15; ask the Assessing Writing and JWA editors about extended versions; ~Jun 1 CL
+  Short Papers; on a no, Assessing Writing, JAIR or LRE in Jul-Aug. October: SRW paper accepted, journal version under
+  review.
+- Path B (rejected): all journals open. Ask editors-in-chief@transacl.org whether TACL's 9-month NAACL rule covers the
+  SRW; NEJLT has a fast track for recently reviewed papers. Revise Mar-May, CL in May, JWA on a June no, CJSJ (~Sep 30)
+  as the last fallback. The Young Researcher (free, professor-reviewed) only if it reopens from hiatus; check in January.
+
+Skip: YURJ (Nov 29) and Vanderbilt Young Scientist (Dec 9) overlap the SRW review; paid high-school journals (IJHSR $350
+and bans AI drafting; NHSJS non-refundable fee and AI-detector screening, a real false-flag risk for this author;
+Curieux; STEM Fellowship CAD 400 with a 9-month exclusivity; JSR); paid broad journals (PLOS ONE, Scientific Reports,
+Frontiers, IEEE Access, MDPI, IGI Global, Computers & Education: AI, Cambridge NLP); journals that refuse this paper's
+history or format (Language Learning & Technology, TESL-EJ, Written Communication, Journal of Writing Research); wrong
+field or level (JEI, The Concord Review, JYI); the JSLW special issue (Nov 30) wants data on writers composing with AI.
+
+Age checks still open (birth month needed): Think prize (15-18 on Apr 19, 2027), John Locke (under 19 on the deadline,
+~May 31), Infomatrix (7-18). MOSTRATEC (under 20 on May 1) and the Trinity prize (penultimate-year students, so 2027 is
+the only chance) are fine.
