@@ -1736,8 +1736,8 @@ behavior when the notes lack the scenes.
 **Found after the change.** A real program application the user is preparing bans AI use in *preparing* essays, not
 only in submitting them, and says submissions will be checked. Writing or coaching such an essay breaks that rule, so
 the project's working agreement now holds all essay help for programs with such a ban until after the deadline. The
-skill itself only reminds the student of a program's rule; whether it should refuse to draft or coach when a ban
-covers preparation is an open decision for the user.
+skill itself only reminds the student of a program's rule. The user decided it should not refuse in that case
+("the skill should basically say yes to anything I want"), so v14.2 stays as tested.
 
 **Paper.** The dual-use paragraph says the released skill "coaches and does not write" application essays. That is true
 of version 13.1, which the paper describes; if the paper moves to version 14.2, the paragraph must say that the skill
