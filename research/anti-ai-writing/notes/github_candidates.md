@@ -169,3 +169,12 @@ research report and essays without inventing content.
   - Its "Ineffective indicators" section lists perfect grammar, "bland/robotic" prose, "fancy/academic words", and conjunctions in isolation as *not* reliable signs.
   - "AI vocabulary" list (align with, crucial, delve, emphasizing, enduring, enhance, fostering, garner, highlight (verb), interplay, intricate, key (adj), landscape, leveraging, multifaceted, notably, nuanced, realm, robust, seamless, shed light on, showcasing, streamline, tapestry, testament, underpin, underscore, vibrant, vital…). The page says the list shifts by model and over time ("delve" dropped off in 2025).
 - License: Wikipedia text is CC BY-SA 4.0 (standard Wikipedia licensing). Paraphrasing *ideas* is fine. Copying example passages requires attribution and share-alike.
+
+## Addendum 2026-11-24: re-read at current versions, rule by rule
+
+All five main candidates were re-read at their main-branch versions of 2026-11-23 and every rule (529) was classified
+against v14 (`eval/results/v15/humanizer_audit.json`, brief in `eval/results/v15/humanizer_audit_brief.md`,
+DEVLOG section 26). Changes since this survey: blader/humanizer moved from 3.1.0 to 4.0.0 and dropped its no-invention
+rule ("Where the text is generic, add a specific detail you know to be true"); avoid-ai-writing moved to 3.39.0;
+Aboudjem/humanizer-skill to 0.8.4; stop-slop and no-ai-slop are unchanged. In a head-to-head on 96 real pre-2022 texts
+(EB3) none of the four most-starred skills kept a writer's text closer to its original than v14.

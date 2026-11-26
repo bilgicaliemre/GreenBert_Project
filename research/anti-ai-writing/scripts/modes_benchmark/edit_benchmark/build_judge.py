@@ -1,5 +1,5 @@
 """usage: python3 eb/build_judge.py GENRE SPLIT CONDS TAG [size] [seed]"""
-import json, sys
+import os, json, sys
 sys.path.insert(0, 'tools'); import bench
 G, split, conds, tag = sys.argv[1], sys.argv[2], sys.argv[3].split(','), sys.argv[4]
 size = int(sys.argv[5]) if len(sys.argv) > 5 else 12
@@ -33,5 +33,5 @@ ask = ('For each text give: p_human (0-100, the chance that the person wrote thi
        'Return texts: [{label, p_human, quality, evidence}] for all of them.')
 props = {'p_human': {'type': 'integer'}, 'quality': {'type': 'integer'}, 'evidence': {'type': 'string'}}
 spec = bench.judge_spec(B, tag, f'eb-judge-{G}-{tag}', f'Blind pile judging, edit-mode benchmark ({G}, {tag})', intro, WHO, props, ask)
-spec['model'] = 'opus'
+spec['model'] = os.environ.get('BENCH_MODEL')
 bench.run_mkwf(spec, f'{B}/judge_{tag}.js'); print(G, len(spec['jobs']), 'judge jobs')

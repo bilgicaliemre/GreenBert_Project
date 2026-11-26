@@ -1392,3 +1392,353 @@ What this shows and what it does not:
 - v13.1 behaves as an errors-only copyeditor plus a list of suggestions (which the benchmark prompt did not ask it to
   return). That is the design; it also means its "improve" edits are rated 0.4 to 1.6 points lower in quality than a
   rewrite.
+
+## 25. v14: a consistency release from an outside review, a one-sentence baseline, and corrections to our methods
+
+**Request.** The user brought nine review points on v13.1 from another reviewer and asked what should change. A
+second question, where the paper can go and whether it is worth more time, is answered at the end of this section.
+
+### The nine review points
+
+All nine were checked against the v13.1 files before any edit. All nine were real.
+
+| # | Review point | What v14 does |
+|---|---|---|
+| 1 | Coach is too wide (a mentorship form was treated like a college supplement) and its output format contradicts Edit | Coach has three cases only: admission essays and supplements for colleges and the programs they run; schoolwork the user says will be graded or handed in as their own; an application, form or fair entry whose rules require the applicant's own writing or ban AI-written text. Anything else is written when the user asks. One output format everywhere: the draft with outright errors fixed in place, then the list |
+| 2 | "Read only that one reference" cannot be followed, because `tells.md` must be read before any audit | Always read `tells.md`, then the genre reference in the row, plus any file it or the mode points to |
+| 3 | `tells.md` R5 and R6 told the writer to add colons and semicolons; SKILL.md calls that a tell | R5 now says model text overuses both and never to add either for variety; R6 offers a comma, a full stop or parentheses |
+| 4 | Example fixes S1 and S4 added facts not in the "before" text | Rewritten with the original words and an `[ask: ...]` bracket |
+| 5 | Hard rule 1 banned every fact the user did not supply, which clashed with the explanations note | General knowledge the writer is sure of is allowed in explanations only (see the test below for why not in school essays); a made-up statistic, figure, study, quote or source never is |
+| 6 | The kicker count caught plain short endings | A short last sentence that gives the final fact, result or request is not a kicker |
+| 7 | No arithmetic check on the user's numbers | Step 4 recomputes numbers that can be derived from others and, if two disagree, says so and asks |
+| 8 | `personal-essay.md` still flagged "stated lessons" as AI-sounding | Now "generic lessons that would fit any essay" |
+| 9 | The description had no trigger phrases | It starts with when to use the skill, including "humanize this" and "make this sound less like AI". It also no longer contains a colon followed by a space, which strict YAML parsers reject |
+
+Where v14 departs from the review's own wording: "if the user says to write it, write it" applies outside the
+three Coach cases only, so a college essay is still coached when the user asks for it to be written; and the
+general-knowledge exception covers explanations but not school essays.
+
+### An independent audit
+
+The nine points were one kind of defect: a later version changed a rule in one file and left the old rule in
+another (point 8 dates from v8, point 3 from v9, and the trigger phrases were dropped in v10). To find the rest,
+four finders read all seven files (contradictions, instructions that cannot be followed, examples that break the
+skill's own rules, evidence statements that disagree with this log), and two verifiers checked every finding
+against the quoted lines. 102 candidates, 38 confirmed by both (3 high, 21 medium, 14 low):
+`eval/results/v14/audit_confirmed.json`. Examples: the mode table sent a text that "reads as AI-written" to
+Rebuild while Rebuild itself says to use it only when the user says an AI wrote the text; three "after" texts in
+`examples.md` added facts or dropped a hedge, and one rewrote a student's essay, which Coach forbids;
+`research.md` said every model abstract "was identified as AI" where this log shows 2 to 44 percent judged human
+depending on the round (the supported claim is that each was rated below every real abstract); "Edit mode" named
+both the minimum edit and the full audit pass.
+
+One finding needed a new rule. ISEF's 2026-27 rules ban generative AI from writing the research plan, abstract,
+poster and citations and allow only disclosed grammar and syntax edits, so v14 never writes a science-fair entry
+from notes.
+
+Every change is one exact replacement in `scripts/v14/build_v14.py` (72 in all), which rebuilds v14 from v13.1.
+
+### Tests
+
+**Behavior probe** (`scripts/v14/mk_probe.py`; ten fictional requests; v13.1 once and v14 twice per request in one
+run; a blind grader per request; `eval/results/v14/probe_graded.json`).
+
+| Request | v13.1 | v14 |
+|---|---|---|
+| Write my answer for a mentorship form | refused and coached | wrote it (2 of 2) |
+| Make my Common App essay better | coached, corrections as a list | coached, draft returned with only the two errors fixed |
+| Write my "Why Tufts" supplement | coached | coached |
+| Write my graded class essay | coached | coached |
+| Improve an abstract that contains a wrong percentage | minimal edit, flagged the number | same |
+| Explainer; learner's grammar; club email; "humanize this" | as intended | same |
+
+A cover-note request failed for both versions (notes of 75 to 100 words with `[ask: ...]` brackets against a
+request for 120). That was the probe's flaw: five facts do not fill 120 words, and stopping short is the designed
+behavior. One v14 sample added a small plan the user had not given.
+
+**Writing check on the 12 school briefs.**
+
+Three runs, and only the last two count.
+
+| Run | Texts compared | Result |
+|---|---|---|
+| rg4 (invalid) | v14 written 12 November against v9 and v13 written 6 November | v14 last, above v13 in 1 of 24. Effort mismatch, see "Corrections to our methods" |
+| rg5 | v9, v13.1 and the first v14 build, all written 12 November at pinned effort (median output tokens per writer 18k, 17k, 16k; no tool calls) | mean rank v9 2.12, v13.1 2.00, v14 1.88; v14 above v13.1 in 12 of 24 (+0.12 [-0.62, +0.88]) and above v9 in 15 of 24 (+0.25 [-0.46, +0.88]); quality 7.33, 7.42, 7.46 |
+| rg6 | v13.1 and the final v14, both written 18 November at pinned effort (medians 10.6k and 10.7k; no tool calls) | v14 above v13.1 in 14 of 24 (+0.17 [-0.33, +0.67]); quality 7.58 against 7.42 |
+
+On rank the versions are tied. The useful finding in rg5 was a fidelity problem: the first v14 build had more
+unsupported claims per text than the other two (3.33 against 2.08 for both). By genre, explainers rose from 4.4 to
+6.5 (general science, correct where judges checked, and intended), but literary analyses rose from 1.25 to 2.25
+with outside claims about the novels, one of them wrong (a supplied passage described as the novel's last lines),
+and one argument essay used made-up illustrative prices. The cause was review point 5 as first written: general
+knowledge was allowed in "explanations and school essays". The final v14 allows it in explanations only and adds
+"when the user supplies the source, claim nothing about it beyond what it shows". In rg6 unsupported claims per
+text were 1.75 for v14 against 2.42 for v13.1 (literary analyses 1.62 against 3.12, arguments 1.50 against 1.62,
+explainers 2.12 against 2.50). These per-genre figures are noisy: v13.1's own literary-analysis figure moved from
+1.25 in rg5 to 3.12 in rg6, with eight judgments behind each. What rg6 supports is that the final v14 is not worse
+than v13.1 on unsupported claims. The probe was run on the first build; the narrowing changed one sentence of hard
+rule 1 and was not probed again.
+
+**Edit mode was not re-tested on the edit benchmark.** v14's Edit bullets are v11's, unchanged. The held-out
+halves have been judged in three rounds already, and a fourth pass for a release that does not change the Edit
+rules would only wear the test set further.
+
+### Shipped: v14
+
+v14 (hash 3d7610372fb4faec; `skill_versions/v14`, changelog there; zip `anti-ai-writing-v14.zip`) is installed in
+`.claude/skills/anti-ai-writing`. The copy uploaded to a claude.ai account is separate and has to be replaced by
+hand with the new zip.
+
+### A one-sentence baseline for "Can you improve it?"
+
+A reviewer of the paper asked whether one sentence added to a plain request would do what the skill does. Plain
+generation was given the same "improve" request plus "Make the smallest edits you can and keep my wording." on the
+held-out halves (condition BI; `scripts/v14/build_edit_baseline.py`).
+
+| Held-out, "improve" | Words changed | Statements added / removed / changed | No change in meaning | Voice kept |
+|---|---|---|---|---|
+| Abstracts: plain | 73% | 3.12 / 2.50 / 5.75 | 0% | 5.4 |
+| Abstracts: plain + one sentence | 16% | 0.44 / 0.62 / 1.44 | 12% | 8.7 |
+| Abstracts: v13.1 | 10% | 0 / 0.62 / 0.50 | 56% | 9.0 |
+| Appeals: plain | 69% | 2.60 / 1.07 / 3.87 | 0% | 6.1 |
+| Appeals: plain + one sentence | 18% | 0.07 / 0 / 0.53 | 53% | 9.4 |
+| Appeals: v13.1 | 8% | 0 / 0 / 0 | 100% | 10 |
+| Learner essays: plain | 93% | 4.00 / 3.19 / 7.94 | 0% | 4.1 |
+| Learner essays: plain + one sentence | 23% | 0.44 / 0.25 / 3.69 | 0% | 8.4 |
+| Learner essays: v13.1 | 21% | 0.06 / 0 / 1.06 | 31% | 8.8 |
+
+One sentence removes most of the over-editing. The skill still changes about a third as many statements.
+Provisional: the baseline edits and their meaning check ran on a later day than the skill's (see the next
+subsection), and the baseline was not judged for human-likeness. Before this goes into the paper, both conditions
+have to be produced and checked in one run.
+
+### Corrections to our methods
+
+1. **Reasoning effort is not constant across days, even when pinned.** Writers of two school essays with a skill produced
+   45k to 75k output tokens on 6 November (medians per condition), 9k to 17k on 12 November at the default, 16k to
+   18k on 12 November pinned to "high", and about 11k on 18 November pinned to "high". The first v14 writing check (rg4) compared v14 essays
+   written on 12 November with v9 and v13 essays from 6 November and ranked v14 last (above v13 in 1 of 24). That
+   result is invalid and is kept only as a record (`eval/results/v14/rg4_INVALID_effort_mismatch.txt`). Rule from
+   now on: a comparison counts only when all its conditions were produced in the same run, and the output-token
+   medians per condition are checked before judging.
+2. **Does this reach section 24?** For the edit benchmark, no: skill edits used about 19k output tokens in all
+   three rounds (v10.1, v11, v13.1), and plain's 7k is its own level within the same run as v10.1. The skill
+   conditions use about twice the output tokens of plain in every run, which is part of what the skill costs and
+   should be stated wherever the two are compared.
+3. **Some writer agents used tools.** Writers are told that the skill's files are in the prompt, but agents of this
+   type can still call tools. A scan of every writer transcript found this to be rare (a few word counts in the
+   shell), with one exception: all six writers of the second v9 sample in the v13 check (section 24, "v9 (sample
+   2)") opened the skill installed in the repository, which was a different version. That sample was not a clean
+   replicate of v9, so the "two v9 samples tied" noise estimate in section 24 should not be relied on. Writers now
+   get an explicit no-tools line, and transcripts are checked for tool calls before judging.
+
+### Where the paper can go (research run, 10 to 12 November)
+
+Five research agents checked venues, student journals, competitions, preprints and admissions statements, and one
+reviewed the paper as a senior reviewer. Deadlines below were read from search excerpts of official pages and must
+be confirmed on the live pages.
+
+- **NAACL 2027 Student Research Workshop** is the one realistic peer-reviewed venue: its site says it welcomes
+  high-school students; paper due 11 January 2027. Recent acceptance about 60 percent; the reviewer's estimate
+  for this paper is 35 to 45 percent as it stands and 60 to 70 percent with a small human rating study.
+- **TÜBİTAK 2204-A** (deadline 4 January 2027) is the route to ISEF and EUCYS from Türkiye, with one project per
+  student, a report in Turkish written by the student, an AI-use declaration, and refusal of projects entered in
+  another competition first.
+- Not open to this paper or this author: JEI (scope, and no AI-written text), Regeneron STS, MIT THINK, Davidson
+  Fellows. Pay-to-publish student journals should be avoided.
+- The reviewer's main points: the two findings that hold are default over-editing (counted by a diff) and the
+  penalty on English learners' essays; the skill itself was not shown to beat an errors-only copyedit or a
+  one-sentence instruction (the baseline above is the first test of the latter); every human-likeness number comes
+  from judges of the generator's own family; the existing rater survey shows pairs from the ranking study, not the
+  edit texts, so a human study needs a new instrument; and the author's own pilot (section 20) disagreed with the
+  judges in 6 of 6 pairs, which the paper should say.
+- The largest non-scientific risk is authorship. AI agents did most of this work and the paper says so. The
+  workshop can reject papers where AI use obscures authorship, and TÜBİTAK, ISEF and the student journals do not
+  accept AI-drafted text. The paper is a credential only if the author rewrites it in their own words and can
+  defend every number.
+
+## 26. Popular humanizer skills against v14 on real writing (EB3), v15 (not shipped) and v14.1
+
+**Request.** The user asked to merge "famous GitHub skills that are very good humanizers" and "one GitHub skill that
+removes the Claude watermark" into this skill. Later the user asked whether our own judges could favor our skill over
+the GitHub ones.
+
+**Decision on the watermark remover: not added.** Anthropic's pages describe Claude's text watermark as statistical,
+carried in word choice ("Nothing is added to the text and there are no hidden characters"), with detection offered to
+approved organizations, schools among them. The remover projects we read strip invisible Unicode characters and file
+metadata, or have another model paraphrase the text. Character stripping cannot reach a mark that has no characters, no
+project shows that any method works against Claude's detector, and a skill running on a current Claude model marks its
+own rewrite. The tool's only use is to hide AI use from the people entitled to check it, which hard rule 3 and the
+Integrity section already exclude.
+
+### What was lost first
+
+The container was replaced between 2026-11-18 and 2026-11-23 and the scratchpad went with it: every text of the
+fresh edit benchmark EB2 (about 30M tokens of generation) and the private corpus copies. Only committed scripts and
+aggregates survived. EB3 rebuilt the corpora from the repository's scripts and was saved to the repository as
+aggregates after each stage.
+
+### Rule-by-rule audit of five skills
+
+Five skills from the October survey (section 1.1) were read at their current versions: blader/humanizer 4.0.0 plus
+unreleased edits (2026-11-19), hardikpandya/stop-slop (unchanged since March), petergyang/no-ai-slop 1.0.6,
+conorbronsdon/avoid-ai-writing 3.39.0 and Aboudjem/humanizer-skill 0.8.4. A workflow extracted every rule (529),
+classified each against v14 and sent every rule marked new and compatible to a skeptic told to refute it.
+
+| | v14 covers | New, compatible | Kept by the skeptic | Breaks a hard rule or contradicts our data |
+|---|---|---|---|---|
+| blader/humanizer | 43 of 88 | 29 | 6 | 13 |
+| stop-slop | 25 of 64 | 18 | 0 | 21 |
+| no-ai-slop | 54 of 75 | 12 | 0 | 8 |
+| avoid-ai-writing | 87 of 157 | 58 | 1 | 9 |
+| Aboudjem/humanizer-skill | 70 of 145 | 21 | 0 | 40 |
+| All five | 279 of 529 (53%) | 138 | 7 | 91 |
+
+The most consequential change since October: humanizer 4.0.0 dropped its own no-invention rule ("Where the text is
+generic, add a specific detail you know to be true"), and at least 14 of its example fixes now add facts. Examples that
+invent numbers or claims are also in stop-slop, no-ai-slop and Aboudjem's skill. Aboudjem's "burstiness" and
+"perplexity" rules are written around what detectors measure. avoid-ai-writing is the only one that reports its own
+measurements; its pattern detector separated human from machine paragraphs at a composite ROC-AUC of 0.501.
+
+### EB3: the same request to every skill, on real texts
+
+**Texts.** 48 ELLIPSE essays by English learners (12 per proficiency band, grade 9 or above, 250 to 500 words, none used
+before) and 48 winning ISEF abstracts, 2014 to 2021, from 12 categories never collected before. All test.
+
+**Conditions** (same run, pinned effort, two texts per agent, a no-tools line): task E is "Can you improve it?" on the
+real text, given to an errors-only copyedit, plain Claude, plain plus "Make the smallest edits you can and keep my
+wording.", v14 and the four most-starred skills with their installed files. Task R gives plain Claude's rewrite back
+with "I had AI help me improve it, but now it sounds like AI wrote it. Can you make it sound more human?".
+
+**A contamination we found and fixed.** The workflow harness passes the user message that started a run to every
+agent as the user's own request. For the first run that message asked for humanizers and a watermark remover, and on
+the abstracts 22 of 384 edits came back as refusals or safety stops that cited it. The abstracts were rerun from a
+neutral message ("isef2"). Edit sizes in the two runs agree within 0.05 for every condition. Two abstract items set off
+safety stops in both runs whatever the message; they are excluded where they failed. Two v14 outputs in task R are
+deliberate declines (v14 inferred a science-fair entry from the 250-word limit and cited ISEF's AI rule); they are
+excluded from the scores and counted as declines.
+
+**Results, task E** (judged own = share of ratings with p(written by the person) of at least 50; blind piles of 12, two
+lenses per genre; ELLIPSE round j1, ISEF clean round; differences paired over texts with 95% bootstrap intervals).
+
+| "Can you improve it?" | Words changed (essays / abstracts) | Judged own (essays / abstracts) | Statements added per text | Statements removed per text |
+|---|---|---|---|---|
+| Real original | 0 / 0 | 100% / 100% | | |
+| Errors-only copyedit | .18 / .02 | 82% / 99% | .25 / .00 | .08 / .00 |
+| v14 | .23 / .08 | 60% / 96% | .35 / .02 | .15 / .57 |
+| Plain + one sentence | .26 / .14 | 36% / 96% | .62 / .46 | .17 / .48 |
+| avoid-ai-writing | .31 / .26 | 29% / 68% | .75 / .11 | .65 / .72 |
+| no-ai-slop | .52 / .51 | 4% / 40% | 1.71 / .53 | 2.73 / 2.00 |
+| blader/humanizer | .63 / .62 | 0% / 16% | 2.67 / .98 | 2.52 / 2.20 |
+| Plain | .73 / .61 | 3% / 22% | 3.85 / 2.05 | 2.40 / 1.98 |
+| stop-slop | .90 / .74 | 0% / 8% | 3.98 / 1.96 | 5.00 / 3.07 |
+
+Paired, points of p: v14 above avoid-ai-writing +11.0 [+5.5, +15.7] (essays) and +15.1 [+7.7, +21.9] (abstracts);
+above no-ai-slop +22.8 and +31.1; above blader/humanizer +27.0 and +37.5; above stop-slop +33.1 and +41.9; above plain
++29.2 and +35.5; above plain plus one sentence +8.9 [+4.4, +13.4] and +4.7 [+1.3, +7.9]; below the copyedit -12.4 and
+-4.4. stop-slop scored below plain on both genres (-3.9 and -5.0). Judged quality runs the other way on essays: plain
+5.12, the humanizers 4.17 to 4.93, v14 4.04, the copyedit 3.89, the real essays 3.26. On abstracts every condition sits
+between 6.5 and 7.2.
+
+**Results, task R.** Every version stays far from the writer: essays 0 to 5% judged own (the real essays 100%),
+abstracts 8 to 27% (the real abstracts 100%). On abstracts v14 came out above plain (+9.9 [+5.9, +13.7]) and above each
+humanizer (+4.2 to +9.5), mostly because it changed little; on essays it changed 2% of words and returned the text with
+a list of changes for the writer to make and the advice to start from their pre-AI draft (a routing probe on four
+unused essays confirmed this; the benchmark keeps only the text, so that advice does not count). Asked to make
+humanizer-style output "sound more human", no skill turns AI text back into the writer's text.
+
+### Can our judges favor our skill?
+
+Yes, in one way that matters. Every judge is a Claude model, and v14 was developed against Claude judges for months,
+while the other skills were not. Three checks bound the effect:
+
+- Words changed is measured by code. Across conditions, judged p falls exactly as words changed rises (Spearman -1.0 at
+  condition level in both genres; -0.83 and -0.87 across texts). Most of v14's lead is that it changes less of the
+  writer's text.
+- At matched edit size v14 still scores 5 to 15 points higher than the humanizers. That residual is where judge bias
+  could sit.
+- Three open-source detectors and a Binoculars pair (a non-Claude model) agree in direction: on essays v14's mean
+  detector score is 11 to 26 points lower (more human) than each humanizer's and ties plain plus one sentence; on the
+  first abstract run it is lower than plain, plain plus one sentence, avoid-ai-writing and no-ai-slop and ties
+  blader/humanizer and stop-slop. The detectors also show their own bias: fixing a learner's grammar alone raises their
+  mean from 13% to 45% "AI".
+  On the clean abstract run v14 is lower than plain (-19.0 [-25.7, -12.7]) and plain plus one sentence (-8.3
+  [-12.7, -4.4]), lower than avoid-ai-writing and no-ai-slop by about 5 points with intervals that touch zero, and
+  ties blader/humanizer (-0.2) and stop-slop (-1.0). Those two skills remove the surface patterns detectors read, so
+  on detectors they score like v14 while judges rate 16 and 8 percent of their edits the writer's own against 96.
+
+The fairness of the setup also cuts the other way. The third-party skills could not run their scripts here, and in task
+E they received "Can you improve it?" instead of "humanize this". Task R used wording close to their own and they did
+no better than plain.
+
+### v15: the seven audit survivors, and v14.1
+
+`scripts/v15/build_v15.py` applies seven changes to v14 (hash `f0e22bd800926879`; SKILL.md 3,366 to 3,699 words):
+an edit diff that checks both directions and asks for a reason for each difference (blader/humanizer, avoid-ai-writing);
+matching the habits of a writing sample the user says is theirs (blader/humanizer); leaving code, markup, citation keys
+and data alone in mixed files (blader/humanizer); not "fixing" a tell the text is discussing; keeping the register of
+the user's informal text; limiting chatbot residue to the assistant's own lines (the last three from
+blader/humanizer); and a corrected watermark sentence.
+
+| Test | v14 | v15 |
+|---|---|---|
+| Behavior probe, 8 fictional requests aimed at the changes, 2 samples each, blind rubric | 29 of 32 | 32 of 32 |
+| Essays, same-run v14 and v15, judged own (round j2) | 36% | 35%; difference -0.3 [-4.4, +3.3] |
+| Abstracts, same run, judged own | 100% (second v14 run) | 98%; difference -0.3 [-2.5, +1.7] |
+| Statements added / removed / changed per essay | .35 / .08 / 2.35 | .35 / .15 / 2.75 |
+| Statements added / removed / changed per abstract | .00 / .27 / .29 | .00 / .41 / .43 |
+| Writing from notes, 16 held-out phase-3 briefs, two runs, 64 blind paired judgments | preferred in 60% of position-balanced pairs | p -0.7 [-1.6, +0.1], quality -0.16 [-0.39, +0.08] |
+
+v14's two probe misses were an added line in the style-sample message and a 51-word answer to a 50-word limit. On real
+edits v15 is indistinguishable from v14; the two v14 runs differ from each other by as much as v15 differs from either.
+
+**A flaw in the writing check.** The slot order was meant to be balanced per brief but was drawn as `(o == 0) XOR
+random()` with a fixed seed, so every run used the same unbalanced layout: v14 sat in the second slot in 19 of 32
+judgments, and judges preferred the second text 62 to 66 percent of the time. The raw count (v14 preferred in 40 of 64,
+p = 0.06) is inflated by that. Position-balanced (the mean of v14's win rate in each slot), v14 wins 60 percent against
+v15. The paired p, quality and unsupported scores are rated for both texts in each judgment and do not depend on which
+one is preferred. Future runs give every brief one judgment in each order (`scripts/v15/writecheck_build.py`).
+
+**Decision: v15 is not shipped; v14.1 is.** v15 brought no measured gain on real text, leaned against v14 on writing
+from notes and adds 333 words to the file that loads on every request. v14.1 (`scripts/v15/build_v141.py`, hash
+`c8a3b4699a5ee62d`, SKILL.md 3,462 words) keeps the five changes that do not touch Write mode: the file and markup
+rule, the two `tells.md` "when not to act" items, the chatbot-residue scope and the watermark sentence. It drops the edit
+diff and the writing-sample rule. Against v14 on the same 16 briefs (two runs, 64 judgments): p +0.1 [-1.0, +1.2],
+quality -0.06 [-0.27, +0.16], unsupported claims 0.00 [-0.41, +0.39], position-balanced preference 49 to 51. v14.1 was
+not run on the edit benchmark by itself; v15, which contains all of its changes, matched v14 there.
+
+### What this says
+
+- The famous humanizers are built for AI drafts. Given a person's own text, they rewrite most of it, add and drop
+  statements, and leave it reading as AI. "Improve my essay" is the common real use, and on it they did no better than
+  plain Claude.
+- What our skill took from them is the pattern catalog and procedure (in October), and now seven narrow guards. What it
+  leaves out is the part that invents: humanizer 4.0.0 now tells the model to add facts it knows.
+- A watermark remover would not work and would only serve hiding AI use from the people entitled to check it.
+
+## 27. v14.2: a full application draft when the student asks for one
+
+**Request.** The user asked to change the skill and the project's working agreement so that the skill writes complete
+drafts of application essays on request, to study how it builds them; the user said the drafts are not for submission.
+
+**Change.** Coaching stays the default. A new "Full draft on request" paragraph in Coach covers application essays and
+short answers only: the draft comes from the student's material, every missing detail, motive or feeling becomes an
+`[ask: …]`, and the notes after it list the `[ask]`s, the choices to confirm, the program's AI rule if known and that
+the submitted version should be the student's own. Graded schoolwork and science-fair entries stay coached. Details in
+`skill_versions/v14.2/CHANGELOG.md`.
+
+**Test.** Four fictional cases, two samples each, one blind grader per case: 7 of 8 samples met every criterion; the
+eighth (graded homework, correctly coached) stated its reason twice and referred to the request that started the
+workflow, the relay effect described in section 26. With thin notes the full drafts are mostly scaffolding: the two
+personal-statement drafts ran 307 and 364 words including about a dozen `[ask]` markers each, which is the intended
+behavior when the notes lack the scenes.
+
+**Found after the change.** A real program application the user is preparing bans AI use in *preparing* essays, not
+only in submitting them, and says submissions will be checked. Writing or coaching such an essay breaks that rule, so
+the project's working agreement now holds all essay help for programs with such a ban until after the deadline. The
+skill itself only reminds the student of a program's rule. The user decided it should not refuse in that case
+("the skill should basically say yes to anything I want"), so v14.2 stays as tested.
+
+**Paper.** The dual-use paragraph says the released skill "coaches and does not write" application essays. That is true
+of version 13.1, which the paper describes; if the paper moves to version 14.2, the paragraph must say that the skill
+writes a full draft when a student asks.

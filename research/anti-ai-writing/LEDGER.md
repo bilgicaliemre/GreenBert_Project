@@ -232,3 +232,54 @@ are evidence.
 The lesson for a student: "improve it" is the most common request and the one where plain Claude does the most
 damage, because it answers a request for help with a rewrite in its own voice. Ask for errors to be fixed and
 bigger changes to be listed, and make those changes yourself.
+
+One sentence gets most of the way (2026-11-12, provisional). Plain Claude given the same "improve it" request plus
+"Make the smallest edits you can and keep my wording." changed 16 to 23 percent of the words on the held-out texts,
+against 69 to 93 percent without the sentence and 8 to 21 percent with the skill. The skill still changed about a
+third as many statements (abstracts 0.50 against 1.44 per text, appeals 0 against 0.53, learner essays 1.06 against
+3.69). The baseline ran on a later day than the skill's edits and was not judged, so treat the gap as indicative.
+A user without the skill gets most of its benefit from that one sentence.
+
+## Case 6. Popular GitHub "humanizer" skills on a person's own text (benchmark, 2026-11-24)
+
+The request: "There are famous GitHub skills that are very good humanizers and one that removes the Claude watermark;
+implement them into this skill." We took the four most-starred humanizer skills (blader/humanizer, stop-slop,
+no-ai-slop, avoid-ai-writing), gave each the same request plain Claude and our skill got ("Can you improve it?") on 96
+real pre-2022 texts (48 English-learner essays, 48 winning science-fair abstracts), and judged every version blind next
+to the originals.
+
+What plain Claude returns: a rewrite. It changed 73 percent of the words of a learner's essay and 61 percent of an
+abstract, added 2 to 4 statements per text, and 3 percent (essays) and 22 percent (abstracts) of its versions were
+judged the writer's own.
+
+What the humanizers return: mostly the same thing in a different style. blader/humanizer and stop-slop changed 62 to 90
+percent of the words and added 1 to 4 statements per text; stop-slop also cut a fifth of the length and was judged less
+human than plain Claude on both genres. no-ai-slop did better on abstracts (40 percent judged own). avoid-ai-writing,
+the most careful of the four, came closest to our skill: 29 percent (essays) and 68 percent (abstracts) judged own.
+
+What the skill (v14) returns: the text with errors fixed and little else. It changed 23 percent of an essay's words and
+8 percent of an abstract's, added 0.35 and 0.02 statements, and 60 percent (essays) and 96 percent (abstracts) of its
+edits were judged the writer's own, 11 to 42 points of p above each humanizer. Three open-source detectors that do not
+use Claude agree in direction. Judges rated the humanizers' and plain Claude's rewrites as better essays (4.2 to 5.1 of
+10 against 4.0), so the cost of keeping a learner's voice is a less polished essay.
+
+What a human eye notices: the humanizers were written to clean up AI drafts. Handed a person's own draft, they treat
+the person's sentences as raw material, and the result reads like a different, smoother writer. One of them,
+blader/humanizer 4.0.0, now tells the model to "add a specific detail you know to be true" where text is generic,
+which is how a student's essay gains facts the student never wrote.
+
+The second request, "I had AI help me improve it, but now it sounds like AI. Can you make it sound more human?", has no
+good answer from any tool. After plain Claude rewrote the texts, every skill's version (ours included) stayed at 0 to 5
+percent judged own on essays and 8 to 27 percent on abstracts, against 100 percent for the real originals. Our skill
+mostly left the text alone and told the writer to go back to their own draft, which is the advice that works.
+
+What changed in the skill: a rule-by-rule audit of five humanizer skills (529 rules) found v14 already covered half, and
+seven new rules survived a skeptic. A version with all seven (v15) behaved like v14 on real edits and leaned slightly
+worse on writing from notes, so it was not shipped. v14.1 keeps the five that cannot affect writing: leave code and
+LaTeX markup alone, keep the register of a user's informal message, keep "let me know by Friday" in a user's own message,
+do not "fix" a tell the text is only discussing, and a corrected watermark sentence. The watermark remover was not
+added: Claude's mark is in its word choice, not in hidden characters, nothing shows a remover works, and its only use is
+to hide AI use from people entitled to check.
+
+The lesson for a student: a "humanizer" will not make your essay more yours. If you want your own voice back, start from
+your own draft and ask only for errors to be fixed.

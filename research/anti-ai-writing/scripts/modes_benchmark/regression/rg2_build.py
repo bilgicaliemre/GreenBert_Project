@@ -34,6 +34,6 @@ for cond, d in DIRS.items():
             j['label'] = f'{cond}:{gi}{j["label"].split(":")[1]}'
             j['prompt'] = j['prompt'].replace('for every request.', 'for every request. Use Write mode: these are writing tasks for fictional people or for class examples.', 1)
         jobs += sp['jobs']; shared.update(sp['shared'])
-out = {'name': 'rg2-write', 'description': 'Regression check 2: plain, v9, v11, v12 on 20 development briefs', 'phase': 'Write', 'model': 'opus',
+out = {'name': 'rg2-write', 'description': 'Regression check 2: plain, v9, v11, v12 on 20 development briefs', 'phase': 'Write', 'model': os.environ.get('BENCH_MODEL'),
        'schemas': spec['schemas'], 'shared': shared, 'jobs': jobs}
 bench.run_mkwf(out, 'rg2/write.js'); print(len(jobs), 'jobs', os.path.getsize('rg2/write.js') // 1000, 'kB')

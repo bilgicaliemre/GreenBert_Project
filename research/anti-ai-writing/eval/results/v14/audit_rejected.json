@@ -1,0 +1,954 @@
+[
+ {
+  "id": "contradiction-climax-late-vs-loose-structure",
+  "problem": "personal-essay.md section 10 sends the writer to \"the two passes described in SKILL.md step 2\" (L248), and step 2 orders a late climax and connected scenes whose structure pass two must keep. Section 10 forbids holding the strongest scene back and forbids added links between scenes. Both cannot be followed for the same sample essay.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. personal-essay.md L248 sends the writer to SKILL.md step 2, which orders a late climax and connected scenes (L54-55, unchanged since v7) and keeping that structure (L57-58); section 10 forbids both (L253-254, L270-272). DEVLOG section 21 (L599, L650, L793-794) confirms the SKILL.md line is the stale one."
+   },
+   {
+    "real": false,
+    "dup": "evidence-climax-late-connect",
+    "reason": "Valid conflict (SKILL.md L55 vs personal-essay.md L253-254, L270-272), same defect as evidence-climax-late-connect, which adds the log evidence."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-edit-punctuation-habits-vs-dash-rule",
+  "problem": "Whether an em dash (or a semicolon in a message) in the user's own draft survives an Edit has three answers. Edit says keep their punctuation habits. tells.md says the user's own draft overrides the dash default. The last sentence of Edit says the dash rule is a default that only an additional writing sample overrides, so without a sample the dashes go. The messages checklist removes every semicolon with no exception for the writer's own text.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "executability-messages-semicolons-vs-edit",
+    "reason": "The part that holds (messages.md L65 removes every semicolon while Edit keeps punctuation habits) is the same defect as executability-messages-semicolons-vs-edit, which states it more cleanly. The em-dash part does not hold: Edit L103-104 and tells.md R6 both say the user's own draft keeps its dashes, and L114-115 never says dashes go without a sample."
+   },
+   {
+    "real": false,
+    "dup": "executability-messages-semicolons-vs-edit",
+    "reason": "The dash claim does not hold in context: Edit (L103-104) and tells.md R6 both say the user's own draft keeps its punctuation, and L114-115 only adds a writing-sample override; 'without a sample the dashes go' is an inference no line states. The semicolon part is valid and is the same defect as executability-messages-semicolons-vs-edit."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-kind-of-filler-vs-strength",
+  "problem": "\"kind of\" is on the skill's speech-filler list and must be dropped from the notes, but the same file forbids turning \"kind of proud\" into \"proud\". The two rules collide on the same two words and neither says how to keep the strength without the filler.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but the two rules can both be followed: rule 4 forbids removing the degree ('kind of proud' must not become 'proud'), rule 6 forbids filler wording, and 'a little proud' satisfies both. Rule 4's example already tells the agent which side wins when they meet."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. 'kind of' is on the filler list (SKILL.md L82, personal-essay.md L256, short-answers.md L57 'no speech filler from the notes') and short-answers.md L50 forbids turning 'kind of proud' into 'proud'. The file does not say how to keep the strength without the filler. Low."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-research-terms-defined-vs-unexplained",
+  "problem": "Rule 7 says technical terms are left unexplained unless the notes define them, and glossing is listed as a model sign. \"Conventions to keep\" says every domain term is defined once. The Rules section is not scoped to abstracts, so both apply to the same paper section.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "executability-research-rules-scope",
+    "reason": "Valid (rule 7 L84-85 against 'each defined once' L115), but it is one instance of the unscoped Rules section reported in executability-research-rules-scope, which quotes the same two lines."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. Rule 7 (L84-85) leaves technical terms unexplained unless the notes define them and glossing is listed as a model habit; L115 says each domain term is defined once. The Rules heading is not scoped to abstracts. L115 is carried over from v7 academic.md ('Define each once'). Related to executability-research-rules-scope."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-research-remove-hedges-vs-hard-rule-2",
+  "problem": "When editing the researcher's own draft, research.md tells the editor to remove hedges it judges the writer \"did not mean\". Hard rule 2 says every hedge survives unless the user agrees, and removing a hedge strengthens the claim. The parenthesis also names three problems while \"listed below\" contains seven model habits and nine rules, so the scope of what may be removed from a draft is unclear.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. research.md L17-18 tells the editor of a researcher's own draft to remove 'hedges they did not mean', which cannot be told from the draft and clashes with hard rule 2 (every hedge survives) and rule 6 (never strengthen). 'The problems listed below' also has no fixed referent (three in the parenthesis, seven habits, nine rules)."
+   },
+   {
+    "real": false,
+    "dup": "executability-research-problems-listed-below",
+    "reason": "Valid (research.md L17-18 'hedges they did not mean' vs hard rule 2); same line and same defect as executability-research-problems-listed-below, which also covers the unclear referent of 'listed below'."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-examples-not-fact-preserving",
+  "problem": "The file's own guarantee is false for three examples. Example 1 adds that the filters are keyword filters and that most remaining errors are semantic. Example 6 adds \"for college\" and an offer to send a r\u00e9sum\u00e9. Example 8 drops the hedge \"mainly\", against hard rule 2 and its own \"no fact added or lost\". (Separate from the known tells.md S1/S4 cases.)",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Verified against the before texts. Example 1 adds 'most remaining errors', 'keyword filters' and 'planned BERT classifier'; example 6 adds 'for college', a 'first' deadline and the r\u00e9sum\u00e9 offer; example 8 drops 'mainly' while its note says no fact was lost. That breaks examples.md L3 and SKILL.md L211. Not covered by known item 4, which is tells.md only."
+   },
+   {
+    "real": false,
+    "dup": "examples-ex1-added-claims",
+    "reason": "Valid; the three cases are reported one by one in examples-ex1-added-claims, examples-ex6-email-inventions and examples-ex8-hedge-dropped, which are kept as the real ones."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-mixed-feelings-vs-no-balanced-lesson",
+  "problem": "A student's real mixed feeling (\"it was both good and bad\") is a human signal to leave alone under hard rule 4 and tells.md section 10, and a balanced lesson to remove under personal-essay.md and PE11. personal-essay.md has an exception for real doubt (L177-178) but none for real mixed feelings.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "evidence-whole-hearted-unqualified",
+    "reason": "Valid, but the same defect as evidence-whole-hearted-unqualified: the 'whole-heartedly, never balanced or hedged' rule in personal-essay.md has no exception for a balance or hedge that is the student's own. The fixes land on the same lines (L173-174, L274-275)."
+   },
+   {
+    "real": false,
+    "dup": "evidence-whole-hearted-unqualified",
+    "reason": "Valid; same root as evidence-whole-hearted-unqualified (the unqualified 'whole-heartedly, not balanced, not hedged' rule has no exception for the student's own balance or hedge)."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-example3-show-instead-of-naming-lesson",
+  "problem": "The example coaches the student never to name the lesson, and its \"minimum edit\" is two fact sentences with no reflection. SKILL.md and tells.md say the conclusion should be stated plainly and that removing stated lessons is an over-correction. (Same theme as the known personal-essay.md item 7 defect, in a different file with a different fix.)",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quote verified; examples.md is byte-identical to v7's. 'Show that instead of naming the lesson' is the v7 rule that v8 reversed (SKILL.md L150-151, tells.md L127, L230; DEVLOG L613, L645-646). Low severity: the two lessons in the example are generic, and PE1 does allow showing changed behaviour as one of two fixes."
+   },
+   {
+    "real": false,
+    "dup": "evidence-examples-show-not-name",
+    "reason": "Same line and same defect as evidence-examples-show-not-name. Low severity: PE1's fix does allow showing changed behavior as one option, but 'instead of naming the lesson' is v7 wording."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-never-swap-vs-always-fine-swaps",
+  "problem": "The section heading says never just swap a word; the same section lists word swaps that are \"always fine\". \"Always\" also overrides the rule that one formal word alone is not acted on.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but this is a general rule with an explicit exception stated in the same section: rewrite the sentence, and these six plain-verb swaps are allowed. 'Always fine' says the swap is safe, not that it must be made, so it does not override section 9."
+   },
+   {
+    "real": false,
+    "reason": "The plain-verb list is a labelled exception to the heading's rule, and 'always fine' means the swap is safe, not required. The conflict disappears when the section is read as rule plus exception."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-research-cut-suggest-vs-keep-hedges",
+  "problem": "\"These results suggest that X\" carries the hedge \"suggest\". Rule 8 cuts the phrase, which leaves X stated as fact; rule 6 and SKILL.md say that hedge stays and no claim is strengthened.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. Rule 8 lists 'These results indicate/suggest that' as staging to cut with no condition; 'suggest' is a hedge, and rule 6 says a hedge the notes have stays and no claim is strengthened. Only bites when the notes hedge the result, so low severity."
+   },
+   {
+    "real": false,
+    "reason": "Rule 8 targets connective staging the model adds; rule 6, two rules above in the same list, keeps a hedge the notes have and forbids strengthening. Nothing instructs stating X as fact. The edit-a-draft case is covered by executability-research-problems-listed-below."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-reflection-count-and-placement",
+  "problem": "The limit and place of reflection are stated three ways: once; at the end plus one line in the middle (two places); and one to three sentences after the scene that earns them. \"After the scene\" also collides with \"no sentence after them explaining what they meant\".",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but the conflict dissolves in context. Section 5 (coaching) says one block of one to three sentences after the scene that earns it, once; section 10 (model-written sample) has its own stricter rule, and the 'Comment once' label is defined by the rest of its own bullet. A reflection that adds what the facts do not is also different from a sentence explaining a scene."
+   },
+   {
+    "real": false,
+    "reason": "The statements cohere in context: 'Comment once' is the lead-in to the precise rule in the same bullet (end plus at most one line in the middle), and section 5's 'one to three sentences ... comment on meaning once' is compatible with it. No opposite directives."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-flat-first-sentence",
+  "problem": "A plain-fact opening is a mark of a failed essay at L51-52 and one of the ways admitted essays open at L77; the critique step flags only a thesis. tells.md narrows the tell to a flat fact \"followed by background\", but personal-essay.md does not.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but 'a flat factual first sentence' at L51-52 is one feature in a cluster that defines the cool essay (with filler, framing devices and a shrug ending), not a ban on plain-fact openings. No rule forbids the opening L77 describes, and L211 flags only a thesis."
+   },
+   {
+    "real": false,
+    "reason": "L51-52 describes a cluster of features of a failed model essay; L77 describes the variety of admitted openings and says these 'are not targets'; L211 flags only a thesis. No instruction tells the agent both to use and to flag a plain-fact opening."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-coach-scope-graded-work",
+  "problem": "The trigger for Coach on school work is stated three ways: graded assignments that forbid AI writing; anything graded; and practice essays too. A graded essay with no stated AI rule is Coach under SKILL.md and not under personal-essay.md.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "executability-coach-trigger-unknowable",
+    "reason": "Valid (the Coach trigger is worded three ways), but executability-coach-trigger-unknowable quotes the same three lines and adds the missing instruction to ask, so it is the fuller statement."
+   },
+   {
+    "real": false,
+    "dup": "executability-coach-trigger-unknowable",
+    "reason": "Valid (three wordings of the Coach trigger for school work); same defect as executability-coach-trigger-unknowable, whose fix covers all three locations."
+   }
+  ]
+ },
+ {
+  "id": "contradiction-activity-list-numbers",
+  "problem": "The genre note puts the activity list under \"one example ... not a run of figures\" and \"the conclusion stated plainly\". The activity-list section asks for numbers for scale and results and no full sentences.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The SKILL.md genre note names the activity list inside 'one example ... not a run of figures ... conclusion stated plainly', while the activity-list section asks for numbers and no sentences. The specific section would normally win, so low severity."
+   },
+   {
+    "real": false,
+    "reason": "The genre note is a summary that points to short-answers.md for full guidance, and the mode table routes activity lists to that file's activity-list section, which governs. Listing 'activity list' in the note's parenthesis is loose but resolved by the routing."
+   }
+  ]
+ },
+ {
+  "id": "executability-rebuild-trigger-conflict",
+  "problem": "The two lines choose different modes for the same input. A pasted text that reads as AI, with \"fix this\" and no word on who wrote it: line 117 says Edit (keep the sentences), line 191 says Rebuild (write every sentence fresh). \"Reads as AI-written\" is exactly the suspicion that line 117 rules out as a trigger.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-rebuild-trigger",
+    "reason": "Valid, same two lines and same fix as contradiction-rebuild-trigger."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-rebuild-trigger",
+    "reason": "Valid; identical to contradiction-rebuild-trigger."
+   }
+  ]
+ },
+ {
+  "id": "executability-pass-two-edit-mode",
+  "problem": "\"Edit mode\" and \"steps 3 and 4\" are not the same thing. Edit is defined as a minimum edit that keeps the sentences and ends with a five-item suggestion list, and it never mentions steps 3 and 4 (only Write says \"Run the full procedure\", line 96). Pass two expects invented feelings and events to be \"cut or replaced\" (line 56-57), which Edit forbids. Treating the draft as \"someone else's\" also triggers step 5's change note on the agent's own draft. The agent cannot tell which of the two pass two means.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-edit-mode-two-senses",
+    "reason": "Valid, same lines and same defect as contradiction-edit-mode-two-senses."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-edit-mode-two-senses",
+    "reason": "Valid; same defect as contradiction-edit-mode-two-senses."
+   }
+  ]
+ },
+ {
+  "id": "executability-keep-meaning-vs-drop-claims",
+  "problem": "A significance tail is a claim and a stacked hedge is a hedge. The hard rule says both survive unless the user agrees; the audit says to drop them. No order of precedence is given, and the label \"hard rule\" suggests the audit loses, which would switch off the Inflation and Tone passes whenever the agent edits someone's text.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-claims-survive-vs-cut-fixes",
+    "reason": "Valid, same defect (hard rule 2 against the audit's cut fixes) as contradiction-claims-survive-vs-cut-fixes."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-claims-survive-vs-cut-fixes",
+    "reason": "Valid; same defect as contradiction-claims-survive-vs-cut-fixes."
+   }
+  ]
+ },
+ {
+  "id": "executability-edit-output-conflict",
+  "problem": "In Edit mode both rules apply. One caps what follows the text at three lines about what changed; the other requires up to five lines of suggestions. It is not stated whether the five replace, add to or count against the three. Rebuild adds a further \"one line\" (line 122-123) with the same gap.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-output-three-lines-vs-five",
+    "reason": "Valid, same lines (step 5 against Edit's list of five) as contradiction-output-three-lines-vs-five."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-output-three-lines-vs-five",
+    "reason": "Valid; same defect as contradiction-output-three-lines-vs-five."
+   }
+  ]
+ },
+ {
+  "id": "executability-research-row-vs-coach",
+  "problem": "A science-fair abstract or a graded lab write-up is work a student submits as their own, so the Coach definition (never write it) and row 186 (Write from notes when there is no draft) both claim it. Row 188 carries a Coach exception and row 186 does not, so which rule wins is undefined.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-research-vs-coach-scope",
+    "reason": "Valid, same defect (research row against the Coach definition) as contradiction-research-vs-coach-scope."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-research-vs-coach-scope",
+    "reason": "Valid; same defect as contradiction-research-vs-coach-scope."
+   }
+  ]
+ },
+ {
+  "id": "executability-research-problems-listed-below",
+  "problem": "\"The problems listed below\" has no fixed referent: the parenthesis names three, the \"tends to\" list has seven, the Rules have nine. If Rule 8 counts, the agent must cut \"In this study\" from a human draft that line 14 says to keep. \"Hedges they did not mean\" and \"invented content\" also cannot be told from the draft, which is the only source when editing; SKILL.md hard rule 2 says every hedge survives.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-research-remove-hedges-vs-hard-rule-2",
+    "reason": "Valid, same line (research.md L17-18) and same two problems (unclear referent of 'listed below', hedges that cannot be judged from the draft) as contradiction-research-remove-hedges-vs-hard-rule-2. Its extra point is fair: if rule 8 counts, it cuts 'In this study' from a draft that L14 says to keep."
+   },
+   {
+    "real": true,
+    "reason": "Quotes exist. 'The problems listed below' at research.md L17 has no fixed referent (three in the parenthesis, seven habits, nine rules); if rule 8 counts it cuts phrases L14 says to keep; and 'hedges they did not mean' cannot be judged from the draft and conflicts with hard rule 2."
+   }
+  ]
+ },
+ {
+  "id": "executability-pass-one-vs-sample-rules",
+  "problem": "Pass one orders a late climax and connected scenes, and SKILL.md line 57-58 then says \"keep the structure that pass one built\". The sample-essay rules, the only place the agent drafts a personal essay, forbid both moves, and tells.md PE11 (line 160-162) lists connecting sentences as the most cited AI sign. No precedence is stated.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-climax-late-vs-loose-structure",
+    "reason": "Valid, same lines and same defect as contradiction-climax-late-vs-loose-structure."
+   },
+   {
+    "real": false,
+    "dup": "evidence-climax-late-connect",
+    "reason": "Valid; same defect as evidence-climax-late-connect."
+   }
+  ]
+ },
+ {
+  "id": "executability-messages-check-scope",
+  "problem": "\"Every part\" and \"the usual order\" point at a list 25 lines earlier that exists only for appeals, yet the checklist runs on every email and group message routed to this file (SKILL.md row 187). \"Cut one or two\" does not say which parts may go, while rules 2 and 4 require the ask and the money to stay. In Edit mode, cutting parts of the user's own text also breaks SKILL.md hard rule 2.",
+  "verdicts": [
+   {
+    "real": true,
+    "reason": "Quotes verified. The checklist items at L64 and L66 are appeal-specific but unscoped, and in Edit 'Cut one or two' would remove parts of the user's own text against hard rule 2. Low severity, and partly overstated: rule 3 (L41-42) does name which parts to leave out."
+   },
+   {
+    "real": false,
+    "reason": "The appeal-specific checks are plainly inapplicable to other messages, and rule 3 names the parts that may be dropped (thank-you line, restated goal, what the runner gains), so 'cut one or two' has a referent. The remaining Edit-scope concern is the one in executability-messages-semicolons-vs-edit."
+   }
+  ]
+ },
+ {
+  "id": "executability-example3-shows-forbidden-rewrite",
+  "problem": "The only personal-essay example in the file Coach sends the agent to shows the agent handing back rewritten sentences of a student's own draft (one sentence split in two, \"at the shelter\" moved in). Coach forbids exactly that. Its advice in line 44, \"Show that instead of naming the lesson\", also contradicts personal-essay.md line 170 (\"I learned that\u2026\" is fine). An agent that imitates the example breaks the rule. Related to known item 1, but this file needs its own change.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-example3-rewrites-student-essay",
+    "reason": "Valid, same defect as contradiction-example3-rewrites-student-essay; its 'show instead of naming' point is covered by contradiction-example3-show-instead-of-naming-lesson."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-example3-rewrites-student-essay",
+    "reason": "Valid; same defect as contradiction-example3-rewrites-student-essay (its line 44 point is evidence-examples-show-not-name)."
+   }
+  ]
+ },
+ {
+  "id": "executability-examples-break-own-fact-claim",
+  "problem": "Three afters contradict line 3 and SKILL.md line 211 (\"all meaning-preserving\"). Example 6 adds \"for college\" and an offer to send a r\u00e9sum\u00e9. Example 1 adds a claim about \"most remaining errors\" and \"keyword filters\" that the before does not make. Example 8 drops the hedge \"mainly\" while its note (line 102-103) says \"no fact added or lost\". The agent is shown invention as the model of a correct edit. Same class as known item 4, but in examples.md, which that item does not cover.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-examples-not-fact-preserving",
+    "reason": "Valid, same three examples (1, 6, 8) and same claim as contradiction-examples-not-fact-preserving."
+   },
+   {
+    "real": false,
+    "dup": "examples-ex1-added-claims",
+    "reason": "Valid; covered one by one by examples-ex1-added-claims, examples-ex6-email-inventions and examples-ex8-hedge-dropped."
+   }
+  ]
+ },
+ {
+  "id": "executability-number-provenance-no-fallback",
+  "problem": "When the draft or notes give no sample size, or do not say whether a figure is in-sample, line 119 cannot be met without asking or inventing, and it names no fallback. When editing a researcher's draft it also means adding content, which line 5 forbids (\"never add content\").",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but a fallback is stated: research.md rule 1 says to leave a missing number out and bracket a missing source, and hard rule 1 gives the general '[ask: ...]' route. When editing, a missing sample size belongs in Edit's list of suggested changes."
+   },
+   {
+    "real": false,
+    "reason": "The fallback exists: hard rule 1 (ask or write [ask: ...]) and research rule 1 (leave a missing number out). In Edit, a missing sample size goes into the suggestions list. No conflict remains."
+   }
+  ]
+ },
+ {
+  "id": "executability-group-donation-ask-position",
+  "problem": "A donation request in a WhatsApp group is an appeal (ask at the end) and also a group chat that needs an action (ask in the first two lines). The file names that case itself and does not say which rule governs it. SKILL.md line 169-170 exempts only \"An appeal page\".",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but rule 2 already decides by medium: 'a page someone chose to open' may start from the reason, 'group chats and emails that need an action' put the ask in the first two lines. A WhatsApp donation request is a group chat, and SKILL.md L169-170 exempts only an appeal page."
+   },
+   {
+    "real": false,
+    "reason": "Rule 2 decides by channel: 'a page someone chose to open' may start from the reason, and 'group chats and emails that need an action are the exception'. SKILL.md L168-170 draws the same line (appeal page vs group message). A WhatsApp donation request falls under the exception."
+   }
+  ]
+ },
+ {
+  "id": "executability-tidy-epiphany-fix-conflict",
+  "problem": "The same pattern (everything resolved by the end) gets opposite fixes. PE2 says end on an image or an open question; the SKILL.md Lessons row and PE11 say end on the writer's whole-hearted conclusion; section 8 lists the PE2 fix as an over-correction. No rule says which applies when.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-pe2-open-question-fix",
+    "reason": "Valid, same line (tells.md PE2 fix) and same conflict as contradiction-pe2-open-question-fix."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-pe2-open-question-fix",
+    "reason": "Valid; same defect as contradiction-pe2-open-question-fix."
+   }
+  ]
+ },
+ {
+  "id": "executability-montage-vs-returning-motif",
+  "problem": "The Montage structure the coach may propose is defined by a recurring thread whose meaning changes by the end. That is the \"motif that returns\" which section 10 bans and PE11 calls the most cited AI sign. The agent cannot both offer the structure and flag it.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-montage-vs-no-returning-motif",
+    "reason": "Valid, same lines and same defect as contradiction-montage-vs-no-returning-motif."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-montage-vs-no-returning-motif",
+    "reason": "Valid; same defect as contradiction-montage-vs-no-returning-motif."
+   }
+  ]
+ },
+ {
+  "id": "executability-voice-check-needs-hearing",
+  "problem": "In a text chat the agent has never heard the student, so it cannot judge what sounds like them out loud or notice a laugh or a pause. \"Ask a friend\" is an order in a list addressed to the agent that only the student can carry out. The out-loud test also pulls against the target in line 33 (\"a smart teenager writing carefully, not talking\").",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The main claim does not hold: 'out loud', 'listen for' and 'a laugh or a pause' are figurative and adapt directly to a text chat, and 'Ask a friend' is plainly feedback to pass to the student. The side point (out-loud test against the written-voice target) is real but is contradiction-written-voice-vs-out-loud."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-written-voice-vs-out-loud",
+    "reason": "Main claim does not hold: 'sound like them out loud' is figurative (the agent has the student's interview answers) and 'Ask a friend' is advice the coach passes to the student. The valid part (tension with the written-voice target at L33) is contradiction-written-voice-vs-out-loud."
+   }
+  ]
+ },
+ {
+  "id": "executability-opening-flat-statement",
+  "problem": "The item asks the agent to sort the opening into three kinds and then gives an action only for a fourth kind (a thesis). It gives none for \"flat statement\", which one file treats as a tell and the other as a normal way to open.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-flat-first-sentence",
+    "reason": "Same lines as contradiction-flat-first-sentence, also not real. Item 4 asks the coach to say which kind of opening the draft has and to flag a thesis; a flat statement needs no action because no rule forbids it (it is only one feature of the cool-essay cluster)."
+   },
+   {
+    "real": false,
+    "reason": "L211 reads as: a scene, odd fact or flat statement is acceptable; a thesis is flagged. That matches the openings list at L181-183; no action is missing."
+   }
+  ]
+ },
+ {
+  "id": "executability-short-take-limit-mismatch",
+  "problem": "The same item has two character limits (280 and 200). The advice also splits: \"a little playful\" and \"humor if the student has it\" for short takes, against a checklist that cuts any quip with no exception.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-short-take-character-limit",
+    "reason": "Valid, but it only combines contradiction-short-take-character-limit (280 against 200) and contradiction-short-take-humor."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-short-take-character-limit",
+    "reason": "Valid; the 280 vs 200 part is contradiction-short-take-character-limit and the humor part is contradiction-short-take-humor."
+   }
+  ]
+ },
+ {
+  "id": "executability-pe-codes-out-of-order",
+  "problem": "The codes run PE8, PE10, PE11, PE9. A reader sent to PE9 looks after PE8, finds PE10 and may conclude PE9 does not exist.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The order is PE8, PE10, PE11, PE9 as quoted, but the stated harm does not follow: a search of all seven files finds no reference to any PE code outside the headings, so no reader is ever sent to PE9. Cosmetic; tidy it if the file is touched anyway."
+   },
+   {
+    "real": true,
+    "reason": "Order in tells.md is PE8, PE10, PE11, PE9 as quoted. Cosmetic only: no file points to a PE code by number (checked by search), so nothing misroutes."
+   }
+  ]
+ },
+ {
+  "id": "executability-dangling-pointers-skill-md",
+  "problem": "\"The section below\" names no section: Coach is a paragraph inside \"## Modes\" 95 lines later, and \"## Integrity, stated plainly\" fits as well. \"False-positive guard\" and \"revision passes\" are names that appear in neither target file (tells.md section 9 is \"When not to act\"; personal-essay.md has Steps 1 to 6).",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but these are descriptions and not pointers by name. 'The section below' is findable (Coach under Modes names application essays), 'false-positive guard' describes tells.md section 9, 'revision passes' describes steps 5 and 6. No wrong behaviour follows."
+   },
+   {
+    "real": false,
+    "reason": "These are descriptive labels, not broken pointers: Coach is found under Modes, 'false-positive guard' is tells.md section 9 (When not to act), 'revision passes' are steps 5 and 6. Imprecise but resolvable."
+   }
+  ]
+ },
+ {
+  "id": "executability-style-rules-here-scope",
+  "problem": "\"Here\" sits in the Edit paragraph, which has no style rules of its own, so it is unclear whether the override covers Edit only or every mode, and which rules count as \"style rules\". \"The dash rule\" is named nowhere (it is the Format row and tells.md R6). When a sample uses dashes and a project rule bans them, the sample \"overrides\" and the project \"wins\", with no order between the two.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but ordinary reading resolves each point: 'here' is this skill, 'the dash rule' is the Format row and R6, and L192-193 already says project rules win on conflicts, which covers a sample-against-project clash. No concrete case with two answers is shown."
+   },
+   {
+    "real": false,
+    "reason": "'Here' reads naturally as this skill's defaults; the dash default is identifiable (Format row, tells.md R6, which already says the user's own drafts override); a sample-versus-project conflict is an edge case that L192-193 settles ('they win on conflicts'). Wording is loose but no instruction is unexecutable."
+   }
+  ]
+ },
+ {
+  "id": "executability-item7-cites-wrong-sections",
+  "problem": "Sections 2 and 4 exist, but \"thesaurus words\" has no entry in either: vocabulary is section 6 and thesaurus swaps are in section 8. The term is also not set apart from \"a bigger word than speech would use\" (personal-essay.md line 76), which the same file says admitted essays contain.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Pointer nit only: sections 2 and 4 cover six of the seven items, and 'thesaurus words' is explained in the same file at L33-35 (showing off, not formality). The substantive issue with this list is covered by known item 8 and evidence-step5-stale-ai-words."
+   },
+   {
+    "real": false,
+    "reason": "'(see tells.md sections 2 and 4)' is a general pointer that fits most items in the list; it does not claim to be exhaustive. The substantive point about 'thesaurus words' is covered by evidence-step5-stale-ai-words."
+   }
+  ]
+ },
+ {
+  "id": "executability-audit-order-two-versions",
+  "problem": "Both claim to be the audit order and they differ. SKILL.md runs Content, Staging, Inflation, Lessons, Rhythm, Endings, Tone, Words, Format. tells.md runs Content, Staging and structure, Inflation and tone, Personal-essay tells, Rhythm and punctuation, Vocabulary, Formatting. Tone is pass 7 in one and section 3 in the other; triads, fragment stacks and kickers sit under Rhythm and Endings in SKILL.md but under Staging (S8, S9, S11) in tells.md; \"words last\" is followed by a Formatting section. No mapping from the nine passes to the catalog entries is given.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but both orders agree on what matters (content first, vocabulary and format last), and SKILL.md step 3 is explicitly the procedure while tells.md is the detail catalog grouped by kind. The difference in where Tone and kickers sit changes no outcome."
+   },
+   {
+    "real": false,
+    "reason": "The two orders agree in substance (content, staging, inflation, lessons, rhythm, words, format); they differ only in where Tone and kicker endings are grouped. SKILL.md's table sets the order and tells.md supplies details; no behavior depends on the difference."
+   }
+  ]
+ },
+ {
+  "id": "executability-cover-letter-no-genre-note",
+  "problem": "The row sends a cover letter to \"Genre notes above\", and there is no cover-letter note there (nor one for the \"posts\" and \"summaries\" named in line 9). The pointer leads to nothing for that text.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "True that no cover-letter note exists, but row 188 is the catch-all row ('other prose' has no note either); finding no note simply leaves the general procedure. No conflicting or wrong instruction results."
+   },
+   {
+    "real": false,
+    "reason": "Row 188 is a catch-all ('other prose'); where no genre note exists the general Procedure applies. A missing note for one listed genre is not a broken instruction."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex1-added-claims",
+  "problem": "The after adds three things the before never states: that \"most remaining errors\" are of one kind (a new quantified claim), that the filters are \"keyword\" filters (before says only \"a comprehensive set of filters\"), and that a BERT \"classifier\" is \"planned\" (before says \"future BERT-based approaches\"). This breaks the file's own header and Hard rule 1. The added sentence also uses \"X rather than Y\", which tells.md:48 lists under S1 corrective framing.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-examples-not-fact-preserving",
+    "reason": "Valid, and covered by contradiction-examples-not-fact-preserving (example 1). Its extra note that 'planned' and 'classifier' are also added is correct and should go into that fix; the 'rather than' point is weak because the contrast there is informative."
+   },
+   {
+    "real": true,
+    "reason": "Verified against the before (L10-12): the after adds 'most remaining errors', 'keyword filters' and 'planned BERT classifier', against the file's own header (L3) and hard rule 1. The 'rather than' sub-point is weak (the contrast is informative here)."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex6-email-inventions",
+  "problem": "The after invents \"for college\", a \"first\" deadline (implying several), and an offer to send a r\u00e9sum\u00e9 and a list of work; none is in the before. The writer's claim \"I truly value the insights I gained in your class\" is replaced by a reason for asking that the writer never gave. The placeholders \"[date]\" and \"[one specific thing from your class]\" also do not use the `[ask: ...]` form that Hard rule 1 and messages.md:60 prescribe, and the header (line 4) promises \"a bracketed question\".",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-examples-not-fact-preserving",
+    "reason": "Valid, and covered by contradiction-examples-not-fact-preserving (example 6). Its extra notes are correct: 'first deadline' implies several, and the placeholders are not in the '[ask: ...]' form the header promises."
+   },
+   {
+    "real": true,
+    "reason": "Verified: the after adds 'for college', a 'first' deadline and an offer to send a r\u00e9sum\u00e9 and a list of work, none in the before (L73-75). Placeholders are '[date]' style, not the '[ask: ...]' form the header promises."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex8-hedge-dropped",
+  "problem": "The hedge \"mainly\" is gone (it marks that the Moon is not the only cause), and so is the statement that this pull is what causes tides. The Why line then asserts \"no fact added or lost\", so the example teaches that dropping a hedge counts as meaning-preserving.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-examples-not-fact-preserving",
+    "reason": "Valid, and covered by contradiction-examples-not-fact-preserving (example 8 drops 'mainly' while claiming no fact was lost)."
+   },
+   {
+    "real": true,
+    "reason": "Verified: 'mainly' in the before (L93) is gone from the after (L98) while the Why line (L102-103) claims no fact added or lost. Low to medium."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex3-coach-rewrite",
+  "problem": "The example shows the coach handing a student rewritten sentences from the student's own personal essay, which Coach mode forbids. The rewrite also splits the student's 18-word clause (\"Every Saturday I cleaned the cat room, which smelled like ammonia no matter how much bleach we used\") into sentences of 10 and 11 words, against Edit mode's \"keep their sentences\" and toward the short model average the skill warns about (personal-essay.md:65-66, \"Model versions average 11 to 16 words\").",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-example3-rewrites-student-essay",
+    "reason": "Valid, same defect as contradiction-example3-rewrites-student-essay. Its extra observation is correct: the rewrite splits an 18-word clause into sentences of 10 and 11 words."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-example3-rewrites-student-essay",
+    "reason": "Valid; same defect as contradiction-example3-rewrites-student-essay."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex1-precision-glossed",
+  "problem": "The only report-register example replaces the field term \"precision\" with a lay paraphrase and rewrites every sentence. research.md names both as marks of a model version, and lists \"precision\" among the domain terms to keep (research.md:115).",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-example1-glosses-technical-term",
+    "reason": "Valid, same line and same defect as contradiction-example1-glosses-technical-term."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-example1-glosses-technical-term",
+    "reason": "Valid; same defect as contradiction-example1-glosses-technical-term."
+   }
+  ]
+ },
+ {
+  "id": "examples-tells-s1-colon",
+  "problem": "Apart from the added fact already known, the model rewrite uses a colon to introduce an explanation, which the skill's Format rule does not allow and its step 4 names as an over-correction.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Already covered by the known items: the sentence is the one in known item 4 (its fix removes the clause and the colon together), and an explanatory colon in tells.md against the SKILL.md Format rule is the conflict in known item 3."
+   },
+   {
+    "real": false,
+    "reason": "Same sentence as known item 4 and same colon conflict as known item 3; the proposed fix is what fixing item 4 already produces. Not a separate defect."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex3-show-not-name",
+  "problem": "The model feedback tells the student to replace the stated lesson with showing. The rest of the skill says a stated lesson is fine when it is the student's own and that removing lessons is an over-correction. Same root as the known personal-essay.md step 5 item 7 conflict, but this is a separate line in examples.md that a fix there would not reach.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "evidence-examples-show-not-name",
+    "reason": "Valid; same line and defect as evidence-examples-show-not-name."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex7-strengthened",
+  "problem": "\"loses its teeth\" says the argument loses force. \"the conclusion does not follow\" says the argument is invalid, which is a stronger claim and introduces \"the conclusion\".",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Not clear enough to count. 'Load-bearing' literally says the argument rests on the assumption, so 'the argument depends on it; without it the conclusion does not follow' is a fair literal rendering of the two metaphors together and not an evident strengthening."
+   },
+   {
+    "real": false,
+    "reason": "The before says the assumption is 'load-bearing' and that without it 'the whole argument loses its teeth'; 'the conclusion does not follow' is a fair literal reading of that metaphor, not a clear strengthening."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex3-months-added",
+  "problem": "The model feedback assumes the student volunteered for \"months\". The before gives no length of time.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The phrase is in a coach's question to the student, not in an 'after' text, so no invented fact enters the essay and the header at L3 does not apply. 'Every Saturday' already implies a stretch of time."
+   },
+   {
+    "real": false,
+    "reason": "The phrase is inside a coaching question to the student, not in an 'after' text, and 'every Saturday ... a journey' already implies an extended period. Too slight to count."
+   }
+  ]
+ },
+ {
+  "id": "examples-feedback-punctuation",
+  "problem": "The two samples of model feedback (Coach feedback in example 3, Detect output in example 10) use semicolons and explanatory colons. Nothing exempts feedback notes from the Format rule, so an agent that copies the samples breaks the rule.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Derivative of known item 3. Whether a semicolon for a close link or a colon for an explanation is allowed is exactly the R5 against Format-row conflict already listed; the examples follow R5. The Detect lines also use a fixed 'quote (location): pattern' label format."
+   },
+   {
+    "real": false,
+    "reason": "The Format rule governs the prose being audited, not the agent's feedback notes or the 'quote (location): pattern' label format. Nothing in the skill applies it to critique output."
+   }
+  ]
+ },
+ {
+  "id": "examples-short-answer-thing-opener",
+  "problem": "The model sentence has the same \"The thing I ... is\" opener that two other files give as their example of an interview-answer opening to avoid. It also repeats the prompt's words (\"do for fun\") in the very sentence that says restating the prompt wastes words.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Quotes exist, but the rules are for different texts: a short answer is an answer to a question and should state it plainly, while personal-essay.md L157 and PE9 are about paragraphs of a personal essay opening like interview answers. The sentence itself says such a plain statement is fine and common in admitted answers."
+   },
+   {
+    "real": false,
+    "reason": "Scoped by genre: a short answer is an answer to a question, so a direct answer opener is right there (DEVLOG L1031-1032 found admitted answers do this); the personal-essay rule is about essay paragraphs opening like interview answers."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex2-portability-polarity",
+  "problem": "The same test is used with opposite polarity. In examples.md \"passes\" means the sentence is generic (bad). In personal-essay.md \"fails\" means the material is specific (good). An agent cannot tell whether passing the test is the goal.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The finding misreads the two lines. Both use the same polarity: the test asks whether a sentence is portable, so 'passes' means portable (bad, examples.md L29) and 'fails' means not portable (good, personal-essay.md L142). Each line also glosses itself in parentheses."
+   },
+   {
+    "real": false,
+    "reason": "The polarity is the same in both files: 'passes' means portable (generic) in examples.md L29 and 'fails' means not portable (specific) in personal-essay.md L142. Both carry a clarifying parenthesis."
+   }
+  ]
+ },
+ {
+  "id": "examples-plain-verb-swaps",
+  "problem": "The section heading says never to swap a word, and the swap list fifteen lines later says these swaps are \"always fine\". \"Always\" also overreaches: \"serves as\" to \"is\" can change a claim (\"the gym serves as a shelter\"), which Hard rule 2 forbids.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-never-swap-vs-always-fine-swaps",
+    "reason": "Same lines as contradiction-never-swap-vs-always-fine-swaps, also not real: a general rule with an explicit listed exception. The 'serves as' to 'is' meaning point is a nit that hard rule 2 already covers."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-never-swap-vs-always-fine-swaps",
+    "reason": "Same claim as contradiction-never-swap-vs-always-fine-swaps: the swap list is a labelled exception. The 'serves as' meaning-change point is speculative."
+   }
+  ]
+ },
+ {
+  "id": "examples-ex9-no-original",
+  "problem": "The example compares the bad rewrite with \"the original\" but shows no before text, so the reader cannot tell what was rewritten (presumably the smartphone paragraph of example 2).",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Cosmetic. The example is labelled as what not to do and its lesson (fragments, forced slang, wrong register) stands without a before text; 'the original' is evidently the phones school essay. No behaviour depends on it."
+   },
+   {
+    "real": false,
+    "reason": "The example is labelled as what not to do and stands on its own; 'the original' is inferable as the smartphone paragraph of example 2. No instruction depends on it."
+   }
+  ]
+ },
+ {
+  "id": "examples-hamilton-2022-date",
+  "problem": "A model quote in the same section narrates an event of 24 February 2022, so that essay cannot have been written before 2022. The files do not say whether it is one of the 24. If it is, \"all written before 2022\" is false; if it is not, the file should say so. Not provable from the files alone; it affects the credibility of the evidence claim, not agent behaviour.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "Checked and not a contradiction. notes/essay_craft.md L171-173 gives the quoted essay as Hamilton Class of 2030, a research-phase quote in the skill since v1, while the benchmark corpus is class years up to 2026 (DEVLOG L571-573). The essay is not among the 24, so 'all written before 2022' is not contradicted by it."
+   },
+   {
+    "real": false,
+    "reason": "Not provable from the files, as the finding itself says: the quoted Hamilton line is an illustration in section 1 and nothing states it is one of the 24 compared essays."
+   }
+  ]
+ },
+ {
+  "id": "evidence-climax-late-connect",
+  "problem": "This SKILL.md line is unchanged since v7. Section 21 of the log found that holding the strongest scene for the end was a tell named in every AI version, and that connecting scenes was the main source of unsupported claims. v8 fixed both in personal-essay.md but not here, and personal-essay.md line 248 sends the writer back to \"the two passes described in SKILL.md step 2\", so the two files give opposite orders.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-climax-late-vs-loose-structure",
+    "reason": "Valid and its DEVLOG quotes check out (L594-599, L650, L793-794), but it is the same SKILL.md line and the same fix as contradiction-climax-late-vs-loose-structure."
+   },
+   {
+    "real": true,
+    "reason": "Verified: SKILL.md L55 'put the climax late and connect the scenes' is unchanged since v7. DEVLOG L594-599 names the strongest scene moved to the end as a tell in all AI versions, L650 reverses it for v8, and L793-794 credits removing connective observations with cutting unsupported claims from 1.50 to 0.12. personal-essay.md L248 sends the writer back to this step while L253-254 and L270-272 forbid both moves."
+   }
+  ]
+ },
+ {
+  "id": "evidence-pe2-open-question",
+  "problem": "PE2's fix is the v7 wording, unchanged. The log names exactly this advice (ending on \"an honest open question\") as the cause of v7's shrug endings, and the same file lists that outcome as an over-correction eight entries later.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-pe2-open-question-fix",
+    "reason": "Valid and the DEVLOG quote checks out (L637-639), but it is the same PE2 line and the same fix as contradiction-pe2-open-question-fix."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-pe2-open-question-fix",
+    "reason": "Valid, and the log quote (L637-639) is confirmed; same defect as contradiction-pe2-open-question-fix."
+   }
+  ]
+ },
+ {
+  "id": "evidence-examples-show-not-name",
+  "problem": "examples.md is unchanged since v7, the version whose \"show, do not state the lesson\" rule the log found left its essays with a sixth of the real essays' stated lessons. Coach mode points to this file to demonstrate technique, so the one personal-essay example still teaches the rule that v8 reversed. (Known item 8 covers personal-essay.md only.)",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-example3-show-instead-of-naming-lesson",
+    "reason": "Valid; I confirmed examples.md is byte-identical to v7's and the DEVLOG quotes check out. Same line and same defect as contradiction-example3-show-instead-of-naming-lesson."
+   },
+   {
+    "real": true,
+    "reason": "Verified: examples.md is byte-identical to v7's. 'Show that instead of naming the lesson' (L44) is v7 advice; DEVLOG L613, L645-646 and L717-719 show v7 had a sixth of the real essays' stated lessons and v8 reversed the rule. Low: PE1's fix still allows showing changed behavior as one option, and the two lessons cut are generic."
+   }
+  ]
+ },
+ {
+  "id": "evidence-messages-17-25-stale",
+  "problem": "\"Skill versions ... 17 to 25%\" is the development result for plain Claude and v8, before this guide existed. Texts written with this guide were judged human 59% of the time in two later rounds. The ranking claim still holds (every model text below every real one), but the percentage reads as the current skill's result.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The sentence is accurate as written: it describes the development comparison the guidance came from, and DEVLOG L869-870 gives plain 25% and skill v8 17%. It makes no claim about the current guide's result, and leaving out the later 59% understates the skill and contradicts nothing."
+   },
+   {
+    "real": false,
+    "reason": "The sentence describes the development comparison the guidance came from (plain 25%, v8 17%, DEVLOG L868-870) and is accurate as written; it does not claim to be the current skill's result. Leaving out the later 59% is not an error."
+   }
+  ]
+ },
+ {
+  "id": "evidence-peng-mandarin",
+  "problem": "The evidence base cites Peng et al. for corrective framing (S1, marked strong) in an English catalog. The section 19 review found the study measures only the Mandarin construction and corrected the paper; the skill's citation still reads as a general finding.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The line 'Peng et al. 2026 (corrective framing)' is a topic tag in a terse source list and is true as written; nothing in the skill claims the study measured English. S1's 'strong' label also rests on other sources in the catalog (expert annotators, Graphite), so no claim in the skill is contradicted."
+   },
+   {
+    "real": false,
+    "reason": "The line is a source list with topic tags; '(corrective framing)' is accurate and makes no claim about the language studied. The overgeneralized sentence was in the paper, not in the skill."
+   }
+  ]
+ },
+ {
+  "id": "evidence-dash-default",
+  "problem": "The log names the dash ban as one of three rules that moved the skill away from real admitted essays. v8 changed the other two (contractions, stated lessons) and left this one, and R6 gives no hint that real pre-2022 writers use dashes (about one per essay). This was never tested with judges, so it is a weak contradiction. Note that DEVLOG.md lines 1312-1313 read the surface-feature result as support for the dash rule, but in scripts/modes_benchmark/tools/surface_auc.py label 1 is human, so the 0.998 AUC means the real essays are the ones with dashes.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "As the finding itself says, this is weak: the log never tested dashes with judges, R6's stated reason is reader perception, and R6 already lets a user's own draft override, so the proposed fix adds almost nothing. Side note for the log, not the skill: surface_auc.py does label real text as 1, so DEVLOG L1312-1313 may read the dash result the wrong way round."
+   },
+   {
+    "real": false,
+    "reason": "R6's factual sentence matches the data (models use no dashes) and it already says a user's own drafts override the default, so a writer's dashes are not removed. The log's note that real essays use dashes (L614, L620-622) was never tested with judges, as the finding admits; not a demonstrated defect. The DEVLOG misreading at L1312-1313 is a log issue, not a skill issue."
+   }
+  ]
+ },
+ {
+  "id": "evidence-voice-out-loud",
+  "problem": "The critique step still uses the spoken-voice test from v7. v8 replaced the spoken standard with the careful written voice in section 1 after the log tied the spoken standard to filler, and reaching words were a sign of real students. Under item 8 a coach would flag a student's reaching phrases because they do not sound like speech.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-written-voice-vs-out-loud",
+    "reason": "Valid and the DEVLOG quotes check out, but it is the same line (personal-essay.md L217) and the same defect as contradiction-written-voice-vs-out-loud."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-written-voice-vs-out-loud",
+    "reason": "Valid, with the log quotes confirmed; same defect as contradiction-written-voice-vs-out-loud."
+   }
+  ]
+ },
+ {
+  "id": "evidence-coach-tight-structure",
+  "problem": "Sections 5 and 7 are v7 text. They coach the student toward the tight structure (every paragraph on the spine, a thread that returns with new meaning) that section 21 found to be the top sign of a model essay, while section 1 and section 10 of the same file, rewritten in v8, say admitted essays are loose and keep side details.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-spine-only-vs-side-detail",
+    "reason": "Valid in part, but it is the union of contradiction-spine-only-vs-side-detail (L155-157, L210 against loose structure) and contradiction-montage-vs-no-returning-motif. Its evidence argument is also weaker for coaching: the log's tidy-structure finding is about model-written essays, and judges read structure in real students' essays as human far more often than as AI (31% against 6%)."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-montage-vs-no-returning-motif",
+    "reason": "The Montage part (L163-164) is contradiction-montage-vs-no-returning-motif. The rest extends evidence about model-written essays to soft coaching advice ('a candidate to cut', L210) that the log never tested, and L73-75 are stated to be descriptions, 'not targets'."
+   }
+  ]
+ },
+ {
+  "id": "evidence-research-define-once",
+  "problem": "Line 115 is carried over from the old academic.md (\"Define each once\"). Section 23 found glossed terms were a sign of the skill's own abstracts, and rule 7 was written to stop it. The leftover line tells the writer to define every domain term, against rule 7 in the same file.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "executability-research-rules-scope",
+    "reason": "Valid (L115 is carried over from v7's academic.md 'Define each once'), but it is the rule 7 against L115 conflict already inside executability-research-rules-scope."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-research-terms-defined-vs-unexplained",
+    "reason": "Valid, and confirmed as carried over from v7 academic.md ('Define each once'); same defect as contradiction-research-terms-defined-vs-unexplained."
+   }
+  ]
+ },
+ {
+  "id": "evidence-research-20-vs-23",
+  "problem": "The same statistic has two values in one file. The log (DEVLOG.md line 969) records only the 83 to 96% side, so neither real-abstract figure can be checked against it.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-research-fluency-percent",
+    "reason": "Same two lines and same fix as contradiction-research-fluency-percent."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-research-fluency-percent",
+    "reason": "Valid; same defect as contradiction-research-fluency-percent."
+   }
+  ]
+ },
+ {
+  "id": "evidence-pe-section9-stale",
+  "problem": "The section 9 bullets predate the short-answer benchmark (only the pointer line was added in v10). They recommend a playful touch and a closing \"what I still can't answer\" beat, two of the patterns section 23 found judges cite as model over-crafting, and they give 280 characters where short-answers.md gives 200.",
+  "verdicts": [
+   {
+    "real": false,
+    "dup": "contradiction-short-take-character-limit",
+    "reason": "Mostly the 280 against 200 mismatch and the playful against no-quips tension, both already reported (contradiction-short-take-character-limit, contradiction-short-take-humor). Its one new point ('what they still can't answer' against the 'honest limitation' sign) is weak. Its fix, dropping the stale 'In brief' bullets and keeping the pointer, is a reasonable way to fix both."
+   },
+   {
+    "real": false,
+    "dup": "contradiction-short-take-character-limit",
+    "reason": "The 280 vs 200 part is contradiction-short-take-character-limit and the 'playful' part is contradiction-short-take-humor. The remaining point ('what they still can't answer' as an honest-limitation beat) is weak: short-answers.md rule 4 itself says to state real uncertainty once."
+   }
+  ]
+ },
+ {
+  "id": "evidence-edit-why-omits-learners",
+  "problem": "The numbers quoted match the log. The defect is what the sentence leaves out: three genres were tested, and the third (learner essays) is the one the next sentence gives an instruction about. There a corrected text of any kind was judged the student's own only about half the time. This is separate from known item 1 (which wording wins); it is the log evidence that bears on it, and it points against \"return the corrected text\" for a learner's graded essay.",
+  "verdicts": [
+   {
+    "real": false,
+    "reason": "The sentence is accurate and scoped: it says the edits kept 'abstracts and appeals' reading as the writer's own, and the next sentence treats learner essays separately. An omission is not a contradiction. The learner numbers (DEVLOG L1180-1182, L1386-1391) are useful evidence for resolving known item 1, which is where they belong."
+   },
+   {
+    "real": false,
+    "reason": "The sentence is accurate and explicitly scoped to abstracts and appeals; nothing in it is contradicted by the log. The learner-essay result (copyedits judged the student's own in 47 to 62% of ratings) is evidence for resolving known item 1, not a separate defect."
+   }
+  ]
+ }
+]

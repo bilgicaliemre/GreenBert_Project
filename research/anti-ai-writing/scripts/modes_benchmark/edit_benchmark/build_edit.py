@@ -44,6 +44,6 @@ for c in conds:
     jobs_all += spec['jobs']
     shared = spec['shared']
 schema = {'texts': {'type': 'object', 'properties': {'texts': {'type': 'array', 'items': {'type': 'object', 'properties': {'id': {'type': 'string'}, 'text': {'type': 'string'}}, 'required': ['id', 'text']}}}, 'required': ['texts']}}
-final = {'name': f'eb-edit-{G}-{outname}', 'description': f'Edit-mode benchmark ({G}): {",".join(conds)}', 'phase': 'Edit', 'model': 'opus',
+final = {'name': f'eb-edit-{G}-{outname}', 'description': f'Edit-mode benchmark ({G}): {",".join(conds)}', 'phase': 'Edit', 'model': os.environ.get('BENCH_MODEL'),
          'schemas': schema, 'shared': {skill_key: SK['SI'][1]}, 'jobs': jobs_all}
 bench.run_mkwf(final, f'{B}/{outname}.js'); print(G, len(jobs_all), 'jobs')

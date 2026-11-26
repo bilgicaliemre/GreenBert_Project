@@ -297,3 +297,105 @@ I downloaded fresh copies of the cited official pages and PDFs and compared ever
 ### Could not verify
 - **Journal of Student Research.** jsr.org still returns HTTP 522 (and its DNS fails from the fetch tool), so its fees and AI policy remain UNVERIFIED.
 - **LUHME's Jul 15, 2026 deadline.** I did not re-check it. It has passed, so it does not change any recommendation.
+
+## 11. TÜBİTAK 2204-A 2027: verified rules for this paper (2026-11-25)
+
+Source: 2027 call text (`Ek-1b_2204_A_cagri_metni_2026-2027_17.08.2026_onaya_sunulan_v2.pdf`, identical to
+`2026-10/2204_A_cagri_duyurusu_2026-2027.pdf`), Proje Rehberi 2027 (`2026-10/2204A_proje_rehberi_2027.pdf`), the report
+template and TÜBİTAK's generative-AI guide. A research workflow read them and a checker confirmed 70 claims verbatim.
+
+- **One project per student.** §4.1.2: "Yarışmaya her öğrenci yalnızca bir proje ile katılabilir ve her proje en çok üç
+  öğrenci tarafından hazırlanır." Applications once a year (§3). "Birden fazla" applies only to advisors (§4.1.3).
+- **Areas.** 12 main areas (Tablo 1): Biyoloji, Kimya, Tarih, Coğrafya, Matematik, Türk Dili ve Edebiyatı, Değerler
+  Eğitimi, Sosyoloji, Teknolojik Tasarım, Fizik, Psikoloji, Yazılım; plus one of 67 thematic areas (Rehber Tablo 2).
+  The main area follows the project's subject and final aim, not the fields it borrows from (§4.1.13); it cannot be
+  changed after the deadline. Best fit for this paper: **Yazılım + Yapay Zekâ** (the theme names doğal dil işleme; the
+  Algoritma Tasarımı theme explicitly excludes NLP). Possible: Yazılım + Yabancı Dil Eğitimi or E-Öğrenme; Türk Dili ve
+  Edebiyatı + Dil ve Edebiyat (weaker: English texts, no Turkish).
+- **AI use.** The call text itself has no AI rule; the report template's "Yapay Zeka Araçları Kullanım Beyanı" and the
+  generative-AI guide make declaration mandatory (tool, version, dates, purpose, scope, human intervention).
+- **Own work (the real risk).** §4.1.7: projects must come from the students' own ideas and be shaped "kendi bilgi ve
+  becerileri ile", and finished; a project found not developed by its team is eliminated. The Turkish report must be
+  written by the student (template; AI drafts cannot be the final text).
+- **Brand rule.** §4.1.11: no institution, company, commercial product or brand may be "öne çıkarılmamalıdır" in any
+  document; elimination at any stage. Use neutral labels in the text, real names once in methods and references.
+- **Other competitions.** §4.1.9: a project that applied to any project competition with the same or similar content
+  before the 2204-A deadline is eliminated. Submit 2204-A (Jan 4, 2027, 17:30) before the NAACL SRW (Jan 11) and confirm
+  in writing with 2204a@tubitak.gov.tr that a workshop paper is not a "proje yarışması".
+- **Advisor.** Optional; must be a teacher at an MEB school or a Deneyap trainer, not a university academic.
+- **Human participants.** Any survey needs signed volunteer forms; leave the unfinished human-rating study out.
+
+## 12. Where this paper goes instead of TÜBİTAK (2026-11-25; international only, by the user's choice)
+
+GreenBERT holds the student's single 2204-A slot, and the user does not want Turkish competitions. A workflow searched
+four angles (international fairs, essay prizes, peer-reviewed venues, admissions value) and a checker re-read each
+shortlisted venue's official page.
+
+| Rank | Venue | Track | Deadline | From Turkey | Note |
+|---|---|---|---|---|---|
+| 1 | NAACL 2027 SRW | long paper, archival | Jan 11, 2027 AoE; decision Mar 8 | yes | Only real credential; in-person presentation in San Francisco (Jun 1-5), no remote option stated |
+| 2 | AIGCTrustDetect @ COLING 2027 | long, non-archival | Jan 10, 2027; decision Feb 10 | yes | Exact topic fit; only with written OK from the SRW chairs (NAACL: "Dual submissions are not allowed") |
+| 3 | MOSTRATEC-LIBERATO 2027 (Brazil) | high school, Computer Science | ~Jul 2027 (2026: Jul 1-31) | yes (direct selection) | Fall-2027 only; rules disqualify projects "created using AI": needs a self-written report and organizers' OK |
+| 4 | Royal Institute of Philosophy Think Essay Prize | 1,200-word essay, set question on machines and thinking | Apr 19, 2027 | yes, ages 15-18 | Total AI ban; viva for shortlist |
+| 5 | Trinity College Cambridge Languages and Cultures Essay Prize | up to 3,000 words | ~Jul 31, 2027 | penultimate-year students only | Questions out Feb 2027 |
+| 6 | John Locke Global Essay Prize | Science & Technology or Philosophy | ~May 31, 2027 | yes, under 19 | Only if a 2027 question fits; AI use counts against |
+
+Skip: pay-to-publish journals (JSR, NHSJS, IJHSR, Curieux, STEM Fellowship), contests that borrow a university's name
+(Oxford Agora, Cambridge Re:think, Immerse, HIR), medal fairs (Infomatrix gives every Software finalist a medal), and any
+second archival venue while the SRW reviews the paper (BEA and LT-EDI on Feb 5 are out unless used instead of the SRW).
+Fallback after a Mar 8 rejection: ACL 2027 SRW (call not out) or an ACL 2027 workshop.
+
+Application side (verified official pages): MIT Research Supplement (SlideRoom, one project, $10, due with the application),
+Yale STEM Research Supplement (answer Yes by Jan 2; form by Jan 9), Harvard portal upload (Jan 1), Caltech STEM portfolio
+(materials by Jan 10), Princeton via Additional Information. Common App Additional Information is 300 words since 2025-26.
+Every college rule treats AI-written application text as the student's misrepresentation: all application text is written
+by the student, with one plain sentence separating the student's part from the AI's part.
+
+## 13. Journals after the SRW (2026-11-26; the user applies in fall 2027)
+
+The user is in the second-to-last year of high school, so applications go out in fall 2027 (UCAS ~Oct 15, 2027; US
+early Nov 1, 2027; US regular ~Jan 1, 2028). Every application-side date in section 12 moves one year later. A workflow
+read each journal's official author pages (some figures from search snippets where the page blocked us; marked below).
+
+Three kinds of "peer-reviewed" journal: real academic journals (count with faculty readers), free selective high-school
+journals (CJSJ: a student honor, not a research credential) and pay-to-publish journals (count for little; ProPublica
+2023: 4 of 8 reviewers listed by JSR said they were never asked to review). In NLP the ACL Anthology entry from the SRW
+is the main credential; a journal is the step after it.
+
+| Rank | Journal | Fee | Review time | Extended version of an archival workshop paper | Main risk |
+|---|---|---|---|---|---|
+| 1 | Computational Linguistics (MIT Press / ACL), Short Papers track | none | first decision 28 days on average (2024) | yes: "Substantially extended versions of conference papers may be acceptable" | high bar; a 6-8 page paper "typically does not contain sufficient content"; single-blind |
+| 2 | Assessing Writing (Elsevier) | none on the subscription route (OA ~USD 3,950, snippet) | ~36 days first decision, ~8 months to acceptance, ~18% accepted (snippets) | not stated: ask the editor | best topic fit (detectors as writing assessment, the 13% to 45% grammar-fix result); slow |
+| 3 | Journal of Writing Analytics | no fee mentioned (volunteer nonprofit; confirm) | "reviewed within four weeks"; 4-6 months to publication with pre-contact | not stated: ask the editors | small journal; Scopus-indexed |
+| 4 | JAIR, AI & Society track | none | 8-12 weeks to decision | yes, explicitly, with disclosure | 10.6% accepted; desk reject for papers that "merely apply known AI techniques"; reproducibility checklist mandatory |
+| 5 | Language Resources and Evaluation (Springer) | none on the subscription route (OA USD 3,590, no Turkey waiver) | median 36 days first decision | yes, "an expansion of previous work" | mid-tier (IF 2.0); frame as an evaluation dataset |
+| 6 | Columbia Junior Science Journal | none | yearly; ~Sep 30, 2027 deadline (guess from the 2026 cycle) | no: requires the work be unpublished, so only if the SRW rejects | undergraduate reviewers; CS not named in scope |
+
+Rules that bind every path:
+- Nothing under review at any journal from Jan 11 to Mar 8, 2027 (SRW double-submission rule covers "all journals ...
+  without exception"), and nothing at a journal on Jan 11 either. Splitting off the detector result counts as overlap.
+- An extended version needs new results, not length: a human-rater study (teachers and English learners judge voice and
+  "reads as AI" on original vs edit; needs ethics approval or equivalent plus consent, so start in December), more texts
+  and models, and statistical tests. Cover letter states what is new. AI-use disclosure in the form each journal asks for;
+  keep a tools/versions/prompts log from now.
+- Read and cite "False Positive Risk in AI Detection of L2 Academic Writing" (Jul 2026; found, not yet checked).
+
+Plan. Dec 2026: finish the SRW paper, ORCID iD, school email, rater-study design and ethics request, AI-use log.
+Jan 11: SRW (archival). Jan 11 to Mar 8: rater study, no journal submissions. Mar 8 decision.
+- Path A (accepted): camera-ready Mar 15; ask the Assessing Writing and JWA editors about extended versions; ~Jun 1 CL
+  Short Papers; on a no, Assessing Writing, JAIR or LRE in Jul-Aug. October: SRW paper accepted, journal version under
+  review.
+- Path B (rejected): all journals open. Ask editors-in-chief@transacl.org whether TACL's 9-month NAACL rule covers the
+  SRW; NEJLT has a fast track for recently reviewed papers. Revise Mar-May, CL in May, JWA on a June no, CJSJ (~Sep 30)
+  as the last fallback. The Young Researcher (free, professor-reviewed) only if it reopens from hiatus; check in January.
+
+Skip: YURJ (Nov 29) and Vanderbilt Young Scientist (Dec 9) overlap the SRW review; paid high-school journals (IJHSR $350
+and bans AI drafting; NHSJS non-refundable fee and AI-detector screening, a real false-flag risk for this author;
+Curieux; STEM Fellowship CAD 400 with a 9-month exclusivity; JSR); paid broad journals (PLOS ONE, Scientific Reports,
+Frontiers, IEEE Access, MDPI, IGI Global, Computers & Education: AI, Cambridge NLP); journals that refuse this paper's
+history or format (Language Learning & Technology, TESL-EJ, Written Communication, Journal of Writing Research); wrong
+field or level (JEI, The Concord Review, JYI); the JSLW special issue (Nov 30) wants data on writers composing with AI.
+
+Age checks still open (birth month needed): Think prize (15-18 on Apr 19, 2027), John Locke (under 19 on the deadline,
+~May 31), Infomatrix (7-18). MOSTRATEC (under 20 on May 1) and the Trinity prize (penultimate-year students, so 2027 is
+the only chance) are fine.

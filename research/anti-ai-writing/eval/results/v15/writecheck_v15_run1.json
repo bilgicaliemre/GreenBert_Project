@@ -1,0 +1,791 @@
+{
+ "judgments": [
+  {
+   "bid": "ps_kacper",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 22,
+     "quality": 7,
+     "unsupported": [
+      "'I have been looking for the words for that box since spring' (the notes give no timeline for his hesitation)",
+      "'its battery had cut out' (the notes only say 'it cut out')"
+     ]
+    },
+    "prefer": "B",
+    "reason": "The two essays use nearly the same material from the notes and are equally accurate, both close to the 650-word limit. B opens with the scene of Oleh walking in wet at midnight, which is a stronger hook than A's opening on voltage readings. B also keeps the order of events clear. Its last line ties the unsent apology back to the prompt's question about solving a problem, which the reader needs. That line is a little neat. A's plainer ending feels more authentic but stops abruptly. A also spends a paragraph on profit per hour (about seven z\u0142oty) that does nothing for the Oleh story. Both have the slightly polished feel of reworked notes, and neither strongly suggests a human writer. On balance, B does the task a little better for its reader."
+   }
+  },
+  {
+   "bid": "ps_kacper",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 15,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 12,
+     "quality": 7,
+     "unsupported": [
+      "\"I have been looking for the words for that box since spring\": the notes say he opened BLIK about four times but never say how long he has been trying or that it started in spring",
+      "Calling the message box \"the one part of this problem I have not solved\" leaves out the other open issue in the notes, the November basement vote"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both essays stick closely to the notes and tell the same story about Oleh's battery. Neither invents much, but both read like careful AI paraphrases of the interview answers. A opens well on the technical detail. It also has more setting: the falowiec and the seven z\u0142oty an hour, though the hourly figure drifts off the story. A ends on the unsent message without linking it back to the prompt's question about a problem. B opens on the midnight scene and keeps the events in a clearer order. It includes good voice details such as burnt candy and understanding a scooter mechanically in an hour. Its last line ties the story to the prompt by naming the unwritten message as the problem still unsolved. That ending is a little formulaic and adds a small invented detail (\"since spring\"). B's habit of writing \\\"do not\\\" instead of \\\"don't\\\" also sounds stiff. Even so, B fits the prompt better and is easier for an admissions reader to follow, so I prefer it slightly."
+   }
+  },
+  {
+   "bid": "supp_kacper",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 35,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 6,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts stay within the facts and land near the word limit. Each tells the Oleh story plainly, and neither leans on heavy AI-style phrasing.\n\nA is more candid in ways an admissions reader will notice. It gives the exact amounts: he returned 150 of the 380 z\u0142oty and still has not sent the other 230. It quotes the excuse he gave (\"I told him it got wet\"). It also admits he does not yet know what it means that he stopped repairing batteries, the very thing he wants to study. Its seven-z\u0142oty-an-hour detail answers the question of why he does this work at all. Its closing line, \"including one I got wrong,\" does what it says.\n\nB adds a good point: the Facebook argument shows he had publicly backed the soldering method that later failed. But B softens the specifics (\"returned part of his money\"). It also closes by promising \"a full account of the one that failed\" while leaving out that he never repaid the 230 z\u0142oty, so the ending claims more honesty than the text delivers.\n\nBoth answer the \"what would you bring\" part of the question thinly. A gets the edge for honesty and specific detail."
+   }
+  },
+  {
+   "bid": "supp_kacper",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 6,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 35,
+     "quality": 7,
+     "unsupported": [
+      "States a firm choice of 'electrical engineering', but the notes only say 'Electrical, I think'"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts stick closely to the notes and both tell Oleh's story honestly. B keeps the specifics that give the story its weight. It gives the 150 of 380 z\u0142oty he returned and the four-kilometer push. It also admits the refund is unresolved: he still has not sent the other 230 z\u0142oty, and he is unsure what it means that he stopped doing batteries. B also answers the 'why engineering' question with more than interest. It uses the seven-z\u0142oty-an-hour figure, compared with \u017babka's pay, to show the work isn't only about money. A is clean and accurate, but it ends on a neater, more packaged line and leaves out the open-ended parts that make the answer believable. A is also probably a little over the 250-word limit. Both have an even, somewhat flat AI-like cadence."
+   }
+  },
+  {
+   "bid": "ps_marisol",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 35,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 32,
+     "quality": 7,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts stick closely to the notes. I found no claims that the notes do not support. A's $108 is simply $168 minus the $60 already repaid. Each draft builds the essay around the July 18 storm and the \"I just wanted to win\" admission, and each lands on the unanswered question from September. A opens inside the scene, on the gravel at 104 degrees, which pulls the reader in faster than B's opening on whiteboard math. A also ends better. Its last line joins the two things still left open, the answer she owes her mother and the $108, into one clear, earned close. B ends on the hedge about whether she has changed, which is honest but weaker as a final line. B does keep the little girl with the mango paleta, which raises the stakes, and the steamer detail. Even so, B's word count looks to be at or a little over the 650-word cap. Both drafts sound polished in the same way, with even sentence rhythm and carefully staged admissions. That evenness reads somewhat machine-made, though both preserve the student's voice well."
+   }
+  },
+  {
+   "bid": "ps_marisol",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both essays stay close to the notes and add no facts of their own. Both read like tidy rewrites of the interview transcript rather than a student's own drafting. B is the stronger essay for two reasons. First, it brings in Gabe's whiteboard math at the moment she decides to stay, so the reader sees the money argument shaping her choice. Second, its ending ties the open threads together: \"I owe her an answer and $108.\" A puts the whiteboard in the opening, before the story, and its ending is flatter (\"that is embarrassing to admit\", then the hedge about changing). A also looks longer, likely at or over the 650-word cap, while B seems to fit more comfortably. Neither essay says outright which belief was challenged. B's structure makes the shift from wanting to win to owing her mom an honest answer easier to see."
+   }
+  },
+  {
+   "bid": "supp_marisol",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 6,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 20,
+     "quality": 5,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts stick to the notes, and both retell July 18 in nearly the same words. A does more of what the prompt asks. It sets up the family's world through the stand, Gabe's $4.10-an-hour whiteboard and their argument, and it includes the honest admission that 'what I mostly wanted was to win.' It also shows the mom paying Mr. Duarte out of her apron, which says something about the family. A's last line on aspirations feels tacked on, and it never quite says how this world shaped her dreams. B gives a nice picture of the tamalada but then mostly recounts events. It drops the self-insight about wanting to win. It also spends its closing lines on getting a 3 in AP Calc, which undercuts her in a college application. B's link between her world and her dreams is just as thin. Both read as smooth summaries rather than a student's own voice, so p_human is low for each."
+   }
+  },
+  {
+   "bid": "supp_marisol",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 6,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 28,
+     "quality": 5,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts stay close to the notes and invent nothing important. They also share the same plan: the stand and the roof, the July 18 gust front, sandbags before sky, then atmospheric science. Neither one really answers \"how has this shaped your dreams.\" Each only puts the storm question next to the story.\n\nA is better because it keeps the most revealing moment. When Gabe said to leave, she mostly wanted to win. Earlier, A sets up the whiteboard argument about the $4.10-an-hour wage, so that admission has weight, and the family world feels tense and real. Its ending is abrupt, a one-line statement of what she wants to study.\n\nB spends its words on a list of the Saturday routine and drops the self-insight. It also ends by offering a weakness, the 3 on AP Calc, which hurts the applicant. Its \"I keep my forecasts to myself\" is a good detail, but it doesn't make up for the rest.\n\nBoth read as careful, flat summaries of the notes, with phrases lifted from the interview. A skilled student editing alone could write either one. I can't confidently say whether a person or an AI wrote them."
+   }
+  },
+  {
+   "bid": "argue_5",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 8,
+     "unsupported": [
+      "During puberty the body starts releasing melatonin later in the evening (physiological claim stated as fact)",
+      "A sixteen-year-old who goes to bed at ten often lies awake until eleven or later",
+      "Student drivers are some of the least experienced drivers on the road and drive drowsy",
+      "Employers who hire teenagers already work around school hours",
+      "The second student (after lunch) is in a far better state to follow the lecture"
+     ]
+    },
+    "B": {
+     "p_human": 20,
+     "quality": 8,
+     "unsupported": [
+      "Many high schools now open before 8:00",
+      "During puberty the body's internal clock shifts later so most teenagers do not feel sleepy until late at night (physiological claim stated as fact)",
+      "The late bedtime is mostly biology, not choice",
+      "Young children tend to wake early anyway",
+      "A drowsy seventeen-year-old on a dark road is a danger to everyone (implied safety risk claim)",
+      "The board can change the start time with one vote"
+     ]
+    },
+    "prefer": "A",
+    "reason": "Both essays are well-organized and take a clear position. Both have the same structure: a thesis, a biological reason, first-period scenes, practical objections, the phone objection, and a modest conclusion. They are near-twins, and both show polished AI patterns. Neither invents statistics or sources, but each states physiological facts with no support. A opens with a concrete scene of a student waiting at the bus stop in the dark. Its rebuttal arguments are crisper: 'Nobody can redraw the hours when a sixteen-year-old's body is ready to sleep' and the midnight-scrolling comparison of waking at eight versus six. B handles the counterarguments with a little more nuance: younger children wake early, and daylight limits affect few teams. But B repeats the 'mostly biology' claim, and its 'one vote' ending oversimplifies costs it has just admitted. I'd give A to an 11th-grade reader for its clarity and concreteness, by a slight margin."
+   }
+  },
+  {
+   "bid": "argue_5",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 20,
+     "quality": 7,
+     "unsupported": [
+      "During puberty the body starts releasing melatonin later in the evening (a scientific claim presented as fact with no source, in a task that asks for reasoning, not explanation)",
+      "A sixteen-year-old who goes to bed at ten often lies awake until eleven or later",
+      "Employers who hire teenagers already work around school hours",
+      "Student drivers are some of the least experienced drivers on the road"
+     ]
+    },
+    "B": {
+     "p_human": 20,
+     "quality": 8,
+     "unsupported": [
+      "Many high schools now open before 8:00",
+      "During puberty the body's internal clock shifts later, so most teenagers do not feel sleepy until late at night (a biological claim stated as fact)",
+      "The late bedtime is mostly biology, not choice",
+      "Young children tend to wake early anyway",
+      "Elementary, middle and high schools often share buses",
+      "Coaches already rewrite practice schedules every season"
+     ]
+    },
+    "prefer": "B",
+    "reason": "The two essays are close in structure and tone, and both read like polished AI writing: the paragraph pattern is the same, and so is the \"these costs are real\" concession. B's rebuttal is stronger. It doesn't just call the objections logistics. It turns them into an answer: young children wake early, so their buses can run first, and teenagers can get themselves out the door without an adult. B also makes the \"a few would waste it\" point sharper, and its ending (\"one vote\") is crisper. A has a vivid opening and a clean bit of sleep math (\"two more hours\"), but it leans on a specific melatonin claim. Both rely somewhat on biological claims stated as fact, and both run slightly over the 600-word target. B is the one I would rather give the reader."
+   }
+  },
+  {
+   "bid": "argue_6",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "I prefer B. Both essays take a clear position and argue only from reasoning and everyday school life. Neither one invents statistics, studies, quotes or named sources. B lands inside the 500-600 word target. A runs about 630 words, a little over. B also makes a sharper case. Its driving-lesson comparison makes the idea of homework as practice concrete. Its example of the student who turns in every assignment but fails every test, and still finishes with a C, shows clearly how counting homework hides what a student can actually do. B gives teachers practical replacements: calling on students to explain a problem, or requiring finished practice before a test retake. It ends by drawing a line between work that builds a skill and work that shows it, which handles the obvious objection about projects. A's best moment is its honest point about students who freeze on tests and lose the cushion homework gives them. But A repeats B's main points with less force, and its ending loops back to its earlier point about the teacher not seeing homework being done. Both essays are polished, evenly paced and built in a predictable way. That makes it fairly unlikely either was written by a human without AI help."
+   }
+  },
+  {
+   "bid": "argue_6",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 8,
+     "unsupported": [
+      "A student who turns in every assignment and fails every test can finish the semester with a C (this depends on how the class weights grades and is stated as if always true)"
+     ]
+    },
+    "B": {
+     "p_human": 22,
+     "quality": 8,
+     "unsupported": [
+      "Anyone who has sat in a homeroom has watched this happen, and the usual reason is that the points felt more urgent than the learning (a sweeping claim about why students copy)",
+      "A student who gets the first five wrong and then works out the sixth has learned more than a classmate who got all six right (stated as fact, not argued)"
+     ]
+    },
+    "prefer": "A",
+    "reason": "Both essays take a clear position, invent no statistics or sources, and argue from everyday school experience. Both follow nearly the same plan (unseen work, mistakes as practice, unequal home lives, a rebuttal of the main objection) and share the same polished, even cadence. That makes both read as machine-made rather than as an 11th-grader's work. A is tighter and fits the 500-600 word target, while B runs a little over. A's parking-lot driving analogy makes the practice argument concrete. Its last section separates practice homework from homework that is itself the assessment, such as a research paper, and that line is useful. Its closing sentence about what a B in chemistry should mean lands well. B handles the opposing side more fully: it admits that some students who freeze on tests lean on homework points, offers retakes and projects as alternatives, and adds a good point about feedback without a score. But B repeats itself more (copying comes up twice), and it states a few broad generalizations as fact. Overall the two are close. I'd give the reader A because it is more economical and fits the length limit."
+   }
+  },
+  {
+   "bid": "explain_5",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 20,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "The science in both is accurate. Lueg's 1930s patent, Bose's late-1970s work and the 2000 QuietComfort are all correct general history, so neither text has an unsupported claim. Both probably run past the 450-word limit. Text A's timing figures are correct: a 100 Hz wave repeats every 10 ms, a 5,000 Hz wave every 0.2 ms, and a 0.1 ms delay at 5,000 Hz is half a cycle, so the waves reinforce. Its closing point, that cancellation only works in a small space, is a strong ending. Text B is built around one framing question: why the engine fades but a nearby voice does not. Its 3.4 m wavelength for 100 Hz is correct, and it ends with a safe experiment readers can try at home: reversing the wires on one speaker thins the bass. That gives a high-school club a more engaging piece and something to do, so I slightly prefer B. Both read as fairly polished AI-style explainers."
+   }
+  },
+  {
+   "bid": "explain_5",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both texts are accurate, and neither invents statistics or sources. Their facts hold up as general knowledge: the speed of sound, Lueg's 1930s patent, Bose's late-1970s start, and in A, the QuietComfort launch in 2000. A's timing explanation is precise and correct: a 0.1 ms delay is half the period of a 5 kHz wave, so the anti-noise reinforces the sound instead of cancelling it. A also ends well, explaining why cancellation only works in a small space. B opens with the contrast between the rumble that fades and the voice that stays, then builds the explanation around it. Its wavelength numbers are correct, and it ends with a hands-on experiment (reversing one speaker's wires), which suits a science-club blog. B's wavelength reasoning is slightly looser than A's timing argument, and both texts likely run a bit over the word limit. Overall, B's organizing hook and the experiment readers can try make it slightly better for high-school students."
+   }
+  },
+  {
+   "bid": "explain_6",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "'one day in roughly 3,000 years' understates the figure; 0.0003 of a day a year gives about 3,300 years"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both articles are accurate and clear, and both fit the requested length. Neither invents any statistics, studies, quotes or named sources. A gives the vivid example of July falling in winter, states the century rule cleanly, and ends by explaining that leap seconds solve a different problem. That closing point is useful, but it is off the main question. B ties its numbers together better. It shows why the error since the Council of Nicaea added up to about ten days, gives 146,097 days as the length of a 400-year cycle, and explains that Britain had to skip 11 days because 1700 was a leap year under the old rule. These links help a student understand the reasoning, not just the rules. B's weaknesses are that it ends without a real conclusion and that 'roughly 3,000 years' is a little loose. Overall, B does a slightly better job of explaining."
+   }
+  },
+  {
+   "bid": "explain_6",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "The 'around 750 years' figure for July falling in northern winter is a rough approximation: about 182 days of drift implies a shift of about half a year, so it holds only loosely."
+     ]
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "'one day in roughly 3,000 years' does not match its own 26-seconds-a-year figure, which works out to about 3,300 years.",
+      "'Twelve and a half centuries ... almost exactly ten days': 1,250/128 is about 9.8, so 'almost exactly' overstates the match."
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts are accurate, well organized and about the right length, and both read like polished AI writing with near-identical structure. B links its ideas together better. It explains why the church cared about the equinox (Easter and Nicaea), checks the ten-day correction against the drift rate, gives the 146,097-day cycle, and explains why Britain had to skip 11 days instead of 10 (1700). A has a vivid image of July falling in winter and a useful note on leap seconds, but its leap-second paragraph wanders a little off topic. B has a small internal inconsistency (3,000 vs about 3,300 years). Even so, its explanations hang together better for a high-school reader."
+   }
+  },
+  {
+   "bid": "lit_romeo",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both texts quote only from the provided file and quote it accurately. Neither makes a factual claim the facts fail to support; their remaining claims are interpretation. Text A is tidy and argues well, and it ends on a useful limit: haste explains how the lovers die but not why the play needs their deaths to \"bury their parents' strife.\" Text B does more close reading. It points out that \"fatal\" can mean both fated and deadly, that \"sudden haste\" says the same thing twice, and that \"I will hence\" in Act V echoes \"let us hence\" in Act II, which ties the play's beginning and end to haste. That echo is the strongest piece of evidence in either essay. B runs a little long and its last sentence goes back to the Friar's warning without adding anything new. A's ending is more balanced. Still, B's thesis is clearer and its analysis goes deeper, which would help an English-class reader more."
+   }
+  },
+  {
+   "bid": "lit_romeo",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both texts quote only from the provided file and make the same main argument: the Prologue raises fate, but the action blames haste. Neither makes an unsupported factual claim. Text A runs about 560 words, over the 420-500 target. It also leans on interpretive filler, such as \"nobody pushes him and no star knocks him down.\" Its best point is that \"I will hence\" echoes \"let us hence.\" Text B is about 490 words, within the target. It states a clear pattern: Romeo names fate as an excuse each time he acts too fast. It also ends with a qualification taken from Q1, that the deaths \"bury their parents' strife,\" which shows more mature literary judgment. Both read as polished and likely AI-assisted. B handles length and nuance better for an English-class reader."
+   }
+  },
+  {
+   "bid": "lit_pride",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts quote only from the provided file, and they quote it accurately. Both run slightly long and argue much the same thing. A is better organized. Paragraph 1 shows how the first impression grows into the \"groundwork\" of her dislike. Paragraph 2 covers the self-reproach and her motives. Paragraph 3 sets the love that came \"gradually\" against the dislike she could date. Each paragraph moves the argument forward. B has some sharp moments: \"immovable\" turned back onto Elizabeth's own mind, and the point that a fair opinion forms too slowly to notice. But B's third paragraph opens by repeating that the insult at the ball was real, which it already said in paragraph 1, so its structure loops back on itself. Both have the even, polished, aphoristic rhythm of AI prose, so a human author is unlikely for either. I would hand A to the reader because it is clearer, with B close behind."
+   }
+  },
+  {
+   "bid": "lit_pride",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 22,
+     "quality": 7,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both texts quote only from the provided file and quote it accurately. Neither invents facts, and both are close to the target length. Their readings are also very similar: the groundwork metaphor, \"courted,\" \"discernment,\" and the gradual-versus-instant contrast in Chapter 59. A moves more cleanly through first impression, self-recognition and the novel's verdict, with a clear claim in each paragraph. Its observation that Elizabeth makes \"an admission without noticing\" is sharp. B has strong moments, such as \"immovable\" describing Elizabeth's own mind and the final point that an opinion traced to one moment is a reaction to that moment. However, B's third paragraph opens by repeating the point of its first paragraph that the insult was real, which makes it feel slightly circular. B also quotes the Chapter 3 line again in fragments. Both read as polished and formulaic in a way typical of AI writing, so p_human is low for each. I'd hand A to the reader because its structure is tighter."
+   }
+  },
+  {
+   "bid": "email_extension",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 35,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 35,
+     "quality": 7,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both emails are close in structure and accurate to the notes. Each has the correct subject line, admits her own poor planning and the false \"almost done\" remark, mentions the family emergency, the attached draft, the plan with Owen and the two data questions. A is better for three reasons. First, it says why each data question matters: she thinks she stopped the timer late on the 1.5 M trial, and they ran out of magnesium ribbon for 2.5 M. That gives the teacher what he needs to answer. Second, it gives the 11:59 pm time for the new deadline. Third, it brings up the earlier Lab 4 extension inside the explanation rather than as a lone line at the end. B is tighter and closer to the word limit. But it says her mom was \"at the hospital,\" which edges toward medical details Marisol wanted to keep private. It also asks about the 41 s time without explaining why it might be wrong, and the Lab 4 line at the end feels tacked on. A runs a little over 200 words. Neither email includes anything the notes don't support."
+   }
+  },
+  {
+   "bid": "email_extension",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 28,
+     "quality": 7,
+     "unsupported": []
+    },
+    "prefer": "A",
+    "reason": "Both emails follow the facts closely. Each owns the poor planning, admits saying she was \"almost done\" when she wasn't, mentions the Lab 4 extension, describes the draft, gives the weekend plan and asks the two data questions. Neither makes a claim the notes don't support.\n\nA is more useful to the teacher in three ways:\n- It explains the 1.5 M outlier: she thinks she stopped the timer late. B only says \"the 41 s time\", which leaves the teacher without the reason.\n- It explains why the comparison with Owen has to wait until Friday: he's away at a robotics competition.\n- It gives the new deadline as 11:59 pm Monday.\n\nA also mentions the Lab 4 extension inside the explanation, which reads more naturally than B's separate one-line add-on near the end. B says her mom was \"at the hospital\". That is true to the notes, but it leans toward the medical details Marisol wanted to keep private, while A just says \"family emergency\".\n\nA runs slightly over 200 words, and B is closer to the target length. Both read as polished and a bit template-like, which suggests AI."
+   }
+  },
+  {
+   "bid": "email_lab",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both emails stick to the notes. Neither adds any fact the notes don't support. Both run past the 250-word limit, at roughly 280-290 words each. Both put the ask up front, show real engagement with Figure 3 and the site C seep, and admit limits honestly (the mixed-effects section, the dropped readings). Neither ends with a closing request or next step. B tells the professor more of what she needs to decide: the AP Bio score, the current AP Stats class and that Maya only knows Google Sheets, not R or Python. B also states the availability window in the first paragraph and is a little tighter. A's phrasing is slightly more natural in places (\"lost me\", \"I'll be 18 by then\"). However, it leaves out the skills information and ends abruptly after the reference line. Both texts follow the notes so closely and evenly that they read as likely machine-written."
+   }
+  },
+  {
+   "bid": "email_lab",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 35,
+     "quality": 7,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 35,
+     "quality": 8,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "Both emails stick to the notes, and neither adds any unsupported claims. Both run about 300 words, which is over the 250-word target, and both end abruptly on \"Thank you\" without asking for a reply or suggesting a next step.\n\nI prefer Text B. Its subject line opens with the question about the paper, which is more likely to make a professor open the email. It also cites the paper fully, by title and co-authors, which shows Maya really read it. Its order reads naturally: the request, then the paper question, then her experience, then her availability. It folds the age and travel details into one smooth closing paragraph.\n\nText A puts her dates in the first paragraph, which feels like a form, and it ends on a choppy run of short facts (\"I turn 18 in March.\"). On the other hand, Text A gives her AP Biology score and admits she only knows Google Sheets. Those are useful, honest details that B leaves out.\n\nBoth read as competent and slightly formulaic, so it is hard to say whether a person or an AI wrote either one."
+   }
+  },
+  {
+   "bid": "cover_letter",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 6,
+     "unsupported": [
+      "'I could not fix it in time': the notes say only that Wren couldn't fix it, with no deadline mentioned"
+     ]
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 6,
+     "unsupported": []
+    },
+    "prefer": "B",
+    "reason": "The two letters use nearly the same facts and are written in the same flat, list-like style, and both stay within the target length. Neither explains why Wren wants this job or connects the experiences to the qualities the posting asks for, such as patience. Neither draws a lesson from the failed quiz game that applies to teaching kids. B puts availability in the opening paragraph, which suits a hiring reader. It also reports the quiz-game lesson accurately as a note Wren wrote afterward. A adds a small unsupported detail (\"in time\") and leaves the logistics until the end. A's opening library connection is warmer, and it mentions this would be a first paid job. Overall B is slightly more faithful to the notes and more useful to the reader."
+   }
+  },
+  {
+   "bid": "cover_letter",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 6,
+     "unsupported": [
+      "'a ten-minute walk from home' (notes say only '10 min walk'; 'from home' is inferred)"
+     ]
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 6,
+     "unsupported": [
+      "'I could not fix it in time' ('in time' is not in the notes)"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both letters are accurate and almost identical in content. Each one lists facts from the notes in plain, flat sentences. Neither says why Wren wants the job, and neither links what Wren learned from the failed quiz game to teaching young kids. Text A opens with availability, which is practical but feels like paperwork. It does include a good honest detail: Wren wrote down the lesson afterward. Text B opens with Wren's personal tie to the library and puts the Scratch club, the most relevant experience, first. It also notes that this would be Wren's first paid job apart from babysitting, as the notes say, and it ends with the practical details: availability, the CPR class and the reference. Its order is slightly more persuasive, so I would hand B to the reader, though only just."
+   }
+  },
+  {
+   "bid": "blog_robotics",
+   "order": [
+    "V14",
+    "V15"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 6,
+     "unsupported": [
+      "If we go with the aluminum rebuild, we will be using it before November 14 (speculative inference, not in notes)"
+     ]
+    },
+    "B": {
+     "p_human": 22,
+     "quality": 6,
+     "unsupported": [
+      "Mr. Lund turned around 'to get it' (implied, not stated)"
+     ]
+    },
+    "prefer": "A",
+    "reason": "A and B are almost the same: accurate, chronological reports that follow the notes closely. Both run somewhat past 550 words. Both read flat, like a ledger, with little sense that they are written for parents, sponsors or kids thinking of joining. A fits the heat and the shoes into the morning section, where they make sense. It ends by connecting the sponsor thank-you to the open decision on the arm. B piles the leftover details (AC, shoes, radio, vending machine, food vote) into one paragraph near the end, which reads like a dump of whatever was left. B does use the team's 'Gearfoxes' name and A never does, but A reads slightly better overall."
+   }
+  },
+  {
+   "bid": "blog_robotics",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 22,
+     "quality": 6,
+     "unsupported": []
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 7,
+     "unsupported": [
+      "The gym was about 84\u00b0F 'all day' (the notes give only the temperature, not how long it lasted)",
+      "'If we go with the aluminum rebuild, we will be using it before November 14' (the notes never link the donated stock to the rebuild plan)"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts are accurate, nearly match each other and cover the notes almost line for line. Both read like flat, complete transcriptions of the notes rather than a team member's voice. Neither does much for its readers: younger kids thinking of joining, sponsors or parents. A ends with a paragraph of leftover trivia (the heat, the shoes, the radio, the vending machine, the food vote) that sits apart from the rest. B works the heat and the shoes into the morning narrative. It also moves from the bus argument to the food vote with a light touch, so it flows better and has slightly more personality. B makes two small additions the notes don't support: \"all day\" for the heat, and the closing line tying the donated aluminum to the possible rebuild. Its closing line is also a little awkward. Even so, B reads better overall."
+   }
+  },
+  {
+   "bid": "lab_pendulum",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 25,
+     "quality": 7,
+     "unsupported": [
+      "At 10 degrees the period is only about 0.2% longer than the small-angle formula predicts (outside knowledge, not in the notes)"
+     ]
+    },
+    "B": {
+     "p_human": 25,
+     "quality": 8,
+     "unsupported": [
+      "Mr. Pell is called 'a teacher', but the notes only say he came in to borrow stands"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts get the arithmetic right: g = 9.62, the 1.9% shortfall, 2.016 s at 1.01 m, and 14.11/9 = 1.568. Both also run a little over the 400-word limit. B is the stronger discussion. Its claim that every period is about 1% long checks out at all five lengths (0.93-1.0%). It shows that timing 10 swings cuts the 0.2 s reaction time to 0.02 s per swing. It also rules out release angle using the data: the 0.60 m and longer lengths were measured with a protractor and are still about 1% long. A rules out release angle instead with a small-angle correction figure that is not in the notes. B's only slip is calling Mr. Pell a teacher. Neither text mentions the 0.20 m trial redone after the string had been loaded for 40 minutes. Both read as polished and somewhat formulaic."
+   }
+  },
+  {
+   "bid": "lab_pendulum",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "At 10\u00b0 the period is only about 0.2% longer than the small-angle formula predicts (outside physics, not in the notes)"
+     ]
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 9,
+     "unsupported": [
+      "Calls Mr. Pell 'a teacher'; the notes only say he came in to borrow stands"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts get the numbers right: g = 9.62, the 2.016 s period at 1.01 m closing half the gap, and 14.11/9 = 1.568. Both also argue clearly that the error is systematic and most likely comes from the stretchy string. B uses the data more fully. It shows that every period is about 1% long, which checks out at all five lengths. It shows that timing 10 swings cuts the 0.2 s reaction time to about 0.02 s per swing. It also rules out the eyeballed release angle using the notes alone: the lengths timed with a protractor were 1% long too. A rules out the release angle with a 0.2% large-angle correction that isn't in the notes. B's only slip is calling Mr. Pell a teacher. A's improvements section is a bit fuller, but B is tighter and stays closer to the evidence."
+   }
+  },
+  {
+   "bid": "news_cafeteria",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "'so many trays are still damp' \u2014 'many' goes further than the notes, which only say third lunch gets damp trays",
+      "'so the kitchen has extras for third lunch' \u2014 gives a reason for the 200-tray purchase that Valdoro-Pike did not state"
+     ]
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "'about eight students were waiting' \u2014 the notes say about 8 people, not students",
+      "'said she made the change because of how much foam the school was throwing away' \u2014 an inference from her quote, presented as her stated reason",
+      "'Students are split on the new trays' \u2014 a generalization from only two quoted students"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts stick closely to the notes and quote people exactly. Both disclose that Theo writes for the Ledger and both leave out irrelevant details like the cat and the vending machine. B is better organized: it groups the supporter and the critic into one 'split' section, then moves straight into the wet-tray problem and the reporter's observations. A puts Theo's praise early and saves Priya for much later, which splits up the student-reaction thread. B also adds useful sourcing dates (the Oct. 14 interview and the Oct. 16 email confirmation). Each text has one or two small inferences. Quality is nearly equal, but B reads more smoothly for students."
+   }
+  },
+  {
+   "bid": "news_cafeteria",
+   "order": [
+    "V15",
+    "V14"
+   ],
+   "r": {
+    "A": {
+     "p_human": 30,
+     "quality": 7,
+     "unsupported": [
+      "'so the kitchen has extras for third lunch' assigns a purpose to the 200 extra trays; the notes only say she is 'looking at' them",
+      "'many trays are still damp' adds a quantity the notes do not give"
+     ]
+    },
+    "B": {
+     "p_human": 30,
+     "quality": 8,
+     "unsupported": [
+      "'she made the change because of how much foam the school was throwing away' states her motive as fact; it is only implied by her quote",
+      "'about eight students' changes the notes' '~8 people' into students",
+      "'Students are split' draws a general claim from only two quotes",
+      "'to cover third lunch' assigns a purpose to the 200 extra trays that the notes do not state"
+     ]
+    },
+    "prefer": "B",
+    "reason": "Both texts stick closely to the notes, quote people exactly, disclose that Theo writes for the Ledger and leave out the irrelevant details. B is organized a little better. Its headline leads with the trash reduction, the one concrete result. It also dates the interview and the email confirmation, and it puts the two student quotes side by side as a pro and a con before moving on to the third-lunch problem. A breaks the student reaction in two: Theo's quote comes before the cost figures and Priya's comes much later. Both have a few small inferences, such as the purpose of the extra trays. B also states the manager's motive as fact and turns 'people' into 'students'. Overall the two are close in quality, and B reads slightly better for a student reader."
+   }
+  }
+ ],
+ "lengths": {
+  "V15:ps_kacper": 645,
+  "V14:ps_kacper": 634,
+  "V14:supp_kacper": 251,
+  "V15:supp_kacper": 250,
+  "V15:ps_marisol": 642,
+  "V14:ps_marisol": 648,
+  "V14:supp_marisol": 248,
+  "V15:supp_marisol": 249,
+  "V14:argue_5": 569,
+  "V15:argue_5": 574,
+  "V14:argue_6": 538,
+  "V15:argue_6": 607,
+  "V14:explain_5": 456,
+  "V15:explain_5": 459,
+  "V14:explain_6": 466,
+  "V15:explain_6": 475,
+  "V14:lit_romeo": 487,
+  "V15:lit_romeo": 444,
+  "V14:lit_pride": 485,
+  "V14:email_extension": 202,
+  "V15:lit_pride": 461,
+  "V15:email_extension": 218,
+  "V14:email_lab": 282,
+  "V15:email_lab": 281,
+  "V14:cover_letter": 325,
+  "V15:cover_letter": 343,
+  "V14:blog_robotics": 510,
+  "V14:lab_pendulum": 409,
+  "V15:blog_robotics": 522,
+  "V14:news_cafeteria": 445,
+  "V15:news_cafeteria": 446,
+  "V15:lab_pendulum": 431
+ }
+}

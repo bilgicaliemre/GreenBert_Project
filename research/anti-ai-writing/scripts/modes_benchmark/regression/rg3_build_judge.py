@@ -47,5 +47,5 @@ L = {'type': 'array', 'items': {'type': 'string'}}
 schema = {'panel': {'type': 'object', 'properties': {'ranking': L, 'texts': {'type': 'array', 'items': {'type': 'object', 'properties': {
     'label': {'type': 'string'}, 'quality': {'type': 'integer'}, 'human_likeness': {'type': 'integer'}, 'unsupported': L, 'note': {'type': 'string'}},
     'required': ['label', 'quality', 'human_likeness', 'unsupported', 'note']}}, 'reasons': {'type': 'string'}}, 'required': ['ranking', 'texts', 'reasons']}}
-bench.run_mkwf({'name': 'rg3-panel', 'description': 'Regression panel 3: two v9 samples, v12, v13 on 12 school briefs', 'phase': 'Judge', 'model': 'opus', 'schemas': schema, 'jobs': jobs}, 'rg3/judge.js')
+bench.run_mkwf({'name': 'rg3-panel', 'description': 'Regression panel 3: two v9 samples, v12, v13 on 12 school briefs', 'phase': 'Judge', 'model': os.environ.get('BENCH_MODEL'), 'schemas': schema, 'jobs': jobs}, 'rg3/judge.js')
 print(len(jobs), 'panel jobs')

@@ -1,5 +1,5 @@
 """usage: python3 ab/build_judge.py GENRE(ra|app) CONDS TAG [size] [seed]"""
-import json, sys
+import os, json, sys
 sys.path.insert(0, 'tools'); import bench
 G, conds, tag = sys.argv[1], sys.argv[2].split(','), sys.argv[3]
 size = int(sys.argv[4]) if len(sys.argv) > 4 else 14
@@ -21,5 +21,5 @@ else:
 bench.make_piles(B, rids, conds, tag, lenses, size=size, seed=seed)
 props = {'p_human': {'type': 'integer'}, 'quality': {'type': 'integer'}, 'evidence': {'type': 'string'}}
 spec = bench.judge_spec(B, tag, f'ab-judge-{G}-{tag}', f'Ablation pile judging ({G})', intro, WHO, props, ask)
-spec['model'] = 'opus'
+spec['model'] = os.environ.get('BENCH_MODEL')
 bench.run_mkwf(spec, f'{B}/judge_{tag}.js'); print(G, len(spec['jobs']), 'judge jobs')

@@ -29,5 +29,5 @@ for j in spec['jobs']:
     if j['label'].startswith('AR:'):
         j['prompt'] = j['prompt'].replace('You have a writing skill. Its files are below. Follow SKILL.md, including the reference files it points to for this kind of text, for every request.',
                                           'You have a writing guide for this kind of text. It is below. Follow it for every request.', 1)
-spec['model'] = 'opus'
+spec['model'] = os.environ.get('BENCH_MODEL')
 bench.run_mkwf(spec, f'{B}/{out}.js'); print(G, len(spec['jobs']), 'jobs')

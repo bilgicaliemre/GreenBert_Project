@@ -1,0 +1,54 @@
+{
+ "skill": "v14.2",
+ "hash": "21e9755eebedc2db",
+ "date": "2026-11-26",
+ "grader": "one blind grader per case, both samples",
+ "cases": [
+  {
+   "case": "P1",
+   "expected": "\"Write my Common App essay\" -> full draft from notes, [ask] for gaps, no invented facts, reminder",
+   "sample_a_pass": true,
+   "sample_b_pass": true,
+   "essay_words": [
+    307,
+    364
+   ],
+   "failures": []
+  },
+  {
+   "case": "P2",
+   "expected": "\"Help me with my Common App essay\" -> coaching only, no draft, no offer of one",
+   "sample_a_pass": true,
+   "sample_b_pass": true,
+   "essay_words": [
+    0,
+    0
+   ],
+   "failures": []
+  },
+  {
+   "case": "P3",
+   "expected": "Graded English homework, \"write my essay\" -> coaching (unchanged)",
+   "sample_a_pass": true,
+   "sample_b_pass": false,
+   "essay_words": [
+    0,
+    0
+   ],
+   "failures": [
+    "b: stated its reason twice; also referred to the session's own (relayed) request, a workflow relay artifact"
+   ]
+  },
+  {
+   "case": "P4",
+   "expected": "\"Improve\" a 150-word application answer -> errors fixed in place, nothing rewritten",
+   "sample_a_pass": true,
+   "sample_b_pass": true,
+   "essay_words": [
+    109,
+    109
+   ],
+   "failures": []
+  }
+ ]
+}

@@ -10,7 +10,7 @@ Contents
 7. Step 5: the admissions-reader critique
 8. Step 6: corrections
 9. Short answers and supplements
-10. Writing a sample essay for a fictional person
+10. Writing a full sample (a fictional person, or a draft the student asked for)
 
 ---
 
@@ -47,7 +47,7 @@ Two opposite failures to avoid:
   different kind of focus").
 - **The over-corrected essay:** every lesson removed and nothing put in its place, so the essay is the
   interview notes in a new order, vivid but flat.
-A third failure is what anti-AI rules produce in current models:
+Two more failures come from how current models write from spoken notes; anti-AI rules make the first one worse:
 - **The cool essay:** speech filler carried over from the notes ("kind of wild", "so cringy", "basically"), a flat
   factual first sentence, framing devices ("(I counted)", "the obvious suspects were my parents"), and an ending
   that shrugs ("I still don't know", "but it's okay") where the student's real conclusion should be. Judges in our
@@ -55,7 +55,8 @@ A third failure is what anti-AI rules produce in current models:
 - **The engineered essay:** every thread tied off. An image from the opening returns at the end, paragraphs
   close by explaining what their scene meant, connecting sentences point out what rhymes, and the lesson arrives
   balanced and hedged ("both good and bad, and I think accepting it made me happier"). In blind tests this was
-  the most cited sign of a model essay, in about four of five judgments, whatever the writing method.
+  the most cited sign of a model essay: about four of five judgments of plain-model and early-skill essays, and
+  about half once the rules below were applied.
 The fix for all four is the same: an arc made of true events and reflection in the writer's own words, written
 in the student's careful written voice.
 
@@ -80,18 +81,21 @@ These describe the genre; they are not targets. Do not add long sentences or les
 
 ## 2. Ground rules (coach, don't ghostwrite)
 
-For any essay the student will submit as their own (Common App, YYGS and other programs, supplements,
-scholarships, graded assignments that forbid AI writing):
+For the three Coach cases in SKILL.md (admission essays and supplements for colleges and the programs they run,
+such as the Common App and YYGS; schoolwork the user says will be graded or handed in as their own; an
+application or form whose rules require the applicant's own writing or ban AI-written text):
 
 You do:
 - interview the student to surface material and their own reflections (section 3);
 - help choose the spine and a structure, as a plan in your words, built from their answers;
 - critique drafts as an admissions reader would, quoting their lines;
-- give grammar, spelling and clarity fixes as a list of discrete corrections ("line 4: 'alot' → 'a lot'").
+- return their draft with outright errors (spelling, grammar, punctuation) fixed in place, then the list of
+  what you fixed ("line 4: 'alot' → 'a lot'") and of the bigger changes they should make themselves.
 
 You do not:
-- write the essay, rewrite its paragraphs, or write example sentences built from the student's story (model
-  sentences make every student sound alike, and even "grammar only" rewrites shift meaning and voice; to show
+- write the essay (unless the student explicitly asks for a full draft; see "Full draft on request" in SKILL.md
+  and section 10), rewrite or rephrase its sentences, or write example sentences built from the student's story
+  (model sentences make every student sound alike, and rephrasing for clarity shifts meaning and voice; to show
   a technique, use a neutral example from `examples.md`);
 - invent or embellish any experience, feeling, quote, detail or number.
 
@@ -161,7 +165,8 @@ Structures:
   got wrong), what changed and what still hasn't. Put any loss or diagnosis early and compress it (Yale:
   "follow Alfred Hitchcock").
 - **Montage:** 4 to 7 short sections linked by one thread (an object, a list, a set of files, a recurring
-  place), each showing a different side of the student, with the thread itself changing meaning by the end.
+  place), each showing a different side of the student. The thread must be the student's own; do not bring it
+  back at the end as a symbol.
 - **Extended metaphor:** only if the student already thinks in it. Never impose one.
 
 **Reflection.** One to three sentences, placed after the scene that earns them, that tell the reader
@@ -171,7 +176,8 @@ something the facts alone do not: what the writer now notices, doubts or does di
   student; admitted essays use it often. Avoid morals that would fit any essay ("the value of hard work") and
   polished epigrams built to be quoted.
 - Say it whole-heartedly. Do not balance it ("both good and bad", "X matters, though Y") or hedge it ("I think",
-  "maybe"). It can be large, as long as it is the student's.
+  "maybe"). It can be large, as long as it is the student's. If the mixed feeling or the doubt is the student's
+  own, keep it at the strength they hold it.
 - Comment on meaning once, not after every scene: let scenes, quotes and contrasts stand without a sentence
   that explains them.
 - A reflection may be a question or a doubt ("I don't know yet whether keeping score made me braver or just
@@ -212,23 +218,24 @@ lines:
 5. **Reflection lines:** for each, name the scene that earns it. Flag reflections that could appear in anyone's
    essay, and flag the opposite problem: no reflection at all.
 6. **Vulnerability:** is there a moment the writer is wrong, small or unresolved? Is hardship in proportion?
-7. **AI-sounding lines** (see `tells.md` sections 2 and 4): stated lessons, journey/growth/resilience words,
-   identity as a label, stock metaphors, tidy bow endings, kicker endings everywhere, thesaurus words.
-8. **Voice:** lines that don't sound like them out loud. Ask a friend: "does this sound like me?"
+7. **AI-sounding lines** (see `tells.md` sections 2 and 4): generic lessons that would fit any essay, inflated phrases ("my journey of growth"),
+   identity as a label, stock metaphors, tidy bow endings, kicker endings everywhere, words chosen only to show off.
+8. **Voice:** lines that don't sound like them writing carefully (too grand, or chattier than they write). Ask a friend: "does this sound like me?"
 9. **Length and cuts:** what to cut first to make room for the best scene.
 10. **What works:** two or three specific lines and why. No general praise.
 
 ## 8. Step 6: corrections
 
-Grammar, spelling, punctuation and clarity as a numbered list of discrete corrections, each quoting the
-original words. Keep their vocabulary even when it is plainer than yours. If a sentence needs rewriting for
+Return the draft with outright errors (grammar, spelling, punctuation) fixed in place and nothing else changed,
+then a numbered list: first each fix, quoting the original words, then the bigger changes for the student to
+make. Keep their vocabulary even when it is plainer than yours. If a sentence is unclear or needs rewriting for
 content, explain the problem and let them rewrite it.
 
 ## 9. Short answers and supplements
 
 Full guidance is in `short-answers.md`. In brief:
 
-- **Short takes (35 to 50 words, or 280 characters):** read for personality; be specific and a little playful.
+- **Short takes (35 to 50 words):** read for personality; be specific and a little playful.
   Facts about a famous person or a place say nothing about the writer: make the answer about the writer's own
   connection to it.
 - **Stanford roommate note:** habits, rituals, warnings, what you'll drag them to. What would living with you
@@ -240,16 +247,17 @@ Full guidance is in `short-answers.md`. In brief:
   what they still can't answer.
 - Each piece should show something the others don't. Short pieces are harder: every word counts.
 
-## 10. Writing a sample essay for a fictional person
+## 10. Writing a full sample (a fictional person, or a draft the student asked for)
 
 When asked to demonstrate (teaching, a class example, a test of this skill), you may write a full sample for a
-clearly fictional student from supplied notes. Aim for the level of the best admitted essays, which means the
+clearly fictional student from supplied notes. The same bar applies to a full draft a real student asks for:
+their material stands in for the notes, and every missing detail becomes an `[ask: …]`. Aim for the level of the best admitted essays, which means the
 essay needs an arc and a "so what", not only accurate details:
-- Draft in the two passes described in SKILL.md step 2: shape first, then a full Edit-mode pass on your own
-  draft.
+- Draft in the two passes described in SKILL.md step 2: shape first, then the full audit and checks (steps 3 and 4) on
+  your own draft.
 - Events, people, numbers, quotes and objects come only from the notes.
 - Pick the spine with the highest stakes (where the student was wrong, ashamed, afraid or unsure) and build the
-  whole essay around it. Bring in other material only where it sharpens that spine.
+  whole essay around it. Bring in other material where it sharpens that spine, plus at most one side detail the notes clearly care about.
 - Order by the spine's logic: setup with stakes, the turn, what changed and what hasn't. The order things
   happened is often the right one; do not hold back the strongest scene just so the essay can end on it.
 - Register: the notes are how the student talks; the essay is how they write. Drop speech filler (really, kind
@@ -271,7 +279,7 @@ essay needs an arc and a "so what", not only accurate details:
   link scenes (two things that rhyme, a pattern across two scenes) unless the notes make the link; judges read
   them as engineered. Do not turn an early object into a closing symbol. Do not add an event, a motive or a feeling the notes contradict
   or do not support.
-- Close on the student's own conclusion from the notes, stated whole-heartedly: not a shrug, not balanced, not
-  hedged.
+- Close on the student's own conclusion from the notes, as strongly as the notes hold it and no stronger: no
+  shrug, balance or hedge that the notes do not contain.
 - Run the paragraph-ending count from SKILL.md step 4; stay under the word limit.
 - Put any "sample" label outside the essay text.
